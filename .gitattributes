@@ -1,0 +1,2 @@
+star-land/release-build/*.exe filter=lfs diff=lfs merge=lfs -text
+star-land/release-build/win-unpacked/*.exe filter=lfs diff=lfs merge=lfs -text

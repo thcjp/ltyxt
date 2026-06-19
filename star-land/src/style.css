@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #FF8C42;
+  --color-secondary: #4ECDC4;
+  --color-chinese: #9B59B6;
+  --color-math: #2ECC71;
+  --color-english: #E74C3C;
+  --color-star-gold: #FFD700;
+  --color-bg: #FFF9F5;
+  --color-card: #FFFFFF;
+  --color-text: #2D3436;
+  --color-text-light: #636E72;
+  font-family: 'Noto Sans SC', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E67A35;
+}
+
+/* 卡片基础样式 */
+.card {
+  @apply bg-white rounded-3xl shadow-lg p-6 transition-all duration-300;
+}
+
+.card:hover {
+  @apply shadow-xl -translate-y-1;
+}
+
+/* 按钮基础样式 */
+.btn-primary {
+  @apply bg-primary-500 text-white font-title px-6 py-3 rounded-2xl shadow-md
+         hover:bg-primary-600 active:scale-95 transition-all duration-200;
+}
+
+.btn-secondary {
+  @apply bg-secondary-500 text-white font-title px-6 py-3 rounded-2xl shadow-md
+         hover:bg-secondary-600 active:scale-95 transition-all duration-200;
+}
+
+/* 学科主题按钮 */
+.btn-chinese {
+  @apply bg-chinese text-white font-title px-6 py-3 rounded-2xl shadow-md
+         hover:bg-chinese-dark active:scale-95 transition-all duration-200;
+}
+
+.btn-math {
+  @apply bg-math text-white font-title px-6 py-3 rounded-2xl shadow-md
+         hover:bg-math-dark active:scale-95 transition-all duration-200;
+}
+
+.btn-english {
+  @apply bg-english text-white font-title px-6 py-3 rounded-2xl shadow-md
+         hover:bg-english-dark active:scale-95 transition-all duration-200;
+}
+
+/* 星星评级 */
+.star-gold { color: #FFD700; }
+.star-silver { color: #C0C0C0; }
+
+/* 渐变背景 */
+.gradient-primary {
+  background: linear-gradient(135deg, #FF8C42 0%, #4ECDC4 100%);
+}
+
+.gradient-chinese {
+  background: linear-gradient(135deg, #D7BDE2 0%, #9B59B6 100%);
+}
+
+.gradient-math {
+  background: linear-gradient(135deg, #A9DFBF 0%, #2ECC71 100%);
+}
+
+.gradient-english {
+  background: linear-gradient(135deg, #F5B7B1 0%, #E74C3C 100%);
+}
+
+/* 文字渐变 */
+.text-gradient-primary {
+  background: linear-gradient(135deg, #FF8C42, #4ECDC4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 页面过渡 */
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s ease;
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateX(-20px);
+}
