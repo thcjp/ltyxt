@@ -23,7 +23,9 @@ export function useRewardSystem() {
       diamonds = 0
     }
     rewardStore.addStars(stars, `完成课时（正确率${accuracy}%）`, 'lesson')
-    rewardStore.addDiamonds(diamonds)
+    if (diamonds > 0) {
+      rewardStore.addDiamonds(diamonds, `完成课时（正确率${accuracy}%）`, 'lesson')
+    }
     return { stars, diamonds }
   }
 

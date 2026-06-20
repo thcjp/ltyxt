@@ -39,8 +39,11 @@ export function useCourseProgress() {
     if (lessonOrder === 1) return true
     const unit = courseStore.getUnit(subject, grade, unitId)
     if (!unit) return false
-    const prevLesson = unit.lessons.find(l => l.order === lessonOrder - 1)
-    if (!prevLesson) return false
+    // 按 order 排序后用数组下标定位上一课，避免 order 字段断号/重复导致永久锁定
+    const sortedLessons = [...unit.lessons].sort((a, b) => a.order - b.order)
+    const currentIndex = sortedLessons.findIndex(l => l.order === lessonOrder)
+    if (currentIndex <= 0) return false
+    const prevLesson = sortedLessons[currentIndex - 1]
     const p = progressStore.getLessonProgress(prevLesson.id)
     return p?.status === 'completed'
   }

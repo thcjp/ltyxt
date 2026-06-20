@@ -277,6 +277,15 @@ export interface StarHistoryRecord {
   timestamp: string        // ISO 时间戳
 }
 
+// 钻石变动记录
+export interface DiamondHistoryRecord {
+  id: string
+  amount: number           // 正数=增加，负数=扣除
+  reason: string           // 变动原因
+  source: 'lesson' | 'achievement' | 'parent' | 'redeem'  // 来源
+  timestamp: string        // ISO 时间戳
+}
+
 // 复习项
 export interface ReviewItem {
   id: string
@@ -318,7 +327,21 @@ export interface WishItem {
   description: string
   starCost: number
   icon: string
-  purchased: boolean
+  stock: number            // 库存: -1=不限, 0=已兑完, >0=可兑换数量
+  purchased: boolean       // 保留兼容旧数据，新逻辑用 stock 判断
+  custom?: boolean         // 是否家长自定义（true=家长新增，false=系统预置）
+}
+
+// 钻石兑换商品（家长可修改/新增）
+export interface DiamondItem {
+  id: string
+  name: string
+  description: string
+  diamondCost: number
+  icon: string
+  stock: number            // 库存: -1=不限, 0=已兑完, >0=可兑换数量
+  purchased: boolean       // 保留兼容旧数据，新逻辑用 stock 判断
+  custom?: boolean         // 是否家长自定义（true=家长新增，false=系统预置）
 }
 
 // 错题记录

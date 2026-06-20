@@ -661,7 +661,7 @@ export const mathGrade1: Unit[] = [
       {
         id: 'm1u2l3',
         title: '减法初体验',
-        order: 2,
+        order: 3,
         teachingMethod: 'CPA实物拿走→图示划掉→符号表示',
         iDo: '家长摆3颗糖，拿走1颗，说"3减1等于2"。',
         weDo: '亲子一起用手指做减法：伸出5根，弯下2根，数剩下的。',

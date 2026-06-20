@@ -812,6 +812,74 @@ export function useSpeech() {
     return result
   }
 
+  // 清洗 emoji 用于 TTS 朗读
+  // 将连续重复的 emoji 聚合为"X个[名称]"格式，避免 TTS 逐个朗读
+  // 例如：⭐⭐⭐⭐⭐ → "5颗星星"，🌸🌸🌸 → "3朵花"
+  const EMOJI_NAME_MAP: Record<string, string> = {
+    '⭐': '星星', '🌟': '星星', '✨': '闪光',
+    '🌸': '花', '🌺': '花', '🌻': '向日葵', '🌹': '玫瑰', '🌷': '郁金香',
+    '🍎': '苹果', '🍌': '香蕉', '🍇': '葡萄', '🍊': '橘子', '🍓': '草莓',
+    '🍐': '梨', '🍑': '桃子', '🍉': '西瓜', '🍋': '柠檬',
+    '🐶': '小狗', '🐱': '小猫', '🐰': '兔子', '🐻': '熊', '🐼': '熊猫',
+    '🦊': '狐狸', '🐸': '青蛙', '🐷': '小猪', '🐮': '小牛', '🐔': '小鸡',
+    '🐦': '小鸟', '🦆': '鸭子', '🐢': '乌龟', '🐟': '鱼',
+    '🔴': '红圆', '🟠': '橙圆', '🟡': '黄圆', '🟢': '绿圆', '🔵': '蓝圆', '🟣': '紫圆',
+    '❤️': '爱心', '💛': '黄心', '💚': '绿心', '💙': '蓝心', '💜': '紫心',
+    '🔺': '三角形', '🔻': '倒三角形', '⭕': '圆圈', '🔲': '方块', '⚪': '白圆',
+    '⚽': '球', '🏀': '篮球', '🎈': '气球', '🎁': '礼物', '🍭': '棒棒糖',
+    '🍦': '冰淇淋', '🍰': '蛋糕', '🍪': '饼干', '🥕': '胡萝卜', '🌽': '玉米',
+    '🥚': '鸡蛋', '🍞': '面包', '🧀': '奶酪',
+    '🚗': '汽车', '🚕': '出租车', '🚌': '公交车', '✈️': '飞机', '🚲': '自行车',
+    '⛵': '帆船', '🚂': '火车',
+    '🏠': '房子', '🏫': '学校', '🌳': '树', '🌲': '松树', '🌴': '棕榈树',
+    '☀️': '太阳', '🌙': '月亮', '☁️': '云', '⭐️': '星星',
+    '1️⃣': '1', '2️⃣': '2', '3️⃣': '3', '4️⃣': '4', '5️⃣': '5',
+    '6️⃣': '6', '7️⃣': '7', '8️⃣': '8', '9️⃣': '9', '0️⃣': '0',
+  }
+
+  // 量词映射
+  const EMOJI_MEASURE_MAP: Record<string, string> = {
+    '⭐': '颗', '🌟': '颗', '🌸': '朵', '🌺': '朵', '🌹': '朵', '🌷': '朵', '🌻': '朵',
+    '🍎': '个', '🍌': '根', '🍇': '串', '🍊': '个', '🍓': '颗',
+    '🐶': '只', '🐱': '只', '🐰': '只', '🐻': '只', '🐼': '只',
+    '🦊': '只', '🐸': '只', '🐷': '只', '🐮': '只', '🐔': '只',
+    '🐦': '只', '🦆': '只', '🐢': '只', '🐟': '条',
+    '⚽': '个', '🏀': '个', '🎈': '个', '🎁': '个',
+    '🌳': '棵', '🌲': '棵', '🌴': '棵',
+  }
+
+  function cleanEmojiForTTS(text: string): string {
+    let result = text
+    // 匹配连续重复的同一个 emoji（2个及以上），支持可选的变体选择符（U+FE0F）
+    // emoji 范围包括：
+    //   \u{1F300}-\u{1F9FF}  补充表情符号及象形文字
+    //   \u{2600}-\u{27BF}    杂项符号（含✨等）
+    //   \u{2B00}-\u{2BFF}    杂项符号和箭头（含⭐ U+2B50）
+    //   \u{FE0F}             变体选择符16（emoji 后常跟，如⭐️）
+    result = result.replace(
+      /([\u{1F300}-\u{1F9FF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}])\u{FE0F}?(?:\1\u{FE0F}?)+/gu,
+      (match, emoji) => {
+        // 用 code point 计数，避免 UTF-16 代理对导致非 BMP emoji 计数翻倍
+        const count = [...match].filter(c => c === emoji).length
+        const name = EMOJI_NAME_MAP[emoji] || ''
+        const measure = EMOJI_MEASURE_MAP[emoji] || '个'
+        if (name) {
+          return `${count}${measure}${name}`
+        }
+        return `${count}个`
+      }
+    )
+
+    // 处理单个 emoji（替换为中文名称或移除）
+    result = result.replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}]/gu, (emoji) => {
+      return EMOJI_NAME_MAP[emoji] || ''
+    })
+
+    // 清理多余的空格
+    result = result.replace(/\s+/g, ' ').trim()
+    return result
+  }
+
   // 朗读文本（增强版：支持角色和拼音智能处理）
   // rate 参数现在作为"覆盖值"，如果未提供则使用统一设置或角色默认值
   // 异步函数：会等待语音列表加载完成后再选择中文语音，确保拼音转中文后能正确朗读
@@ -838,6 +906,8 @@ export function useSpeech() {
     let speakLang = lang
     if (lang === 'zh') {
       speakText = smartConvertPinyin(text)
+      // 清洗 emoji：将连续重复的 emoji 聚合为"X颗星星"等格式，避免 TTS 逐个朗读
+      speakText = cleanEmojiForTTS(speakText)
       speakLang = 'zh'
     }
 
@@ -939,6 +1009,8 @@ export function useSpeech() {
       let speakText = line.text
       if (line.lang === 'zh') {
         speakText = smartConvertPinyin(line.text)
+        // 清洗 emoji：将连续重复的 emoji 聚合为"X颗星星"等格式
+        speakText = cleanEmojiForTTS(speakText)
       }
 
       const utterance = new SpeechSynthesisUtterance(speakText)

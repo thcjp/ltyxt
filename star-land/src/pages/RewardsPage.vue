@@ -71,6 +71,17 @@ const showRules = ref(false)
           </ul>
           <p class="text-[10px] text-gray-400 mt-2">💡 星星不会因为答错题而扣除，只会因为兑换心愿而减少。答错题只是获得较少的星星。</p>
         </div>
+        <!-- 钻石消耗 -->
+        <div class="bg-white/80 rounded-xl p-3">
+          <p class="font-medium text-cyan-700 mb-2">💎 钻石如何消耗</p>
+          <ul class="space-y-1">
+            <li v-for="item in rewardStore.diamondItems" :key="item.id" class="flex justify-between">
+              <span>{{ item.icon }} {{ item.name }}</span>
+              <span class="text-cyan-600 font-medium">-{{ item.diamondCost }} 💎</span>
+            </li>
+          </ul>
+          <p class="text-[10px] text-gray-400 mt-2">💡 钻石比星星更珍贵，只能通过三星完成课时或解锁成就获得。家长可在家长中心修改或新增钻石兑换项。</p>
+        </div>
         <!-- 星级说明 -->
         <div class="bg-white/80 rounded-xl p-3">
           <p class="font-medium text-purple-700 mb-2">⭐ 课时星级说明</p>
@@ -109,13 +120,17 @@ const showRules = ref(false)
         v-for="item in rewardStore.wishItems"
         :key="item.id"
         class="card text-center"
-        :class="{ 'opacity-50': item.purchased }"
+        :class="{ 'opacity-50': item.stock === 0 }"
       >
         <p class="text-3xl mb-2">{{ item.icon }}</p>
         <p class="font-medium text-sm">{{ item.name }}</p>
-        <p class="text-xs text-gray-500 mb-2">{{ item.description }}</p>
+        <p class="text-xs text-gray-500 mb-1">{{ item.description }}</p>
+        <!-- 库存显示 -->
+        <p class="text-xs mb-2" :class="item.stock === 0 ? 'text-red-400' : item.stock === -1 ? 'text-green-500' : 'text-gray-400'">
+          {{ item.stock === -1 ? '不限' : item.stock === 0 ? '已兑完' : `剩余 ${item.stock}` }}
+        </p>
         <button
-          v-if="!item.purchased"
+          v-if="item.stock !== 0"
           @click="rewardStore.redeemWish(item.id)"
           :disabled="rewardStore.stars < item.starCost"
           class="btn-primary text-xs px-3 py-1.5"
@@ -123,7 +138,38 @@ const showRules = ref(false)
         >
           ⭐{{ item.starCost }}
         </button>
-        <span v-else class="text-xs text-green-600">已兑换 ✓</span>
+        <span v-else class="text-xs text-red-400">已兑完</span>
+      </div>
+    </div>
+
+    <!-- 钻石商店 -->
+    <h2 class="font-title text-xl text-gray-800 mb-3 flex items-center gap-2">
+      <Diamond class="w-5 h-5 text-blue-500" /> 钻石商店
+    </h2>
+    <div class="grid grid-cols-2 gap-3 mb-6">
+      <div
+        v-for="item in rewardStore.diamondItems"
+        :key="item.id"
+        class="card text-center"
+        :class="{ 'opacity-50': item.stock === 0 }"
+      >
+        <p class="text-3xl mb-2">{{ item.icon }}</p>
+        <p class="font-medium text-sm">{{ item.name }}</p>
+        <p class="text-xs text-gray-500 mb-1">{{ item.description }}</p>
+        <!-- 库存显示 -->
+        <p class="text-xs mb-2" :class="item.stock === 0 ? 'text-red-400' : item.stock === -1 ? 'text-green-500' : 'text-gray-400'">
+          {{ item.stock === -1 ? '不限' : item.stock === 0 ? '已兑完' : `剩余 ${item.stock}` }}
+        </p>
+        <button
+          v-if="item.stock !== 0"
+          @click="rewardStore.redeemDiamondItem(item.id)"
+          :disabled="rewardStore.diamonds < item.diamondCost"
+          class="btn-primary text-xs px-3 py-1.5"
+          :class="{ 'opacity-50 cursor-not-allowed': rewardStore.diamonds < item.diamondCost }"
+        >
+          💎{{ item.diamondCost }}
+        </button>
+        <span v-else class="text-xs text-red-400">已兑完</span>
       </div>
     </div>
 
