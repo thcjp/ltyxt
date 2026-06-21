@@ -1248,7 +1248,7 @@ onUnmounted(() => {
               :data-tts="el.ttsText || ''"
               style="opacity:0"
               @click="handleElementClick(el.ttsText || el.text || '')">
-              <span class="text-3xl">{{ el.emoji || '📦' }}</span>
+              <span class="text-3xl">{{ el.emoji || '🎯' }}</span>
               <span v-if="el.text" class="text-xs text-gray-600 text-center max-w-[60px]">{{ el.text }}</span>
             </div>
           </div>

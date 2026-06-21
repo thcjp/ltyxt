@@ -16,7 +16,6 @@ import SpeechButton from '@/components/animation/SpeechButton.vue'
 import DragQuestion from '@/components/animation/DragQuestion.vue'
 import { getVideoResources } from '@/data/math/mathGrade1Videos'
 import { generateVideoResources } from '@/data/videoResourceGenerator'
-import { getDirectLinkResource } from '@/data/videoDirectLinks'
 import { PlayCircle, ExternalLink, Search, Video } from 'lucide-vue-next'
 
 const route = useRoute()
@@ -64,25 +63,21 @@ const unit = computed(() => courseStore.getUnit(subject.value as any, grade.valu
 const lesson = computed(() => unit.value?.lessons.find(l => l.id === lessonId.value))
 
 // 视频辅助学习资源（全网抓取）
+// 优先级：课程自带 > 数学一年级专属直链 > 通用搜索链接生成器
 const videoResources = computed<VideoResource[]>(() => {
   if (!lesson.value) return []
-  // 优先使用课程自带的视频资源
+  // 1. 优先使用课程自带的视频资源
   if (lesson.value.videoResources && lesson.value.videoResources.length > 0) {
     return lesson.value.videoResources
   }
-  // 优先使用直链数据库（网易公开课免费直链，可直接播放）
-  const directLink = getDirectLinkResource(lessonId.value)
-  if (directLink) {
-    return [directLink]
-  }
-  // 数学一年级优先使用专属资源文件（包含网易公开课直链）
+  // 2. 数学一年级优先使用专属资源文件（包含网易公开课真实直链）
   if (subject.value === 'math' && grade.value === 1) {
     const resources = getVideoResources(lessonId.value)
     if (resources.length > 0) {
       return resources
     }
   }
-  // 其他学科年级使用通用生成器自动生成免费资源
+  // 3. 其他学科年级使用通用生成器（内部会生成搜索链接作为回退）
   return generateVideoResources(
     subject.value,
     grade.value,

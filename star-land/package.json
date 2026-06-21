@@ -2,7 +2,7 @@
   "name": "star-land",
   "private": true,
   "version": "1.0.0",
-  "description": "老甜甜和小甜甜的游戏屋 - 融合全球十大教学法的亲子共学补救学习系统",
+  "description": "老田和小甜甜的游戏屋 - 融合全球十大教学法的亲子共学补救学习系统",
   "author": "天轰穿 <QQ:110535808>",
   "type": "module",
   "main": "electron/main.cjs",

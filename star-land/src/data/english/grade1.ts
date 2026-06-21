@@ -26,7 +26,7 @@ export const englishGrade1: Unit[] = [
           { type: 'tip', content: '说Hello的时候，要面带微笑，看着对方的眼睛哦！这是礼貌的表现。', label: '文化小贴士', animationType: 'pulse' },
           { type: 'formula', content: '打招呼儿歌：Hello Hello 拍拍手，Hi Hi 挥挥手，Good morning 抬抬头，见到朋友笑悠悠！', label: '打招呼儿歌', animationType: 'typewriter' },
           { type: 'example', content: '英语小笑话：\n小明说"Hello!"，小猫回答"喵！"\n小明说"你说的不是英语！"\n小猫说"我是英国短毛猫，喵就是我的英语！"', label: '英语小笑话', animationType: 'bounce' },
-          { type: 'animation', content: '两个小朋友挥手打招呼的动画，配合Hello语音', animationType: 'bounce' },
+          { type: 'animation', content: '两个小朋友挥手打招呼的动画，配合Hello语音', animationType: 'bounce', animationConfig: { sceneType: 'sceneBuild', title: 'Hello', sceneBuildConfig: { sceneName: 'Hello', elements: [ { id: 'el-0', text: 'Hello', emoji: '👋', delay: 0, animation: 'bounceIn', ttsText: 'Hello' }, { id: 'el-1', text: 'Wave', emoji: '👋', delay: 0.4, animation: 'popIn', ttsText: 'Wave' }, { id: 'el-2', text: 'Smile', emoji: '😊', delay: 0.8, animation: 'scaleIn', ttsText: 'Smile' } ] }, ttsNarration: '打招呼：你好、挥手、微笑' } },
         ],
         practiceQuestions: [
           {
@@ -110,7 +110,7 @@ export const englishGrade1: Unit[] = [
           { type: 'dialogue', content: '小明: Hello! My name is Xiaoming.\n小红: Hi! My name is Xiaohong. Nice to meet you!\n小明: Nice to meet you too!', label: '自我介绍对话', animationType: 'reveal' },
           { type: 'example', content: 'My name is Tom — 我叫汤姆\nMy name is Lily — 我叫莉莉\nMy name is Jack — 我叫杰克', label: '自我介绍例句', animationType: 'bounce' },
           { type: 'tip', content: 'name是"名字"的意思，My name is... 就是"我的名字是……"。说的时候指着胸口，更加自信哦！', label: '学习提示', animationType: 'pulse' },
-          { type: 'animation', content: '名字牌翻转动画，翻转后显示英文名字，配合自我介绍语音', animationType: 'bounce' },
+          { type: 'animation', content: '名字牌翻转动画，翻转后显示英文名字，配合自我介绍语音', animationType: 'bounce', animationConfig: { sceneType: 'cardReveal', title: 'My Name', cardRevealConfig: { cards: [ { front: 'Hello', back: '👋', ttsText: 'Hello' }, { front: 'My name is...', back: '🏷', ttsText: 'My name is' }, { front: 'I am...', back: '🧒', ttsText: 'I am' }, { front: 'Nice to meet you', back: '🤝', ttsText: 'Nice to meet you' } ] }, ttsNarration: '自我介绍：你好、我的名字、我是、很高兴认识你' } },
         ],
         practiceQuestions: [
           {
@@ -191,7 +191,7 @@ export const englishGrade1: Unit[] = [
           { type: 'dialogue', content: '老师: Stand up, please!\n同学们: (站起来) Good morning, teacher!\n老师: Sit down, please.\n同学们: Thank you!', label: '课堂指令对话', animationType: 'reveal' },
           { type: 'example', content: 'Stand up — 起立\nSit down — 坐下\nThank you — 谢谢你\nPlease — 请', label: '课堂用语', animationType: 'bounce' },
           { type: 'tip', content: '说Stand up时可以站起来，说Sit down时可以坐下。用身体动作来记英语，记得更牢！', label: '学习提示', animationType: 'pulse' },
-          { type: 'animation', content: '小朋友起立和坐下的动画，配合Stand up/Sit down语音', animationType: 'bounce' },
+          { type: 'animation', content: '小朋友起立和坐下的动画，配合Stand up/Sit down语音', animationType: 'bounce', animationConfig: { sceneType: 'sceneBuild', title: 'Stand Up Sit Down', sceneBuildConfig: { sceneName: 'Classroom Actions', elements: [ { id: 'el-0', text: 'Stand up', emoji: '🧍', delay: 0, animation: 'bounceIn', ttsText: 'Stand up' }, { id: 'el-1', text: 'Sit down', emoji: '🪑', delay: 0.4, animation: 'popIn', ttsText: 'Sit down' }, { id: 'el-2', text: 'Listen', emoji: '👂', delay: 0.8, animation: 'scaleIn', ttsText: 'Listen' } ] }, ttsNarration: '课堂指令：起立、坐下、听讲' } },
         ],
         practiceQuestions: [
           {
@@ -273,7 +273,7 @@ export const englishGrade1: Unit[] = [
         content: [
           { type: 'text', content: `让我们来回顾Hello单元学到的内容！打招呼用语Hello/Hi、自我介绍My name is...、课堂用语Stand up/Sit down/Thank you`, animationType: 'reveal' },
           { type: 'formula', content: `打招呼公式：Hello/Hi + My name is... + Nice to meet you!`, animationType: 'typewriter', label: '打招呼+自我介绍公式' },
-          { type: 'animation', content: `三个场景回顾：打招呼、自我介绍、课堂指令`, animationType: 'bounce' },
+          { type: 'animation', content: `三个场景回顾：打招呼、自我介绍、课堂指令`, animationType: 'bounce', animationConfig: { sceneType: 'cardReveal', title: 'Unit Review', cardRevealConfig: { cards: [ { front: 'Hello', back: '👋', ttsText: 'Hello' }, { front: 'My Name', back: '🏷', ttsText: 'My name' }, { front: 'Stand up', back: '🧍', ttsText: 'Stand up' }, { front: 'Sit down', back: '🪑', ttsText: 'Sit down' } ] }, ttsNarration: '单元回顾：打招呼、自我介绍、课堂指令' } },
         ],
         practiceQuestions: [
           {
@@ -445,7 +445,7 @@ export const englishGrade1: Unit[] = [
           { type: 'dialogue', content: '小明: What color is it?\n小红: It\'s red! 苹果是红色的。\n小明: What color is the sky?\n小红: It\'s blue! 天空是蓝色的。', label: '颜色问答', animationType: 'reveal' },
           { type: 'example', content: 'Red — 红色（苹果、消防车）\nYellow — 黄色（香蕉、太阳）\nBlue — 蓝色（天空、大海）\nGreen — 绿色（草地、树叶）', label: '颜色词汇', animationType: 'bounce' },
           { type: 'tip', content: 'Orange既是"橙色"又是"橘子"，一个词两个意思，是不是很有趣？', label: '趣味知识', animationType: 'pulse' },
-          { type: 'animation', content: '彩色气球依次飘浮出现，每个气球显示一种颜色和对应英语单词', animationType: 'float' },
+          { type: 'animation', content: '彩色气球依次飘浮出现，每个气球显示一种颜色和对应英语单词', animationType: 'float', animationConfig: { sceneType: 'sceneBuild', title: 'Colors', sceneBuildConfig: { sceneName: 'Colors', elements: [ { id: 'el-0', text: 'Red', emoji: '🟥', delay: 0, animation: 'popIn', ttsText: 'Red' }, { id: 'el-1', text: 'Blue', emoji: '🟦', delay: 0.4, animation: 'popIn', ttsText: 'Blue' }, { id: 'el-2', text: 'Green', emoji: '🟩', delay: 0.8, animation: 'popIn', ttsText: 'Green' }, { id: 'el-3', text: 'Yellow', emoji: '🟨', delay: 1.2, animation: 'popIn', ttsText: 'Yellow' } ] }, ttsNarration: '颜色：红、蓝、绿、黄' } },
         ],
         practiceQuestions: [
           {
@@ -526,7 +526,7 @@ export const englishGrade1: Unit[] = [
           { type: 'dialogue', content: '小明: Red and yellow make...?\n小红: Orange! 橙色！\n小明: Blue and yellow make...?\n小红: Green! 绿色！', label: '颜色混合对话', animationType: 'reveal' },
           { type: 'example', content: 'Red + Yellow = Orange（红+黄=橙）\nBlue + Yellow = Green（蓝+黄=绿）\nRed + Blue = Purple（红+蓝=紫）', label: '颜色混合公式', animationType: 'typewriter' },
           { type: 'tip', content: 'make在这里是"变成"的意思。"A and B make C"就是"A和B混合变成C"', label: '语法提示', animationType: 'pulse' },
-          { type: 'animation', content: '两种颜色颜料倒入碗中混合，变成新颜色的动画', animationType: 'bounce' },
+          { type: 'animation', content: '两种颜色颜料倒入碗中混合，变成新颜色的动画', animationType: 'bounce', animationConfig: { sceneType: 'colorMix', title: 'Color Mix', colorMixConfig: { color1: 'Red', color1Hex: '#EF4444', color2: 'Yellow', color2Hex: '#EAB308', resultColor: 'Orange', resultHex: '#F97316' }, ttsNarration: '颜色混合：红色加黄色变成橙色' } },
         ],
         practiceQuestions: [
           {
@@ -608,7 +608,7 @@ export const englishGrade1: Unit[] = [
           { type: 'dialogue', content: '小明: I can sing a rainbow!\n小红: Red and yellow and pink and green...\n小明: Purple and orange and blue!\n小红: I can sing a rainbow, sing a rainbow too!', label: '彩虹歌', animationType: 'reveal' },
           { type: 'example', content: 'Red — 红色\nOrange — 橙色\nYellow — 黄色\nGreen — 绿色\nBlue — 蓝色\nIndigo — 靛蓝色\nViolet — 紫色', label: '彩虹七色', animationType: 'bounce' },
           { type: 'tip', content: '记住彩虹颜色顺序的小口诀：红橙黄绿蓝靛紫，就像从暖色到冷色排列！', label: '记忆小窍门', animationType: 'pulse' },
-          { type: 'animation', content: '彩虹弧线从左到右逐渐绘制出现，每种颜色依次亮起', animationType: 'bounce' },
+          { type: 'animation', content: '彩虹弧线从左到右逐渐绘制出现，每种颜色依次亮起', animationType: 'bounce', animationConfig: { sceneType: 'sceneBuild', title: 'Rainbow', sceneBuildConfig: { sceneName: 'Rainbow', elements: [ { id: 'el-0', text: 'Red', emoji: '🌈', delay: 0, animation: 'fadeIn', ttsText: 'Red' }, { id: 'el-1', text: 'Orange', emoji: '🟧', delay: 0.4, animation: 'fadeIn', ttsText: 'Orange' }, { id: 'el-2', text: 'Yellow', emoji: '🟨', delay: 0.8, animation: 'fadeIn', ttsText: 'Yellow' }, { id: 'el-3', text: 'Green', emoji: '🟩', delay: 1.2, animation: 'fadeIn', ttsText: 'Green' }, { id: 'el-4', text: 'Blue', emoji: '🟦', delay: 1.6, animation: 'fadeIn', ttsText: 'Blue' } ] }, ttsNarration: '彩虹：红、橙、黄、绿、蓝' } },
         ],
         practiceQuestions: [
           {
@@ -691,7 +691,7 @@ export const englishGrade1: Unit[] = [
 Red + Yellow = Orange
 Blue + Yellow = Green
 Red + Blue = Purple`, animationType: 'typewriter', label: '颜色混合公式' },
-          { type: 'animation', content: `颜色卡片翻转回顾，颜色混合动画重现`, animationType: 'bounce' },
+          { type: 'animation', content: `颜色卡片翻转回顾，颜色混合动画重现`, animationType: 'bounce', animationConfig: { sceneType: 'cardReveal', title: 'Colors Review', cardRevealConfig: { cards: [ { front: 'Red', back: '🟥', ttsText: 'Red' }, { front: 'Blue', back: '🟦', ttsText: 'Blue' }, { front: 'Yellow', back: '🟨', ttsText: 'Yellow' }, { front: 'Green', back: '🟩', ttsText: 'Green' } ] }, ttsNarration: '颜色回顾：红、蓝、黄、绿' } },
         ],
         practiceQuestions: [
           {
@@ -1107,7 +1107,7 @@ Red + Blue = Purple`, animationType: 'typewriter', label: '颜色混合公式' }
 How many + 名词复数？
 数字 + 名词复数（如：Five books）
 大多数名词复数加s`, animationType: 'typewriter', label: '数量表达公式' },
-          { type: 'animation', content: `数字1-10跳动回顾，计数动画重现`, animationType: 'bounce' },
+          { type: 'animation', content: `数字1-10跳动回顾，计数动画重现`, animationType: 'bounce', animationConfig: { sceneType: 'numberCount', title: 'Count Review', countConfig: { from: 1, to: 10, itemEmoji: '⭐', direction: 'forward' }, ttsNarration: '数数回顾：从1数到10' } },
         ],
         practiceQuestions: [
           {
@@ -1278,7 +1278,7 @@ How many + 名词复数？
           { type: 'dialogue', content: '小明: What\'s this?\n小红: It\'s a cow! Moo!\n小明: And this?\n小红: It\'s a pig! Oink oink!', label: '农场动物对话', animationType: 'reveal' },
           { type: 'example', content: 'Cow — 奶牛（Moo）\nPig — 猪（Oink）\nSheep — 绵羊（Baa）\nDuck — 鸭子（Quack）\nChicken — 鸡（Cluck）', label: '农场动物及叫声', animationType: 'bounce' },
           { type: 'tip', content: '英语中动物的叫声和中文不一样哦！牛在英语里叫Moo，在中文里叫"哞"', label: '文化差异', animationType: 'pulse' },
-          { type: 'animation', content: '农场动物依次蹦跳出场，每种动物配对应的叫声气泡', animationType: 'bounce' },
+          { type: 'animation', content: '农场动物依次蹦跳出场，每种动物配对应的叫声气泡', animationType: 'bounce', animationConfig: { sceneType: 'sceneBuild', title: 'Farm Animals', sceneBuildConfig: { sceneName: '农场动物', elements: [ { id: 'el-0', text: 'Cow', emoji: '🐄', delay: 0, animation: 'bounceIn', ttsText: 'Cow' }, { id: 'el-1', text: 'Pig', emoji: '🐷', delay: 0.4, animation: 'scaleIn', ttsText: 'Pig' }, { id: 'el-2', text: 'Chicken', emoji: '🐔', delay: 0.8, animation: 'slideIn', ttsText: 'Chicken' }, { id: 'el-3', text: 'Duck', emoji: '🦆', delay: 1.2, animation: 'popIn', ttsText: 'Duck' }, { id: 'el-4', text: 'Sheep', emoji: '🐑', delay: 1.6, animation: 'fadeIn', ttsText: 'Sheep' } ] }, ttsNarration: '农场动物：奶牛、猪、鸡、鸭、绵羊' } },
         ],
         practiceQuestions: [
           {

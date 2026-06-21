@@ -44,10 +44,10 @@ export function generateVideoResources(
   lessonId: string,
   lessonTitle: string,
 ): VideoResource[] {
-  // 优先使用直链数据库
-  const directLink = getDirectLinkResource(lessonId)
-  if (directLink) {
-    return [directLink]
+  // 优先使用直链数据库（现在返回数组）
+  const directLinks = getDirectLinkResource(lessonId, lessonTitle)
+  if (directLinks.length > 0) {
+    return directLinks
   }
 
   // 回退方案：生成网易公开课搜索页（非首页，确保有实际搜索结果）
