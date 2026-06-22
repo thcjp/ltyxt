@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useCourseStore } from '@/stores/course'
 import { useCourseProgress } from '@/composables/useCourseProgress'
-import { ArrowLeft } from 'lucide-vue-next'
+import { ArrowLeft, FileText, GraduationCap } from 'lucide-vue-next'
 
 const route = useRoute()
 const router = useRouter()
@@ -20,6 +20,10 @@ const subjectColors: Record<string, string> = { chinese: 'bg-chinese', math: 'bg
 function goToUnit(unitId: string) {
   router.push(`/courses/${subject.value}/${grade.value}/${unitId}`)
 }
+
+function goToExam(type: 'midterm' | 'final') {
+  router.push(`/exam/${subject.value}/${grade.value}/${type}`)
+}
 </script>
 
 <template>
@@ -31,6 +35,38 @@ function goToUnit(unitId: string) {
     <p class="text-sm text-gray-500 mb-6">{{ meta?.subtitle }} · 共{{ units.length }}个单元</p>
 
     <div class="space-y-3">
+      <!-- 考试入口 -->
+      <div class="grid grid-cols-2 gap-3 mb-4">
+        <button
+          @click="goToExam('midterm')"
+          class="card border-2 border-indigo-200 bg-indigo-50 text-left hover:shadow-xl transition-all duration-300 active:scale-[0.98]"
+        >
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500 flex items-center justify-center text-white">
+              <FileText class="w-5 h-5" />
+            </div>
+            <div>
+              <h3 class="font-medium text-gray-800">期中考试</h3>
+              <p class="text-xs text-gray-500">前4单元·30题·跨学科</p>
+            </div>
+          </div>
+        </button>
+        <button
+          @click="goToExam('final')"
+          class="card border-2 border-purple-200 bg-purple-50 text-left hover:shadow-xl transition-all duration-300 active:scale-[0.98]"
+        >
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-purple-500 flex items-center justify-center text-white">
+              <GraduationCap class="w-5 h-5" />
+            </div>
+            <div>
+              <h3 class="font-medium text-gray-800">期末考试</h3>
+              <p class="text-xs text-gray-500">全8单元·40题·跨学科</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
       <button
         v-for="unit in units"
         :key="unit.id"

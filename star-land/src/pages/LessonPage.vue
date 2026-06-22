@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, onMounted, onUnmounted, nextTick } from 'vue'
+import { computed, ref, watch, onMounted, onUnmounted, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useCourseStore } from '@/stores/course'
 import { useProgressStore } from '@/stores/progress'
@@ -14,6 +14,9 @@ import type { KnowledgeLink, VideoResource } from '@/types'
 import CardFlip from '@/components/animation/CardFlip.vue'
 import SpeechButton from '@/components/animation/SpeechButton.vue'
 import DragQuestion from '@/components/animation/DragQuestion.vue'
+import WritingPractice from '@/components/WritingPractice.vue'
+import PhonicsPractice from '@/components/PhonicsPractice.vue'
+import { expandQuestions } from '@/composables/useVariantQuestions'
 import { getVideoResources } from '@/data/math/mathGrade1Videos'
 import { generateVideoResources } from '@/data/videoResourceGenerator'
 import { PlayCircle, ExternalLink, Search, Video } from 'lucide-vue-next'
@@ -126,8 +129,72 @@ const hasParentGraded = ref(false)       // 当前题是否已被家长批改过
 
 let ctx: gsap.Context | null = null
 
-const currentQuestions = computed(() => lesson.value?.practiceQuestions || [])
+// 题量扩充：原始题 + 变式题 = 2倍题量
+const currentQuestions = computed(() => {
+  const original = lesson.value?.practiceQuestions || []
+  return expandQuestions(original)
+})
 const currentQuestion = computed(() => currentQuestions.value[currentQuestionIndex.value])
+
+// ===== 选择题选项打乱（消除答案分布规律性）=====
+// 每次切换到新选择题时，对选项进行 Fisher-Yates 打乱
+// 判分仍用原始 answer 字符串匹配，不受打乱影响
+const shuffledOptions = ref<string[]>([])
+
+function shuffleArray<T>(arr: T[]): T[] {
+  const result = [...arr]
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[result[i], result[j]] = [result[j], result[i]]
+  }
+  return result
+}
+
+watch(currentQuestion, (q) => {
+  if (q && q.type === 'choice' && q.options && q.options.length > 1) {
+    shuffledOptions.value = shuffleArray(q.options)
+  } else {
+    shuffledOptions.value = []
+  }
+  // 重置答题状态
+  selectedAnswer.value = ''
+  showResult.value = false
+  isCorrect.value = false
+  hasParentGraded.value = false
+}, { immediate: true })
+
+// ===== 语文生字书写练习 =====
+// 从课文 ContentBlock 中解析生字详解，提取字和拼音
+interface CharInfo { char: string; pinyin: string }
+
+const writingChars = computed<CharInfo[]>(() => {
+  if (!lesson.value || subject.value !== 'chinese') return []
+  const chars: CharInfo[] = []
+  for (const block of lesson.value.content) {
+    if (block.label === '生字详解' && block.content) {
+      // 第一行格式：字(拼音)
+      const firstLine = block.content.split('\n')[0]
+      const match = firstLine.match(/^(.+?)\((.+?)\)/)
+      if (match) {
+        chars.push({ char: match[1], pinyin: match[2] })
+      }
+    }
+  }
+  return chars
+})
+
+const showWritingPractice = ref(false)
+
+function openWritingPractice() {
+  showWritingPractice.value = true
+}
+
+// ===== 英语自然拼读练习 =====
+const showPhonicsPractice = ref(false)
+
+function openPhonicsPractice() {
+  showPhonicsPractice.value = true
+}
 
 // 阶段配置
 const phases = [
@@ -666,6 +733,57 @@ onUnmounted(() => {
           :index="idx"
           :lang="subjectLang"
         />
+
+        <!-- 语文生字书写练习入口 -->
+        <div v-if="writingChars.length > 0" class="card bg-purple-50 border-2 border-purple-200 mt-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <PenTool class="w-5 h-5 text-purple-500" />
+              <div>
+                <p class="font-title text-base text-purple-700">生字书写练习</p>
+                <p class="text-xs text-purple-500">共 {{ writingChars.length }} 个生字需要练习书写</p>
+              </div>
+            </div>
+            <button @click="openWritingPractice" class="px-4 py-2 bg-purple-500 text-white rounded-xl font-medium hover:bg-purple-600 transition-colors text-sm">
+              开始练习
+            </button>
+          </div>
+        </div>
+
+        <!-- 书写练习弹窗 -->
+        <WritingPractice
+          v-if="showWritingPractice"
+          :chars="writingChars"
+          :lesson-id="lessonId"
+          :subject="subject"
+          :grade="grade"
+          :unit-id="unitId"
+          @close="showWritingPractice = false"
+        />
+
+        <!-- 英语自然拼读练习入口 -->
+        <div v-if="subject === 'english'" class="card bg-blue-50 border-2 border-blue-200 mt-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <Volume2 class="w-5 h-5 text-blue-500" />
+              <div>
+                <p class="font-title text-base text-blue-700">自然拼读 Phonics</p>
+                <p class="text-xs text-blue-500">字母音·CVC拼读·字母组合·高频词·听音拼写</p>
+              </div>
+            </div>
+            <button @click="openPhonicsPractice" class="px-4 py-2 bg-blue-500 text-white rounded-xl font-medium hover:bg-blue-600 transition-colors text-sm">
+              开始练习
+            </button>
+          </div>
+        </div>
+
+        <!-- 拼读练习弹窗 -->
+        <PhonicsPractice
+          v-if="showPhonicsPractice"
+          :grade="grade"
+          @close="showPhonicsPractice = false"
+        />
+
         <div class="card bg-yellow-50 border border-yellow-200 mt-4">
           <div class="flex items-center justify-between mb-2">
             <div class="flex items-center gap-2">
@@ -795,7 +913,7 @@ onUnmounted(() => {
           <!-- 选择题 -->
           <div v-if="currentQuestion.type === 'choice'" class="space-y-2">
             <button
-              v-for="(option, oi) in currentQuestion.options"
+              v-for="(option, oi) in shuffledOptions"
               :key="option"
               @click="selectAnswer(option)"
               class="w-full p-3 rounded-xl border-2 text-left transition-all duration-200 hover:shadow-sm active:scale-[0.98]"

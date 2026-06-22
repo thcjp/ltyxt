@@ -8,6 +8,7 @@ import LessonPage from '@/pages/LessonPage.vue'
 import RewardsPage from '@/pages/RewardsPage.vue'
 import ReviewPage from '@/pages/ReviewPage.vue'
 import ParentPage from '@/pages/ParentPage.vue'
+import ExamPage from '@/pages/ExamPage.vue'
 
 // 在 Electron（file:// 协议）或打包环境中使用 hash 路由，避免刷新 404
 // 在 Web 开发服务器中使用 history 路由，获得更干净的 URL
@@ -59,6 +60,11 @@ const routes = [
     path: '/parent',
     name: 'parent',
     component: ParentPage,
+  },
+  {
+    path: '/exam/:subject/:grade/:type',
+    name: 'exam',
+    component: ExamPage,
   },
 ]
 

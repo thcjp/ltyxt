@@ -5,8 +5,9 @@ import { useRewardStore } from '@/stores/reward'
 import { useSettingsStore } from '@/stores/settings'
 import { useCourseProgress } from '@/composables/useCourseProgress'
 import { useSpeech } from '@/composables/useSpeech'
-import { BarChart3, TrendingUp, Calendar, Settings, User, Pencil, Volume2, Gauge, Star, Lock, History, Plus, Minus, ChevronDown, ChevronUp, Gem, Trash2, RotateCcw, Package } from 'lucide-vue-next'
+import { BarChart3, TrendingUp, Calendar, Settings, User, Pencil, Volume2, Gauge, Star, Lock, History, Plus, Minus, ChevronDown, ChevronUp, Gem, Trash2, RotateCcw, Package, Download, Upload, AlertTriangle } from 'lucide-vue-next'
 import type { DiamondItem, WishItem } from '@/types'
+import { useDataManager } from '@/composables/useDataManager'
 
 const progressStore = useProgressStore()
 const rewardStore = useRewardStore()
@@ -559,6 +560,39 @@ const pagedDiamondHistory = computed(() => {
 const totalDiamondHistoryPages = computed(() => {
   return Math.max(1, Math.ceil(rewardStore.diamondHistory.length / diamondHistoryPageSize))
 })
+
+// ===== 数据管理（导出/导入/清除）=====
+const { exporting, importing, importMessage, importSuccess, exportAllData, triggerImport, clearAllData } = useDataManager()
+const showDataManage = ref(false)
+const showClearConfirm = ref(false)
+const dataManagePinInput = ref('')
+const dataManagePinError = ref(false)
+const importFileInput = ref<HTMLInputElement | null>(null)
+
+function openDataManage() {
+  showDataManage.value = true
+  dataManagePinInput.value = ''
+  dataManagePinError.value = false
+}
+
+function handleExport() {
+  exportAllData()
+}
+
+function handleImportClick() {
+  importFileInput.value?.click()
+}
+
+function handleImportChange(event: Event) {
+  const input = event.target as HTMLInputElement
+  if (input.files && input.files[0]) {
+    triggerImport(input)
+  }
+}
+
+function handleClear() {
+  clearAllData()
+}
 </script>
 
 <template>
@@ -1560,6 +1594,88 @@ const totalDiamondHistoryPages = computed(() => {
         </div>
         <div class="h-3 bg-gray-100 rounded-full overflow-hidden">
           <div :class="s.color" class="h-full rounded-full transition-all duration-500" :style="{ width: getSubjectProgress(s.key).percentage + '%' }" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 数据管理（导出/导入/清除）-->
+    <div class="card mb-4 border-2 border-emerald-200 bg-emerald-50">
+      <div class="flex items-center justify-between mb-3">
+        <div class="flex items-center gap-2">
+          <Package class="w-5 h-5 text-emerald-600" />
+          <p class="font-title text-base text-gray-800">数据管理</p>
+        </div>
+        <button @click="openDataManage" class="text-sm text-emerald-600 hover:text-emerald-700 flex items-center gap-1">
+          <ChevronDown v-if="!showDataManage" class="w-4 h-4" />
+          <ChevronUp v-else class="w-4 h-4" />
+          {{ showDataManage ? '收起' : '展开' }}
+        </button>
+      </div>
+      <div v-if="!showDataManage" class="text-sm text-gray-500">
+        <span class="font-medium">管理学习数据</span>
+        <span> · 导出备份、导入恢复、清除数据</span>
+      </div>
+      <div v-else class="space-y-3">
+        <p class="text-sm text-gray-600">导出当前设备的学习进度、答题记录、奖励数据为 JSON 文件，可在其他设备导入恢复。建议定期备份。</p>
+
+        <!-- 导出按钮 -->
+        <button
+          @click="handleExport"
+          :disabled="exporting"
+          class="w-full p-3 rounded-xl bg-emerald-500 text-white font-medium hover:bg-emerald-600 transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
+        >
+          <Download class="w-4 h-4" />
+          {{ exporting ? '导出中...' : '导出数据（备份）' }}
+        </button>
+
+        <!-- 导入按钮 -->
+        <button
+          @click="handleImportClick"
+          :disabled="importing"
+          class="w-full p-3 rounded-xl bg-blue-500 text-white font-medium hover:bg-blue-600 transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
+        >
+          <Upload class="w-4 h-4" />
+          {{ importing ? '导入中...' : '导入数据（恢复）' }}
+        </button>
+        <input
+          ref="importFileInput"
+          type="file"
+          accept=".json,application/json"
+          class="hidden"
+          @change="handleImportChange"
+        />
+
+        <!-- 导入提示 -->
+        <div v-if="importMessage" :class="importSuccess ? 'text-green-600 bg-green-50' : 'text-red-600 bg-red-50'" class="p-2 rounded-lg text-sm text-center">
+          {{ importMessage }}
+        </div>
+
+        <!-- 清除数据 -->
+        <div class="pt-2 border-t border-gray-200">
+          <button
+            v-if="!showClearConfirm"
+            @click="showClearConfirm = true"
+            class="w-full p-3 rounded-xl bg-red-50 text-red-600 font-medium hover:bg-red-100 transition-colors flex items-center justify-center gap-2"
+          >
+            <Trash2 class="w-4 h-4" />
+            清除所有数据
+          </button>
+          <div v-else class="space-y-2">
+            <div class="flex items-center gap-2 p-2 bg-red-50 rounded-lg text-red-700 text-sm">
+              <AlertTriangle class="w-4 h-4 flex-shrink-0" />
+              <span>将清除所有学习记录和奖励数据，不可恢复！</span>
+            </div>
+            <div class="flex gap-2">
+              <button
+                @click="handleClear"
+                class="flex-1 p-2 rounded-xl bg-red-500 text-white font-medium hover:bg-red-600 transition-colors text-sm"
+              >确认清除</button>
+              <button
+                @click="showClearConfirm = false"
+                class="flex-1 p-2 rounded-xl bg-gray-100 text-gray-600 font-medium hover:bg-gray-200 transition-colors text-sm"
+              >取消</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

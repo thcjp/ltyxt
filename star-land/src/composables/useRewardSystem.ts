@@ -36,6 +36,32 @@ export function useRewardSystem() {
     return { stars }
   }
 
+  // 考试奖励（期中/期末）
+  function rewardForExam(accuracy: number, examType: 'midterm' | 'final') {
+    const multiplier = examType === 'final' ? 3 : 2
+    let stars = 0
+    let diamonds = 0
+    if (accuracy >= 95) {
+      stars = 20 * multiplier
+      diamonds = 6 * multiplier
+    } else if (accuracy >= 80) {
+      stars = 15 * multiplier
+      diamonds = 4 * multiplier
+    } else if (accuracy >= 60) {
+      stars = 10 * multiplier
+      diamonds = 2 * multiplier
+    } else {
+      stars = 5 * multiplier
+      diamonds = 0
+    }
+    const examName = examType === 'final' ? '期末考试' : '期中考试'
+    rewardStore.addStars(stars, `${examName}（正确率${accuracy}%）`, 'lesson')
+    if (diamonds > 0) {
+      rewardStore.addDiamonds(diamonds, `${examName}（正确率${accuracy}%）`, 'lesson')
+    }
+    return { stars, diamonds }
+  }
+
   // 检查成就
   function checkAchievements() {
     const totalCompleted = progressStore.totalCompleted
@@ -51,6 +77,7 @@ export function useRewardSystem() {
   return {
     rewardForLesson,
     rewardForCheckIn,
+    rewardForExam,
     checkAchievements,
   }
 }
