@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, onMounted, nextTick } from 'vue'
+import { computed, ref, onMounted, watch, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { getExam, type Exam, type ExamQuestion } from '@/data/exams'
 import { useStudyStore } from '@/stores/study'
@@ -119,6 +119,11 @@ function startExam() {
   correctCount.value = 0
   totalAnswered.value = 0
   wrongAnswers.value = []
+  selectedAnswer.value = ''
+  showResult.value = false
+  isCorrect.value = false
+  // 初始化第一题的选项打乱
+  nextTick(() => onQuestionChange())
 }
 
 function retryExam() {
@@ -129,11 +134,12 @@ function retryExam() {
   wrongAnswers.value = []
   selectedAnswer.value = ''
   showResult.value = false
+  isCorrect.value = false
 }
 
 // 监听题目切换，打乱选项
 function onQuestionChange() {
-  const q = currentQuestion.value
+  const q = exam.value?.questions[currentIndex.value]
   if (q && q.type === 'choice' && q.options && q.options.length > 1) {
     shuffledOptions.value = shuffleArray(q.options)
   } else {
@@ -141,11 +147,21 @@ function onQuestionChange() {
   }
   selectedAnswer.value = ''
   showResult.value = false
+  isCorrect.value = false
 }
 
-// 用 watch 替代
-import { watch } from 'vue'
-watch(currentIndex, onQuestionChange, { immediate: false })
+// 跳过当前题（用于拖拽题等复杂题型回退）
+function skipQuestion() {
+  if (showResult.value) return
+  showResult.value = true
+  isCorrect.value = false
+  totalAnswered.value++
+  if (currentQuestion.value) {
+    wrongAnswers.value.push({ question: currentQuestion.value, userAnswer: '（跳过）' })
+  }
+}
+
+watch(currentIndex, onQuestionChange)
 
 onMounted(() => {
   if (exam.value) {
@@ -264,6 +280,17 @@ const starLevel = computed(() => accuracy.value >= 95 ? 3 : accuracy.value >= 80
         <div v-if="currentQuestion.type === 'flashcard'" class="text-center">
           <div class="text-2xl font-bold text-gray-700 mb-2">{{ currentQuestion.question }}</div>
           <button v-if="!showResult" @click="selectAnswer(currentQuestion.answer)" class="btn-secondary">显示答案</button>
+        </div>
+
+        <!-- 拖拽题（简化：显示为判断题，跳过直接判错） -->
+        <div v-if="currentQuestion.type === 'drag'" class="text-center">
+          <p class="text-sm text-gray-500 mb-3">此题为拖拽题，在考试中暂不支持操作</p>
+          <button v-if="!showResult" @click="skipQuestion" class="btn-secondary">跳过（计为错题）</button>
+        </div>
+
+        <!-- 跳过按钮（所有题型通用兜底） -->
+        <div v-if="!showResult" class="mt-3 text-center">
+          <button @click="skipQuestion" class="text-xs text-gray-400 hover:text-gray-600 underline">跳过此题</button>
         </div>
 
         <!-- 结果反馈 -->

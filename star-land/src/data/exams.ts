@@ -31,10 +31,12 @@ function getUnits(subject: Subject, grade: number) {
   return data || []
 }
 
-// 从题目池中随机抽取N道题
+// 从题目池中随机抽取N道题（仅抽取适合考试的选择题和填空题）
 function sampleQuestions(pool: ExamQuestion[], n: number): ExamQuestion[] {
-  const shuffled = [...pool].sort(() => Math.random() - 0.5)
-  return shuffled.slice(0, Math.min(n, pool.length))
+  // 过滤掉不适合考试的题型：拖拽题、闪卡题
+  const examSuitable = pool.filter(q => q.type === 'choice' || q.type === 'fill')
+  const shuffled = [...examSuitable].sort(() => Math.random() - 0.5)
+  return shuffled.slice(0, Math.min(n, shuffled.length))
 }
 
 // 生成期中考试（前4个单元）

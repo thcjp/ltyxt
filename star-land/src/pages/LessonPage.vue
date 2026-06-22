@@ -8,7 +8,7 @@ import { useSettingsStore } from '@/stores/settings'
 import { useRewardSystem } from '@/composables/useRewardSystem'
 import { useSpeech } from '@/composables/useSpeech'
 import { gsap } from 'gsap'
-import { ArrowLeft, ArrowRight, Users, Star, ChevronRight, CheckCircle, XCircle, Lightbulb, BookOpen, PenTool, Rocket, Volume2, Home } from 'lucide-vue-next'
+import { ArrowLeft, ArrowRight, Users, Star, ChevronRight, CheckCircle, XCircle, Lightbulb, BookOpen, PenTool, Rocket, Volume2, Home, Headphones, Zap, Grid3X3, Route, Hash, Gamepad2 } from 'lucide-vue-next'
 import ContentBlockRenderer from '@/components/animation/ContentBlockRenderer.vue'
 import type { KnowledgeLink, VideoResource } from '@/types'
 import CardFlip from '@/components/animation/CardFlip.vue'
@@ -16,6 +16,12 @@ import SpeechButton from '@/components/animation/SpeechButton.vue'
 import DragQuestion from '@/components/animation/DragQuestion.vue'
 import WritingPractice from '@/components/WritingPractice.vue'
 import PhonicsPractice from '@/components/PhonicsPractice.vue'
+import DictationPractice from '@/components/DictationPractice.vue'
+import LargeNumberReading from '@/components/LargeNumberReading.vue'
+import ShapePuzzle from '@/components/ShapePuzzle.vue'
+import ShortestPath from '@/components/ShortestPath.vue'
+import NumberMaze from '@/components/NumberMaze.vue'
+import SchulteGrid from '@/components/SchulteGrid.vue'
 import { expandQuestions } from '@/composables/useVariantQuestions'
 import { getVideoResources } from '@/data/math/mathGrade1Videos'
 import { generateVideoResources } from '@/data/videoResourceGenerator'
@@ -194,6 +200,20 @@ const showPhonicsPractice = ref(false)
 
 function openPhonicsPractice() {
   showPhonicsPractice.value = true
+}
+
+// ===== 听写练习 =====
+const showDictationPractice = ref(false)
+
+function openDictationPractice() {
+  showDictationPractice.value = true
+}
+
+// ===== 数学趣味练习 =====
+const showMathGame = ref<'largeNumber' | 'shapePuzzle' | 'shortestPath' | 'numberMaze' | 'schulteGrid' | null>(null)
+
+function openMathGame(game: 'largeNumber' | 'shapePuzzle' | 'shortestPath' | 'numberMaze' | 'schulteGrid') {
+  showMathGame.value = game
 }
 
 // 阶段配置
@@ -761,6 +781,31 @@ onUnmounted(() => {
           @close="showWritingPractice = false"
         />
 
+        <!-- 语文听写练习入口 -->
+        <div v-if="subject === 'chinese'" class="card bg-red-50 border-2 border-red-200 mt-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <Headphones class="w-5 h-5 text-red-500" />
+              <div>
+                <p class="font-title text-base text-red-700">汉字听写</p>
+                <p class="text-xs text-red-500">听读音写汉字，训练听写能力</p>
+              </div>
+            </div>
+            <button @click="openDictationPractice" class="px-4 py-2 bg-red-500 text-white rounded-xl font-medium hover:bg-red-600 transition-colors text-sm">
+              开始听写
+            </button>
+          </div>
+        </div>
+
+        <!-- 听写练习弹窗 -->
+        <DictationPractice
+          v-if="showDictationPractice && (subject === 'chinese' || subject === 'english')"
+          :subject="(subject as 'chinese' | 'english')"
+          :grade="grade"
+          :lesson-id="lessonId"
+          @close="showDictationPractice = false"
+        />
+
         <!-- 英语自然拼读练习入口 -->
         <div v-if="subject === 'english'" class="card bg-blue-50 border-2 border-blue-200 mt-4">
           <div class="flex items-center justify-between">
@@ -783,6 +828,74 @@ onUnmounted(() => {
           :grade="grade"
           @close="showPhonicsPractice = false"
         />
+
+        <!-- 英语听写练习入口 -->
+        <div v-if="subject === 'english'" class="card bg-cyan-50 border-2 border-cyan-200 mt-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <Headphones class="w-5 h-5 text-cyan-500" />
+              <div>
+                <p class="font-title text-base text-cyan-700">单词听写 Dictation</p>
+                <p class="text-xs text-cyan-500">Listen and spell the words</p>
+              </div>
+            </div>
+            <button @click="openDictationPractice" class="px-4 py-2 bg-cyan-500 text-white rounded-xl font-medium hover:bg-cyan-600 transition-colors text-sm">
+              开始听写
+            </button>
+          </div>
+        </div>
+
+        <!-- 数学趣味练习入口 -->
+        <div v-if="subject === 'math'" class="space-y-3 mt-4">
+          <div class="flex items-center gap-2 mb-2">
+            <Gamepad2 class="w-5 h-5 text-green-600" />
+            <h3 class="font-title text-base text-green-700">数学趣味练习</h3>
+          </div>
+          <div class="grid grid-cols-2 gap-2">
+            <button @click="openMathGame('largeNumber')" class="card bg-orange-50 border-2 border-orange-200 p-3 text-left hover:bg-orange-100 transition-colors">
+              <div class="flex items-center gap-2 mb-1">
+                <Hash class="w-4 h-4 text-orange-500" />
+                <span class="font-title text-sm text-orange-700">大数读法</span>
+              </div>
+              <p class="text-xs text-orange-500">听数字读音，写出中文读法</p>
+            </button>
+            <button @click="openMathGame('shapePuzzle')" class="card bg-indigo-50 border-2 border-indigo-200 p-3 text-left hover:bg-indigo-100 transition-colors">
+              <div class="flex items-center gap-2 mb-1">
+                <Grid3X3 class="w-4 h-4 text-indigo-500" />
+                <span class="font-title text-sm text-indigo-700">图形拼搭</span>
+              </div>
+              <p class="text-xs text-indigo-500">用形状块拼出目标图形</p>
+            </button>
+            <button @click="openMathGame('shortestPath')" class="card bg-green-50 border-2 border-green-200 p-3 text-left hover:bg-green-100 transition-colors">
+              <div class="flex items-center gap-2 mb-1">
+                <Route class="w-4 h-4 text-green-500" />
+                <span class="font-title text-sm text-green-700">最短路径</span>
+              </div>
+              <p class="text-xs text-green-500">避开障碍找最短路径</p>
+            </button>
+            <button @click="openMathGame('numberMaze')" class="card bg-purple-50 border-2 border-purple-200 p-3 text-left hover:bg-purple-100 transition-colors">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-lg">🌀</span>
+                <span class="font-title text-sm text-purple-700">数字迷宫</span>
+              </div>
+              <p class="text-xs text-purple-500">沿数字路径走出迷宫</p>
+            </button>
+            <button @click="openMathGame('schulteGrid')" class="card bg-yellow-50 border-2 border-yellow-200 p-3 text-left hover:bg-yellow-100 transition-colors col-span-2">
+              <div class="flex items-center gap-2 mb-1">
+                <Zap class="w-4 h-4 text-yellow-500" />
+                <span class="font-title text-sm text-yellow-700">舒尔特方格</span>
+              </div>
+              <p class="text-xs text-yellow-500">按顺序点击数字，训练注意力</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- 数学趣味练习弹窗 -->
+        <LargeNumberReading v-if="showMathGame === 'largeNumber'" :grade="grade" @close="showMathGame = null" />
+        <ShapePuzzle v-if="showMathGame === 'shapePuzzle'" :grade="grade" @close="showMathGame = null" />
+        <ShortestPath v-if="showMathGame === 'shortestPath'" :grade="grade" @close="showMathGame = null" />
+        <NumberMaze v-if="showMathGame === 'numberMaze'" :grade="grade" @close="showMathGame = null" />
+        <SchulteGrid v-if="showMathGame === 'schulteGrid'" :grade="grade" @close="showMathGame = null" />
 
         <div class="card bg-yellow-50 border border-yellow-200 mt-4">
           <div class="flex items-center justify-between mb-2">

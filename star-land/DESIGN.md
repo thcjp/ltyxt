@@ -329,28 +329,35 @@ interface Lesson {
 ### 3.5 视频资源系统
 
 #### 3.5.1 设计理念
-早期版本维护 360 条硬编码视频直链，存在易失效（视频下架/链接变更）的严重问题。重构为**动态搜索链接生成**架构，搜索链接稳定可靠，不会因单个视频下架而失效。
+采用**优先级递进**架构：优先使用真实直链（数学一年级有13个课时的网易公开课直链），无直链时回退到动态搜索链接生成。搜索链接稳定可靠，不会因单个视频下架而失效。
 
-#### 3.5.2 动态生成架构
+#### 3.5.2 优先级架构
 
 ```
 课时学习页 (LessonPage)
    │
-   ├── 调用 generateVideoResources(subject, grade, lessonId, lessonTitle)
+   ├── 1. 优先：课程自带 videoResources（若 lesson.videoResources 存在）
    │
-   ▼
-videoResourceGenerator.ts (入口)
+   ├── 2. 数学一年级：getVideoResources(lessonId)
+   │   │   → mathGrade1Videos.ts（含13个真实直链 + 27个搜索链接）
+   │   │   → 真实直链：网易公开课具体视频页（open.163.com/newview/movie/free?pid=...&mid=...）
+   │   │   → 搜索链接：国家智慧教育平台搜索页（zxx.edu.cn/syncResource/search?keyword=...）
    │
-   ├── 优先调用 getDirectLinkResource(lessonId, lessonTitle)
-   │   │
-   │   ▼
-   │   videoDirectLinks.ts
-   │   ├── parseLessonId(lessonId)  → 解析学科(mce)+年级
-   │   ├── 构建搜索关键词：年级 + 学科 + 课时标题
-   │   └── 生成 3 个渠道的搜索链接
-   │
-   └── 无匹配时回退：生成网易公开课搜索链接
+   └── 3. 其他学科年级：generateVideoResources(subject, grade, lessonId, lessonTitle)
+       │
+       ▼
+   videoResourceGenerator.ts (入口)
+       │
+       └── 调用 getDirectLinkResource(lessonId, lessonTitle)
+           │
+           ▼
+       videoDirectLinks.ts
+       ├── parseLessonId(lessonId)  → 解析学科(mce)+年级
+       ├── 构建搜索关键词：年级 + 学科 + 课时标题
+       └── 生成 3 个渠道的搜索链接
 ```
+
+**关键修复**：早期版本 `getDirectLinkResource` 被误放在 `getVideoResources` 之前，导致数学一年级的真实直链被搜索链接截断（沦为死代码）。现已修正优先级：数学一年级专属直链 > 通用搜索链接。
 
 #### 3.5.3 三大免费视频渠道
 
