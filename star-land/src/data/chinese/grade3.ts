@@ -97,7 +97,7 @@ export const chineseGrade3: Unit[] = [
         title: '花的学校',
         order: 2,
         content: [
-                    { type: 'example', content: '荒(huāng)\n偏旁：艹\n本义：荒芜\n引申义：荒野、荒凉\n组词：荒野、荒凉\n儿歌：草头芒为荒无人烟', label: '生字详解', animationType: 'typewriter' },
+                    { type: 'example', content: '荒(huāng)\n偏旁：艹\n本义：荒芜\n引申义：荒野、荒凉\n组词：荒野、荒凉\n儿歌：草头亡川为荒无人烟', label: '生字详解', animationType: 'typewriter' },
           { type: 'example', content: '笛(dí)\n偏旁：竹\n本义：管乐器\n引申义：笛子、竹笛\n组词：笛子、竹笛\n儿歌：竹由为笛声悠扬', label: '生字详解', animationType: 'typewriter' },
           { type: 'example', content: '花的学校\n释义：泰戈尔的诗歌\n网络用法：花也有学校太有趣了！\n典故：泰戈尔想象花的世界\n趣味表达：花的学校是自然的课堂', label: '生词详解', animationType: 'bounce' },
           { type: 'example', content: '拟人\n释义：把事物当人来写\n网络用法：拟人让文章更生动！\n典故：拟人是常用的修辞手法\n趣味表达：拟人是给万物赋予灵魂', label: '生词详解', animationType: 'bounce' },
@@ -172,10 +172,10 @@ export const chineseGrade3: Unit[] = [
           {
             id: 'c3u1l2q7',
             type: 'fill',
-            question: '回顾前面学过的知识：写日记的格式是什么？',
-            answer: '日期天气正文',
-            hint: '[日记格式]（语文三年级-第1单元）',
-            explanation: '日记的格式是先写日期和天气，再写正文内容。'
+            question: '回顾前面学过的知识：在学校遇到不懂的问题应该怎么办？',
+            answer: '不懂就要问',
+            hint: '[学习态度]（语文三年级-第1单元）',
+            explanation: '本单元学到"不懂就要问"，遇到不懂的问题要勇于提问。'
           }
         ]
       },
@@ -261,7 +261,7 @@ export const chineseGrade3: Unit[] = [
             type: 'fill',
             question: '回顾前面学过的知识："咏鹅"的作者是谁？',
             answer: '骆宾王',
-            hint: '[古诗作者]（语文三年级-第1单元）',
+            hint: '[古诗作者]（语文一年级-第8单元）',
             explanation: '"咏鹅"是唐代诗人骆宾王七岁时写的诗。'
           }
         ]
@@ -516,10 +516,10 @@ export const chineseGrade3: Unit[] = [
           {
             id: 'c3u2l1q7',
             type: 'fill',
-            question: '回顾前面学过的知识：写日记的格式是什么？',
-            answer: '日期天气正文',
-            hint: '[日记格式]（语文三年级-第1单元）',
-            explanation: '日记的格式是先写日期和天气，再写正文内容。'
+            question: '回顾前面学过的知识：《山行》中"远上寒山石径斜"的"寒山"指什么季节的山？',
+            answer: '秋天',
+            hint: '[古诗理解]（语文三年级-第2单元）',
+            explanation: '"寒山"指秋天的山，因为秋天天气转凉，所以称为寒山。'
           }]
       },
       {
@@ -550,10 +550,10 @@ export const chineseGrade3: Unit[] = [
             id: 'c3u2l2q1',
             type: 'choice',
             question: '"荷尽已无擎雨盖"描写的是什么季节？',
-            options: ['夏天', '初冬', '春天'],
-            answer: '初冬',
+            options: ['夏天', '秋末冬初', '春天'],
+            answer: '秋末冬初',
             hint: '荷花什么时候凋谢',
-            explanation: '荷花凋谢、菊花也快谢了，这是初冬的景象。'
+            explanation: '荷花凋谢、菊花也快谢了，这是秋末冬初的景象。'
           },
           {
             id: 'c3u2l2q2',
@@ -603,9 +603,9 @@ export const chineseGrade3: Unit[] = [
             id: 'c3u2l2q7',
             type: 'fill',
             question: '回顾前面学过的知识："赠刘景文"描写的是哪个季节？',
-            answer: '秋天',
+            answer: '秋末冬初',
             hint: '[古诗内容]（语文三年级-第2单元）',
-            explanation: '"赠刘景文"描写的是秋天的景色，橙黄橘绿正是秋天的景象。'
+            explanation: '"赠刘景文"描写的是秋末冬初的景色，橙黄橘绿正是这个时节的景象。'
           }
         ]
       },
@@ -689,10 +689,10 @@ export const chineseGrade3: Unit[] = [
           {
             id: 'c3u2l3q7',
             type: 'fill',
-            question: '回顾前面学过的知识：写关于朋友的作文要注意什么？',
-            answer: '写出真情实感',
+            question: '回顾前面学过的知识：写景作文要注意什么？',
+            answer: '观察顺序',
             hint: '[写作技巧]（语文三年级-第2单元）',
-            explanation: '写关于朋友的作文要写出真情实感，用具体事例表现友谊。'
+            explanation: '写景作文要注意观察顺序，可以由远到近、由上到下，把景物写清楚。'
           }
         ]
       },
@@ -717,19 +717,19 @@ export const chineseGrade3: Unit[] = [
           {
             id: 'c3u2l4q1',
             type: 'choice',
-            question: '本单元关于友谊主题，第1课的重点知识是什么？',
-            options: ['友谊主题', '生字学习', '古诗背诵'],
-            answer: '友谊主题',
-            hint: '想想本单元关于友谊的内容',
-            explanation: '本单元第1课重点学习友谊主题，理解朋友之间的真挚情感。'
+            question: '本单元关于写景古诗，第1课《山行》的重点知识是什么？',
+            options: ['写景古诗', '生字学习', '寓言故事'],
+            answer: '写景古诗',
+            hint: '想想《山行》描写了什么',
+            explanation: '本单元第1课重点学习写景古诗，通过《山行》感受秋天山景的美丽。'
           },
           {
             id: 'c3u2l4q2',
             type: 'fill',
             question: '《赠刘景文》中，"最是橙黄橘绿时"描写的是哪个季节？___',
-            answer: '秋天',
+            answer: '秋末冬初',
             hint: '回顾本单元内容',
-            explanation: '《赠刘景文》描写的是秋天的景色，橙黄橘绿正是秋天的景象。'
+            explanation: '《赠刘景文》描写的是秋末冬初的景色，橙黄橘绿正是秋末冬初的景象。'
           },
           {
             id: 'c3u2l4q3',

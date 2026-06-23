@@ -180,7 +180,7 @@ export const chineseGrade1: Unit[] = [
           {
             id: 'c1u1l2q6',
             type: 'choice',
-            question: '给"大"字加一笔能变成什么字？',
+            question: '给"大"字加一横能变成什么字？',
             options: ['天', '太', '木'],
             answer: '天',
             hint: '在"大"字上面加一横',
@@ -523,7 +523,7 @@ export const chineseGrade1: Unit[] = [
             question: '【期末真题】"得(dé děi)走得(de děi)快一些"，正确的读音是？',
             options: ['dé děi', 'děi de', 'dé de', 'děi děi'],
             answer: 'děi de',
-            hint: '"得"表示"必须"读děi，"得"表示走路读de',
+            hint: '"得"表示"必须"读děi，"得"作补语助词读de（轻声）',
             explanation: '"我得(děi)走得(de)快一些"——"得"表示必须读děi，轻声读de。这是期末常考的多音字题！'
           },
           {
@@ -2333,7 +2333,7 @@ export const chineseGrade1: Unit[] = [
         order: 1,
         content: [
           { type: 'example', content: '雪(xuě)\n偏旁：雨\n本义：天空中落下的白色冰晶\n引申义：下雪、雪白\n组词：下雪、雪人\n儿歌：雨彐为雪白茫茫', label: '生字详解', animationType: 'typewriter' },
-          { type: 'example', content: '画(huà)\n偏旁：一\n本义：图画\n引申义：画画、画面\n组词：画画、图画\n儿歌：一田为画绘美景', label: '生字详解', animationType: 'typewriter' },
+          { type: 'example', content: '画(huà)\n偏旁：田\n本义：图画\n引申义：画画、画面\n组词：画画、图画\n儿歌：一田为画绘美景', label: '生字详解', animationType: 'typewriter' },
           { type: 'example', content: '下雪\n释义：天空中降下雪花\n网络用法：下雪啦！可以堆雪人了！\n典故：古人以雪兆丰年\n趣味表达：下雪是天空撒白糖', label: '生词详解', animationType: 'bounce' },
           { type: 'example', content: '冬眠\n释义：动物在冬天长时间睡眠\n网络用法：青蛙冬眠呼噜噜！\n典故：古人发现动物冬眠现象\n趣味表达：冬眠是动物的超长午觉', label: '生词详解', animationType: 'bounce' },
 { type: 'poem', content: '雪地里的小画家\n\n下雪啦，下雪啦！\n雪地里来了一群小画家。\n小鸡画竹叶，小狗画梅花，\n小鸭画枫叶，小马画月牙。\n不用颜料不用笔，\n几步就成一幅画。\n青蛙为什么没参加？\n他在洞里睡着啦。', label: '课文原文', animationType: 'reveal' },

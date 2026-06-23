@@ -81,9 +81,9 @@ export const mathGrade3: Unit[] = [
           { id: 'm3u1l3q1', type: 'choice', question: '小红7:30起床，8:00出门，她用了多长时间准备？', options: ['20分钟', '30分钟', '40分钟', '1小时'], answer: '30分钟', hint: '8:00-7:30=？', explanation: '8:00-7:30=30分钟，小红用了30分钟准备。' },
           { id: 'm3u1l3q2', type: 'fill', question: '一节课40分钟，9:00开始，___结束', answer: '9:40', hint: '9:00加40分钟', explanation: '9:00+40分钟=9:40，9:40下课。' },
           { id: 'm3u1l3q3', type: 'flashcard', question: '小明做作业用了1小时20分，合多少分钟？', answer: '80', hint: '1小时=60分', explanation: '1小时20分=60+20=80分钟。' },
-          { id: 'm3u1l3q4', type: 'choice', question: '小红上午上了3节课，每节课40分钟，课间休息10分钟，从8:00开始上课，第一节下课后到第二节课结束经过了多长时间？', options: ['50分钟', '80分钟', '90分钟', '120分钟'], answer: '90分钟', hint: '一节课40分+休息10分+一节课40分', explanation: '第一节课40分+休息10分+第二节课40分=90分钟。' },
+          { id: 'm3u1l3q4', type: 'choice', question: '小红上午上了3节课，每节课40分钟，课间休息10分钟，从8:00开始上课，到第二节课结束经过了多长时间？', options: ['50分钟', '80分钟', '90分钟', '120分钟'], answer: '90分钟', hint: '一节课40分+休息10分+一节课40分', explanation: '第一节课40分+休息10分+第二节课40分=90分钟。' },
           { id: 'm3u1l3q5', type: 'fill', question: '小明7:20吃早餐，用了25分钟，吃完时是___', answer: '7:45', hint: '7:20+25分=？', explanation: '7:20+25分钟=7:45，吃完时是7:45。' },
-          { id: 'm3u1l3q6', type: 'choice', question: '学校上午4节课，每节课40分钟，课间休息10分钟（共3个课间），大课间休息20分钟，上午一共在校多长时间？', options: ['2小时30分', '2小时50分', '3小时10分', '3小时20分'], answer: '3小时20分', hint: '4×40+2×10+20=？再换算', explanation: '4×40=160分，2个普通课间2×10=20分，大课间20分，共200分=3小时20分。' },
+          { id: 'm3u1l3q6', type: 'choice', question: '学校上午4节课，每节课40分钟，课间休息10分钟，大课间休息20分钟（共3个课间，其中1个是大课间），上午一共在校多长时间？', options: ['2小时30分', '2小时50分', '3小时10分', '3小时20分'], answer: '3小时20分', hint: '4×40+2×10+20=？再换算', explanation: '4×40=160分，2个普通课间2×10=20分，大课间20分，共200分=3小时20分。' },
           { id: 'm3u1l3q7', type: 'fill', question: '56-29=___', answer: '27', hint: '[100以内退位减法]（数学-100以内减法-第2课）', explanation: '56-29=27，个位6-9不够减借位，16-9=7，十位4-2=2。' }
         ]
       },
@@ -109,7 +109,7 @@ export const mathGrade3: Unit[] = [
           { id: 'm3u1l4q4', type: 'fill', question: '一场电影从2:00看到3:45，看了___分钟', answer: '105', hint: '1小时45分=？分', explanation: '1小时45分=60+45=105分钟。' },
           { id: 'm3u1l4q5', type: 'choice', question: '秒针从12走到6，经过了多少秒？', options: ['6秒', '25秒', '30秒', '35秒'], answer: '30秒', hint: '从12到6走了几大格？', explanation: '从12到6走了6大格，6×5=30秒。' },
           { id: 'm3u1l4q6', type: 'fill', question: '小红上午在校3小时10分，合___分钟', answer: '190', hint: '3小时=180分', explanation: '3小时10分=180+10=190分钟。' },
-          { id: 'm3u1l4q7', type: 'choice', question: '下面哪个时间最接近1分钟？', options: ['看一页书', '跑100米', '吃一顿饭', '睡一个午觉'], answer: '跑100米', hint: '[时分的认识]（数学-时、分、秒-第1课）想想1分钟大约能做什么', explanation: '跑100米大约需要15-20秒，比较接近1分钟内；看一页书通常更短，吃饭和午觉远超1分钟。' }
+          { id: 'm3u1l4q7', type: 'choice', question: '下面哪个时间最接近1分钟？', options: ['跑100米', '看一页书', '吃一顿饭', '睡一个午觉'], answer: '看一页书', hint: '[时分的认识]（数学-时、分、秒-第1课）想想1分钟大约能做什么', explanation: '看一页书大约需要1-2分钟，最接近1分钟；跑100米约20-30秒，吃饭和午觉远超1分钟。' }
         ]
       },
       {
@@ -376,7 +376,7 @@ export const mathGrade3: Unit[] = [
           { id: 'm3u3l3q3', type: 'flashcard', question: '快速换算：4000米=几千米？', answer: '4', hint: '4000÷1000=？', explanation: '4000÷1000=4，所以4000米=4千米。' },
           { id: 'm3u3l3q4', type: 'choice', question: '一根绳子长3米6分米，合多少分米？', options: ['36分米', '9分米', '306分米', '60分米'], answer: '36分米', hint: '3米=30分米，再加6分米', explanation: '3米=30分米，30+6=36分米。' },
           { id: 'm3u3l3q5', type: 'fill', question: '80毫米=___厘米', answer: '8', hint: '80÷10=？', explanation: '80÷10=8，80毫米=8厘米。' },
-          { id: 'm3u3l3q6', type: 'choice', question: '小明身高135厘米，小华身高1分米3厘米，谁更高？', options: ['小明高', '小华高', '一样高', '无法比较'], answer: '小明高', hint: '1分米3厘米=？厘米', explanation: '1分米3厘米=13厘米，135厘米>13厘米，小明更高。' },
+          { id: 'm3u3l3q6', type: 'choice', question: '小明身高135厘米，小华身高1米3分米，谁更高？', options: ['小明高', '小华高', '一样高', '无法比较'], answer: '小明高', hint: '1米3分米=？厘米', explanation: '1米3分米=130厘米，135厘米>130厘米，小明更高。' },
           { id: 'm3u3l3q7', type: 'fill', question: '3米=___厘米', answer: '300', hint: '[厘米和米]（数学-长度单位-第1课）', explanation: '1米=100厘米，3米=300厘米。' }
         ]
       },
@@ -710,7 +710,7 @@ export const mathGrade3: Unit[] = [
           { id: 'm3u5l4q2', type: 'fill', question: '56×4=___', answer: '224', hint: '注意进位', explanation: '个位6×4=24写4进2，十位5×4+2=22，56×4=224。' },
           { id: 'm3u5l4q3', type: 'choice', question: '0×365=？', options: ['0', '365', '3650', '1'], answer: '0', hint: '0乘任何数等于几？', explanation: '0乘任何数都等于0，所以0×365=0。' },
           { id: 'm3u5l4q4', type: 'fill', question: '205×3=___', answer: '615', hint: '中间有0的乘法', explanation: '个位5×3=15写5进1，十位0×3+1=1，百位2×3=6，205×3=615。' },
-          { id: 'm3u5l4q5', type: 'choice', question: '下面哪个算式的积最大？', options: ['99×2', '48×4', '66×3', '55×3'], answer: '99×2', hint: '分别算一算', explanation: '99×2=198，48×4=192，66×3=198，55×3=165。99×2=198最大。' },
+          { id: 'm3u5l4q5', type: 'choice', question: '下面哪个算式的积最大？', options: ['99×2', '48×4', '65×3', '55×3'], answer: '99×2', hint: '分别算一算', explanation: '99×2=198，48×4=192，65×3=195，55×3=165。99×2=198最大。' },
           { id: 'm3u5l4q6', type: 'fill', question: '一个数乘7等于56，这个数是___', answer: '8', hint: '56÷7=？', explanation: '56÷7=8，这个数是8。' },
           { id: 'm3u5l4q7', type: 'choice', question: '【期中真题】250×4的积的末尾有几个0？', options: ['1个', '2个', '3个', '4个'], answer: '3个', hint: '[乘法口诀]（数学-乘法口诀-第1课）250×4=？', explanation: '250×4=1000，末尾有3个0。' }
         ]
@@ -770,7 +770,7 @@ export const mathGrade3: Unit[] = [
           { id: 'm3u6l1q4', type: 'choice', question: '下面哪个图形是四边形？', options: ['三角形', '圆形', '长方形', '五角星'], answer: '长方形', hint: '四边形有4条边', explanation: '长方形有4条边和4个角，是四边形。' },
           { id: 'm3u6l1q5', type: 'fill', question: '正方形是特殊的___形', answer: '长方', acceptableAnswers: ['矩形'], hint: '正方形也满足长方形的特征', explanation: '正方形4条边都相等，对边也相等，4个直角，所以是特殊的长方形。' },
           { id: 'm3u6l1q6', type: 'choice', question: '一个长方形的长是8厘米，宽是5厘米，如果剪去一个最大的正方形，正方形的边长是多少？', options: ['3厘米', '5厘米', '8厘米', '13厘米'], answer: '5厘米', hint: '最大的正方形边长不能超过宽', explanation: '最大的正方形边长等于长方形的宽，即5厘米。' },
-          { id: 'm3u6l1q7', type: 'fill', question: '3+3+3+3=___，也可以写成乘法算式___', answer: '12和3×4=12', hint: '[乘法的意义]（数学-表内乘法-第1课）', explanation: '3+3+3+3=12，乘法算式3×4=12。' }
+          { id: 'm3u6l1q7', type: 'fill', question: '3+3+3+3=___，改写成乘法算式3×___=12', answer: '12，4', hint: '[乘法的意义]（数学-表内乘法-第1课）', explanation: '3+3+3+3=12，乘法算式3×4=12，表示4个3相加。' }
         ]
       },
       {
@@ -1011,7 +1011,7 @@ export const mathGrade3: Unit[] = [
           { id: 'm3u7l5q1', type: 'choice', question: '一根彩带长1米，用去了3/5米，还剩多少米？', options: ['1/5米', '2/5米', '3/5米', '4/5米'], answer: '2/5米', hint: '1-3/5=？', explanation: '5/5-3/5=2/5，还剩2/5米。' },
           { id: 'm3u7l5q2', type: 'fill', question: '一块地的3/8种菜，2/8种花，种菜和种花一共占这块地的___', answer: '5/8', hint: '3/8+2/8=？', explanation: '3/8+2/8=5/8，一共占5/8。' },
           { id: 'm3u7l5q3', type: 'choice', question: '【期末真题】一根绳子长1米，第一次剪去2/7米，第二次剪去3/7米，两次一共剪去多少米？', options: ['1/7米', '5/7米', '6/7米', '1米'], answer: '5/7米', hint: '2/7+3/7=？', explanation: '2/7+3/7=5/7，两次一共剪去5/7米。' },
-          { id: 'm3u7l5q4', type: 'fill', question: '一个蛋糕平均分成6份，吃了4份，还剩___分之一', answer: '六', hint: '6-4=2份，2/6=？', explanation: '还剩2份，2/6，即六分之二。' },
+          { id: 'm3u7l5q4', type: 'fill', question: '一个蛋糕平均分成6份，吃了4份，还剩六分之___', answer: '二', hint: '6-4=2份，2/6=？', explanation: '还剩2份，2/6，即六分之二。' },
           { id: 'm3u7l5q5', type: 'choice', question: '小明看一本书，第一天看了全书的2/7，第二天看了全书的3/7，还剩全书的几分之几没看？', options: ['1/7', '2/7', '3/7', '5/7'], answer: '2/7', hint: '1-2/7-3/7=？', explanation: '7/7-2/7-3/7=2/7，还剩2/7没看。' },
           { id: 'm3u7l5q6', type: 'fill', question: '一瓶果汁，上午喝了3/8，下午比上午少喝了1/8，下午喝了___', answer: '2/8', hint: '3/8-1/8=？', explanation: '3/8-1/8=2/8，下午喝了2/8。' },
           { id: 'm3u7l5q7', type: 'choice', question: '一个西瓜平均分成10块，小明吃了3块，小红吃了2块，还剩几分之几？', options: ['3/10', '5/10', '2/10', '7/10'], answer: '5/10', hint: '[平均分]（数学-除法的初步-第1课）10-3-2=5块，5/10', explanation: '还剩10-3-2=5块，5/10。' }

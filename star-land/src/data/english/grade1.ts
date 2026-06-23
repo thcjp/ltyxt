@@ -1238,10 +1238,10 @@ How many + 名词复数？
           {
             id: 'e1u3l5q6',
             type: 'fill',
-            question: 'There are ____ months in a year.（12个月）',
-            answer: 'Twelve',
-            hint: '一年有几个月？',
-            explanation: 'Twelve表示12，一年有12个月'
+            question: 'I have ____ fingers on two hands.（10个手指）',
+            answer: 'Ten',
+            hint: '两只手一共有几个手指？',
+            explanation: 'Ten表示10，两只手一共有10个手指'
           },
           {
             id: 'e1u3l5q7',

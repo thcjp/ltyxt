@@ -100,7 +100,7 @@ export const chineseGrade2: Unit[] = [
         order: 2,
         content: [
                     { type: 'example', content: '冰(bīng)\n偏旁：冫\n本义：水凝固成的固体\n引申义：冰冷、冰凉\n组词：冰块、结冰\n儿歌：两点水加水成冰', label: '生字详解', animationType: 'typewriter' },
-          { type: 'example', content: '蒸(zhēng)\n偏旁：艹\n本义：水受热变成气体\n引申义：蒸发、蒸气\n组词：蒸发、蒸气\n儿歌：草头丞蒸水化气', label: '生字详解', animationType: 'typewriter' },
+          { type: 'example', content: '蒸(zhēng)\n偏旁：艹\n本义：水受热变成气体\n引申义：蒸发、蒸气\n组词：蒸发、蒸气\n儿歌：草头丞底四点蒸', label: '生字详解', animationType: 'typewriter' },
           { type: 'example', content: '水蒸气\n释义：水的气态形式\n网络用法：水蒸气看不见但摸得着！\n典故：古人烧水发现水蒸气\n趣味表达：水蒸气是水的隐身术', label: '生词详解', animationType: 'bounce' },
           { type: 'example', content: '变化\n释义：事物发生改变\n网络用法：水的变化真神奇！\n典故：古人观察自然变化\n趣味表达：变化是大自然的魔术', label: '生词详解', animationType: 'bounce' },
 { type: 'text', content: '我会变！太阳一晒，我就变成水蒸气飘上去。遇到冷风，我就变成小雨滴落下来', animationType: 'reveal' },
@@ -288,11 +288,11 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u1l4q1',
             type: 'choice',
-            question: '本单元关于秋天和季节变化，第1课的重点知识是什么？',
-            options: ['季节变化', '生字学习', '古诗背诵'],
-            answer: '季节变化',
-            hint: '想想秋天的特点',
-            explanation: '本单元第1课重点学习季节变化，了解秋天的特征和自然变化。'
+            question: '本单元关于动物成长，第1课《小蝌蚪找妈妈》的重点知识是什么？',
+            options: ['动物成长', '生字学习', '古诗背诵'],
+            answer: '动物成长',
+            hint: '想想小蝌蚪的变化',
+            explanation: '本单元第1课重点学习动物成长过程，了解小蝌蚪变成青蛙的变化。'
           },
           {
             id: 'c2u1l4q2',
@@ -613,7 +613,7 @@ export const chineseGrade2: Unit[] = [
         title: '拍手歌',
         order: 3,
         content: [
-                    { type: 'example', content: '雁(yàn)\n偏旁：隹\n本义：候鸟\n引申义：大雁、雁群\n组词：大雁、雁群\n儿歌：厂隹为雁排成行', label: '生字详解', animationType: 'typewriter' },
+                    { type: 'example', content: '雁(yàn)\n偏旁：隹\n本义：候鸟\n引申义：大雁、雁群\n组词：大雁、雁群\n儿歌：厂人隹为雁排成行', label: '生字详解', animationType: 'typewriter' },
           { type: 'example', content: '猛(měng)\n偏旁：犭\n本义：凶猛\n引申义：猛烈、勇猛\n组词：凶猛、猛虎\n儿歌：犭孟为猛力大无穷', label: '生字详解', animationType: 'typewriter' },
           { type: 'example', content: '飞翔\n释义：在空中飞\n网络用法：鸟儿自由飞翔真美！\n典故：古人梦想像鸟一样飞翔\n趣味表达：飞翔是鸟儿的超能力', label: '生词详解', animationType: 'bounce' },
           { type: 'example', content: '保护\n释义：照顾使不受伤害\n网络用法：我们要保护小动物！\n典故：古人制定保护动物的规定\n趣味表达：保护是给动物的安全帽', label: '生词详解', animationType: 'bounce' },
@@ -644,8 +644,8 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u2l3q2',
             type: 'fill',
-            question: '你拍二，我拍二，___鸡是伙伴',
-            answer: '孔',
+            question: '你拍二，我拍二，孔雀___是伙伴',
+            answer: '锦鸡',
             hint: '一种漂亮的鸟',
             explanation: '原句"你拍二，我拍二，孔雀锦鸡是伙伴"。'
           },
@@ -732,11 +732,11 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u2l4q3',
             type: 'choice',
-            question: '本单元关于拼音规则，第3课的重点知识是什么？',
-            options: ['拼音规则', '生字学习', '古诗背诵'],
-            answer: '拼音规则',
-            hint: '想想本单元学了哪些拼音规则',
-            explanation: '本单元第3课重点学习拼音规则，掌握拼读和声调的运用。'
+            question: '本单元关于动物保护，第3课《拍手歌》的重点知识是什么？',
+            options: ['动物保护', '生字学习', '古诗背诵'],
+            answer: '动物保护',
+            hint: '想想拍手歌的内容',
+            explanation: '本单元第3课重点学习动物保护，通过拍手歌了解保护动物的重要性。'
           },
           {
             id: 'c2u2l4q4',
@@ -1030,10 +1030,10 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u3l2q7',
             type: 'fill',
-            question: '回顾前面学过的知识："坐井观天"告诉我们什么道理？',
-            answer: '眼界要开阔',
-            hint: '[寓言道理]（语文二年级-第6单元）',
-            explanation: '"坐井观天"告诉我们不要目光短浅，要开阔眼界。'
+            question: '回顾前面学过的知识："小蝌蚪找妈妈"告诉我们什么道理？',
+            answer: '坚持不懈',
+            hint: '[课文道理]（语文二年级-第1单元）',
+            explanation: '"小蝌蚪找妈妈"告诉我们遇到困难要坚持不懈，最终一定能找到答案。'
           }
         ]
       },
@@ -1043,7 +1043,7 @@ export const chineseGrade2: Unit[] = [
         order: 3,
         content: [
                     { type: 'example', content: '信(xìn)\n偏旁：亻\n本义：诚实\n引申义：信件、相信\n组词：信件、相信\n儿歌：人言为信真可靠', label: '生字详解', animationType: 'typewriter' },
-          { type: 'example', content: '封(fēng)\n偏旁：寸\n本义：封闭\n引申义：信封、封口\n组词：信封、封口\n儿歌：寸土为封封起来', label: '生字详解', animationType: 'typewriter' },
+          { type: 'example', content: '封(fēng)\n偏旁：寸\n本义：封闭\n引申义：信封、封口\n组词：信封、封口\n儿歌：寸圭为封封起来', label: '生字详解', animationType: 'typewriter' },
           { type: 'example', content: '一封信\n释义：一封书信\n网络用法：给爸爸写一封信！\n典故：露西给爸爸写信的故事\n趣味表达：一封信是纸上的思念', label: '生词详解', animationType: 'bounce' },
           { type: 'example', content: '冷清\n释义：冷落、清静\n网络用法：爸爸不在家很冷清\n典故：露西第一封信写家里冷清\n趣味表达：冷清是没有人气的安静', label: '生词详解', animationType: 'bounce' },
 { type: 'text', content: '露西的爸爸出国了，要过半年才能回来。露西想给爸爸写一封信', animationType: 'reveal' },

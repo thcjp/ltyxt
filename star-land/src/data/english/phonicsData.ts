@@ -106,7 +106,7 @@ const cvcFamiliesGrade1: WordFamily[] = [
       { word: 'dog', cn: '狗', emoji: '🐶' },
       { word: 'log', cn: '木头', emoji: '🪵' },
       { word: 'fog', cn: '雾', emoji: '🌫️' },
-      { word: 'hop', cn: '跳跃', emoji: '🐰' },
+      { word: 'jog', cn: '慢跑', emoji: '🏃' },
     ],
   },
   {
