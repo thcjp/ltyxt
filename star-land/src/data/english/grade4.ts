@@ -2722,9 +2722,10 @@ export const englishGrade4: Unit[] = [
             id: 'e4u4l1q6',
             type: 'fill',
             question: 'They are _____ (山羊).',
-            answer: 'goat',
-            hint: '山羊的英文',
-            explanation: 'goat是山羊，They are goat.表示那些是山羊（复数goats，此处填goat词根）'
+            answer: 'goats',
+            acceptableAnswers: ['goats', 'Goats'],
+            hint: 'They are复数，山羊加s',
+            explanation: 'They are表示复数，山羊goat需要加s变成goats。They are goats.表示那些是山羊。'
           },
           {
             id: 'e4u4l1q7',

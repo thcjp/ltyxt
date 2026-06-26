@@ -113,7 +113,27 @@ const platformColors: Record<string, string> = {
 
 // 打开视频链接
 function openVideo(url: string) {
-  window.open(url, '_blank', 'noopener,noreferrer')
+  if (!url) {
+    console.warn('视频URL为空')
+    return
+  }
+  try {
+    const win = window.open(url, '_blank', 'noopener,noreferrer')
+    if (!win) {
+      // 弹窗被拦截，改用location跳转
+      const link = document.createElement('a')
+      link.href = url
+      link.target = '_blank'
+      link.rel = 'noopener noreferrer'
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    }
+  } catch (e) {
+    console.error('打开视频失败:', e)
+    // 最终回退：直接跳转
+    window.location.href = url
+  }
 }
 
 // 学习开始时间（用于计算学习时长）
