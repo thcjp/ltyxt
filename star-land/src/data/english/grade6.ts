@@ -1679,7 +1679,7 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u4l4q7',
             type: 'choice',
-            question: 'My friend is tall and ____. He is very strong.',
+            question: 'My friend is tall and ____. He can carry heavy boxes.',
             options: ['strong', 'sad', 'tired', 'hungry'],
             answer: 'strong',
             hint: '[描述朋友外貌]（英语三年级-第2单元）',
@@ -2706,7 +2706,7 @@ export const englishGrade6: Unit[] = [
             id: 'e6u7l1q2',
             type: 'choice',
             question: 'She wore a thick coat. What can you infer?',
-            options: ['It was cold.', 'It was hot.', 'It was raining.', 'It was windy day.'],
+            options: ['It was cold.', 'It was hot.', 'It was raining.', 'It was a windy day.'],
             answer: 'It was cold.',
             hint: '穿厚外套说明什么？',
             explanation: '穿厚外套推断天气冷，It was cold.从穿厚外套推断出天气冷'

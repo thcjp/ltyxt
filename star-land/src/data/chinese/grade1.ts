@@ -356,11 +356,11 @@ export const chineseGrade1: Unit[] = [
           {
             id: 'c1u1l4q6',
             type: 'choice',
-            question: '给"g"换个韵母组成新音节，最多能组几个？',
+            question: 'g和单韵母能组成几个音节？',
             options: ['3个', '4个', '6个'],
-            answer: '6个',
-            hint: 'g可以和哪些韵母相拼',
-            explanation: 'g可以和a、e、u、ua、uo、uai等韵母相拼，能组成很多音节！'
+            answer: '3个',
+            hint: 'g可以和哪些单韵母相拼',
+            explanation: 'g可以和a、e、u三个单韵母相拼，能组成3个音节！'
           },
           {
             id: 'c1u1l4q7',
@@ -1198,8 +1198,8 @@ export const chineseGrade1: Unit[] = [
             id: 'c1u3l3q6',
             type: 'choice',
             question: '【期末真题】对韵歌中"柳绿"对什么？',
-            options: ["花红","草青","天蓝"],
-            answer: '花红',
+            options: ["桃红","草青","天蓝"],
+            answer: '桃红',
             hint: '回忆课文中对仗',
             explanation: '对韵歌中"柳绿对桃红"，柳对桃，绿对红。这是期末常考题！'
           },

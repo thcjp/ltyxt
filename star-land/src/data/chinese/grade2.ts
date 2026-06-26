@@ -1145,11 +1145,11 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u3l4q1',
             type: 'choice',
-            question: '本单元关于寓言理解，第1课的重点知识是什么？',
-            options: ['寓言理解', '生字学习', '古诗背诵'],
-            answer: '寓言理解',
-            hint: '想想坐井观天和寒号鸟的故事道理',
-            explanation: '本单元第1课重点学习寓言理解，理解坐井观天等寓言故事蕴含的道理。'
+            question: '本单元关于故事理解，第1课《曹冲称象》的重点知识是什么？',
+            options: ['故事理解', '生字学习', '古诗背诵'],
+            answer: '故事理解',
+            hint: '想想曹冲称象的故事',
+            explanation: '本单元第1课《曹冲称象》重点学习故事理解，理解曹冲称象的故事内容。'
           },
           {
             id: 'c2u3l4q2',
@@ -1165,8 +1165,8 @@ export const chineseGrade2: Unit[] = [
             question: '本单元关于故事感悟，第3课的重点知识是什么？',
             options: ['故事感悟', '生字学习', '古诗背诵'],
             answer: '故事感悟',
-            hint: '想想玲玲的画和一封信告诉我们的道理',
-            explanation: '本单元第3课重点学习故事感悟，从玲玲的画等故事中体会生活道理。'
+            hint: '想想一封信告诉我们的道理',
+            explanation: '本单元第3课重点学习故事感悟，从《一封信》等故事中体会生活道理。'
           },
           {
             id: 'c2u3l4q4',
@@ -1198,10 +1198,10 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u3l4q7',
             type: 'fill',
-            question: '回顾前面学过的知识："寒号鸟"的故事告诉我们什么道理？',
-            answer: '不能懒惰',
-            hint: '[寓言道理]（语文二年级-第6单元）',
-            explanation: '"寒号鸟"告诉我们不能懒惰，要提前做好准备。'
+            question: '回顾前面学过的知识：《曹冲称象》中曹冲用什么办法称象？',
+            answer: '石头',
+            hint: '[故事内容]（语文二年级-第3单元）',
+            explanation: '曹冲用石头代替大象，通过船的吃水线来称量大象的重量。'
           }
         ]
       },
@@ -1279,10 +1279,10 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u3l5q7',
             type: 'fill',
-            question: '回顾前面学过的知识：我们学过哪篇寓言故事？写出一篇',
-            answer: '坐井观天',
-            hint: '[寓言故事]（语文二年级-第6单元）',
-            explanation: '"坐井观天"和"寒号鸟"都是寓言故事。'
+            question: '回顾前面学过的知识：《一封信》中露西写了几封信？',
+            answer: '两',
+            hint: '[故事内容]（语文二年级-第3单元）',
+            explanation: '露西给爸爸写了两封信，第二封信比第一封更积极乐观。'
           }
         ]
       }
@@ -1323,9 +1323,9 @@ export const chineseGrade2: Unit[] = [
             type: 'choice',
             question: '"白日依山尽"中"依"是什么意思？',
             options: ['依靠', '沿着', '远离'],
-            answer: '沿着',
-            hint: '太阳沿着山落下去',
-            explanation: '"依"在这里是沿着、靠着山的意思，太阳沿着山慢慢落下去了。'
+            answer: '依靠',
+            hint: '太阳靠着山落下去',
+            explanation: '"依"在这里是依傍、靠着山的意思，太阳依傍着山慢慢落下去了。'
           },
           {
             id: 'c2u4l1q2',
@@ -1574,11 +1574,11 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u4l4q1',
             type: 'choice',
-            question: '本单元关于寓言寓意，第1课的重点知识是什么？',
-            options: ['寓言寓意', '生字学习', '古诗背诵'],
-            answer: '寓言寓意',
-            hint: '想想成语故事和寓言告诉我们的道理',
-            explanation: '本单元第1课重点学习寓言寓意，理解成语故事和寓言中蕴含的深刻道理。'
+            question: '本单元关于古诗赏析，第1课《登鹳雀楼》的重点知识是什么？',
+            options: ['古诗赏析', '生字学习', '古诗背诵'],
+            answer: '古诗赏析',
+            hint: '想想登鹳雀楼这首古诗',
+            explanation: '本单元第1课《登鹳雀楼》重点学习古诗赏析，理解古诗的意思和意境。'
           },
           {
             id: 'c2u4l4q2',
@@ -1591,11 +1591,11 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u4l4q3',
             type: 'choice',
-            question: '本单元关于成语典故，第3课的重点知识是什么？',
-            options: ['成语典故', '生字学习', '古诗背诵'],
-            answer: '成语典故',
-            hint: '想想本单元学了哪些成语故事',
-            explanation: '本单元第3课重点学习成语典故，了解成语的来源和含义。'
+            question: '本单元关于景物描写，第3课《黄山奇石》的重点知识是什么？',
+            options: ['景物描写', '生字学习', '古诗背诵'],
+            answer: '景物描写',
+            hint: '想想黄山奇石描写的景色',
+            explanation: '本单元第3课《黄山奇石》重点学习景物描写，感受黄山的奇石之美。'
           },
           {
             id: 'c2u4l4q4',
@@ -1708,11 +1708,10 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u4l5q7',
             type: 'fill',
-            question: '回顾前面学过的知识：我们学过哪些成语故事？写出一个',
-            answer: '守株待兔',
-            acceptableAnswers: ['守株待兔', '亡羊补牢', '刻舟求剑', '画蛇添足'],
-            hint: '[成语故事]（语文二年级-第5单元）',
-            explanation: '我们学过"守株待兔"等成语故事。'
+            question: '回顾前面学过的知识：《登鹳雀楼》中"欲穷千里目"的下一句是什么？',
+            answer: '更上一层楼',
+            hint: '[古诗背诵]（语文二年级-第4单元）',
+            explanation: '"欲穷千里目，更上一层楼"是《登鹳雀楼》中的名句。'
           }
         ]
       }
@@ -1863,28 +1862,28 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u5l2q4',
             type: 'choice',
-            question: '"朱德的扁担"中朱德为什么也要挑粮？',
-            options: ["他没事做","他和战士们同甘共苦","他喜欢挑东西"],
-            answer: '他和战士们同甘共苦',
-            hint: '朱德是什么身份',
-            explanation: '朱德是军长，但他坚持和战士们一起挑粮，同甘共苦。'
+            question: '下列哪个是AABB式词语？',
+            options: ["干干净净","商量商量","绿油油"],
+            answer: '干干净净',
+            hint: '看看字的排列规律',
+            explanation: '"干干净净"是AABB式词语，前两个字相同，后两个字相同。'
           },
           {
             id: 'c2u5l2q5',
             type: 'fill',
-            question: '战士们把朱德的扁担___了起来',
-            answer: '藏',
-            hint: '战士们心疼朱德',
-            explanation: '战士们心疼朱德，把他的扁担藏了起来。'
+            question: 'AABB式词语"开开心心"，再写一个类似的___',
+            answer: '快快乐乐',
+            hint: '想想还有哪些AABB式词语',
+            explanation: '"快快乐乐"是AABB式词语，和"开开心心"结构相同。'
           },
           {
             id: 'c2u5l2q6',
             type: 'choice',
-            question: '【期末真题】"朱德的扁担"表现了朱德什么品质？',
-            options: ["力气大","以身作则同甘共苦","喜欢运动"],
-            answer: '以身作则同甘共苦',
-            hint: '军长和战士一起挑粮说明什么',
-            explanation: '朱德以身作则，和战士们同甘共苦，这是领导者的优秀品质。这是期末常考题！'
+            question: '【期末真题】"打扫打扫"是什么类型的词语？',
+            options: ["AABB式","ABAB式","ABB式"],
+            answer: 'ABAB式',
+            hint: '看看字的排列规律',
+            explanation: '"打扫打扫"是ABAB式词语，两个字重复一遍。这是期末常考题！'
           },
           {
             id: 'c2u5l2q7',
@@ -1958,19 +1957,19 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u5l3q5',
             type: 'fill',
-            question: '泼水节是___族的传统节日',
-            answer: '傣',
-            hint: '哪个民族过泼水节',
-            explanation: '泼水节是傣族的传统节日，人们互相泼水表示祝福。'
+            question: '"美丽"的近义词是___',
+            answer: '漂亮',
+            hint: '哪个词和美丽意思相近',
+            explanation: '"美丽"和"漂亮"意思相近，是近义词。'
           },
           {
             id: 'c2u5l3q6',
             type: 'choice',
-            question: '【期末真题】泼水节人们互相泼水表示什么？',
-            options: ["玩耍","祝福","生气"],
-            answer: '祝福',
-            hint: '泼水的含义是什么',
-            explanation: '泼水节人们互相泼水表示祝福，水象征着吉祥和幸福。这是期末常考题！'
+            question: '【期末真题】下列哪组是反义词？',
+            options: ["美丽—漂亮","大—小","开心—快乐"],
+            answer: '大—小',
+            hint: '哪组词意思相反',
+            explanation: '"大"和"小"意思相反，是反义词；"美丽—漂亮"和"开心—快乐"是近义词。这是期末常考题！'
           },
           {
             id: 'c2u5l3q7',
@@ -2003,11 +2002,11 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u5l4q1',
             type: 'choice',
-            question: '本单元关于古诗赏析，第1课的重点知识是什么？',
-            options: ['古诗赏析', '生字学习', '古诗背诵'],
-            answer: '古诗赏析',
-            hint: '想想本单元学了哪些古诗',
-            explanation: '本单元第1课重点学习古诗赏析，理解古诗的意思和意境。'
+            question: '本单元关于成语故事，第1课的重点知识是什么？',
+            options: ['成语故事', '生字学习', '古诗背诵'],
+            answer: '成语故事',
+            hint: '想想本单元学了哪些成语故事',
+            explanation: '本单元第1课重点学习成语故事，了解成语的含义和用法。'
           },
           {
             id: 'c2u5l4q2',
@@ -2020,11 +2019,11 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u5l4q3',
             type: 'choice',
-            question: '本单元关于传统文化，第3课的重点知识是什么？',
-            options: ['传统文化', '生字学习', '古诗背诵'],
-            answer: '传统文化',
-            hint: '想想本单元学了哪些传统文化知识',
-            explanation: '本单元第3课重点学习传统文化，了解中华传统文化的魅力。'
+            question: '本单元关于近义词反义词，第3课的重点知识是什么？',
+            options: ['近义词反义词', '生字学习', '古诗背诵'],
+            answer: '近义词反义词',
+            hint: '想想近义词和反义词的区别',
+            explanation: '本单元第3课重点学习近义词反义词，掌握意思相近和相反的词语。'
           },
           {
             id: 'c2u5l4q4',
@@ -2412,11 +2411,10 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u6l3q7',
             type: 'fill',
-            question: '回顾前面学过的知识：写话时要注意什么？写出一个要点',
-            answer: '语句通顺',
-            acceptableAnswers: ['语句通顺', '表达清楚', '标点正确'],
-            hint: '[写话技巧]（语文二年级-第7单元）',
-            explanation: '写话时要注意语句通顺、表达清楚、标点正确。'
+            question: '回顾前面学过的知识：《坐井观天》中青蛙认为天有多大？',
+            answer: '井口那么大',
+            hint: '[寓言故事]（语文二年级-第6单元）',
+            explanation: '青蛙坐在井里，认为天只有井口那么大，告诉我们看问题要全面。'
           }
         ]
       },
@@ -2441,11 +2439,11 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u6l4q1',
             type: 'choice',
-            question: '本单元关于观察方法，第1课的重点知识是什么？',
-            options: ['观察方法', '生字学习', '古诗背诵'],
-            answer: '观察方法',
-            hint: '想想本单元学了哪些观察方法',
-            explanation: '本单元第1课重点学习观察方法，学会用多种感官观察事物。'
+            question: '本单元关于寓言故事，第1课《坐井观天》的重点知识是什么？',
+            options: ['寓言故事', '生字学习', '古诗背诵'],
+            answer: '寓言故事',
+            hint: '想想坐井观天的故事道理',
+            explanation: '本单元第1课《坐井观天》重点学习寓言故事，理解寓言中蕴含的道理。'
           },
           {
             id: 'c2u6l4q2',
@@ -2458,11 +2456,11 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u6l4q3',
             type: 'choice',
-            question: '本单元关于写话技巧，第3课的重点知识是什么？',
-            options: ['写话技巧', '生字学习', '古诗背诵'],
-            answer: '写话技巧',
-            hint: '想想本单元学了哪些写话方法',
-            explanation: '本单元第3课重点学习写话技巧，掌握写话入门的基本方法。'
+            question: '本单元关于寓言道理，第3课《我要的是葫芦》的重点知识是什么？',
+            options: ['寓言道理', '生字学习', '古诗背诵'],
+            answer: '寓言道理',
+            hint: '想想我要的是葫芦告诉我们什么道理',
+            explanation: '本单元第3课《我要的是葫芦》重点学习寓言道理，理解事物之间的联系。'
           },
           {
             id: 'c2u6l4q4',
@@ -2575,10 +2573,10 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u6l5q7',
             type: 'fill',
-            question: '回顾前面学过的知识：写日记的格式是什么？',
-            answer: '日期天气正文',
-            hint: '[日记格式]（语文二年级-第7单元）',
-            explanation: '日记的格式是先写日期和天气，再写正文内容。'
+            question: '回顾前面学过的知识：《树之歌》中"杨树高"的下一句是什么？',
+            answer: '榕树壮',
+            hint: '[识字课文]（语文二年级-第2单元）',
+            explanation: '课文原句"杨树高，榕树壮"。'
           }
         ]
       }
@@ -2626,7 +2624,7 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u7l1q2',
             type: 'fill',
-            question: '看图写话可以用5W法：谁、在哪、什么___、为什么、怎样',
+            question: '看图写话可以用5W法：谁、在哪、什么___、做什么、为什么',
             answer: '时间',
             hint: '5W中还有一个重要的要素',
             explanation: '5W法包括：谁（Who）、在哪（Where）、什么时间（When）、做什么（What）、为什么（Why）。'
@@ -2874,11 +2872,11 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u7l4q1',
             type: 'choice',
-            question: '本单元关于科普知识，第1课的重点知识是什么？',
-            options: ['科普知识', '生字学习', '古诗背诵'],
-            answer: '科普知识',
-            hint: '想想本单元学了哪些科学知识',
-            explanation: '本单元第1课重点学习科普知识，了解自然科学的基本常识。'
+            question: '本单元关于看图写话，第1课的重点知识是什么？',
+            options: ['看图写话', '生字学习', '古诗背诵'],
+            answer: '看图写话',
+            hint: '想想看图写话的方法',
+            explanation: '本单元第1课重点学习看图写话，掌握观察图片和写话的基本方法。'
           },
           {
             id: 'c2u7l4q2',
@@ -2891,11 +2889,11 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u7l4q3',
             type: 'choice',
-            question: '本单元关于自然现象，第3课的重点知识是什么？',
-            options: ['自然现象', '生字学习', '古诗背诵'],
-            answer: '自然现象',
-            hint: '想想本单元学了哪些自然现象',
-            explanation: '本单元第3课重点学习自然现象，了解自然界中常见的现象和规律。'
+            question: '本单元关于日记格式，第3课的重点知识是什么？',
+            options: ['日记格式', '生字学习', '古诗背诵'],
+            answer: '日记格式',
+            hint: '想想日记的格式要求',
+            explanation: '本单元第3课重点学习日记格式，掌握日记的正确写法。'
           },
           {
             id: 'c2u7l4q4',
@@ -3304,11 +3302,11 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u8l4q1',
             type: 'choice',
-            question: '本单元关于知识综合，第1课的重点知识是什么？',
-            options: ['知识综合', '生字学习', '古诗背诵'],
-            answer: '知识综合',
-            hint: '想想本学期学过的各类知识',
-            explanation: '本单元第1课重点学习知识综合，将本学期所学知识进行整合复习。'
+            question: '本单元关于古诗积累，第1课《夜宿山寺》的重点知识是什么？',
+            options: ['古诗积累', '生字学习', '古诗背诵'],
+            answer: '古诗积累',
+            hint: '想想夜宿山寺这首古诗',
+            explanation: '本单元第1课《夜宿山寺》重点学习古诗积累，感受古诗的意境之美。'
           },
           {
             id: 'c2u8l4q2',
@@ -3321,11 +3319,11 @@ export const chineseGrade2: Unit[] = [
           {
             id: 'c2u8l4q3',
             type: 'choice',
-            question: '本单元关于复习归纳，第3课的重点知识是什么？',
-            options: ['复习归纳', '生字学习', '古诗背诵'],
-            answer: '复习归纳',
-            hint: '想想如何归纳总结本学期所学',
-            explanation: '本单元第3课重点学习复习归纳，学会整理和总结所学知识。'
+            question: '本单元关于古诗赏析，第3课《梅花》的重点知识是什么？',
+            options: ['古诗赏析', '生字学习', '古诗背诵'],
+            answer: '古诗赏析',
+            hint: '想想梅花这首古诗',
+            explanation: '本单元第3课《梅花》重点学习古诗赏析，理解古诗的意思和意境。'
           },
           {
             id: 'c2u8l4q4',

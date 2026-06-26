@@ -406,7 +406,7 @@ export const mathGrade1: Unit[] = [
           {
             id: 'm1u1l5q1',
             type: 'choice',
-            question: '餐桌上有3个碗和2双筷子，碗和筷子哪个多？',
+            question: '餐桌上有3个碗和2根筷子，碗和筷子哪个多？',
             options: ['碗多', '筷子多', '一样多', '无法比较'],
             answer: '碗多',
             hint: '3和2比大小',
@@ -3078,7 +3078,7 @@ export const mathGrade1: Unit[] = [
           {
             id: 'm1u7l3q1',
             type: 'choice',
-            question: '用2个完全一样的等腰直角三角形可以拼成什么图形？',
+            question: '用2个完全一样的等腰直角三角形沿斜边拼合，可以拼成什么图形？',
             options: ['圆形', '平行四边形', '正方形', '梯形'],
             answer: '正方形',
             hint: '两个一样的直角三角形',

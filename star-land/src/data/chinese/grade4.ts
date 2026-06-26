@@ -88,9 +88,9 @@ export const chineseGrade4: Unit[] = [
             id: 'c4u1l1q5',
             type: 'drag',
             question: '将近义词配对：激动、爱护、坚固、美丽',
-            answer: '感动,爱惜,坚硬,漂亮',
+            answer: '兴奋,爱惜,牢固,漂亮',
             hint: '把意思相近的词排在一起',
-            explanation: '激动—感动，爱护—爱惜，坚固—坚硬，美丽—漂亮，这些都是近义词。'
+            explanation: '激动—兴奋，爱护—爱惜，坚固—牢固，美丽—漂亮，这些都是近义词。'
           },
           {
             id: 'c4u1l1q6',
@@ -181,10 +181,10 @@ export const chineseGrade4: Unit[] = [
             id: 'c4u1l2q4',
             type: 'choice',
             question: '"安静"的反义词是？',
-            options: ['吵闹', '喧闹', '热闹'],
-            answer: '喧闹',
-            hint: '安静的反面是吵闹还是喧闹',
-            explanation: '安静和喧闹是标准的反义词。喧闹表示声音大而嘈杂，与安静意思相反。'
+            options: ['吵闹', '嘈杂', '热闹'],
+            answer: '嘈杂',
+            hint: '找意思相反的词',
+            explanation: '安静和嘈杂是标准的反义词。嘈杂表示声音杂乱吵闹，与安静意思相反。'
           },
           {
             id: 'c4u1l2q5',
@@ -471,10 +471,10 @@ export const chineseGrade4: Unit[] = [
             id: 'c4u1l5q2',
             type: 'choice',
             question: '"安静"的反义词是？',
-            options: ['吵闹', '喧闹', '热闹'],
-            answer: '喧闹',
+            options: ['吵闹', '嘈杂', '热闹'],
+            answer: '嘈杂',
             hint: '找意思相反的词',
-            explanation: '安静和喧闹意思相反，是反义词。'
+            explanation: '安静和嘈杂意思相反，是反义词。'
           },
           {
             id: 'c4u1l5q3',
@@ -508,7 +508,7 @@ export const chineseGrade4: Unit[] = [
             options: ['花开了', '花高兴地开了', '五颜六色的花竞相开放，开得热热闹闹'],
             answer: '五颜六色的花竞相开放，开得热热闹闹',
             hint: '找词语最丰富、最生动的',
-            explanation: '第三句运用了归类（五颜六色）、近义词（开放）和AABB式（热热闹闹），最生动。这是期末常考题！'
+            explanation: '第三句运用了成语（五颜六色）、拟人（竞相开放）和AABB叠词（热热闹闹），词语丰富最生动。这是期末常考题！'
           },
           {
             id: 'c4u1l5q7',
@@ -716,9 +716,9 @@ export const chineseGrade4: Unit[] = [
             id: 'c4u2l2q5',
             type: 'drag',
             question: '把动物成语和意思配对：狐假虎威、画蛇添足、守株待兔、井底之蛙',
-            answer: '借势欺人,多此一举,坐等收获,见识短浅',
+            answer: '借势欺人,多此一举,不劳而获,见识短浅',
             hint: '想想每个成语的道理',
-            explanation: '狐假虎威—借势欺人，画蛇添足—多此一举，守株待兔—坐等收获，井底之蛙—见识短浅。'
+            explanation: '狐假虎威—借势欺人，画蛇添足—多此一举，守株待兔—不劳而获，井底之蛙—见识短浅。'
           },
           {
             id: 'c4u2l2q6',
@@ -1649,9 +1649,9 @@ export const chineseGrade4: Unit[] = [
             type: 'choice',
             question: '"我们去放风筝"属于六要素中的哪一项？',
             options: ['起因', '经过', '结果'],
-            answer: '起因',
-            hint: '这是为什么去',
-            explanation: '"我们去放风筝"是事情发生的原因，属于起因。'
+            answer: '经过',
+            hint: '这是事情的发展过程',
+            explanation: '"我们去放风筝"是事情的发展过程，属于经过。'
           },
           {
             id: 'c4u4l1q3',
@@ -2405,10 +2405,10 @@ export const chineseGrade4: Unit[] = [
             id: 'c4u5l3q4',
             type: 'choice',
             question: '打比方和比喻句的区别是什么？',
-            options: ['没有区别', '打比方更客观准确', '比喻句更准确'],
-            answer: '打比方更客观准确',
+            options: ['没有区别', '打比方用于说明文，比喻用于文学作品', '比喻句更准确'],
+            answer: '打比方用于说明文，比喻用于文学作品',
             hint: '回忆区别技巧',
-            explanation: '打比方是为了说明事物特点，比比喻句更客观准确。'
+            explanation: '打比方和比喻本质相同，都是比喻修辞。区别在于使用语境：打比方用于说明文，比喻用于文学作品。'
           },
           {
             id: 'c4u5l3q5',

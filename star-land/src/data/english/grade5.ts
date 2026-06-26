@@ -635,7 +635,7 @@ export const englishGrade5: Unit[] = [
           {
             id: 'e5u2l3q1',
             type: 'choice',
-            question: 'Which subject do you learn numbers and calculations?',
+            question: 'In which subject do you learn numbers and calculations?',
             options: ['maths', 'music', 'art', 'PE'],
             answer: 'maths',
             hint: '学数字和计算的科目',
@@ -2565,7 +2565,7 @@ export const englishGrade5: Unit[] = [
             id: 'e5u6l5q5',
             type: 'choice',
             question: 'Which question uses "any" correctly?',
-            options: ['Are there any trees?', 'Is there any trees?', 'Are there a trees?', 'Is there any tree?'],
+            options: ['Are there any trees?', 'Is there any trees?', 'Are there a trees?', 'Is there a trees?'],
             answer: 'Are there any trees?',
             hint: 'any用于复数疑问句',
             explanation: 'trees是复数，疑问句用Are there any trees?有树吗？'
@@ -3231,7 +3231,7 @@ export const englishGrade5: Unit[] = [
             id: 'e5u8l3q1',
             type: 'choice',
             question: 'Read: "Tom\'s favourite day is Friday." Why does Tom like Friday?',
-            options: ['Because they have PE', 'Because they have English', 'Because it is weekend', 'Because he can cook'],
+            options: ['Because they have PE', 'Because they have English', 'Because it is the weekend', 'Because he can cook'],
             answer: 'Because they have PE',
             hint: '在短文中找Tom喜欢Friday的原因',
             explanation: '短文说"My favourite day is Friday because we have PE"，Tom喜欢Friday因为有体育课'

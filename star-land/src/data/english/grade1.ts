@@ -486,7 +486,7 @@ export const englishGrade1: Unit[] = [
             id: 'e1u2l1q5',
             type: 'fill',
             question: 'Bananas are ____.（黄色）',
-            answer: 'Yellow',
+            answer: 'yellow',
             hint: '香蕉是什么颜色？',
             explanation: 'Bananas are yellow表示香蕉是黄色的'
           },
@@ -1040,7 +1040,7 @@ Red + Blue = Purple`, animationType: 'typewriter', label: '颜色混合公式' }
             id: 'e1u3l3q2',
             type: 'fill',
             question: '数一数：I have ____ pencils.（6支铅笔）',
-            answer: 'Six',
+            answer: 'six',
             hint: '6的英语怎么说？',
             explanation: 'six表示6，I have six pencils表示我有6支铅笔'
           },
@@ -1065,9 +1065,9 @@ Red + Blue = Purple`, animationType: 'typewriter', label: '颜色混合公式' }
             id: 'e1u3l3q5',
             type: 'fill',
             question: 'I have ____ pencils.（8支铅笔）',
-            answer: 'Eight',
+            answer: 'eight',
             hint: '8的英语',
-            explanation: 'Eight表示8，I have eight pencils表示我有8支铅笔'
+            explanation: 'eight表示8，I have eight pencils表示我有8支铅笔'
           },
           {
             id: 'e1u3l3q6',
@@ -1168,7 +1168,7 @@ How many + 名词复数？
             options: ['Seven', 'One', 'Two', 'Six'],
             answer: 'Seven',
             hint: '[数字词汇]（英语一年级-第3单元）数一数每个单词有几个字母',
-            explanation: 'Seven有5个字母，是最长的数字单词'
+            explanation: 'Seven有5个字母，和Three、Eight一样都是5个字母，在1-10中属于最长的数字单词之一'
           },
         ]
       },
@@ -1205,9 +1205,9 @@ How many + 名词复数？
             id: 'e1u3l5q2',
             type: 'fill',
             question: 'I have ____ eyes.（两只眼睛）',
-            answer: 'Two',
+            answer: 'two',
             hint: '人有几只眼睛？',
-            explanation: 'Two表示2，人有2只眼睛'
+            explanation: 'two表示2，人有2只眼睛'
           },
           {
             id: 'e1u3l5q3',
@@ -1420,7 +1420,7 @@ How many + 名词复数？
             question: 'Lion和Tiger有什么区别？',
             options: ['Lion有鬃毛，Tiger有条纹', 'Lion小，Tiger大', 'Lion吃草，Tiger吃肉', '没有区别'],
             answer: 'Lion有鬃毛，Tiger有条纹',
-            hint: '[宠物]（英语一年级-第4单元）',
+            hint: '[动物园]（英语一年级-第4单元）',
             explanation: 'Lion狮子有鬃毛，Tiger老虎有条纹，这是它们的主要区别'
           }
         ]
@@ -1737,11 +1737,11 @@ How many + 名词复数？
           {
             id: 'e1u5l1q5',
             type: 'fill',
-            question: 'This is my ____. She is my mom\'s mom.（奶奶/外婆）',
+            question: 'This is my ____. She is my mom\'s mom.（外婆/姥姥）',
             answer: 'Grandma',
             acceptableAnswers: ['Grandmother'],
             hint: '妈妈的妈妈叫什么？',
-            explanation: 'Grandma是奶奶/外婆，mom\'s mom就是Grandma'
+            explanation: 'Grandma是外婆/姥姥，mom\'s mom就是Grandma'
           },
           {
             id: 'e1u5l1q6',
@@ -1755,10 +1755,10 @@ How many + 名词复数？
           {
             id: 'e1u5l1q7',
             type: 'drag',
-            question: '把家庭成员拖到正确位置：爸爸的爸爸是____',
-            answer: 'Grandpa',
+            question: '把家庭成员拖到正确位置：爸爸的姐妹是____',
+            answer: 'Aunt',
             hint: '[家庭树]（英语一年级-第5单元）',
-            explanation: '爸爸的爸爸是Grandpa爷爷，回顾家庭关系'
+            explanation: '爸爸的姐妹是Aunt姑姑/阿姨，回顾家庭关系'
           }
         ]
       },
@@ -3303,7 +3303,7 @@ Sit down — 坐下`, animationType: 'typewriter', label: '课堂指令公式' }
           {
             id: 'e1u8l5q3',
             type: 'choice',
-            question: '同学忘了带橡皮，你可以怎么说？',
+            question: '你忘了带橡皮，可以怎么向同学借？',
             options: ['Can I borrow your eraser?', 'Give me your eraser!', 'I don\'t have eraser.', 'Eraser is bad.'],
             answer: 'Can I borrow your eraser?',
             hint: '礼貌地借东西',

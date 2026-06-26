@@ -76,7 +76,7 @@ export const chineseGrade6: Unit[] = [
             id: 'c6u1l1q4',
             type: 'choice',
             question: '"读书能开阔眼界，所以我们应该多读书。"这句话中，"我们应该多读书"是？',
-            options: ['论点', '论据', '结论'],
+            options: ['论题', '论据', '结论'],
             answer: '结论',
             hint: '看看"所以"后面是什么',
             explanation: '"所以"引导的是由论据推导出的结论。"读书能开阔眼界"是论据，"我们应该多读书"是由此得出的结论。'

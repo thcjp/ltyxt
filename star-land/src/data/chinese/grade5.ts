@@ -1093,7 +1093,7 @@ export const chineseGrade5: Unit[] = [
           },
           { type: 'dialogue', content: '老师：小丽，"太阳的表面温度约5500摄氏度"用了什么说明方法？\n小丽：用了列数字！因为有"5500摄氏度"这个数字。\n老师：非常对！看到具体数字就是列数字。', label: '师生对话', animationType: 'reveal' },
           { type: 'tip', content: '辨认口诀：有数字是列数字，有比较是作比较，有比喻是打比方，有比如是举例子。', label: '辨认口诀', animationType: 'pulse' },
-          { type: 'example', content: '综合运用示例：\n鲸鱼是很大的动物。（作比较）它比大象大得多。（列数字）一头蓝鲸可达30米长。（打比方）它的舌头像一头大象那么重。（举例子）比如蓝鲸，就是典型的鲸类。', label: '综合示例', animationType: 'bounce' },
+          { type: 'example', content: '综合运用示例：\n鲸鱼是很大的动物。它比大象大得多。（作比较）一头蓝鲸可达30米长。（列数字）它的舌头像一头大象那么重。（打比方）比如蓝鲸，就是典型的鲸类。（举例子）', label: '综合示例', animationType: 'bounce' },
         ],
         iDo: '家长复习列数字、作比较、打比方、举例子四种方法，各举一个例子示范。',
         weDo: '亲子一起辨认句子用了哪种说明方法，再一起用四种方法各写一句。',
@@ -2248,7 +2248,7 @@ export const chineseGrade5: Unit[] = [
         content: [
           { type: 'text', content: '古诗还常用"动静结合"的技巧，把动态描写和静态描写结合起来，互相衬托，让画面更生动。今天读《鹿柴》，体会动静结合。', animationType: 'reveal' },
           { type: 'poem', content: '鹿柴（zhài）\n（唐）王维\n空山不见人，\n但闻人语响。\n返景入深林，\n复照青苔上。', label: '鹿柴', animationType: 'bounce' },
-          { type: 'example', content: '动静结合赏析：\n静景：空山不见人（山的空寂）\n动景：但闻人语响（人语的声音）\n静景：返景入深林（夕阳照林）\n动景：复照青苔上（光影移动）\n以动衬静，更显山林的幽静', label: '动静结合', animationType: 'bounce' },
+          { type: 'example', content: '动静结合赏析：\n静景：空山不见人（山的空寂）\n动景：但闻人语响（人语的声音）\n静景：返景入深林（夕阳照林）\n静景：复照青苔上（余晖映照青苔）\n以动衬静，更显山林的幽静', label: '动静结合', animationType: 'bounce' },
           { type: 'tip', content: '动静结合：动态描写和静态描写互相衬托。常"以动衬静"，用声音、动作衬托环境的安静，让静更静。', label: '动静结合技巧', animationType: 'pulse' },
           { type: 'animation', content: '动景动画出现后静景定格，展示动静结合', animationType: 'timeline',
             animationConfig: {
@@ -2259,7 +2259,7 @@ export const chineseGrade5: Unit[] = [
                   { id: 's1', description: '静景', text: '空山不见人', ttsNarration: '静景：空山不见人，山的空寂' },
                   { id: 's2', description: '动景', text: '但闻人语响', ttsNarration: '动景：但闻人语响，以动衬静' },
                   { id: 's3', description: '静景', text: '返景入深林', ttsNarration: '静景：返景入深林，夕阳照林' },
-                  { id: 's4', description: '动景', text: '复照青苔上', ttsNarration: '动景：复照青苔上，光影移动' },
+                  { id: 's4', description: '静景', text: '复照青苔上', ttsNarration: '静景：复照青苔上，余晖映照青苔' },
                 ],
               },
               ttsNarration: '动静结合，以动衬静，更显山林的幽静。',
@@ -2312,11 +2312,11 @@ export const chineseGrade5: Unit[] = [
           {
             id: 'c5u5l2q4',
             type: 'choice',
-            question: '"复照青苔上"（光影移动）属于？',
+            question: '"复照青苔上"属于？',
             options: ['静景', '动景', '议论'],
-            answer: '动景',
-            hint: '光影在变化移动',
-            explanation: '"复照青苔上"写光影移动变化，是动景。'
+            answer: '静景',
+            hint: '夕阳余晖映照青苔，画面宁静',
+            explanation: '"复照青苔上"描写夕阳余晖映照青苔的宁静画面，是静景。'
           },
           {
             id: 'c5u5l2q5',
@@ -2331,9 +2331,9 @@ export const chineseGrade5: Unit[] = [
             id: 'c5u5l2q6',
             type: 'drag',
             question: '把诗句和景别配对：空山不见人、但闻人语响、返景入深林、复照青苔上',
-            answer: '静景,动景,静景,动景',
+            answer: '静景,动景,静景,静景',
             hint: '静止是静景，声音变化是动景',
-            explanation: '空山不见人、返景入深林是静景；但闻人语响、复照青苔上是动景。'
+            explanation: '空山不见人、返景入深林、复照青苔上是静景；但闻人语响是动景。'
           },
           {
             id: 'c5u5l2q7',

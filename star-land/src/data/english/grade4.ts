@@ -3027,7 +3027,7 @@ export const englishGrade4: Unit[] = [
             id: 'e4u4l3q4',
             type: 'fill',
             question: 'I don\'t like _____. (洋葱)',
-            answer: 'onion',
+            answer: 'onions',
             hint: '洋葱的英文',
             explanation: 'onion是洋葱，I don\'t like onions.表示我不喜欢洋葱'
           },
@@ -6082,7 +6082,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which group are all clothes (服装)?',
             answer: 'dress, shirt, jacket, sweater',
             hint: '【期末真题】哪组都是服装',
-            explanation: 'dress衬衫shirt夹克jacket毛衣sweater都是服装',
+            explanation: 'dress连衣裙shirt衬衫jacket夹克sweater毛衣都是服装',
             options: [
               'dress, shirt, jacket, sweater',
               'cow, sheep, horse, goat',

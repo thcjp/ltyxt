@@ -3054,7 +3054,7 @@ I like + 动词ing → I like reading.
             id: 'e2u8l2q4',
             type: 'choice',
             question: 'Which greeting is for Christmas?',
-            options: ['Merry Christmas', 'Happy New Year', 'Happy Christmas', 'Merry New Year'],
+            options: ['Merry Christmas', 'Happy New Year', 'Happy Birthday', 'Merry New Year'],
             answer: 'Merry Christmas',
             hint: 'Merry和Happy分别用于哪个节日？',
             explanation: 'Merry用于圣诞Merry Christmas，Happy用于新年Happy New Year'
@@ -3143,10 +3143,10 @@ I like + 动词ing → I like reading.
           {
             id: 'e2u8l3q5',
             type: 'fill',
-            question: 'We eat ____ on Spring Festival.（饺子）',
-            answer: 'dumplings',
-            hint: '春节吃的传统食物',
-            explanation: 'dumplings是饺子，春节吃饺子是传统习俗'
+            question: 'We light ____ to celebrate Spring Festival.（鞭炮）',
+            answer: 'firecrackers',
+            hint: '春节放什么庆祝？',
+            explanation: 'firecrackers是鞭炮，春节放鞭炮是传统习俗'
           },
           {
             id: 'e2u8l3q6',
