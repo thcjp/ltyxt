@@ -15,7 +15,7 @@ export const mathGrade6: Unit[] = [
           iDo: '家长用2/3×3=2/3+2/3+2/3示范分数乘整数的意义和计算方法。',
           weDo: '亲子一起用连加转化法计算3/5×2，理解分数乘整数的算理。',
           youDo: '孩子独立计算分数乘整数的题目，注意能约分的先约分。',
-          parentTips: '分数乘整数=分子乘整数，分母不变；能约分的先约分再乘。',
+          parentTips: '共学四步（家长当陪练，不当老师）：①对话出题：家长问“2/5乘3怎么算？”②孩子应答：“分子2乘3得6，分母5不变，得6/5。”③答错引导：若孩子把分母也乘了，家长把一张纸条折成5等份涂2份表示2/5，再摆3组，让孩子数出共6份即6/5，强调“只有分子乘整数”。④快速听写：家长报“3/7乘2、1/4乘8”，孩子口算报数。',
           funElement: '小游戏：分数接力赛——你说算式我报答案！歇后语：九牛一毛——微不足道',
           gsapAnimations: ['[GSAP:timeline|2/3×3转化为连加过程|1.5s|点击播放|power2.out]', '[GSAP:numberCount|分子乘整数分母不变|0.8s|页面加载|back.out(1.7)]'],
           images: ['[IMG:illustration|分数乘整数连加转化图|500x300|教学风|png|转化过程]', '[IMG:illustration|分数乘法示意图|400x250|cartoon|png|分数乘法]'],
@@ -97,7 +97,7 @@ export const mathGrade6: Unit[] = [
           iDo: '家长用长方形面积模型演示1/2×1/3的意义和计算方法。',
           weDo: '亲子一起画长方形面积模型，理解分数乘分数的算理。',
           youDo: '孩子独立计算分数乘分数的题目，注意先约分。',
-          parentTips: '分数乘分数=分子乘分子，分母乘分母；先约分再乘更简便。',
+          parentTips: '共学四步（家长当陪练）：①对话出题：家长问“1/2乘1/3怎么算？”②孩子应答：“分子1乘1得1，分母2乘3得6，结果1/6。”③答错引导：若孩子不会，家长画一个长方形先横分2份涂1份(1/2)，再纵分3份涂1份(1/3)，让孩子数交叉部分占整体的1/6。④快速出题：家长报“2/3乘3/4”，孩子先约分(2和4约、3和3约)再算得1/2。',
           funElement: '小游戏：面积拼图——画出1/2的1/3是多少！谚语：磨刀不误砍柴工——先约分再乘更高效',
           gsapAnimations: ['[GSAP:shapeDraw|长方形面积模型分割|1.5s|点击播放|power2.out]', '[GSAP:highlight|分子乘分子分母乘分母|0.5s|计算完成|power2.out]'],
           images: ['[IMG:illustration|面积模型图|500x300|教学风|png|长方形分割]', '[IMG:illustration|分数乘分数示意图|400x250|cartoon|png|面积模型]'],
@@ -163,11 +163,11 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u1l2q7',
             type: 'fill',
-            question: '分数乘整数：2/5 × 3 = ___',
-            answer: '6/5',
-            hint: '[分数乘整数]（数学-分数乘法-第1课）',
-            explanation: '2/5 × 3 = (2×3)/5 = 6/5',
-            acceptableAnswers: ['1.2', '1又1/5'],
+            question: '把一根绳子平均分成6段，每段是这根绳子的___（填分数）',
+            answer: '1/6',
+            hint: '[分数的意义]（五年级数学-第6单元）',
+            explanation: '把单位“1”平均分成6份，每份是1/6',
+            acceptableAnswers: ['1/6'],
           },
           ]
         },
@@ -179,7 +179,7 @@ export const mathGrade6: Unit[] = [
           iDo: '家长示范先约分再乘的简便运算方法。',
           weDo: '亲子一起练习交叉约分后计算的简便方法。',
           youDo: '孩子独立完成分数乘法简便运算题目。',
-          parentTips: '先约分再乘，计算更简便；约分时分子只能和分母约。',
+          parentTips: '共学四步（家长当陪练）：①对话出题：家长问“3/8乘4，先约分还是先乘？”②孩子应答：“先约分，8和4约成2，再3乘1得3/2。”③答错引导：若孩子直接乘得12/8，家长强调“约分只能分子和分母约，不能分子和分子约”，再让孩子重算。④快速听写：家长报“5/6乘9、7/12乘8”，孩子先约分再报结果。',
           funElement: '速算挑战：看谁先约分算得快！歇后语：磨刀不误砍柴工——先约分再算更省力',
           gsapAnimations: ['[GSAP:timeline|约分到乘法步骤|1.5s|点击播放|power2.out]', '[GSAP:highlight|交叉约分高亮|0.5s|约分完成|power2.out]'],
           images: ['[IMG:illustration|约分乘法步骤图|500x200|教学风|png|步骤标注]', '[IMG:illustration|交叉约分示意图|400x250|cartoon|png|约分过程]'],
@@ -245,10 +245,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u1l3q7',
             type: 'fill',
-            question: '分数乘分数：2/3 × 3/4 = ___',
-            answer: '1/2',
-            hint: '[分数乘分数]（数学-分数乘法-第2课）',
-            explanation: '2/3 × 3/4 = (2×3)/(3×4) = 6/12 = 1/2'
+            question: '异分母分数加法：1/2 + 1/3 = ___',
+            answer: '5/6',
+            hint: '[异分母分数加减法]（五年级数学-第7单元）',
+            explanation: '先通分：1/2=3/6，1/3=2/6，3/6+2/6=5/6'
           },
           ]
         },
@@ -260,7 +260,7 @@ export const mathGrade6: Unit[] = [
           iDo: '家长模拟分蛋糕场景，示范求一个数的几分之几用乘法。',
           weDo: '亲子一起分析应用题，找单位1，确定分率，列乘法算式。',
           youDo: '孩子独立解决分数乘法应用题。',
-          parentTips: '求一个数的几分之几=乘法；找单位1是关键。',
+          parentTips: '共学四步（家长当陪练）：①对话出题：家长问“一本书120页看了1/4，看了多少页？单位1是谁？”②孩子应答：“单位1是全书120页，120乘1/4得30页。”③答错引导：若孩子找错单位1，家长教口诀“‘的’前面是单位1”——“全书的1/4”中“全书”是单位1，再用乘法。④快速出题：家长说“一袋米20千克吃了3/5”，孩子说出单位1和算式。',
           funElement: '情境游戏：分蛋糕大作战——算算每个人分到多少！谚语：磨刀不误砍柴工——审题找单位1再列式',
           gsapAnimations: ['[GSAP:sceneBuild|分蛋糕场景动画|1.5s|点击播放|power2.out]', '[GSAP:highlight|单位1高亮标注|0.5s|审题|power2.out]'],
           images: ['[IMG:illustration|分数应用题场景|500x300|可爱卡通风|png|分蛋糕]', '[IMG:illustration|单位1标注图|400x250|教学风|png|线段图]'],
@@ -326,10 +326,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u1l4q7',
             type: 'fill',
-            question: '分数简便运算：5/7 × 14/25 = ___',
-            answer: '2/5',
-            hint: '[分数乘法简便运算]（数学-分数乘法-第3课）',
-            explanation: '5/7 × 14/25 = (5×14)/(7×25) = 70/175 = 2/5'
+            question: '约分：12/18 = ___（填最简分数）',
+            answer: '2/3',
+            hint: '[约分与最简分数]（五年级数学-第6单元）',
+            explanation: '12和18的最大公因数是6，12/18=(12÷6)/(18÷6)=2/3'
           },
           ]
         },
@@ -407,10 +407,11 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u1l5q7',
             type: 'fill',
-            question: '分数乘法应用题：一本书120页，看了1/4，看了___页',
-            answer: '30',
-            hint: '[分数乘法应用题]（数学-分数乘法-第4课）',
-            explanation: '120 × 1/4 = 30页'
+            question: '同分母分数减法：7/9 - 4/9 = ___',
+            answer: '1/3',
+            hint: '[同分母分数加减法]（五年级数学-第7单元）',
+            explanation: '同分母分数相减，分母不变，分子相减：7/9-4/9=3/9=1/3',
+            acceptableAnswers: ['3/9'],
           },
           ]
         },
@@ -430,7 +431,7 @@ export const mathGrade6: Unit[] = [
           iDo: '家长在地图上标出方向和距离，示范确定物体位置的方法。',
           weDo: '亲子一起在地图上用方向和距离标注位置。',
           youDo: '孩子独立根据方向和距离确定物体的位置。',
-          parentTips: '以观测点为中心，标注方向（角度）和距离来确定位置。',
+          parentTips: '共学四步（家长当陪练）：①对话出题：家长问“怎么在图上确定一个地方的位置？”②孩子应答：“要以观测点为中心，量出方向(角度)和距离两个条件。”③答错引导：若孩子只说方向不说距离，家长用家里两把椅子演示“东偏北30度方向2米处”，强调缺距离就定不了位置。④快速出题：家长报“学校在家的东偏南20度300米”，孩子在纸上画图标注。',
           funElement: '寻宝游戏：根据线索找宝藏——方向+距离！谚语：按图索骥——照着地图找',
           gsapAnimations: ['[GSAP:sceneBuild|地图方向距离标注|1.5s|点击播放|power2.out]', '[GSAP:highlight|方向角度高亮|0.5s|标注|power2.out]'],
           images: ['[IMG:illustration|方向位置图|500x300|教学风|png|地图+方向]', '[IMG:illustration|方向角度示意图|400x250|教学风|png|角度标注]'],
@@ -577,11 +578,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u2l2q7',
             type: 'fill',
-            question: '确定位置需要___和___两个条件',
-            answer: '方向和距离',
-            hint: '[确定位置]（数学-位置与方向二-第1课）',
-            explanation: '确定位置需要方向（角度）和距离两个条件',
-            acceptableAnswers: ['距离和方向'],
+            question: '小红家在学校东面300米，学校在小红家的___面300米',
+            answer: '西',
+            hint: '[方向的相对性]（五年级数学-第8单元）',
+            explanation: '方向的相对性：东与西相对，距离不变，所以学校在小红家西面300米',
           },
           ]
         },
@@ -659,10 +659,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u2l3q7',
             type: 'fill',
-            question: '从家向东走200米到超市，超市在家的___方向',
-            answer: '东',
-            hint: '[描述路线]（数学-位置与方向二-第2课）',
-            explanation: '向东走200米，超市在家的正东方向'
+            question: '量角器上，60度的角属于___角（填“锐”“直”或“钝”）',
+            answer: '锐',
+            hint: '[角的度量与分类]（四年级数学-第2单元）',
+            explanation: '小于90度的角是锐角，60°<90°，所以是锐角'
           },
           ]
         },
@@ -740,10 +740,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u2l4q7',
             type: 'fill',
-            question: 'A在B的东偏北30度方向，B在A的___偏___30度方向',
-            answer: '西南',
-            hint: '[方向的相对性]（数学-位置与方向二-第3课）',
-            explanation: '东偏北30度的相对方向是西偏南30度'
+            question: '在地图上，“上北下南”的左边是___方',
+            answer: '西',
+            hint: '[地图上的方向]（五年级数学-第8单元）',
+            explanation: '地图上通常“上北下南，左西右东”，左边是西方'
           },
           ]
         },
@@ -821,10 +821,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u2l5q7',
             type: 'fill',
-            question: '描述路线时，每段需要说明___和___',
-            answer: '方向和距离',
-            hint: '[描述路线]（数学-位置与方向二-第2课）',
-            explanation: '每段路线都要说明方向和距离'
+            question: '一个平角等于___度',
+            answer: '180',
+            hint: '[角的度量]（四年级数学-第2单元）',
+            explanation: '平角=180度'
           },
           ]
         },
@@ -844,7 +844,7 @@ export const mathGrade6: Unit[] = [
           iDo: '家长示范4/5÷2=4/5×1/2，讲解分数除以整数的计算方法。',
           weDo: '亲子一起练习分数除以整数，理解除以一个数等于乘以它的倒数。',
           youDo: '孩子独立计算分数除以整数的题目。',
-          parentTips: '分数除以整数（0除外）=分数乘以这个整数的倒数。',
+          parentTips: '共学四步（家长当陪练）：①对话出题：家长问“4/5除以2怎么算？”②孩子应答：“除以2等于乘2的倒数1/2，4/5乘1/2得2/5。”③答错引导：若孩子直接除分子得2/5却说不清算理，家长强调“除以一个数(0除外)=乘它的倒数”，即4/5÷2=4/5×1/2=2/5。④快速听写：家长报“6/7除以3、3/4除以2”，孩子先变乘倒数再算。',
           funElement: '倒数翻转游戏：我说分数你说倒数！歇后语：反其道而行之——除变乘',
           gsapAnimations: ['[GSAP:timeline|除法转化为乘法过程|1.5s|点击播放|power2.out]', '[GSAP:highlight|倒数高亮标注|0.5s|转化|power2.out]'],
           images: ['[IMG:illustration|分数除法转化图|500x200|教学风|png|除到乘]', '[IMG:illustration|倒数示意图|400x250|cartoon|png|分子分母互换]'],
@@ -926,7 +926,7 @@ export const mathGrade6: Unit[] = [
           iDo: '家长示范整数除以分数和小数除以分数的计算方法。',
           weDo: '亲子一起练习一个数除以分数。',
           youDo: '孩子独立计算一个数除以分数的题目。',
-          parentTips: '一个数除以分数=这个数乘以分数的倒数。',
+          parentTips: '共学四步（家长当陪练）：①对话出题：家长问“6除以2/3怎么算？”②孩子应答：“除以2/3等于乘3/2，6乘3/2得9。”③答错引导：若孩子把被除数和除数都颠倒，家长强调“只颠倒除数变倒数，被除数不变”，再练一遍8÷2/5。④快速出题：家长报“3÷1/4、10÷2/5”，孩子口答“乘它的倒数”并算出结果。',
           funElement: '倒数挑战赛：看谁算得又快又准！谚语：以退为进——除变乘，倒数来帮忙',
           gsapAnimations: ['[GSAP:timeline|倒数转化动画|1.5s|点击播放|power2.inOut]', '[GSAP:highlight|倒数翻转高亮|0.5s|转化|power2.out]'],
           images: ['[IMG:illustration|除以分数转化图|500x200|教学风|png|倒数过程]', '[IMG:illustration|分数除法示意图|400x250|cartoon|png|除法转化]'],
@@ -993,10 +993,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u3l2q7',
             type: 'fill',
-            question: '分数除以整数：4/5 ÷ 2 = ___',
-            answer: '2/5',
-            hint: '[分数除以整数]（数学-分数除法-第1课）',
-            explanation: '4/5 ÷ 2 = 4/5 × 1/2 = 4/10 = 2/5'
+            question: '异分母分数减法：3/4 - 1/6 = ___',
+            answer: '7/12',
+            hint: '[异分母分数加减法]（五年级数学-第7单元）',
+            explanation: '先通分：3/4=9/12，1/6=2/12，9/12-2/12=7/12'
           },
           ]
         },
@@ -1074,10 +1074,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u3l3q7',
             type: 'fill',
-            question: '一个数除以分数：6 ÷ 2/3 = ___',
-            answer: '9',
-            hint: '[一个数除以分数]（数学-分数除法-第2课）',
-            explanation: '6 ÷ 2/3 = 6 × 3/2 = 18/2 = 9'
+            question: '2/5的分数单位是___（填分数）',
+            answer: '1/5',
+            hint: '[分数的意义]（五年级数学-第6单元）',
+            explanation: '2/5表示2个1/5，所以它的分数单位是1/5'
           },
           ]
         },
@@ -1157,10 +1157,11 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u3l4q7',
             type: 'fill',
-            question: '已知一个数的3/4是15，这个数是___',
-            answer: '20',
-            hint: '[分数除法应用题]（数学-分数除法-第3课）',
-            explanation: '15 ÷ 3/4 = 15 × 4/3 = 20'
+            question: '同分母分数加法：4/9 + 2/9 = ___',
+            answer: '6/9',
+            hint: '[同分母分数加减法]（五年级数学-第7单元）',
+            explanation: '同分母分数相加，分母不变，分子相加：4/9+2/9=6/9=2/3',
+            acceptableAnswers: ['2/3'],
           },
           ]
         },
@@ -1239,10 +1240,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u3l5q7',
             type: 'fill',
-            question: '一个数除以分数：6 ÷ 2/3 = ___',
-            answer: '9',
-            hint: '[一个数除以分数]（数学-分数除法-第2课）',
-            explanation: '6 ÷ 2/3 = 6 × 3/2 = 18/2 = 9'
+            question: '同分母分数加法：2/7 + 3/7 = ___',
+            answer: '5/7',
+            hint: '[同分母分数加减法]（五年级数学-第7单元）',
+            explanation: '同分母分数相加，分母不变，分子相加：2/7+3/7=5/7'
           },
           ]
         },
@@ -1262,7 +1263,7 @@ export const mathGrade6: Unit[] = [
           iDo: '家长用果汁和水的比例引出比的概念。',
           weDo: '亲子一起调配果汁，写出果汁和水的比。',
           youDo: '孩子独立写出两个量的比。',
-          parentTips: '比表示两个量的倍数关系。a:b中a是前项，b是后项。',
+          parentTips: '共学四步（家长当陪练）：①对话出题：家长问“2比3写作什么？谁前谁后？”②孩子应答：“写作2:3，2是前项，3是后项，表示2和3的倍数关系。”③答错引导：若孩子把前项后项搞反，家长用“糖水2克糖3克水”举例，强调写在前的是前项、写在后的是后项，顺序不能换。④快速听写：家长说“5比8、7比2”，孩子写出比并说出前后项。',
           funElement: '调果汁游戏：2份果汁3份水，调出好喝的果汁！谚语：恰到好处——比例要对',
           gsapAnimations: ['[GSAP:sceneBuild|调果汁场景动画|1.5s|点击播放|power2.out]', '[GSAP:numberCount|比的前项后项|0.8s|页面加载|back.out(1.7)]'],
           images: ['[IMG:illustration|比的意义图|500x300|可爱卡通风|png|果汁调配]', '[IMG:illustration|比的关系示意图|400x250|教学风|png|两个量的比]'],
@@ -1296,7 +1297,7 @@ export const mathGrade6: Unit[] = [
             id: 'm6u4l1q3',
             type: 'choice',
             question: '3:4的比值是？',
-            options: ['3/4', '4/3', '0.75', '1.33'],
+            options: ['3/4', '4/3', '0.34', '1.33'],
             answer: '3/4',
             hint: '比值=前项÷后项',
             explanation: '3:4的比值=3÷4=3/4'
@@ -1411,11 +1412,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u4l2q7',
             type: 'fill',
-            question: '3:4的比值是___',
-            answer: '3/4',
-            hint: '[比的意义]（数学-比-第1课）',
-            explanation: '比值=前项÷后项=3÷4=3/4',
-            acceptableAnswers: ['0.75'],
+            question: '4/8化成最简分数是___',
+            answer: '1/2',
+            hint: '[约分与最简分数]（五年级数学-第6单元）',
+            explanation: '4和8的最大公因数是4，4/8=(4÷4)/(8÷4)=1/2',
           },
           ]
         },
@@ -1493,10 +1493,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u4l3q7',
             type: 'fill',
-            question: '化简比 12:8 = ___:___',
-            answer: '3:2',
-            hint: '[比的基本性质]（数学-比-第2课）',
-            explanation: '12:8 = (12÷4):(8÷4) = 3:2'
+            question: '3÷4写成分数是___（填分数）',
+            answer: '3/4',
+            hint: '[分数与除法的关系]（五年级数学-第6单元）',
+            explanation: '分数与除法的关系：a÷b=a/b，所以3÷4=3/4'
           },
           ]
         },
@@ -1574,10 +1574,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u4l4q7',
             type: 'fill',
-            question: '按比分配：把30颗糖按2:3分给甲乙，甲得___颗',
-            answer: '12',
-            hint: '[比的应用]（数学-比-第3课）',
-            explanation: '30÷(2+3)×2=30÷5×2=12颗'
+            question: '把3/5的分子分母同时乘2，分数大小___（填“变”或“不变”）',
+            answer: '不变',
+            hint: '[分数的基本性质]（五年级数学-第6单元）',
+            explanation: '分数的分子分母同时乘或除以相同的数(0除外)，分数大小不变。'
           },
           ]
         },
@@ -1655,11 +1655,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u4l5q7',
             type: 'fill',
-            question: '3:4 = 3÷4 = ___',
-            answer: '3/4',
-            hint: '[比与分数除法]（数学-比-第4课）',
-            explanation: '3:4 = 3÷4 = 3/4',
-            acceptableAnswers: ['0.75'],
+            question: '分数3/4中，分母是___',
+            answer: '4',
+            hint: '[分数各部分名称]（五年级数学-第6单元）',
+            explanation: '分数中，分母在下表示平均分的份数，3/4的分母是4。'
           },
           ]
         },
@@ -1679,7 +1678,7 @@ export const mathGrade6: Unit[] = [
           iDo: '家长用圆规画圆，引出圆心、半径、直径的概念。',
           weDo: '亲子一起画圆并标注圆心、半径和直径。',
           youDo: '孩子独立画圆并标出各要素。',
-          parentTips: '圆心定位置，半径定大小，d=2r。圆有无数条半径和直径。',
+          parentTips: '共学四步（家长当陪练）：①对话出题：家长问“圆心、半径各决定什么？半径3厘米直径多少？”②孩子应答：“圆心定位置，半径定大小，直径=2倍半径=6厘米。”③答错引导：若孩子把直径半径弄混，家长拿一个圆碗口描圆，标出圆心和从圆心到边的半径，量出半径再算直径，强调d=2r。④快速出题：家长报半径，孩子报直径(如半径4→直径8)。',
           funElement: '画圆比赛：看谁画的圆最标准！谚语：无规矩不成方圆——圆规画圆',
           gsapAnimations: ['[GSAP:shapeDraw|圆规画圆动画|2s|点击播放|power2.out]', '[GSAP:highlight|圆心半径直径标注|0.5s|标注|power2.out]'],
           images: ['[IMG:illustration|圆的要素图|500x300|教学风|png|圆心+半径+直径]', '[IMG:illustration|圆规画圆示意图|400x250|教学风|png|画圆过程]'],
@@ -1760,7 +1759,7 @@ export const mathGrade6: Unit[] = [
           iDo: '家长用绳绕圆测量，引出圆周率的概念。',
           weDo: '亲子一起测量圆的周长和直径，计算比值。',
           youDo: '孩子独立计算圆的周长。',
-          parentTips: 'C=πd=2πr，π≈3.14。圆周率是周长与直径的比值。',
+          parentTips: '共学四步（家长当陪练）：①对话出题：家长问“圆周长怎么算？直径10厘米的圆周长多少？”②孩子应答：“C=πd=3.14乘10=31.4厘米。”③答错引导：若孩子忘了公式，家长用绳子绕杯口一圈量出周长，再量杯口直径，算比值≈3.14，让孩子理解π=周长÷直径。④快速听写：家长报直径或半径，孩子报周长(如d=2→C=6.28)。',
           funElement: '测量实验：量一量圆的周长和直径，算算比值！谚语：实践出真知——测量发现圆周率',
           gsapAnimations: ['[GSAP:timeline|绳绕圆到测量到发现π|1.5s|点击播放|power2.out]', '[GSAP:highlight|π≈3.14高亮|0.5s|发现|power2.out]'],
           images: ['[IMG:illustration|圆周率发现图|500x300|教学风|png|测量过程]', '[IMG:illustration|圆的周长示意图|400x250|教学风|png|周长公式]'],
@@ -1826,10 +1825,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u5l2q7',
             type: 'fill',
-            question: '圆的半径是3厘米，直径是___厘米',
-            answer: '6',
-            hint: '[圆的认识]（数学-圆-第1课）',
-            explanation: 'd=2r=2×3=6厘米'
+            question: '一个平行四边形底5厘米、高3厘米，面积是___平方厘米',
+            answer: '15',
+            hint: '[平行四边形的面积]（五年级数学-第4单元）',
+            explanation: '平行四边形面积=底×高=5×3=15平方厘米'
           },
           ]
         },
@@ -1907,10 +1906,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u5l3q7',
             type: 'fill',
-            question: '圆的半径是2厘米，周长是___厘米（π取3.14）',
-            answer: '12.56',
-            hint: '[圆的周长]（数学-圆-第2课）',
-            explanation: 'C=2πr=2×3.14×2=12.56厘米'
+            question: '一个三角形底4厘米、高3厘米，面积是___平方厘米',
+            answer: '6',
+            hint: '[三角形的面积]（五年级数学-第4单元）',
+            explanation: '三角形面积=底×高÷2=4×3÷2=6平方厘米'
           },
           ]
         },
@@ -1988,10 +1987,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u5l4q7',
             type: 'fill',
-            question: '圆的半径是3厘米，面积是___平方厘米（π取3.14）',
-            answer: '28.26',
-            hint: '[圆的面积]（数学-圆-第3课）',
-            explanation: 'S=πr²=3.14×3²=3.14×9=28.26平方厘米'
+            question: '一个梯形上底2厘米、下底4厘米、高3厘米，面积是___平方厘米',
+            answer: '9',
+            hint: '[梯形的面积]（五年级数学-第4单元）',
+            explanation: '梯形面积=(上底+下底)×高÷2=(2+4)×3÷2=9平方厘米'
           },
           ]
         },
@@ -2069,10 +2068,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u5l5q7',
             type: 'fill',
-            question: '环形面积公式是___',
-            answer: 'π(R²-r²)',
-            hint: '[环形面积]（数学-圆-第4课）',
-            explanation: '环形面积=大圆面积-小圆面积=π(R²-r²)'
+            question: '一个长方形长5厘米、宽4厘米，面积是___平方厘米',
+            answer: '20',
+            hint: '[长方形的面积]（五年级数学-第4单元）',
+            explanation: '长方形面积=长×宽=5×4=20平方厘米'
           },
           ]
         },
@@ -2092,7 +2091,7 @@ export const mathGrade6: Unit[] = [
           iDo: '家长用打折、出勤率等生活实例引出百分数的概念。',
           weDo: '亲子一起找生活中的百分数，理解百分数的意义。',
           youDo: '孩子独立读写百分数，理解百分数的意义。',
-          parentTips: '百分数表示一个数是另一个数的百分之几，也叫百分率或百分比。',
+          parentTips: '共学四步（家长当陪练）：①对话出题：家长问“什么是百分数？40%表示什么？”②孩子应答：“百分数表示一个数是另一个数的百分之几，40%表示占百分之四十。”③答错引导：若孩子把百分数当普通分数，家长举“考试100题对40题得40%”，强调百分数只表示关系不带单位。④快速出题：家长说“45人中有9人缺席”，孩子算缺席率(9÷45=20%)。',
           funElement: '找百分数游戏：在广告包装上找百分数！谚语：百发百中——百分数的由来',
           gsapAnimations: ['[GSAP:sceneBuild|生活中的百分数场景|1.5s|点击播放|power2.out]', '[GSAP:numberCount|百分数从0到100|0.8s|页面加载|back.out(1.7)]'],
           images: ['[IMG:illustration|百分数生活实例|500x300|可爱卡通风|png|打折/出勤率]', '[IMG:illustration|百分数示意图|400x250|教学风|png|百分数意义]'],
@@ -2239,10 +2238,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u6l2q7',
             type: 'fill',
-            question: '25%等于分数___',
-            answer: '1/4',
-            hint: '[百分数的意义]（数学-百分数一-第1课）',
-            explanation: '25%=25/100=1/4'
+            question: '小数除法：7.2 ÷ 0.8 = ___',
+            answer: '9',
+            hint: '[小数除法]（五年级数学-第2单元）',
+            explanation: '7.2 ÷ 0.8 = 72 ÷ 8 = 9'
           },
           ]
         },
@@ -2320,10 +2319,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u6l3q7',
             type: 'fill',
-            question: '60%化成小数是___',
-            answer: '0.6',
-            hint: '[百分数与小数互化]（数学-百分数一-第2课）',
-            explanation: '60%→去%→小数点左移2位→0.6'
+            question: '小数乘法：0.3 × 0.4 = ___',
+            answer: '0.12',
+            hint: '[小数乘法]（五年级数学-第1单元）',
+            explanation: '0.3×0.4=0.12，积的小数位数等于两个因数小数位数之和(1+1=2)'
           },
           ]
         },
@@ -2401,10 +2400,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u6l4q7',
             type: 'fill',
-            question: '全班50人出勤48人，出勤率是___%',
-            answer: '96',
-            hint: '[百分率]（数学-百分数一-第3课）',
-            explanation: '出勤率=48÷50×100%=96%'
+            question: '小数除法：1.5 ÷ 0.5 = ___',
+            answer: '3',
+            hint: '[小数除法]（五年级数学-第2单元）',
+            explanation: '1.5 ÷ 0.5 = 15 ÷ 5 = 3'
           },
           ]
         },
@@ -2482,10 +2481,10 @@ export const mathGrade6: Unit[] = [
           {
             id: 'm6u6l5q7',
             type: 'fill',
-            question: '增减幅度=增减量÷___×100%',
-            answer: '原量',
-            hint: '[增减幅度]（数学-百分数一-第4课）',
-            explanation: '增减幅度=增减量÷原量×100%'
+            question: '小数除法：4.8 ÷ 1.2 = ___',
+            answer: '4',
+            hint: '[小数除法]（五年级数学-第2单元）',
+            explanation: '4.8 ÷ 1.2 = 48 ÷ 12 = 4'
           },
           ]
         },

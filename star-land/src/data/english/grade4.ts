@@ -158,7 +158,7 @@ export const englishGrade4: Unit[] = [
             type: 'choice',
             question: 'Amy points at a picture on the far wall. What should she say?',
             answer: 'What\'s that?',
-            hint: '问远处的东西用什么词',
+            hint: '【期末真题】问远处的东西用什么词',
             explanation: '问远处的物品用What\'s that?，that表示那、那个',
             options: [
               'What\'s that?',
@@ -1013,7 +1013,7 @@ export const englishGrade4: Unit[] = [
             type: 'choice',
             question: 'Tom holds a pencil. Mom asks "What\'s in your hand?" He says?',
             answer: 'It\'s a pencil.',
-            hint: '问手里拿什么怎么回答',
+            hint: '【期末真题】问手里拿什么怎么回答',
             explanation: '问What\'s in your hand?用It\'s a + 文具回答',
             options: [
               'It\'s a pencil.',
@@ -1831,7 +1831,7 @@ export const englishGrade4: Unit[] = [
             type: 'choice',
             question: 'Lily says "Bob is thin and short." What does Bob look like?',
             answer: '又瘦又矮',
-            hint: 'thin和short是什么意思',
+            hint: '【期末真题】thin和short是什么意思',
             explanation: 'thin是瘦，short是矮，thin and short表示又瘦又矮',
             options: [
               '又高又壮',
@@ -2709,7 +2709,7 @@ export const englishGrade4: Unit[] = [
             type: 'choice',
             question: 'Farmer says "It\'s a cow." What is it?',
             answer: 'A cow.',
-            hint: 'it\'s a cow是什么意思',
+            hint: '【期末真题】it\'s a cow是什么意思',
             explanation: 'It\'s a cow.表示那是一头奶牛',
             options: [
               'A cow.',
@@ -3529,7 +3529,7 @@ export const englishGrade4: Unit[] = [
             type: 'choice',
             question: 'Tom says "I want rice and fish." What does he want?',
             answer: '米饭和鱼',
-            hint: 'rice and fish是什么',
+            hint: '【期末真题】rice and fish是什么',
             explanation: 'rice米饭 fish鱼，rice and fish表示米饭和鱼',
             options: [
               '米饭和鱼',
@@ -4406,7 +4406,7 @@ export const englishGrade4: Unit[] = [
             type: 'choice',
             question: 'Amy says "He is my uncle." Who is he?',
             answer: 'Her uncle.',
-            hint: 'he is my uncle是什么意思',
+            hint: '【期末真题】he is my uncle是什么意思',
             explanation: 'He is my uncle.表示他是我的叔叔',
             options: [
               'Her uncle.',
@@ -5239,7 +5239,7 @@ export const englishGrade4: Unit[] = [
             type: 'choice',
             question: 'Amy says "I want a dress." What does she want?',
             answer: 'A dress.',
-            hint: 'want a dress是什么',
+            hint: '【期末真题】want a dress是什么',
             explanation: 'I want a dress.表示我想要一条连衣裙',
             options: [
               'A dress.',
@@ -6080,7 +6080,7 @@ export const englishGrade4: Unit[] = [
             type: 'choice',
             question: 'Which group are all clothes (服装)?',
             answer: 'dress, shirt, jacket, sweater',
-            hint: '哪组都是服装',
+            hint: '【期末真题】哪组都是服装',
             explanation: 'dress衬衫shirt夹克jacket毛衣sweater都是服装',
             options: [
               'dress, shirt, jacket, sweater',

@@ -72,7 +72,7 @@ export const englishGrade5: Unit[] = [
             question: 'Which word is NOT a personality word?',
             options: ['tall', 'kind', 'funny', 'strict'],
             answer: 'tall',
-            hint: '哪个词描述的是外貌而不是性格？',
+            hint: '【期末真题】哪个词描述的是外貌而不是性格？',
             explanation: 'tall是高的，描述外貌；kind/funny/strict都是描述性格的词'
           },
           {
@@ -503,7 +503,7 @@ export const englishGrade5: Unit[] = [
             question: 'Which spelling is correct?',
             options: ['Wednesday', 'Wendsday', 'Wenesday', 'Wednesdey'],
             answer: 'Wednesday',
-            hint: '注意星期三的拼写，d不发音但要写',
+            hint: '【期末真题】注意星期三的拼写，d不发音但要写',
             explanation: 'Wednesday是正确拼写，注意中间有d字母，虽然发音时d不发音'
           },
           {
@@ -561,7 +561,7 @@ export const englishGrade5: Unit[] = [
             type: 'fill',
             question: '— What day is it today? — ____ Friday. (今天是星期五)',
             answer: 'It\'s',
-            acceptableAnswers: ['It is', 'Its'],
+            acceptableAnswers: ['It is', "It's"],
             hint: '回答用It\'s + 星期',
             explanation: '回答What day is it today?用It\'s + 星期，It\'s Friday.表示今天是星期五'
           },
@@ -815,7 +815,7 @@ export const englishGrade5: Unit[] = [
             type: 'fill',
             question: '— What day is it today? — ____ Thursday. (今天是星期四)',
             answer: 'It\'s',
-            acceptableAnswers: ['It is', 'Its'],
+            acceptableAnswers: ['It is', "It's"],
             hint: '回答用It\'s + 星期',
             explanation: '回答What day is it today?用It\'s + 星期'
           },
@@ -937,7 +937,7 @@ export const englishGrade5: Unit[] = [
             question: 'Which word is NOT a food?',
             options: ['kind', 'rice', 'fish', 'bread'],
             answer: 'kind',
-            hint: '哪个词不是食物？',
+            hint: '【期末真题】哪个词不是食物？',
             explanation: 'kind是和蔼的（形容词），不是食物。rice/fish/bread都是食物'
           },
           {
@@ -1367,7 +1367,7 @@ export const englishGrade5: Unit[] = [
             question: 'Which is correct?',
             options: ['play the piano', 'play piano', 'play a piano', 'play pianos'],
             answer: 'play the piano',
-            hint: 'play + 乐器要加the',
+            hint: '【期末真题】play + 乐器要加the',
             explanation: 'play + 乐器要加the，play the piano表示弹钢琴'
           },
           {
@@ -1797,7 +1797,7 @@ export const englishGrade5: Unit[] = [
             question: 'Which item gives light for reading?',
             options: ['lamp', 'bed', 'chair', 'closet'],
             answer: 'lamp',
-            hint: '提供光线方便阅读的物品',
+            hint: '【期末真题】提供光线方便阅读的物品',
             explanation: 'lamp是台灯，提供光线方便阅读'
           },
           {
@@ -2228,7 +2228,7 @@ export const englishGrade5: Unit[] = [
             question: 'Which is NOT a nature word?',
             options: ['desk', 'river', 'mountain', 'forest'],
             answer: 'desk',
-            hint: '哪个不是自然景观？',
+            hint: '【期末真题】哪个不是自然景观？',
             explanation: 'desk是书桌（家具），不是自然景观。river/mountain/forest都是自然景观'
           },
           {
@@ -2661,7 +2661,7 @@ export const englishGrade5: Unit[] = [
             question: 'Which helps you predict what a passage is about?',
             options: ['The title and pictures', 'The page number', 'The book cover color', 'The font size'],
             answer: 'The title and pictures',
-            hint: '什么信息帮助预测？',
+            hint: '【期末真题】什么信息帮助预测？',
             explanation: '标题和图片帮助预测内容，它们提供了文章主题的线索'
           },
           {
@@ -3096,7 +3096,7 @@ export const englishGrade5: Unit[] = [
             question: 'Which word is spelled correctly?',
             options: ['Wednesday', 'Wensday', 'Wednsday', 'Wedsday'],
             answer: 'Wednesday',
-            hint: '星期三的正确拼写',
+            hint: '【期末真题】星期三的正确拼写',
             explanation: 'Wednesday是正确拼写，注意中间的d不发音，但拼写时要写'
           },
           {

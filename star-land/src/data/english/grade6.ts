@@ -16,7 +16,7 @@ export const englishGrade6: Unit[] = [
         iDo: '家长出示交通工具图片说单词："This is a bus. This is a subway. I go by bike. I walk to school."配合手势做动作',
         weDo: '亲子一起看图说词，家长说中文孩子说英文，再互换角色，玩"交通方式猜猜猜"游戏',
         youDo: '孩子独立辨认交通方式词汇，看图说词并造简单句子',
-        parentTips: '上下学路上观察交通工具，看到就用英语说出来，把学习和生活联系起来',
+        parentTips: '共学四步（家长当陪练，不当老师）：①对话出题：家长指窗外问“How do you go to school?”②孩子应答：“I go to school by bus.”③答错引导：若孩子说不出交通工具词，家长先教by bus/car/bike/subway，再问“by什么”。④快速听写：路上看到车就问“英语怎么说”，孩子抢答。',
         funElement: '玩"交通达人"游戏，家长做动作（踩踏板/握方向盘/起步），孩子快速说出对应的交通方式英语',
         gsapAnimations: ['GSAP:交通工具卡片翻转-cardReveal', 'GSAP:单词逐个弹出-stagger', 'GSAP:图标缩放出现-starFlyIn'],
         images: ['IMG:illustration|交通工具图|500x300|可爱卡通风|png|4种交通', 'IMG:illustration|上学交通场景|500x300|可爱卡通风|png|上学路线'],
@@ -87,11 +87,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u1l1q7',
             type: 'fill',
-            question: 'When you meet a friend on the way to school, you say "____!" (打招呼)',
-            answer: 'Hello',
-            acceptableAnswers: ['Hi'],
-            hint: '[打招呼用语]（英语一年级-第1单元）',
-            explanation: '路上见到朋友要打招呼说Hello，这是基本的礼貌用语'
+            question: 'A ____ has two wheels. You ride it to school. (bike)',
+            answer: 'bike',
+            acceptableAnswers: ['Bike'],
+            hint: '[交通工具词汇]（英语二年级-第6单元）',
+            explanation: 'bike是自行车，有两个轮子靠骑行，是二年级Transport单元学过的交通工具词汇'
           }
         ]
       },
@@ -173,11 +173,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u1l2q7',
             type: 'fill',
-            question: 'When someone asks "How are you?", you can answer "I\'m ____, thank you." (fine/good)',
-            answer: 'fine',
-            acceptableAnswers: ['Fine', 'good', 'Good'],
-            hint: '[问候应答用语]（英语一年级-第1单元）',
-            explanation: 'How are you?的回答常用I\'m fine, thank you.这是问候应答的基础句型'
+            question: 'I go to school from Monday to ____. (星期五)',
+            answer: 'Friday',
+            acceptableAnswers: ['friday'],
+            hint: '[星期词汇]（英语五年级-第2单元）',
+            explanation: '上学通常从星期一Monday到星期五Friday，星期词汇是五年级My Days of Week单元学的'
           }
         ]
       },
@@ -189,7 +189,7 @@ export const englishGrade6: Unit[] = [
         iDo: '家长示范用频率副词："I usually go by bus. I sometimes walk. I never go by subway."配合手势表示频率高低',
         weDo: '亲子一起用频率副词造句，家长说中文孩子说英文，再互换角色',
         youDo: '孩子独立用频率副词描述自己的出行习惯',
-        parentTips: '频率从高到低：usually(通常) > often(经常) > sometimes(有时) > never(从不)，用手势比划频率',
+        parentTips: '共学四步（家长当陪练）：①对话出题：家长问“频率副词从高到低怎么排？”②孩子应答：“usually > often > sometimes > never。”③答错引导：若孩子排错，家长用手势比划——usually几乎总做、never从不做，让孩子对应排序。④快速出题：家长说一个活动如“吃冰淇淋”，孩子用4个频率词各造一句。',
         funElement: '玩"频率排序"游戏，把频率副词卡片从高到低排列，说句子比赛',
         gsapAnimations: ['GSAP:频率副词排列-timeline', 'GSAP:频率条出现-sequence', 'GSAP:副词高亮-highlight'],
         images: ['IMG:illustration|频率副词图|500x200|教学风|png|频率条', 'IMG:illustration|出行频率场景|500x300|可爱卡通风|png|频率场景'],
@@ -260,11 +260,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u1l3q7',
             type: 'choice',
-            question: 'Stand ____, please. (老师让起立的课堂指令)',
-            options: ['up', 'down', 'on', 'in'],
-            answer: 'up',
-            hint: '[课堂指令用语]（英语一年级-第1单元）',
-            explanation: 'Stand up是起立的课堂指令用语，Sit down是坐下'
+            question: 'Which day comes right after Monday?',
+            options: ['Tuesday', 'Sunday', 'Friday', 'Wednesday'],
+            answer: 'Tuesday',
+            hint: '[星期顺序]（英语五年级-第2单元）',
+            explanation: 'Monday星期一后面是Tuesday星期二，星期顺序是五年级My Days of Week单元学的知识点'
           }
         ]
       },
@@ -347,11 +347,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u1l4q7',
             type: 'choice',
-            question: 'In class, the teacher says "____ down, please." (坐下)',
-            options: ['Sit', 'Stand', 'Go', 'Wait'],
-            answer: 'Sit',
-            hint: '[课堂指令用语]（英语一年级-第1单元）',
-            explanation: 'Sit down是坐下的课堂指令用语，和Stand up起立是一对'
+            question: 'It runs on roads and stops at bus stops. What is it?',
+            options: ['bus', 'train', 'plane', 'ship'],
+            answer: 'bus',
+            hint: '[交通工具词汇]（英语二年级-第6单元）',
+            explanation: 'bus公交车在公路上跑并在公交站停靠，是二年级Transport单元学的交通工具词汇'
           }
         ]
       },
@@ -434,11 +434,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u1l5q7',
             type: 'choice',
-            question: 'When you leave school, you say "____!" to your friends. (再见)',
-            options: ['Goodbye', 'Hello', 'Sorry', 'Thanks'],
-            answer: 'Goodbye',
-            hint: '[告别用语]（英语一年级-第1单元）',
-            explanation: '放学时对同学说再见用Goodbye，和Hello打招呼是一对反义问候语'
+            question: 'Which one is a kind of transport?',
+            options: ['subway', 'apple', 'desk', 'ruler'],
+            answer: 'subway',
+            hint: '[交通工具词汇]（英语二年级-第6单元）',
+            explanation: 'subway是地铁，属于交通工具，apple/desk/ruler都不是交通工具，是二年级Transport单元学的词汇'
           }
         ]
       }
@@ -459,7 +459,7 @@ export const englishGrade6: Unit[] = [
         iDo: '家长用实物演示方位：把书放在不同位置说"next to/in front of/behind"，配合手势',
         weDo: '亲子一起放物品在不同方位，家长说英语孩子摆，再互换角色',
         youDo: '孩子独立用方位词描述物品位置',
-        parentTips: '用家里的实物演示方位词汇，把学习变成找东西游戏',
+        parentTips: '共学四步（家长当陪练）：①对话出题：家长把书放桌上问“Where is the book?”②孩子应答：“It is on the desk.”③答错引导：若孩子混淆on/in/under，家长把书放桌上(on)、抽屉里(in)、桌下(under)各演示一遍，让孩子跟着说。④快速出题：家长藏一个玩具，孩子用Where is...?找并用方位词回答。',
         funElement: '玩"藏宝图"游戏，家长用方位词描述宝藏位置，孩子去找',
         gsapAnimations: ['GSAP:物品方位出现-sceneBuild', 'GSAP:方位词卡片-cardReveal', 'GSAP:方位高亮-highlight'],
         images: ['IMG:illustration|方位词汇图|500x300|可爱卡通风|png|3种方位', 'IMG:illustration|物品方位场景|500x300|可爱卡通风|png|方位摆放'],
@@ -530,11 +530,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u2l1q7',
             type: 'fill',
-            question: 'When you meet a new friend, you say "____! Nice to meet you." (打招呼)',
-            answer: 'Hello',
-            acceptableAnswers: ['Hi'],
-            hint: '[打招呼用语]（英语一年级-第1单元）',
-            explanation: '初次见面打招呼说Hello, Nice to meet you.是基本礼貌用语'
+            question: 'A ____ is a place where children play and have fun. (park)',
+            answer: 'park',
+            acceptableAnswers: ['Park'],
+            hint: '[场所词汇]（英语二年级-第3单元）',
+            explanation: 'park是公园，孩子们玩耍的地方，是二年级Places单元学过的场所词汇'
           }
         ]
       },
@@ -610,18 +610,18 @@ export const englishGrade6: Unit[] = [
             type: 'fill',
             question: '— Where is the park? — ____ next to the school. (它)',
             answer: 'It\'s',
-            acceptableAnswers: ['It is', 'its', "It's"],
+            acceptableAnswers: ['It is', "It's"],
             hint: '指代the park用It，缩写形式',
             explanation: '指代the park用It，It\'s = It is，It\'s next to the school.它在公园旁边'
           },
           {
             id: 'e6u2l2q7',
             type: 'choice',
-            question: 'How do you answer "How are you?" politely?',
-            options: ['I\'m fine, thank you.', 'I\'m Tom.', 'I\'m nine.', 'Goodbye.'],
-            answer: 'I\'m fine, thank you.',
-            hint: '[问候应答用语]（英语一年级-第1单元）',
-            explanation: 'How are you?的礼貌回答是I\'m fine, thank you.这是问候应答基础句型'
+            question: 'Where is the book? — It\'s ____ the desk. (在...上面)',
+            options: ['on', 'at', 'of', 'by'],
+            answer: 'on',
+            hint: '[方位介词on/in/under]（英语四年级-第1单元）',
+            explanation: 'on表示在...上面，四年级My Classroom单元学过on/in/under方位介词'
           }
         ]
       },
@@ -633,7 +633,7 @@ export const englishGrade6: Unit[] = [
         iDo: '家长示范指路："Turn left. Turn right. Go straight. It\'s on your left."配合手势和地图',
         weDo: '亲子一起演指路情景剧，家长指路孩子走，再互换角色',
         youDo: '孩子独立用指路句型给别人指路',
-        parentTips: '用身体方向练习左右，Turn left向左转，Turn right向右转，结合地图练习',
+        parentTips: '共学四步（家长当陪练）：①对话出题：家长喊“Turn left!”②孩子应答并做动作：向左转，说“I turn left。”③答错引导：若孩子转错方向，家长让孩子先举起左手确认left，再转身，反复练Turn left/Turn right。④快速出题：家长连续喊left/right指令，孩子快速转向，像“萝卜蹲”游戏。',
         funElement: '玩"蒙眼导航"游戏，孩子蒙眼，家长用英语指路引导到达终点',
         gsapAnimations: ['GSAP:路线指引动画-timeline', 'GSAP:方向箭头出现-sceneBuild', 'GSAP:指路步骤高亮-highlight'],
         images: ['IMG:illustration|指路路线图|500x300|可爱卡通风|png|路线+箭头', 'IMG:illustration|左右转场景|500x300|可爱卡通风|png|方向指示'],
@@ -704,11 +704,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u2l3q7',
             type: 'choice',
-            question: 'Stand ____, please. The teacher is coming. (起立)',
-            options: ['up', 'down', 'left', 'right'],
-            answer: 'up',
-            hint: '[课堂指令用语]（英语一年级-第1单元）',
-            explanation: 'Stand up是起立的课堂指令，Sit down是坐下，是课堂基本用语'
+            question: 'You can buy food and things at the ____.',
+            options: ['supermarket', 'hospital', 'park', 'zoo'],
+            answer: 'supermarket',
+            hint: '[场所词汇]（英语二年级-第3单元）',
+            explanation: 'supermarket是超市，可以买东西，是二年级Places单元学过的场所词汇'
           }
         ]
       },
@@ -791,11 +791,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u2l4q7',
             type: 'choice',
-            question: 'When the teacher says "Stand up", you should ____.',
-            options: ['stand up', 'sit down', 'go out', 'sleep'],
-            answer: 'stand up',
-            hint: '[课堂指令用语]（英语一年级-第1单元）',
-            explanation: 'Stand up是起立指令，听到要站起来，这是课堂基本用语'
+            question: 'The cat is ____ the box. (在...里面)',
+            options: ['in', 'on', 'under', 'behind'],
+            answer: 'in',
+            hint: '[方位介词on/in/under]（英语四年级-第1单元）',
+            explanation: 'in表示在...里面，四年级My Classroom单元学过in/on/under方位介词'
           }
         ]
       },
@@ -878,11 +878,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u2l5q7',
             type: 'choice',
-            question: 'How do you answer "Thank you"?',
-            options: ['You\'re welcome.', 'I\'m fine.', 'How are you?', 'Goodbye.'],
-            answer: 'You\'re welcome.',
-            hint: '[感谢应答用语]（英语一年级-第1单元）',
-            explanation: 'Thank you的礼貌回应是You\'re welcome.表示不客气，是基础应答用语'
+            question: 'Which one is a place (场所)?',
+            options: ['school', 'run', 'blue', 'happy'],
+            answer: 'school',
+            hint: '[场所词汇]（英语二年级-第3单元）',
+            explanation: 'school是学校，属于场所，run/blue/happy都不是场所，是二年级Places单元学的词汇'
           }
         ]
       }
@@ -903,7 +903,7 @@ export const englishGrade6: Unit[] = [
         iDo: '家长示范be going to表示计划："I am going to read a book. He is going to play football."配合日历道具',
         weDo: '亲子一起用be going to造句，家长说中文孩子说英文，再互换角色',
         youDo: '孩子独立用be going to造句表达自己的计划',
-        parentTips: 'be going to + 动词原形 = 打算做某事。be动词随主语变化：I am/He is/They are',
+        parentTips: '共学四步（家长当陪练）：①对话出题：家长问“What are you going to do tomorrow?用be going to回答”②孩子应答：“I am going to read a book.”③答错引导：若孩子忘了be随主语变，家长强调口诀“I用am、He/She用is、They用are”，再让用He造一句。④快速听写：家长说主语(I/He/They)，孩子说出对应be动词并接going to。',
         funElement: '玩"计划大师"游戏，抽活动卡片用be going to说计划',
         gsapAnimations: ['GSAP:be going to句型构建-timeline', 'GSAP:句型结构出现-cardReveal', 'GSAP:关键词高亮-highlight'],
         images: ['IMG:illustration|将来时句型图|500x300|教学风|png|句型结构', 'IMG:illustration|计划日历|500x300|可爱卡通风|png|日历计划'],
@@ -974,11 +974,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u3l1q7',
             type: 'fill',
-            question: 'My ____ is Tom. (名字) Nice to meet you.',
-            answer: 'name',
-            acceptableAnswers: ['Name'],
-            hint: '[自我介绍用语]（英语一年级-第1单元）',
-            explanation: '自我介绍用My name is...，name表示名字，是基础自我介绍用语'
+            question: 'I ____ swim. I am good at it. (can)',
+            answer: 'can',
+            acceptableAnswers: ['Can'],
+            hint: '[can/can\'t能力表达]（英语五年级-第4单元）',
+            explanation: 'can表示能、会，五年级What Can You Do单元学过用can/can\'t表达能力'
           }
         ]
       },
@@ -1061,11 +1061,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u3l2q7',
             type: 'choice',
-            question: 'When you meet a friend, you say "____!" (打招呼)',
-            options: ['Hello', 'Goodbye', 'Sorry', 'Wait'],
-            answer: 'Hello',
-            hint: '[打招呼用语]（英语一年级-第1单元）',
-            explanation: '见到朋友要打招呼说Hello，这是基本礼貌用语'
+            question: '—What can you do? —I ____ draw pictures.',
+            options: ['can', 'am', 'do', 'have'],
+            answer: 'can',
+            hint: '[can/can\'t能力表达]（英语五年级-第4单元）',
+            explanation: '询问能力用What can you do?回答用I can...，是五年级What Can You Do单元学的句型'
           }
         ]
       },
@@ -1077,7 +1077,7 @@ export const englishGrade6: Unit[] = [
         iDo: '家长示范时间表达："tomorrow/next week/this weekend"，配合日历指出时间',
         weDo: '亲子一起用时间表达造句，家长说时间孩子说计划，再互换角色',
         youDo: '孩子独立用时间表达加be going to造句',
-        parentTips: '将来时间词：tomorrow明天、next week下周、this weekend这周末，放在句末',
+        parentTips: '共学四步（家长当陪练）：①对话出题：家长问“将来时间词有哪些？”②孩子应答：“tomorrow、next week、this weekend。”③答错引导：若孩子放错位置，家长强调时间词放句末，如“I am going to swim tomorrow”，让孩子仿说。④快速出题：家长说一个活动，孩子加时间词造一句be going to。',
         funElement: '玩"时间机器"游戏，抽时间卡片用be going to说计划',
         gsapAnimations: ['GSAP:时间词汇出现-timeline', 'GSAP:时间轴展示-sequence', 'GSAP:时间词高亮-highlight'],
         images: ['IMG:illustration|将来时间图|500x200|教学风|png|时间轴', 'IMG:illustration|日历时间表|500x300|可爱卡通风|png|日历'],
@@ -1148,11 +1148,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u3l3q7',
             type: 'choice',
-            question: 'The teacher says "____ down, please." (坐下)',
-            options: ['Sit', 'Stand', 'Go', 'Turn'],
-            answer: 'Sit',
-            hint: '[课堂指令用语]（英语一年级-第1单元）',
-            explanation: 'Sit down是坐下的课堂指令用语，是课堂基本用语'
+            question: 'In the morning, I usually ____ my teeth.',
+            options: ['brush', 'wash', 'clean', 'make'],
+            answer: 'brush',
+            hint: '[日常活动]（英语二年级-第1单元）',
+            explanation: 'brush my teeth刷牙，是二年级My Day单元学过的早晨日常活动'
           }
         ]
       },
@@ -1235,11 +1235,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u3l4q7',
             type: 'fill',
-            question: 'When you leave, you say "____!" to your friends. (再见)',
-            answer: 'Goodbye',
-            acceptableAnswers: ['Bye', 'Bye-bye'],
-            hint: '[告别用语]（英语一年级-第1单元）',
-            explanation: '离开时说再见用Goodbye，是基本告别用语'
+            question: 'I ____ dinner at 7 o\'clock in the evening. (吃)',
+            answer: 'eat',
+            acceptableAnswers: ['Eat', 'have', 'Have'],
+            hint: '[日常活动]（英语二年级-第1单元）',
+            explanation: 'eat dinner吃晚餐，是二年级My Day单元学过的晚间日常活动'
           }
         ]
       },
@@ -1322,11 +1322,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u3l5q7',
             type: 'choice',
-            question: 'How do you answer "How are you?"',
-            options: ['I\'m fine, thank you.', 'I\'m Tom.', 'I\'m nine.', 'Goodbye.'],
-            answer: 'I\'m fine, thank you.',
-            hint: '[问候应答用语]（英语一年级-第1单元）',
-            explanation: 'How are you?的回答是I\'m fine, thank you.这是基础问候应答用语'
+            question: 'Which sentence is correct?',
+            options: ['I can play the piano.', 'I can plays the piano.', 'I can playing the piano.', 'I can to play the piano.'],
+            answer: 'I can play the piano.',
+            hint: '[can/can\'t能力表达]（英语五年级-第4单元）',
+            explanation: 'can后面接动词原形，所以是I can play the piano.是五年级What Can You Do单元学的句型'
           }
         ]
       }
@@ -1347,7 +1347,7 @@ export const englishGrade6: Unit[] = [
         iDo: '家长做动作说爱好词汇："reading/swimming/collecting stamps/drawing"，配合夸张动作',
         weDo: '亲子一起做动作说爱好，家长说中文孩子说英文，再互换角色',
         youDo: '孩子独立辨认爱好词汇并做动作',
-        parentTips: '用动作和图片学爱好词汇，让孩子在动中学，记得更牢',
+        parentTips: '共学四步（家长当陪练）：①对话出题：家长做游泳动作问“What is my hobby?”②孩子应答：“Your hobby is swimming.”③答错引导：若孩子不会动词ing形式，家长先教swimming/reading/dancing，强调爱好用动词ing。④快速出题：家长比划一个动作，孩子用I like + ing回答。',
         funElement: '玩"爱好猜猜猜"游戏，孩子做动作家长猜爱好词汇',
         gsapAnimations: ['GSAP:爱好卡片翻转-cardReveal', 'GSAP:爱好动作出现-stagger', 'GSAP:爱好图标-starFlyIn'],
         images: ['IMG:illustration|爱好图|500x300|可爱卡通风|png|4种爱好', 'IMG:illustration|爱好动作图|500x300|可爱卡通风|png|爱好动作'],
@@ -1418,11 +1418,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u4l1q7',
             type: 'fill',
-            question: '____! My name is Tom. (你好) Nice to meet you.',
-            answer: 'Hello',
-            acceptableAnswers: ['Hi'],
-            hint: '[自我介绍用语]（英语一年级-第1单元）',
-            explanation: '自我介绍先打招呼说Hello，My name is...是基础自我介绍用语'
+            question: 'Drawing and reading are my ____. (爱好)',
+            answer: 'hobbies',
+            acceptableAnswers: ['Hobbies'],
+            hint: '[爱好词汇]（英语二年级-第7单元）',
+            explanation: 'hobbies是爱好的复数，drawing画画和reading阅读都是爱好，是二年级Hobbies单元学的词汇'
           }
         ]
       },
@@ -1434,7 +1434,7 @@ export const englishGrade6: Unit[] = [
         iDo: '家长示范第三人称单数："I like reading. He likes swimming. She likes drawing."强调动词加s',
         weDo: '亲子一起造句，家长说I句型孩子改成He/She句型，再互换角色',
         youDo: '孩子独立用第三人称单数造句',
-        parentTips: 'he/she/it + 动词加s/es。如：like→likes, swim→swims, watch→watches',
+        parentTips: '共学四步（家长当陪练）：①对话出题：家长问“He like还是He likes？”②孩子应答：“He likes，he/she/it后动词加s。”③答错引导：若孩子忘加s，家长强调口诀“他她它，动词加s/es”，并练watch→watches(加es)特例。④快速听写：家长报动词(like/swim/watch)，孩子说三单形式。',
         funElement: '玩"变身游戏"，把I句型变成He/She句型，比比谁变得快',
         gsapAnimations: ['GSAP:第三人称变化动画-timeline', 'GSAP:动词变化-cardReveal', 'GSAP:变化规则高亮-highlight'],
         images: ['IMG:illustration|第三人称变化图|500x300|教学风|png|变化规则', 'IMG:illustration|人称代词图|500x300|教学风|png|人称代词'],
@@ -1505,11 +1505,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u4l2q7',
             type: 'choice',
-            question: 'When the teacher says "Stand up", what do you do?',
-            options: ['stand up', 'sit down', 'go home', 'sleep'],
-            answer: 'stand up',
-            hint: '[课堂指令用语]（英语一年级-第1单元）',
-            explanation: 'Stand up是起立指令，听到要站起来，是课堂基本用语'
+            question: 'She ____ long hair. (have/has)',
+            options: ['has', 'have', 'is', 'are'],
+            answer: 'has',
+            hint: '[描述朋友外貌]（英语三年级-第2单元）',
+            explanation: '主语she第三人称单数，用has，三年级My Friends单元学过用has描述朋友外貌'
           }
         ]
       },
@@ -1592,11 +1592,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u4l3q7',
             type: 'fill',
-            question: 'When you meet a new friend, say "____! Nice to meet you." (打招呼)',
-            answer: 'Hello',
-            acceptableAnswers: ['Hi'],
-            hint: '[打招呼用语]（英语一年级-第1单元）',
-            explanation: '见到新朋友打招呼说Hello, Nice to meet you.是基础礼貌用语'
+            question: 'I like ____ pictures. It is fun. (画)',
+            answer: 'drawing',
+            acceptableAnswers: ['Drawing'],
+            hint: '[爱好词汇]（英语二年级-第7单元）',
+            explanation: 'like后面接动词ing，drawing是画画，是二年级Hobbies单元学过的爱好词汇'
           }
         ]
       },
@@ -1679,11 +1679,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u4l4q7',
             type: 'choice',
-            question: 'When you leave school, you say "____!" to friends. (再见)',
-            options: ['Goodbye', 'Hello', 'Sorry', 'Thanks'],
-            answer: 'Goodbye',
-            hint: '[告别用语]（英语一年级-第1单元）',
-            explanation: '放学说再见用Goodbye，是基础告别用语'
+            question: 'My friend is tall and ____. He is very strong.',
+            options: ['strong', 'sad', 'tired', 'hungry'],
+            answer: 'strong',
+            hint: '[描述朋友外貌]（英语三年级-第2单元）',
+            explanation: 'strong是强壮的，三年级My Friends单元学过用tall/strong描述朋友外貌'
           }
         ]
       },
@@ -1766,11 +1766,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u4l5q7',
             type: 'choice',
-            question: 'How do you answer "Thank you"?',
-            options: ['You\'re welcome.', 'I\'m fine.', 'How are you?', 'Goodbye.'],
-            answer: 'You\'re welcome.',
-            hint: '[感谢应答用语]（英语一年级-第1单元）',
-            explanation: 'Thank you的礼貌回应是You\'re welcome.表示不客气，是基础应答用语'
+            question: 'Which one is a hobby (爱好)?',
+            options: ['swimming', 'blue', 'Monday', 'desk'],
+            answer: 'swimming',
+            hint: '[爱好词汇]（英语二年级-第7单元）',
+            explanation: 'swimming游泳是爱好，是二年级Hobbies单元学的词汇，blue/Monday/desk都不是爱好'
           }
         ]
       }
@@ -1791,7 +1791,7 @@ export const englishGrade6: Unit[] = [
         iDo: '家长模仿职业动作说单词："teacher/doctor/engineer/pilot"，配合夸张动作',
         weDo: '亲子一起演职业，家长做动作孩子猜单词，再互换角色',
         youDo: '孩子独立模仿职业动作并说出对应单词',
-        parentTips: '用动作模仿职业学单词，让孩子在表演中记住职业词汇',
+        parentTips: '共学四步（家长当陪练）：①对话出题：家长做写字动作问“What do I do?”②孩子应答：“You are a teacher.”③答错引导：若孩子说不全职业词，家长先教teacher/doctor/driver/police，再演一个让孩子猜。④快速出题：家长演职业动作，孩子用He/She is a...猜。',
         funElement: '玩"职业模仿秀"游戏，孩子演职业，家长猜，再互换角色',
         gsapAnimations: ['GSAP:职业卡片翻转-cardReveal', 'GSAP:职业人物出现-stagger', 'GSAP:职业图标-starFlyIn'],
         images: ['IMG:illustration|职业人物图|500x300|可爱卡通风|png|4种职业', 'IMG:illustration|职业工具图|500x300|可爱卡通风|png|职业工具'],
@@ -1862,11 +1862,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u5l1q7',
             type: 'choice',
-            question: 'When you meet a friend, you say "____!" (打招呼)',
-            options: ['Hello', 'Goodbye', 'Sorry', 'Wait'],
-            answer: 'Hello',
-            hint: '[打招呼用语]（英语一年级-第1单元）',
-            explanation: '见到朋友打招呼说Hello，这是基本礼貌用语'
+            question: 'A ____ helps sick people in the hospital.',
+            options: ['doctor', 'teacher', 'pilot', 'farmer'],
+            answer: 'doctor',
+            hint: '[职业词汇]（英语三年级-第5单元）',
+            explanation: 'doctor医生在医院帮助病人，是三年级Jobs单元学过的职业词汇'
           }
         ]
       },
@@ -1878,7 +1878,7 @@ export const englishGrade6: Unit[] = [
         iDo: '家长示范问答职业："What does your mother do? She is a doctor."',
         weDo: '亲子一起问答职业，家长问孩子答，再互换角色',
         youDo: '孩子独立用What does...do?询问并回答职业',
-        parentTips: 'What does...do?问职业，回答用He/She is a/an + 职业。注意第三人称用does',
+        parentTips: '共学四步（家长当陪练）：①对话出题：家长问“What does your father do?”②孩子应答：“He is a doctor.”③答错引导：若孩子用What do问三单，家长强调“问第三人称用does不是do”，再练What does she do?。④快速出题：家长说家人身份，孩子用What does...do?提问并回答。',
         funElement: '玩"职业猜猜猜"游戏，一人描述职业特征，另一人猜职业',
         gsapAnimations: ['GSAP:职业问答展开-timeline', 'GSAP:对话气泡弹出-stagger', 'GSAP:问答高亮-highlight'],
         images: ['IMG:illustration|职业对话场景|500x300|可爱卡通风|png|对话气泡', 'IMG:illustration|职业问答图|500x300|可爱卡通风|png|职业问答'],
@@ -1949,11 +1949,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u5l2q7',
             type: 'choice',
-            question: 'When someone helps you, you say "____!" (感谢)',
-            options: ['Thank you', 'Sorry', 'Goodbye', 'Hello'],
-            answer: 'Thank you',
-            hint: '[感谢用语]（英语一年级-第1单元）',
-            explanation: '别人帮助你时说Thank you表示感谢，是基础礼貌用语'
+            question: '—How many people are there in your family? —____ five.',
+            options: ['There are', 'There is', 'They are', 'It is'],
+            answer: 'There are',
+            hint: '[How many句型]（英语四年级-第6单元）',
+            explanation: '询问数量用How many，回答用There are+复数，是四年级Meet My Family单元学的句型'
           }
         ]
       },
@@ -2036,11 +2036,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u5l3q7',
             type: 'choice',
-            question: 'The teacher says "____ up, please." (起立)',
-            options: ['Stand', 'Sit', 'Go', 'Turn'],
-            answer: 'Stand',
-            hint: '[课堂指令用语]（英语一年级-第1单元）',
-            explanation: 'Stand up是起立的课堂指令，是课堂基本用语'
+            question: 'A ____ works at a school and teaches students.',
+            options: ['teacher', 'doctor', 'pilot', 'cook'],
+            answer: 'teacher',
+            hint: '[职业词汇]（英语三年级-第5单元）',
+            explanation: 'teacher老师在学校教书，是三年级Jobs单元学过的职业词汇'
           }
         ]
       },
@@ -2123,11 +2123,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u5l4q7',
             type: 'fill',
-            question: '____! My name is Amy. (你好) Nice to meet you.',
-            answer: 'Hello',
-            acceptableAnswers: ['Hi'],
-            hint: '[自我介绍用语]（英语一年级-第1单元）',
-            explanation: '自我介绍先打招呼说Hello，My name is...是基础自我介绍用语'
+            question: 'My father and my ____ are my parents. (妈妈)',
+            answer: 'mother',
+            acceptableAnswers: ['Mother'],
+            hint: '[家庭成员词汇]（英语四年级-第6单元）',
+            explanation: 'mother妈妈，father和mother合称parents父母，是四年级Meet My Family单元学的家庭成员词汇'
           }
         ]
       },
@@ -2210,11 +2210,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u5l5q7',
             type: 'choice',
-            question: 'How do you answer "Thank you"?',
-            options: ['You\'re welcome.', 'I\'m fine.', 'How are you?', 'Goodbye.'],
-            answer: 'You\'re welcome.',
-            hint: '[感谢应答用语]（英语一年级-第1单元）',
-            explanation: 'Thank you的礼貌回应是You\'re welcome.表示不客气，是基础应答用语'
+            question: 'Which one is a job (职业)?',
+            options: ['chef', 'apple', 'run', 'Monday'],
+            answer: 'chef',
+            hint: '[职业词汇]（英语三年级-第5单元）',
+            explanation: 'chef是厨师，属于职业，apple/run/Monday都不是职业，是三年级Jobs单元学的词汇'
           }
         ]
       }
@@ -2235,7 +2235,7 @@ export const englishGrade6: Unit[] = [
         iDo: '家长演示水循环实验，说词汇："rain/cloud/sun/water cycle"，配合道具',
         weDo: '亲子一起观察水循环实验，家长说英语孩子指认',
         youDo: '孩子独立说水循环过程和相关词汇',
-        parentTips: '水循环：蒸发evaporation→凝结condensation→降水precipitation，用实验演示',
+        parentTips: '共学四步（家长当陪练）：①对话出题：家长问“水循环分哪三步？英语怎么说？”②孩子应答：“evaporation→condensation→precipitation。”③答错引导：若孩子记不住，家长烧水演示蒸发(水变水汽)、盖盖子演示凝结(水汽变水滴)，边演边说英文。④快速听写：家长说中文步骤，孩子说英文词。',
         funElement: '玩"水循环小实验"游戏，用热水和冰块演示水循环',
         gsapAnimations: ['GSAP:水循环动画-timeline', 'GSAP:自然词汇出现-sequence', 'GSAP:循环过程高亮-highlight'],
         images: ['IMG:illustration|水循环图|500x300|水彩画风|png|循环过程', 'IMG:illustration|自然现象图|500x300|水彩画风|png|雨云太阳'],
@@ -2306,11 +2306,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u6l1q7',
             type: 'fill',
-            question: 'My ____ is Tom. (名字) Nice to meet you.',
-            answer: 'name',
-            acceptableAnswers: ['Name'],
-            hint: '[自我介绍用语]（英语一年级-第1单元）',
-            explanation: '自我介绍用My name is...，name表示名字，是基础自我介绍用语'
+            question: 'A ____ has many trees. Animals live there. (森林)',
+            answer: 'forest',
+            acceptableAnswers: ['Forest'],
+            hint: '[自然景观词汇]（英语三年级-第4单元）',
+            explanation: 'forest森林有很多树，动物栖息其中，是三年级Nature单元学过的自然景观词汇'
           }
         ]
       },
@@ -2393,11 +2393,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u6l2q7',
             type: 'choice',
-            question: 'When you meet a friend, you say "____!" (打招呼)',
-            options: ['Hello', 'Goodbye', 'Sorry', 'Wait'],
-            answer: 'Hello',
-            hint: '[打招呼用语]（英语一年级-第1单元）',
-            explanation: '见到朋友打招呼说Hello，这是基本礼貌用语'
+            question: '____ there a river in the park? — Yes, there is.',
+            options: ['Is', 'Are', 'Do', 'Does'],
+            answer: 'Is',
+            hint: '[Is there/Are there句型]（英语五年级-第6单元）',
+            explanation: '单数名词river前用Is there...?，是五年级Nature Park单元学的Is there/Are there句型'
           }
         ]
       },
@@ -2480,11 +2480,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u6l3q7',
             type: 'choice',
-            question: 'The teacher says "____ down, please." (坐下)',
-            options: ['Sit', 'Stand', 'Go', 'Turn'],
-            answer: 'Sit',
-            hint: '[课堂指令用语]（英语一年级-第1单元）',
-            explanation: 'Sit down是坐下的课堂指令用语，是课堂基本用语'
+            question: 'Which one is a natural landscape (自然景观)?',
+            options: ['mountain', 'desk', 'ruler', 'school'],
+            answer: 'mountain',
+            hint: '[自然景观词汇]（英语三年级-第4单元）',
+            explanation: 'mountain山是自然景观，是三年级Nature单元学过的词汇，desk/ruler/school都不是自然景观'
           }
         ]
       },
@@ -2496,7 +2496,7 @@ export const englishGrade6: Unit[] = [
         iDo: '家长示范用顺序词描述过程："First, the sun heats water. Then, water makes clouds. Finally, rain falls."',
         weDo: '亲子一起用顺序词描述水循环过程，互相补充',
         youDo: '孩子独立用顺序词描述水循环过程',
-        parentTips: 'First...Then...Next...Finally...表示过程顺序，用来描述步骤',
+        parentTips: '共学四步（家长当陪练）：①对话出题：家长问“表示过程顺序的词有哪些？”②孩子应答：“First, Then, Next, Finally。”③答错引导：若孩子顺序乱，家长用做三明治为例——First拿面包、Then放肉、Next放菜、Finally盖一片，让孩子用顺序词描述。④快速出题：家长说一个流程(如刷牙)，孩子用4个顺序词描述。',
         funElement: '玩"过程讲解员"游戏，用顺序词讲解水循环过程',
         gsapAnimations: ['GSAP:顺序步骤展开-timeline', 'GSAP:顺序词出现-sequence', 'GSAP:步骤高亮-highlight'],
         images: ['IMG:illustration|过程描述图|500x300|教学风|png|顺序词', 'IMG:illustration|水循环步骤|500x300|水彩画风|png|循环步骤'],
@@ -2567,11 +2567,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u6l4q7',
             type: 'fill',
-            question: 'When you leave, say "____!" to friends. (再见)',
-            answer: 'Goodbye',
-            acceptableAnswers: ['Bye', 'Bye-bye'],
-            hint: '[告别用语]（英语一年级-第1单元）',
-            explanation: '离开时说再见用Goodbye，是基本告别用语'
+            question: '____ there any flowers in the park? — Yes, there are.',
+            answer: 'Are',
+            acceptableAnswers: ['are'],
+            hint: '[Is there/Are there句型]（英语五年级-第6单元）',
+            explanation: '复数名词flowers前用Are there...?，是五年级Nature Park单元学的Is there/Are there句型'
           }
         ]
       },
@@ -2654,11 +2654,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u6l5q7',
             type: 'choice',
-            question: 'How do you answer "How are you?"',
-            options: ['I\'m fine, thank you.', 'I\'m Tom.', 'I\'m nine.', 'Goodbye.'],
-            answer: 'I\'m fine, thank you.',
-            hint: '[问候应答用语]（英语一年级-第1单元）',
-            explanation: 'How are you?的回答是I\'m fine, thank you.这是基础问候应答用语'
+            question: 'Water falls from the sky as ____.',
+            options: ['rain', 'sand', 'rock', 'wood'],
+            answer: 'rain',
+            hint: '[自然景观词汇]（英语三年级-第4单元）',
+            explanation: 'rain雨从天空落下，是三年级Nature单元学过的自然景观词汇'
           }
         ]
       }
@@ -2750,11 +2750,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u7l1q7',
             type: 'choice',
-            question: 'When you meet a friend, you say "____!" (打招呼)',
-            options: ['Hello', 'Goodbye', 'Sorry', 'Wait'],
-            answer: 'Hello',
-            hint: '[打招呼用语]（英语一年级-第1单元）',
-            explanation: '见到朋友打招呼说Hello，这是基本礼貌用语'
+            question: 'When you read, what helps you guess a new word\'s meaning?',
+            options: ['Context clues in the sentence', 'Close your eyes', 'Skip the whole text', 'Read only the title'],
+            answer: 'Context clues in the sentence',
+            hint: '[阅读理解策略]（英语五年级-第7单元）',
+            explanation: '上下文线索能帮助猜测生词含义，是五年级阅读理解进阶单元学过的阅读策略'
           }
         ]
       },
@@ -2837,11 +2837,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u7l2q7',
             type: 'choice',
-            question: 'When someone helps you, you say "____!" (感谢)',
-            options: ['Thank you', 'Sorry', 'Goodbye', 'Hello'],
-            answer: 'Thank you',
-            hint: '[感谢用语]（英语一年级-第1单元）',
-            explanation: '别人帮助你时说Thank you表示感谢，是基础礼貌用语'
+            question: 'What is the first thing you do when you read a story?',
+            options: ['Read the title and pictures', 'Eat a snack', 'Go to sleep', 'Sing a song'],
+            answer: 'Read the title and pictures',
+            hint: '[阅读故事方法]（英语三年级-第6单元）',
+            explanation: '读故事先看标题和图片了解大意，是三年级Stories单元学过的阅读方法'
           }
         ]
       },
@@ -2924,11 +2924,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u7l3q7',
             type: 'fill',
-            question: '____! My name is Tom. (你好) Nice to meet you.',
-            answer: 'Hello',
-            acceptableAnswers: ['Hi'],
-            hint: '[自我介绍用语]（英语一年级-第1单元）',
-            explanation: '自我介绍先打招呼说Hello，My name is...是基础自我介绍用语'
+            question: 'My favourite ____ is blue. (颜色)',
+            answer: 'color',
+            acceptableAnswers: ['Color', 'colour', 'Colour'],
+            hint: '[喜好表达句型]（英语五年级-第3单元）',
+            explanation: 'My favourite...句型用来表达喜好，是五年级Favourite Food单元学过的喜好表达句型'
           }
         ]
       },
@@ -3011,11 +3011,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u7l4q7',
             type: 'choice',
-            question: 'When you leave school, you say "____!" to friends. (再见)',
-            options: ['Goodbye', 'Hello', 'Sorry', 'Thanks'],
-            answer: 'Goodbye',
-            hint: '[告别用语]（英语一年级-第1单元）',
-            explanation: '放学说再见用Goodbye，是基础告别用语'
+            question: 'When writing "A day in my life", which order do you use?',
+            options: ['Morning, afternoon, evening', 'Random order', 'Evening first', 'Only night'],
+            answer: 'Morning, afternoon, evening',
+            hint: '[一日活动顺序]（英语二年级-第1单元）',
+            explanation: '写"我的一天"按早晨、下午、晚上的时间顺序，是二年级My Day单元学过的一日活动'
           }
         ]
       },
@@ -3098,11 +3098,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u7l5q7',
             type: 'choice',
-            question: 'How do you answer "Thank you"?',
-            options: ['You\'re welcome.', 'I\'m fine.', 'How are you?', 'Goodbye.'],
-            answer: 'You\'re welcome.',
-            hint: '[感谢应答用语]（英语一年级-第1单元）',
-            explanation: 'Thank you的礼貌回应是You\'re welcome.表示不客气，是基础应答用语'
+            question: 'What does "main idea" of a passage mean?',
+            options: ['The most important point of the text', 'The last word', 'The title only', 'A new word'],
+            answer: 'The most important point of the text',
+            hint: '[阅读理解策略]（英语五年级-第7单元）',
+            explanation: 'main idea是文章主旨大意，是五年级阅读理解进阶单元学过的阅读策略'
           }
         ]
       }
@@ -3194,11 +3194,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u8l1q7',
             type: 'choice',
-            question: 'When you meet a friend, you say "____!" (打招呼)',
-            options: ['Hello', 'Goodbye', 'Sorry', 'Wait'],
-            answer: 'Hello',
-            hint: '[打招呼用语]（英语一年级-第1单元）',
-            explanation: '见到朋友打招呼说Hello，这是基本礼貌用语'
+            question: '—How do you go to school? —I go ____ bus.',
+            options: ['by', 'on', 'in', 'at'],
+            answer: 'by',
+            hint: '[How do you go to...?句型]（英语六年级-第1单元）',
+            explanation: '乘交通工具用by，by bus坐公交，是六年级第1单元How Do You Go There学的核心句型'
           }
         ]
       },
@@ -3281,11 +3281,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u8l2q7',
             type: 'choice',
-            question: 'When the teacher says "Stand up", what do you do?',
-            options: ['stand up', 'sit down', 'go home', 'sleep'],
-            answer: 'stand up',
-            hint: '[课堂指令用语]（英语一年级-第1单元）',
-            explanation: 'Stand up是起立指令，听到要站起来，是课堂基本用语'
+            question: '—Excuse me, ____ is the museum? —It\'s next to the park.',
+            options: ['where', 'what', 'when', 'who'],
+            answer: 'where',
+            hint: '[Where is...?句型]（英语六年级-第2单元）',
+            explanation: '问路用Where is...?where询问地点，是六年级第2单元Where Is the Museum学的核心句型'
           }
         ]
       },
@@ -3368,11 +3368,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u8l3q7',
             type: 'choice',
-            question: 'How do you answer "How are you?"',
-            options: ['I\'m fine, thank you.', 'I\'m Tom.', 'I\'m nine.', 'Goodbye.'],
-            answer: 'I\'m fine, thank you.',
-            hint: '[问候应答用语]（英语一年级-第1单元）',
-            explanation: 'How are you?的回答是I\'m fine, thank you.这是基础问候应答用语'
+            question: '—What are you going to do this weekend? —I\'m going to ____ a book.',
+            options: ['read', 'reads', 'reading', 'to read'],
+            answer: 'read',
+            hint: '[be going to句型]（英语六年级-第3单元）',
+            explanation: 'be going to后面接动词原形，read是原形，是六年级第3单元What Are You Going to Do学的句型'
           }
         ]
       },
@@ -3455,11 +3455,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u8l4q7',
             type: 'choice',
-            question: 'When someone helps you, you say "____!" (感谢)',
-            options: ['Thank you', 'Sorry', 'Goodbye', 'Hello'],
-            answer: 'Thank you',
-            hint: '[感谢用语]（英语一年级-第1单元）',
-            explanation: '别人帮助你时说Thank you表示感谢，是基础礼貌用语'
+            question: '—What\'s your hobby? —I like ____ stamps.',
+            options: ['collecting', 'collects', 'collect', 'to collecting'],
+            answer: 'collecting',
+            hint: '[What\'s your hobby?句型]（英语六年级-第4单元）',
+            explanation: 'like后面接动词ing，collecting是收集，是六年级第4单元I Have a Pen Pal学的爱好句型'
           }
         ]
       },
@@ -3542,11 +3542,11 @@ export const englishGrade6: Unit[] = [
           {
             id: 'e6u8l5q7',
             type: 'choice',
-            question: 'How do you answer "Thank you"?',
-            options: ['You\'re welcome.', 'I\'m fine.', 'How are you?', 'Goodbye.'],
-            answer: 'You\'re welcome.',
-            hint: '[感谢应答用语]（英语一年级-第1单元）',
-            explanation: 'Thank you的礼貌回应是You\'re welcome.表示不客气，是基础应答用语'
+            question: '—What ____ your mother do? —She is a doctor.',
+            options: ['does', 'do', 'is', 'are'],
+            answer: 'does',
+            hint: '[What does...do?句型]（英语六年级-第5单元）',
+            explanation: '第三人称单数your mother用does，是六年级第5单元What Does She Do学的职业问答句型'
           }
         ]
       }

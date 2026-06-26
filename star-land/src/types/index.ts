@@ -172,7 +172,7 @@ export interface AnimationSceneConfig {
   verticalCalcConfig?: {
     num1: number           // 第一个数
     num2: number           // 第二个数
-    operator: '+' | '-' | '×'  // 运算符
+    operator: '+' | '-' | '×' | '÷'  // 运算符
     result: number         // 结果
     carry?: number[]       // 进位（从高位到低位，对应显示位置从左到右）
     borrow?: number[]      // 借位（从高位到低位，对应显示位置从左到右）
