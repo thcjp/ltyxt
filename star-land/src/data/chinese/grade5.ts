@@ -1,0 +1,4249 @@
+import type { Unit } from '@/types'
+
+export const chineseGrade5: Unit[] = [
+  // ==================== 第一单元：关联词与修辞手法 ====================
+  {
+    id: 'c5u1',
+    title: '关联词与修辞手法',
+    subtitle: '关联词辨析与修辞手法运用',
+    order: 1,
+    lessons: [
+      {
+        id: 'c5u1l1',
+        title: '关联词入门——并列与递进',
+        order: 1,
+        teachingMethod: '情境式：句子搭桥',
+        content: [
+          { type: 'text', content: '我们说话和写文章时，常常要把两个或几个句子连起来，这就需要用到"关联词"。关联词就像一座座小桥，把意思相关的句子连接起来，让表达更顺畅、更有逻辑。', animationType: 'reveal' },
+          { type: 'example', content: '并列关系：表示几个方面同时存在或同时进行。\n既……又……：他既聪明又用功。\n一边……一边……：妈妈一边做饭一边唱歌。\n不是……而是……：这不是我的书，而是小明的。', label: '并列关联词', animationType: 'bounce' },
+          { type: 'tip', content: '并列关联词的特点：前后两部分地位平等，没有主次之分，可以交换顺序而意思不变。"既……又……"是最常用的并列关联词。', label: '并列小窍门', animationType: 'pulse' },
+          { type: 'example', content: '递进关系：表示后一部分比前一部分更进一层。\n不但……而且……：他不但学习好，而且品德优秀。\n不仅……还……：小红不仅会弹琴，还会画画。\n甚至：今天很冷，甚至结了冰。', label: '递进关联词', animationType: 'bounce' },
+          { type: 'animation', content: '两个分句用关联词连接的搭桥动画，左边分句和右边分句通过中间的关联词桥梁连接起来', animationType: 'timeline',
+            animationConfig: {
+              sceneType: 'timeline',
+              title: '关联词搭桥：句子连接',
+              timelineConfig: {
+                steps: [
+                  { id: 's1', description: '前一个分句', text: '他既聪明', ttsNarration: '先看前半句：他既聪明' },
+                  { id: 's2', description: '关联词桥梁', text: '既……又……', ttsNarration: '用并列关联词既又连接' },
+                  { id: 's3', description: '后一个分句', text: '又用功', ttsNarration: '再接后半句：又用功' },
+                  { id: 's4', description: '完整句子', text: '他既聪明又用功。', ttsNarration: '连起来就是：他既聪明又用功' },
+                ],
+              },
+              ttsNarration: '关联词像小桥，把两个分句连成一句话。',
+            },
+          },
+          { type: 'tip', content: '区分并列与递进：并列是"两边一样重"，递进是"后面更厉害"。读一读，如果后半句程度更深，就是递进。', label: '易混辨析', animationType: 'pulse' },
+        ],
+        iDo: '家长用"既……又……"和"不但……而且……"各造一个句子，让孩子听出并列和递进的差别。',
+        weDo: '亲子一起做"句子搭桥"，给两个分句选择合适的关联词连接起来。',
+        youDo: '孩子独立用并列和递进关联词各造一个句子。',
+        parentTips: '并列关联词前后可换，递进关联词后半句程度更深，让孩子读出来体会。',
+        funElement: '小游戏：句子搭桥工程师！给两个分句搭一座"关联词桥"，看谁搭得又快又稳！',
+        gsapAnimations: [
+          '[GSAP:timeline|两个分句用关联词连接成桥|1s|点击播放|power2.out]',
+          '[GSAP:highlight|关联词桥梁高亮变色|0.5s|搭桥完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|关联词搭桥图|500x200|教学风|png|桥+关联词]',
+          '[IMG:illustration|并列与递进对比图|500x300|教学风|png|两种关系]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u1l1q1',
+            type: 'choice',
+            question: '下列哪组是并列关联词？',
+            options: ['因为……所以……', '既……又……', '不但……而且……'],
+            answer: '既……又……',
+            hint: '并列关系前后地位平等',
+            explanation: '"既……又……"表示两方面同时存在，是并列关联词。"因为……所以……"是因果，"不但……而且……"是递进。'
+          },
+          {
+            id: 'c5u1l1q2',
+            type: 'choice',
+            question: '"他既聪明又用功"中"既……又……"表示什么关系？',
+            options: ['递进关系', '因果关系', '并列关系'],
+            answer: '并列关系',
+            hint: '想想聪明和用功谁更重',
+            explanation: '"聪明"和"用功"两方面地位平等，没有主次，所以是并列关系。'
+          },
+          {
+            id: 'c5u1l1q3',
+            type: 'fill',
+            question: '填关联词：妈妈___做饭___唱歌。（填并列关联词）',
+            answer: '一边……一边……',
+            acceptableAnswers: ['一边……一边……', '一边...一边...', '一边一边'],
+            hint: '两个动作同时进行',
+            explanation: '"一边……一边……"表示两个动作同时进行，是并列关联词，填在这里最合适。'
+          },
+          {
+            id: 'c5u1l1q4',
+            type: 'choice',
+            question: '"他不但学习好，而且品德优秀"是哪种关系？',
+            options: ['并列关系', '递进关系', '转折关系'],
+            answer: '递进关系',
+            hint: '后半句是不是更进一层',
+            explanation: '"不但……而且……"表示后一部分比前一部分更进一层，是递进关系。'
+          },
+          {
+            id: 'c5u1l1q5',
+            type: 'choice',
+            question: '下列句子关联词使用正确的一项是？',
+            options: ['他不但聪明，而且聪明', '他不但聪明，而且用功', '他既聪明，而且用功'],
+            answer: '他不但聪明，而且用功',
+            hint: '递进关系后半句要更进一层，不能重复',
+            explanation: '"不但……而且……"是递进，后半句应更进一层，"而且用功"正确。第一句重复，第三句关联词搭配不当。'
+          },
+          {
+            id: 'c5u1l1q6',
+            type: 'drag',
+            question: '把关联词和它表示的关系配对：既……又……、不但……而且……、一边……一边……、不仅……还……',
+            answer: '并列,递进,并列,递进',
+            hint: '并列的填并列，递进的填递进',
+            explanation: '既……又……和一边……一边……是并列；不但……而且……和不仅……还……是递进。'
+          },
+          {
+            id: 'c5u1l1q7',
+            type: 'fill',
+            question: '回顾：并列关联词前后地位___（填"平等"或"递进"），递进关联词后半句程度更___（填"深"或"浅"）。（两空用逗号分隔）',
+            answer: '平等,深',
+            acceptableAnswers: ['平等,深', '平等，深'],
+            hint: '[并列与递进区别]（语文五年级-第1单元）',
+            explanation: '并列关联词前后地位平等，递进关联词后半句程度更深。这是本课学过的核心区别。'
+          }
+        ]
+      },
+      {
+        id: 'c5u1l2',
+        title: '关联词进阶——因果与转折',
+        order: 2,
+        teachingMethod: '对比辨析法',
+        content: [
+          { type: 'text', content: '上一课我们学了并列和递进，这一课来学两种新关系——因果和转折。因果是"因为……所以……"，转折是"虽然……但是……"，它们就像两条不同的路，方向完全不一样。', animationType: 'reveal' },
+          { type: 'example', content: '因果关系：前一句是原因，后一句是结果。\n因为……所以……：因为下雨，所以我没有去公园。\n既然……就……：既然答应了，就要做到。\n……因此……：他生病了，因此没来上学。', label: '因果关联词', animationType: 'bounce' },
+          { type: 'example', content: '转折关系：前后意思相反或相对。\n虽然……但是……：虽然今天很冷，但是大家都很精神。\n尽管……还是……：尽管困难很大，他还是坚持下来了。\n可是/然而：他想帮忙，可是帮不上。', label: '转折关联词', animationType: 'bounce' },
+          { type: 'tip', content: '辨析口诀：因果是"前因后果顺水推"，转折是"前好后反拐弯走"。读一读，后半句顺着前半句就是因果，反着来就是转折。', label: '因果转折辨析', animationType: 'pulse' },
+          { type: 'animation', content: '因果关系和转折关系左右对比展示，左边顺着说，右边拐弯说', animationType: 'compare',
+            animationConfig: {
+              sceneType: 'compare',
+              title: '因果 vs 转折对比',
+              compareConfig: {
+                leftItems: ['因果关系', '因为下雨', '所以没去公园', '前后顺承'],
+                rightItems: ['转折关系', '虽然很冷', '但是很精神', '前后相反'],
+                result: 'close',
+                resultText: '因果顺着说，转折拐弯说，方向完全不同',
+              },
+              ttsNarration: '因果是前因后果顺着说，转折是前后相反拐弯说。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小雨，"因为……所以……"和"虽然……但是……"怎么区分？\n小雨：因为所以是因果，顺着说；虽然但是是转折，拐弯说！\n老师：真棒！后半句和前半句方向一致是因果，相反就是转折。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '注意："因为"和"所以"不能同时去掉一个还成立，转折的"虽然"和"但是"也是成对使用，搭配要恰当。', label: '使用注意', animationType: 'pulse' },
+        ],
+        iDo: '家长对比"因为……所以……"和"虽然……但是……"，示范用在不同句子里，让孩子听出顺承和转折的差别。',
+        weDo: '亲子一起辨析几组句子，判断是因果还是转折，再选合适的关联词填空。',
+        youDo: '孩子独立选关联词填空，并各造一个因果句和转折句。',
+        parentTips: '重点区分：后半句顺着前半句是因果，反着来是转折。多读多体会。',
+        funElement: '小游戏：句子方向标！顺着画箭头是因果，拐弯画箭头是转折，看谁判断得又快又准！',
+        gsapAnimations: [
+          '[GSAP:compare|因果与转折左右对比展示|0.8s|页面加载|power2.out]',
+          '[GSAP:highlight|关联词关键词高亮|0.5s|点击词语|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|因果转折对比图|500x300|教学风|png|两种关系]',
+          '[IMG:illustration|句子方向标示意图|500x200|教学风|png|箭头方向]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u1l2q1',
+            type: 'choice',
+            question: '"因为下雨，所以我没有去公园"是什么关系？',
+            options: ['转折关系', '因果关系', '并列关系'],
+            answer: '因果关系',
+            hint: '下雨是原因，没去是结果',
+            explanation: '"因为……所以……"前一句是原因，后一句是结果，是因果关系。'
+          },
+          {
+            id: 'c5u1l2q2',
+            type: 'choice',
+            question: '下列哪组是转折关联词？',
+            options: ['因为……所以……', '虽然……但是……', '不但……而且……'],
+            answer: '虽然……但是……',
+            hint: '转折是前后意思相反',
+            explanation: '"虽然……但是……"前后意思相反或相对，是转折关联词。'
+          },
+          {
+            id: 'c5u1l2q3',
+            type: 'fill',
+            question: '填关联词：___今天很冷，___大家都很精神。',
+            answer: '虽然……但是……',
+            acceptableAnswers: ['虽然……但是……', '虽然...但是...', '虽然但是'],
+            hint: '后半句和前半句相反',
+            explanation: '前半句"很冷"和后半句"很精神"意思相反，是转折关系，填"虽然……但是……"。'
+          },
+          {
+            id: 'c5u1l2q4',
+            type: 'choice',
+            question: '"他生病了，因此没来上学"中的"因此"表示什么关系？',
+            options: ['转折', '因果', '递进'],
+            answer: '因果',
+            hint: '生病是原因，没来是结果',
+            explanation: '"因此"表示由于前面的原因产生后面的结果，是因果关系。'
+          },
+          {
+            id: 'c5u1l2q5',
+            type: 'choice',
+            question: '下列句子关联词使用正确的一项是？',
+            options: ['虽然下雨，所以我去上学', '因为下雨，所以我没去公园', '虽然下雨，而且我没去公园'],
+            answer: '因为下雨，所以我没去公园',
+            hint: '看前后是因果还是转折，关联词要搭配',
+            explanation: '"因为……所以……"搭配表因果，正确。第一句关联词混用，第三句"而且"不是转折词。'
+          },
+          {
+            id: 'c5u1l2q6',
+            type: 'drag',
+            question: '把句子和它的关系配对：因为下雨所以没去、虽然冷但是精神、既然答应就要做到、尽管困难还是坚持',
+            answer: '因果,转折,因果,转折',
+            hint: '顺着说是因果，拐弯说是转折',
+            explanation: '因为下雨所以没去是因果，虽然冷但是精神是转折，既然答应就要做到是因果，尽管困难还是坚持是转折。'
+          },
+          {
+            id: 'c5u1l2q7',
+            type: 'fill',
+            question: '回顾：因果是"前因___（填"后果"或"后反"）"，转折是前后意思___（填"相同"或"相反"）。（两空用逗号分隔）',
+            answer: '后果,相反',
+            acceptableAnswers: ['后果,相反', '后果，相反'],
+            hint: '[因果与转折区别]（语文五年级-第1单元）',
+            explanation: '因果是前因后果顺着说，转折是前后意思相反拐弯说。这是本课核心区别。'
+          }
+        ]
+      },
+      {
+        id: 'c5u1l3',
+        title: '修辞入门——比喻与拟人',
+        order: 3,
+        teachingMethod: '多感官：修辞画板',
+        content: [
+          { type: 'text', content: '修辞手法能让我们的语言更生动、更形象。今天学两种最常见的修辞：比喻和拟人。比喻是"打比方"，把一种东西说成另一种东西；拟人是"把物当人写"，让不会说话的东西会说话、会做事。', animationType: 'reveal' },
+          { type: 'example', content: '比喻句：把一种事物比作另一种事物。\n月亮像一个银盘。\n弯弯的月亮像小船。\n弟弟的脸红得像苹果。\n结构：本体 + 喻词（像/仿佛/犹如）+ 喻体', label: '比喻句', animationType: 'bounce' },
+          { type: 'tip', content: '比喻三要素：本体（被比喻的事物）、喻词（像、仿佛、犹如）、喻体（用来比喻的事物）。本体和喻体必须是不同类的事物，但要有相似之处。', label: '比喻三要素', animationType: 'pulse' },
+          { type: 'example', content: '拟人句：把事物当成人来写，赋予人的动作、情感。\n小草向我们点头微笑。\n春风轻轻抚摸着大地。\n星星在夜空中眨眼睛。\n特点：事物有了人的动作或感情', label: '拟人句', animationType: 'bounce' },
+          { type: 'animation', content: '比喻和拟人左右对比展示，左边月亮变盘子（比喻），右边小草点头（拟人）', animationType: 'compare',
+            animationConfig: {
+              sceneType: 'compare',
+              title: '比喻 vs 拟人对比',
+              compareConfig: {
+                leftItems: ['比喻', '月亮像银盘', '甲物比作乙物', '有喻词"像"'],
+                rightItems: ['拟人', '小草点头微笑', '把物当人写', '有人化动作'],
+                result: 'close',
+                resultText: '比喻是打比方，拟人是把物当人写，两种修辞完全不同',
+              },
+              ttsNarration: '比喻是把一种事物比作另一种事物，拟人是把事物当成人来写。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小明，"蝴蝶在花丛中跳舞"是比喻还是拟人？\n小明：是拟人！因为蝴蝶有了人的动作"跳舞"。\n老师：非常对！"月亮像盘子"才是比喻，因为有喻词"像"。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '一招区分：句子里有"像、仿佛、犹如"等喻词，把甲比作乙，是比喻；事物直接有了人的动作感情，没有喻词，是拟人。', label: '区分妙招', animationType: 'pulse' },
+        ],
+        iDo: '家长示范画比喻句"月亮像盘子"，再画拟人句"小草点头"，让孩子看出生动之处。',
+        weDo: '亲子一起做"修辞画板"，画一画比喻和拟人，互相判断句子是比喻还是拟人。',
+        youDo: '孩子独立判断句子是比喻还是拟人，并各写一个修辞句。',
+        parentTips: '比喻要有本体、喻词、喻体；拟人是事物有了人的动作感情。抓住"像"和"人化动作"来区分。',
+        funElement: '小游戏：修辞小侦探！看到"像"就喊比喻，看到事物做人的动作就喊拟人，看谁反应快！',
+        gsapAnimations: [
+          '[GSAP:compare|比喻与拟人左右对比展示|0.8s|页面加载|power2.out]',
+          '[GSAP:highlight|喻词与人化动作高亮|0.5s|点击词语|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|比喻拟人示意图|500x300|水彩画风|png|月亮盘子+小草点头]',
+          '[IMG:illustration|比喻三要素图|500x200|教学风|png|本体喻词喻体]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u1l3q1',
+            type: 'choice',
+            question: '"弯弯的月亮像小船"是什么修辞？',
+            options: ['拟人', '比喻', '排比'],
+            answer: '比喻',
+            hint: '句子里有没有"像"',
+            explanation: '句中有喻词"像"，把月亮比作小船，是比喻句。'
+          },
+          {
+            id: 'c5u1l3q2',
+            type: 'choice',
+            question: '"小草向我们点头微笑"是什么修辞？',
+            options: ['比喻', '拟人', '夸张'],
+            answer: '拟人',
+            hint: '小草有了什么动作',
+            explanation: '小草有了人的动作"点头微笑"，是把物当人写，是拟人句。'
+          },
+          {
+            id: 'c5u1l3q3',
+            type: 'fill',
+            question: '比喻句"月亮像银盘"中，本体是___，喻体是___。（两空用逗号分隔）',
+            answer: '月亮,银盘',
+            acceptableAnswers: ['月亮,银盘', '月亮，银盘'],
+            hint: '被比喻的是本体，用来比喻的是喻体',
+            explanation: '本体是被比喻的"月亮"，喻体是用来比喻的"银盘"，喻词是"像"。'
+          },
+          {
+            id: 'c5u1l3q4',
+            type: 'choice',
+            question: '下列哪个是拟人句？',
+            options: ['弟弟的脸红得像苹果', '春风轻轻抚摸着大地', '天上的云像棉花糖'],
+            answer: '春风轻轻抚摸着大地',
+            hint: '找有人的动作的句子',
+            explanation: '"春风抚摸大地"中春风有了人的动作"抚摸"，是拟人句。其余两句有"像"是比喻。'
+          },
+          {
+            id: 'c5u1l3q5',
+            type: 'choice',
+            question: '【期末真题】"星星在夜空中眨眼睛"运用的修辞手法是？',
+            options: ['比喻', '拟人', '排比'],
+            answer: '拟人',
+            hint: '星星有了什么动作',
+            explanation: '星星有了人的动作"眨眼睛"，是拟人。这是期末常考题！'
+          },
+          {
+            id: 'c5u1l3q6',
+            type: 'drag',
+            question: '把句子和修辞配对：月亮像小船、蝴蝶跳舞、弟弟脸像苹果、春风抚摸大地',
+            answer: '比喻,拟人,比喻,拟人',
+            hint: '有"像"是比喻，有人化动作是拟人',
+            explanation: '月亮像小船、弟弟脸像苹果是比喻；蝴蝶跳舞、春风抚摸大地是拟人。'
+          },
+          {
+            id: 'c5u1l3q7',
+            type: 'fill',
+            question: '回顾：比喻要有本体、___（填"喻词"或"人化"）和喻体；拟人是把物当___（填"人"或"物"）写。（两空用逗号分隔）',
+            answer: '喻词,人',
+            acceptableAnswers: ['喻词,人', '喻词，人'],
+            hint: '[比喻与拟人区别]（语文五年级-第1单元）',
+            explanation: '比喻三要素是本体、喻词、喻体；拟人是把事物当成人来写。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u1l4',
+        title: '修辞进阶——排比与夸张',
+        order: 4,
+        teachingMethod: '支架式',
+        content: [
+          { type: 'text', content: '除了比喻和拟人，还有两种很有力量的修辞——排比和夸张。排比是"三个以上相同句式排在一起"，气势强；夸张是"放大或缩小来写"，印象深。', animationType: 'reveal' },
+          { type: 'example', content: '排比句：三个或三个以上结构相同、语气一致的句子排列在一起。\n爱心是阳光，爱心是雨露，爱心是春风。\n书是钥匙，书是阶梯，书是航船。\n特点：句式相同、气势强烈', label: '排比句', animationType: 'bounce' },
+          { type: 'tip', content: '排比的关键：至少三句，句式相同（字数、结构相近），语气一致。读起来有节奏感，气势磅礴。', label: '排比要点', animationType: 'pulse' },
+          { type: 'example', content: '夸张句：故意夸大或缩小事物的某种特点。\n夸大：飞流直下三千尺。\n夸大：他跑得比风还快。\n缩小：这间屋子只有巴掌大。\n作用：突出特点，印象深刻', label: '夸张句', animationType: 'bounce' },
+          { type: 'animation', content: '排比句三句依次出现，强调相同句式和强烈气势', animationType: 'sequence',
+            animationConfig: {
+              sceneType: 'sequence',
+              title: '排比句依次出现',
+              sequenceConfig: {
+                items: ['爱心是阳光', '爱心是雨露', '爱心是春风'],
+                order: 'custom',
+                itemType: 'word',
+              },
+              ttsNarration: '排比句三句结构相同，依次出现，气势强烈。',
+            },
+          },
+          { type: 'tip', content: '区分排比和夸张：排比看"句式相同、三句以上"；夸张看"故意放大或缩小，不符合实际但更形象"。', label: '易混辨析', animationType: 'pulse' },
+          { type: 'dialogue', content: '老师：小华，"飞流直下三千尺"是排比还是夸张？\n小华：是夸张！因为瀑布不可能真有三千尺，是故意放大。\n老师：对！夸张是为了突出特点，让人印象深刻。', label: '师生对话', animationType: 'reveal' },
+        ],
+        iDo: '家长示范写排比句"书是钥匙，书是阶梯，书是航船"和夸张句"他跑得比风还快"。',
+        weDo: '亲子一起写排比和夸张句，互相检查句式是否相同、是否夸张得当。',
+        youDo: '孩子独立判断句子是排比还是夸张，并各写一个修辞句。',
+        parentTips: '排比至少三句、句式相同；夸张是故意放大或缩小，要让人一听就知道是夸张。',
+        funElement: '小游戏：排比接力赛！一个人说一句，接够三句就是排比，看谁接得最有气势！',
+        gsapAnimations: [
+          '[GSAP:stagger|排比句三句依次出现|0.5s|点击播放|power2.out]',
+          '[GSAP:highlight|相同句式高亮|0.4s|出现完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|排比夸张示意图|500x300|教学风|png|排比句+夸张图]',
+          '[IMG:illustration|排比句式结构图|500x200|教学风|png|三句相同]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u1l4q1',
+            type: 'choice',
+            question: '"爱心是阳光，爱心是雨露，爱心是春风"是什么修辞？',
+            options: ['夸张', '排比', '拟人'],
+            answer: '排比',
+            hint: '数数有几句，句式相不相同',
+            explanation: '三句结构相同、语气一致排在一起，是排比句。'
+          },
+          {
+            id: 'c5u1l4q2',
+            type: 'choice',
+            question: '"飞流直下三千尺"是什么修辞？',
+            options: ['排比', '夸张', '比喻'],
+            answer: '夸张',
+            hint: '瀑布真有三千尺吗',
+            explanation: '瀑布不可能真有三千尺，是故意放大来写，是夸张句。'
+          },
+          {
+            id: 'c5u1l4q3',
+            type: 'fill',
+            question: '排比句至少需要___（填数字）个结构相同的句子。',
+            answer: '三',
+            acceptableAnswers: ['三', '3'],
+            hint: '两句不算排比',
+            explanation: '排比句至少需要三个结构相同、语气一致的句子排列在一起。'
+          },
+          {
+            id: 'c5u1l4q4',
+            type: 'choice',
+            question: '下列哪个是夸张句？',
+            options: ['他跑得比风还快', '书是钥匙，书是阶梯', '小草点头微笑'],
+            answer: '他跑得比风还快',
+            hint: '找故意放大或缩小的句子',
+            explanation: '"跑得比风还快"故意放大，是夸张句。第二句是排比，第三句是拟人。'
+          },
+          {
+            id: 'c5u1l4q5',
+            type: 'choice',
+            question: '【期末真题】"这间屋子只有巴掌大"运用的修辞是？',
+            options: ['夸张', '排比', '比喻'],
+            answer: '夸张',
+            hint: '屋子真有巴掌大吗',
+            explanation: '屋子不可能只有巴掌大，是故意缩小来写，是夸张。期末常考！'
+          },
+          {
+            id: 'c5u1l4q6',
+            type: 'drag',
+            question: '把句子和修辞配对：爱心是阳光是雨露是春风、飞流三千尺、书是钥匙是阶梯是航船、巴掌大屋子',
+            answer: '排比,夸张,排比,夸张',
+            hint: '三句相同是排比，故意放大缩小是夸张',
+            explanation: '爱心是阳光是雨露是春风、书是钥匙是阶梯是航船是排比；飞流三千尺、巴掌大屋子是夸张。'
+          },
+          {
+            id: 'c5u1l4q7',
+            type: 'fill',
+            question: '回顾：排比至少三句且___（填"句式相同"或"故意放大"）；夸张是故意___（填"放大或缩小"或"当人写"）。（两空用逗号分隔）',
+            answer: '句式相同,放大或缩小',
+            acceptableAnswers: ['句式相同,放大或缩小', '句式相同，放大或缩小'],
+            hint: '[排比与夸张区别]（语文五年级-第1单元）',
+            explanation: '排比至少三句、句式相同；夸张是故意放大或缩小来写。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u1l5',
+        title: '关联词与修辞综合检测',
+        order: 5,
+        teachingMethod: '形成性评价',
+        content: [
+          { type: 'text', content: '前四课我们学了关联词（并列、递进、因果、转折）和修辞（比喻、拟人、排比、夸张）。这节课把它们综合起来检测，看谁学得最扎实！', animationType: 'reveal' },
+          { type: 'example', content: '综合运用示例：\n关联词：他不但学习好，而且乐于助人。（递进）\n比喻：他的笑容像阳光一样温暖。\n拟人：花儿在风中跳舞。\n排比：友谊是阳光，友谊是雨露，友谊是春风。\n夸张：他高兴得一蹦三尺高。', label: '综合示例', animationType: 'bounce' },
+          { type: 'tip', content: '答题技巧：先判断是关联词还是修辞题；关联词看关系（并列/递进/因果/转折），修辞看特点（像/人化/三句/放大）。', label: '答题技巧', animationType: 'pulse' },
+          { type: 'dialogue', content: '老师：小红，做综合题要注意什么？\n小红：先看题目问关联词还是修辞，再想它们的特点，最后选答案！\n老师：说得好，沉着冷静，逐一判断！', label: '考前对话', animationType: 'reveal' },
+          { type: 'animation', content: '通关撒花动画，正确率达80%以上触发庆祝特效', animationType: 'sequence',
+            animationConfig: {
+              sceneType: 'sequence',
+              title: '修辞达人通关',
+              sequenceConfig: {
+                items: ['关联词', '比喻', '拟人', '排比', '夸张'],
+                order: 'custom',
+                itemType: 'word',
+              },
+              ttsNarration: '恭喜你成为修辞达人，关联词和修辞都掌握啦！',
+            },
+          },
+          { type: 'tip', content: '目标：综合检测正确率达到80%以上，就能获得"修辞达人"徽章！加油！', label: '检测目标', animationType: 'pulse' },
+        ],
+        iDo: '家长示范一道综合题，先判断题型再选择关联词或修辞，展示解题思路。',
+        weDo: '亲子一起练习几道综合题，讨论判断的依据。',
+        youDo: '孩子独立完成综合检测，争取正确率80%以上。',
+        parentTips: '综合检测重在判断准确，提醒孩子先判断关系或修辞类型再作答。',
+        funElement: '挑战时刻：集齐关联词和修辞四把钥匙，打开"修辞达人"宝箱，正确率80%以上撒花庆祝！',
+        gsapAnimations: [
+          '[GSAP:confetti|通关撒花庆祝|2s|正确率≥80%|power1.out]',
+          '[GSAP:starFlyIn|修辞达人徽章飞入|1s|通关|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|修辞达人徽章|300x300|可爱卡通风|png|金色徽章]',
+          '[IMG:illustration|综合知识总览图|500x300|教学风|png|关联词+修辞]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u1l5q1',
+            type: 'choice',
+            question: '"他不但会弹琴，而且会画画"中的关联词表示什么关系？',
+            options: ['并列', '递进', '转折'],
+            answer: '递进',
+            hint: '后半句是不是更进一层',
+            explanation: '"不但……而且……"表示后一部分更进一层，是递进关系。'
+          },
+          {
+            id: 'c5u1l5q2',
+            type: 'choice',
+            question: '"他的笑容像阳光一样温暖"是什么修辞？',
+            options: ['拟人', '比喻', '夸张'],
+            answer: '比喻',
+            hint: '句子里有没有"像"',
+            explanation: '句中有喻词"像"，把笑容比作阳光，是比喻句。'
+          },
+          {
+            id: 'c5u1l5q3',
+            type: 'fill',
+            question: '填关联词：___困难很大，他还是坚持下来了。',
+            answer: '尽管',
+            acceptableAnswers: ['尽管', '虽然'],
+            hint: '后半句"还是坚持"和前半句相反',
+            explanation: '前后意思相反，是转折关系，可填"尽管"或"虽然"，搭配"还是"。'
+          },
+          {
+            id: 'c5u1l5q4',
+            type: 'choice',
+            question: '"友谊是阳光，友谊是雨露，友谊是春风"是什么修辞？',
+            options: ['比喻', '排比', '夸张'],
+            answer: '排比',
+            hint: '数数有几句，句式相不相同',
+            explanation: '三句结构相同排列在一起，是排比句（也含比喻，但主要修辞是排比）。'
+          },
+          {
+            id: 'c5u1l5q5',
+            type: 'choice',
+            question: '【综合】下列句子修辞判断正确的一项是？',
+            options: ['花儿跳舞——比喻', '月亮像盘子——拟人', '飞流三千尺——夸张'],
+            answer: '飞流三千尺——夸张',
+            hint: '逐句判断修辞类型',
+            explanation: '花儿跳舞是拟人，月亮像盘子是比喻，飞流三千尺是夸张，所以第三项正确。'
+          },
+          {
+            id: 'c5u1l5q6',
+            type: 'drag',
+            question: '把句子和修辞/关系配对：他既聪明又用功、月亮像小船、花儿跳舞、飞流三千尺',
+            answer: '并列,比喻,拟人,夸张',
+            hint: '关联词看关系，修辞看特点',
+            explanation: '他既聪明又用功是并列，月亮像小船是比喻，花儿跳舞是拟人，飞流三千尺是夸张。'
+          },
+          {
+            id: 'c5u1l5q7',
+            type: 'fill',
+            question: '回顾：关联词有并列、递进、___（填"因果"或"排比"）和转折四种关系；修辞有比喻、拟人、排比和___（填"夸张"或"递进"）。（两空用逗号分隔）',
+            answer: '因果,夸张',
+            acceptableAnswers: ['因果,夸张', '因果，夸张'],
+            hint: '[关联词与修辞总览]（语文五年级-第1单元）',
+            explanation: '关联词四种关系是并列、递进、因果、转折；修辞四种是比喻、拟人、排比、夸张。这是本单元总览。'
+          }
+        ]
+      }
+    ]
+  },
+  // ==================== 第二单元：记叙文进阶 ====================
+  {
+    id: 'c5u2',
+    title: '记叙文进阶',
+    subtitle: '抒情与议论的表达',
+    order: 2,
+    lessons: [
+      {
+        id: 'c5u2l1',
+        title: '记叙中抒情——直接抒情',
+        order: 1,
+        teachingMethod: '积木作文法',
+        content: [
+          { type: 'text', content: '记叙文不仅要讲清楚事情，还要表达感情。在叙事中直接写出自己的感受，就叫"直接抒情"。直接抒情就像给文章加了一个"心情积木"，让读者感同身受。', animationType: 'reveal' },
+          { type: 'example', content: '直接抒情示例：\n叙事：今天妈妈给我买了一个新书包。\n加抒情：今天妈妈给我买了一个新书包，我高兴极了，心里像喝了蜜一样甜！\n特点：直接写出"我高兴极了"这种感受', label: '直接抒情', animationType: 'bounce' },
+          { type: 'tip', content: '直接抒情的方法：在叙事后直接加"我感到……""我多么……""真是……"等表达感受的句子，把心里话直接说出来。', label: '抒情方法', animationType: 'pulse' },
+          { type: 'example', content: '更多直接抒情句：\n看到老师，我心里十分感动。\n望着国旗升起，我多么自豪啊！\n听到这个好消息，我激动得说不出话来。', label: '抒情句积累', animationType: 'bounce' },
+          { type: 'animation', content: '叙事段落先出现，再叠加抒情句子，展示"叙事+抒情"的积木组合', animationType: 'timeline',
+            animationConfig: {
+              sceneType: 'timeline',
+              title: '叙事+抒情积木组合',
+              timelineConfig: {
+                steps: [
+                  { id: 's1', description: '叙事积木', text: '今天妈妈给我买了新书包', ttsNarration: '先搭叙事积木：今天妈妈给我买了新书包' },
+                  { id: 's2', description: '抒情积木', text: '我高兴极了，心里像喝了蜜！', ttsNarration: '再搭抒情积木：我高兴极了，心里像喝了蜜' },
+                  { id: 's3', description: '组合段落', text: '今天妈妈给我买了新书包，我高兴极了，心里像喝了蜜一样甜！', ttsNarration: '两块积木组合，就是一段有感情的记叙' },
+                ],
+              },
+              ttsNarration: '叙事积木加抒情积木，文章就有了感情。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小亮，怎么在记叙中直接抒情？\n小亮：先叙事，再加一句"我感到……"的直接感受！\n老师：对！这就是直接抒情，简单又有效。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '注意：直接抒情要真诚自然，不能矫揉造作。感受要和叙事内容相关，不能脱节。', label: '抒情注意', animationType: 'pulse' },
+        ],
+        iDo: '家长示范在记叙句后加"我感到……"的抒情句，让孩子听出感情的变化。',
+        weDo: '亲子一起给几段叙事加直接抒情句，互相读体会感情。',
+        youDo: '孩子独立写一段含直接抒情的记叙段落。',
+        parentTips: '直接抒情就是直接说出感受，提醒孩子感受要和事情相关、要真诚。',
+        funElement: '小游戏：心情积木！给一段叙事加上"心情积木"，看谁加得最动情！',
+        gsapAnimations: [
+          '[GSAP:timeline|叙事段落与抒情句子依次出现|1.5s|点击播放|power2.out]',
+          '[GSAP:highlight|抒情关键词高亮|0.5s|出现完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|记叙+抒情结构图|500x200|教学风|png|叙事块+抒情块]',
+          '[IMG:illustration|直接抒情示例图|500x300|可爱卡通风|png|心情积木]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u2l1q1',
+            type: 'choice',
+            question: '直接抒情的特点是？',
+            options: ['通过景物表达感情', '直接写出自己的感受', '三个以上相同句式'],
+            answer: '直接写出自己的感受',
+            hint: '直接抒情是"直接说"',
+            explanation: '直接抒情是在叙事中直接写出自己的感受，如"我高兴极了"。'
+          },
+          {
+            id: 'c5u2l1q2',
+            type: 'choice',
+            question: '下列哪句是直接抒情？',
+            options: ['树叶在风中摇摆', '我激动得说不出话来', '月亮像银盘'],
+            answer: '我激动得说不出话来',
+            hint: '找直接写出感受的句子',
+            explanation: '"我激动得说不出话来"直接写出了感受，是直接抒情。'
+          },
+          {
+            id: 'c5u2l1q3',
+            type: 'fill',
+            question: '在叙事后加直接抒情句：今天我得了第一名，___！（填一个表达高兴感受的词）',
+            answer: '高兴极了',
+            acceptableAnswers: ['高兴极了', '真高兴', '太高兴了', '激动极了'],
+            hint: '直接说出高兴的感受',
+            explanation: '可直接加"高兴极了"等表达感受的词，这是直接抒情。'
+          },
+          {
+            id: 'c5u2l1q4',
+            type: 'choice',
+            question: '"看到老师，我心里十分感动"中抒情的方式是？',
+            options: ['借景抒情', '直接抒情', '夹叙夹议'],
+            answer: '直接抒情',
+            hint: '有没有直接写感受',
+            explanation: '句子直接写出"我心里十分感动"的感受，是直接抒情。'
+          },
+          {
+            id: 'c5u2l1q5',
+            type: 'choice',
+            question: '【期末真题】下列段落哪一处运用了直接抒情？',
+            options: ['天空中飘着白云', '放学了，我背着书包回家', '望着国旗升起，我多么自豪啊'],
+            answer: '望着国旗升起，我多么自豪啊',
+            hint: '找直接写出感受的句子',
+            explanation: '"我多么自豪啊"直接写出了自豪的感受，是直接抒情。期末常考！'
+          },
+          {
+            id: 'c5u2l1q6',
+            type: 'drag',
+            question: '把句子和表达方式配对：我高兴极了、树叶沙沙响、心里像喝了蜜、月亮像小船',
+            answer: '直接抒情,借景,直接抒情,比喻',
+            hint: '直接写感受是直接抒情',
+            explanation: '我高兴极了、心里像喝了蜜是直接抒情；树叶沙沙响是景物描写；月亮像小船是比喻。'
+          },
+          {
+            id: 'c5u2l1q7',
+            type: 'fill',
+            question: '回顾：直接抒情是在叙事中___（填"直接"或"间接"）写出自己的___（填"感受"或"景物"）。（两空用逗号分隔）',
+            answer: '直接,感受',
+            acceptableAnswers: ['直接,感受', '直接，感受'],
+            hint: '[直接抒情概念]（语文五年级-第2单元）',
+            explanation: '直接抒情是在叙事中直接写出自己的感受。这是本课核心概念。'
+          }
+        ]
+      },
+      {
+        id: 'c5u2l2',
+        title: '记叙中抒情——间接抒情',
+        order: 2,
+        teachingMethod: '支架式：借景抒情',
+        content: [
+          { type: 'text', content: '上一课学了直接抒情，这一课学间接抒情。间接抒情不直接说"我感到……"，而是通过描写景物来表达感情，这叫"借景抒情"。景物会随着心情变化：心情好时阳光明媚，心情差时阴雨绵绵。', animationType: 'reveal' },
+          { type: 'example', content: '借景抒情示例：\n心情好：阳光明媚，鸟儿在枝头欢唱，花儿对我点头微笑。\n心情差：乌云密布，冷风呼呼地吹，树叶无精打采地低着头。\n特点：不写感受，只写景物，但景物里有感情', label: '借景抒情', animationType: 'bounce' },
+          { type: 'tip', content: '借景抒情的方法：先确定心情，再选择能表现这种心情的景物。心情好选明亮、欢快的景物；心情差选暗淡、低沉的景物。', label: '抒情方法', animationType: 'pulse' },
+          { type: 'animation', content: '景物随心情变化：晴天（心情好）逐渐变成雨天（心情差），展示借景抒情', animationType: 'sceneBuild',
+            animationConfig: {
+              sceneType: 'sceneBuild',
+              title: '景物随心情变化',
+              sceneBuildConfig: {
+                sceneName: '心情与景物',
+                elements: [
+                  { id: 'e1', text: '晴天·阳光明媚', emoji: '☀️', x: 25, y: 30, size: 'lg', color: '#FFB300', animation: 'fadeIn', ttsText: '心情好时阳光明媚' },
+                  { id: 'e2', text: '鸟儿欢唱', emoji: '🐦', x: 70, y: 30, size: 'md', color: '#4CAF50', animation: 'bounceIn', ttsText: '鸟儿在枝头欢唱' },
+                  { id: 'e3', text: '雨天·乌云密布', emoji: '🌧️', x: 25, y: 70, size: 'lg', color: '#607D8B', animation: 'fadeIn', ttsText: '心情差时乌云密布' },
+                  { id: 'e4', text: '冷风吹', emoji: '🍃', x: 70, y: 70, size: 'md', color: '#795548', animation: 'slideIn', ttsText: '冷风呼呼地吹' },
+                ],
+              },
+              ttsNarration: '心情好时景物明亮欢快，心情差时景物暗淡低沉，这就是借景抒情。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小美，"雨哗哗地下着，我的眼泪也流了下来"是直接抒情还是间接抒情？\n小美：是间接抒情！用下雨来衬托伤心，没有直接说"我难过"。\n老师：非常棒！用景物表达感情就是借景抒情。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '区分直接与间接抒情：直接抒情直接写感受（我感到……）；间接抒情通过景物表达感情（景物描写），不直接说感受。', label: '易混辨析', animationType: 'pulse' },
+        ],
+        iDo: '家长示范用景物描写表达心情，先说心情再描写对应景物，让孩子体会借景抒情。',
+        weDo: '亲子一起写借景抒情段落，互相猜对方写的是高兴还是难过。',
+        youDo: '孩子独立写一段借景抒情的段落，不直接说感受。',
+        parentTips: '借景抒情要选和心情匹配的景物，提醒孩子不直接写"我感到"。',
+        funElement: '小游戏：心情天气站！抽一张心情卡，画出对应的天气，看谁画得最传情！',
+        gsapAnimations: [
+          '[GSAP:sceneBuild|景物随心情变化晴天变雨天|1.5s|点击播放|power2.inOut]',
+          '[GSAP:highlight|景物关键词高亮|0.5s|场景完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|借景抒情示意图|500x300|水彩画风|png|晴vs雨]',
+          '[IMG:illustration|心情与景物对照图|500x200|教学风|png|好心情差心情]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u2l2q1',
+            type: 'choice',
+            question: '借景抒情的特点是？',
+            options: ['直接写出感受', '通过描写景物表达感情', '三个以上相同句式'],
+            answer: '通过描写景物表达感情',
+            hint: '借景抒情是"用景物说话"',
+            explanation: '借景抒情不直接说感受，而是通过描写景物来表达感情。'
+          },
+          {
+            id: 'c5u2l2q2',
+            type: 'choice',
+            question: '下列哪句是借景抒情？',
+            options: ['我难过极了', '乌云密布，冷风呼呼地吹', '他跑得比风还快'],
+            answer: '乌云密布，冷风呼呼地吹',
+            hint: '找用景物表达感情的句子',
+            explanation: '"乌云密布，冷风呼呼地吹"用景物表达低落心情，是借景抒情。'
+          },
+          {
+            id: 'c5u2l2q3',
+            type: 'fill',
+            question: '借景抒情时，心情好应选择___（填"明亮"或"暗淡"）的景物。',
+            answer: '明亮',
+            acceptableAnswers: ['明亮', '明亮的'],
+            hint: '心情好用什么色调的景物',
+            explanation: '心情好时应选择明亮、欢快的景物，如阳光、鸟鸣，来衬托好心情。'
+          },
+          {
+            id: 'c5u2l2q4',
+            type: 'choice',
+            question: '"雨哗哗地下着，我的眼泪也流了下来"运用了什么抒情方式？',
+            options: ['直接抒情', '借景抒情', '夹叙夹议'],
+            answer: '借景抒情',
+            hint: '有没有用景物衬托心情',
+            explanation: '用下雨衬托流泪伤心，是借景抒情（也含直接抒情，但主要方式是借景）。'
+          },
+          {
+            id: 'c5u2l2q5',
+            type: 'choice',
+            question: '【期末真题】下列句子属于间接抒情的一项是？',
+            options: ['我高兴得跳了起来', '阳光洒满校园，花儿对我笑', '我心里十分感动'],
+            answer: '阳光洒满校园，花儿对我笑',
+            hint: '间接抒情用景物表达感情',
+            explanation: '"阳光洒满校园，花儿对我笑"用景物表达愉快心情，是间接抒情。期末常考！'
+          },
+          {
+            id: 'c5u2l2q6',
+            type: 'drag',
+            question: '把句子和抒情方式配对：我难过极了、乌云密布、心里像喝了蜜、鸟儿欢唱',
+            answer: '直接抒情,借景抒情,直接抒情,借景抒情',
+            hint: '直接写感受是直接抒情，用景物是借景抒情',
+            explanation: '我难过极了、心里像喝了蜜是直接抒情；乌云密布、鸟儿欢唱是借景抒情。'
+          },
+          {
+            id: 'c5u2l2q7',
+            type: 'fill',
+            question: '回顾：直接抒情直接写感受，间接抒情通过描写___（填"景物"或"议论"）表达感情，也叫___（填"借景抒情"或"夹叙夹议"）。（两空用逗号分隔）',
+            answer: '景物,借景抒情',
+            acceptableAnswers: ['景物,借景抒情', '景物，借景抒情'],
+            hint: '[直接与间接抒情区别]（语文五年级-第2单元）',
+            explanation: '间接抒情通过描写景物表达感情，也叫借景抒情。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u2l3',
+        title: '记叙中议论——夹叙夹议',
+        order: 3,
+        teachingMethod: '支架式',
+        content: [
+          { type: 'text', content: '记叙文还可以在叙事中加入议论，发表自己的看法和道理，这叫"夹叙夹议"。"叙"是讲故事，"议"是说道理，两者交替出现，文章既有故事又有思想。', animationType: 'reveal' },
+          { type: 'example', content: '夹叙夹议示例：\n叙：今天我帮老奶奶过马路。\n议：帮助别人是一件快乐的事，我们要做一个乐于助人的人。\n特点：叙事一段，议论一段，交替进行', label: '夹叙夹议', animationType: 'bounce' },
+          { type: 'tip', content: '夹叙夹议的方法：先叙事（讲发生了什么），再议论（说自己的看法或道理）。议论要由叙事自然引出，不能脱离故事空谈。', label: '叙议方法', animationType: 'pulse' },
+          { type: 'animation', content: '叙事和议论交替出现，展示夹叙夹议的结构', animationType: 'timeline',
+            animationConfig: {
+              sceneType: 'timeline',
+              title: '夹叙夹议交替出现',
+              timelineConfig: {
+                steps: [
+                  { id: 's1', description: '叙', text: '今天我帮老奶奶过马路', ttsNarration: '先叙事：今天我帮老奶奶过马路' },
+                  { id: 's2', description: '议', text: '帮助别人是一件快乐的事', ttsNarration: '再议论：帮助别人是一件快乐的事' },
+                  { id: 's3', description: '完整段落', text: '今天我帮老奶奶过马路。帮助别人是一件快乐的事，我们要乐于助人。', ttsNarration: '叙议结合，文章有故事又有思想' },
+                ],
+              },
+              ttsNarration: '夹叙夹议，叙事和议论交替进行。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小军，"叙"和"议"分别是什么？\n小军：叙是讲故事，议是说道理！\n老师：对！夹叙夹议就是又讲故事又说道理，文章更有深度。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '注意：议论要简短有力，由叙事自然引出，不能长篇大论说教，否则会显得空洞。', label: '议论注意', animationType: 'pulse' },
+          { type: 'example', content: '更多夹叙夹议：\n叙：小明每天坚持练字。\n议：坚持就是胜利，只要持之以恒就能成功。', label: '叙议积累', animationType: 'bounce' },
+        ],
+        iDo: '家长示范叙事后加议论，让孩子看清楚"叙"和"议"的分工。',
+        weDo: '亲子一起写夹叙夹议段落，一人叙事一人加议论。',
+        youDo: '孩子独立写一段夹叙夹议的段落。',
+        parentTips: '夹叙夹议要叙议结合，议论由叙事引出，不能脱节。',
+        funElement: '小游戏：叙议接力！一人讲一句故事，一人接一句道理，看谁接得最自然！',
+        gsapAnimations: [
+          '[GSAP:timeline|叙事与议论交替出现|1.5s|点击播放|power2.out]',
+          '[GSAP:highlight|叙和议关键词高亮|0.5s|出现完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|夹叙夹议结构图|500x200|教学风|png|叙+议交替]',
+          '[IMG:illustration|叙议结合示例图|500x300|教学风|png|故事+道理]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u2l3q1',
+            type: 'choice',
+            question: '夹叙夹议中"议"指的是？',
+            options: ['讲故事', '说道理或看法', '描写景物'],
+            answer: '说道理或看法',
+            hint: '议是发表看法',
+            explanation: '"议"是发表自己的看法或道理，"叙"才是讲故事。'
+          },
+          {
+            id: 'c5u2l3q2',
+            type: 'choice',
+            question: '下列哪句属于"议"？',
+            options: ['今天我帮老奶奶过马路', '帮助别人是一件快乐的事', '阳光明媚鸟儿欢唱'],
+            answer: '帮助别人是一件快乐的事',
+            hint: '找说道理的句子',
+            explanation: '"帮助别人是一件快乐的事"是说道理，属于"议"。'
+          },
+          {
+            id: 'c5u2l3q3',
+            type: 'fill',
+            question: '夹叙夹议的结构是：先___（填"叙"或"议"），再说道理。',
+            answer: '叙',
+            acceptableAnswers: ['叙', '叙事'],
+            hint: '先讲故事还是先说道理',
+            explanation: '夹叙夹议一般先叙事讲故事，再由故事引出议论说道理。'
+          },
+          {
+            id: 'c5u2l3q4',
+            type: 'choice',
+            question: '"小明每天坚持练字。坚持就是胜利。"这段话运用了什么写法？',
+            options: ['借景抒情', '夹叙夹议', '排比夸张'],
+            answer: '夹叙夹议',
+            hint: '有没有又叙事又说道理',
+            explanation: '先叙事"小明坚持练字"，再议论"坚持就是胜利"，是夹叙夹议。'
+          },
+          {
+            id: 'c5u2l3q5',
+            type: 'choice',
+            question: '【期末真题】下列段落属于夹叙夹议的一项是？',
+            options: ['天阴沉沉的，我心里很难受', '我帮妈妈洗碗。劳动最光荣，我爱劳动', '花儿在风中跳舞'],
+            answer: '我帮妈妈洗碗。劳动最光荣，我爱劳动',
+            hint: '找又叙事又说道理的段落',
+            explanation: '先叙事"帮妈妈洗碗"，再议论"劳动最光荣"，是夹叙夹议。期末常考！'
+          },
+          {
+            id: 'c5u2l3q6',
+            type: 'drag',
+            question: '把句子和表达方式配对：帮老奶奶过马路、帮助别人是快乐的事、乌云密布、坚持就是胜利',
+            answer: '叙,议,借景抒情,议',
+            hint: '叙事是叙，说道理是议',
+            explanation: '帮老奶奶过马路是叙；帮助别人是快乐的事、坚持就是胜利是议；乌云密布是借景抒情。'
+          },
+          {
+            id: 'c5u2l3q7',
+            type: 'fill',
+            question: '回顾：夹叙夹议中"叙"是讲故事，"议"是说___（填"道理"或"景物"）；议论要由___（填"叙事"或"景物"）自然引出。（两空用逗号分隔）',
+            answer: '道理,叙事',
+            acceptableAnswers: ['道理,叙事', '道理，叙事'],
+            hint: '[夹叙夹议概念]（语文五年级-第2单元）',
+            explanation: '夹叙夹议中"议"是说道理，议论要由叙事自然引出。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u2l4',
+        title: '记叙文升华——开头结尾技巧',
+        order: 4,
+        teachingMethod: 'EDI',
+        content: [
+          { type: 'text', content: '一篇好的记叙文，开头要吸引人，结尾要有回味。开头像"门面"，结尾像"余音"，写好了文章就成功了一半。今天学三种开头和三种结尾技巧。', animationType: 'reveal' },
+          { type: 'example', content: '三种开头：\n1. 开门见山：直接进入正题。如"今天，我们班举行了一场拔河比赛。"\n2. 设问开头：用问题引起兴趣。如"你知道我最难忘的事是什么吗？"\n3. 引用开头：引用诗句或名言。如"世上只有妈妈好，有妈的孩子像块宝。"', label: '三种开头', animationType: 'bounce' },
+          { type: 'example', content: '三种结尾：\n1. 总结结尾：总结全文。如"这就是我难忘的一天。"\n2. 呼应结尾：呼应开头。如开头设问，结尾回答"这就是我最难忘的事。"\n3. 感叹结尾：抒发感情。如"啊，友谊多么珍贵！"', label: '三种结尾', animationType: 'bounce' },
+          { type: 'animation', content: '三种开头卡片翻转揭示，展示不同开头方式', animationType: 'cardReveal',
+            animationConfig: {
+              sceneType: 'cardReveal',
+              title: '三种开头卡片',
+              cardRevealConfig: {
+                cards: [
+                  { id: 'c0', front: '开门见山', back: '今天，我们班举行了一场拔河比赛。', ttsText: '开门见山：直接进入正题' },
+                  { id: 'c1', front: '设问开头', back: '你知道我最难忘的事是什么吗？', ttsText: '设问开头：用问题引起兴趣' },
+                  { id: 'c2', front: '引用开头', back: '世上只有妈妈好，有妈的孩子像块宝。', ttsText: '引用开头：引用诗句名言' },
+                ],
+              },
+              ttsNarration: '三种开头：开门见山、设问开头、引用开头。',
+            },
+          },
+          { type: 'tip', content: '开头结尾要呼应：开头设问，结尾回答；开头引用，结尾呼应。这样文章首尾圆合，结构完整。', label: '首尾呼应', animationType: 'pulse' },
+          { type: 'dialogue', content: '老师：小芳，开头设问"你知道我最难忘的事吗"，结尾该怎么写？\n小芳：呼应开头，回答"这就是我最难忘的事"！\n老师：非常对！首尾呼应让文章更完整。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '口诀：开头要抓人，结尾要回味；首尾能呼应，文章才完美！', label: '巧记口诀', animationType: 'pulse' },
+        ],
+        iDo: '家长示范三种开头和三种结尾，让孩子体会不同开头结尾的效果。',
+        weDo: '亲子一起练习给同一个题目写不同开头和结尾。',
+        youDo: '孩子独立写一个开头和一个结尾，做到首尾呼应。',
+        parentTips: '开头要吸引人，结尾要有回味，提醒孩子首尾呼应让文章更完整。',
+        funElement: '小游戏：开头结尾盲盒！抽一个开头，配一个呼应的结尾，看谁配得最巧妙！',
+        gsapAnimations: [
+          '[GSAP:cardReveal|三种开头卡片翻转揭示|0.5s|点击|power2.inOut]',
+          '[GSAP:highlight|开头结尾关键词高亮|0.4s|翻转完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|开头结尾技巧图|500x300|教学风|png|3种开头+3种结尾]',
+          '[IMG:illustration|首尾呼应示意图|500x200|教学风|png|首尾呼应]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u2l4q1',
+            type: 'choice',
+            question: '"你知道我最难忘的事是什么吗？"是什么开头？',
+            options: ['开门见山', '设问开头', '引用开头'],
+            answer: '设问开头',
+            hint: '是不是用问题开头',
+            explanation: '用问题引起兴趣，是设问开头。'
+          },
+          {
+            id: 'c5u2l4q2',
+            type: 'choice',
+            question: '"今天，我们班举行了一场拔河比赛。"是什么开头？',
+            options: ['开门见山', '设问开头', '引用开头'],
+            answer: '开门见山',
+            hint: '是不是直接进入正题',
+            explanation: '直接进入正题，是开门见山。'
+          },
+          {
+            id: 'c5u2l4q3',
+            type: 'fill',
+            question: '开头设问"你知道我最难忘的事吗"，结尾应___（填"呼应"或"重复"）开头回答问题。',
+            answer: '呼应',
+            acceptableAnswers: ['呼应', '首尾呼应'],
+            hint: '首尾要怎样',
+            explanation: '开头设问，结尾应呼应开头回答问题，做到首尾呼应。'
+          },
+          {
+            id: 'c5u2l4q4',
+            type: 'choice',
+            question: '"啊，友谊多么珍贵！"是什么结尾？',
+            options: ['总结结尾', '呼应结尾', '感叹结尾'],
+            answer: '感叹结尾',
+            hint: '是不是抒发感情',
+            explanation: '用"啊……多么……"抒发感情，是感叹结尾。'
+          },
+          {
+            id: 'c5u2l4q5',
+            type: 'choice',
+            question: '【期末真题】下列开头属于引用开头的是？',
+            options: ['今天我们去春游', '谁言寸草心，报得三春晖。妈妈的爱最伟大', '你知道我最好的朋友是谁吗'],
+            answer: '谁言寸草心，报得三春晖。妈妈的爱最伟大',
+            hint: '找引用诗句名言的开头',
+            explanation: '引用"谁言寸草心"诗句开头，是引用开头。期末常考！'
+          },
+          {
+            id: 'c5u2l4q6',
+            type: 'drag',
+            question: '把开头和类型配对：今天去春游、你知道我最难忘的事吗、世上只有妈妈好、这就是我难忘的一天',
+            answer: '开门见山,设问开头,引用开头,总结结尾',
+            hint: '看开头用什么方式',
+            explanation: '今天去春游是开门见山；你知道我最难忘的事吗是设问开头；世上只有妈妈好是引用开头；这就是我难忘的一天是总结结尾。'
+          },
+          {
+            id: 'c5u2l4q7',
+            type: 'fill',
+            question: '回顾：三种开头是开门见山、设问开头和___（填"引用"或"感叹"）开头；好文章要做到首尾___（填"呼应"或"重复"）。（两空用逗号分隔）',
+            answer: '引用,呼应',
+            acceptableAnswers: ['引用,呼应', '引用，呼应'],
+            hint: '[开头结尾技巧]（语文五年级-第2单元）',
+            explanation: '三种开头是开门见山、设问开头、引用开头；好文章要做到首尾呼应。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u2l5',
+        title: '记叙文综合写作',
+        order: 5,
+        teachingMethod: '形成性评价',
+        content: [
+          { type: 'text', content: '这一单元我们学了直接抒情、间接抒情、夹叙夹议和开头结尾技巧。这节课把它们综合起来，写一篇400字的抒情记叙文，看谁写得最有感情、最有思想！', animationType: 'reveal' },
+          { type: 'example', content: '综合写作要求：\n1. 字数400字左右\n2. 含直接抒情或间接抒情\n3. 含夹叙夹议\n4. 开头吸引人，结尾有回味\n5. 首尾呼应', label: '写作要求', animationType: 'bounce' },
+          { type: 'tip', content: '写作步骤：第一步选材（写什么事），第二步开头（吸引人），第三步叙事+抒情+议论，第四步结尾（呼应开头），第五步修改润色。', label: '写作步骤', animationType: 'pulse' },
+          { type: 'animation', content: '写作完成撒花动画，提交后触发庆祝', animationType: 'sequence',
+            animationConfig: {
+              sceneType: 'sequence',
+              title: '写作达人通关',
+              sequenceConfig: {
+                items: ['选材', '开头', '叙事抒情', '结尾', '修改'],
+                order: 'custom',
+                itemType: 'word',
+              },
+              ttsNarration: '按五步写作，恭喜你成为写作达人！',
+            },
+          },
+          { type: 'dialogue', content: '老师：小刚，写记叙文最关键的是什么？\n小刚：要有真情实感，抒情和议论要自然！\n老师：对！加上好开头好结尾，文章就出彩了！', label: '考前对话', animationType: 'reveal' },
+          { type: 'tip', content: '目标：完成400字记叙文，含抒情和议论，首尾呼应，就能获得"写作达人"徽章！', label: '写作目标', animationType: 'pulse' },
+        ],
+        iDo: '家长示范写一段抒情记叙文，展示如何综合运用抒情、议论和开头结尾。',
+        weDo: '亲子一起修改一段记叙文，加入抒情和议论，调整开头结尾。',
+        youDo: '孩子独立写一篇400字的抒情记叙文。',
+        parentTips: '综合写作重在真情实感和结构完整，提醒孩子按步骤写、写后修改。',
+        funElement: '挑战时刻：写一篇有感情有思想的记叙文，集齐五步写作勋章，获得"写作达人"徽章！',
+        gsapAnimations: [
+          '[GSAP:confetti|写作完成撒花|2s|提交|power1.out]',
+          '[GSAP:starFlyIn|写作达人徽章飞入|1s|完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|写作达人徽章|300x300|可爱卡通风|png|金色徽章]',
+          '[IMG:illustration|记叙文写作步骤图|500x300|教学风|png|五步流程]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u2l5q1',
+            type: 'choice',
+            question: '写抒情记叙文时，抒情的作用是？',
+            options: ['让文章有感情', '让文章字数多', '让文章有道理'],
+            answer: '让文章有感情',
+            hint: '抒情表达什么',
+            explanation: '抒情让文章有感情，让读者感同身受。'
+          },
+          {
+            id: 'c5u2l5q2',
+            type: 'choice',
+            question: '写记叙文的第一步应该是？',
+            options: ['写结尾', '选材', '修改润色'],
+            answer: '选材',
+            hint: '先决定写什么',
+            explanation: '写记叙文第一步是选材，决定写什么事，再开头叙事。'
+          },
+          {
+            id: 'c5u2l5q3',
+            type: 'fill',
+            question: '写记叙文的最后一步是___（填"修改"或"开头"）润色。',
+            answer: '修改',
+            acceptableAnswers: ['修改', '修改润色'],
+            hint: '写完后要做什么',
+            explanation: '写记叙文最后一步是修改润色，让文章更通顺更精彩。'
+          },
+          {
+            id: 'c5u2l5q4',
+            type: 'choice',
+            question: '一篇好的记叙文结尾应该？',
+            options: ['突然停止', '有回味、呼应开头', '越长越好'],
+            answer: '有回味、呼应开头',
+            hint: '好结尾有什么特点',
+            explanation: '好结尾要有回味，最好呼应开头，做到首尾呼应。'
+          },
+          {
+            id: 'c5u2l5q5',
+            type: 'choice',
+            question: '【综合】下列做法最有利于写好记叙文的是？',
+            options: ['只叙事不抒情', '叙事+抒情+议论，首尾呼应', '只写景物不叙事'],
+            answer: '叙事+抒情+议论，首尾呼应',
+            hint: '好记叙文要综合运用各种技巧',
+            explanation: '叙事+抒情+议论，首尾呼应，综合运用才能写出好记叙文。'
+          },
+          {
+            id: 'c5u2l5q6',
+            type: 'drag',
+            question: '把写作步骤按顺序排列：修改润色、选材、结尾、开头、叙事抒情',
+            answer: '选材,开头,叙事抒情,结尾,修改润色',
+            hint: '先选材再开头，最后修改',
+            explanation: '写作步骤：选材→开头→叙事抒情→结尾→修改润色。'
+          },
+          {
+            id: 'c5u2l5q7',
+            type: 'fill',
+            question: '回顾：本单元学了直接抒情、间接抒情、___（填"夹叙夹议"或"说明方法"）和开头结尾技巧；好文章要做到首尾___（填"呼应"或"重复"）。（两空用逗号分隔）',
+            answer: '夹叙夹议,呼应',
+            acceptableAnswers: ['夹叙夹议,呼应', '夹叙夹议，呼应'],
+            hint: '[记叙文进阶总览]（语文五年级-第2单元）',
+            explanation: '本单元学了直接抒情、间接抒情、夹叙夹议和开头结尾技巧；好文章要做到首尾呼应。这是本单元总览。'
+          }
+        ]
+      }
+    ]
+  },
+  // ==================== 第三单元：说明文写作 ====================
+  {
+    id: 'c5u3',
+    title: '说明文写作',
+    subtitle: '说明方法与语言实践',
+    order: 3,
+    lessons: [
+      {
+        id: 'c5u3l1',
+        title: '说明方法复习与拓展',
+        order: 1,
+        teachingMethod: '间隔重复',
+        content: [
+          { type: 'text', content: '说明文是用来介绍事物、解释事理的文章。要写好说明文，必须掌握说明方法。今天复习四种常用说明方法：列数字、作比较、打比方、举例子。', animationType: 'reveal' },
+          { type: 'example', content: '四种说明方法：\n1. 列数字：用具体数字说明。如"这座桥长约300米。"\n2. 作比较：把两种事物比较。如"大象比牛大得多。"\n3. 打比方：用比喻说明。如"大象的耳朵像扇子。"\n4. 举例子：举具体例子。如"比如鲸鱼，是哺乳动物。"', label: '四种说明方法', animationType: 'bounce' },
+          { type: 'tip', content: '说明方法的作用：列数字更准确，作比较更清楚，打比方更形象，举例子更具体。恰当使用能让说明更清楚明白。', label: '方法作用', animationType: 'pulse' },
+          { type: 'animation', content: '四种说明方法卡片翻转揭示，分别展示四种方法', animationType: 'cardReveal',
+            animationConfig: {
+              sceneType: 'cardReveal',
+              title: '四种说明方法卡片',
+              cardRevealConfig: {
+                cards: [
+                  { id: 'c0', front: '列数字', back: '这座桥长约300米。', ttsText: '列数字：用具体数字说明' },
+                  { id: 'c1', front: '作比较', back: '大象比牛大得多。', ttsText: '作比较：把两种事物比较' },
+                  { id: 'c2', front: '打比方', back: '大象的耳朵像扇子。', ttsText: '打比方：用比喻说明' },
+                  { id: 'c3', front: '举例子', back: '比如鲸鱼，是哺乳动物。', ttsText: '举例子：举具体例子' },
+                ],
+              },
+              ttsNarration: '四种说明方法：列数字、作比较、打比方、举例子。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小丽，"太阳的表面温度约5500摄氏度"用了什么说明方法？\n小丽：用了列数字！因为有"5500摄氏度"这个数字。\n老师：非常对！看到具体数字就是列数字。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '辨认口诀：有数字是列数字，有比较是作比较，有比喻是打比方，有比如是举例子。', label: '辨认口诀', animationType: 'pulse' },
+          { type: 'example', content: '综合运用示例：\n鲸鱼是很大的动物。（作比较）它比大象大得多。（列数字）一头蓝鲸可达30米长。（打比方）它的舌头像一头大象那么重。（举例子）比如蓝鲸，就是典型的鲸类。', label: '综合示例', animationType: 'bounce' },
+        ],
+        iDo: '家长复习列数字、作比较、打比方、举例子四种方法，各举一个例子示范。',
+        weDo: '亲子一起辨认句子用了哪种说明方法，再一起用四种方法各写一句。',
+        youDo: '孩子独立用四种说明方法各写一句话。',
+        parentTips: '重点辨认四种方法的特点：数字、比较、比喻、举例，多练习辨认。',
+        funElement: '小游戏：说明方法大侦探！看到句子就判断用了哪种方法，看谁眼力最准！',
+        gsapAnimations: [
+          '[GSAP:cardReveal|四种说明方法卡片翻转|0.5s|点击|power2.inOut]',
+          '[GSAP:highlight|方法关键词高亮|0.4s|翻转完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|四种说明方法图|500x300|教学风|png|4种方法]',
+          '[IMG:illustration|说明方法辨认口诀图|500x200|教学风|png|口诀]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u3l1q1',
+            type: 'choice',
+            question: '"这座桥长约300米"用了什么说明方法？',
+            options: ['作比较', '列数字', '打比方'],
+            answer: '列数字',
+            hint: '句子里有没有数字',
+            explanation: '句中有具体数字"300米"，是列数字。'
+          },
+          {
+            id: 'c5u3l1q2',
+            type: 'choice',
+            question: '"大象的耳朵像扇子"用了什么说明方法？',
+            options: ['列数字', '打比方', '举例子'],
+            answer: '打比方',
+            hint: '有没有用比喻',
+            explanation: '用"像扇子"比喻大象耳朵，是打比方。'
+          },
+          {
+            id: 'c5u3l1q3',
+            type: 'fill',
+            question: '"大象比牛大得多"用了___（填说明方法名称）的说明方法。',
+            answer: '作比较',
+            acceptableAnswers: ['作比较', '比较'],
+            hint: '把两种事物放在一起比',
+            explanation: '"大象比牛大得多"把大象和牛比较，是作比较。'
+          },
+          {
+            id: 'c5u3l1q4',
+            type: 'choice',
+            question: '"比如鲸鱼，是哺乳动物"用了什么说明方法？',
+            options: ['举例子', '列数字', '作比较'],
+            answer: '举例子',
+            hint: '有没有"比如"举例',
+            explanation: '用"比如鲸鱼"举例，是举例子。'
+          },
+          {
+            id: 'c5u3l1q5',
+            type: 'choice',
+            question: '【期末真题】"太阳表面温度约5500摄氏度"运用的说明方法是？',
+            options: ['打比方', '列数字', '举例子'],
+            answer: '列数字',
+            hint: '看有没有具体数字',
+            explanation: '句中有"5500摄氏度"具体数字，是列数字。期末常考！'
+          },
+          {
+            id: 'c5u3l1q6',
+            type: 'drag',
+            question: '把句子和说明方法配对：桥长300米、大象比牛大、耳朵像扇子、比如鲸鱼',
+            answer: '列数字,作比较,打比方,举例子',
+            hint: '数字列数字，比较作比较，比喻打比方，比如举例子',
+            explanation: '桥长300米是列数字；大象比牛大是作比较；耳朵像扇子是打比方；比如鲸鱼是举例子。'
+          },
+          {
+            id: 'c5u3l1q7',
+            type: 'fill',
+            question: '回顾：四种说明方法是列数字、作比较、___（填"打比方"或"开门见山"）和___（填"举例子"或"夹叙夹议"）。（两空用逗号分隔）',
+            answer: '打比方,举例子',
+            acceptableAnswers: ['打比方,举例子', '打比方，举例子'],
+            hint: '[四种说明方法]（语文五年级-第3单元）',
+            explanation: '四种说明方法是列数字、作比较、打比方、举例子。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u3l2',
+        title: '说明文——介绍一种动物',
+        order: 2,
+        teachingMethod: '项目式：观察记录',
+        content: [
+          { type: 'text', content: '介绍一种动物是说明文常见的题目。要写好，必须先仔细观察，从外形、习性、食物、特点等方面记录，再把这些信息组织成一篇清楚的说明文。', animationType: 'reveal' },
+          { type: 'example', content: '观察记录表（以猫为例）：\n外形：浑身毛茸茸，有大眼睛和长胡须，四条腿，一条长尾巴。\n习性：白天睡觉，晚上活动，喜欢抓老鼠。\n食物：吃鱼、吃老鼠、吃猫粮。\n特点：走路轻，反应快，会爬树。', label: '观察记录表', animationType: 'bounce' },
+          { type: 'tip', content: '观察记录四方面：外形（长什么样）、习性（怎么生活）、食物（吃什么）、特点（特别的地方）。观察越仔细，说明越清楚。', label: '观察四方面', animationType: 'pulse' },
+          { type: 'animation', content: '动物特征逐步出现，展示观察记录的四个方面', animationType: 'sceneBuild',
+            animationConfig: {
+              sceneType: 'sceneBuild',
+              title: '动物观察记录',
+              sceneBuildConfig: {
+                sceneName: '猫的特征',
+                elements: [
+                  { id: 'e1', text: '外形', emoji: '🐱', x: 25, y: 25, size: 'md', color: '#FF9800', animation: 'bounceIn', ttsText: '外形：毛茸茸，大眼睛' },
+                  { id: 'e2', text: '习性', emoji: '😴', x: 70, y: 25, size: 'md', color: '#9C27B0', animation: 'fadeIn', ttsText: '习性：白天睡觉晚上活动' },
+                  { id: 'e3', text: '食物', emoji: '🐟', x: 25, y: 70, size: 'md', color: '#2196F3', animation: 'slideIn', ttsText: '食物：吃鱼吃老鼠' },
+                  { id: 'e4', text: '特点', emoji: '✨', x: 70, y: 70, size: 'md', color: '#4CAF50', animation: 'popIn', ttsText: '特点：走路轻会爬树' },
+                ],
+              },
+              ttsNarration: '观察动物从外形、习性、食物、特点四个方面记录。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小杰，介绍动物要先做什么？\n小杰：先观察记录外形、习性、食物和特点！\n老师：对！观察记录是写好动物说明文的基础。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '写作时按观察记录的顺序写，每个方面用一两句话，恰当运用说明方法，让介绍更清楚。', label: '写作顺序', animationType: 'pulse' },
+        ],
+        iDo: '家长示范观察猫的特征，填观察记录表，再示范写成一段说明文。',
+        weDo: '亲子一起观察一种动物，填观察记录表，再一起写成说明文。',
+        youDo: '孩子独立观察一种动物，填记录表并写成说明文。',
+        parentTips: '观察记录要分四方面：外形、习性、食物、特点，写时按顺序组织。',
+        funElement: '小游戏：动物观察员！选一种动物，填满四格观察记录表，看谁观察最仔细！',
+        gsapAnimations: [
+          '[GSAP:sceneBuild|动物特征逐步出现|1.5s|点击播放|power2.out]',
+          '[GSAP:highlight|观察方面高亮|0.5s|场景完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|动物观察记录表|500x300|教学风|png|观察表格]',
+          '[IMG:illustration|猫的特征图|500x300|可爱卡通风|png|猫]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u3l2q1',
+            type: 'choice',
+            question: '介绍一种动物应从哪些方面观察？',
+            options: ['外形、习性、食物、特点', '开头、结尾、抒情、议论', '并列、递进、因果、转折'],
+            answer: '外形、习性、食物、特点',
+            hint: '想想观察记录表的四个方面',
+            explanation: '介绍动物应从外形、习性、食物、特点四个方面观察记录。'
+          },
+          {
+            id: 'c5u3l2q2',
+            type: 'choice',
+            question: '写动物说明文前最重要的一步是？',
+            options: ['直接动笔写', '仔细观察并记录', '背范文'],
+            answer: '仔细观察并记录',
+            hint: '写之前要做什么',
+            explanation: '写动物说明文前要仔细观察并记录，这是写好的基础。'
+          },
+          {
+            id: 'c5u3l2q3',
+            type: 'fill',
+            question: '观察记录中"猫白天睡觉晚上活动"属于___（填"习性"或"外形"）方面。',
+            answer: '习性',
+            acceptableAnswers: ['习性', '生活习性'],
+            hint: '这是猫的生活习惯',
+            explanation: '"白天睡觉晚上活动"是猫的生活习惯，属于习性方面。'
+          },
+          {
+            id: 'c5u3l2q4',
+            type: 'choice',
+            question: '介绍动物时"猫浑身毛茸茸，有大眼睛"写的是哪个方面？',
+            options: ['食物', '外形', '特点'],
+            answer: '外形',
+            hint: '这是写猫长什么样',
+            explanation: '"毛茸茸、大眼睛"描写猫的外表，属于外形方面。'
+          },
+          {
+            id: 'c5u3l2q5',
+            type: 'choice',
+            question: '【期末真题】写动物说明文时，恰当运用说明方法的好处是？',
+            options: ['让文章更长', '让说明更清楚明白', '让文章有感情'],
+            answer: '让说明更清楚明白',
+            hint: '说明方法的作用',
+            explanation: '恰当运用说明方法能让说明更清楚明白。期末常考！'
+          },
+          {
+            id: 'c5u3l2q6',
+            type: 'drag',
+            question: '把信息和观察方面配对：毛茸茸、吃鱼、会爬树、白天睡觉',
+            answer: '外形,食物,特点,习性',
+            hint: '外形是长相，食物是吃的，特点是特别的，习性是生活习惯',
+            explanation: '毛茸茸是外形；吃鱼是食物；会爬树是特点；白天睡觉是习性。'
+          },
+          {
+            id: 'c5u3l2q7',
+            type: 'fill',
+            question: '回顾：介绍动物应从外形、习性、___（填"食物"或"开头"）和特点四个方面观察；写前要仔细___（填"观察"或"抒情"）记录。（两空用逗号分隔）',
+            answer: '食物,观察',
+            acceptableAnswers: ['食物,观察', '食物，观察'],
+            hint: '[动物说明文写法]（语文五年级-第3单元）',
+            explanation: '介绍动物应从外形、习性、食物、特点四方面观察；写前要仔细观察记录。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u3l3',
+        title: '说明文——介绍一种过程',
+        order: 3,
+        teachingMethod: '支架式：步骤说明',
+        content: [
+          { type: 'text', content: '介绍一种过程，就是按顺序说明事情是怎么做的，比如"怎样折纸飞机""怎样包饺子"。写过程说明文要用表示顺序的词，把步骤讲清楚。', animationType: 'reveal' },
+          { type: 'example', content: '过程说明的顺序词：\n先……然后……接着……最后……\n第一步……第二步……第三步……\n首先……其次……再次……最后……\n作用：让步骤清楚有序', label: '顺序词', animationType: 'bounce' },
+          { type: 'tip', content: '过程说明文要点：按步骤顺序写，每步用顺序词连接，把每一步怎么做写具体，让别人照着就能做。', label: '写作要点', animationType: 'pulse' },
+          { type: 'animation', content: '折纸飞机步骤依次出现，展示过程说明的顺序', animationType: 'timeline',
+            animationConfig: {
+              sceneType: 'timeline',
+              title: '怎样折纸飞机',
+              timelineConfig: {
+                steps: [
+                  { id: 's1', description: '第一步', text: '先准备一张长方形纸', ttsNarration: '先准备一张长方形纸' },
+                  { id: 's2', description: '第二步', text: '然后对折出中线再展开', ttsNarration: '然后对折出中线再展开' },
+                  { id: 's3', description: '第三步', text: '接着把两角向中线折', ttsNarration: '接着把两角向中线折' },
+                  { id: 's4', description: '第四步', text: '最后折出机翼就完成了', ttsNarration: '最后折出机翼就完成了' },
+                ],
+              },
+              ttsNarration: '用先然后接着最后，把折纸飞机的步骤讲清楚。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小宇，介绍过程要用什么词连接步骤？\n小宇：用"先……然后……接着……最后……"！\n老师：对！顺序词让步骤一目了然。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '注意：每一步要写具体，不能只说"折一下"，要说清楚怎么折、折到哪里，别人才看得懂。', label: '写作注意', animationType: 'pulse' },
+          { type: 'example', content: '过程说明示例（怎样包饺子）：\n先准备饺子皮和馅。然后把馅放在皮中间。接着把皮对折捏紧。最后把包好的饺子下锅煮。', label: '过程示例', animationType: 'bounce' },
+        ],
+        iDo: '家长示范写"怎样折纸飞机"，用顺序词把每步讲清楚。',
+        weDo: '亲子一起写"怎样包饺子"，一人说一步，用顺序词连接。',
+        youDo: '孩子独立写一篇过程说明文，如"怎样洗手"。',
+        parentTips: '过程说明文要用顺序词，每步写具体，让孩子照着能做出来。',
+        funElement: '小游戏：步骤接龙！一人说一步，用"先然后接着最后"接龙，看谁讲得最清楚！',
+        gsapAnimations: [
+          '[GSAP:timeline|折纸步骤依次出现|1.5s|点击播放|power2.out]',
+          '[GSAP:highlight|顺序词高亮|0.5s|步骤出现|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|折纸步骤图|500x300|教学风|png|4步折纸]',
+          '[IMG:illustration|过程说明顺序词图|500x200|教学风|png|顺序词]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u3l3q1',
+            type: 'choice',
+            question: '写过程说明文常用什么词连接步骤？',
+            options: ['因为……所以……', '先……然后……接着……最后……', '虽然……但是……'],
+            answer: '先……然后……接着……最后……',
+            hint: '表示先后顺序的词',
+            explanation: '过程说明文用"先……然后……接着……最后……"等顺序词连接步骤。'
+          },
+          {
+            id: 'c5u3l3q2',
+            type: 'choice',
+            question: '过程说明文最重要的是？',
+            options: ['按步骤顺序写清楚', '写得有感情', '用比喻拟人'],
+            answer: '按步骤顺序写清楚',
+            hint: '过程说明文要让人照着做',
+            explanation: '过程说明文最重要的是按步骤顺序写清楚，让人照着就能做。'
+          },
+          {
+            id: 'c5u3l3q3',
+            type: 'fill',
+            question: '写过程说明文的顺序词是：___……然后……接着……最后……',
+            answer: '先',
+            acceptableAnswers: ['先', '首先'],
+            hint: '第一个顺序词是什么',
+            explanation: '过程说明文常用"先……然后……接着……最后……"，第一个顺序词是"先"。'
+          },
+          {
+            id: 'c5u3l3q4',
+            type: 'choice',
+            question: '"先准备饺子皮和馅。然后把馅放在皮中间。"用了什么写法？',
+            options: ['过程说明', '夹叙夹议', '借景抒情'],
+            answer: '过程说明',
+            hint: '是不是按步骤介绍怎么做',
+            explanation: '用顺序词按步骤介绍包饺子的过程，是过程说明。'
+          },
+          {
+            id: 'c5u3l3q5',
+            type: 'choice',
+            question: '【期末真题】下列写法最适合介绍"怎样洗手"的是？',
+            options: ['先打湿手，然后抹肥皂，接着搓手，最后冲干净', '洗手很重要，我们要爱干净', '水龙头像一条小溪'],
+            answer: '先打湿手，然后抹肥皂，接着搓手，最后冲干净',
+            hint: '找按步骤写清楚的',
+            explanation: '用顺序词按步骤介绍洗手过程，最适合过程说明文。期末常考！'
+          },
+          {
+            id: 'c5u3l3q6',
+            type: 'drag',
+            question: '把步骤按正确顺序排列：下锅煮、准备皮和馅、对折捏紧、放馅在中间',
+            answer: '准备皮和馅,放馅在中间,对折捏紧,下锅煮',
+            hint: '先准备再放馅再捏紧最后煮',
+            explanation: '包饺子步骤：准备皮和馅→放馅在中间→对折捏紧→下锅煮。'
+          },
+          {
+            id: 'c5u3l3q7',
+            type: 'fill',
+            question: '回顾：过程说明文要用___（填"顺序词"或"修辞"）连接步骤；每步要写___（填"具体"或"模糊"）让人照着能做。（两空用逗号分隔）',
+            answer: '顺序词,具体',
+            acceptableAnswers: ['顺序词,具体', '顺序词，具体'],
+            hint: '[过程说明文写法]（语文五年级-第3单元）',
+            explanation: '过程说明文要用顺序词连接步骤，每步要写具体让人照着能做。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u3l4',
+        title: '说明文语言——准确与生动',
+        order: 4,
+        teachingMethod: '对比辨析法',
+        content: [
+          { type: 'text', content: '说明文的语言要既准确又生动。准确就是用词严谨，不夸大不缩小；生动就是适当用修辞，让说明更有趣。今天通过对比来学习准确与生动的语言。', animationType: 'reveal' },
+          { type: 'example', content: '准确语言 vs 模糊语言：\n准确：这座桥大约长300米。\n模糊：这座桥很长很长。\n准确：他大概十岁左右。\n模糊：他好像很小。\n"大约""左右""差不多"让说明更准确', label: '准确vs模糊', animationType: 'bounce' },
+          { type: 'tip', content: '说明文常用"大约""左右""差不多""一般""主要"等词，表示估计或限制，让语言更准确严谨，不绝对化。', label: '准确用词', animationType: 'pulse' },
+          { type: 'animation', content: '准确语言和模糊语言左右对比展示', animationType: 'compare',
+            animationConfig: {
+              sceneType: 'compare',
+              title: '准确 vs 模糊语言对比',
+              compareConfig: {
+                leftItems: ['准确语言', '大约长300米', '大概十岁左右', '严谨不绝对'],
+                rightItems: ['模糊语言', '很长很长', '好像很小', '夸大不严谨'],
+                result: 'close',
+                resultText: '说明文要用准确严谨的语言，不夸大不缩小',
+              },
+              ttsNarration: '说明文要用准确严谨的语言，"大约""左右"让说明更准确。',
+            },
+          },
+          { type: 'example', content: '生动语言示例：\n准确：大象的耳朵很大。\n生动：大象的耳朵像两把大扇子。\n适当用打比方让说明更生动有趣，但要服务于说明。', label: '生动语言', animationType: 'bounce' },
+          { type: 'dialogue', content: '老师：小琳，"这座桥大约长300米"里的"大约"有什么作用？\n小琳：让说明更准确，不绝对化！\n老师：对！"大约"表示估计，让语言更严谨。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '准确与生动的关系：准确是基础，生动是锦上添花。说明文首先要准确，再适当生动，不能为了生动而不准确。', label: '准确与生动', animationType: 'pulse' },
+        ],
+        iDo: '家长对比准确语言和模糊语言，示范用"大约""左右"让说明更准确。',
+        weDo: '亲子一起修改模糊的说明语言，改成准确的表达。',
+        youDo: '孩子独立修改几句说明文语言，让它们更准确。',
+        parentTips: '说明文语言要准确，常用"大约""左右"等词，适当生动但不能失真。',
+        funElement: '小游戏：语言医生！找出"模糊病人"，用"大约""左右"治好它，让说明更准确！',
+        gsapAnimations: [
+          '[GSAP:compare|准确与模糊语言对比|0.8s|页面加载|power2.out]',
+          '[GSAP:highlight|准确用词高亮|0.5s|点击词语|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|语言准确度对比|500x200|教学风|png|准确vs模糊]',
+          '[IMG:illustration|准确用词图|500x300|教学风|png|大约左右]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u3l4q1',
+            type: 'choice',
+            question: '说明文语言最基本的要求是？',
+            options: ['生动有趣', '准确严谨', '华丽优美'],
+            answer: '准确严谨',
+            hint: '说明文要让人了解真实情况',
+            explanation: '说明文语言最基本的要求是准确严谨，不能夸大或缩小。'
+          },
+          {
+            id: 'c5u3l4q2',
+            type: 'choice',
+            question: '下列哪句语言更准确？',
+            options: ['这座桥很长很长', '这座桥大约长300米', '这座桥好像很长'],
+            answer: '这座桥大约长300米',
+            hint: '找有具体数字和估计词的',
+            explanation: '"大约长300米"有数字和"大约"估计词，最准确。'
+          },
+          {
+            id: 'c5u3l4q3',
+            type: 'fill',
+            question: '让说明更准确的常用词有"大约""左右"和___（填"差不多"或"非常"）。',
+            answer: '差不多',
+            acceptableAnswers: ['差不多', '一般', '主要'],
+            hint: '哪个词表示估计或限制',
+            explanation: '"差不多""一般""主要"等都表示估计或限制，让说明更准确。"非常"是程度词，不表估计。'
+          },
+          {
+            id: 'c5u3l4q4',
+            type: 'choice',
+            question: '"大象的耳朵像两把大扇子"让说明更？',
+            options: ['更准确', '更生动', '更模糊'],
+            answer: '更生动',
+            hint: '用比喻的作用',
+            explanation: '用打比方"像大扇子"让说明更生动有趣。'
+          },
+          {
+            id: 'c5u3l4q5',
+            type: 'choice',
+            question: '【期末真题】下列句子语言最准确的一项是？',
+            options: ['太阳大概有几万度', '太阳表面温度约5500摄氏度', '太阳特别特别热'],
+            answer: '太阳表面温度约5500摄氏度',
+            hint: '找具体数字加估计词的',
+            explanation: '"约5500摄氏度"有具体数字和"约"估计词，最准确。期末常考！'
+          },
+          {
+            id: 'c5u3l4q6',
+            type: 'drag',
+            question: '把句子和语言特点配对：大约300米、很长很长、大概十岁、特别特别热',
+            answer: '准确,模糊,准确,模糊',
+            hint: '有数字和估计词是准确',
+            explanation: '大约300米、大概十岁是准确；很长很长、特别特别热是模糊。'
+          },
+          {
+            id: 'c5u3l4q7',
+            type: 'fill',
+            question: '回顾：说明文语言要___（填"准确"或"模糊"）严谨，常用"大约""左右"等词；适当用打比方让说明更___（填"生动"或"模糊"）。（两空用逗号分隔）',
+            answer: '准确,生动',
+            acceptableAnswers: ['准确,生动', '准确，生动'],
+            hint: '[说明文语言]（语文五年级-第3单元）',
+            explanation: '说明文语言要准确严谨，常用"大约""左右"等词；适当用打比方让说明更生动。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u3l5',
+        title: '说明文综合写作',
+        order: 5,
+        teachingMethod: '形成性评价',
+        content: [
+          { type: 'text', content: '这一单元我们学了四种说明方法、动物说明文、过程说明文和准确生动的语言。这节课综合运用，写一篇300字的说明文，至少用3种说明方法！', animationType: 'reveal' },
+          { type: 'example', content: '综合写作要求：\n1. 字数300字左右\n2. 至少用3种说明方法\n3. 语言准确，适当生动\n4. 条理清楚，按顺序写\n5. 内容真实，不夸大', label: '写作要求', animationType: 'bounce' },
+          { type: 'tip', content: '写作步骤：第一步确定说明对象，第二步收集资料，第三步列提纲（按顺序），第四步动笔写（用说明方法），第五步检查修改。', label: '写作步骤', animationType: 'pulse' },
+          { type: 'animation', content: '星级评定动画，提交后根据质量显示星级', animationType: 'sequence',
+            animationConfig: {
+              sceneType: 'sequence',
+              title: '说明文达人评定',
+              sequenceConfig: {
+                items: ['确定对象', '收集资料', '列提纲', '动笔写', '检查修改'],
+                order: 'custom',
+                itemType: 'word',
+              },
+              ttsNarration: '按五步写说明文，恭喜你成为说明文达人！',
+            },
+          },
+          { type: 'dialogue', content: '老师：小峰，写说明文最关键的是什么？\n小峰：要用说明方法，语言要准确，条理要清楚！\n老师：对！这三点做到了就是好说明文。', label: '考前对话', animationType: 'reveal' },
+          { type: 'tip', content: '目标：完成300字说明文，至少用3种说明方法，语言准确条理清楚，就能获得"说明文达人"徽章！', label: '写作目标', animationType: 'pulse' },
+        ],
+        iDo: '家长示范写一段说明文，展示如何综合运用说明方法和准确语言。',
+        weDo: '亲子一起修改一段说明文，补充说明方法，让语言更准确。',
+        youDo: '孩子独立写一篇300字的说明文，至少用3种说明方法。',
+        parentTips: '综合写作重在说明方法、准确语言和条理清楚，提醒孩子写后检查。',
+        funElement: '挑战时刻：写一篇300字说明文，用够3种说明方法，获得"说明文达人"徽章！',
+        gsapAnimations: [
+          '[GSAP:starFlyIn|说明文达人徽章星级飞入|1s|提交|power2.out]',
+          '[GSAP:confetti|通关撒花庆祝|2s|完成|power1.out]'
+        ],
+        images: [
+          '[IMG:illustration|说明文达人徽章|300x300|可爱卡通风|png|金色徽章]',
+          '[IMG:illustration|说明文写作步骤图|500x300|教学风|png|五步流程]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u3l5q1',
+            type: 'choice',
+            question: '写说明文至少要用几种说明方法？',
+            options: ['1种', '3种', '5种'],
+            answer: '3种',
+            hint: '看写作要求',
+            explanation: '本课要求写说明文至少用3种说明方法。'
+          },
+          {
+            id: 'c5u3l5q2',
+            type: 'choice',
+            question: '写说明文第一步应该是？',
+            options: ['动笔写', '确定说明对象', '检查修改'],
+            answer: '确定说明对象',
+            hint: '先决定写什么',
+            explanation: '写说明文第一步是确定说明对象，再收集资料列提纲。'
+          },
+          {
+            id: 'c5u3l5q3',
+            type: 'fill',
+            question: '说明文综合写作要求字数___（填"300"或"400"）字左右。',
+            answer: '300',
+            acceptableAnswers: ['300', '三百'],
+            hint: '本单元说明文字数要求',
+            explanation: '说明文综合写作要求300字左右，至少用3种说明方法。'
+          },
+          {
+            id: 'c5u3l5q4',
+            type: 'choice',
+            question: '写说明文时，下列做法正确的是？',
+            options: ['只叙事不说明', '用说明方法，语言准确条理清楚', '多用抒情少用说明'],
+            answer: '用说明方法，语言准确条理清楚',
+            hint: '说明文要怎么写',
+            explanation: '写说明文要用说明方法，语言准确，条理清楚，这才是好说明文。'
+          },
+          {
+            id: 'c5u3l5q5',
+            type: 'choice',
+            question: '【综合】写"介绍我的学校"说明文，最恰当的做法是？',
+            options: ['只写自己喜不喜欢学校', '用列数字、作比较等方法按顺序介绍学校', '编一个学校里的故事'],
+            answer: '用列数字、作比较等方法按顺序介绍学校',
+            hint: '说明文要介绍事物',
+            explanation: '用说明方法按顺序介绍学校，符合说明文要求。'
+          },
+          {
+            id: 'c5u3l5q6',
+            type: 'drag',
+            question: '把说明文写作步骤按顺序排列：检查修改、确定对象、动笔写、收集资料、列提纲',
+            answer: '确定对象,收集资料,列提纲,动笔写,检查修改',
+            hint: '先确定对象再收集资料再列提纲再写最后修改',
+            explanation: '说明文写作步骤：确定对象→收集资料→列提纲→动笔写→检查修改。'
+          },
+          {
+            id: 'c5u3l5q7',
+            type: 'fill',
+            question: '回顾：本单元学了四种说明方法、动物说明文、过程说明文和___（填"准确生动"或"夹叙夹议"）的语言；写说明文语言要___（填"准确"或"模糊"）。（两空用逗号分隔）',
+            answer: '准确生动,准确',
+            acceptableAnswers: ['准确生动,准确', '准确生动，准确'],
+            hint: '[说明文写作总览]（语文五年级-第3单元）',
+            explanation: '本单元学了四种说明方法、动物说明文、过程说明文和准确生动的语言；写说明文语言要准确。这是本单元总览。'
+          }
+        ]
+      }
+    ]
+  },
+  // ==================== 第四单元：名著阅读 ====================
+  {
+    id: 'c5u4',
+    title: '名著阅读',
+    subtitle: '片段赏析与人物情节',
+    order: 4,
+    lessons: [
+      {
+        id: 'c5u4l1',
+        title: '名著入门——《西游记》片段',
+        order: 1,
+        teachingMethod: '情境式：故事导入',
+        content: [
+          { type: 'text', content: '《西游记》是中国四大名著之一，讲的是唐僧师徒四人去西天取经的故事。今天我们读"孙悟空大闹天宫"的精彩片段，感受名著的魅力。', animationType: 'reveal' },
+          { type: 'example', content: '精彩片段：孙悟空大闹天宫\n孙悟空偷吃蟠桃，喝光仙酒，又闯进太上老君的兜率宫，把仙丹当豆子吃。玉帝大怒，派十万天兵天将捉拿他。孙悟空挥舞金箍棒，打得天兵天将落花流水，连哪吒三太子也不是他的对手。', label: '精彩片段', animationType: 'bounce' },
+          { type: 'tip', content: '读名著片段的方法：先了解背景（人物是谁、发生了什么），再细读精彩部分，最后体会人物特点。读完想一想：这个片段表现了人物什么性格？', label: '阅读方法', animationType: 'pulse' },
+          { type: 'animation', content: '西游记场景逐步构建，展示大闹天宫的精彩场面', animationType: 'sceneBuild',
+            animationConfig: {
+              sceneType: 'sceneBuild',
+              title: '大闹天宫场景',
+              sceneBuildConfig: {
+                sceneName: '大闹天宫',
+                elements: [
+                  { id: 'e1', text: '孙悟空', emoji: '🐒', x: 30, y: 30, size: 'lg', color: '#FF5722', animation: 'bounceIn', ttsText: '孙悟空挥舞金箍棒' },
+                  { id: 'e2', text: '金箍棒', emoji: '🪄', x: 60, y: 30, size: 'md', color: '#FFB300', animation: 'slideIn', ttsText: '金箍棒打得天兵落花流水' },
+                  { id: 'e3', text: '蟠桃仙丹', emoji: '🍑', x: 30, y: 70, size: 'md', color: '#E91E63', animation: 'fadeIn', ttsText: '偷吃蟠桃仙丹' },
+                  { id: 'e4', text: '天兵天将', emoji: '⚔️', x: 70, y: 70, size: 'md', color: '#607D8B', animation: 'popIn', ttsText: '十万天兵天将捉拿' },
+                ],
+              },
+              ttsNarration: '孙悟空偷蟠桃吃仙丹，挥舞金箍棒大闹天宫。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小航，大闹天宫表现了孙悟空什么性格？\n小航：表现了他勇敢、反抗、本领高强！\n老师：对！孙悟空敢于反抗天庭，本领高强，这是他的鲜明性格。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '《西游记》主要人物：唐僧（师傅，慈悲）、孙悟空（大师兄，勇敢机智）、猪八戒（二师兄，贪吃偷懒）、沙僧（三师弟，老实勤恳）。', label: '人物小档案', animationType: 'pulse' },
+          { type: 'example', content: '名著常识：\n作者：吴承恩（明代）\n地位：中国四大名著之一\n主要内容：唐僧师徒四人西天取经，历经九九八十一难\n经典故事：大闹天宫、三打白骨精、火焰山', label: '名著常识', animationType: 'bounce' },
+        ],
+        iDo: '家长读《西游记》"大闹天宫"片段，边读边讲解人物和情节。',
+        weDo: '亲子一起讨论片段内容，分析孙悟空的性格特点。',
+        youDo: '孩子独立回答片段理解题，说说孙悟空的性格。',
+        parentTips: '选适合孩子的精彩片段，读后多讨论人物性格和情节，激发阅读兴趣。',
+        funElement: '小游戏：名著剧场！分角色演一演大闹天宫，看谁演的孙悟空最神气！',
+        gsapAnimations: [
+          '[GSAP:sceneBuild|西游记大闹天宫场景构建|1.5s|点击播放|power2.out]',
+          '[GSAP:highlight|人物情节关键词高亮|0.5s|场景完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|西游记场景|500x300|水墨画风|png|孙悟空场景]',
+          '[IMG:illustration|西游记人物图|500x300|可爱卡通风|png|师徒四人]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u4l1q1',
+            type: 'choice',
+            question: '《西游记》的作者是？',
+            options: ['吴承恩', '罗贯中', '曹雪芹'],
+            answer: '吴承恩',
+            hint: '明代小说家',
+            explanation: '《西游记》作者是明代吴承恩，是中国四大名著之一。'
+          },
+          {
+            id: 'c5u4l1q2',
+            type: 'choice',
+            question: '"大闹天宫"主要表现孙悟空什么性格？',
+            options: ['贪吃偷懒', '勇敢反抗、本领高强', '老实勤恳'],
+            answer: '勇敢反抗、本领高强',
+            hint: '孙悟空怎么对待天兵天将',
+            explanation: '大闹天宫中孙悟空敢于反抗天庭，本领高强，表现了勇敢反抗的性格。'
+          },
+          {
+            id: 'c5u4l1q3',
+            type: 'fill',
+            question: '《西游记》讲的是唐僧师徒四人去___（填"西天"或"东海"）取经的故事。',
+            answer: '西天',
+            acceptableAnswers: ['西天'],
+            hint: '去哪里取经',
+            explanation: '《西游记》讲唐僧师徒四人去西天取经，历经九九八十一难。'
+          },
+          {
+            id: 'c5u4l1q4',
+            type: 'choice',
+            question: '孙悟空的武器是？',
+            options: ['九齿钉耙', '金箍棒', '降妖宝杖'],
+            answer: '金箍棒',
+            hint: '大师兄的武器',
+            explanation: '孙悟空的武器是金箍棒，九齿钉耙是猪八戒的，降妖宝杖是沙僧的。'
+          },
+          {
+            id: 'c5u4l1q5',
+            type: 'choice',
+            question: '【期末真题】下列不属于《西游记》故事的是？',
+            options: ['大闹天宫', '三打白骨精', '草船借箭'],
+            answer: '草船借箭',
+            hint: '哪个故事不是西游记的',
+            explanation: '草船借箭是《三国演义》的故事，不属于《西游记》。期末常考！'
+          },
+          {
+            id: 'c5u4l1q6',
+            type: 'drag',
+            question: '把人物和性格配对：孙悟空、猪八戒、唐僧、沙僧',
+            answer: '勇敢机智,贪吃偷懒,慈悲,老实勤恳',
+            hint: '大师兄勇敢，二师兄贪吃，师傅慈悲，三师弟老实',
+            explanation: '孙悟空勇敢机智；猪八戒贪吃偷懒；唐僧慈悲；沙僧老实勤恳。'
+          },
+          {
+            id: 'c5u4l1q7',
+            type: 'fill',
+            question: '回顾：《西游记》作者是___（填"吴承恩"或"曹雪芹"），是中国四大___（填"名著"或"寓言"）之一。（两空用逗号分隔）',
+            answer: '吴承恩,名著',
+            acceptableAnswers: ['吴承恩,名著', '吴承恩，名著'],
+            hint: '[西游记常识]（语文五年级-第4单元）',
+            explanation: '《西游记》作者是吴承恩，是中国四大名著之一。这是本课核心常识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u4l2',
+        title: '人物赏析——孙悟空形象',
+        order: 2,
+        teachingMethod: '支架式：人物分析卡',
+        content: [
+          { type: 'text', content: '读名著要学会分析人物。今天用"人物分析卡"来分析孙悟空的形象。人物分析卡从外貌、行为、语言三个方面入手，最后总结人物性格。', animationType: 'reveal' },
+          { type: 'example', content: '人物分析卡（孙悟空）：\n外貌：毛脸雷公嘴，火眼金睛，手持金箍棒。\n行为：大闹天宫、三打白骨精、保护师傅取经。\n语言："俺老孙来也！"\n性格：勇敢机智、嫉恶如仇、忠诚保护师傅', label: '人物分析卡', animationType: 'bounce' },
+          { type: 'tip', content: '人物分析三方面：外貌（长什么样）、行为（做了什么）、语言（说了什么）。从这三方面总结，就能准确把握人物性格。', label: '分析三方面', animationType: 'pulse' },
+          { type: 'animation', content: '人物分析卡逐步填入，展示从外貌到行为到语言到性格的分析过程', animationType: 'timeline',
+            animationConfig: {
+              sceneType: 'timeline',
+              title: '孙悟空人物分析卡',
+              timelineConfig: {
+                steps: [
+                  { id: 's1', description: '外貌', text: '毛脸雷公嘴，火眼金睛', ttsNarration: '先看外貌：毛脸雷公嘴，火眼金睛' },
+                  { id: 's2', description: '行为', text: '大闹天宫，三打白骨精', ttsNarration: '再看行为：大闹天宫，三打白骨精' },
+                  { id: 's3', description: '语言', text: '俺老孙来也！', ttsNarration: '再看语言：俺老孙来也' },
+                  { id: 's4', description: '性格', text: '勇敢机智，嫉恶如仇', ttsNarration: '总结性格：勇敢机智，嫉恶如仇' },
+                ],
+              },
+              ttsNarration: '从外貌、行为、语言三方面分析，总结人物性格。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小琪，分析人物要从哪几方面？\n小琪：外貌、行为和语言三方面！\n老师：对！最后还要总结性格，人物分析卡就完整了。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '分析性格要有依据：从行为中看出勇敢，从语言中看出机智。不能凭空下结论，要用事例支撑。', label: '分析技巧', animationType: 'pulse' },
+          { type: 'example', content: '更多人物分析：\n猪八戒：外貌憨胖，行为贪吃偷懒，语言"师兄救我"，性格贪吃好色但善良。\n唐僧：外貌斯文，行为取经坚定，语言"阿弥陀佛"，性格慈悲但有时糊涂。', label: '人物分析积累', animationType: 'bounce' },
+        ],
+        iDo: '家长示范填孙悟空的人物分析卡，从外貌、行为、语言到性格。',
+        weDo: '亲子一起填猪八戒的人物分析卡，互相补充。',
+        youDo: '孩子独立填一个人物分析卡（如唐僧）。',
+        parentTips: '人物分析从外貌、行为、语言三方面入手，最后总结性格，要有事例支撑。',
+        funElement: '小游戏：人物档案局！给喜欢的人物建一张分析卡，看谁分析得最全面！',
+        gsapAnimations: [
+          '[GSAP:timeline|人物分析卡逐步填入|1.5s|点击播放|power2.out]',
+          '[GSAP:highlight|分析方面高亮|0.5s|填入完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|人物分析卡模板|500x350|思维导图风|png|分析模板]',
+          '[IMG:illustration|孙悟空形象图|500x300|水墨画风|png|孙悟空]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u4l2q1',
+            type: 'choice',
+            question: '人物分析卡从哪三方面分析人物？',
+            options: ['外貌、行为、语言', '开头、中间、结尾', '并列、递进、转折'],
+            answer: '外貌、行为、语言',
+            hint: '想想分析卡的三个方面',
+            explanation: '人物分析卡从外貌、行为、语言三方面分析，最后总结性格。'
+          },
+          {
+            id: 'c5u4l2q2',
+            type: 'choice',
+            question: '孙悟空"火眼金睛"属于分析的哪个方面？',
+            options: ['语言', '外貌', '行为'],
+            answer: '外貌',
+            hint: '这是写孙悟空长什么样',
+            explanation: '"火眼金睛"描写孙悟空的外表，属于外貌方面。'
+          },
+          {
+            id: 'c5u4l2q3',
+            type: 'fill',
+            question: '"俺老孙来也！"属于人物分析的___（填"语言"或"外貌"）方面。',
+            answer: '语言',
+            acceptableAnswers: ['语言'],
+            hint: '这是孙悟空说的话',
+            explanation: '"俺老孙来也"是孙悟空说的话，属于语言方面。'
+          },
+          {
+            id: 'c5u4l2q4',
+            type: 'choice',
+            question: '从孙悟空"三打白骨精"能看出他什么性格？',
+            options: ['贪吃偷懒', '嫉恶如仇、勇敢', '慈悲糊涂'],
+            answer: '嫉恶如仇、勇敢',
+            hint: '三打白骨精表现什么',
+            explanation: '三打白骨精中孙悟空坚决打妖怪，表现嫉恶如仇、勇敢的性格。'
+          },
+          {
+            id: 'c5u4l2q5',
+            type: 'choice',
+            question: '【期末真题】分析人物性格最恰当的方法是？',
+            options: ['凭空想象', '从外貌行为语言中找依据', '只看名字'],
+            answer: '从外貌行为语言中找依据',
+            hint: '分析要有依据',
+            explanation: '分析人物性格要从外貌、行为、语言中找依据，不能凭空下结论。期末常考！'
+          },
+          {
+            id: 'c5u4l2q6',
+            type: 'drag',
+            question: '把信息和分析方面配对：火眼金睛、俺老孙来也、三打白骨精、毛脸雷公嘴',
+            answer: '外貌,语言,行为,外貌',
+            hint: '长相是外貌，说话是语言，做事是行为',
+            explanation: '火眼金睛、毛脸雷公嘴是外貌；俺老孙来也是语言；三打白骨精是行为。'
+          },
+          {
+            id: 'c5u4l2q7',
+            type: 'fill',
+            question: '回顾：人物分析卡从外貌、行为和___（填"语言"或"开头"）三方面分析；最后要总结人物___（填"性格"或"题目"）。（两空用逗号分隔）',
+            answer: '语言,性格',
+            acceptableAnswers: ['语言,性格', '语言，性格'],
+            hint: '[人物分析方法]（语文五年级-第4单元）',
+            explanation: '人物分析卡从外貌、行为、语言三方面分析，最后总结人物性格。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u4l3',
+        title: '情节赏析——故事高潮',
+        order: 3,
+        teachingMethod: '支架式：情节曲线图',
+        content: [
+          { type: 'text', content: '故事都有情节发展，一般分为起因、发展、高潮、结局四个阶段。高潮是故事最精彩、矛盾最激烈的部分。今天用情节曲线图来赏析故事高潮。', animationType: 'reveal' },
+          { type: 'example', content: '情节四阶段（以三打白骨精为例）：\n起因：唐僧师徒遇到白骨精变的村姑。\n发展：白骨精三次变化骗唐僧，孙悟空三次打死妖怪。\n高潮：唐僧念紧箍咒赶走孙悟空，师徒决裂。\n结局：孙悟空含泪离开，后唐僧遇险被救回。', label: '情节四阶段', animationType: 'bounce' },
+          { type: 'tip', content: '情节曲线图：用一条曲线表示情节发展，起因在低处，发展上升，高潮在最高点，结局回落。高潮是曲线的最高点，最精彩。', label: '情节曲线', animationType: 'pulse' },
+          { type: 'animation', content: '情节按时间顺序出现，展示起因发展高潮结局，高潮在最精彩处', animationType: 'timeline',
+            animationConfig: {
+              sceneType: 'timeline',
+              title: '三打白骨精情节发展',
+              timelineConfig: {
+                steps: [
+                  { id: 's1', description: '起因', text: '遇到白骨精变的村姑', ttsNarration: '起因：遇到白骨精变的村姑' },
+                  { id: 's2', description: '发展', text: '白骨精三次变化，悟空三次打妖', ttsNarration: '发展：白骨精三次变化，悟空三次打妖' },
+                  { id: 's3', description: '高潮', text: '唐僧念咒赶走悟空，师徒决裂', ttsNarration: '高潮：唐僧念咒赶走悟空，师徒决裂' },
+                  { id: 's4', description: '结局', text: '悟空含泪离开，后救回唐僧', ttsNarration: '结局：悟空含泪离开，后救回唐僧' },
+                ],
+              },
+              ttsNarration: '情节分起因、发展、高潮、结局，高潮最精彩。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小阳，故事的哪个阶段最精彩？\n小阳：是高潮！矛盾最激烈，最吸引人！\n老师：对！高潮是情节曲线的最高点，也是故事最精彩的部分。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '找高潮的方法：看哪里矛盾最激烈、情感最强烈、最吸引人，那里往往就是高潮。', label: '找高潮方法', animationType: 'pulse' },
+          { type: 'example', content: '更多情节赏析：\n《草船借箭》高潮：诸葛亮趁大雾草船借箭，曹操下令放箭。\n《将相和》高潮：蔺相如完璧归赵，渑池之会上不屈不挠。', label: '情节积累', animationType: 'bounce' },
+        ],
+        iDo: '家长示范画三打白骨精的情节曲线图，标出起因、发展、高潮、结局。',
+        weDo: '亲子一起画一个故事的情节曲线图，找出高潮。',
+        youDo: '孩子独立画一个故事的情节曲线图，标出高潮。',
+        parentTips: '情节分起因、发展、高潮、结局，高潮最精彩。提醒孩子找矛盾最激烈处。',
+        funElement: '小游戏：情节过山车！画一条情节曲线，像坐过山车一样，高潮就是最高点！',
+        gsapAnimations: [
+          '[GSAP:timeline|情节起因发展高潮结局依次出现|1.5s|点击播放|power2.out]',
+          '[GSAP:highlight|高潮阶段高亮|0.5s|高潮出现|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|情节曲线图|500x300|教学风|png|曲线+标注]',
+          '[IMG:illustration|情节四阶段图|500x200|教学风|png|四阶段]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u4l3q1',
+            type: 'choice',
+            question: '故事情节一般分为哪四个阶段？',
+            options: ['起因、发展、高潮、结局', '开头、中间、转折、结尾', '并列、递进、因果、转折'],
+            answer: '起因、发展、高潮、结局',
+            hint: '想想情节曲线的四个阶段',
+            explanation: '故事情节一般分为起因、发展、高潮、结局四个阶段。'
+          },
+          {
+            id: 'c5u4l3q2',
+            type: 'choice',
+            question: '故事中最精彩、矛盾最激烈的部分是？',
+            options: ['起因', '高潮', '结局'],
+            answer: '高潮',
+            hint: '情节曲线的最高点',
+            explanation: '高潮是故事最精彩、矛盾最激烈的部分，是情节曲线的最高点。'
+          },
+          {
+            id: 'c5u4l3q3',
+            type: 'fill',
+            question: '"三打白骨精"中唐僧念咒赶走悟空，师徒决裂，这是故事的___（填"高潮"或"起因"）。',
+            answer: '高潮',
+            acceptableAnswers: ['高潮'],
+            hint: '这是矛盾最激烈的部分',
+            explanation: '唐僧念咒赶走悟空、师徒决裂是矛盾最激烈的部分，是故事的高潮。'
+          },
+          {
+            id: 'c5u4l3q4',
+            type: 'choice',
+            question: '情节曲线图中，高潮在曲线的什么位置？',
+            options: ['最低点', '最高点', '起点'],
+            answer: '最高点',
+            hint: '高潮最精彩，位置最高',
+            explanation: '情节曲线图中高潮在最高点，表示最精彩、矛盾最激烈。'
+          },
+          {
+            id: 'c5u4l3q5',
+            type: 'choice',
+            question: '【期末真题】下列对"高潮"理解正确的是？',
+            options: ['高潮是故事的开头', '高潮是故事最精彩矛盾最激烈的部分', '高潮是故事的结束'],
+            answer: '高潮是故事最精彩矛盾最激烈的部分',
+            hint: '高潮有什么特点',
+            explanation: '高潮是故事最精彩、矛盾最激烈的部分，是情节发展的高峰。期末常考！'
+          },
+          {
+            id: 'c5u4l3q6',
+            type: 'drag',
+            question: '把情节阶段按顺序排列：结局、起因、高潮、发展',
+            answer: '起因,发展,高潮,结局',
+            hint: '先是起因，最后是结局',
+            explanation: '情节顺序：起因→发展→高潮→结局。'
+          },
+          {
+            id: 'c5u4l3q7',
+            type: 'fill',
+            question: '回顾：故事情节分起因、发展、___（填"高潮"或"开头"）和结局；___（填"高潮"或"起因"）是最精彩矛盾最激烈的部分。（两空用逗号分隔）',
+            answer: '高潮,高潮',
+            acceptableAnswers: ['高潮,高潮', '高潮，高潮'],
+            hint: '[情节四阶段]（语文五年级-第4单元）',
+            explanation: '故事情节分起因、发展、高潮、结局；高潮是最精彩矛盾最激烈的部分。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u4l4',
+        title: '名著迁移——《伊索寓言》',
+        order: 4,
+        teachingMethod: '比较阅读法',
+        content: [
+          { type: 'text', content: '《西游记》是中国名著，《伊索寓言》是外国名著。今天用比较阅读法，对比中外名著的表达方式和文化差异，开阔阅读视野。', animationType: 'reveal' },
+          { type: 'example', content: '《伊索寓言》经典故事：\n《龟兔赛跑》：跑得快的兔子骄傲睡觉，被坚持的乌龟超过。道理：骄傲使人落后，坚持就是胜利。\n《狼来了》：放羊娃撒谎喊狼来了，后来真狼来了没人信。道理：说谎会失去信任。', label: '伊索寓言故事', animationType: 'bounce' },
+          { type: 'tip', content: '寓言的特点：用短小故事讲深刻道理（寓意）。故事是"壳"，道理是"核"，读完要明白寓意。', label: '寓言特点', animationType: 'pulse' },
+          { type: 'animation', content: '中外名著对比展示，左边西游记，右边伊索寓言', animationType: 'compare',
+            animationConfig: {
+              sceneType: 'compare',
+              title: '中外名著对比',
+              compareConfig: {
+                leftItems: ['《西游记》', '中国名著', '长篇小说', '讲取经故事'],
+                rightItems: ['《伊索寓言》', '外国名著', '短小寓言', '讲深刻道理'],
+                result: 'close',
+                resultText: '中外名著表达方式和文化不同，但都值得阅读',
+              },
+              ttsNarration: '《西游记》是长篇小说讲取经故事，《伊索寓言》是短小寓言讲深刻道理。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小萱，《伊索寓言》和《西游记》有什么不同？\n小萱：伊索寓言短小，讲道理；西游记很长，讲故事！\n老师：对！这就是中外名著表达方式的差异。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '比较阅读法：从内容、形式、道理等方面对比，找相同点和不同点，能更深入理解作品。', label: '比较阅读', animationType: 'pulse' },
+          { type: 'example', content: '中外名著对比：\n相同点：都讲故事，都有教育意义。\n不同点：中国名著（如西游记）篇幅长，人物多；外国寓言篇幅短，道理直接。', label: '对比小结', animationType: 'bounce' },
+        ],
+        iDo: '家长对比《西游记》和《伊索寓言》，示范从内容、形式、道理方面比较。',
+        weDo: '亲子一起比较中外名著，找相同点和不同点。',
+        youDo: '孩子独立比较一个中国故事和一个外国寓言。',
+        parentTips: '比较阅读从内容、形式、道理方面对比，找异同，能开阔阅读视野。',
+        funElement: '小游戏：名著大比拼！一个中国故事，一个外国寓言，比一比谁更有道理！',
+        gsapAnimations: [
+          '[GSAP:compare|中外名著对比展示|0.8s|页面加载|power2.out]',
+          '[GSAP:highlight|对比关键词高亮|0.5s|点击|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|中外名著对比图|500x300|教学风|png|对比表格]',
+          '[IMG:illustration|伊索寓言故事图|500x300|可爱卡通风|png|龟兔赛跑]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u4l4q1',
+            type: 'choice',
+            question: '《伊索寓言》是哪国的名著？',
+            options: ['中国', '外国（古希腊）', '日本'],
+            answer: '外国（古希腊）',
+            hint: '伊索是哪国人',
+            explanation: '《伊索寓言》是古希腊伊索创作的，是外国名著。'
+          },
+          {
+            id: 'c5u4l4q2',
+            type: 'choice',
+            question: '寓言的特点是？',
+            options: ['用短小故事讲深刻道理', '篇幅很长人物很多', '只写景物不讲故事'],
+            answer: '用短小故事讲深刻道理',
+            hint: '寓言故事短小但有道理',
+            explanation: '寓言用短小故事讲深刻道理，故事是壳，道理是核。'
+          },
+          {
+            id: 'c5u4l4q3',
+            type: 'fill',
+            question: '《龟兔赛跑》的寓意是：骄傲使人落后，___（填"坚持"或"放弃"）就是胜利。',
+            answer: '坚持',
+            acceptableAnswers: ['坚持', '坚持不懈'],
+            hint: '乌龟靠什么赢了兔子',
+            explanation: '《龟兔赛跑》寓意是骄傲使人落后，坚持就是胜利。'
+          },
+          {
+            id: 'c5u4l4q4',
+            type: 'choice',
+            question: '《西游记》和《伊索寓言》的主要不同是？',
+            options: ['都是外国名著', '西游记长篇讲取经，伊索寓言短小讲道理', '都没有道理'],
+            answer: '西游记长篇讲取经，伊索寓言短小讲道理',
+            hint: '比较篇幅和内容',
+            explanation: '《西游记》是长篇讲取经故事，《伊索寓言》是短小寓言讲道理，这是主要不同。'
+          },
+          {
+            id: 'c5u4l4q5',
+            type: 'choice',
+            question: '【期末真题】《狼来了》告诉我们的道理是？',
+            options: ['说谎会失去信任', '跑得快能赢', '要多吃蔬菜'],
+            answer: '说谎会失去信任',
+            hint: '放羊娃撒谎的后果',
+            explanation: '《狼来了》寓意是说谎会失去信任。期末常考！'
+          },
+          {
+            id: 'c5u4l4q6',
+            type: 'drag',
+            question: '把作品和特点配对：西游记、伊索寓言、龟兔赛跑、大闹天宫',
+            answer: '中国长篇,外国寓言,讲坚持,讲反抗',
+            hint: '西游记和大闹天宫是中国故事，伊索寓言和龟兔赛跑是外国寓言',
+            explanation: '西游记是中国长篇；伊索寓言是外国寓言；龟兔赛跑讲坚持；大闹天宫讲反抗。'
+          },
+          {
+            id: 'c5u4l4q7',
+            type: 'fill',
+            question: '回顾：《伊索寓言》是___（填"外国"或"中国"）名著，用短小故事讲深刻___（填"道理"或"情节"）。（两空用逗号分隔）',
+            answer: '外国,道理',
+            acceptableAnswers: ['外国,道理', '外国，道理'],
+            hint: '[中外名著对比]（语文五年级-第4单元）',
+            explanation: '《伊索寓言》是外国名著，用短小故事讲深刻道理。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u4l5',
+        title: '名著阅读综合检测',
+        order: 5,
+        teachingMethod: '形成性评价',
+        content: [
+          { type: 'text', content: '这一单元我们读了《西游记》片段，学了人物分析、情节赏析和中外名著比较。这节课综合检测，做几道片段阅读理解题，看谁读得最懂！', animationType: 'reveal' },
+          { type: 'example', content: '检测内容：\n1. 名著常识（作者、地位、人物）\n2. 人物分析（外貌、行为、语言、性格）\n3. 情节赏析（起因、发展、高潮、结局）\n4. 中外名著比较（异同点）', label: '检测内容', animationType: 'bounce' },
+          { type: 'tip', content: '答题技巧：读题要仔细，回忆课文内容；人物分析找依据，情节赏析分阶段，比较阅读找异同。', label: '答题技巧', animationType: 'pulse' },
+          { type: 'animation', content: '通关撒花动画，正确率达75%以上触发庆祝', animationType: 'sequence',
+            animationConfig: {
+              sceneType: 'sequence',
+              title: '名著阅读达人通关',
+              sequenceConfig: {
+                items: ['名著常识', '人物分析', '情节赏析', '名著比较'],
+                order: 'custom',
+                itemType: 'word',
+              },
+              ttsNarration: '恭喜你成为名著阅读达人！',
+            },
+          },
+          { type: 'dialogue', content: '老师：小昊，做名著阅读题要注意什么？\n小昊：回忆课文，人物找依据，情节分阶段！\n老师：对！沉着冷静，仔细作答！', label: '考前对话', animationType: 'reveal' },
+          { type: 'tip', content: '目标：综合检测正确率达到75%以上，就能获得"名著阅读"徽章！加油！', label: '检测目标', animationType: 'pulse' },
+        ],
+        iDo: '家长示范一道名著阅读理解题，展示解题思路。',
+        weDo: '亲子一起练习几道阅读理解题，讨论答案。',
+        youDo: '孩子独立完成综合检测，争取正确率75%以上。',
+        parentTips: '综合检测重在理解，提醒孩子读题仔细、回忆课文、找依据。',
+        funElement: '挑战时刻：闯过名著常识、人物分析、情节赏析、名著比较四关，获得"名著阅读"徽章！',
+        gsapAnimations: [
+          '[GSAP:confetti|通关撒花庆祝|2s|正确率≥75%|power1.out]',
+          '[GSAP:starFlyIn|名著阅读徽章飞入|1s|通关|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|名著阅读徽章|300x300|可爱卡通风|png|金色徽章]',
+          '[IMG:illustration|名著知识总览图|500x300|教学风|png|四方面]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u4l5q1',
+            type: 'choice',
+            question: '《西游记》的作者是？',
+            options: ['吴承恩', '伊索', '曹雪芹'],
+            answer: '吴承恩',
+            hint: '中国明代小说家',
+            explanation: '《西游记》作者是明代吴承恩。'
+          },
+          {
+            id: 'c5u4l5q2',
+            type: 'choice',
+            question: '人物分析应从哪三方面入手？',
+            options: ['外貌、行为、语言', '起因、发展、高潮', '开头、中间、结尾'],
+            answer: '外貌、行为、语言',
+            hint: '回忆人物分析卡',
+            explanation: '人物分析从外貌、行为、语言三方面入手，最后总结性格。'
+          },
+          {
+            id: 'c5u4l5q3',
+            type: 'fill',
+            question: '故事情节的高潮是矛盾最___（填"激烈"或"平淡"）的部分。',
+            answer: '激烈',
+            acceptableAnswers: ['激烈'],
+            hint: '高潮有什么特点',
+            explanation: '高潮是故事最精彩、矛盾最激烈的部分。'
+          },
+          {
+            id: 'c5u4l5q4',
+            type: 'choice',
+            question: '《龟兔赛跑》的寓意是？',
+            options: ['骄傲使人落后，坚持就是胜利', '说谎会失去信任', '要勇敢反抗'],
+            answer: '骄傲使人落后，坚持就是胜利',
+            hint: '乌龟靠什么赢',
+            explanation: '《龟兔赛跑》寓意是骄傲使人落后，坚持就是胜利。'
+          },
+          {
+            id: 'c5u4l5q5',
+            type: 'choice',
+            question: '【综合】下列说法正确的是？',
+            options: ['《西游记》是外国寓言', '高潮是故事最精彩的部分', '寓言篇幅很长人物很多'],
+            answer: '高潮是故事最精彩的部分',
+            hint: '逐项判断',
+            explanation: '高潮是故事最精彩的部分，正确。《西游记》是中国长篇小说，寓言篇幅短小。'
+          },
+          {
+            id: 'c5u4l5q6',
+            type: 'drag',
+            question: '把信息和类别配对：吴承恩、伊索、大闹天宫、龟兔赛跑',
+            answer: '西游记作者,伊索寓言作者,西游记故事,伊索寓言故事',
+            hint: '前两个是作者，后两个是故事',
+            explanation: '吴承恩是西游记作者；伊索是伊索寓言作者；大闹天宫是西游记故事；龟兔赛跑是伊索寓言故事。'
+          },
+          {
+            id: 'c5u4l5q7',
+            type: 'fill',
+            question: '回顾：本单元学了名著片段阅读、人物分析、___（填"情节赏析"或"说明方法"）和中外名著___（填"比较"或"夸张"）。（两空用逗号分隔）',
+            answer: '情节赏析,比较',
+            acceptableAnswers: ['情节赏析,比较', '情节赏析，比较'],
+            hint: '[名著阅读总览]（语文五年级-第4单元）',
+            explanation: '本单元学了名著片段阅读、人物分析、情节赏析和中外名著比较。这是本单元总览。'
+          }
+        ]
+      }
+    ]
+  },
+  // ==================== 第五单元：古诗文鉴赏 ====================
+  {
+    id: 'c5u5',
+    title: '古诗文鉴赏',
+    subtitle: '表达技巧与意境赏析',
+    order: 5,
+    lessons: [
+      {
+        id: 'c5u5l1',
+        title: '古诗表达技巧——借景抒情',
+        order: 1,
+        teachingMethod: '多感官：诗画结合',
+        content: [
+          { type: 'text', content: '古诗常用"借景抒情"的技巧，通过描写景物来表达感情。景物不是随便写的，每一处景物都藏着诗人的心情。今天我们读《静夜思》，体会借景抒情的妙处。', animationType: 'reveal' },
+          { type: 'poem', content: '静夜思\n（唐）李白\n床前明月光，\n疑是地上霜。\n举头望明月，\n低头思故乡。', label: '静夜思', animationType: 'bounce' },
+          { type: 'tip', content: '借景抒情赏析：李白看到"明月光"，觉得像"地上霜"，由月光想到故乡，借明月之景抒发思乡之情。景物（明月）里藏着感情（思乡）。', label: '借景抒情赏析', animationType: 'pulse' },
+          { type: 'example', content: '借景抒情步骤：\n1. 找景物：诗里写了什么景物？（明月、霜）\n2. 想意境：这些景物营造出什么氛围？（清冷、孤寂）\n3. 悟情感：景物表达了什么感情？（思乡之情）', label: '赏析三步', animationType: 'bounce' },
+          { type: 'animation', content: '诗中景物逐步出现，最后揭示情感，展示借景抒情的意境', animationType: 'timeline',
+            animationConfig: {
+              sceneType: 'timeline',
+              title: '静夜思意境展开',
+              timelineConfig: {
+                steps: [
+                  { id: 's1', description: '景物·明月', text: '床前明月光', ttsNarration: '先看景物：床前明月光' },
+                  { id: 's2', description: '景物·霜', text: '疑是地上霜', ttsNarration: '月光像霜，营造清冷意境' },
+                  { id: 's3', description: '动作·望月', text: '举头望明月', ttsNarration: '举头望明月' },
+                  { id: 's4', description: '情感·思乡', text: '低头思故乡', ttsNarration: '由明月引发思乡之情' },
+                ],
+              },
+              ttsNarration: '借明月之景，抒思乡之情，这就是借景抒情。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小月，《静夜思》借什么景抒什么情？\n小月：借明月之景，抒思乡之情！\n老师：对！明月清冷，引发思乡，景物里有感情。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '借景抒情的关键：景物和情感要匹配。明月清冷配思乡，春暖花开配喜悦，景物为情感服务。', label: '赏析技巧', animationType: 'pulse' },
+        ],
+        iDo: '家长读《静夜思》，边读边画景物，引导孩子体会思乡之情。',
+        weDo: '亲子一起赏析，找景物、想意境、悟情感。',
+        youDo: '孩子独立赏析《静夜思》的借景抒情。',
+        parentTips: '借景抒情赏析三步：找景物、想意境、悟情感。景物里藏着感情。',
+        funElement: '小游戏：诗中寻宝！在诗里找出藏着的景物和感情，看谁找得最准！',
+        gsapAnimations: [
+          '[GSAP:timeline|诗中景物逐步出现情感揭示|1.5s|点击播放|power2.out]',
+          '[GSAP:highlight|景物与情感关键词高亮|0.5s|出现完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|借景抒情诗意画|500x300|水墨画风|png|景物+情感]',
+          '[IMG:illustration|静夜思意境图|500x300|水墨画风|png|明月思乡]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u5l1q1',
+            type: 'choice',
+            question: '《静夜思》的作者是？',
+            options: ['李白', '杜甫', '白居易'],
+            answer: '李白',
+            hint: '唐代诗人',
+            explanation: '《静夜思》是唐代诗人李白写的。'
+          },
+          {
+            id: 'c5u5l1q2',
+            type: 'choice',
+            question: '《静夜思》借什么景物抒发思乡之情？',
+            options: ['明月', '春雨', '落叶'],
+            answer: '明月',
+            hint: '诗里写了什么景物',
+            explanation: '《静夜思》借明月之景抒发思乡之情，景物是明月。'
+          },
+          {
+            id: 'c5u5l1q3',
+            type: 'fill',
+            question: '《静夜思》中"疑是地上霜"把___（填"月光"或"雨水"）比作霜。',
+            answer: '月光',
+            acceptableAnswers: ['月光', '明月光'],
+            hint: '什么像地上霜',
+            explanation: '"疑是地上霜"把明月光比作霜，营造清冷意境。'
+          },
+          {
+            id: 'c5u5l1q4',
+            type: 'choice',
+            question: '借景抒情赏析的第一步是？',
+            options: ['找景物', '悟情感', '背全诗'],
+            answer: '找景物',
+            hint: '赏析三步的第一步',
+            explanation: '借景抒情赏析三步：找景物、想意境、悟情感，第一步是找景物。'
+          },
+          {
+            id: 'c5u5l1q5',
+            type: 'choice',
+            question: '【期末真题】《静夜思》中"举头望明月，低头思故乡"运用的表达技巧是？',
+            options: ['借景抒情', '夹叙夹议', '排比夸张'],
+            answer: '借景抒情',
+            hint: '借什么抒什么',
+            explanation: '借明月之景抒思乡之情，是借景抒情。期末常考！'
+          },
+          {
+            id: 'c5u5l1q6',
+            type: 'drag',
+            question: '把赏析步骤按顺序排列：悟情感、找景物、想意境',
+            answer: '找景物,想意境,悟情感',
+            hint: '先找景物再想意境最后悟情感',
+            explanation: '借景抒情赏析三步：找景物→想意境→悟情感。'
+          },
+          {
+            id: 'c5u5l1q7',
+            type: 'fill',
+            question: '回顾：借景抒情是通过描写___（填"景物"或"议论"）表达感情；《静夜思》借___（填"明月"或"春雨"）抒发思乡之情。（两空用逗号分隔）',
+            answer: '景物,明月',
+            acceptableAnswers: ['景物,明月', '景物，明月'],
+            hint: '[借景抒情技巧]（语文五年级-第5单元）',
+            explanation: '借景抒情通过描写景物表达感情；《静夜思》借明月抒发思乡之情。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u5l2',
+        title: '古诗表达技巧——动静结合',
+        order: 2,
+        teachingMethod: '支架式',
+        content: [
+          { type: 'text', content: '古诗还常用"动静结合"的技巧，把动态描写和静态描写结合起来，互相衬托，让画面更生动。今天读《鹿柴》，体会动静结合。', animationType: 'reveal' },
+          { type: 'poem', content: '鹿柴（zhài）\n（唐）王维\n空山不见人，\n但闻人语响。\n返景入深林，\n复照青苔上。', label: '鹿柴', animationType: 'bounce' },
+          { type: 'example', content: '动静结合赏析：\n静景：空山不见人（山的空寂）\n动景：但闻人语响（人语的声音）\n静景：返景入深林（夕阳照林）\n动景：复照青苔上（光影移动）\n以动衬静，更显山林的幽静', label: '动静结合', animationType: 'bounce' },
+          { type: 'tip', content: '动静结合：动态描写和静态描写互相衬托。常"以动衬静"，用声音、动作衬托环境的安静，让静更静。', label: '动静结合技巧', animationType: 'pulse' },
+          { type: 'animation', content: '动景动画出现后静景定格，展示动静结合', animationType: 'timeline',
+            animationConfig: {
+              sceneType: 'timeline',
+              title: '鹿柴动静结合',
+              timelineConfig: {
+                steps: [
+                  { id: 's1', description: '静景', text: '空山不见人', ttsNarration: '静景：空山不见人，山的空寂' },
+                  { id: 's2', description: '动景', text: '但闻人语响', ttsNarration: '动景：但闻人语响，以动衬静' },
+                  { id: 's3', description: '静景', text: '返景入深林', ttsNarration: '静景：返景入深林，夕阳照林' },
+                  { id: 's4', description: '动景', text: '复照青苔上', ttsNarration: '动景：复照青苔上，光影移动' },
+                ],
+              },
+              ttsNarration: '动静结合，以动衬静，更显山林的幽静。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小星，"空山不见人，但闻人语响"是怎么结合的？\n小星：前句静，后句动，以动衬静！\n老师：对！用人语的声音衬托山的空寂，这就是动静结合。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '辨动静：写"看不见、静止"的是静景；写"声音、动作、变化"的是动景。动静结合让画面有静有动更生动。', label: '辨动静', animationType: 'pulse' },
+        ],
+        iDo: '家长读《鹿柴》，示范找出动景和静景，讲解以动衬静。',
+        weDo: '亲子一起找诗中的动景和静景，互相讨论。',
+        youDo: '孩子独立找《鹿柴》中的动静结合。',
+        parentTips: '动静结合要分清动景和静景，常以动衬静，用声音动作衬托安静。',
+        funElement: '小游戏：动静小侦探！在诗里找出动景和静景，看谁分得最清楚！',
+        gsapAnimations: [
+          '[GSAP:timeline|动景动画后静景定格|1.5s|点击播放|power2.inOut]',
+          '[GSAP:highlight|动景静景高亮|0.5s|出现完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|动静结合示意图|500x300|水墨画风|png|动vs静]',
+          '[IMG:illustration|鹿柴意境图|500x300|水墨画风|png|空山深林]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u5l2q1',
+            type: 'choice',
+            question: '动静结合是指？',
+            options: ['只写动态', '动态和静态描写互相衬托', '只写静态'],
+            answer: '动态和静态描写互相衬托',
+            hint: '动和静怎么结合',
+            explanation: '动静结合是把动态描写和静态描写结合起来，互相衬托。'
+          },
+          {
+            id: 'c5u5l2q2',
+            type: 'choice',
+            question: '"空山不见人"属于？',
+            options: ['动景', '静景', '抒情'],
+            answer: '静景',
+            hint: '这是写山的空寂静止',
+            explanation: '"空山不见人"描写山的空寂静止，是静景。'
+          },
+          {
+            id: 'c5u5l2q3',
+            type: 'fill',
+            question: '"但闻人语响"用声音衬托山的空寂，这种写法叫以___（填"动"或"静"）衬静。',
+            answer: '动',
+            acceptableAnswers: ['动'],
+            hint: '用动衬托静',
+            explanation: '"但闻人语响"用声音（动）衬托山的空寂（静），是以动衬静。'
+          },
+          {
+            id: 'c5u5l2q4',
+            type: 'choice',
+            question: '"复照青苔上"（光影移动）属于？',
+            options: ['静景', '动景', '议论'],
+            answer: '动景',
+            hint: '光影在变化移动',
+            explanation: '"复照青苔上"写光影移动变化，是动景。'
+          },
+          {
+            id: 'c5u5l2q5',
+            type: 'choice',
+            question: '【期末真题】"以动衬静"的作用是？',
+            options: ['让静更静', '让动更动', '没有作用'],
+            answer: '让静更静',
+            hint: '动衬托静的效果',
+            explanation: '以动衬静用声音动作衬托安静，让静更静，更显幽静。期末常考！'
+          },
+          {
+            id: 'c5u5l2q6',
+            type: 'drag',
+            question: '把诗句和景别配对：空山不见人、但闻人语响、返景入深林、复照青苔上',
+            answer: '静景,动景,静景,动景',
+            hint: '静止是静景，声音变化是动景',
+            explanation: '空山不见人、返景入深林是静景；但闻人语响、复照青苔上是动景。'
+          },
+          {
+            id: 'c5u5l2q7',
+            type: 'fill',
+            question: '回顾：动静结合是动态和___（填"静态"或"景物"）描写互相衬托；常用以___（填"动"或"景"）衬静。（两空用逗号分隔）',
+            answer: '静态,动',
+            acceptableAnswers: ['静态,动', '静态，动'],
+            hint: '[动静结合技巧]（语文五年级-第5单元）',
+            explanation: '动静结合是动态和静态描写互相衬托；常用以动衬静。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u5l3',
+        title: '古诗表达技巧——虚实相生',
+        order: 3,
+        teachingMethod: '情境式',
+        content: [
+          { type: 'text', content: '古诗还有"虚实相生"的技巧。"实"是眼前真实之景，"虚"是想象回忆之景。虚实结合，让诗的意境更丰富。今天学习区分实景和虚景。', animationType: 'reveal' },
+          { type: 'example', content: '虚实相生示例：\n实景：眼前能看到的真实景物。如"明月松间照"。\n虚景：想象、回忆或未来的景物。如"遥知兄弟登高处"（想象兄弟登高）。\n虚实结合，意境更丰富', label: '虚实相生', animationType: 'bounce' },
+          { type: 'tip', content: '辨虚实：眼前真实看到的是实景；想象、回忆、设想的是虚景。"遥知""遥想""忆"等词常引出虚景。', label: '辨虚实', animationType: 'pulse' },
+          { type: 'animation', content: '实景和虚景左右对比展示', animationType: 'compare',
+            animationConfig: {
+              sceneType: 'compare',
+              title: '实景 vs 虚景对比',
+              compareConfig: {
+                leftItems: ['实景', '眼前真实之景', '明月松间照', '能直接看到'],
+                rightItems: ['虚景', '想象回忆之景', '遥知兄弟登高', '想象设想'],
+                result: 'close',
+                resultText: '实景是眼前真实之景，虚景是想象回忆之景，虚实结合意境更丰富',
+              },
+              ttsNarration: '实景是眼前真实之景，虚景是想象回忆之景。',
+            },
+          },
+          { type: 'poem', content: '九月九日忆山东兄弟\n（唐）王维\n独在异乡为异客，\n每逢佳节倍思亲。\n遥知兄弟登高处，\n遍插茱萸少一人。', label: '忆山东兄弟', animationType: 'bounce' },
+          { type: 'dialogue', content: '老师：小云，"遥知兄弟登高处"是实景还是虚景？\n小云：是虚景！因为是"遥知"，想象兄弟登高。\n老师：对！"遥知"引出想象，是虚景。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '虚实相生的作用：实景写眼前，虚景写想象，两者结合让诗的时空更广阔，情感更丰富。', label: '虚实作用', animationType: 'pulse' },
+        ],
+        iDo: '家长示范区分实景和虚景，读《九月九日忆山东兄弟》讲解虚实。',
+        weDo: '亲子一起找诗中的实景和虚景，互相讨论。',
+        youDo: '孩子独立区分一首诗的实景和虚景。',
+        parentTips: '实景是眼前真实之景，虚景是想象回忆之景，"遥知""忆"常引出虚景。',
+        funElement: '小游戏：虚实分拣员！把诗句分到"实景筐"或"虚景筐"，看谁分得最准！',
+        gsapAnimations: [
+          '[GSAP:compare|实景与虚景对比展示|0.8s|页面加载|power2.out]',
+          '[GSAP:highlight|虚实关键词高亮|0.5s|点击|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|虚实相生示意图|500x300|水墨画风|png|实vs虚]',
+          '[IMG:illustration|忆山东兄弟意境图|500x300|水墨画风|png|登高思亲]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u5l3q1',
+            type: 'choice',
+            question: '虚实相生中"实"指的是？',
+            options: ['想象之景', '眼前真实之景', '回忆之景'],
+            answer: '眼前真实之景',
+            hint: '实是什么景',
+            explanation: '"实"是眼前真实之景，"虚"是想象回忆之景。'
+          },
+          {
+            id: 'c5u5l3q2',
+            type: 'choice',
+            question: '"遥知兄弟登高处"是实景还是虚景？',
+            options: ['实景', '虚景', '既非实也非虚'],
+            answer: '虚景',
+            hint: '"遥知"是想象还是眼前',
+            explanation: '"遥知"是想象兄弟登高，是虚景。'
+          },
+          {
+            id: 'c5u5l3q3',
+            type: 'fill',
+            question: '"明月松间照"是眼前真实看到的，属于___（填"实景"或"虚景"）。',
+            answer: '实景',
+            acceptableAnswers: ['实景'],
+            hint: '眼前真实之景',
+            explanation: '"明月松间照"是眼前真实看到的景物，是实景。'
+          },
+          {
+            id: 'c5u5l3q4',
+            type: 'choice',
+            question: '下列哪个词常引出虚景？',
+            options: ['遥知', '看见', '眼前'],
+            answer: '遥知',
+            hint: '哪个词表示想象',
+            explanation: '"遥知""遥想""忆"等词常引出想象回忆，是虚景。'
+          },
+          {
+            id: 'c5u5l3q5',
+            type: 'choice',
+            question: '【期末真题】虚实相生的作用是？',
+            options: ['让诗更短', '让意境更丰富时空更广阔', '让诗没有感情'],
+            answer: '让意境更丰富时空更广阔',
+            hint: '虚实结合的好处',
+            explanation: '虚实相生让诗的意境更丰富、时空更广阔。期末常考！'
+          },
+          {
+            id: 'c5u5l3q6',
+            type: 'drag',
+            question: '把诗句和景别配对：明月松间照、遥知兄弟登高、遍插茱萸、遥想故乡',
+            answer: '实景,虚景,虚景,虚景',
+            hint: '眼前是实景，想象回忆是虚景',
+            explanation: '明月松间照是实景；遥知兄弟登高、遍插茱萸（想象）、遥想故乡是虚景。'
+          },
+          {
+            id: 'c5u5l3q7',
+            type: 'fill',
+            question: '回顾：虚实相生中"实"是眼前真实之景，"虚"是___（填"想象"或"动静"）回忆之景；"___（填"遥知"或"看见"）"常引出虚景。（两空用逗号分隔）',
+            answer: '想象,遥知',
+            acceptableAnswers: ['想象,遥知', '想象，遥知'],
+            hint: '[虚实相生技巧]（语文五年级-第5单元）',
+            explanation: '虚实相生中"虚"是想象回忆之景；"遥知"常引出虚景。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u5l4',
+        title: '古文入门——简单文言短文',
+        order: 4,
+        teachingMethod: 'CPA·C→P→A',
+        content: [
+          { type: 'text', content: '除了古诗，还有古文（文言文）。文言文和现代文不一样，字少意多。今天读一篇简单的文言短文，学习对照翻译理解大意。', animationType: 'reveal' },
+          { type: 'example', content: '文言短文：《守株待兔》\n原文：宋人有耕者。田中有株。兔走触株，折颈而死。因释其耒而守株，冀复得兔。兔不可复得，而身为宋国笑。\n翻译：宋国有个种田人。田里有树桩。兔子跑来撞到树桩，扭断脖子死了。于是他放下农具守着树桩，希望再捡到兔子。兔子再也捡不到了，他自己被宋国人嘲笑。', label: '守株待兔', animationType: 'bounce' },
+          { type: 'tip', content: '读文言文的方法：对照翻译，逐句理解。先读原文，再读翻译，重点记古今词义不同的字，如"走"古义是"跑"。', label: '阅读方法', animationType: 'pulse' },
+          { type: 'animation', content: '文言文逐句出现，配白话翻译，展示对照理解', animationType: 'timeline',
+            animationConfig: {
+              sceneType: 'timeline',
+              title: '守株待兔文白对照',
+              timelineConfig: {
+                steps: [
+                  { id: 's1', description: '原文', text: '宋人有耕者', ttsNarration: '原文：宋人有耕者' },
+                  { id: 's2', description: '翻译', text: '宋国有个种田人', ttsNarration: '翻译：宋国有个种田人' },
+                  { id: 's3', description: '原文', text: '兔走触株，折颈而死', ttsNarration: '原文：兔走触株，折颈而死' },
+                  { id: 's4', description: '翻译', text: '兔子跑来撞树桩，扭颈而死', ttsNarration: '翻译：兔子跑来撞树桩，扭颈而死' },
+                ],
+              },
+              ttsNarration: '文言文逐句对照翻译，理解大意。',
+            },
+          },
+          { type: 'example', content: '古今词义对照：\n走：古义"跑"，今义"行走"。\n走触株＝跑来撞树桩\n冀：古义"希望"，今义少用。\n冀复得兔＝希望再得到兔子', label: '古今词义', animationType: 'bounce' },
+          { type: 'dialogue', content: '老师：小晨，"兔走触株"的"走"是什么意思？\n小晨：是"跑"！古今意思不一样。\n老师：对！文言文的"走"是跑，不是现在的走。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '寓言寓意：《守株待兔》讽刺不主动努力、心存侥幸的人。告诉我们不能心存侥幸，要主动努力。', label: '寓言寓意', animationType: 'pulse' },
+        ],
+        iDo: '家长读《守株待兔》文言文，对照翻译逐句讲解，重点讲古今词义。',
+        weDo: '亲子一起对照翻译，理解每句大意，找古今词义不同的字。',
+        youDo: '孩子独立翻译简单的文言短文。',
+        parentTips: '读文言文要对照翻译，重点记古今词义不同的字，如"走"古义是跑。',
+        funElement: '小游戏：古今翻译官！把文言文翻译成白话文，看谁翻得最准！',
+        gsapAnimations: [
+          '[GSAP:timeline|文言文逐句出现配白话翻译|1.5s|点击播放|power2.out]',
+          '[GSAP:highlight|古今词义高亮|0.5s|出现完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|文言文翻译对照|500x300|教学风|png|古文+白话]',
+          '[IMG:illustration|守株待兔图|500x300|水墨画风|png|守株待兔]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u5l4q1',
+            type: 'choice',
+            question: '"兔走触株"中"走"的古义是？',
+            options: ['行走', '跑', '站立'],
+            answer: '跑',
+            hint: '古今词义不同',
+            explanation: '文言文中"走"的古义是"跑"，今义是"行走"。"兔走触株"是兔子跑来撞树桩。'
+          },
+          {
+            id: 'c5u5l4q2',
+            type: 'choice',
+            question: '《守株待兔》的寓意是？',
+            options: ['要主动努力，不能心存侥幸', '兔子跑得快', '种田很辛苦'],
+            answer: '要主动努力，不能心存侥幸',
+            hint: '寓言告诉什么道理',
+            explanation: '《守株待兔》讽刺心存侥幸、不主动努力的人，告诉我们要主动努力。'
+          },
+          {
+            id: 'c5u5l4q3',
+            type: 'fill',
+            question: '"冀复得兔"中"冀"的古义是___（填"希望"或"害怕"）。',
+            answer: '希望',
+            acceptableAnswers: ['希望', '盼望'],
+            hint: '种田人想怎样',
+            explanation: '"冀"古义是"希望"，"冀复得兔"是希望再得到兔子。'
+          },
+          {
+            id: 'c5u5l4q4',
+            type: 'choice',
+            question: '读文言文理解大意的好方法是？',
+            options: ['只读原文不翻译', '对照翻译逐句理解', '背下来就行'],
+            answer: '对照翻译逐句理解',
+            hint: '怎样读懂文言文',
+            explanation: '读文言文要对照翻译逐句理解，重点记古今词义不同的字。'
+          },
+          {
+            id: 'c5u5l4q5',
+            type: 'choice',
+            question: '【期末真题】下列对文言文"走"的理解正确的是？',
+            options: ['古今意思相同，都是行走', '古义是跑，今义是行走', '古义是站立'],
+            answer: '古义是跑，今义是行走',
+            hint: '古今词义变化',
+            explanation: '文言文"走"古义是跑，今义是行走，古今意思不同。期末常考！'
+          },
+          {
+            id: 'c5u5l4q6',
+            type: 'drag',
+            question: '把文言词和古义配对：走、冀、触、释',
+            answer: '跑,希望,撞到,放下',
+            hint: '走是跑，冀是希望，触是撞到，释是放下',
+            explanation: '走古义跑；冀古义希望；触古义撞到；释古义放下。'
+          },
+          {
+            id: 'c5u5l4q7',
+            type: 'fill',
+            question: '回顾：读文言文要对照___（填"翻译"或"修辞"）理解大意；"走"的古义是___（填"跑"或"走"）。（两空用逗号分隔）',
+            answer: '翻译,跑',
+            acceptableAnswers: ['翻译,跑', '翻译，跑'],
+            hint: '[文言文入门]（语文五年级-第5单元）',
+            explanation: '读文言文要对照翻译理解大意；"走"的古义是跑。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u5l5',
+        title: '古诗文综合检测',
+        order: 5,
+        teachingMethod: '形成性评价',
+        content: [
+          { type: 'text', content: '这一单元我们学了借景抒情、动静结合、虚实相生和文言文入门。这节课综合检测，背诵加鉴赏，看谁学得最扎实！', animationType: 'reveal' },
+          { type: 'example', content: '检测内容：\n1. 古诗背诵（《静夜思》《鹿柴》等）\n2. 借景抒情赏析（找景物、悟情感）\n3. 动静结合辨析（动景静景）\n4. 虚实相生区分（实景虚景）\n5. 文言文翻译（古今词义）', label: '检测内容', animationType: 'bounce' },
+          { type: 'tip', content: '答题技巧：背诵要准确；赏析找景物悟情感；辨动静分清动景静景；区分虚实看是否想象；翻译对照古今词义。', label: '答题技巧', animationType: 'pulse' },
+          { type: 'animation', content: '通关撒花动画，正确率达75%以上触发庆祝', animationType: 'sequence',
+            animationConfig: {
+              sceneType: 'sequence',
+              title: '古诗文达人通关',
+              sequenceConfig: {
+                items: ['借景抒情', '动静结合', '虚实相生', '文言翻译'],
+                order: 'custom',
+                itemType: 'word',
+              },
+              ttsNarration: '恭喜你成为古诗文达人！',
+            },
+          },
+          { type: 'dialogue', content: '老师：小怡，古诗文检测要注意什么？\n小怡：背诵要准，赏析找依据，翻译看古今！\n老师：对！沉着冷静，逐一作答！', label: '考前对话', animationType: 'reveal' },
+          { type: 'tip', content: '目标：综合检测正确率达到75%以上，就能获得"古诗文达人"徽章！加油！', label: '检测目标', animationType: 'pulse' },
+        ],
+        iDo: '家长示范一道古诗文鉴赏题，展示赏析思路。',
+        weDo: '亲子一起练习几道古诗文题，讨论答案。',
+        youDo: '孩子独立完成综合检测，争取正确率75%以上。',
+        parentTips: '综合检测重在背诵和理解，提醒孩子赏析找依据、翻译看古今词义。',
+        funElement: '挑战时刻：闯过借景抒情、动静结合、虚实相生、文言翻译四关，获得"古诗文达人"徽章！',
+        gsapAnimations: [
+          '[GSAP:confetti|通关撒花庆祝|2s|正确率≥75%|power1.out]',
+          '[GSAP:starFlyIn|古诗文达人徽章飞入|1s|通关|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|古诗文达人徽章|300x300|可爱卡通风|png|金色徽章]',
+          '[IMG:illustration|古诗文知识总览图|500x300|水墨画风|png|四技巧]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u5l5q1',
+            type: 'choice',
+            question: '《静夜思》借什么景抒什么情？',
+            options: ['借明月抒思乡', '借春雨抒喜悦', '借落叶抒悲伤'],
+            answer: '借明月抒思乡',
+            hint: '回忆借景抒情',
+            explanation: '《静夜思》借明月之景抒发思乡之情。'
+          },
+          {
+            id: 'c5u5l5q2',
+            type: 'choice',
+            question: '"以动衬静"的作用是？',
+            options: ['让静更静', '让动更动', '没有作用'],
+            answer: '让静更静',
+            hint: '动衬托静的效果',
+            explanation: '以动衬静用声音动作衬托安静，让静更静。'
+          },
+          {
+            id: 'c5u5l5q3',
+            type: 'fill',
+            question: '"遥知兄弟登高处"属于___（填"虚景"或"实景"）。',
+            answer: '虚景',
+            acceptableAnswers: ['虚景'],
+            hint: '"遥知"是想象',
+            explanation: '"遥知兄弟登高处"是想象兄弟登高，是虚景。'
+          },
+          {
+            id: 'c5u5l5q4',
+            type: 'choice',
+            question: '文言文"走"的古义是？',
+            options: ['行走', '跑', '站立'],
+            answer: '跑',
+            hint: '古今词义不同',
+            explanation: '文言文"走"古义是跑，今义是行走。'
+          },
+          {
+            id: 'c5u5l5q5',
+            type: 'choice',
+            question: '【综合】下列说法正确的是？',
+            options: ['借景抒情不写景物', '动静结合以动衬静让静更静', '虚实相生只有实景'],
+            answer: '动静结合以动衬静让静更静',
+            hint: '逐项判断',
+            explanation: '动静结合以动衬静让静更静，正确。借景抒情要写景物，虚实相生有实有虚。'
+          },
+          {
+            id: 'c5u5l5q6',
+            type: 'drag',
+            question: '把技巧和特点配对：借景抒情、动静结合、虚实相生、文言翻译',
+            answer: '景物藏情感,以动衬静,实虚结合,对照古今词义',
+            hint: '每个技巧的特点',
+            explanation: '借景抒情景物藏情感；动静结合以动衬静；虚实相生实虚结合；文言翻译对照古今词义。'
+          },
+          {
+            id: 'c5u5l5q7',
+            type: 'fill',
+            question: '回顾：本单元学了借景抒情、动静结合、___（填"虚实相生"或"说明方法"）和文言文___（填"翻译"或"开头"）。（两空用逗号分隔）',
+            answer: '虚实相生,翻译',
+            acceptableAnswers: ['虚实相生,翻译', '虚实相生，翻译'],
+            hint: '[古诗文鉴赏总览]（语文五年级-第5单元）',
+            explanation: '本单元学了借景抒情、动静结合、虚实相生和文言文翻译。这是本单元总览。'
+          }
+        ]
+      }
+    ]
+  },
+  // ==================== 第六单元：汉字之美 ====================
+  {
+    id: 'c5u6',
+    title: '汉字之美',
+    subtitle: '汉字演变与书法欣赏',
+    order: 6,
+    lessons: [
+      {
+        id: 'c5u6l1',
+        title: '汉字演变——从甲骨文到楷书',
+        order: 1,
+        teachingMethod: '情境式：穿越之旅',
+        content: [
+          { type: 'text', content: '汉字已经有几千年的历史，从最早的甲骨文慢慢演变成今天的楷书。今天来一次"穿越之旅"，看看汉字是怎么一步步变化的。', animationType: 'reveal' },
+          { type: 'example', content: '汉字演变五个阶段（以"日"字为例）：\n1. 甲骨文：像太阳，圆圈加一点\n2. 金文：刻在青铜器上，更圆润\n3. 小篆：线条均匀，规整\n4. 隶书：变扁，有"蚕头燕尾"\n5. 楷书：方正端庄，就是今天写的字', label: '汉字演变', animationType: 'bounce' },
+          { type: 'tip', content: '演变规律：从图画到符号，从不规则到规则，从圆到方。汉字越来越规整，越来越便于书写。', label: '演变规律', animationType: 'pulse' },
+          { type: 'animation', content: '"日"字笔画绘制动画，展示从甲骨文到楷书的演变过程', animationType: 'shapeDraw',
+            animationConfig: {
+              sceneType: 'shapeDraw',
+              title: '"日"字演变绘制',
+              shapeDrawConfig: {
+                shape: '日',
+                labels: ['甲骨文', '金文', '小篆', '隶书', '楷书'],
+              },
+              ttsNarration: '汉字从甲骨文到楷书，从图画到符号，越来越规整。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小睿，甲骨文的"日"字像什么？\n小睿：像太阳！圆圈加一点。\n老师：对！最早的汉字就是画图画，后来才变成符号。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '甲骨文是最早的成熟文字，刻在龟甲兽骨上，距今约3000多年。它让我们知道汉字是怎么来的。', label: '甲骨文小知识', animationType: 'pulse' },
+          { type: 'example', content: '更多演变示例（"水"字）：\n甲骨文：像流动的水波纹\n楷书：规范成"水"字\n每一笔都藏着古人的智慧', label: '演变积累', animationType: 'bounce' },
+        ],
+        iDo: '家长展示"日"字从甲骨文到楷书的演变图，讲解每个阶段的特点。',
+        weDo: '亲子一起看演变图，找出每个阶段的变化。',
+        youDo: '孩子独立说出汉字演变的五个阶段。',
+        parentTips: '汉字演变从图画到符号、从圆到方，越来越规整。甲骨文是最早的成熟文字。',
+        funElement: '小游戏：汉字穿越！把"日"字从甲骨文排到楷书，看谁排得对！',
+        gsapAnimations: [
+          '[GSAP:shapeDraw|"日"字笔画绘制演变|1.5s|点击播放|power2.out]',
+          '[GSAP:highlight|各阶段特征高亮|0.5s|绘制完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|汉字演变图|500x300|教学风|png|五阶段]',
+          '[IMG:illustration|甲骨文图|500x300|水墨画风|png|甲骨文]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u6l1q1',
+            type: 'choice',
+            question: '最早的成熟文字是？',
+            options: ['楷书', '甲骨文', '隶书'],
+            answer: '甲骨文',
+            hint: '刻在龟甲兽骨上',
+            explanation: '甲骨文是最早的成熟文字，刻在龟甲兽骨上，距今约3000多年。'
+          },
+          {
+            id: 'c5u6l1q2',
+            type: 'choice',
+            question: '汉字演变的总体趋势是？',
+            options: ['从规则到不规则', '从图画到符号，越来越规整', '从方到圆'],
+            answer: '从图画到符号，越来越规整',
+            hint: '想想演变规律',
+            explanation: '汉字从图画到符号，从不规则到规则，从圆到方，越来越规整。'
+          },
+          {
+            id: 'c5u6l1q3',
+            type: 'fill',
+            question: '甲骨文的"日"字像___（填"太阳"或"月亮"）。',
+            answer: '太阳',
+            acceptableAnswers: ['太阳'],
+            hint: '日字表示什么',
+            explanation: '甲骨文的"日"字像太阳，圆圈加一点，是图画文字。'
+          },
+          {
+            id: 'c5u6l1q4',
+            type: 'choice',
+            question: '汉字演变的五个阶段正确顺序是？',
+            options: ['楷书→甲骨文', '甲骨文→金文→小篆→隶书→楷书', '楷书→隶书→小篆'],
+            answer: '甲骨文→金文→小篆→隶书→楷书',
+            hint: '从早到晚',
+            explanation: '汉字演变顺序：甲骨文→金文→小篆→隶书→楷书，越来越规整。'
+          },
+          {
+            id: 'c5u6l1q5',
+            type: 'choice',
+            question: '【期末真题】甲骨文刻在什么上面？',
+            options: ['纸张', '龟甲兽骨', '青铜器'],
+            answer: '龟甲兽骨',
+            hint: '甲骨文的名字来源',
+            explanation: '甲骨文刻在龟甲和兽骨上，所以叫"甲骨文"。期末常考！'
+          },
+          {
+            id: 'c5u6l1q6',
+            type: 'drag',
+            question: '把汉字阶段按演变顺序排列：楷书、甲骨文、小篆、金文、隶书',
+            answer: '甲骨文,金文,小篆,隶书,楷书',
+            hint: '从最早到最晚',
+            explanation: '汉字演变顺序：甲骨文→金文→小篆→隶书→楷书。'
+          },
+          {
+            id: 'c5u6l1q7',
+            type: 'fill',
+            question: '回顾：最早的成熟文字是___（填"甲骨文"或"楷书"）；汉字演变从图画到___（填"符号"或"图画"），越来越规整。（两空用逗号分隔）',
+            answer: '甲骨文,符号',
+            acceptableAnswers: ['甲骨文,符号', '甲骨文，符号'],
+            hint: '[汉字演变]（语文五年级-第6单元）',
+            explanation: '最早的成熟文字是甲骨文；汉字演变从图画到符号，越来越规整。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u6l2',
+        title: '汉字结构——六书造字法',
+        order: 2,
+        teachingMethod: '积木式',
+        content: [
+          { type: 'text', content: '汉字是怎么造出来的？古人总结了"六书"造字法，今天学其中四种最常见的：象形、指事、会意、形声。了解造字法，能帮我们更好地理解汉字。', animationType: 'reveal' },
+          { type: 'example', content: '四种造字法：\n1. 象形：画事物的形状。如"日"像太阳，"月"像月亮。\n2. 指事：用符号表示抽象概念。如"上""下"用符号表示方位。\n3. 会意：把两个或几个字合起来表意。如"明"＝日+月，日月合起来就是明亮。\n4. 形声：一部分表意（形旁），一部分表音（声旁）。如"妈"，女表意，马表音。', label: '四种造字法', animationType: 'bounce' },
+          { type: 'tip', content: '形声字最多：汉字里80%以上是形声字。形旁表意思类别（如"氵"表水），声旁表读音（如"马"）。', label: '形声字最多', animationType: 'pulse' },
+          { type: 'animation', content: '会意字"明"由日和月拼成，展示拼字过程', animationType: 'sceneBuild',
+            animationConfig: {
+              sceneType: 'sceneBuild',
+              title: '会意字"明"拼字',
+              sceneBuildConfig: {
+                sceneName: '会意字明',
+                elements: [
+                  { id: 'e1', text: '日', emoji: '☀️', x: 30, y: 40, size: 'lg', color: '#FFB300', animation: 'bounceIn', ttsText: '日表示太阳' },
+                  { id: 'e2', text: '月', emoji: '🌙', x: 60, y: 40, size: 'lg', color: '#5C6BC0', animation: 'slideIn', ttsText: '月表示月亮' },
+                  { id: 'e3', text: '明', emoji: '✨', x: 45, y: 75, size: 'xl', color: '#FF5722', animation: 'popIn', ttsText: '日加月就是明，日月明亮' },
+                ],
+              },
+              ttsNarration: '日加月就是明，日月合起来表示明亮，这是会意字。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小瑶，"妈"字是什么造字法？\n小瑶：是形声字！女表意，马表音。\n老师：对！形声字一半表意一半表音，是汉字里最多的。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '辨认方法：象形像图画，指事用符号，会意是合字，形声有形旁声旁。"氵"表水，"木"表树，"扌"表手。', label: '辨认方法', animationType: 'pulse' },
+          { type: 'example', content: '形旁表意示例：\n氵（水）：河、海、湖都和水有关\n木（树）：树、林、森都和树有关\n扌（手）：打、拍、抓都和手有关', label: '形旁表意', animationType: 'bounce' },
+        ],
+        iDo: '家长示范四种造字法，各举一个例子，重点讲解形声字。',
+        weDo: '亲子一起辨认汉字的造字法，找形旁和声旁。',
+        youDo: '孩子独立判断几个字的造字法。',
+        parentTips: '六书四种：象形、指事、会意、形声。形声字最多，形旁表意声旁表音。',
+        funElement: '小游戏：汉字拆解师！把会意字和形声字拆开，看谁拆得最清楚！',
+        gsapAnimations: [
+          '[GSAP:sceneBuild|会意字明拼字过程|1.2s|点击播放|power2.out]',
+          '[GSAP:highlight|形旁声旁高亮|0.5s|拼字完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|六书造字法图|500x300|教学风|png|四种造字法]',
+          '[IMG:illustration|形旁表意图|500x300|教学风|png|氵木扌]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u6l2q1',
+            type: 'choice',
+            question: '"日"像太阳，是什么造字法？',
+            options: ['象形', '形声', '会意'],
+            answer: '象形',
+            hint: '画事物形状',
+            explanation: '"日"像太阳的形状，是象形字。'
+          },
+          {
+            id: 'c5u6l2q2',
+            type: 'choice',
+            question: '汉字里最多的造字法是？',
+            options: ['象形', '形声', '指事'],
+            answer: '形声',
+            hint: '哪种造字法最多',
+            explanation: '汉字里80%以上是形声字，是数量最多的造字法。'
+          },
+          {
+            id: 'c5u6l2q3',
+            type: 'fill',
+            question: '"明"＝日+月，是___（填"会意"或"形声"）字。',
+            answer: '会意',
+            acceptableAnswers: ['会意'],
+            hint: '日和月合起来表意',
+            explanation: '"明"由日和月合起来表示明亮，是会意字。'
+          },
+          {
+            id: 'c5u6l2q4',
+            type: 'choice',
+            question: '"妈"字中"女"是？',
+            options: ['声旁表音', '形旁表意', '会意部分'],
+            answer: '形旁表意',
+            hint: '女表什么',
+            explanation: '"妈"是形声字，"女"是形旁表意，"马"是声旁表音。'
+          },
+          {
+            id: 'c5u6l2q5',
+            type: 'choice',
+            question: '【期末真题】下列汉字属于形声字的是？',
+            options: ['日', '妈', '明'],
+            answer: '妈',
+            hint: '找一半表意一半表音的',
+            explanation: '"妈"是形声字，女表意马表音。日是象形，明是会意。期末常考！'
+          },
+          {
+            id: 'c5u6l2q6',
+            type: 'drag',
+            question: '把字和造字法配对：日、明、妈、上',
+            answer: '象形,会意,形声,指事',
+            hint: '日象形，明会意，妈形声，上指事',
+            explanation: '日是象形；明是会意；妈是形声；上是指事。'
+          },
+          {
+            id: 'c5u6l2q7',
+            type: 'fill',
+            question: '回顾：六书中常见的四种造字法是象形、指事、___（填"会意"或"开头"）和形声；其中形声字形旁表意、___（填"声旁"或"景物"）表音。（两空用逗号分隔）',
+            answer: '会意,声旁',
+            acceptableAnswers: ['会意,声旁', '会意，声旁'],
+            hint: '[六书造字法]（语文五年级-第6单元）',
+            explanation: '四种造字法是象形、指事、会意、形声；形声字形旁表意、声旁表音。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u6l3',
+        title: '书法欣赏——楷书之美',
+        order: 3,
+        teachingMethod: '多感官：书法欣赏',
+        content: [
+          { type: 'text', content: '楷书是我们日常写的字，端正工整，是最实用的书体。欣赏楷书，要品味它的笔画美和结构美。今天认识楷书的基本笔画和著名书法家。', animationType: 'reveal' },
+          { type: 'example', content: '楷书基本笔画：\n横、竖、撇、捺、点、提、折、钩\n楷书讲究"横平竖直"，笔画端正，结构匀称。\n写好楷书要"起笔、行笔、收笔"分明。', label: '楷书笔画', animationType: 'bounce' },
+          { type: 'tip', content: '欣赏楷书两方面：笔画美（横平竖直，起收分明）和结构美（重心稳，疏密匀，左右对称）。', label: '欣赏两方面', animationType: 'pulse' },
+          { type: 'animation', content: '楷书"永"字笔画依次绘制，展示永字八法', animationType: 'shapeDraw',
+            animationConfig: {
+              sceneType: 'shapeDraw',
+              title: '"永"字八法绘制',
+              shapeDrawConfig: {
+                shape: '永',
+                labels: ['点', '横', '竖', '钩', '撇捺'],
+              },
+              ttsNarration: '永字八法包含点横竖钩撇捺，是练楷书的基本。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小宇，楷书最讲究什么？\n小宇：横平竖直，笔画端正！\n老师：对！楷书端正工整，是最实用的书体。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '著名楷书书法家：颜真卿（颜体，雄壮）、柳公权（柳体，瘦硬）、欧阳询（欧体，险峻）。"颜筋柳骨"是经典。', label: '楷书名家', animationType: 'pulse' },
+          { type: 'example', content: '楷书特点小结：\n笔画：横平竖直，起收分明\n结构：重心稳，疏密匀\n风格：端正工整，便于书写\n地位：最实用的书体', label: '楷书特点', animationType: 'bounce' },
+        ],
+        iDo: '家长展示楷书字帖，示范欣赏笔画美和结构美。',
+        weDo: '亲子一起欣赏楷书作品，找出笔画和结构的美。',
+        youDo: '孩子独立写一个楷书字，注意横平竖直。',
+        parentTips: '楷书欣赏笔画美和结构美，横平竖直，颜真卿柳公权是名家。',
+        funElement: '小游戏：小小书法家！写一个"永"字，集齐八法，看谁写得最端正！',
+        gsapAnimations: [
+          '[GSAP:shapeDraw|"永"字笔画依次绘制|1.5s|点击播放|power2.out]',
+          '[GSAP:highlight|笔画名称高亮|0.5s|绘制完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|楷书笔画图|500x300|水墨画风|png|八种笔画]',
+          '[IMG:illustration|颜柳楷书作品|500x300|水墨画风|png|书法作品]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u6l3q1',
+            type: 'choice',
+            question: '楷书最讲究？',
+            options: ['横平竖直，端正工整', '潦草随意', '圆转连绵'],
+            answer: '横平竖直，端正工整',
+            hint: '楷书的特点',
+            explanation: '楷书讲究横平竖直，端正工整，是最实用的书体。'
+          },
+          {
+            id: 'c5u6l3q2',
+            type: 'choice',
+            question: '欣赏楷书主要看哪两方面？',
+            options: ['颜色和纸张', '笔画美和结构美', '字数多少'],
+            answer: '笔画美和结构美',
+            hint: '回忆欣赏两方面',
+            explanation: '欣赏楷书看笔画美（横平竖直）和结构美（重心稳疏密匀）。'
+          },
+          {
+            id: 'c5u6l3q3',
+            type: 'fill',
+            question: '楷书的基本笔画有横、竖、撇、___（填"捺"或"圆"）等。',
+            answer: '捺',
+            acceptableAnswers: ['捺'],
+            hint: '基本笔画之一',
+            explanation: '楷书基本笔画有横、竖、撇、捺、点、提、折、钩等。'
+          },
+          {
+            id: 'c5u6l3q4',
+            type: 'choice',
+            question: '下列哪位是著名楷书书法家？',
+            options: ['颜真卿', '李白', '吴承恩'],
+            answer: '颜真卿',
+            hint: '书法名家',
+            explanation: '颜真卿是著名楷书书法家，创"颜体"。李白是诗人，吴承恩是小说家。'
+          },
+          {
+            id: 'c5u6l3q5',
+            type: 'choice',
+            question: '【期末真题】"颜筋柳骨"中的"颜"指？',
+            options: ['颜真卿', '柳公权', '欧阳询'],
+            answer: '颜真卿',
+            hint: '颜指哪位书法家',
+            explanation: '"颜筋柳骨"中"颜"指颜真卿（颜体雄壮），"柳"指柳公权（柳体瘦硬）。期末常考！'
+          },
+          {
+            id: 'c5u6l3q6',
+            type: 'drag',
+            question: '把书法家和特点配对：颜真卿、柳公权、欧阳询、楷书',
+            answer: '颜体雄壮,柳体瘦硬,欧体险峻,横平竖直',
+            hint: '颜筋柳骨欧险峻',
+            explanation: '颜真卿颜体雄壮；柳公权柳体瘦硬；欧阳询欧体险峻；楷书横平竖直。'
+          },
+          {
+            id: 'c5u6l3q7',
+            type: 'fill',
+            question: '回顾：楷书讲究横平竖直、___（填"端正"或"潦草"）工整；欣赏楷书看笔画美和___（填"结构"或"颜色"）美。（两空用逗号分隔）',
+            answer: '端正,结构',
+            acceptableAnswers: ['端正,结构', '端正，结构'],
+            hint: '[楷书之美]（语文五年级-第6单元）',
+            explanation: '楷书讲究横平竖直、端正工整；欣赏楷书看笔画美和结构美。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u6l4',
+        title: '汉字研究报告',
+        order: 4,
+        teachingMethod: '项目式',
+        content: [
+          { type: 'text', content: '学了汉字的演变、造字法和书法，现在用研究报告的形式整理学到的知识。研究报告要条理清楚，分几个方面介绍汉字，最后写出自己的感受。', animationType: 'reveal' },
+          { type: 'example', content: '研究报告结构：\n题目：关于"水"字的研究报告\n一、字的演变：甲骨文→楷书\n二、造字法：象形字（像水波纹）\n三、相关汉字：河、海、湖（形声字，氵表水）\n四、我的感受：汉字真有趣，每个字都有故事', label: '报告结构', animationType: 'bounce' },
+          { type: 'tip', content: '写研究报告四步：选字（选一个感兴趣的字）→查资料（演变、造字法）→整理（分方面写）→写感受（自己的体会）。', label: '写作四步', animationType: 'pulse' },
+          { type: 'animation', content: '研究报告四个方面依次出现，展示报告结构', animationType: 'sequence',
+            animationConfig: {
+              sceneType: 'sequence',
+              title: '研究报告四方面',
+              sequenceConfig: {
+                items: ['字的演变', '造字法', '相关汉字', '我的感受'],
+                order: 'custom',
+                itemType: 'word',
+              },
+              ttsNarration: '研究报告分字的演变、造字法、相关汉字、我的感受四方面。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小晨，写汉字研究报告分几方面？\n小晨：字的演变、造字法、相关汉字和我的感受！\n老师：对！分方面写，最后加自己的感受。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '研究感受要真实：写自己最深的体会，比如"汉字真有趣""每个字都有故事"，让报告有自己的思考。', label: '感受要求', animationType: 'pulse' },
+          { type: 'example', content: '报告示例片段：\n"水"字从甲骨文的水波纹，变成今天的"水"字，越来越规整。和"水"有关的字多带"氵"，如河、海、湖。我觉得汉字真奇妙，每一笔都藏着古人的智慧。', label: '报告片段', animationType: 'bounce' },
+        ],
+        iDo: '家长示范写一份简单的汉字研究报告，展示结构和写法。',
+        weDo: '亲子一起查一个字的资料，整理成研究报告。',
+        youDo: '孩子独立写一份汉字研究报告。',
+        parentTips: '研究报告分四方面：字的演变、造字法、相关汉字、我的感受，最后要有真实体会。',
+        funElement: '小游戏：汉字小研究员！选一个字当研究对象，写一份报告，看谁研究得最深入！',
+        gsapAnimations: [
+          '[GSAP:stagger|报告四方面依次出现|0.5s|点击播放|power2.out]',
+          '[GSAP:highlight|报告结构关键词高亮|0.4s|出现完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|研究报告结构图|500x300|思维导图风|png|四方面]',
+          '[IMG:illustration|汉字研究报告示例|500x300|教学风|png|报告样张]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u6l4q1',
+            type: 'choice',
+            question: '汉字研究报告一般分几个方面？',
+            options: ['两方面', '四方面', '十方面'],
+            answer: '四方面',
+            hint: '回忆报告结构',
+            explanation: '汉字研究报告分四方面：字的演变、造字法、相关汉字、我的感受。'
+          },
+          {
+            id: 'c5u6l4q2',
+            type: 'choice',
+            question: '写研究报告的第一步是？',
+            options: ['选字', '写感受', '背范文'],
+            answer: '选字',
+            hint: '先做什么',
+            explanation: '写研究报告第一步是选字，选一个感兴趣的字研究。'
+          },
+          {
+            id: 'c5u6l4q3',
+            type: 'fill',
+            question: '研究报告的最后要写自己的___（填"感受"或"题目"）。',
+            answer: '感受',
+            acceptableAnswers: ['感受', '体会'],
+            hint: '报告最后写什么',
+            explanation: '研究报告最后要写自己的感受，让报告有自己的思考。'
+          },
+          {
+            id: 'c5u6l4q4',
+            type: 'choice',
+            question: '"河、海、湖"都带"氵"，这是因为？',
+            options: ['巧合', '氵是形旁表水', '没有原因'],
+            answer: '氵是形旁表水',
+            hint: '形声字形旁的作用',
+            explanation: '"河、海、湖"是形声字，"氵"是形旁表和水有关。'
+          },
+          {
+            id: 'c5u6l4q5',
+            type: 'choice',
+            question: '【期末真题】写汉字研究报告时，下列做法最恰当的是？',
+            options: ['只抄字典', '查资料分方面整理并写真实感受', '随便编内容'],
+            answer: '查资料分方面整理并写真实感受',
+            hint: '研究报告要怎么写',
+            explanation: '写研究报告要查资料、分方面整理，并写出真实感受。期末常考！'
+          },
+          {
+            id: 'c5u6l4q6',
+            type: 'drag',
+            question: '把研究步骤按顺序排列：写感受、选字、整理、查资料',
+            answer: '选字,查资料,整理,写感受',
+            hint: '先选字再查资料再整理最后写感受',
+            explanation: '研究步骤：选字→查资料→整理→写感受。'
+          },
+          {
+            id: 'c5u6l4q7',
+            type: 'fill',
+            question: '回顾：汉字研究报告分字的演变、造字法、相关汉字和我的___（填"感受"或"开头"）；写感受要___（填"真实"或"虚假"）。（两空用逗号分隔）',
+            answer: '感受,真实',
+            acceptableAnswers: ['感受,真实', '感受，真实'],
+            hint: '[汉字研究报告]（语文五年级-第6单元）',
+            explanation: '汉字研究报告分字的演变、造字法、相关汉字和我的感受；写感受要真实。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u6l5',
+        title: '汉字之美综合展示',
+        order: 5,
+        teachingMethod: '形成性评价',
+        content: [
+          { type: 'text', content: '这一单元我们学了汉字演变、六书造字法、楷书欣赏和研究报告。这节课综合展示，做几道题，看谁对汉字之美理解得最透！', animationType: 'reveal' },
+          { type: 'example', content: '展示内容：\n1. 汉字演变（五个阶段）\n2. 造字法（象形、指事、会意、形声）\n3. 楷书欣赏（笔画美、结构美）\n4. 研究报告（四方面结构）', label: '展示内容', animationType: 'bounce' },
+          { type: 'tip', content: '答题技巧：演变看阶段顺序，造字法看特点，楷书看笔画结构，报告看四方面。沉着冷静，逐一作答。', label: '答题技巧', animationType: 'pulse' },
+          { type: 'animation', content: '通关撒花动画，正确率达75%以上触发庆祝', animationType: 'sequence',
+            animationConfig: {
+              sceneType: 'sequence',
+              title: '汉字达人通关',
+              sequenceConfig: {
+                items: ['汉字演变', '六书造字', '楷书欣赏', '研究报告'],
+                order: 'custom',
+                itemType: 'word',
+              },
+              ttsNarration: '恭喜你成为汉字达人！',
+            },
+          },
+          { type: 'dialogue', content: '老师：小琪，汉字之美体现在哪？\n小琪：演变有规律，造字有方法，书法有美感！\n老师：对！汉字每一笔都藏着智慧。', label: '考前对话', animationType: 'reveal' },
+          { type: 'tip', content: '目标：综合展示正确率达到75%以上，就能获得"汉字达人"徽章！加油！', label: '展示目标', animationType: 'pulse' },
+        ],
+        iDo: '家长示范一道汉字综合题，展示解题思路。',
+        weDo: '亲子一起练习几道综合题，讨论答案。',
+        youDo: '孩子独立完成综合展示，争取正确率75%以上。',
+        parentTips: '综合展示重在理解和记忆，提醒孩子演变看顺序、造字法看特点。',
+        funElement: '挑战时刻：闯过汉字演变、六书造字、楷书欣赏、研究报告四关，获得"汉字达人"徽章！',
+        gsapAnimations: [
+          '[GSAP:confetti|通关撒花庆祝|2s|正确率≥75%|power1.out]',
+          '[GSAP:starFlyIn|汉字达人徽章飞入|1s|通关|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|汉字达人徽章|300x300|可爱卡通风|png|金色徽章]',
+          '[IMG:illustration|汉字之美总览图|500x300|水墨画风|png|四方面]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u6l5q1',
+            type: 'choice',
+            question: '最早的成熟文字是？',
+            options: ['甲骨文', '楷书', '隶书'],
+            answer: '甲骨文',
+            hint: '刻在龟甲兽骨上',
+            explanation: '甲骨文是最早的成熟文字。'
+          },
+          {
+            id: 'c5u6l5q2',
+            type: 'choice',
+            question: '汉字里最多的造字法是？',
+            options: ['象形', '形声', '指事'],
+            answer: '形声',
+            hint: '哪种造字法最多',
+            explanation: '汉字里80%以上是形声字，最多。'
+          },
+          {
+            id: 'c5u6l5q3',
+            type: 'fill',
+            question: '楷书讲究横平___（填"竖直"或"圆转"）。',
+            answer: '竖直',
+            acceptableAnswers: ['竖直'],
+            hint: '楷书的特点',
+            explanation: '楷书讲究横平竖直，端正工整。'
+          },
+          {
+            id: 'c5u6l5q4',
+            type: 'choice',
+            question: '"明"＝日+月，是什么造字法？',
+            options: ['象形', '会意', '形声'],
+            answer: '会意',
+            hint: '日和月合起来表意',
+            explanation: '"明"由日和月合起来表示明亮，是会意字。'
+          },
+          {
+            id: 'c5u6l5q5',
+            type: 'choice',
+            question: '【综合】下列说法正确的是？',
+            options: ['甲骨文是楷书的一种', '形声字形旁表意声旁表音', '会意字像图画'],
+            answer: '形声字形旁表意声旁表音',
+            hint: '逐项判断',
+            explanation: '形声字形旁表意声旁表音，正确。甲骨文是最早文字不是楷书，象形字才像图画。'
+          },
+          {
+            id: 'c5u6l5q6',
+            type: 'drag',
+            question: '把内容和类别配对：甲骨文、形声字、颜真卿、研究报告',
+            answer: '最早文字,形旁声旁,楷书名家,四方面结构',
+            hint: '分别属于什么',
+            explanation: '甲骨文是最早文字；形声字有形旁声旁；颜真卿是楷书名家；研究报告是四方面结构。'
+          },
+          {
+            id: 'c5u6l5q7',
+            type: 'fill',
+            question: '回顾：本单元学了汉字演变、六书造字法、___（填"楷书欣赏"或"说明方法"）和汉字研究___（填"报告"或"开头"）。（两空用逗号分隔）',
+            answer: '楷书欣赏,报告',
+            acceptableAnswers: ['楷书欣赏,报告', '楷书欣赏，报告'],
+            hint: '[汉字之美总览]（语文五年级-第6单元）',
+            explanation: '本单元学了汉字演变、六书造字法、楷书欣赏和汉字研究报告。这是本单元总览。'
+          }
+        ]
+      }
+    ]
+  },
+  // ==================== 第七单元：应用文写作 ====================
+  {
+    id: 'c5u7',
+    title: '应用文写作',
+    subtitle: '书信读后感与读书笔记',
+    order: 7,
+    lessons: [
+      {
+        id: 'c5u7l1',
+        title: '书信格式——给朋友的一封信',
+        order: 1,
+        teachingMethod: '情境式：模拟写信',
+        content: [
+          { type: 'text', content: '书信是重要的应用文。给朋友写一封信，要按格式写：称呼、问候、正文、祝语、署名、日期。今天我们模拟写信，学会书信格式。', animationType: 'reveal' },
+          { type: 'example', content: '书信六部分格式：\n1. 称呼：第一行顶格写，加冒号。如"小明："\n2. 问候：第二行空两格。如"你好！"\n3. 正文：另起一行空两格写。\n4. 祝语：正文后另起一行。如"祝你学习进步！"\n5. 署名：右下角写。如"你的好朋友 小红"\n6. 日期：署名下写。如"2026年6月26日"', label: '书信格式', animationType: 'bounce' },
+          { type: 'tip', content: '书信格式口诀：称呼顶格加冒号，问候空格问声好，正文另起空两格，祝语署名和日期。', label: '格式口诀', animationType: 'pulse' },
+          { type: 'animation', content: '书信场景逐步构建，展示六部分格式的位置', animationType: 'sceneBuild',
+            animationConfig: {
+              sceneType: 'sceneBuild',
+              title: '书信场景构建',
+              sceneBuildConfig: {
+                sceneName: '一封信',
+                elements: [
+                  { id: 'e1', text: '称呼', emoji: '📧', x: 50, y: 15, size: 'md', color: '#FF5722', animation: 'fadeIn', ttsText: '称呼顶格加冒号' },
+                  { id: 'e2', text: '问候', emoji: '👋', x: 45, y: 35, size: 'sm', color: '#FFB300', animation: 'slideIn', ttsText: '问候空格问声好' },
+                  { id: 'e3', text: '正文', emoji: '✉️', x: 45, y: 55, size: 'lg', color: '#2196F3', animation: 'bounceIn', ttsText: '正文另起空两格' },
+                  { id: 'e4', text: '祝语署名日期', emoji: '💌', x: 60, y: 85, size: 'md', color: '#4CAF50', animation: 'popIn', ttsText: '祝语署名和日期' },
+                ],
+              },
+              ttsNarration: '书信六部分：称呼、问候、正文、祝语、署名、日期，按格式写。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小萱，书信的称呼怎么写？\n小萱：第一行顶格写，加冒号！\n老师：对！称呼顶格，这是书信格式的重要部分。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '易错点：称呼要顶格（不空格），正文要空两格，署名日期在右下角。祝语"祝你"空两格，"学习进步"另起一行顶格。', label: '易错提醒', animationType: 'pulse' },
+          { type: 'example', content: '书信示例：\n小明：\n  你好！\n  好久不见，我很想念你……（正文）\n  祝你\n学习进步！\n                    你的好朋友 小红\n                    2026年6月26日', label: '书信示例', animationType: 'bounce' },
+        ],
+        iDo: '家长示范写一封完整的信，标出六部分格式。',
+        weDo: '亲子一起写一封信，互相检查格式是否正确。',
+        youDo: '孩子独立写一封给朋友的信，注意六部分格式。',
+        parentTips: '书信六部分：称呼顶格、问候空格、正文空两格、祝语、署名、日期，格式要规范。',
+        funElement: '小游戏：小小邮递员！按格式拼出一封完整的信，看谁拼得最规范！',
+        gsapAnimations: [
+          '[GSAP:sceneBuild|书信场景六部分逐步构建|1.5s|点击播放|power2.out]',
+          '[GSAP:highlight|各部分格式高亮|0.5s|场景完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|书信格式图|500x350|教学风|png|六部分]',
+          '[IMG:illustration|书信示例图|500x400|教学风|png|信件样张]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u7l1q1',
+            type: 'choice',
+            question: '书信的称呼应该？',
+            options: ['第一行顶格写，加冒号', '空两格写', '写在右下角'],
+            answer: '第一行顶格写，加冒号',
+            hint: '称呼的格式',
+            explanation: '书信称呼第一行顶格写，后面加冒号，如"小明："。'
+          },
+          {
+            id: 'c5u7l1q2',
+            type: 'choice',
+            question: '书信一般分为几部分？',
+            options: ['三部分', '六部分', '十部分'],
+            answer: '六部分',
+            hint: '回忆书信格式',
+            explanation: '书信分六部分：称呼、问候、正文、祝语、署名、日期。'
+          },
+          {
+            id: 'c5u7l1q3',
+            type: 'fill',
+            question: '书信的正文要另起一行___（填"空两格"或"顶格"）写。',
+            answer: '空两格',
+            acceptableAnswers: ['空两格', '空两个格'],
+            hint: '正文的格式',
+            explanation: '书信正文另起一行空两格写，这是规范格式。'
+          },
+          {
+            id: 'c5u7l1q4',
+            type: 'choice',
+            question: '书信的署名和日期应写在？',
+            options: ['左上角', '右下角', '正文中间'],
+            answer: '右下角',
+            hint: '署名日期的位置',
+            explanation: '书信的署名和日期写在右下角，署名在上，日期在下。'
+          },
+          {
+            id: 'c5u7l1q5',
+            type: 'choice',
+            question: '【期末真题】下列书信格式正确的是？',
+            options: ['称呼空两格', '称呼顶格加冒号', '正文顶格写'],
+            answer: '称呼顶格加冒号',
+            hint: '称呼的正确格式',
+            explanation: '称呼应顶格写加冒号，正文空两格。期末常考！'
+          },
+          {
+            id: 'c5u7l1q6',
+            type: 'drag',
+            question: '把书信部分按顺序排列：日期、称呼、正文、署名、问候、祝语',
+            answer: '称呼,问候,正文,祝语,署名,日期',
+            hint: '称呼开头，日期最后',
+            explanation: '书信顺序：称呼→问候→正文→祝语→署名→日期。'
+          },
+          {
+            id: 'c5u7l1q7',
+            type: 'fill',
+            question: '回顾：书信六部分是称呼、问候、正文、___（填"祝语"或"开头"）、署名和___（填"日期"或"题目"）。（两空用逗号分隔）',
+            answer: '祝语,日期',
+            acceptableAnswers: ['祝语,日期', '祝语，日期'],
+            hint: '[书信格式]（语文五年级-第7单元）',
+            explanation: '书信六部分：称呼、问候、正文、祝语、署名、日期。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u7l2',
+        title: '读后感入门——读+感结合',
+        order: 2,
+        teachingMethod: '支架式',
+        content: [
+          { type: 'text', content: '读完一本书或一篇文章，把自己的感想写下来，就是读后感。读后感要"读"和"感"结合，既要简述内容，又要写自己的感受。', animationType: 'reveal' },
+          { type: 'example', content: '读后感结构：\n1. 引：简述读了什么（书名、主要内容）\n2. 议：写出最打动自己的情节或人物\n3. 联：联系自己的生活实际谈感受\n4. 结：总结自己的收获和启发\n"读"少一点，"感"多一点', label: '读后感结构', animationType: 'bounce' },
+          { type: 'tip', content: '读后感的关键："读"是引子，"感"是重点。读的部分要简略，感的部分要详细，联系自己生活实际，写出真实感受。', label: '读感结合', animationType: 'pulse' },
+          { type: 'animation', content: '读后感四部分卡片翻转揭示，展示引议联结结构', animationType: 'cardReveal',
+            animationConfig: {
+              sceneType: 'cardReveal',
+              title: '读后感四部分卡片',
+              cardRevealConfig: {
+                cards: [
+                  { id: 'c0', front: '引', back: '简述读了什么书', ttsText: '引：简述读了什么' },
+                  { id: 'c1', front: '议', back: '写出打动自己的情节', ttsText: '议：写出打动自己的情节' },
+                  { id: 'c2', front: '联', back: '联系生活实际谈感受', ttsText: '联：联系生活实际' },
+                  { id: 'c3', front: '结', back: '总结收获和启发', ttsText: '结：总结收获启发' },
+                ],
+              },
+              ttsNarration: '读后感四部分：引、议、联、结，读少感多。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小阳，读后感中"读"和"感"哪个更重要？\n小阳："感"更重要！读是引子，感是重点。\n老师：对！要多写自己的感受，联系生活。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '联系生活：把书中的事和自己的经历联系起来，比如"读到主人公坚持，我也想起自己练琴的经历……"，这样感受才真实。', label: '联系技巧', animationType: 'pulse' },
+          { type: 'example', content: '读后感片段示例：\n读了《龟兔赛跑》，我深受启发。乌龟虽然慢，但坚持到底赢了兔子。（引议）这让我想起自己学游泳，开始总学不会，但坚持练习终于学会了。（联）我明白了，坚持就是胜利。（结）', label: '读后感示例', animationType: 'bounce' },
+        ],
+        iDo: '家长示范写一段读后感，展示引议联结结构，重点写感受。',
+        weDo: '亲子一起讨论一本书，练习写读后感的感受部分。',
+        youDo: '孩子独立写一篇简短的读后感。',
+        parentTips: '读后感要读感结合，"感"是重点，要联系生活实际写真实感受。',
+        funElement: '小游戏：感受放大镜！把书中的情节和自己的生活连起来，看谁感受写得最真！',
+        gsapAnimations: [
+          '[GSAP:cardReveal|读后感四部分卡片翻转|0.5s|点击|power2.inOut]',
+          '[GSAP:highlight|引议联结高亮|0.4s|翻转完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|读后感结构图|500x300|思维导图风|png|引议联结]',
+          '[IMG:illustration|读后感示例图|500x300|教学风|png|读后感样张]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u7l2q1',
+            type: 'choice',
+            question: '读后感中"读"和"感"哪个是重点？',
+            options: ['读', '感', '一样重要'],
+            answer: '感',
+            hint: '读后感重在感受',
+            explanation: '读后感中"感"是重点，"读"是引子，要多写自己的感受。'
+          },
+          {
+            id: 'c5u7l2q2',
+            type: 'choice',
+            question: '读后感的结构是？',
+            options: ['引、议、联、结', '开头、中间、结尾', '起因、发展、高潮'],
+            answer: '引、议、联、结',
+            hint: '回忆读后感四部分',
+            explanation: '读后感结构：引（简述）、议（情节）、联（联系生活）、结（总结）。'
+          },
+          {
+            id: 'c5u7l2q3',
+            type: 'fill',
+            question: '读后感要联系___（填"生活实际"或"原文句子"）写感受。',
+            answer: '生活实际',
+            acceptableAnswers: ['生活实际', '生活', '实际'],
+            hint: '感受要和什么联系',
+            explanation: '读后感要联系生活实际写感受，这样感受才真实。'
+          },
+          {
+            id: 'c5u7l2q4',
+            type: 'choice',
+            question: '读后感中"联"指的是？',
+            options: ['简述内容', '联系生活实际谈感受', '总结收获'],
+            answer: '联系生活实际谈感受',
+            hint: '"联"是什么意思',
+            explanation: '"联"是联系自己的生活实际谈感受，是读后感的重要部分。'
+          },
+          {
+            id: 'c5u7l2q5',
+            type: 'choice',
+            question: '【期末真题】写读后感最恰当的做法是？',
+            options: ['大量抄原文，少写感受', '简述内容，重点写联系生活的感受', '只写自己的事不提书'],
+            answer: '简述内容，重点写联系生活的感受',
+            hint: '读后感要怎么写',
+            explanation: '写读后感应简述内容，重点写联系生活的感受。期末常考！'
+          },
+          {
+            id: 'c5u7l2q6',
+            type: 'drag',
+            question: '把读后感部分和作用配对：引、议、联、结',
+            answer: '简述内容,打动情节,联系生活,总结收获',
+            hint: '引简述，议情节，联生活，结收获',
+            explanation: '引简述内容；议打动情节；联联系生活；结总结收获。'
+          },
+          {
+            id: 'c5u7l2q7',
+            type: 'fill',
+            question: '回顾：读后感结构是引、议、___（填"联"或"开头"）和结；其中"感"是___（填"重点"或"引子"）。（两空用逗号分隔）',
+            answer: '联,重点',
+            acceptableAnswers: ['联,重点', '联，重点'],
+            hint: '[读后感写法]（语文五年级-第7单元）',
+            explanation: '读后感结构是引、议、联、结；"感"是重点。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u7l3',
+        title: '读书笔记——摘录与批注',
+        order: 3,
+        teachingMethod: '支架式',
+        content: [
+          { type: 'text', content: '读书时把好词好句和感想记下来，就是读书笔记。读书笔记有两种常见形式：摘录式（抄好词好句）和批注式（在书旁写感想）。', animationType: 'reveal' },
+          { type: 'example', content: '摘录式读书笔记：\n书名：《西游记》\n摘录：孙悟空挥舞金箍棒，打得天兵天将落花流水。\n好词：挥舞、落花流水\n好句：打得天兵天将落花流水。\n作用：积累好词好句', label: '摘录式', animationType: 'bounce' },
+          { type: 'example', content: '批注式读书笔记：\n原文：孙悟空三打白骨精。\n批注：这里表现了孙悟空嫉恶如仇、勇敢的性格，我要学习他坚持正义。\n作用：边读边思考，加深理解', label: '批注式', animationType: 'bounce' },
+          { type: 'tip', content: '两种笔记的区别：摘录式是"抄"好词好句，重在积累；批注式是"写"感想，重在思考。可以结合使用。', label: '两种区别', animationType: 'pulse' },
+          { type: 'animation', content: '摘录和批注两种笔记方式依次出现，展示对比', animationType: 'sequence',
+            animationConfig: {
+              sceneType: 'sequence',
+              title: '两种读书笔记',
+              sequenceConfig: {
+                items: ['摘录式·抄好词好句', '批注式·写感想', '结合使用·积累加思考'],
+                order: 'custom',
+                itemType: 'word',
+              },
+              ttsNarration: '摘录式抄好词好句，批注式写感想，结合使用效果最好。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小晨，摘录式和批注式读书笔记有什么不同？\n小晨：摘录式抄好词好句，批注式写感想！\n老师：对！可以结合使用，既积累又思考。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '做读书笔记的好处：积累好词好句，加深对内容的理解，培养边读边思考的好习惯。', label: '笔记好处', animationType: 'pulse' },
+        ],
+        iDo: '家长示范做摘录式和批注式读书笔记，各举一例。',
+        weDo: '亲子一起读一段文章，做摘录和批注。',
+        youDo: '孩子独立做一篇读书笔记（摘录或批注）。',
+        parentTips: '读书笔记两种：摘录式抄好词好句，批注式写感想，结合使用既积累又思考。',
+        funElement: '小游戏：读书小蜜蜂！在书里采好词好句（摘录），再酿感想蜜（批注）！',
+        gsapAnimations: [
+          '[GSAP:sequence|两种笔记方式依次出现|1s|点击播放|power2.out]',
+          '[GSAP:highlight|笔记方式关键词高亮|0.5s|出现完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|读书笔记方式图|500x300|教学风|png|两种笔记]',
+          '[IMG:illustration|批注示例图|500x300|教学风|png|批注样张]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u7l3q1',
+            type: 'choice',
+            question: '摘录式读书笔记的作用是？',
+            options: ['写感想', '积累好词好句', '背诵全文'],
+            answer: '积累好词好句',
+            hint: '摘录式是抄什么',
+            explanation: '摘录式读书笔记抄好词好句，重在积累。'
+          },
+          {
+            id: 'c5u7l3q2',
+            type: 'choice',
+            question: '批注式读书笔记是？',
+            options: ['抄好词好句', '在书旁写感想', '只看不想'],
+            answer: '在书旁写感想',
+            hint: '批注式写什么',
+            explanation: '批注式读书笔记是在书旁写感想，重在思考。'
+          },
+          {
+            id: 'c5u7l3q3',
+            type: 'fill',
+            question: '摘录式重在积累，批注式重在___（填"思考"或"抄写"）。',
+            answer: '思考',
+            acceptableAnswers: ['思考', '感想'],
+            hint: '批注式的重点',
+            explanation: '摘录式重在积累好词好句，批注式重在思考写感想。'
+          },
+          {
+            id: 'c5u7l3q4',
+            type: 'choice',
+            question: '做读书笔记的好处是？',
+            options: ['浪费时间', '积累词句、加深理解、培养思考习惯', '没有好处'],
+            answer: '积累词句、加深理解、培养思考习惯',
+            hint: '读书笔记有什么用',
+            explanation: '做读书笔记能积累好词好句、加深理解、培养边读边思考的习惯。'
+          },
+          {
+            id: 'c5u7l3q5',
+            type: 'choice',
+            question: '【期末真题】下列属于批注式读书笔记的是？',
+            options: ['抄写好词好句', '在句子旁写"这里表现了人物勇敢"', '只画波浪线'],
+            answer: '在句子旁写"这里表现了人物勇敢"',
+            hint: '批注式写什么',
+            explanation: '在句子旁写感想是批注式读书笔记。期末常考！'
+          },
+          {
+            id: 'c5u7l3q6',
+            type: 'drag',
+            question: '把笔记方式和特点配对：摘录式、批注式、好词好句、感想',
+            answer: '积累词句,写感想,摘录内容,批注内容',
+            hint: '摘录抄词句，批注写感想',
+            explanation: '摘录式积累词句；批注式写感想；好词好句是摘录内容；感想是批注内容。'
+          },
+          {
+            id: 'c5u7l3q7',
+            type: 'fill',
+            question: '回顾：读书笔记两种常见形式是摘录式和___（填"批注式"或"开头式"）；摘录式重积累，批注式重___（填"思考"或"抄写"）。（两空用逗号分隔）',
+            answer: '批注式,思考',
+            acceptableAnswers: ['批注式,思考', '批注式，思考'],
+            hint: '[读书笔记]（语文五年级-第7单元）',
+            explanation: '读书笔记两种形式：摘录式和批注式；摘录式重积累，批注式重思考。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u7l4',
+        title: '日记写作——记录生活',
+        order: 4,
+        teachingMethod: '项目式',
+        content: [
+          { type: 'text', content: '日记是记录每天生活的应用文。写日记能培养观察和表达的能力。日记有固定格式：第一行写日期、星期、天气，然后写正文。', animationType: 'reveal' },
+          { type: 'example', content: '日记格式：\n第一行：6月26日 星期五 晴\n正文：今天发生了一件有趣的事……（空两格写）\n特点：真实、具体、有感受', label: '日记格式', animationType: 'bounce' },
+          { type: 'tip', content: '日记三要素：日期星期天气（第一行）、正文（空两格）、真实感受。日记要写真人真事，不能编造。', label: '日记三要素', animationType: 'pulse' },
+          { type: 'animation', content: '日记正文逐句出现，展示记录生活的过程', animationType: 'sequence',
+            animationConfig: {
+              sceneType: 'sequence',
+              title: '日记记录生活',
+              sequenceConfig: {
+                items: ['6月26日 星期五 晴', '今天我帮妈妈做家务', '我扫地擦桌子', '虽然累但很高兴'],
+                order: 'custom',
+                itemType: 'word',
+              },
+              ttsNarration: '日记先写日期星期天气，再写正文记录生活，最后写感受。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小琪，日记第一行要写什么？\n小琪：日期、星期和天气！\n老师：对！这是日记的固定格式，不能少。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '写日记选材：选一天中最有趣或最有意义的事来写，写具体，写出自己的感受，不必面面俱到。', label: '选材技巧', animationType: 'pulse' },
+          { type: 'example', content: '日记示例：\n6月26日 星期五 晴\n  今天放学回家，我主动帮妈妈做家务。我先扫地，再擦桌子，累得满头大汗。看着干净的房间，我心里很高兴。原来劳动也能带来快乐！', label: '日记示例', animationType: 'bounce' },
+        ],
+        iDo: '家长示范写一篇日记，标出格式和正文。',
+        weDo: '亲子一起讨论今天发生的事，练习写日记正文。',
+        youDo: '孩子独立写一篇日记。',
+        parentTips: '日记第一行写日期星期天气，正文空两格，要写真人真事和真实感受。',
+        funElement: '小游戏：生活记录员！把今天最有趣的事记成日记，看谁记得最生动！',
+        gsapAnimations: [
+          '[GSAP:sequence|日记正文逐句出现|1.2s|点击播放|power2.out]',
+          '[GSAP:highlight|日期天气关键词高亮|0.5s|出现完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|日记格式图|500x300|教学风|png|日记格式]',
+          '[IMG:illustration|日记示例图|500x300|教学风|png|日记样张]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u7l4q1',
+            type: 'choice',
+            question: '日记第一行要写什么？',
+            options: ['日期、星期、天气', '题目', '署名'],
+            answer: '日期、星期、天气',
+            hint: '日记的固定格式',
+            explanation: '日记第一行写日期、星期、天气，这是固定格式。'
+          },
+          {
+            id: 'c5u7l4q2',
+            type: 'choice',
+            question: '日记的正文要？',
+            options: ['编造故事', '写真人真事和真实感受', '只写天气'],
+            answer: '写真人真事和真实感受',
+            hint: '日记要真实',
+            explanation: '日记要写真人真事和真实感受，不能编造。'
+          },
+          {
+            id: 'c5u7l4q3',
+            type: 'fill',
+            question: '日记正文要___（填"空两格"或"顶格"）写。',
+            answer: '空两格',
+            acceptableAnswers: ['空两格', '空两个格'],
+            hint: '正文的格式',
+            explanation: '日记正文要空两格写，和书信正文一样。'
+          },
+          {
+            id: 'c5u7l4q4',
+            type: 'choice',
+            question: '写日记选材应该？',
+            options: ['面面俱到写一天所有事', '选最有趣或最有意义的事写具体', '随便编一件事'],
+            answer: '选最有趣或最有意义的事写具体',
+            hint: '日记选材技巧',
+            explanation: '写日记要选一天中最有趣或最有意义的事写具体，不必面面俱到。'
+          },
+          {
+            id: 'c5u7l4q5',
+            type: 'choice',
+            question: '【期末真题】下列日记格式正确的是？',
+            options: ['先写正文再写日期', '第一行写日期星期天气，正文空两格', '日记不用写天气'],
+            answer: '第一行写日期星期天气，正文空两格',
+            hint: '日记的正确格式',
+            explanation: '日记第一行写日期星期天气，正文空两格写。期末常考！'
+          },
+          {
+            id: 'c5u7l4q6',
+            type: 'drag',
+            question: '把日记部分按顺序排列：正文、日期星期天气、感受',
+            answer: '日期星期天气,正文,感受',
+            hint: '先写日期再写正文最后写感受',
+            explanation: '日记顺序：日期星期天气→正文→感受。'
+          },
+          {
+            id: 'c5u7l4q7',
+            type: 'fill',
+            question: '回顾：日记第一行写日期、星期和___（填"天气"或"题目"）；正文要写___（填"真实"或"虚构"）的事和感受。（两空用逗号分隔）',
+            answer: '天气,真实',
+            acceptableAnswers: ['天气,真实', '天气，真实'],
+            hint: '[日记格式]（语文五年级-第7单元）',
+            explanation: '日记第一行写日期、星期、天气；正文要写真实的事和感受。这是本课核心知识。'
+          }
+        ]
+      },
+      {
+        id: 'c5u7l5',
+        title: '应用文综合检测',
+        order: 5,
+        teachingMethod: '形成性评价',
+        content: [
+          { type: 'text', content: '这一单元我们学了书信、读后感、读书笔记和日记四种应用文。这节课综合检测，看谁的应用文写得最规范！', animationType: 'reveal' },
+          { type: 'example', content: '检测内容：\n1. 书信格式（六部分）\n2. 读后感结构（引议联结）\n3. 读书笔记（摘录与批注）\n4. 日记格式（日期星期天气）', label: '检测内容', animationType: 'bounce' },
+          { type: 'tip', content: '答题技巧：书信看六部分格式，读后感看读感结合，笔记看摘录批注，日记看日期天气。仔细审题，规范作答。', label: '答题技巧', animationType: 'pulse' },
+          { type: 'animation', content: '通关撒花动画，正确率达75%以上触发庆祝', animationType: 'sequence',
+            animationConfig: {
+              sceneType: 'sequence',
+              title: '应用文达人通关',
+              sequenceConfig: {
+                items: ['书信', '读后感', '读书笔记', '日记'],
+                order: 'custom',
+                itemType: 'word',
+              },
+              ttsNarration: '恭喜你成为应用文达人！',
+            },
+          },
+          { type: 'dialogue', content: '老师：小怡，应用文最重要的是什么？\n小怡：格式要规范，内容要真实！\n老师：对！应用文重格式和真实。', label: '考前对话', animationType: 'reveal' },
+          { type: 'tip', content: '目标：综合检测正确率达到75%以上，就能获得"应用文达人"徽章！加油！', label: '检测目标', animationType: 'pulse' },
+        ],
+        iDo: '家长示范一道应用文格式题，展示判断方法。',
+        weDo: '亲子一起练习几道应用文题，讨论答案。',
+        youDo: '孩子独立完成综合检测，争取正确率75%以上。',
+        parentTips: '应用文重格式和真实，提醒孩子书信看六部分、日记看日期天气。',
+        funElement: '挑战时刻：闯过书信、读后感、读书笔记、日记四关，获得"应用文达人"徽章！',
+        gsapAnimations: [
+          '[GSAP:confetti|通关撒花庆祝|2s|正确率≥75%|power1.out]',
+          '[GSAP:starFlyIn|应用文达人徽章飞入|1s|通关|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|应用文达人徽章|300x300|可爱卡通风|png|金色徽章]',
+          '[IMG:illustration|应用文知识总览图|500x300|教学风|png|四种应用文]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u7l5q1',
+            type: 'choice',
+            question: '书信的称呼应该？',
+            options: ['顶格加冒号', '空两格', '写在右下角'],
+            answer: '顶格加冒号',
+            hint: '回忆书信格式',
+            explanation: '书信称呼顶格写加冒号。'
+          },
+          {
+            id: 'c5u7l5q2',
+            type: 'choice',
+            question: '读后感的结构是？',
+            options: ['引议联结', '起因发展高潮', '开头中间结尾'],
+            answer: '引议联结',
+            hint: '回忆读后感四部分',
+            explanation: '读后感结构是引、议、联、结。'
+          },
+          {
+            id: 'c5u7l5q3',
+            type: 'fill',
+            question: '日记第一行写日期、星期和___（填"天气"或"题目"）。',
+            answer: '天气',
+            acceptableAnswers: ['天气'],
+            hint: '日记第一行三要素',
+            explanation: '日记第一行写日期、星期、天气。'
+          },
+          {
+            id: 'c5u7l5q4',
+            type: 'choice',
+            question: '批注式读书笔记是？',
+            options: ['抄好词好句', '在书旁写感想', '只画线'],
+            answer: '在书旁写感想',
+            hint: '批注式写什么',
+            explanation: '批注式读书笔记是在书旁写感想，重在思考。'
+          },
+          {
+            id: 'c5u7l5q5',
+            type: 'choice',
+            question: '【综合】下列应用文说法正确的是？',
+            options: ['日记正文顶格写', '书信称呼顶格加冒号', '读后感只抄原文'],
+            answer: '书信称呼顶格加冒号',
+            hint: '逐项判断',
+            explanation: '书信称呼顶格加冒号正确。日记正文空两格，读后感重点写感受不只抄原文。'
+          },
+          {
+            id: 'c5u7l5q6',
+            type: 'drag',
+            question: '把应用文和特点配对：书信、读后感、读书笔记、日记',
+            answer: '六部分格式,引议联结,摘录批注,日期星期天气',
+            hint: '每种应用文的特点',
+            explanation: '书信六部分格式；读后感引议联结；读书笔记摘录批注；日记日期星期天气。'
+          },
+          {
+            id: 'c5u7l5q7',
+            type: 'fill',
+            question: '回顾：本单元学了书信、读后感、___（填"读书笔记"或"说明方法"）和___（填"日记"或"开头"）四种应用文。（两空用逗号分隔）',
+            answer: '读书笔记,日记',
+            acceptableAnswers: ['读书笔记,日记', '读书笔记，日记'],
+            hint: '[应用文写作总览]（语文五年级-第7单元）',
+            explanation: '本单元学了书信、读后感、读书笔记和日记四种应用文。这是本单元总览。'
+          }
+        ]
+      }
+    ]
+  },
+  // ==================== 第八单元：综合测评 ====================
+  {
+    id: 'c5u8',
+    title: '综合测评',
+    subtitle: '学期知识综合复习',
+    order: 8,
+    lessons: [
+      {
+        id: 'c5u8l1',
+        title: '词语与修辞总复习',
+        order: 1,
+        teachingMethod: '间隔重复',
+        content: [
+          { type: 'text', content: '学期快结束了，我们开始总复习。第一站复习关联词和修辞手法。关联词有并列、递进、因果、转折四种关系；修辞有比喻、拟人、排比、夸张四种。', animationType: 'reveal' },
+          { type: 'example', content: '关联词四种关系：\n并列：既……又……、一边……一边……\n递进：不但……而且……、不仅……还……\n因果：因为……所以……、既然……就……\n转折：虽然……但是……、尽管……还是……', label: '关联词复习', animationType: 'bounce' },
+          { type: 'example', content: '修辞四种手法：\n比喻：月亮像银盘（本体+喻词+喻体）\n拟人：小草点头微笑（物当人写）\n排比：爱心是阳光，爱心是雨露，爱心是春风（三句以上相同句式）\n夸张：飞流直下三千尺（故意放大缩小）', label: '修辞复习', animationType: 'bounce' },
+          { type: 'tip', content: '复习口诀：关联词看关系（并列递进因果转折），修辞看特点（像比喻、人化拟人、三句排比、放大夸张）。', label: '复习口诀', animationType: 'pulse' },
+          { type: 'animation', content: '关联词和修辞左右对比复习展示', animationType: 'compare',
+            animationConfig: {
+              sceneType: 'compare',
+              title: '关联词 vs 修辞对比复习',
+              compareConfig: {
+                leftItems: ['关联词', '并列递进因果转折', '连接句子', '看关系'],
+                rightItems: ['修辞手法', '比喻拟人排比夸张', '让语言生动', '看特点'],
+                result: 'close',
+                resultText: '关联词连句子看关系，修辞让生动看特点',
+              },
+              ttsNarration: '关联词连接句子看关系，修辞让语言生动看特点。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小航，关联词和修辞怎么区分？\n小航：关联词连句子看关系，修辞让生动看特点！\n老师：对！这是总复习的关键。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '易混提醒：排比至少三句相同句式；夸张是故意放大缩小；比喻要有喻词"像"；拟人是物有人化动作。', label: '易混提醒', animationType: 'pulse' },
+        ],
+        iDo: '家长复习关联词四种关系和修辞四种手法，各举一例。',
+        weDo: '亲子一起做综合判断题，辨析关联词关系和修辞手法。',
+        youDo: '孩子独立完成词语与修辞综合复习题。',
+        parentTips: '总复习关联词看关系，修辞看特点，多做综合判断题巩固。',
+        funElement: '小游戏：修辞关联词大闯关！一题关一关，看谁能闯到最后！',
+        gsapAnimations: [
+          '[GSAP:compare|关联词与修辞对比复习|0.8s|页面加载|power2.out]',
+          '[GSAP:highlight|关系和手法关键词高亮|0.5s|点击|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|词语修辞总复习图|500x300|教学风|png|关联词+修辞]',
+          '[IMG:illustration|关联词修辞对比图|500x200|教学风|png|对比]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u8l1q1',
+            type: 'choice',
+            question: '"不但……而且……"表示什么关系？',
+            options: ['并列', '递进', '转折'],
+            answer: '递进',
+            hint: '后半句更进一层',
+            explanation: '"不但……而且……"表示后一部分更进一层，是递进关系。'
+          },
+          {
+            id: 'c5u8l1q2',
+            type: 'choice',
+            question: '"飞流直下三千尺"是什么修辞？',
+            options: ['排比', '夸张', '拟人'],
+            answer: '夸张',
+            hint: '瀑布真有三千尺吗',
+            explanation: '"飞流直下三千尺"故意放大，是夸张。'
+          },
+          {
+            id: 'c5u8l1q3',
+            type: 'fill',
+            question: '"小草点头微笑"是___（填"拟人"或"比喻"）修辞。',
+            answer: '拟人',
+            acceptableAnswers: ['拟人'],
+            hint: '小草有了人的动作',
+            explanation: '"小草点头微笑"小草有了人的动作，是拟人。'
+          },
+          {
+            id: 'c5u8l1q4',
+            type: 'choice',
+            question: '"因为下雨，所以没去公园"是什么关系？',
+            options: ['因果', '转折', '递进'],
+            answer: '因果',
+            hint: '下雨是原因，没去是结果',
+            explanation: '"因为……所以……"前因后果，是因果关系。'
+          },
+          {
+            id: 'c5u8l1q5',
+            type: 'choice',
+            question: '【期末真题】"爱心是阳光，爱心是雨露，爱心是春风"运用的修辞是？',
+            options: ['比喻', '排比', '夸张'],
+            answer: '排比',
+            hint: '三句相同句式',
+            explanation: '三句结构相同排列，是排比（也含比喻，主要修辞是排比）。期末常考！'
+          },
+          {
+            id: 'c5u8l1q6',
+            type: 'drag',
+            question: '把句子和修辞/关系配对：月亮像盘子、花儿跳舞、因为下雨所以没去、飞流三千尺',
+            answer: '比喻,拟人,因果,夸张',
+            hint: '关联词看关系，修辞看特点',
+            explanation: '月亮像盘子是比喻；花儿跳舞是拟人；因为下雨所以没去是因果；飞流三千尺是夸张。'
+          },
+          {
+            id: 'c5u8l1q7',
+            type: 'fill',
+            question: '回顾：关联词四种关系是并列、递进、___（填"因果"或"排比"）和转折；修辞四种是比喻、拟人、排比和___（填"夸张"或"递进"）。（两空用逗号分隔）',
+            answer: '因果,夸张',
+            acceptableAnswers: ['因果,夸张', '因果，夸张'],
+            hint: '[词语与修辞总复习]（语文五年级-第8单元）',
+            explanation: '关联词四种关系是并列、递进、因果、转折；修辞四种是比喻、拟人、排比、夸张。这是学期总复习要点。'
+          }
+        ]
+      },
+      {
+        id: 'c5u8l2',
+        title: '阅读理解总复习',
+        order: 2,
+        teachingMethod: '形成性评价',
+        content: [
+          { type: 'text', content: '第二站复习阅读理解。这学期我们读了名著片段，学了人物分析（外貌、行为、语言）、情节赏析（起因、发展、高潮、结局）。今天综合复习阅读理解的方法。', animationType: 'reveal' },
+          { type: 'example', content: '阅读理解方法：\n1. 通读：先通读全文了解大意\n2. 精读：精读关键段落，圈画重点\n3. 人物分析：从外貌、行为、语言分析性格\n4. 情节赏析：分起因、发展、高潮、结局\n5. 体会：体会作者情感和写作目的', label: '阅读方法', animationType: 'bounce' },
+          { type: 'tip', content: '答题技巧：读题回到原文找答案；人物分析找依据；情节赏析分阶段；体会情感联系全文。', label: '答题技巧', animationType: 'pulse' },
+          { type: 'animation', content: '阅读理解方法卡片翻转揭示，展示五步阅读法', animationType: 'cardReveal',
+            animationConfig: {
+              sceneType: 'cardReveal',
+              title: '阅读理解五步法',
+              cardRevealConfig: {
+                cards: [
+                  { id: 'c0', front: '通读', back: '通读全文了解大意', ttsText: '通读：了解大意' },
+                  { id: 'c1', front: '精读', back: '精读关键段落圈画重点', ttsText: '精读：圈画重点' },
+                  { id: 'c2', front: '人物分析', back: '从外貌行为语言分析性格', ttsText: '人物分析：外貌行为语言' },
+                  { id: 'c3', front: '情节赏析', back: '分起因发展高潮结局', ttsText: '情节赏析：起因发展高潮结局' },
+                ],
+              },
+              ttsNarration: '阅读理解五步：通读、精读、人物分析、情节赏析、体会。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小琪，做阅读理解题最重要的是什么？\n小琪：回到原文找答案，分析要有依据！\n老师：对！这是阅读理解的关键。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '常见题型：词语理解（联系上下文）、人物分析（找依据）、情节概括（分阶段）、情感体会（联系全文）。', label: '常见题型', animationType: 'pulse' },
+          { type: 'example', content: '阅读理解示例：\n问题：孙悟空是什么性格？\n方法：从行为（大闹天宫、三打白骨精）找依据，总结勇敢机智、嫉恶如仇。', label: '答题示例', animationType: 'bounce' },
+        ],
+        iDo: '家长示范做一道阅读理解题，展示回到原文找答案的方法。',
+        weDo: '亲子一起做几道阅读理解题，讨论答题依据。',
+        youDo: '孩子独立完成阅读理解综合复习题。',
+        parentTips: '阅读理解要回到原文找答案，人物分析找依据，情节赏析分阶段。',
+        funElement: '小游戏：阅读大侦探！在原文里找线索，破解阅读理解难题！',
+        gsapAnimations: [
+          '[GSAP:cardReveal|阅读理解五步法卡片翻转|0.5s|点击|power2.inOut]',
+          '[GSAP:highlight|阅读方法关键词高亮|0.4s|翻转完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|阅读理解方法图|500x300|思维导图风|png|五步法]',
+          '[IMG:illustration|阅读理解题型图|500x200|教学风|png|常见题型]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u8l2q1',
+            type: 'choice',
+            question: '做阅读理解题最重要的是？',
+            options: ['凭想象答题', '回到原文找答案', '不看题目'],
+            answer: '回到原文找答案',
+            hint: '答案从哪里来',
+            explanation: '做阅读理解题要回到原文找答案，分析要有依据。'
+          },
+          {
+            id: 'c5u8l2q2',
+            type: 'choice',
+            question: '人物分析应从哪三方面入手？',
+            options: ['外貌、行为、语言', '开头、中间、结尾', '起因、发展、高潮'],
+            answer: '外貌、行为、语言',
+            hint: '回忆人物分析卡',
+            explanation: '人物分析从外貌、行为、语言三方面入手，最后总结性格。'
+          },
+          {
+            id: 'c5u8l2q3',
+            type: 'fill',
+            question: '故事情节分起因、发展、___（填"高潮"或"开头"）和结局。',
+            answer: '高潮',
+            acceptableAnswers: ['高潮'],
+            hint: '情节四阶段',
+            explanation: '故事情节分起因、发展、高潮、结局四个阶段。'
+          },
+          {
+            id: 'c5u8l2q4',
+            type: 'choice',
+            question: '阅读理解的第一步是？',
+            options: ['直接做题', '通读全文了解大意', '背答案'],
+            answer: '通读全文了解大意',
+            hint: '先做什么',
+            explanation: '阅读理解第一步是通读全文了解大意，再精读找答案。'
+          },
+          {
+            id: 'c5u8l2q5',
+            type: 'choice',
+            question: '【期末真题】分析孙悟空性格的正确方法是？',
+            options: ['凭空想象', '从大闹天宫等行为找依据', '只看名字'],
+            answer: '从大闹天宫等行为找依据',
+            hint: '分析要有依据',
+            explanation: '分析孙悟空性格要从大闹天宫、三打白骨精等行为找依据。期末常考！'
+          },
+          {
+            id: 'c5u8l2q6',
+            type: 'drag',
+            question: '把阅读步骤按顺序排列：人物分析、通读、情节赏析、精读',
+            answer: '通读,精读,人物分析,情节赏析',
+            hint: '先通读再精读再分析',
+            explanation: '阅读步骤：通读→精读→人物分析→情节赏析。'
+          },
+          {
+            id: 'c5u8l2q7',
+            type: 'fill',
+            question: '回顾：阅读理解要回到___（填"原文"或"想象"）找答案；人物分析从外貌、行为和___（填"语言"或"开头"）入手。（两空用逗号分隔）',
+            answer: '原文,语言',
+            acceptableAnswers: ['原文,语言', '原文，语言'],
+            hint: '[阅读理解方法]（语文五年级-第8单元）',
+            explanation: '阅读理解要回到原文找答案；人物分析从外貌、行为、语言入手。这是学期总复习要点。'
+          }
+        ]
+      },
+      {
+        id: 'c5u8l3',
+        title: '作文总复习',
+        order: 3,
+        teachingMethod: '形成性评价',
+        content: [
+          { type: 'text', content: '第三站复习作文。这学期我们学了记叙文（抒情、议论、开头结尾）、说明文（说明方法、准确语言）和应用文（书信、读后感、日记）。今天综合复习作文类型和写法。', animationType: 'reveal' },
+          { type: 'example', content: '三种作文类型：\n1. 记叙文：叙事+抒情+议论，开头吸引结尾呼应\n2. 说明文：用说明方法，语言准确，条理清楚\n3. 应用文：格式规范（书信六部分、日记日期天气）', label: '三种作文', animationType: 'bounce' },
+          { type: 'tip', content: '作文通用要求：内容真实具体，条理清楚，语言通顺，字数达标，写后修改。', label: '通用要求', animationType: 'pulse' },
+          { type: 'animation', content: '三种作文类型依次出现，展示记叙文说明文应用文的特点', animationType: 'timeline',
+            animationConfig: {
+              sceneType: 'timeline',
+              title: '三种作文类型复习',
+              timelineConfig: {
+                steps: [
+                  { id: 's1', description: '记叙文', text: '叙事+抒情+议论，首尾呼应', ttsNarration: '记叙文：叙事抒情议论，首尾呼应' },
+                  { id: 's2', description: '说明文', text: '用说明方法，语言准确条理清楚', ttsNarration: '说明文：用说明方法，语言准确' },
+                  { id: 's3', description: '应用文', text: '格式规范，内容真实', ttsNarration: '应用文：格式规范，内容真实' },
+                ],
+              },
+              ttsNarration: '三种作文：记叙文、说明文、应用文，各有特点。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小晨，写不同作文要注意什么？\n小晨：记叙文重抒情议论，说明文重方法准确，应用文重格式！\n老师：对！不同作文有不同要求。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '考前提醒：审清题目要求，确定作文类型，再按类型特点写，最后检查修改。', label: '考前提醒', animationType: 'pulse' },
+          { type: 'example', content: '作文复习要点：\n记叙文：抒情（直接/间接）+ 议论（夹叙夹议）+ 开头结尾（首尾呼应）\n说明文：四种方法（列数字/作比较/打比方/举例子）+ 准确语言\n应用文：书信六部分、日记三要素、读后感引议联结', label: '复习要点', animationType: 'bounce' },
+        ],
+        iDo: '家长复习三种作文类型的特点，各举要点。',
+        weDo: '亲子一起分析几个作文题目，判断该写哪种作文。',
+        youDo: '孩子独立完成作文综合复习题。',
+        parentTips: '作文总复习：记叙文重抒情议论首尾呼应，说明文重方法准确，应用文重格式。',
+        funElement: '小游戏：作文类型分拣员！把题目分到记叙文、说明文、应用文三个筐！',
+        gsapAnimations: [
+          '[GSAP:timeline|三种作文类型依次出现|1.5s|点击播放|power2.out]',
+          '[GSAP:highlight|类型特点高亮|0.5s|出现完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|三种作文类型图|500x300|思维导图风|png|三类作文]',
+          '[IMG:illustration|作文复习要点图|500x200|教学风|png|要点]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u8l3q1',
+            type: 'choice',
+            question: '写记叙文要注重？',
+            options: ['抒情议论和首尾呼应', '说明方法和准确语言', '格式规范'],
+            answer: '抒情议论和首尾呼应',
+            hint: '记叙文的特点',
+            explanation: '写记叙文要注重抒情、议论和首尾呼应。'
+          },
+          {
+            id: 'c5u8l3q2',
+            type: 'choice',
+            question: '写说明文要注重？',
+            options: ['抒情议论', '说明方法和准确语言', '日期天气'],
+            answer: '说明方法和准确语言',
+            hint: '说明文的特点',
+            explanation: '写说明文要注重说明方法和准确语言。'
+          },
+          {
+            id: 'c5u8l3q3',
+            type: 'fill',
+            question: '写应用文要注重格式规范，如书信有___（填"六部分"或"开头"）格式。',
+            answer: '六部分',
+            acceptableAnswers: ['六部分', '六个部分'],
+            hint: '书信格式有几部分',
+            explanation: '写应用文要注重格式规范，书信有六部分格式。'
+          },
+          {
+            id: 'c5u8l3q4',
+            type: 'choice',
+            question: '所有作文通用的要求是？',
+            options: ['内容真实具体、条理清楚、写后修改', '越长越好', '只写开头'],
+            answer: '内容真实具体、条理清楚、写后修改',
+            hint: '作文通用要求',
+            explanation: '所有作文都要求内容真实具体、条理清楚、语言通顺、写后修改。'
+          },
+          {
+            id: 'c5u8l3q5',
+            type: 'choice',
+            question: '【期末真题】"介绍我的学校"最适合写成哪种作文？',
+            options: ['记叙文', '说明文', '日记'],
+            answer: '说明文',
+            hint: '介绍事物用什么文体',
+            explanation: '"介绍我的学校"是介绍事物，最适合写成说明文。期末常考！'
+          },
+          {
+            id: 'c5u8l3q6',
+            type: 'drag',
+            question: '把作文类型和特点配对：记叙文、说明文、应用文、读后感',
+            answer: '抒情议论,方法准确,格式规范,引议联结',
+            hint: '记叙文抒情议论，说明文方法准确，应用文格式规范，读后感引议联结',
+            explanation: '记叙文抒情议论；说明文方法准确；应用文格式规范；读后感引议联结。'
+          },
+          {
+            id: 'c5u8l3q7',
+            type: 'fill',
+            question: '回顾：三种作文类型是记叙文、___（填"说明文"或"开头文"）和应用文；所有作文都要求写后___（填"修改"或"抄写"）。（两空用逗号分隔）',
+            answer: '说明文,修改',
+            acceptableAnswers: ['说明文,修改', '说明文，修改'],
+            hint: '[作文总复习]（语文五年级-第8单元）',
+            explanation: '三种作文类型是记叙文、说明文、应用文；所有作文都要求写后修改。这是学期总复习要点。'
+          }
+        ]
+      },
+      {
+        id: 'c5u8l4',
+        title: '古诗文总复习',
+        order: 4,
+        teachingMethod: '间隔重复',
+        content: [
+          { type: 'text', content: '第四站复习古诗文。这学期我们学了古诗表达技巧（借景抒情、动静结合、虚实相生）和文言文入门（古今词义）。今天综合复习古诗文知识。', animationType: 'reveal' },
+          { type: 'poem', content: '复习古诗：\n《静夜思》李白：借明月抒思乡（借景抒情）\n《鹿柴》王维：空山不见人，但闻人语响（动静结合）\n《九月九日忆山东兄弟》王维：遥知兄弟登高（虚实相生）', label: '古诗复习', animationType: 'bounce' },
+          { type: 'example', content: '三种表达技巧：\n1. 借景抒情：借景物表达感情（明月抒思乡）\n2. 动静结合：动态静态互相衬托，以动衬静\n3. 虚实相生：实景（眼前）和虚景（想象）结合', label: '三种技巧', animationType: 'bounce' },
+          { type: 'tip', content: '文言文复习：对照翻译理解大意，重点记古今词义不同的字，如"走"古义是"跑"，"冀"古义是"希望"。', label: '文言文复习', animationType: 'pulse' },
+          { type: 'animation', content: '古诗文三种技巧和文言文依次出现，展示综合意境', animationType: 'timeline',
+            animationConfig: {
+              sceneType: 'timeline',
+              title: '古诗文综合意境',
+              timelineConfig: {
+                steps: [
+                  { id: 's1', description: '借景抒情', text: '明月抒思乡', ttsNarration: '借景抒情：明月抒思乡' },
+                  { id: 's2', description: '动静结合', text: '以动衬静', ttsNarration: '动静结合：以动衬静' },
+                  { id: 's3', description: '虚实相生', text: '实虚结合', ttsNarration: '虚实相生：实虚结合' },
+                  { id: 's4', description: '文言翻译', text: '走＝跑，冀＝希望', ttsNarration: '文言翻译：走是跑，冀是希望' },
+                ],
+              },
+              ttsNarration: '古诗文三种技巧加文言文翻译，综合复习。',
+            },
+          },
+          { type: 'dialogue', content: '老师：小怡，古诗文三种表达技巧是什么？\n小怡：借景抒情、动静结合和虚实相生！\n老师：对！还有文言文要记古今词义。', label: '师生对话', animationType: 'reveal' },
+          { type: 'tip', content: '背诵要求：《静夜思》《鹿柴》等要能背诵默写，赏析要能说出技巧和情感。', label: '背诵要求', animationType: 'pulse' },
+        ],
+        iDo: '家长复习古诗文三种技巧和文言文古今词义，各举一例。',
+        weDo: '亲子一起背诵古诗，互相考赏析。',
+        youDo: '孩子独立完成古诗文综合复习题。',
+        parentTips: '古诗文复习三种技巧：借景抒情、动静结合、虚实相生；文言文记古今词义。',
+        funElement: '小游戏：古诗文大转盘！转到哪首背哪首，转到哪个技巧讲哪个！',
+        gsapAnimations: [
+          '[GSAP:timeline|古诗文三种技巧依次出现|1.5s|点击播放|power2.out]',
+          '[GSAP:highlight|技巧和词义高亮|0.5s|出现完成|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|古诗文总复习图|500x300|水墨画风|png|三技巧+文言]',
+          '[IMG:illustration|古诗意境图|500x300|水墨画风|png|意境]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u8l4q1',
+            type: 'choice',
+            question: '《静夜思》运用的表达技巧是？',
+            options: ['借景抒情', '夹叙夹议', '排比夸张'],
+            answer: '借景抒情',
+            hint: '借明月抒思乡',
+            explanation: '《静夜思》借明月之景抒发思乡之情，是借景抒情。'
+          },
+          {
+            id: 'c5u8l4q2',
+            type: 'choice',
+            question: '"以动衬静"属于哪种技巧？',
+            options: ['借景抒情', '动静结合', '虚实相生'],
+            answer: '动静结合',
+            hint: '动和静怎么结合',
+            explanation: '"以动衬静"是动静结合的常用手法，用动衬托静。'
+          },
+          {
+            id: 'c5u8l4q3',
+            type: 'fill',
+            question: '文言文"走"的古义是___（填"跑"或"走"）。',
+            answer: '跑',
+            acceptableAnswers: ['跑'],
+            hint: '古今词义不同',
+            explanation: '文言文"走"古义是跑，今义是行走。'
+          },
+          {
+            id: 'c5u8l4q4',
+            type: 'choice',
+            question: '"遥知兄弟登高处"属于？',
+            options: ['实景', '虚景', '动景'],
+            answer: '虚景',
+            hint: '"遥知"是想象',
+            explanation: '"遥知兄弟登高处"是想象兄弟登高，是虚景（虚实相生）。'
+          },
+          {
+            id: 'c5u8l4q5',
+            type: 'choice',
+            question: '【期末真题】下列对古诗文理解正确的是？',
+            options: ['《静夜思》借景抒情抒思乡', '动静结合让动更动', '文言文"走"古义是行走'],
+            answer: '《静夜思》借景抒情抒思乡',
+            hint: '逐项判断',
+            explanation: '《静夜思》借景抒情抒思乡正确。动静结合让静更静，文言文"走"古义是跑。期末常考！'
+          },
+          {
+            id: 'c5u8l4q6',
+            type: 'drag',
+            question: '把内容和技巧配对：静夜思、鹿柴、忆山东兄弟、守株待兔',
+            answer: '借景抒情,动静结合,虚实相生,文言翻译',
+            hint: '静夜思借景抒情，鹿柴动静结合，忆山东兄弟虚实相生，守株待兔文言',
+            explanation: '静夜思借景抒情；鹿柴动静结合；忆山东兄弟虚实相生；守株待兔文言翻译。'
+          },
+          {
+            id: 'c5u8l4q7',
+            type: 'fill',
+            question: '回顾：古诗三种表达技巧是借景抒情、动静结合和___（填"虚实相生"或"说明方法"）；文言文"走"的古义是___（填"跑"或"走"）。（两空用逗号分隔）',
+            answer: '虚实相生,跑',
+            acceptableAnswers: ['虚实相生,跑', '虚实相生，跑'],
+            hint: '[古诗文总复习]（语文五年级-第8单元）',
+            explanation: '古诗三种表达技巧是借景抒情、动静结合、虚实相生；文言文"走"古义是跑。这是学期总复习要点。'
+          }
+        ]
+      },
+      {
+        id: 'c5u8l5',
+        title: '学期综合测评',
+        order: 5,
+        teachingMethod: '形成性评价',
+        content: [
+          { type: 'text', content: '最后一站，学期综合测评！把这一学期学的关联词修辞、记叙文、说明文、名著、古诗文、汉字、应用文全部综合起来检测，看看你这学期收获了多少！', animationType: 'reveal' },
+          { type: 'example', content: '综合测评内容：\n1. 关联词与修辞（关系判断、修辞辨析）\n2. 记叙文（抒情议论开头结尾）\n3. 说明文（说明方法、准确语言）\n4. 名著阅读（人物分析、情节赏析）\n5. 古诗文（借景抒情、动静结合、虚实相生、文言翻译）\n6. 汉字之美（演变、造字法、楷书）\n7. 应用文（书信、读后感、日记）', label: '测评内容', animationType: 'bounce' },
+          { type: 'tip', content: '测评策略：先易后难，仔细审题；关联词看关系，修辞看特点；阅读回原文；作文重格式；古诗文记技巧。', label: '测评策略', animationType: 'pulse' },
+          { type: 'animation', content: '学期通关大撒花动画，正确率达80%以上触发盛大庆祝', animationType: 'sequence',
+            animationConfig: {
+              sceneType: 'sequence',
+              title: '学期语文达人通关',
+              sequenceConfig: {
+                items: ['关联词修辞', '记叙文', '说明文', '名著', '古诗文', '汉字', '应用文'],
+                order: 'custom',
+                itemType: 'word',
+              },
+              ttsNarration: '恭喜你完成学期综合测评，成为语文达人！',
+            },
+          },
+          { type: 'dialogue', content: '老师：同学们，学期综合测评来了，准备好了吗？\n同学们：准备好了！沉着冷静，仔细作答！\n老师：加油！相信你们都能成为语文达人！', label: '考前动员', animationType: 'reveal' },
+          { type: 'tip', content: '目标：学期综合测评正确率达到80%以上，就能获得"学期语文达人"最高徽章！加油！', label: '测评目标', animationType: 'pulse' },
+        ],
+        iDo: '家长讲解综合测评策略，鼓励孩子沉着应考。',
+        weDo: '亲子一起做几道综合题，查漏补缺。',
+        youDo: '孩子独立完成学期综合测评，争取正确率80%以上。',
+        parentTips: '学期综合测评重在综合运用，提醒孩子先易后难、仔细审题、沉着应考。',
+        funElement: '终极挑战：闯过七大学问关，集齐学期勋章，获得"学期语文达人"最高徽章，撒花庆祝！',
+        gsapAnimations: [
+          '[GSAP:confetti|学期通关大撒花|3s|正确率≥80%|power1.out]',
+          '[GSAP:starFlyIn|学期语文达人最高徽章飞入|1.5s|通关|power2.out]'
+        ],
+        images: [
+          '[IMG:illustration|学期语文达人最高徽章|350x350|可爱卡通风|png|金色最高徽章]',
+          '[IMG:illustration|学期知识总览图|500x300|教学风|png|七方面]'
+        ],
+        practiceQuestions: [
+          {
+            id: 'c5u8l5q1',
+            type: 'choice',
+            question: '"虽然今天很冷，但是大家都很精神"是什么关系？',
+            options: ['因果', '转折', '递进'],
+            answer: '转折',
+            hint: '前后意思相反',
+            explanation: '"虽然……但是……"前后意思相反，是转折关系。'
+          },
+          {
+            id: 'c5u8l5q2',
+            type: 'choice',
+            question: '"月亮像银盘"是什么修辞？',
+            options: ['拟人', '比喻', '夸张'],
+            answer: '比喻',
+            hint: '有喻词"像"',
+            explanation: '"月亮像银盘"有喻词"像"，是比喻。'
+          },
+          {
+            id: 'c5u8l5q3',
+            type: 'fill',
+            question: '说明文四种方法是列数字、作比较、打比方和___（填"举例子"或"夹叙夹议"）。',
+            answer: '举例子',
+            acceptableAnswers: ['举例子', '举例'],
+            hint: '第四种说明方法',
+            explanation: '说明文四种方法是列数字、作比较、打比方、举例子。'
+          },
+          {
+            id: 'c5u8l5q4',
+            type: 'choice',
+            question: '《西游记》的作者是？',
+            options: ['吴承恩', '李白', '颜真卿'],
+            answer: '吴承恩',
+            hint: '明代小说家',
+            explanation: '《西游记》作者是明代吴承恩。'
+          },
+          {
+            id: 'c5u8l5q5',
+            type: 'choice',
+            question: '【学期综合】下列说法正确的是？',
+            options: ['《静夜思》借景抒情抒思乡', '书信称呼空两格', '说明文不用说明方法'],
+            answer: '《静夜思》借景抒情抒思乡',
+            hint: '逐项判断',
+            explanation: '《静夜思》借景抒情抒思乡正确。书信称呼顶格加冒号，说明文要用说明方法。'
+          },
+          {
+            id: 'c5u8l5q6',
+            type: 'drag',
+            question: '把内容和单元配对：关联词修辞、说明方法、借景抒情、书信格式',
+            answer: '第1单元,第3单元,第5单元,第7单元',
+            hint: '关联词修辞第1单元，说明方法第3单元，借景抒情第5单元，书信第7单元',
+            explanation: '关联词修辞是第1单元；说明方法是第3单元；借景抒情是第5单元；书信格式是第7单元。'
+          },
+          {
+            id: 'c5u8l5q7',
+            type: 'fill',
+            question: '回顾：本学期学了关联词修辞、记叙文、说明文、名著阅读、古诗文、汉字之美和___（填"应用文"或"数学"）七大板块；综合测评正确率达___（填"80%"或"10%"）以上获学期达人徽章。（两空用逗号分隔）',
+            answer: '应用文,80%',
+            acceptableAnswers: ['应用文,80%', '应用文，80%', '应用文,80', '应用文，80'],
+            hint: '[学期综合测评]（语文五年级-第8单元）',
+            explanation: '本学期学了关联词修辞、记叙文、说明文、名著阅读、古诗文、汉字之美和应用文七大板块；综合测评正确率达80%以上获学期达人徽章。这是学期总结。'
+          }
+        ]
+      }
+    ]
+  }
+]

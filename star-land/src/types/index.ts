@@ -2,7 +2,7 @@
 export type Subject = 'math' | 'chinese' | 'english'
 
 // 年级类型
-export type Grade = 1 | 2 | 3
+export type Grade = 1 | 2 | 3 | 4 | 5 | 6
 
 // 星级评价
 export type StarLevel = 0 | 1 | 2 | 3
