@@ -13,6 +13,8 @@ export const mathGrade4: Unit[] = [
         title: '亿以内数的认识',
         order: 1,
         teachingMethod: 'CPA·C→P：实物→数位表→符号',
+        learningObjective: '我能认识亿以内的数，理解数位顺序表',
+        successCriteria: '①能说出万级各数位名称 ②能读写亿以内的数',
         content: [
           { type: 'text', content: '在生活中，我们经常会遇到比万更大的数。比如一个城市有几百万人，一本书有几万个字。今天我们就来认识这些大数！', animationType: 'reveal' },
           { type: 'example', content: '10个一万是十万，10个十万是一百万，10个一百万是一千万，10个一千万是一亿。', label: '数一数', animationType: 'bounce' },
@@ -40,11 +42,12 @@ export const mathGrade4: Unit[] = [
           },
           { type: 'text', content: '在数位顺序表中，从右边起第5位是万位，第6位是十万位，第7位是百万位，第8位是千万位。', animationType: 'reveal' },
           { type: 'tip', content: '巧记口诀：个十百千是个级，万十万百万千万是万级，每级四位，从右到左排好队！', label: '巧记口诀', animationType: 'pulse' },
+          { type: 'tip', content: '个十百千是个级，万十万百万千万是万级，每级四位，满十进一', label: '助记口诀', animationType: 'pulse' },
         ],
         iDo: '家长在纸上画数位顺序表，用万为单位数大数，示范"一万、二万、三万……十万"，让孩子观察数位的变化。',
         weDo: '亲子一起在数位表上摆数，家长说一个数，孩子用数字卡片在数位表上摆出来，互相检查。',
         youDo: '孩子独立读写大数，在数位表上填写缺失的数位名称，并说出每个数字所在的数位。',
-        parentTips: '从万开始，用数位表帮助孩子理解大数。强调每四个数位为一级，满十进一。',
+        parentTips: '【家长预习】大数按四位一级分，个级和万级，满十进一。\n共学四步：\n①对话出题：问"从右起第五位是什么位？万级有哪几位？"\n②孩子应答："第五位是万位，万级有万位十万位百万位千万位"\n③答错引导：画数位表，从右到左个十百千|万十万百万千万，用每级四位帮孩子记忆\n④快速检测：第6位是什么位、读出320000、10个一万是几万',
         funElement: '笑话：0对1说——你太瘦了，我才是圆圆胖胖的大数！歇后语：万丈高楼平地起——从头来。小游戏：数位接力赛，抢答数位名称！',
         gsapAnimations: [
           '[GSAP:sceneBuild|数位表逐步展开（个→万→十万→百万→千万）|1.5s|点击播放|power2.out]',
@@ -122,6 +125,8 @@ export const mathGrade4: Unit[] = [
         title: '大数的读法和写法',
         order: 2,
         teachingMethod: 'EDI：示范→合作→独立',
+        learningObjective: '我能正确读写亿以内的数',
+        successCriteria: '①能按分级法读数 ②能按分级法写数',
         content: [
           { type: 'text', content: '读大数有秘诀：先分级，再从高位读起。万级的数按个级的读法读，末尾加"万"字。', animationType: 'reveal' },
           { type: 'example', content: '30500000 先分级：3050 | 0000，读作：三千零五十万。', label: '读一读', animationType: 'bounce' },
@@ -147,7 +152,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范分级读数法：先画分级线，再从万级开始读，最后加"万"字。示范几个大数的读法。',
         weDo: '亲子一起分级读数，家长说大数，孩子分级并读出来，互相检查读法是否正确。',
         youDo: '孩子独立读写大数，完成读写练习，标注分级线。',
-        parentTips: '分级法是关键：先万级再个级，万级按个级读加"万"。注意0的读法规则。',
+        parentTips: '【家长预习】分级法读数：先万级再个级，万级按个级读加"万"。\n共学四步：\n①对话出题：问"2405600怎么读？"\n②孩子应答："分级240|5600，读作二百四十万五千六百"\n③答错引导：画分级线分万级和个级，万级按个级读加万，0在级末不读\n④快速检测：读3060800、读4500200、写"三百万零五十"',
         funElement: '歇后语：芝麻开花——节节高（数位越来越高）。笑话：8对0说——胖有什么用，还不是排在最后！小游戏：大数读法接龙，看谁读得快又准！',
         gsapAnimations: [
           '[GSAP:cardReveal|大数分级卡片翻转（万级红色/个级蓝色）|0.8s|点击分级|power2.inOut]',
@@ -224,6 +229,8 @@ export const mathGrade4: Unit[] = [
         title: '大数的大小比较和改写',
         order: 3,
         teachingMethod: '支架式',
+        learningObjective: '我能比较亿以内数的大小并改写',
+        successCriteria: '①能比较位数不同和位数相同的数 ②能把整万数改写成万为单位',
         content: [
           { type: 'text', content: '比较大数有两种方法：位数不同的，位数多的数大；位数相同的，从最高位起依次比较。', animationType: 'reveal' },
           { type: 'example', content: '比较99999和100000：99999是五位数，100000是六位数，六位数>五位数，所以100000>99999。', label: '比一比', animationType: 'bounce' },
@@ -248,7 +255,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范大数比较：先数位数，位数相同从高位比起。再示范整万整亿的改写方法。',
         weDo: '亲子一起比较和改写大数，家长出题，孩子比较大小并改写，互相检查。',
         youDo: '孩子独立比较和改写大数，完成练习题。',
-        parentTips: '位数不同比位数，位数相同从高位比；整万整亿改写时去掉0加"万"或"亿"字。',
+        parentTips: '【家长预习】位数不同比位数，位数相同从高位比，整万去0加万。\n共学四步：\n①对话出题：问"99999和100000谁大？怎么比？"\n②孩子应答："100000大，100000是六位99999是五位，位数多大数大"\n③答错引导：位数不同直接比位数，位数相同从最高位开始比\n④快速检测：比较350000和349999、把50000改写成万、比较6位数和5位数',
         funElement: '笑话：9对10说——别以为你比我多一位就了不起！歇后语：小葱拌豆腐——一清二白（大小清清楚楚）。小游戏：大数比大小扑克牌，翻牌比大小！',
         gsapAnimations: [
           '[GSAP:compare|两个大数逐位对比展示|0.8s|页面加载|power2.out]',
@@ -325,6 +332,8 @@ export const mathGrade4: Unit[] = [
         title: '近似数——四舍五入法',
         order: 4,
         teachingMethod: 'CPA·P→A',
+        learningObjective: '我能用四舍五入法求近似数',
+        successCriteria: '①能说出四舍五入规则 ②能正确求近似数',
         content: [
           { type: 'text', content: '有时候我们不需要精确的数，用近似数就够了。求近似数最常用的方法是"四舍五入法"。', animationType: 'reveal' },
           { type: 'example', content: '234567四舍五入到万位：看千位上的4，4<5舍去，所以234567≈23万。', label: '四舍五入', animationType: 'bounce' },
@@ -351,7 +360,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范四舍五入到万位：先确定精确位，再看下一位，5以上进1，5以下舍去。示范几个例题。',
         weDo: '亲子一起做四舍五入练习，家长出数，孩子判断舍入，互相检查。',
         youDo: '孩子独立求近似数，完成四舍五入练习。',
-        parentTips: '四舍五入：看下一位，5以上进1，5以下舍去。提醒孩子用约等号。',
+        parentTips: '【家长预习】四舍五入：看下一位，5以上进1，5以下舍去，用约等号。\n共学四步：\n①对话出题：问"把384900四舍五入到万位约是多少？"\n②孩子应答："看千位4小于5舍去，约38万"\n③答错引导：找准万位看下一位千位，4小于5舍去变0，得38万用约等号\n④快速检测：49900约几万、735600约几万、把64999约到万位',
         funElement: '歇后语：四舍五入——差不多就行。笑话：5对4说——我进位了，你被舍了！小游戏：四舍五入转盘，转到几就四舍五入！',
         gsapAnimations: [
           '[GSAP:timeline|四舍五入动画：数字→看下一位→进/舍→结果|1.5s|点击播放|power2.inOut]',
@@ -428,6 +437,8 @@ export const mathGrade4: Unit[] = [
         title: '大数综合检测',
         order: 5,
         teachingMethod: '形成性评价',
+        learningObjective: '我能综合运用大数知识完成测评',
+        successCriteria: '①测评正确率达80%以上 ②能读写比较改写求近似数',
         content: [
           { type: 'text', content: '这单元我们学了大数的认识、读写、比较、改写和四舍五入。现在来检测一下你的掌握情况吧！', animationType: 'reveal' },
           { type: 'formula', content: '知识要点：①数位顺序表 ②分级读写法 ③大小比较 ④整万整亿改写 ⑤四舍五入求近似数', label: '知识总结', animationType: 'typewriter' },
@@ -452,7 +463,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范综合题：给出一个大数，示范读写、比较、改写、四舍五入的完整过程。',
         weDo: '亲子一起做大数综合练习，互相出题检查，查漏补缺。',
         youDo: '孩子独立完成大数综合测试，争取正确率80%以上。',
-        parentTips: '读写+比较+改写+近似数，正确率达到80%以上为通过。注意孩子的薄弱环节。',
+        parentTips: '【家长预习】综合检测大数读写比较改写近似数，查薄弱环节。\n共学四步：\n①对话出题：问"大数怎么读？怎么四舍五入？"\n②孩子应答："先分级再读，四舍五入看下一位"\n③答错引导：错题分级重做，四舍五入找对位看下一位\n④快速检测：读4006000、比较位数、把80000改写成万、四舍五入23500',
         funElement: '歇后语：芝麻官打灯笼——照旧（照舅）。笑话：大数说——别数了，你们数不过来！小游戏：大数知识竞赛，抢答得分！',
         gsapAnimations: [
           '[GSAP:confetti|通关撒花|2s|正确率≥80%|power1.out|particleCount:40]',
@@ -539,6 +550,8 @@ export const mathGrade4: Unit[] = [
         title: '线段、直线、射线',
         order: 1,
         teachingMethod: 'CPA·C→P：实物→图示→符号',
+        learningObjective: '我能区分线段、射线、直线和角',
+        successCriteria: '①能说出三种线的特征 ②能指出角的顶点和边',
         content: [
           { type: 'text', content: '今天我们来认识三种线：线段、射线和直线。它们有什么不同呢？一起来看看！', animationType: 'reveal' },
           { type: 'example', content: '线段：有两个端点，可以量出长度（如一根拉紧的线）。射线：只有一个端点，向一方无限延伸（如手电筒的光）。直线：没有端点，向两端无限延伸。', label: '三种线', animationType: 'bounce' },
@@ -558,11 +571,12 @@ export const mathGrade4: Unit[] = [
           },
           { type: 'text', content: '线段和射线都是直线的一部分。经过一点可以画无数条直线，经过两点只能画一条直线。', animationType: 'reveal' },
           { type: 'tip', content: '易错提醒：射线和直线是"无限长"的，不能量出长度。只有线段可以量出长度！', label: '易错提醒', animationType: 'pulse' },
+          { type: 'tip', content: '线段两个端点射线一个端点直线无端点，角是一点引出两条射线', label: '助记口诀', animationType: 'pulse' },
         ],
         iDo: '家长用拉紧的线演示线段，松开一端演示射线，松开两端演示直线，让孩子直观感受三种线的区别。',
         weDo: '亲子一起画三种线，家长说名称，孩子画出来，互相检查端点数量。',
         youDo: '孩子独立辨认和画线，区分线段、射线和直线。',
-        parentTips: '线段有两个端点，射线一个，直线没有。用实物演示帮助孩子理解"无限延伸"。',
+        parentTips: '【家长预习】线段两段射线一端直线无端，角是一点引出两条射线。\n共学四步：\n①对话出题：拿手电筒问"这束光像什么线？有几个端点？"\n②孩子应答："像射线，一个端点，向一个方向无限延伸"\n③答错引导：画线段两端点、射线一端点、直线无端点对比，强调端点数量\n④快速检测：线段几个端点、直线能延伸吗、角的顶点和边在哪',
         funElement: '笑话：直线对线段说——你太短了！线段说——至少我能量出来！歇后语：一根筋——直来直去。小游戏：画线小达人，听名称画线！',
         gsapAnimations: [
           '[GSAP:shapeDraw|线段→射线（一端延伸）→直线（两端延伸）|1.5s|点击播放|power2.out]',
@@ -639,6 +653,8 @@ export const mathGrade4: Unit[] = [
         title: '角的认识与量角器',
         order: 2,
         teachingMethod: '多感官：实物操作',
+        learningObjective: '我能用量角器量角',
+        successCriteria: '①能量出角的度数 ②能说出量角三步法',
         content: [
           { type: 'text', content: '从一点引出两条射线组成的图形叫做角。这个点叫做角的顶点，两条射线叫做角的边。', animationType: 'reveal' },
           { type: 'example', content: '角用符号"∠"表示，如∠1、∠AOB。角的大小与两条边张开的程度有关，与边的长短无关。', label: '认识角', animationType: 'bounce' },
@@ -662,7 +678,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长用两根木条组成角，演示角的大小变化，再示范量角器量角的三步法。',
         weDo: '亲子一起量角，家长画角，孩子用量角器量出度数，互相检查。',
         youDo: '孩子独立量角，用量角器量出各种角的度数。',
-        parentTips: '从一点引出两条射线组成角，用量角器量角。强调"点对点、线对边、读刻度"三步法。',
+        parentTips: '【家长预习】量角器中心对顶点，零度线对一边，另一边读度数。\n共学四步：\n①对话出题：画一个角问"怎么量这个角多少度？"\n②孩子应答："中心对顶点，0度线对一边，另一边读刻度"\n③答错引导：家长示范量角三步，注意0度线对准哪条边就读哪圈刻度\n④快速检测：量一个60度角、量直角、量一个钝角',
         funElement: '笑话：角说——我张开嘴就能变大！歇后语：张飞穿针——大眼瞪小眼（看刻度）。小游戏：量角小能手，看谁量得准！',
         gsapAnimations: [
           '[GSAP:shapeDraw|角的两条边从顶点画出|0.8s|点击画角|power2.out]',
@@ -739,6 +755,8 @@ export const mathGrade4: Unit[] = [
         title: '角的分类——锐直钝平周',
         order: 3,
         teachingMethod: '支架式：分类对比',
+        learningObjective: '我能给角分类（锐角直角钝角平角周角）',
+        successCriteria: '①能说出各类角的范围 ②能判断角的类型',
         content: [
           { type: 'text', content: '角可以分为五大类：锐角、直角、钝角、平角和周角。让我们一起来认识它们！', animationType: 'reveal' },
           { type: 'example', content: '锐角<90°，直角=90°，钝角>90°且<180°，平角=180°，周角=360°。', label: '五种角', animationType: 'bounce' },
@@ -766,7 +784,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范5种角：用两根木条旋转展示锐角、直角、钝角、平角、周角，并标注度数。',
         weDo: '亲子一起分类，家长画角，孩子说出角的类型，互相检查。',
         youDo: '孩子独立辨认和画角，说出各种角的度数范围。',
-        parentTips: '锐角<90°，直角=90°，钝角>90°且<180°，平角=180°，周角=360°。记住它们的大小关系。',
+        parentTips: '【家长预习】锐角小于90度，直角等于90度，钝角大于90小于180度。\n共学四步：\n①对话出题：问"锐角直角钝角平角周角各是多少度？"\n②孩子应答："锐角小于90直角90钝角大于90小于180平角180周角360"\n③答错引导：用量角器或三角板比，直角是基准，比它小是锐角比它大是钝角\n④快速检测：判断45度是什么角、判断120度、平角和周角差多少',
         funElement: '笑话：锐角说——我最尖！钝角说——我最胖！直角说——我最标准！歇后语：周而复始——转一圈又回来。小游戏：角分类接龙，说角名！',
         gsapAnimations: [
           '[GSAP:timeline|5种角依次出现并标注度数|1.5s|点击播放|power2.out]',
@@ -844,6 +862,8 @@ export const mathGrade4: Unit[] = [
         title: '画角——用量角器和三角板',
         order: 4,
         teachingMethod: 'EDI：示范→合作→独立',
+        learningObjective: '我能用量角器和三角板画角',
+        successCriteria: '①能用量角器画指定度数的角 ②能用三角板拼画角',
         content: [
           { type: 'text', content: '学会了量角，现在来学画角！用量角器可以画出任意度数的角，用三角板可以画出特殊度数的角。', animationType: 'reveal' },
           { type: 'example', content: '画65°的角：①画一条射线 ②量角器中心对准端点，0°线对准射线 ③在65°处点一个点 ④连线。', label: '画角步骤', animationType: 'bounce' },
@@ -867,7 +887,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范画指定度数的角：用量角器四步法画65°的角，再用三角板拼出75°的角。',
         weDo: '亲子一起画角，家长说度数，孩子画出来，互相用量角器检查。',
         youDo: '孩子独立画指定度数的角，用量角器和三角板各画几个。',
-        parentTips: '量角器画角：画射线→对准中心和0°线→找度数点→连线。三角板画角可拼可做差。',
+        parentTips: '【家长预习】画角三步：画射线，对准中心和0度线，找度数点连线。\n共学四步：\n①对话出题：问"怎么画一个65度的角？"\n②孩子应答："画射线，量角器中心对端点0度线对射线，找65度点连线"\n③答错引导：家长示范画角三步，让孩子照着画，强调点对点线对边\n④快速检测：画一个90度角、画一个45度角、用三角板拼75度角',
         funElement: '笑话：三角板说——我有三个角，但只能给你用两个！歇后语：照葫芦画瓢——按样子来。小游戏：画角PK赛，看谁画得准！',
         gsapAnimations: [
           '[GSAP:shapeDraw|画角过程动画（4步）|2s|点击播放|power1.inOut]',
@@ -945,10 +965,12 @@ export const mathGrade4: Unit[] = [
         title: '角与线综合检测',
         order: 5,
         teachingMethod: '形成性评价',
+        learningObjective: '我能综合运用线和角的知识完成测评',
+        successCriteria: '①测评正确率达80%以上 ②能辨认线、量角画角',
         content: [
           { type: 'text', content: '这单元我们学了线段、直线、射线、角的认识、量角、角分类和画角。来检测一下掌握情况吧！', animationType: 'reveal' },
           { type: 'formula', content: '知识要点：①三种线的特征 ②角的定义和度量 ③五种角的分类 ④画角方法（量角器和三角板）', label: '知识总结', animationType: 'typewriter' },
-          { type: 'example', content: '综合例题：一个角是直角的3倍，它是270°的角。270°=180°+90°=1个平角+1个直角，是一个钝角（大于180°但小于360°，实际上270°是优角）。', label: '综合例题', animationType: 'bounce' },
+          { type: 'example', content: '综合例题：一个角是直角的3倍，它是270°的角。270°=180°+90°=1个平角+1个直角，是一个优角（大于180°且小于360°）。', label: '综合例题', animationType: 'bounce' },
           { type: 'tip', content: '检测要点：线的辨认+角的度量+画角，注意区分三种线和五种角！', label: '检测提示', animationType: 'pulse' },
           { type: 'animation', content: '角线达人通关动画', animationType: 'sceneBuild',
             animationConfig: {
@@ -969,7 +991,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范综合题：辨认三种线、量角、画角，展示完整解题过程。',
         weDo: '亲子一起练习，互相出题检查，查漏补缺。',
         youDo: '孩子独立完成角与线综合测试，争取正确率80%以上。',
-        parentTips: '线的辨认+角的度量+画角，正确率达到80%以上为通过。注意孩子对量角器使用的掌握。',
+        parentTips: '【家长预习】综合检测线和角，重点看量角器使用。\n共学四步：\n①对话出题：问"量角器怎么用？角分哪几类？"\n②孩子应答："中心对顶点0度线对一边另一边读度数，锐直钝平周五类"\n③答错引导：拿量角器让孩子重新量错题中的角\n④快速检测：辨认射线、量一个角、画一个钝角',
         funElement: '歇后语：井底之蛙——目光短浅（看不到大角）。笑话：角对量角器说——别量了，我自己知道多大！小游戏：角线知识抢答赛！',
         gsapAnimations: [
           '[GSAP:confetti|通关撒花|2s|正确率≥80%|power1.out|particleCount:40]',
@@ -1055,6 +1077,8 @@ export const mathGrade4: Unit[] = [
         title: '三位数乘两位数笔算',
         order: 1,
         teachingMethod: 'CPA·P→A：图示→竖式',
+        learningObjective: '我能用竖式计算三位数乘两位数',
+        successCriteria: '①能正确列竖式 ②能处理对齐和进位',
         content: [
           { type: 'text', content: '三位数乘两位数怎么算？关键是用竖式分步计算：先用两位数个位上的数乘三位数，再用十位上的数乘三位数，最后把两次的积相加。', animationType: 'reveal' },
           { type: 'example', content: '145×12：先用个位2乘145得290，再用十位1乘145得145（末尾对十位），最后290+1450=1740。', label: '竖式示范', animationType: 'bounce' },
@@ -1080,11 +1104,12 @@ export const mathGrade4: Unit[] = [
           },
           { type: 'text', content: '验算方法：可以交换两个因数的位置再乘一遍，或者用计算器验算。', animationType: 'reveal' },
           { type: 'tip', content: '对齐口诀：个位对个位，十位对十位，百位对百位，错位加起来！', label: '对齐口诀', animationType: 'pulse' },
+          { type: 'tip', content: '先用个位乘再用十位乘，十位积末尾对十位，进位别忘了加', label: '助记口诀', animationType: 'pulse' },
         ],
         iDo: '家长示范竖式145×12：先乘个位再乘十位，强调十位积末尾对十位，最后相加。',
         weDo: '亲子一起做竖式，家长出题，孩子做竖式，互相检查对齐和计算。',
         youDo: '孩子独立做竖式，完成三位数乘两位数的笔算练习。',
-        parentTips: '先乘个位再乘十位，十位积末尾对十位。强调对齐和进位不要遗漏。',
+        parentTips: '【家长预习】先用个位乘再用十位乘，十位积末尾对十位，进位别忘加。\n共学四步：\n①对话出题：问"134×16竖式怎么算？"\n②孩子应答："先用6乘134得804，再用十位1乘134得134对齐十位，相加2144"\n③答错引导：竖式分两步，个位积从个位对齐，十位积从十位对齐，再相加\n④快速检测：225×14=？、176×23=？、312×45=？',
         funElement: '笑话：竖式对横式说——站直了才算清楚！歇后语：一步一个脚印——踏踏实实。小游戏：竖式PK赛，看谁算得快又对！',
         gsapAnimations: [
           '[GSAP:verticalCalc|145×12竖式逐步计算|2s|点击播放|power2.out]',
@@ -1161,6 +1186,8 @@ export const mathGrade4: Unit[] = [
         title: '因数中间或末尾有0的乘法',
         order: 2,
         teachingMethod: '支架式',
+        learningObjective: '我能计算因数中间或末尾有0的乘法',
+        successCriteria: '①能处理末尾有0的乘法 ②能处理中间有0的乘法',
         content: [
           { type: 'text', content: '当因数中间或末尾有0时，怎么算呢？末尾有0可以先不算0，最后添上；中间有0时要照常乘。', animationType: 'reveal' },
           { type: 'example', content: '106×30：先算106×3=318，再在末尾添1个0，得3180。250×40：先算25×4=100，再添2个0，得10000。', label: '含0乘法', animationType: 'bounce' },
@@ -1190,7 +1217,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范106×30和250×40的竖式，讲解末尾0和中间0的不同处理方法。',
         weDo: '亲子一起做含0乘法，家长出题，孩子计算，互相检查0的处理。',
         youDo: '孩子独立做含0乘法竖式练习。',
-        parentTips: '末尾有0先不算0，最后添上；中间有0要乘，0乘任何数都得0。',
+        parentTips: '【家长预习】末尾有0先不算0最后添上，中间有0要乘0乘任何数得0。\n共学四步：\n①对话出题：问"360×25怎么简便算？"\n②孩子应答："先算36×25=900，再补一个0得9000"\n③答错引导：末尾0先不算，算完几个0补几个0；中间0必须乘\n④快速检测：204×30=？、450×12=？、308×50=？',
         funElement: '笑话：0说——别小看我，乘出来我可重要了！歇后语：画蛇添足——多此一举（但添0不是）。小游戏：0的处理挑战赛！',
         gsapAnimations: [
           '[GSAP:verticalCalc|250×40竖式（0的特殊处理）|2s|点击播放|power2.out]',
@@ -1267,6 +1294,8 @@ export const mathGrade4: Unit[] = [
         title: '积的变化规律',
         order: 3,
         teachingMethod: '探究式：发现规律',
+        learningObjective: '我能发现并运用积的变化规律',
+        successCriteria: '①能说出积的变化规律 ②能运用规律计算',
         content: [
           { type: 'text', content: '乘法中隐藏着有趣的规律！当一个因数变化时，积会怎么变化呢？让我们一起来探究！', animationType: 'reveal' },
           { type: 'example', content: '观察：3×4=12，6×4=24，12×4=48。一个因数4不变，另一个因数从3变到6（乘2），积从12变到24（也乘2）。', label: '发现规律', animationType: 'bounce' },
@@ -1292,7 +1321,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范一组题发现规律：3×4=12→6×4=24→12×4=48，引导孩子观察因数和积的变化关系。',
         weDo: '亲子一起探究规律，家长出题组，孩子发现规律并验证。',
         youDo: '孩子独立应用规律，快速计算相关的乘法题。',
-        parentTips: '一个因数不变，另一个因数乘几，积也乘几。引导孩子发现规律而非死记。',
+        parentTips: '【家长预习】一个因数不变，另一个因数乘几，积也乘几。\n共学四步：\n①对话出题：问"3×5=15，那30×5等于几？为什么？"\n②孩子应答："30×5=150，一个因数5不变，3变30乘了10，积也乘10"\n③答错引导：列两组算式对比，因数怎么变积就怎么变\n④快速检测：4×6=24则40×6=？、一个因数不变另一个乘3积怎么变',
         funElement: '笑话：积说——因数变大我也变大，跟着走准没错！歇后语：水涨船高——跟着涨。小游戏：积的变化找规律，填数挑战！',
         gsapAnimations: [
           '[GSAP:timeline|因数变化→积变化对应展示|1.5s|点击播放|power2.out]',
@@ -1369,6 +1398,8 @@ export const mathGrade4: Unit[] = [
         title: '乘法应用题——单价数量总价',
         order: 4,
         teachingMethod: '情境式：模拟购物',
+        learningObjective: '我能用单价数量总价解决购物问题',
+        successCriteria: '①能说出单价数量总价关系 ②能正确列式计算',
         content: [
           { type: 'text', content: '去超市买东西，每件商品的价格叫"单价"，买的件数叫"数量"，一共要付的钱叫"总价"。它们之间有什么关系呢？', animationType: 'reveal' },
           { type: 'example', content: '每本笔记本15元（单价），买12本（数量），一共15×12=180元（总价）。', label: '购物例子', animationType: 'bounce' },
@@ -1396,7 +1427,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长模拟购物算总价：拿出商品和价格，示范单价×数量=总价的计算过程。',
         weDo: '亲子一起算购物问题，模拟超市买东西，计算总价。',
         youDo: '孩子独立解决购物问题，用单价×数量=总价解题。',
-        parentTips: '单价×数量=总价。让孩子在实际购物场景中理解三者关系。',
+        parentTips: '【家长预习】单价乘数量等于总价，总价除以数量等于单价。\n共学四步：\n①对话出题：每本12元买15本，问"共几元？"\n②孩子应答："12×15=180元，单价乘数量等于总价"\n③答错引导：用购物场景，一本12元15本就是12×15\n④快速检测：每支8元买20支共几元、180元买15本每本几元、总价240元单价12元买几个',
         funElement: '笑话：收银员说——你买这么多，总价很大哦！歇后语：买卖不成仁义在——别光算钱。小游戏：超市小当家，算总价比赛！',
         gsapAnimations: [
           '[GSAP:sceneBuild|购物场景：商品+价格+数量→总价|1.5s|点击播放|power2.out]',
@@ -1473,6 +1504,8 @@ export const mathGrade4: Unit[] = [
         title: '乘法综合检测',
         order: 5,
         teachingMethod: '形成性评价',
+        learningObjective: '我能综合运用乘法知识完成测评',
+        successCriteria: '①测评正确率达85%以上 ②能正确处理竖式和0',
         content: [
           { type: 'text', content: '这单元我们学了三位数乘两位数的笔算、含0乘法、积的变化规律和乘法应用题。来检测一下吧！', animationType: 'reveal' },
           { type: 'formula', content: '知识要点：①笔算法则（对齐+分步） ②含0乘法（末尾添0/中间照乘） ③积的变化规律 ④单价×数量=总价', label: '知识总结', animationType: 'typewriter' },
@@ -1497,7 +1530,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范综合题：竖式笔算、含0乘法、积的变化规律和应用题的完整解题过程。',
         weDo: '亲子一起竞速做题，互相出题检查，查漏补缺。',
         youDo: '孩子独立完成20题综合检测，争取正确率85%以上。',
-        parentTips: '20题综合检测，正确率≥85%为通过。注意孩子的竖式对齐和0处理。',
+        parentTips: '【家长预习】综合检测三位数乘两位数，重点看竖式对齐和0处理。\n共学四步：\n①对话出题：问"竖式乘法十位积怎么对齐？末尾有0怎么办？"\n②孩子应答："十位积从十位对齐，末尾0先不算最后补"\n③答错引导：错题重列竖式，强调对齐和补0\n④快速检测：234×15=？、405×20=？、单价×数量=？',
         funElement: '歇后语：算盘珠子——拨一拨动一动。笑话：乘号说——我转45度就是加号了！小游戏：乘法竞速20题！',
         gsapAnimations: [
           '[GSAP:confetti|通关撒花|2s|正确率≥85%|power1.out|particleCount:40]',
@@ -1584,6 +1617,8 @@ export const mathGrade4: Unit[] = [
         title: '垂直与平行',
         order: 1,
         teachingMethod: 'CPA·C→P：实物→图示→符号',
+        learningObjective: '我能理解平行和垂直的概念',
+        successCriteria: '①能说出平行和垂直的定义 ②能判断平行和垂直',
         content: [
           { type: 'text', content: '在同一平面内，两条直线的位置关系有两种：相交和平行。相交中有一种特殊情况叫垂直。', animationType: 'reveal' },
           { type: 'example', content: '平行：两条直线永不相交（如铁轨）。垂直：两条直线相交成直角（如十字路口的交叉线）。', label: '平行与垂直', animationType: 'bounce' },
@@ -1603,11 +1638,12 @@ export const mathGrade4: Unit[] = [
           },
           { type: 'text', content: '垂直的记法：如果直线a和直线b互相垂直，记作a⊥b，读作"a垂直于b"。它们的交点O叫做垂足。', animationType: 'reveal' },
           { type: 'tip', content: '生活中的平行：斑马线、铁轨、书桌对边。生活中的垂直：墙角、十字路口、三角板的直角边。', label: '生活举例', animationType: 'pulse' },
+          { type: 'tip', content: '同一平面不相交是平行，相交成直角是垂直，点到直线垂线段最短', label: '助记口诀', animationType: 'pulse' },
         ],
         iDo: '家长用两根木条演示平行和垂直：平行时木条不相交，垂直时木条成直角相交。',
         weDo: '亲子一起找教室/家里的平行和垂直，互相说一说。',
         youDo: '孩子独立辨认平行和垂直，画出平行线和垂线。',
-        parentTips: '不相交=平行，成直角=垂直。强调"同一平面内"的前提。',
+        parentTips: '【家长预习】同一平面内不相交是平行，成直角是垂直。\n共学四步：\n①对话出题：拿两支笔摆成平行问"这叫什么？摆成十字呢？"\n②孩子应答："平行，十字是垂直"\n③答错引导：平行线永不相交，垂直是相交成90度直角，用三角板比\n④快速检测：找教室里的平行线、找垂直线、判断两线关系',
         funElement: '笑话：平行线说——我们永远不相见！垂直线说——我们只成直角见！歇后语：铁轨上的火车——各走各的道。小游戏：找平行垂直大搜索！',
         gsapAnimations: [
           '[GSAP:shapeDraw|两条线平行/相交/垂直绘制|1s|点击|power2.out]',
@@ -1684,6 +1720,8 @@ export const mathGrade4: Unit[] = [
         title: '画垂线和平行线',
         order: 2,
         teachingMethod: 'EDI：示范→合作→独立',
+        learningObjective: '我能用三角板画垂线和平行线',
+        successCriteria: '①能画已知直线的垂线 ②能画已知直线的平行线',
         content: [
           { type: 'text', content: '学会了辨认平行和垂直，现在来学画垂线和平行线。主要工具是三角板和直尺！', animationType: 'reveal' },
           { type: 'example', content: '画垂线：把三角板的一条直角边对准已知直线，另一条直角边过已知点画线。画平行线：用三角板和直尺配合，沿直尺平移三角板画线。', label: '画法示范', animationType: 'bounce' },
@@ -1707,7 +1745,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范用三角板画垂线和平行线：一直角边对准已知线，另一边画线；用直尺配合平移画平行线。',
         weDo: '亲子一起画垂线和平行线，互相检查画法。',
         youDo: '孩子独立画垂线和平行线，过点画已知直线的垂线。',
-        parentTips: '三角板画垂线：一直角边对准已知线，另一边画线。点到直线的距离是最短的垂直线段。',
+        parentTips: '【家长预习】画垂线：三角板一直角边对准已知线，另一边画线。\n共学四步：\n①对话出题：画一条线问"怎么过这点画它的垂线？"\n②孩子应答："三角板一直角边对准线，另一直角边过点画线"\n③答错引导：家长示范用三角板画垂线，一直角边贴线另一直角边过点\n④快速检测：画一条垂线、画一条平行线、过点画已知线的垂线',
         funElement: '笑话：三角板说——我天生就有直角，画垂线我最行！歇后语：比着葫芦画瓢——照着来。小游戏：画线小能手PK赛！',
         gsapAnimations: [
           '[GSAP:shapeDraw|画垂线过程动画|1.5s|点击播放|power1.inOut]',
@@ -1784,6 +1822,8 @@ export const mathGrade4: Unit[] = [
         title: '平行四边形的认识',
         order: 3,
         teachingMethod: 'CPA·C→P',
+        learningObjective: '我能认识平行四边形的特征',
+        successCriteria: '①能说出平行四边形对边平行且相等 ②能画出平行四边形的高',
         content: [
           { type: 'text', content: '两组对边分别平行的四边形叫做平行四边形。它有什么特征呢？', animationType: 'reveal' },
           { type: 'example', content: '平行四边形的特征：两组对边分别平行且相等，对角相等，容易变形（不稳定性）。', label: '认识特征', animationType: 'bounce' },
@@ -1807,7 +1847,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长用四根木条组成平行四边形，让孩子摸实物认特征，再推动变形展示不稳定性。',
         weDo: '亲子一起认特征，找生活中的平行四边形，互相说一说。',
         youDo: '孩子独立辨认平行四边形，画高标底。',
-        parentTips: '对边平行且相等，对角相等。不稳定性是平行四边形的重要特征。',
+        parentTips: '【家长预习】平行四边形对边平行且相等，对角相等，易变形。\n共学四步：\n①对话出题：拿一个活动框架问"这是什么图形？有什么特点？"\n②孩子应答："平行四边形，对边平行且相等"\n③答错引导：用尺子量对边一样长，用三角板比对边平行，拉框架看变形\n④快速检测：平行四边形对边怎样、画平行四边形的高、数平行四边形有几个角',
         funElement: '笑话：平行四边形说——我推一下就变形了！歇后语：伸缩门——能大能小。小游戏：找平行四边形大搜索！',
         gsapAnimations: [
           '[GSAP:shapeDraw|平行四边形逐步绘制+标注对边对角|1.5s|点击播放|power2.out]',
@@ -1884,6 +1924,8 @@ export const mathGrade4: Unit[] = [
         title: '梯形的认识',
         order: 4,
         teachingMethod: 'CPA·C→P',
+        learningObjective: '我能认识梯形的特征',
+        successCriteria: '①能说出梯形只有一组对边平行 ②能指出梯形各部分名称',
         content: [
           { type: 'text', content: '只有一组对边平行的四边形叫做梯形。和平行四边形不同，梯形只有一组对边平行！', animationType: 'reveal' },
           { type: 'example', content: '梯形中平行的一组边叫上底和下底，不平行的一组边叫腰。两腰相等的梯形叫等腰梯形，有一个直角的梯形叫直角梯形。', label: '认识梯形', animationType: 'bounce' },
@@ -1907,7 +1949,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长用木条组成梯形，让孩子认特征：只有一组对边平行，认识上底下底腰和高。',
         weDo: '亲子一起认特征，找生活中的梯形（如大坝截面），互相说一说。',
         youDo: '孩子独立辨认梯形，画高标底，区分等腰和直角梯形。',
-        parentTips: '只有一组对边平行的四边形是梯形。认识上底、下底、腰、高。',
+        parentTips: '【家长预习】梯形只有一组对边平行，上底下底两条腰。\n共学四步：\n①对话出题：画一个梯形问"这是什么图形？平行的两边叫什么？"\n②孩子应答："梯形，平行的叫上底和下底，不平行的叫腰"\n③答错引导：对比平行四边形（两组对边平行）和梯形（只有一组），标出上下底和腰\n④快速检测：梯形有几组对边平行、指出上底下底、梯形的高怎么画',
         funElement: '笑话：梯形说——我只有一组对边平行，但我也很稳定！歇后语：大坝截流——一堵到底。小游戏：梯形辨认挑战赛！',
         gsapAnimations: [
           '[GSAP:shapeDraw|梯形绘制+标注上底下底高|1.5s|点击播放|power2.out]',
@@ -1984,6 +2026,8 @@ export const mathGrade4: Unit[] = [
         title: '四边形综合检测',
         order: 5,
         teachingMethod: '形成性评价',
+        learningObjective: '我能综合运用平行四边形和梯形知识完成测评',
+        successCriteria: '①测评正确率达80%以上 ②能区分两种四边形',
         content: [
           { type: 'text', content: '这单元我们学了垂直与平行、画垂线和平行线、平行四边形和梯形。来检测一下掌握情况吧！', animationType: 'reveal' },
           { type: 'formula', content: '知识要点：①平行与垂直的定义 ②画垂线和平行线 ③平行四边形（两组对边平行） ④梯形（一组对边平行）', label: '知识总结', animationType: 'typewriter' },
@@ -2008,7 +2052,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范综合题：辨认四边形、画高、区分平行四边形和梯形。',
         weDo: '亲子一起分类游戏，互相出题检查，查漏补缺。',
         youDo: '孩子独立完成四边形综合测试，争取正确率80%以上。',
-        parentTips: '平行四边形+梯形辨认和画图，正确率≥80%为通过。注意区分两种四边形。',
+        parentTips: '【家长预习】综合检测四边形，重点看区分平行四边形和梯形。\n共学四步：\n①对话出题：问"平行四边形和梯形有什么不同？"\n②孩子应答："平行四边形两组对边平行，梯形只有一组"\n③答错引导：画两种图形对比对边平行情况\n④快速检测：辨认平行四边形、辨认梯形、画平行四边形的高',
         funElement: '歇后语：盲人摸象——以偏概全（别只看一条边就判断）。笑话：梯形对平行四边形说——你比我多一组平行边！小游戏：四边形分类大挑战！',
         gsapAnimations: [
           '[GSAP:confetti|通关撒花|2s|正确率≥80%|power1.out|particleCount:40]',
@@ -2094,6 +2138,8 @@ export const mathGrade4: Unit[] = [
         title: '口算除法——整十数除法',
         order: 1,
         teachingMethod: 'Mental Math',
+        learningObjective: '我能口算除数是整十数的除法',
+        successCriteria: '①能口算除数是整十数的除法 ②能想乘法算除法',
         content: [
           { type: 'text', content: '除数是整十数的除法可以口算！方法是想乘法算除法，或者利用表内除法。', animationType: 'reveal' },
           { type: 'example', content: '60÷20=？想：20×3=60，所以60÷20=3。也可以想：6÷2=3，所以60÷20=3。', label: '口算示范', animationType: 'bounce' },
@@ -2109,11 +2155,12 @@ export const mathGrade4: Unit[] = [
           },
           { type: 'text', content: '估算方法：把被除数或除数看成接近的整十数。如143÷20≈7（140÷20=7）。', animationType: 'reveal' },
           { type: 'tip', content: '口算口诀：想乘算除最直接，去零算表再添零，整十除法不害怕！', label: '口算口诀', animationType: 'pulse' },
+          { type: 'tip', content: '除数整十想表内，去零算再补零，想乘法算除法最简便', label: '助记口诀', animationType: 'pulse' },
         ],
         iDo: '家长示范60÷20=3：想20×3=60，或6÷2=3。示范有余数的口算。',
         weDo: '亲子一起做口算，家长出题，孩子口算，互相检查。',
         youDo: '孩子独立口算整十数除法，快速说出结果。',
-        parentTips: '60÷20想6÷2=3。教孩子想乘法算除法，或去零算表内除法。',
+        parentTips: '【家长预习】60÷20想6÷2=3，去零算表内除法，想乘法算除法。\n共学四步：\n①对话出题：问"60÷20怎么口算？"\n②孩子应答："想6÷2=3，所以60÷20=3"或"想20×3=60所以等于3"\n③答错引导：去零想表内除法，或想几乘20等于60\n④快速检测：80÷40=？、150÷50=？、90÷30=？',
         funElement: '笑话：60对20说——你装了我3次！歇后语：一分为二——干脆利落。小游戏：口算除法抢答赛！',
         gsapAnimations: [
           '[GSAP:numberCount|60÷20分解动画|0.8s|点击|power2.out]',
@@ -2190,6 +2237,8 @@ export const mathGrade4: Unit[] = [
         title: '笔算除法——两位数除法',
         order: 2,
         teachingMethod: 'CPA·P→A：图示→竖式',
+        learningObjective: '我能用竖式计算除数是两位数的除法',
+        successCriteria: '①能正确试商 ②能保证余数比除数小',
         content: [
           { type: 'text', content: '除数是两位数的笔算除法，关键步骤是"试商"——想被除数里最多有几个除数。', animationType: 'reveal' },
           { type: 'example', content: '92÷30=3……2：想92里最多有几个30，3×30=90最接近，92-90=2，余数2<30，所以92÷30=3……2。', label: '竖式示范', animationType: 'bounce' },
@@ -2216,7 +2265,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范92÷30竖式：试商3，3×30=90，余数2，强调余数要比除数小。',
         weDo: '亲子一起做竖式，家长出题，孩子做竖式，互相检查试商和余数。',
         youDo: '孩子独立做两位数除法竖式练习。',
-        parentTips: '试商：想被除数里最多有几个除数。余数必须比除数小。检查：商×除数+余数=被除数。',
+        parentTips: '【家长预习】试商想被除数里最多有几个除数，余数必须比除数小。\n共学四步：\n①对话出题：问"92÷23怎么竖式算？"\n②孩子应答："想23×4=92，商4，92-92=0"\n③答错引导：想几乘23接近92，试商后检查余数要比除数小\n④快速检测：144÷24=？、196÷28=？、验证商×除数+余数=被除数',
         funElement: '笑话：除号说——我是横过来的减号！歇后语：心中有数——不慌不忙。小游戏：试商小达人，看谁商得准！',
         gsapAnimations: [
           '[GSAP:timeline|92÷30竖式逐步计算|2s|点击播放|power2.out]',
@@ -2294,6 +2343,8 @@ export const mathGrade4: Unit[] = [
         title: '四舍五入试商法',
         order: 3,
         teachingMethod: '支架式：试商策略',
+        learningObjective: '我能用四舍五入法试商',
+        successCriteria: '①能把除数四舍五入试商 ②能根据余数调商',
         content: [
           { type: 'text', content: '当除数不是整十数时，试商变得困难。这时可以用"四舍五入法"把除数看成接近的整十数来试商。', animationType: 'reveal' },
           { type: 'example', content: '196÷39：把39用四舍五入看作40，196÷40≈4，试商4。但39×4=156，196-156=40>39，商小了，调商为5。39×5=195，196-195=1，余数1<39，所以196÷39=5……1。', label: '试商示范', animationType: 'bounce' },
@@ -2320,7 +2371,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范四舍五入试商：39≈40，试商4，发现商小调为5。讲解四舍和五入的不同调商方向。',
         weDo: '亲子一起试商，家长出题，孩子试商并调整，互相检查。',
         youDo: '孩子独立试商计算，完成需要调整商的除法题。',
-        parentTips: '除数四舍五入到整十数再试商。四舍商可能偏大，五入商可能偏小，要根据余数调整。',
+        parentTips: '【家长预习】除数四舍五入到整十数试商，四舍商偏大五入商偏小。\n共学四步：\n①对话出题：问"168÷32怎么试商？"\n②孩子应答："32约等于30，168÷30试5，32×5=160余8，商5余8"\n③答错引导：把除数32看成30试商，试完检查余数比除数小\n④快速检测：234÷39=？、156÷28=？、四舍试商商偏大还是偏小',
         funElement: '笑话：试商说——我先猜一个，不对再改！歇后语：摸着石头过河——边走边试。小游戏：试商大冒险，看谁调得快！',
         gsapAnimations: [
           '[GSAP:timeline|试商过程：四舍五入→试商→调整→确认|1.5s|点击播放|power2.inOut]',
@@ -2397,6 +2448,8 @@ export const mathGrade4: Unit[] = [
         title: '除法应用题——速度时间路程',
         order: 4,
         teachingMethod: '情境式：出行场景',
+        learningObjective: '我能用速度时间路程解决出行问题',
+        successCriteria: '①能说出速度时间路程关系 ②能正确列式计算',
         content: [
           { type: 'text', content: '出行时，速度、时间和路程之间有什么关系呢？速度×时间=路程，这是出行中最常用的公式！', animationType: 'reveal' },
           { type: 'example', content: '一辆汽车每小时行60千米（速度），行驶4小时（时间），路程=60×4=240千米。', label: '出行例子', animationType: 'bounce' },
@@ -2424,7 +2477,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长模拟出行算路程：给出速度和时间，示范速度×时间=路程的计算。',
         weDo: '亲子一起算出行问题，模拟开车出行场景。',
         youDo: '孩子独立解决出行问题，用速度×时间=路程解题。',
-        parentTips: '速度×时间=路程。让孩子在实际出行场景中理解三者关系。',
+        parentTips: '【家长预习】速度乘时间等于路程，路程除以时间等于速度。\n共学四步：\n①对话出题：每时行60千米行4时，问"路程多少？"\n②孩子应答："60×4=240千米，速度乘时间等于路程"\n③答错引导：用出行场景，每时60千米4时就是60×4\n④快速检测：每分70米走5分走几米、240千米4时每时几千米、路程÷速度=？',
         funElement: '笑话：汽车说——跑得快用时少！歇后语：快马加鞭——加速前进。小游戏：出行规划师，算路程比赛！',
         gsapAnimations: [
           '[GSAP:sceneBuild|出行场景：车+速度+时间→路程|1.5s|点击播放|power2.out]',
@@ -2501,6 +2554,8 @@ export const mathGrade4: Unit[] = [
         title: '除法综合检测',
         order: 5,
         teachingMethod: '形成性评价',
+        learningObjective: '我能综合运用除法知识完成测评',
+        successCriteria: '①测评正确率达85%以上 ②能正确试商和验算',
         content: [
           { type: 'text', content: '这单元我们学了口算除法、笔算除法、四舍五入试商法和除法应用题。来检测一下吧！', animationType: 'reveal' },
           { type: 'formula', content: '知识要点：①口算整十数除法 ②笔算两位数除法（余数<除数） ③四舍五入试商法 ④速度×时间=路程', label: '知识总结', animationType: 'typewriter' },
@@ -2525,7 +2580,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范综合题：口算、笔算、试商和除法应用题的完整解题过程。',
         weDo: '亲子一起竞速做题，互相出题检查，查漏补缺。',
         youDo: '孩子独立完成20题综合检测，争取正确率85%以上。',
-        parentTips: '20题综合检测，正确率≥85%为通过。注意试商和余数。',
+        parentTips: '【家长预习】综合检测除法，重点看试商和余数。\n共学四步：\n①对话出题：问"试商怎么试？余数有什么要求？"\n②孩子应答："四舍五入试商，余数比除数小"\n③答错引导：错题重新试商，检查余数和验算\n④快速检测：168÷32=？、234÷39=？、验算商×除数+余数',
         funElement: '歇后语：算账先生——一分不差。笑话：除号说——我是横线加两个点，上面下面都有份！小游戏：除法竞速20题！',
         gsapAnimations: [
           '[GSAP:confetti|通关撒花|2s|正确率≥85%|power1.out|particleCount:40]',
@@ -2613,6 +2668,8 @@ export const mathGrade4: Unit[] = [
         title: '小数的产生和意义',
         order: 1,
         teachingMethod: 'CPA·C→P：分米厘米毫米→小数',
+        learningObjective: '我能理解小数的意义',
+        successCriteria: '①能用小数表示不够1的部分 ②能说出小数各数位',
         content: [
           { type: 'text', content: '在测量时，常常得不到整数结果，这就需要用小数来表示。小数到底表示什么呢？', animationType: 'reveal' },
           { type: 'example', content: '1分米=0.1米（把1米平均分成10份，1份是1/10米=0.1米）。1厘米=0.01米（把1米平均分成100份，1份是1/100米=0.01米）。', label: '小数的意义', animationType: 'bounce' },
@@ -2635,11 +2692,12 @@ export const mathGrade4: Unit[] = [
           },
           { type: 'text', content: '小数的计数单位：十分之一（0.1）、百分之一（0.01）、千分之一（0.001）……每相邻两个计数单位之间的进率是10。', animationType: 'reveal' },
           { type: 'tip', content: '理解关键：小数就是特殊的分数。0.3=3/10，0.25=25/100，0.125=125/1000。', label: '小数与分数', animationType: 'pulse' },
+          { type: 'tip', content: '不够一用小数，1分米等于0.1米，1厘米等于0.01米', label: '助记口诀', animationType: 'pulse' },
         ],
         iDo: '家长用米尺演示1分米=0.1米，1厘米=0.01米，让孩子用小数表示测量结果。',
         weDo: '亲子一起量物品，用小数表示测量结果，互相检查。',
         youDo: '孩子独立用小数表示测量结果，理解小数的意义。',
-        parentTips: '从测量出发理解小数：不够1用小数。1分米=0.1米，1厘米=0.01米。',
+        parentTips: '【家长预习】不够1用小数，1分米=0.1米，1厘米=0.01米。\n共学四步：\n①对话出题：用米尺问"1分米是几米？写成小数呢？"\n②孩子应答："1分米=0.1米"\n③答错引导：1米=10分米，1分米是1/10米=0.1米，用尺子让孩子看\n④快速检测：3分米=几米、5厘米=几米、小数点后第一位是什么位',
         funElement: '笑话：小数点说——我虽小，但位置很重要！歇后语：差之毫厘——谬以千里。小游戏：量一量说小数！',
         gsapAnimations: [
           '[GSAP:sceneBuild|米尺逐步展开：米→分米→厘米|1.5s|点击播放|power2.out]',
@@ -2716,6 +2774,8 @@ export const mathGrade4: Unit[] = [
         title: '小数的读写和组成',
         order: 2,
         teachingMethod: 'EDI：示范→合作→独立',
+        learningObjective: '我能正确读写小数',
+        successCriteria: '①能正确读小数 ②能正确写小数',
         content: [
           { type: 'text', content: '小数怎么读怎么写呢？整数部分按整数读，小数点读"点"，小数部分逐位读。', animationType: 'reveal' },
           { type: 'example', content: '3.14读作：三点一四。0.25读作：零点二五。整数部分是0时读"零"。', label: '小数读写', animationType: 'bounce' },
@@ -2735,7 +2795,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范读写小数：3.14读作三点一四，0.25读作零点二五。强调小数部分逐位读。',
         weDo: '亲子一起读写小数，家长写数，孩子读出来，互相检查。',
         youDo: '孩子独立读写小数，说出小数的组成。',
-        parentTips: '整数部分按整数读，点读"点"，小数部分逐位读。注意小数部分不能按整数读。',
+        parentTips: '【家长预习】整数部分按整数读，点读点，小数部分逐位读。\n共学四步：\n①对话出题：问"3.14怎么读？"\n②孩子应答："三点一四"\n③答错引导：整数部分按整数读三点，小数部分逐位读一四，不能读成三点十四\n④快速检测：读0.05、读12.36、写"零点八五"',
         funElement: '笑话：小数点说——我就是个点，但少了我数字就乱套了！歇后语：一点不差——非常精确。小游戏：小数读写接龙！',
         gsapAnimations: [
           '[GSAP:numberCount|小数逐位出现：3.14→3+点+1+4|0.8s|点击|power2.out]',
@@ -2813,6 +2873,8 @@ export const mathGrade4: Unit[] = [
         title: '小数的性质——末尾0不变',
         order: 3,
         teachingMethod: '探究式：发现规律',
+        learningObjective: '我能理解小数的性质',
+        successCriteria: '①能说出小数末尾添0去0大小不变 ②能化简小数',
         content: [
           { type: 'text', content: '小数有一个奇妙的性质：在小数的末尾添上0或去掉0，小数的大小不变！', animationType: 'reveal' },
           { type: 'example', content: '0.1=0.10=0.100。比较大小：0.1元=1角，0.10元=10分=1角，所以0.1=0.10。', label: '小数性质', animationType: 'bounce' },
@@ -2838,7 +2900,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范0.1=0.10=0.100，用元角分验证。再示范化简小数和添0的方法。',
         weDo: '亲子一起验证性质，化简和添0练习，互相检查。',
         youDo: '孩子独立应用性质，化简小数和按要求添0。',
-        parentTips: '小数末尾添上或去掉0，大小不变。强调"末尾"的0，中间的0不能动。',
+        parentTips: '【家长预习】小数末尾添上或去掉0大小不变，中间的0不能动。\n共学四步：\n①对话出题：问"0.3和0.30大小一样吗？为什么？"\n②孩子应答："一样，0.30末尾的0去掉等于0.3"\n③答错引导：画图0.3和0.30都表示十分之三，末尾0不影响大小\n④快速检测：化简0.40、化简1.50、0.3和0.03一样吗',
         funElement: '笑话：0说——在小数末尾我多一个少一个都一样！歇后语：换汤不换药——本质没变。小游戏：添0去0大挑战！',
         gsapAnimations: [
           '[GSAP:timeline|0.1→0.10→0.100依次出现用等号连接|1s|点击播放|power2.out]',
@@ -2915,6 +2977,8 @@ export const mathGrade4: Unit[] = [
         title: '小数大小比较和改写',
         order: 4,
         teachingMethod: '支架式',
+        learningObjective: '我能比较小数大小并进行单位换算',
+        successCriteria: '①能比较小数大小 ②能进行小数单位换算',
         content: [
           { type: 'text', content: '小数怎么比较大小呢？方法和整数类似：从高位比起，但要注意小数位数多不一定大！', animationType: 'reveal' },
           { type: 'example', content: '比较3.25和3.28：整数部分都是3，十分位都是2，百分位5<8，所以3.25<3.28。', label: '比较示范', animationType: 'bounce' },
@@ -2939,7 +3003,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范比较和改写单位：先比整数部分，再比小数部分从高到低。示范单位换算。',
         weDo: '亲子一起比较和改写，家长出题，孩子比较大小并改写单位。',
         youDo: '孩子独立比较和改写小数，完成练习。',
-        parentTips: '先比整数部分，再比小数部分从高到低。大化小乘进率，小化大除进率。',
+        parentTips: '【家长预习】先比整数部分，再比小数部分从高到低，大化小乘进率小化大除进率。\n共学四步：\n①对话出题：问"3.5和3.48谁大？怎么比？"\n②孩子应答："整数部分都是3，比十分位5大于4，3.5大"\n③答错引导：整数部分相同比十分位，十分位相同比百分位，逐位比\n④快速检测：比较0.6和0.58、3分米=几米、0.5米=几厘米',
         funElement: '笑话：0.3对0.28说——别以为你位数多就比我大！歇后语：棋逢对手——不相上下。小游戏：小数比大小扑克牌！',
         gsapAnimations: [
           '[GSAP:compare|两个小数对比展示|0.8s|页面加载|power2.out]',
@@ -3016,6 +3080,8 @@ export const mathGrade4: Unit[] = [
         title: '小数综合检测',
         order: 5,
         teachingMethod: '形成性评价',
+        learningObjective: '我能综合运用小数知识完成测评',
+        successCriteria: '①测评正确率达80%以上 ②能理解意义性质比较改写',
         content: [
           { type: 'text', content: '这单元我们学了小数的意义、读写、性质和大小比较。来检测一下掌握情况吧！', animationType: 'reveal' },
           { type: 'formula', content: '知识要点：①小数的意义（分数与小数） ②读写和组成 ③小数的性质（末尾0不变） ④大小比较和单位改写', label: '知识总结', animationType: 'typewriter' },
@@ -3040,7 +3106,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范综合题：意义、读写、性质、比较和改写的完整解题过程。',
         weDo: '亲子一起练习，互相出题检查，查漏补缺。',
         youDo: '孩子独立完成小数综合测试，争取正确率80%以上。',
-        parentTips: '意义+性质+比较+改写，正确率≥80%为通过。注意小数性质的应用。',
+        parentTips: '【家长预习】综合检测小数，重点看性质和比较。\n共学四步：\n①对话出题：问"小数的性质是什么？小数怎么比较大小？"\n②孩子应答："末尾添0去0不变，先比整数再比小数部分"\n③答错引导：错题画图理解，性质强调末尾0，比较逐位比\n④快速检测：化简0.70、比较0.4和0.39、3厘米=几米',
         funElement: '歇后语：一丝不苟——十分精确。笑话：小数点搬家——数字也跟着变！小游戏：小数知识抢答赛！',
         gsapAnimations: [
           '[GSAP:confetti|通关撒花|2s|正确率≥80%|power1.out|particleCount:40]',
@@ -3126,6 +3192,8 @@ export const mathGrade4: Unit[] = [
         title: '小数加法——小数点对齐',
         order: 1,
         teachingMethod: 'CPA·P→A：图示→竖式',
+        learningObjective: '我能用竖式计算小数加法',
+        successCriteria: '①能正确对齐小数点 ②能正确计算小数加法',
         content: [
           { type: 'text', content: '小数加法最重要的规则就是：小数点对齐！小数点对齐了，相同数位自然就对齐了。', animationType: 'reveal' },
           { type: 'example', content: '2.5+3.4=5.9：小数点对齐，十分位5+4=9，个位2+3=5，结果5.9。', label: '小数加法', animationType: 'bounce' },
@@ -3152,11 +3220,12 @@ export const mathGrade4: Unit[] = [
           },
           { type: 'text', content: '验算方法：交换加数位置再加一遍，或者用减法验算（和-一个加数=另一个加数）。', animationType: 'reveal' },
           { type: 'tip', content: '易错提醒：千万不要末尾对齐！是小数点对齐！2.5+3.14不是把5和4对齐，而是小数点对齐。', label: '易错提醒', animationType: 'pulse' },
+          { type: 'tip', content: '小数点对齐再加减，位数不同补0对齐，得数小数点也要对齐', label: '助记口诀', animationType: 'pulse' },
         ],
         iDo: '家长示范2.5+3.4：小数点对齐，十分位加十分位，个位加个位。示范位数不同时补0。',
         weDo: '亲子一起做小数加法，家长出题，孩子做竖式，互相检查小数点对齐。',
         youDo: '孩子独立做小数加法竖式练习。',
-        parentTips: '小数点对齐是关键！位数不同时补0再对齐。得数的小数点也要对齐。',
+        parentTips: '【家长预习】小数点对齐是关键，位数不同补0再对齐，得数小数点也对齐。\n共学四步：\n①对话出题：问"2.5+3.4竖式怎么算？"\n②孩子应答："小数点对齐，5+4=9，2+3=5，得5.9"\n③答错引导：小数点对齐就是相同数位对齐，不是末尾对齐\n④快速检测：1.2+3.6=？、4.5+2.3=？、0.5+0.8=？',
         funElement: '笑话：小数点说——排队要对齐我，别对别人！歇后语：对号入座——各就各位。小游戏：小数点对齐大挑战！',
         gsapAnimations: [
           '[GSAP:verticalCalc|2.5+3.4竖式计算（小数点对齐）|1.5s|点击播放|power2.out]',
@@ -3234,6 +3303,8 @@ export const mathGrade4: Unit[] = [
         title: '小数减法——借位处理',
         order: 2,
         teachingMethod: '支架式',
+        learningObjective: '我能用竖式计算小数减法',
+        successCriteria: '①能正确处理借位 ②能处理整数减小数补0',
         content: [
           { type: 'text', content: '小数减法和小数加法一样，关键也是小数点对齐。退位减法时要注意借位！', animationType: 'reveal' },
           { type: 'example', content: '5.3-2.7=2.6：小数点对齐，十分位3-7不够减，从个位借1，13-7=6，个位4-2=2，结果2.6。', label: '小数减法', animationType: 'bounce' },
@@ -3265,7 +3336,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范5.3-2.7：小数点对齐，十分位借位减。示范10-3.25补0的方法。',
         weDo: '亲子一起做小数减法，家长出题，孩子做竖式，互相检查借位。',
         youDo: '孩子独立做小数减法竖式练习。',
-        parentTips: '小数点对齐，不够减要借位。整数减小数要补0。验算：差+减数=被减数。',
+        parentTips: '【家长预习】小数点对齐，不够减借位，整数减小数要补0。\n共学四步：\n①对话出题：问"5.3-2.7竖式怎么算？"\n②孩子应答："小数点对齐，3不够减7借1变13-7=6，5-1-2=2，得2.6"\n③答错引导：小数点对齐后按整数减法算，不够减向高位借1\n④快速检测：6.4-2.8=？、8-3.5=？、10.2-4.7=？',
         funElement: '笑话：借位说——我先借一个，等会儿还！歇后语：拆东墙补西墙——借来借去。小游戏：借位小达人挑战赛！',
         gsapAnimations: [
           '[GSAP:verticalCalc|5.3-2.7竖式计算（含借位）|1.5s|点击播放|power2.out]',
@@ -3342,6 +3413,8 @@ export const mathGrade4: Unit[] = [
         title: '小数加减混合运算',
         order: 3,
         teachingMethod: 'EDI：示范→合作→独立',
+        learningObjective: '我能计算小数加减混合运算',
+        successCriteria: '①能按顺序计算 ②能用简便方法凑整',
         content: [
           { type: 'text', content: '小数加减混合运算的顺序和整数一样：从左往右算，有括号先算括号里的。', animationType: 'reveal' },
           { type: 'example', content: '2.5+3.4-1.8：先算2.5+3.4=5.9，再算5.9-1.8=4.1。从左往右依次计算。', label: '混合运算', animationType: 'bounce' },
@@ -3368,7 +3441,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范2.5+3.4-1.8：从左往右依次计算。示范简便方法和带括号的运算。',
         weDo: '亲子一起做混合运算，家长出题，孩子计算，互相检查运算顺序。',
         youDo: '孩子独立做小数加减混合运算练习。',
-        parentTips: '从左往右依次算，有括号先算括号。能简便就简便（凑整法）。',
+        parentTips: '【家长预习】从左往右算，有括号先算括号，能凑整就简便。\n共学四步：\n①对话出题：问"3.6+2.8+6.4怎么算简便？"\n②孩子应答："3.6和6.4凑整10，10+2.8=12.8"\n③答错引导：找能凑整的数先算，没有括号从左到右\n④快速检测：2.5+3.7+7.5=？、10-3.2-2.8=？、4.6+(2.3+5.4)=？',
         funElement: '笑话：加减混合运算说——左左右右，先来后到！歇后语：按部就班——一步一步来。小游戏：混合运算接龙赛！',
         gsapAnimations: [
           '[GSAP:timeline|2.5+3.4-1.8逐步计算|1.5s|点击播放|power2.inOut]',
@@ -3445,6 +3518,8 @@ export const mathGrade4: Unit[] = [
         title: '小数加减应用题——购物计算',
         order: 4,
         teachingMethod: '情境式：模拟购物',
+        learningObjective: '我能用小数加减法解决购物问题',
+        successCriteria: '①能算总价和找零 ②能列小数加减算式',
         content: [
           { type: 'text', content: '生活中到处需要小数加减法！买东西算总价用加法，找零用减法，比较价格也用减法。', animationType: 'reveal' },
           { type: 'example', content: '买一支笔3.5元，一个本子4.8元，一共3.5+4.8=8.3元。付10元，找回10-8.3=1.7元。', label: '购物例子', animationType: 'bounce' },
@@ -3472,7 +3547,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长模拟购物：买两件商品算总价，付钱算找零，示范完整购物计算过程。',
         weDo: '亲子一起模拟购物，计算总价和找零。',
         youDo: '孩子独立解决购物问题，用小数加减法解题。',
-        parentTips: '总价用加法，找零用减法。让孩子在实际购物中练习小数加减。',
+        parentTips: '【家长预习】总价用加法，找零用减法，购物中练小数加减。\n共学四步：\n①对话出题：铅笔2.5元橡皮3.8元，问"共几元？给10元找几元？"\n②孩子应答："2.5+3.8=6.3元，10-6.3=3.7元"\n③答错引导：总价用加法2.5+3.8，找零用减法10-6.3\n④快速检测：买3.6元和5.2元共几元、给20元找几元、8.5-3.7=？',
         funElement: '笑话：收银员说——找你1.7元，别丢了！歇后语：买卖公平——一分不差。小游戏：超市收银员体验！',
         gsapAnimations: [
           '[GSAP:sceneBuild|购物场景：商品+价格→总价→找零|1.5s|点击播放|power2.out]',
@@ -3549,6 +3624,8 @@ export const mathGrade4: Unit[] = [
         title: '小数加减综合检测',
         order: 5,
         teachingMethod: '形成性评价',
+        learningObjective: '我能综合运用小数加减法完成测评',
+        successCriteria: '①测评正确率达85%以上 ②能正确对齐小数点和补0',
         content: [
           { type: 'text', content: '这单元我们学了小数加法、减法、混合运算和购物应用题。来检测一下吧！', animationType: 'reveal' },
           { type: 'formula', content: '知识要点：①小数加法（小数点对齐） ②小数减法（借位处理） ③混合运算（从左往右） ④购物应用题', label: '知识总结', animationType: 'typewriter' },
@@ -3573,7 +3650,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范综合题：加法、减法、混合运算和购物应用题的完整解题过程。',
         weDo: '亲子一起竞速做题，互相出题检查，查漏补缺。',
         youDo: '孩子独立完成20题综合检测，争取正确率85%以上。',
-        parentTips: '20题综合检测，正确率≥85%为通过。注意小数点对齐和补0。',
+        parentTips: '【家长预习】综合检测小数加减，重点看小数点对齐和补0。\n共学四步：\n①对话出题：问"小数加减法最关键的一步是什么？"\n②孩子应答："小数点对齐"\n③答错引导：错题重新对齐小数点，位数不同补0\n④快速检测：2.5+3.4=？、5.3-2.7=？、8-3.5=？',
         funElement: '歇后语：精打细算——一分不浪费。笑话：小数点说——算错一位差很多！小游戏：小数加减竞速20题！',
         gsapAnimations: [
           '[GSAP:confetti|通关撒花|2s|正确率≥85%|power1.out|particleCount:40]',
@@ -3661,6 +3738,8 @@ export const mathGrade4: Unit[] = [
         title: '条形统计图的认识',
         order: 1,
         teachingMethod: 'CPA·C→P：数据→图表',
+        learningObjective: '我能认识条形统计图并制作',
+        successCriteria: '①能说出条形统计图三要素 ②能画条形统计图',
         content: [
           { type: 'text', content: '条形统计图是用直条的长短来表示数量多少的统计图。它能让我们一眼看出谁多谁少！', animationType: 'reveal' },
           { type: 'example', content: '统计一周天气：晴3天，雨2天，阴2天。用条形统计图画出来，晴天直条最高，雨天和阴天一样高。', label: '条形统计图', animationType: 'bounce' },
@@ -3683,11 +3762,12 @@ export const mathGrade4: Unit[] = [
           },
           { type: 'text', content: '条形统计图的优点：能直观地看出数量的多少，便于比较。直条越高表示数量越多。', animationType: 'reveal' },
           { type: 'tip', content: '注意：纵轴的刻度要均匀，直条宽度要相同，直条之间的间隔也要相同！', label: '画图注意', animationType: 'pulse' },
+          { type: 'tip', content: '画图四步记心间：画轴标刻度画直条写标题，直条越高数量越多', label: '助记口诀', animationType: 'pulse' },
         ],
         iDo: '家长示范画条形统计图：画轴、标刻度、画直条、写标题，用一周天气数据示范。',
         weDo: '亲子一起画统计图，用家庭数据（如各人年龄）制作条形统计图。',
         youDo: '孩子独立画条形统计图，根据数据画出正确的直条。',
-        parentTips: '条形统计图用直条长短表示数量。强调画图四步：轴、刻度、条、标题。',
+        parentTips: '【家长预习】条形统计图用直条长短表示数量，画图四步：轴刻度条标题。\n共学四步：\n①对话出题：看统计图问"直条越高说明什么？画图分几步？"\n②孩子应答："直条越高数量越多，四步：画轴标刻度画条写标题"\n③答错引导：家长示范画条形图，画轴标刻度根据数据画条写标题\n④快速检测：直条越高说明什么、画图第一步是什么、一格表示几要看哪',
         funElement: '笑话：直条说——我越高说明数量越多！歇后语：一目了然——看一眼就明白。小游戏：数据画图小达人！',
         gsapAnimations: [
           '[GSAP:timeline|条形统计图逐步构建：画轴→标注→画条→完成|1.5s|点击播放|power2.inOut]',
@@ -3764,6 +3844,8 @@ export const mathGrade4: Unit[] = [
         title: '条形统计图的数据分析',
         order: 2,
         teachingMethod: '探究式：分析数据',
+        learningObjective: '我能从条形统计图中分析数据',
+        successCriteria: '①能找出最多最少 ②能算相差和总计',
         content: [
           { type: 'text', content: '会画统计图还不够，还要会分析数据！从条形统计图中可以读出很多信息。', animationType: 'reveal' },
           { type: 'example', content: '四（1）班最喜欢的运动统计图：足球12人，篮球8人，乒乓球10人，羽毛球6人。最多的是足球，最少的是羽毛球。', label: '数据分析', animationType: 'bounce' },
@@ -3790,7 +3872,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范分析条形统计图：找出最多最少，算相差和总计，引导孩子发现信息。',
         weDo: '亲子一起分析统计图，互相提问回答，发现数据中的信息。',
         youDo: '孩子独立分析条形统计图，回答相关问题。',
-        parentTips: '从统计图中找最多最少、算相差和总计。引导孩子主动发现数据信息。',
+        parentTips: '【家长预习】从统计图找最多最少，算相差用减法算总计用加法。\n共学四步：\n①对话出题：看统计图问"哪种最多？最少和最多差几个？"\n②孩子应答："看直条最高的最多，差用减法算"\n③答错引导：直条最高是最多最矮是最少，相差用减法总计用加法\n④快速检测：找最多的项、算两项相差、算四项总计',
         funElement: '笑话：统计图说——看我最高的地方就知道谁最受欢迎！歇后语：心中有数——了如指掌。小游戏：数据侦探大挑战！',
         gsapAnimations: [
           '[GSAP:timeline|数据高亮分析：最多→最少→相差→总计|1.5s|点击播放|power2.out]',
@@ -3867,6 +3949,8 @@ export const mathGrade4: Unit[] = [
         title: '数学广角——优化问题',
         order: 3,
         teachingMethod: '探究式：优化策略',
+        learningObjective: '我能用优化策略解决时间问题',
+        successCriteria: '①能找出能同时做的任务 ②能算出最短总时间',
         content: [
           { type: 'text', content: '生活中有很多事情可以同时做，合理安排时间就是优化！数学广角教我们如何用最少的时间完成任务。', animationType: 'reveal' },
           { type: 'example', content: '煮鸡蛋10分钟 + 烧开水5分钟。如果同时做：烧开水的同时煮鸡蛋，只需10分钟（而不是10+5=15分钟）。', label: '优化例子', animationType: 'bounce' },
@@ -3892,7 +3976,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范优化问题：列出任务，找出能同时做的，算最短时间。用沏茶问题示范。',
         weDo: '亲子一起解决优化问题，模拟家务安排，找最优方案。',
         youDo: '孩子独立解决优化问题，合理安排任务顺序。',
-        parentTips: '能同时做的就同时做，不要排队。找最长任务做主线，其他任务穿插完成。',
+        parentTips: '【家长预习】能同时做的就同时做，找最长任务做主线其他穿插。\n共学四步：\n①对话出题：烧水10分同时扫地5分，问"最少几分完成？"\n②孩子应答："烧水时扫地，10分完成"\n③答错引导：烧水10分是主线，扫地5分在烧水时同时做，所以10分\n④快速检测：煮饭20分同时洗菜8分最少几分、烧水15分同时洗衣10分最少几分',
         funElement: '笑话：时间说——合理安排我就能省出来！歇后语：一心二用——效率高。小游戏：家务优化大挑战！',
         gsapAnimations: [
           '[GSAP:timeline|优化过程：排队做vs同时做对比|1.5s|点击播放|power2.inOut]',
@@ -3969,6 +4053,8 @@ export const mathGrade4: Unit[] = [
         title: '数学广角——排队问题',
         order: 4,
         teachingMethod: '探究式：排队策略',
+        learningObjective: '我能用排队策略解决等待问题',
+        successCriteria: '①能按时间短优先排列 ②能算总等待时间',
         content: [
           { type: 'text', content: '排队也有学问！不同顺序排队，等待的总时间不同。怎样安排才能让总等待时间最少呢？', animationType: 'reveal' },
           { type: 'example', content: '三个人打水：甲需要1分钟，乙需要2分钟，丙需要3分钟。如果按甲→乙→丙的顺序，等待总时间=1+(1+2)+(1+2+3)=10分钟。', label: '排队问题', animationType: 'bounce' },
@@ -3994,7 +4080,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范排队问题：三个人打水1分、2分、3分，对比不同顺序的总等待时间。',
         weDo: '亲子一起解决排队问题，模拟排队场景，找最优顺序。',
         youDo: '孩子独立解决排队问题，安排最优顺序。',
-        parentTips: '时间短的排前面，总等待时间最少。引导孩子计算不同顺序的等待时间。',
+        parentTips: '【家长预习】时间短的排前面，总等待时间最少。\n共学四步：\n①对话出题：三人排队A3分B5分C1分，问"怎么排等待最少？"\n②孩子应答："C1分排第一B5分第二A3分第三"或按短优先排\n③答错引导：时间短的排前面，计算每人等待前面人的时间总和\n④快速检测：三人分别2分4分1分怎么排、算总等待时间、谁排第一等待最少',
         funElement: '笑话：排队说——短的人先来，大家少等！歇后语：先来后到——按顺序来。小游戏：排队优化小达人！',
         gsapAnimations: [
           '[GSAP:timeline|排队问题对比：短→长 vs 长→短|1.5s|点击播放|power2.inOut]',
@@ -4071,6 +4157,8 @@ export const mathGrade4: Unit[] = [
         title: '统计与广角综合检测',
         order: 5,
         teachingMethod: '形成性评价',
+        learningObjective: '我能综合运用统计和优化知识完成测评',
+        successCriteria: '①测评正确率达80%以上 ②能制图分析和优化',
         content: [
           { type: 'text', content: '这单元我们学了条形统计图的认识、数据分析、优化问题和排队问题。来检测一下吧！', animationType: 'reveal' },
           { type: 'formula', content: '知识要点：①条形统计图（画图+读图） ②数据分析（最多最少+总计+平均） ③优化问题（同时做省时间） ④排队问题（短者优先）', label: '知识总结', animationType: 'typewriter' },
@@ -4095,7 +4183,7 @@ export const mathGrade4: Unit[] = [
         iDo: '家长示范综合题：画统计图、分析数据、优化时间安排、排队策略。',
         weDo: '亲子一起综合练习，互相出题检查，查漏补缺。',
         youDo: '孩子独立完成综合测试，争取正确率80%以上。',
-        parentTips: '统计+优化+排队综合检测，正确率≥80%为通过。鼓励孩子完成四年级全部课程！',
+        parentTips: '【家长预习】综合检测统计和数学广角，鼓励完成四年级全部课程。\n共学四步：\n①对话出题：问"条形统计图怎么画？优化问题怎么做？"\n②孩子应答："画轴刻度条标题，能同时做就同时做"\n③答错引导：错题重新画图分析，优化问题找同时做的任务\n④快速检测：画条形图四步、烧水同时扫地最少几分、时间短优先排队',
         funElement: '歇后语：满载而归——收获满满。笑话：统计图说——画完我你就是四年级数学全通了！小游戏：统计知识综合大PK！',
         gsapAnimations: [
           '[GSAP:confetti|通关撒花|3s|正确率≥80%|power1.out|particleCount:50]',

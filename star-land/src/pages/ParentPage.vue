@@ -26,7 +26,7 @@ const subjects = [
 
 function getSubjectProgress(subject: 'chinese' | 'math' | 'english') {
   let total = 0; let completed = 0
-  for (let g = 1; g <= 3; g++) {
+  for (let g = 1; g <= 6; g++) {
     const p = getCourseCompletion(subject, g as any)
     total += p.total; completed += p.completed
   }
@@ -598,6 +598,17 @@ function handleClear() {
 <template>
   <div class="min-h-screen p-4 pt-6">
     <h1 class="font-title text-2xl text-gray-800 mb-4">家长中心</h1>
+
+    <!-- 项目说明提示 -->
+    <div class="card mb-4 bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200">
+      <div class="flex items-start gap-3">
+        <div class="text-2xl shrink-0 mt-0.5">💡</div>
+        <div class="text-sm text-gray-600 leading-relaxed">
+          <p class="font-medium text-gray-700 mb-1">关于本项目</p>
+          <p>本项目是天轰穿+AI 三天时间完成的，虽然经过了数十轮次的检查和优化，但仍然可能存在一些小 bug，有问题要优化可以加我微信反馈，如果孩子要学信息学奥赛也可以找我，微信号：<span class="font-bold text-primary-600 select-all">kcsn-zcwl</span></p>
+        </div>
+      </div>
+    </div>
 
     <!-- 孩子名字设置 -->
     <div class="card mb-4 flex items-center justify-between">

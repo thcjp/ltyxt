@@ -8,7 +8,7 @@ import { useSettingsStore } from '@/stores/settings'
 import { useRewardSystem } from '@/composables/useRewardSystem'
 import { useSpeech } from '@/composables/useSpeech'
 import { gsap } from 'gsap'
-import { ArrowLeft, ArrowRight, Users, Star, ChevronRight, CheckCircle, XCircle, Lightbulb, BookOpen, PenTool, Rocket, Volume2, Home, Headphones, Zap, Grid3X3, Route, Hash, Gamepad2 } from 'lucide-vue-next'
+import { ArrowLeft, ArrowRight, Users, Star, ChevronRight, CheckCircle, XCircle, Lightbulb, BookOpen, PenTool, Rocket, Volume2, Home, Headphones, Zap, Grid3X3, Route, Hash, Gamepad2, Target } from 'lucide-vue-next'
 import ContentBlockRenderer from '@/components/animation/ContentBlockRenderer.vue'
 import type { KnowledgeLink, VideoResource, Grade } from '@/types'
 import CardFlip from '@/components/animation/CardFlip.vue'
@@ -737,6 +737,16 @@ onUnmounted(() => {
         <span v-else-if="currentPhase === 'youDo'">🚀 自练阶段 · 第 {{ currentQuestionIndex + 1 }}/{{ currentQuestions.length }} 题</span>
         <span v-else-if="currentPhase === 'complete'">🎉 完成阶段</span>
       </div>
+      <!-- 学习目标卡片（EDI标准：开课即知今日所学） -->
+      <div v-if="lesson.learningObjective" class="mt-2 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl px-3 py-2 border border-blue-100">
+        <div class="flex items-start gap-2">
+          <Target class="w-4 h-4 text-blue-500 mt-0.5 shrink-0" />
+          <div class="text-xs">
+            <p class="text-blue-700 font-medium">🎯 本课目标：{{ lesson.learningObjective }}</p>
+            <p v-if="lesson.successCriteria" class="text-gray-500 mt-0.5">✅ 达标标准：{{ lesson.successCriteria }}</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- 阶段指示器 -->
@@ -1015,7 +1025,7 @@ onUnmounted(() => {
           <p class="text-gray-700 leading-relaxed whitespace-pre-line">{{ lesson.weDo }}</p>
         </div>
         <div class="card bg-purple-50 border border-purple-200">
-          <p class="text-sm text-purple-700">🎯 家长提示：{{ lesson.parentTips }}</p>
+          <p class="text-sm text-purple-700 whitespace-pre-line">🎯 家长提示：{{ lesson.parentTips }}</p>
         </div>
         <button @click="nextPhase" class="btn-secondary w-full flex items-center justify-center gap-2">
           自己试试 <ChevronRight class="w-4 h-4" />
@@ -1210,7 +1220,7 @@ onUnmounted(() => {
           </div>
           <div class="p-3 rounded-xl bg-secondary-50">
             <p class="text-xs text-secondary-600 font-medium mb-1">操作提示</p>
-            <p class="text-sm text-gray-700">{{ lesson.parentTips }}</p>
+            <p class="text-sm text-gray-700 whitespace-pre-line">{{ lesson.parentTips }}</p>
           </div>
           <div class="p-3 rounded-xl bg-yellow-50">
             <p class="text-xs text-yellow-600 font-medium mb-1">趣味素材</p>

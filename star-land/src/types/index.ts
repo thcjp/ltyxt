@@ -219,6 +219,10 @@ export interface Lesson {
   title: string
   order: number
   teachingMethod: string
+  // 学习目标（EDI标准：每课开始明确告知学生本课学什么、达到什么程度）
+  learningObjective?: string
+  // 成功标准（可衡量的达标条件）
+  successCriteria?: string
   // 课文内容（核心学习材料）
   content: ContentBlock[]
   // 教学闭环
