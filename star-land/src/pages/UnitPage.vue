@@ -4,6 +4,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { useCourseStore } from '@/stores/course'
 import { useProgressStore } from '@/stores/progress'
 import { useCourseProgress } from '@/composables/useCourseProgress'
+import type { Grade } from '@/types'
 import { ArrowLeft, Lock, Star } from 'lucide-vue-next'
 
 const route = useRoute()
@@ -13,7 +14,7 @@ const progressStore = useProgressStore()
 const { isLessonUnlocked } = useCourseProgress()
 
 const subject = computed(() => route.params.subject as string)
-const grade = computed(() => Number(route.params.grade) as 1 | 2 | 3)
+const grade = computed(() => Number(route.params.grade) as Grade)
 const unitId = computed(() => route.params.unit as string)
 const unit = computed(() => courseStore.getUnit(subject.value as any, grade.value, unitId.value))
 

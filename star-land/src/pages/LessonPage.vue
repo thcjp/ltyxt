@@ -10,7 +10,7 @@ import { useSpeech } from '@/composables/useSpeech'
 import { gsap } from 'gsap'
 import { ArrowLeft, ArrowRight, Users, Star, ChevronRight, CheckCircle, XCircle, Lightbulb, BookOpen, PenTool, Rocket, Volume2, Home, Headphones, Zap, Grid3X3, Route, Hash, Gamepad2 } from 'lucide-vue-next'
 import ContentBlockRenderer from '@/components/animation/ContentBlockRenderer.vue'
-import type { KnowledgeLink, VideoResource } from '@/types'
+import type { KnowledgeLink, VideoResource, Grade } from '@/types'
 import CardFlip from '@/components/animation/CardFlip.vue'
 import SpeechButton from '@/components/animation/SpeechButton.vue'
 import DragQuestion from '@/components/animation/DragQuestion.vue'
@@ -64,7 +64,7 @@ const { speakWithRole, stop: stopSpeech } = useSpeech()
 const settingsStore = useSettingsStore()
 
 const subject = computed(() => route.params.subject as string)
-const grade = computed(() => Number(route.params.grade) as 1 | 2 | 3)
+const grade = computed(() => Number(route.params.grade) as Grade)
 const unitId = computed(() => route.params.unit as string)
 const lessonId = computed(() => route.params.lesson as string)
 

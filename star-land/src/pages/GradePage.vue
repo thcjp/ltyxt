@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useCourseStore } from '@/stores/course'
 import { useCourseProgress } from '@/composables/useCourseProgress'
+import type { Grade } from '@/types'
 import { ArrowLeft, FileText, GraduationCap } from 'lucide-vue-next'
 
 const route = useRoute()
@@ -11,7 +12,7 @@ const courseStore = useCourseStore()
 const { getUnitCompletion } = useCourseProgress()
 
 const subject = computed(() => route.params.subject as string)
-const grade = computed(() => Number(route.params.grade) as 1 | 2 | 3)
+const grade = computed(() => Number(route.params.grade) as Grade)
 const meta = computed(() => courseStore.getCourseMeta(subject.value as any, grade.value))
 const units = computed(() => courseStore.getUnits(subject.value as any, grade.value))
 
