@@ -351,7 +351,7 @@ onMounted(() => {
         <!-- 步骤2：完成 -->
         <div v-if="blendStep === 2" class="space-y-4">
           <div class="text-4xl mb-2">🎉</div>
-          <p class="text-green-600 font-medium">太棒了！</p>
+          <p class="text-green-600 font-medium">拼对了，你真努力！</p>
           <button @click="nextBlendStep" class="btn-primary">
             下一词 <ArrowRight class="w-4 h-4 inline" />
           </button>

@@ -15,6 +15,7 @@ const metas = computed(() => courseStore.getSubjectMetas(subject.value as any))
 
 const subjectNames: Record<string, string> = { chinese: '语文', math: '数学', english: '英语' }
 const subjectColors: Record<string, string> = { chinese: 'bg-chinese', math: 'bg-math', english: 'bg-english' }
+const subjectMethods: Record<string, string> = { chinese: '多感官识字 + 思维导图 + 文化浸润', math: '新加坡CPA教学法 + 凑十法 + 间隔重复', english: '自然拼读Phonics + 情境对话 + 间隔重复' }
 
 function goToGrade(grade: number) {
   router.push(`/courses/${subject.value}/${grade}`)
@@ -27,7 +28,8 @@ function goToGrade(grade: number) {
       <ArrowLeft class="w-4 h-4" /> 返回
     </button>
     <h1 class="font-title text-2xl text-gray-800 mb-2">{{ subjectNames[subject] || '学科' }}</h1>
-    <p class="text-sm text-gray-500 mb-6">选择年级开始学习</p>
+    <p class="text-sm text-gray-500 mb-1">选择年级开始学习</p>
+    <p class="text-xs text-primary-500 font-medium mb-4">📚 教学方法：{{ subjectMethods[subject] || '科学教学法' }}</p>
 
     <div class="space-y-4">
       <button

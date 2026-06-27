@@ -25,13 +25,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '六个单韵母：a、o、e、i、u、ü，跟我一起念！',
             },
           },
+          { type: 'tip', content: '本课主要使用认知科学识字法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '认知科学识字法',
         learningObjective: '我能正确认读本课拼音字母并准确发音，掌握口型要领',
         successCriteria: '①能正确认读本课所有拼音字母的发音 ②能区分易混淆的拼音并正确书写',
-        iDo: '家长大声示范六个单韵母的发音，配合口型夸张展示，让孩子观察嘴形变化。',
-        weDo: '亲子一起对着镜子发音，互相观察口型，一起念"a像张大嘴，o像公鸡叫"的口诀。',
-        youDo: '孩子独立跟读录音，自己对着镜子练习六个单韵母的发音。',
+        iDo: '家长大声示范六个单韵母的发音，配合口型夸张展示，让孩子观察嘴形变化。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起对着镜子发音，互相观察口型，一起念"a像张大嘴，o像公鸡叫"的口诀。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立跟读录音，自己对着镜子练习六个单韵母的发音。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】拼音a，嘴巴张大aaa！像医生检查嗓子时说的"啊——"\n共学四步：\n①对话出题：问孩子"哪个字母发音时嘴巴张得最大？"\n②孩子应答：a发音时嘴巴张得最大，就像医生说"啊——"一样。\n③答错引导：家长可以和孩子一起对着镜子练口型，用"口型对照法"——家长做口型让孩子猜是哪个拼音，再反过来\n④快速检测：哪个字母发音时嘴巴张得最大？、小鱼吐泡泡的韵母是哪个？、把单韵母按顺序排列：i、a、u、o、e、ü',
         funElement: '小游戏：嘴巴变变变！像照镜子一样做鬼脸，看谁的"a"嘴张得最大，谁的"ü"嘴最像小鱼吐泡泡！🐟',
         gsapAnimations: ['GSAP: 字母从空中飘落弹跳入场', 'GSAP: 口型动画放大缩小循环'],
@@ -44,7 +45,7 @@ export const chineseGrade1: Unit[] = [
             options: ['a', 'i', 'u'],
             answer: 'a',
             hint: '想想张大嘴巴的样子',
-            explanation: 'a发音时嘴巴张得最大，就像医生说"啊——"一样。'
+            explanation: 'a发音时嘴巴张得最大，就像医生说"啊——"一样。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l1q2',
@@ -53,7 +54,7 @@ export const chineseGrade1: Unit[] = [
             options: ['u', 'ü', 'i', 'e'],
             answer: 'ü',
             hint: '它的头上像有两个小点',
-            explanation: 'ü的头上两点就像小鱼吐出的两个泡泡，所以叫"小鱼ü"。'
+            explanation: 'ü的头上两点就像小鱼吐出的两个泡泡，所以叫"小鱼ü"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l1q3',
@@ -61,7 +62,7 @@ export const chineseGrade1: Unit[] = [
             question: '把单韵母按顺序排列：i、a、u、o、e、ü',
             answer: 'a,o,e,i,u,ü',
             hint: '按照课文的顺序来排',
-            explanation: '六个单韵母的标准顺序是a、o、e、i、u、ü。'
+            explanation: '六个单韵母的标准顺序是a、o、e、i、u、ü。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l1q4',
@@ -70,7 +71,7 @@ export const chineseGrade1: Unit[] = [
             options: ['b', 'a', 'm', 'f'],
             answer: 'a',
             hint: '单韵母只有6个：a、o、e、i、u、ü',
-            explanation: 'a是单韵母，b、m、f都是声母。这是期末常考题！'
+            explanation: 'a是单韵母，b、m、f都是声母。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l1q5',
@@ -79,7 +80,7 @@ export const chineseGrade1: Unit[] = [
             options: ['a', 'u', 'e'],
             answer: 'u',
             hint: '想想哪个韵母像吹口哨',
-            explanation: 'u发音时嘴向前突出成圆形，像吹口哨一样。'
+            explanation: 'u发音时嘴向前突出成圆形，像吹口哨一样。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l1q6',
@@ -88,7 +89,7 @@ export const chineseGrade1: Unit[] = [
             options: ['ai', 'ba', 'pa'],
             answer: 'ai',
             hint: '两个单韵母手拉手',
-            explanation: 'a和i手拉手组成复韵母ai，单韵母可以组合成复韵母！ba和pa是声母加单韵母组成的音节，不是复韵母。'
+            explanation: 'a和i手拉手组成复韵母ai，单韵母可以组合成复韵母！ba和pa是声母加单韵母组成的音节，不是复韵母。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l1q7',
@@ -96,7 +97,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：六个单韵母按顺序是什么？（用逗号分隔）',
             answer: 'a,o,e,i,u,ü',
             hint: '[单韵母顺序]（语文一年级-第1单元）',
-            explanation: '六个单韵母的标准顺序是a、o、e、i、u、ü。'
+            explanation: '六个单韵母的标准顺序是a、o、e、i、u、ü。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -125,13 +126,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '声母b、p、m、f，跟我一起念！',
             },
           },
+          { type: 'tip', content: '本课主要使用EDI直接教学：家长示范-亲子共练-孩子独立完成三步闭环', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: 'I Do→We Do→You Do',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能正确认读本课拼音字母并准确发音，掌握口型要领',
         successCriteria: '①能正确认读本课所有拼音字母的发音 ②能区分易混淆的拼音并正确书写',
-        iDo: '家长用手指在空中书写声母，边写边念"右下半圆b b b，右上半圆p p p"的口诀。',
-        weDo: '亲子一起用手势比划声母形状，互相检查书写方向是否正确。',
-        youDo: '孩子在练习本上独立书写八个声母，每个写三遍。',
+        iDo: '家长用手指在空中书写声母，边写边念"右下半圆b b b，右上半圆p p p"的口诀。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起用手势比划声母形状，互相检查书写方向是否正确。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子在练习本上独立书写八个声母，每个写三遍。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】右下半圆b b b，右上半圆p p p！b和p就像一对双…\n共学四步：\n①对话出题：问孩子"右下半圆是哪个声母？"\n②孩子应答：b的竖线在左边，半圆在右下方，所以是"右下半圆b b b"。\n③答错引导：家长可以和孩子一起对着镜子练口型，用"口型对照法"——家长做口型让孩子猜是哪个拼音，再反过来\n④快速检测：右下半圆是哪个声母？、看卡片快速读出声母、哪个声母像一根拐杖？',
         funElement: '笑话时间：b和p吵架了，b说"我肚子在右边！"p说"我肚子也在右边！"——等等，p的肚子在上面！😄',
         gsapAnimations: ['GSAP: 声母卡片翻转揭示动画'],
@@ -144,7 +146,7 @@ export const chineseGrade1: Unit[] = [
             options: ['b', 'p', 'd'],
             answer: 'b',
             hint: '想想半圆在竖线的哪一边',
-            explanation: 'b的竖线在左边，半圆在右下方，所以是"右下半圆b b b"。'
+            explanation: 'b的竖线在左边，半圆在右下方，所以是"右下半圆b b b"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l2q2',
@@ -152,7 +154,7 @@ export const chineseGrade1: Unit[] = [
             question: '看卡片快速读出声母',
             answer: 'm',
             hint: '两个门洞',
-            explanation: 'm的形状像两个门洞，所以叫"两个门洞m m m"。'
+            explanation: 'm的形状像两个门洞，所以叫"两个门洞m m m"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l2q3',
@@ -161,7 +163,7 @@ export const chineseGrade1: Unit[] = [
             options: ['f', 't', 'l'],
             answer: 'f',
             hint: '拐杖上面还有一横',
-            explanation: 'f的形状像一根拐杖，上面还有一横，所以叫"一根拐杖f f f"。'
+            explanation: 'f的形状像一根拐杖，上面还有一横，所以叫"一根拐杖f f f"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l2q4',
@@ -170,7 +172,7 @@ export const chineseGrade1: Unit[] = [
             answer: '右',
             acceptableAnswers: ['右', '右下', '右下方'],
             hint: '回忆口诀：右下半圆b',
-            explanation: 'b的半圆在右下方（右边），d的半圆在左下方（左边），这就是区分b和d的窍门。'
+            explanation: 'b的半圆在右下方（右边），d的半圆在左下方（左边），这就是区分b和d的窍门。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l2q5',
@@ -179,7 +181,7 @@ export const chineseGrade1: Unit[] = [
             options: ['bā', 'ǎb', 'āb'],
             answer: 'bā',
             hint: '声母在前还是韵母在前',
-            explanation: '拼音规则是声母在前韵母在后，所以bā是正确的，声母b在前面。'
+            explanation: '拼音规则是声母在前韵母在后，所以bā是正确的，声母b在前面。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l2q6',
@@ -188,7 +190,7 @@ export const chineseGrade1: Unit[] = [
             options: ['天', '太', '木'],
             answer: '天',
             hint: '在"大"字上面加一横',
-            explanation: '"大"字上面加一横就变成了"天"字，汉字真有趣！'
+            explanation: '"大"字上面加一横就变成了"天"字，汉字真有趣！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l2q7',
@@ -197,7 +199,7 @@ export const chineseGrade1: Unit[] = [
             answer: '右下',
             acceptableAnswers: ['右下', '右下方'],
             hint: '[声母区分]（语文一年级-第1单元）',
-            explanation: 'b的半圆在右下方，p的半圆在右上方，口诀：右下半圆b，右上半圆p。'
+            explanation: 'b的半圆在右下方，p的半圆在右上方，口诀：右下半圆b，右上半圆p。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -225,13 +227,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '声母g、k、h，9字蝌蚪和椅子！',
             },
           },
+          { type: 'tip', content: '本课主要使用蒙台梭利多感官：调动视觉听觉触觉等多种感官参与学习', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '多感官联想法',
+        teachingMethod: '蒙台梭利多感官',
         learningObjective: '我能正确认读本课拼音字母并准确发音，掌握口型要领',
         successCriteria: '①能正确认读本课所有拼音字母的发音 ②能区分易混淆的拼音并正确书写',
-        iDo: '家长用实物演示声母形状，如用剪刀展示x的形状，用9字展示g的形状。',
-        weDo: '亲子一起找家里的物品，看看哪些像这些声母的形状。',
-        youDo: '孩子独立完成声母与图片的连线匹配练习。',
+        iDo: '家长用实物演示声母形状，如用剪刀展示x的形状，用9字展示g的形状。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起找家里的物品，看看哪些像这些声母的形状。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成声母与图片的连线匹配练习。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】9字加弯g g g！g的形状就像数字9多了一个小弯钩，像…\n共学四步：\n①对话出题：问孩子"哪个声母像数字9？"\n②孩子应答：g的形状就像数字9，所以叫"9字加弯g g g"。\n③答错引导：家长可以和孩子一起对着镜子练口型，用"口型对照法"——家长做口型让孩子猜是哪个拼音，再反过来\n④快速检测：哪个声母像数字9？、j、q、x和ü相拼时，ü要去掉（    ）、把声母拖到对应的图片上',
         funElement: '歇后语：j q x见ü——眼睛都没了！因为ü的两点被它们"挖走"啦！😂',
         gsapAnimations: ['GSAP: 声母与实物形状变形动画'],
@@ -244,7 +247,7 @@ export const chineseGrade1: Unit[] = [
             options: ['g', 'q', 'j'],
             answer: 'g',
             hint: '想想9字的样子',
-            explanation: 'g的形状就像数字9，所以叫"9字加弯g g g"。'
+            explanation: 'g的形状就像数字9，所以叫"9字加弯g g g"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l3q2',
@@ -252,7 +255,7 @@ export const chineseGrade1: Unit[] = [
             question: 'j、q、x和ü相拼时，ü要去掉___',
             answer: '两点',
             hint: '想想ü的头上有什么',
-            explanation: 'j、q、x和ü相拼时，ü要去掉两点，但读音还是ü。'
+            explanation: 'j、q、x和ü相拼时，ü要去掉两点，但读音还是ü。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l3q3',
@@ -260,7 +263,7 @@ export const chineseGrade1: Unit[] = [
             question: '把声母拖到对应的图片上',
             answer: 'g-鸽子,k-蝌蚪,h-椅子',
             hint: '想想每个声母像什么',
-            explanation: 'g像9字鸽子，k像蝌蚪喝水，h像一把小椅子。'
+            explanation: 'g像9字鸽子，k像蝌蚪喝水，h像一把小椅子。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l3q4',
@@ -268,7 +271,7 @@ export const chineseGrade1: Unit[] = [
             question: 'j、q、x和ü相拼时，ü要去掉两点，但___还是ü的音',
             answer: '读音',
             hint: '写法变了，读音变了吗',
-            explanation: 'j、q、x和ü相拼时，ü去掉两点，但读音还是ü，不能读成u。'
+            explanation: 'j、q、x和ü相拼时，ü去掉两点，但读音还是ü，不能读成u。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l3q5',
@@ -277,7 +280,7 @@ export const chineseGrade1: Unit[] = [
             options: ['ju', 'gu', 'ku'],
             answer: 'ju',
             hint: '想想哪个声母会让ü去掉两点',
-            explanation: 'ju中的u实际上是ü去掉两点后的写法，因为j和ü相拼时ü要去掉两点。'
+            explanation: 'ju中的u实际上是ü去掉两点后的写法，因为j和ü相拼时ü要去掉两点。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l3q6',
@@ -286,7 +289,7 @@ export const chineseGrade1: Unit[] = [
             options: ['u', 'ü', 'i'],
             answer: 'ü',
             hint: '虽然写法变了，但读音不变',
-            explanation: 'j、q、x和ü相拼时，ü去掉两点，但读音还是ü。这是期末常考的拼读规则！'
+            explanation: 'j、q、x和ü相拼时，ü去掉两点，但读音还是ü。这是期末常考的拼读规则！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l3q7',
@@ -294,7 +297,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：j、q、x和ü相拼时，ü要去掉什么？',
             answer: '两点',
             hint: '[拼读规则]（语文一年级-第1单元）',
-            explanation: 'j、q、x和ü相拼时，ü要去掉两点，但读音还是ü。'
+            explanation: 'j、q、x和ü相拼时，ü要去掉两点，但读音还是ü。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -305,14 +308,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '让我们来检验一下这单元学到的拼音知识吧！通过这些练习，看看你掌握了多少', animationType: 'typewriter' },
           { type: 'tip', content: '评价小贴士：做错的题不要着急，回到前面的课时再学一遍，学会了就是最大的进步！', label: '评价提示', animationType: 'pulse' },
-          { type: 'formula', content: '拼音王国复习口诀：单韵母6个a o e i u ü，声母23个要记牢，整体认读16个不用拼！', label: '复习口诀', animationType: 'typewriter' }
+          { type: 'formula', content: '拼音王国复习口诀：单韵母6个a o e i u ü，声母23个要记牢，整体认读16个不用拼！', label: '复习口诀', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '评价反馈法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能独立完成本单元形成性评价检测，查漏补缺',
         successCriteria: '①能独立完成所有检测题 ②能说出自己做错题目的正确答案',
-        iDo: '家长出示本单元的拼音卡片，让孩子逐一认读，记录掌握情况。',
-        weDo: '亲子一起做拼音闯关游戏，答对一题前进一步，看谁能闯关成功。',
-        youDo: '孩子独立完成评价练习，错的拼音多练几遍。',
+        iDo: '家长出示本单元的拼音卡片，让孩子逐一认读，记录掌握情况。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做拼音闯关游戏，答对一题前进一步，看谁能闯关成功。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成评价练习，错的拼音多练几遍。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】让我们来检验一下这单元学到的拼音知识吧！通过这些练习，看…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：拼音大闯关！答对一题前进一步，全部答对就是拼音大王！👑',
         gsapAnimations: ['GSAP: 拼音卡片翻转评价动画'],
@@ -325,7 +329,7 @@ export const chineseGrade1: Unit[] = [
             options: ['b', 'ü', 'f'],
             answer: 'ü',
             hint: '单韵母只有6个',
-            explanation: 'ü是单韵母，b和f是声母。'
+            explanation: 'ü是单韵母，b和f是声母。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l4q2',
@@ -333,7 +337,7 @@ export const chineseGrade1: Unit[] = [
             question: '六个单韵母按顺序是a、o、e、___、u、ü',
             answer: 'i',
             hint: '第四个单韵母',
-            explanation: '六个单韵母的顺序是a、o、e、i、u、ü。'
+            explanation: '六个单韵母的顺序是a、o、e、i、u、ü。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l4q3',
@@ -342,7 +346,7 @@ export const chineseGrade1: Unit[] = [
             options: ['d', 'p', 'b'],
             answer: 'b',
             hint: '回忆声母口诀',
-            explanation: '右下半圆b b b，b的半圆在右下方。'
+            explanation: '右下半圆b b b，b的半圆在右下方。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l4q4',
@@ -350,7 +354,7 @@ export const chineseGrade1: Unit[] = [
             question: 'j、q、x和ü相拼时，ü要去掉___',
             answer: '两点',
             hint: '回忆拼读规则',
-            explanation: 'j、q、x和ü相拼时，ü要去掉两点，但读音还是ü。'
+            explanation: 'j、q、x和ü相拼时，ü要去掉两点，但读音还是ü。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l4q5',
@@ -359,7 +363,7 @@ export const chineseGrade1: Unit[] = [
             options: ['m', 'q', 'l'],
             answer: 'q',
             hint: '只有三个声母有这个规则',
-            explanation: 'j、q、x和ü相拼时要去掉两点，q就是其中之一。这是期中常考题！'
+            explanation: 'j、q、x和ü相拼时要去掉两点，q就是其中之一。这是期中常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l4q6',
@@ -368,7 +372,7 @@ export const chineseGrade1: Unit[] = [
             options: ['3个', '4个', '6个'],
             answer: '3个',
             hint: 'g可以和哪些单韵母相拼',
-            explanation: 'g可以和a、e、u三个单韵母相拼，能组成3个音节！'
+            explanation: 'g可以和a、e、u三个单韵母相拼，能组成3个音节！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l4q7',
@@ -376,7 +380,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：声母b的口诀是什么？右下半圆___',
             answer: 'b',
             hint: '[声母口诀]（语文一年级-第1单元）',
-            explanation: '右下半圆b b b，这是记忆声母b的口诀。'
+            explanation: '右下半圆b b b，这是记忆声母b的口诀。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -387,14 +391,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '学完了拼音王国第一单元，让我们把所有知识综合起来，用拼音来读儿歌、认汉字吧！', animationType: 'typewriter' },
           { type: 'tip', content: '综合应用小窍门：试着用拼音给家人写一张小纸条，或者用拼音读一本绘本，学以致用最有效！', label: '应用技巧', animationType: 'pulse' },
-          { type: 'formula', content: '拼音应用歌：声母韵母手拉手，拼出音节读出口，整体认读不用拼，十六兄弟要记熟！', label: '应用口诀', animationType: 'typewriter' }
+          { type: 'formula', content: '拼音应用歌：声母韵母手拉手，拼出音节读出口，整体认读不用拼，十六兄弟要记熟！', label: '应用口诀', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用综合应用法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '综合应用法',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能综合运用本单元所学知识解决实际问题',
         successCriteria: '①能正确运用本单元核心知识解题 ②能解释解题思路',
-        iDo: '家长用拼音写一张小纸条，让孩子拼读出来，示范拼音的实际应用。',
-        weDo: '亲子一起用拼音给对方写小纸条，互相拼读，看谁写得多读得准。',
-        youDo: '孩子独立用拼音写一段话，并尝试拼读拼音绘本。',
+        iDo: '家长用拼音写一张小纸条，让孩子拼读出来，示范拼音的实际应用。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起用拼音给对方写小纸条，互相拼读，看谁写得多读得准。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用拼音写一段话，并尝试拼读拼音绘本。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】学完了拼音王国第一单元，让我们把所有知识综合起来，用拼音…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：拼音密码信！用拼音给妈妈写一封密码信，让妈妈拼出来看看你写了什么！✉️',
         gsapAnimations: ['GSAP: 拼音组合拼读动画'],
@@ -407,7 +412,7 @@ export const chineseGrade1: Unit[] = [
             options: ['m', 'a', 'ma'],
             answer: 'm',
             hint: '音节开头的辅音',
-            explanation: '"māma"的声母是m，韵母是a。'
+            explanation: '"māma"的声母是m，韵母是a。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l5q2',
@@ -415,7 +420,7 @@ export const chineseGrade1: Unit[] = [
             question: '用拼音写出"爸爸"：___',
             answer: 'bàba',
             hint: '先想声母再想韵母',
-            explanation: '"爸爸"的拼音是bàba，声母b，韵母a。'
+            explanation: '"爸爸"的拼音是bàba，声母b，韵母a。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l5q3',
@@ -423,7 +428,7 @@ export const chineseGrade1: Unit[] = [
             question: '把声母和韵母拖到一起组成音节',
             answer: 'b-a-ba,m-a-ma,d-a-da',
             hint: '声母在前韵母在后',
-            explanation: 'b+a=ba，m+a=ma，d+a=da，声母和韵母拼在一起就是音节。'
+            explanation: 'b+a=ba，m+a=ma，d+a=da，声母和韵母拼在一起就是音节。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l5q4',
@@ -431,7 +436,7 @@ export const chineseGrade1: Unit[] = [
             question: '"大雁往南飞"用拼音写第一个字"大"：___',
             answer: 'dà',
             hint: '声母d，韵母a，四声',
-            explanation: '"大"的拼音是dà，声母d，韵母a，第四声。'
+            explanation: '"大"的拼音是dà，声母d，韵母a，第四声。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l5q5',
@@ -440,7 +445,7 @@ export const chineseGrade1: Unit[] = [
             options: ['zū', 'zhū', 'sū'],
             answer: 'zhū',
             hint: '翘舌音声母有哪些',
-            explanation: 'zh是翘舌音，z和s是平舌音，所以zhū的声母是翘舌音。'
+            explanation: 'zh是翘舌音，z和s是平舌音，所以zhū的声母是翘舌音。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l5q6',
@@ -449,7 +454,7 @@ export const chineseGrade1: Unit[] = [
             options: ['zhā', 'zhi', 'zho'],
             answer: 'zhi',
             hint: '整体认读音节不用拼',
-            explanation: 'zhi是整体认读音节，不用拼直接读；zhā和zho需要拼读。这是期末常考题！'
+            explanation: 'zhi是整体认读音节，不用拼直接读；zhā和zho需要拼读。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u1l5q7',
@@ -457,7 +462,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：声母和韵母拼在一起叫什么？',
             answer: '音节',
             hint: '[音节组成]（语文一年级-第1单元）',
-            explanation: '声母和韵母拼在一起就组成了音节，如b+a=ba。'
+            explanation: '声母和韵母拼在一起就组成了音节，如b+a=ba。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }
@@ -492,13 +497,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '平舌音z c s，舌尖平放；翘舌音zh ch sh，舌尖翘起来！',
             },
           },
+          { type: 'tip', content: '本课主要使用对比辨析法：通过对比辨析易混淆的知识点', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '对比辨析法',
         learningObjective: '我能正确认读本课拼音字母并准确发音，掌握口型要领',
         successCriteria: '①能正确认读本课所有拼音字母的发音 ②能区分易混淆的拼音并正确书写',
-        iDo: '家长分别示范平舌音和翘舌音的发音，用手指指示舌头位置。',
-        weDo: '亲子一起做"舌头体操"——平放发z c s，翘起发zh ch sh r。',
-        youDo: '孩子独立听音分类，把平舌音和翘舌音分别写在两个圈里。',
+        iDo: '家长分别示范平舌音和翘舌音的发音，用手指指示舌头位置。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做"舌头体操"——平放发z c s，翘起发zh ch sh r。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立听音分类，把平舌音和翘舌音分别写在两个圈里。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】平舌音z c s：舌头平放，舌尖抵住上齿背发音。像小蛇发…\n共学四步：\n①对话出题：问孩子"下面哪个是翘舌音？"\n②孩子应答：zh是翘舌音，发音时舌尖要翘起靠近硬腭；z是平舌音，舌尖平放。\n③答错引导：家长可以和孩子一起对着镜子练口型，用"口型对照法"——家长做口型让孩子猜是哪个拼音，再反过来\n④快速检测：下面哪个是翘舌音？、快速判断：听到的是平舌音还是翘舌音？、"写字"的"字"声母是（    ）',
         funElement: '小游戏：舌头跷跷板！平放是平舌音，翘起是翘舌音，看谁的舌头跷跷板最灵活！👅',
         gsapAnimations: ['GSAP: 舌头位置示意图动态切换'],
@@ -511,7 +517,7 @@ export const chineseGrade1: Unit[] = [
             options: ['z', 'zh', 's'],
             answer: 'zh',
             hint: '翘舌音舌头要翘起来',
-            explanation: 'zh是翘舌音，发音时舌尖要翘起靠近硬腭；z是平舌音，舌尖平放。'
+            explanation: 'zh是翘舌音，发音时舌尖要翘起靠近硬腭；z是平舌音，舌尖平放。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l1q2',
@@ -519,7 +525,7 @@ export const chineseGrade1: Unit[] = [
             question: '快速判断：听到的是平舌音还是翘舌音？',
             answer: '平舌音',
             hint: '注意舌头有没有翘起来',
-            explanation: 'c是平舌音，发音时舌尖平放抵住上齿背。'
+            explanation: 'c是平舌音，发音时舌尖平放抵住上齿背。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l1q3',
@@ -527,7 +533,7 @@ export const chineseGrade1: Unit[] = [
             question: '"写字"的"字"声母是___',
             answer: 'z',
             hint: '这个音舌头是平的',
-            explanation: '"字"的拼音是zì，声母z是平舌音。'
+            explanation: '"字"的拼音是zì，声母z是平舌音。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l1q4',
@@ -536,7 +542,7 @@ export const chineseGrade1: Unit[] = [
             options: ['dé děi', 'děi de', 'dé de', 'děi děi'],
             answer: 'děi de',
             hint: '"得"表示"必须"读děi，"得"作补语助词读de（轻声）',
-            explanation: '"我得(děi)走得(de)快一些"——"得"表示必须读děi，轻声读de。这是期末常考的多音字题！'
+            explanation: '"我得(děi)走得(de)快一些"——"得"表示必须读děi，轻声读de。这是期末常考的多音字题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l1q5',
@@ -545,7 +551,7 @@ export const chineseGrade1: Unit[] = [
             options: ['z c s', 'zh ch sh', 'j q x'],
             answer: 'z c s',
             hint: '平舌音舌头平放',
-            explanation: 'z c s是平舌音，发音时舌尖平放；zh ch sh是翘舌音。'
+            explanation: 'z c s是平舌音，发音时舌尖平放；zh ch sh是翘舌音。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l1q6',
@@ -554,7 +560,7 @@ export const chineseGrade1: Unit[] = [
             options: ['写字', '纸张'],
             answer: '写字',
             hint: 'z是平舌音还是翘舌音',
-            explanation: '"写字"的"字"声母z是平舌音；"纸张"的"纸"声母zh是翘舌音。'
+            explanation: '"写字"的"字"声母z是平舌音；"纸张"的"纸"声母zh是翘舌音。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l1q7',
@@ -562,7 +568,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：六个单韵母是哪些？（用逗号分隔）',
             answer: 'a,o,e,i,u,ü',
             hint: '[单韵母]（语文一年级-第2单元）',
-            explanation: '六个单韵母是a、o、e、i、u、ü，这是第1单元学过的内容。'
+            explanation: '六个单韵母是a、o、e、i、u、ü，这是第1单元学过的内容。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -584,13 +590,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '一声平，二声扬，三声拐弯，四声降！',
             },
           },
+          { type: 'tip', content: '本课主要使用滑动拼读法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '滑动拼读法',
         learningObjective: '我能正确认读本课拼音字母并准确发音，掌握口型要领',
         successCriteria: '①能正确认读本课所有拼音字母的发音 ②能区分易混淆的拼音并正确书写',
-        iDo: '家长示范复韵母的滑动发音，从前一个元音滑向后一个元音，动作夸张。',
-        weDo: '亲子一起做"滑滑梯"游戏——声音从高滑到低，像滑滑梯一样读复韵母。',
-        youDo: '孩子独立给复韵母标声调并练习拼读。',
+        iDo: '家长示范复韵母的滑动发音，从前一个元音滑向后一个元音，动作夸张。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做"滑滑梯"游戏——声音从高滑到低，像滑滑梯一样读复韵母。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立给复韵母标声调并练习拼读。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】复韵母是由两个单韵母手拉手组成的！发音时从前一个元音滑向…\n共学四步：\n①对话出题：问孩子"复韵母ai的标调应该标在哪个字母上？"\n②孩子应答：标调规则"有a不放过"，ai中有a，所以标在a上。\n③答错引导：家长可以和孩子一起对着镜子练口型，用"口型对照法"——家长做口型让孩子猜是哪个拼音，再反过来\n④快速检测：复韵母ai的标调应该标在哪个字母上？、"水杯"的"杯"韵母是（    ）、把复韵母拖到正确的声调位置上',
         funElement: '笑话：ai说"我爱排第一！"ei说"诶，我也想！"ui说"喂，别吵了！"——它们三个吵了一节课！🤣',
         gsapAnimations: ['GSAP: 声调符号在韵母上滑动标注动画'],
@@ -603,7 +610,7 @@ export const chineseGrade1: Unit[] = [
             options: ['a', 'i'],
             answer: 'a',
             hint: '想想标调口诀',
-            explanation: '标调规则"有a不放过"，ai中有a，所以标在a上。'
+            explanation: '标调规则"有a不放过"，ai中有a，所以标在a上。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l2q2',
@@ -611,7 +618,7 @@ export const chineseGrade1: Unit[] = [
             question: '"水杯"的"杯"韵母是___',
             answer: 'ei',
             hint: '嘴巴从e滑向i',
-            explanation: '"杯"的拼音是bēi，韵母是ei。'
+            explanation: '"杯"的拼音是bēi，韵母是ei。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l2q3',
@@ -619,7 +626,7 @@ export const chineseGrade1: Unit[] = [
             question: '把复韵母拖到正确的声调位置上',
             answer: 'ài-四声,éi-二声,uǐ-三声',
             hint: '有a标a，没a找o e',
-            explanation: 'ài标在a上，éi标在e上，uǐ中i u并列标在后，所以标在i上。'
+            explanation: 'ài标在a上，éi标在e上，uǐ中i u并列标在后，所以标在i上。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l2q4',
@@ -628,7 +635,7 @@ export const chineseGrade1: Unit[] = [
             options: ["u","i"],
             answer: 'i',
             hint: 'i u并列标在后',
-            explanation: '标调规则"i u并列标在后"，ui中i在后面，所以标在i上。'
+            explanation: '标调规则"i u并列标在后"，ui中i在后面，所以标在i上。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l2q5',
@@ -637,7 +644,7 @@ export const chineseGrade1: Unit[] = [
             options: ['爱心', '太阳', '月亮', '星星'],
             answer: '爱心',
             hint: 'ai开头的词',
-            explanation: '可以用ai组词：爱心、矮小等。'
+            explanation: '可以用ai组词：爱心、矮小等。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l2q6',
@@ -646,7 +653,7 @@ export const chineseGrade1: Unit[] = [
             options: ["e","i"],
             answer: 'e',
             hint: 'ei的标调规则',
-            explanation: 'ei的标调在e上，因为没a找o e。这是期末常考题！'
+            explanation: 'ei的标调在e上，因为没a找o e。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l2q7',
@@ -654,7 +661,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：复韵母ai由哪两个单韵母组成？',
             answer: 'a和i',
             hint: '[复韵母组成]（语文一年级-第2单元）',
-            explanation: '复韵母ai由单韵母a和i组成，两个单韵母手拉手。'
+            explanation: '复韵母ai由单韵母a和i组成，两个单韵母手拉手。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -681,13 +688,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '前鼻韵母舌尖抵上齿，后鼻韵母舌根抵软腭！',
             },
           },
+          { type: 'tip', content: '本课主要使用分类记忆法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '分类记忆法',
         learningObjective: '我能正确认读本课拼音字母并准确发音，掌握口型要领',
         successCriteria: '①能正确认读本课所有拼音字母的发音 ②能区分易混淆的拼音并正确书写',
-        iDo: '家长把鼻韵母分成前鼻韵母和后鼻韵母两组，分别示范发音差异。',
-        weDo: '亲子一起玩"鼻子感应器"游戏——前鼻音用手指点鼻尖，后鼻音用手摸鼻子根部。',
-        youDo: '孩子独立完成前鼻韵母和后鼻韵母的分类练习。',
+        iDo: '家长把鼻韵母分成前鼻韵母和后鼻韵母两组，分别示范发音差异。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起玩"鼻子感应器"游戏——前鼻音用手指点鼻尖，后鼻音用手摸鼻子根部。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成前鼻韵母和后鼻韵母的分类练习。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】前鼻韵母an en in un ün：结尾是n，舌尖抵住…\n共学四步：\n①对话出题：问孩子"下面哪个是前鼻韵母？"\n②孩子应答：en以n结尾，是前鼻韵母；ang和ing以ng结尾，是后鼻韵母。\n③答错引导：家长可以和孩子一起对着镜子练口型，用"口型对照法"——家长做口型让孩子猜是哪个拼音，再反过来\n④快速检测：下面哪个是前鼻韵母？、"天空"的"空"韵母是（    ）、把鼻韵母分到前鼻韵母和后鼻韵母两组',
         funElement: '小游戏：鼻子侦探！前鼻音轻轻碰鼻尖，后鼻音用力按鼻根，看谁鼻子最灵敏！👃',
         gsapAnimations: ['GSAP: 前后鼻韵母分组弹出动画'],
@@ -700,7 +708,7 @@ export const chineseGrade1: Unit[] = [
             options: ['ang', 'en', 'ing'],
             answer: 'en',
             hint: '前鼻韵母以n结尾',
-            explanation: 'en以n结尾，是前鼻韵母；ang和ing以ng结尾，是后鼻韵母。'
+            explanation: 'en以n结尾，是前鼻韵母；ang和ing以ng结尾，是后鼻韵母。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l3q2',
@@ -708,7 +716,7 @@ export const chineseGrade1: Unit[] = [
             question: '"天空"的"空"韵母是___',
             answer: 'ong',
             hint: '嘴巴张圆发后鼻音',
-            explanation: '"空"的拼音是kōng，韵母是ong，属于后鼻韵母。'
+            explanation: '"空"的拼音是kōng，韵母是ong，属于后鼻韵母。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l3q3',
@@ -716,7 +724,7 @@ export const chineseGrade1: Unit[] = [
             question: '把鼻韵母分到前鼻韵母和后鼻韵母两组',
             answer: '前鼻:an,en,in,un,ün;后鼻:ang,eng,ing,ong',
             hint: '看结尾是n还是ng',
-            explanation: '以n结尾的是前鼻韵母：an、en、in、un、ün；以ng结尾的是后鼻韵母：ang、eng、ing、ong。'
+            explanation: '以n结尾的是前鼻韵母：an、en、in、un、ün；以ng结尾的是后鼻韵母：ang、eng、ing、ong。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l3q4',
@@ -725,7 +733,7 @@ export const chineseGrade1: Unit[] = [
             options: ['前鼻韵母', '后鼻韵母', '单韵母'],
             answer: '前鼻韵母',
             hint: '先想"林"的拼音，再看韵母以什么结尾',
-            explanation: '"林"的拼音是lín，韵母是in，以n结尾，所以是前鼻韵母。'
+            explanation: '"林"的拼音是lín，韵母是in，以n结尾，所以是前鼻韵母。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l3q5',
@@ -733,7 +741,7 @@ export const chineseGrade1: Unit[] = [
             question: '"灯光"的"灯"韵母是___',
             answer: 'eng',
             hint: '后鼻韵母',
-            explanation: '"灯"的拼音是dēng，韵母是eng，属于后鼻韵母。'
+            explanation: '"灯"的拼音是dēng，韵母是eng，属于后鼻韵母。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l3q6',
@@ -742,7 +750,7 @@ export const chineseGrade1: Unit[] = [
             options: ["n舌尖抵上齿龈，ng舌根抵软腭","没有区别","n声音大ng声音小"],
             answer: 'n舌尖抵上齿龈，ng舌根抵软腭',
             hint: '发音部位不同',
-            explanation: '前鼻音n舌尖抵住上齿龈，后鼻音ng舌根抵住软腭，发音部位不同。'
+            explanation: '前鼻音n舌尖抵住上齿龈，后鼻音ng舌根抵住软腭，发音部位不同。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l3q7',
@@ -750,7 +758,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：前鼻韵母的鼻音用什么字母表示？',
             answer: 'n',
             hint: '[前鼻韵母]（语文一年级-第2单元）',
-            explanation: '前鼻韵母以n结尾，发音时舌尖抵住上齿龈。'
+            explanation: '前鼻韵母以n结尾，发音时舌尖抵住上齿龈。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -774,13 +782,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '整体认读音节不用拼，直接读！跟我一起念！',
             },
           },
+          { type: 'tip', content: '本课主要使用分组记忆法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '分组记忆法',
         learningObjective: '我能正确认读本课拼音字母并准确发音，掌握口型要领',
         successCriteria: '①能正确认读本课所有拼音字母的发音 ②能区分易混淆的拼音并正确书写',
-        iDo: '家长按四组分别示范整体认读音节的发音，强调不用拼直接读。',
-        weDo: '亲子一起念整体认读音节口诀，互相考对方属于哪一组。',
-        youDo: '孩子独立读出16个整体认读音节，并能说出每个音节的组词。',
+        iDo: '家长按四组分别示范整体认读音节的发音，强调不用拼直接读。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起念整体认读音节口诀，互相考对方属于哪一组。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立读出16个整体认读音节，并能说出每个音节的组词。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】有些音节不用拼，直接读出来就好！它们叫"整体认读音节"，…\n共学四步：\n①对话出题：问孩子"下面哪个是整体认读音节？"\n②孩子应答：zhi是整体认读音节，不用拼读，直接读"织"的音。zhā和zho需要拼读。\n③答错引导：家长可以和孩子一起对着镜子练口型，用"口型对照法"——家长做口型让孩子猜是哪个拼音，再反过来\n④快速检测：下面哪个是整体认读音节？、把整体认读音节分到正确的组、"衣服"的"衣"用整体认读音节表示是（    ）',
         funElement: '小游戏：整体认读接力赛！家长说前半，孩子接后半。比如家长说"zhi chi shi"，孩子接"ri"！',
         gsapAnimations: ['GSAP: 16个音节卡片依次翻转揭示', 'GSAP: 分组弹出高亮动画'],
@@ -793,7 +802,7 @@ export const chineseGrade1: Unit[] = [
             options: ['zhā', 'zhi', 'zho'],
             answer: 'zhi',
             hint: '整体认读音节不用拼，直接读',
-            explanation: 'zhi是整体认读音节，不用拼读，直接读"织"的音。zhā和zho需要拼读。'
+            explanation: 'zhi是整体认读音节，不用拼读，直接读"织"的音。zhā和zho需要拼读。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l4q2',
@@ -801,7 +810,7 @@ export const chineseGrade1: Unit[] = [
             question: '把整体认读音节分到正确的组',
             answer: '翘舌:zhi,chi,shi,ri;平舌:zi,ci,si',
             hint: '看声母是翘舌还是平舌',
-            explanation: 'zhi、chi、shi、ri是翘舌整体认读，zi、ci、si是平舌整体认读。'
+            explanation: 'zhi、chi、shi、ri是翘舌整体认读，zi、ci、si是平舌整体认读。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l4q3',
@@ -809,7 +818,7 @@ export const chineseGrade1: Unit[] = [
             question: '"衣服"的"衣"用整体认读音节表示是___',
             answer: 'yi',
             hint: '跟单韵母i读音一样的整体认读音节',
-            explanation: 'yi是整体认读音节，读音跟单韵母i一样，前面加了y。'
+            explanation: 'yi是整体认读音节，读音跟单韵母i一样，前面加了y。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l4q4',
@@ -818,7 +827,7 @@ export const chineseGrade1: Unit[] = [
             options: ['zhi', 'zha', 'yu'],
             answer: 'zha',
             hint: '整体认读音节不用拼',
-            explanation: 'zha需要拼读，不是整体认读音节；zhi和yu都是整体认读音节。'
+            explanation: 'zha需要拼读，不是整体认读音节；zhi和yu都是整体认读音节。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l4q5',
@@ -826,7 +835,7 @@ export const chineseGrade1: Unit[] = [
             question: '整体认读音节共有___个',
             answer: '16',
             hint: '回忆口诀中的数量',
-            explanation: '整体认读音节共有16个：zhi chi shi ri zi ci si yi wu yu ye yue yuan yin yun ying。'
+            explanation: '整体认读音节共有16个：zhi chi shi ri zi ci si yi wu yu ye yue yuan yin yun ying。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l4q6',
@@ -835,7 +844,7 @@ export const chineseGrade1: Unit[] = [
             options: ['拼读音节', '整体认读音节', '三拼音节'],
             answer: '整体认读音节',
             hint: 'yue需要拼吗',
-            explanation: 'yue是整体认读音节，不用拼直接读。这是期末常考题！'
+            explanation: 'yue是整体认读音节，不用拼直接读。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l4q7',
@@ -843,7 +852,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：整体认读音节有什么特点？',
             answer: '不用拼直接读',
             hint: '[整体认读音节]（语文一年级-第2单元）',
-            explanation: '整体认读音节不用拼，直接读出整个音节的音。'
+            explanation: '整体认读音节不用拼，直接读出整个音节的音。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -854,14 +863,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '学完了拼音王国第二单元，让我们把复韵母、鼻韵母和整体认读音节综合起来复习吧！', animationType: 'typewriter' },
           { type: 'tip', content: '综合应用小窍门：试着用拼音写一段话，包含复韵母、鼻韵母和整体认读音节，看你能写多少！', label: '应用技巧', animationType: 'pulse' },
-          { type: 'formula', content: '复韵母标调歌：有a不放过，没a找o e，i u并列标在后。前后鼻音分清楚，舌尖舌根不一样！', label: '复习口诀', animationType: 'typewriter' }
+          { type: 'formula', content: '复韵母标调歌：有a不放过，没a找o e，i u并列标在后。前后鼻音分清楚，舌尖舌根不一样！', label: '复习口诀', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用综合应用法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '综合应用法',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能综合运用本单元所学知识解决实际问题',
         successCriteria: '①能正确运用本单元核心知识解题 ②能解释解题思路',
-        iDo: '家长用拼音写一段包含复韵母和鼻韵母的话，让孩子拼读。',
-        weDo: '亲子一起用拼音写小故事，互相拼读检查。',
-        youDo: '孩子独立用拼音写一段话，包含至少3个复韵母和2个鼻韵母。',
+        iDo: '家长用拼音写一段包含复韵母和鼻韵母的话，让孩子拼读。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起用拼音写小故事，互相拼读检查。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用拼音写一段话，包含至少3个复韵母和2个鼻韵母。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】学完了拼音王国第二单元，让我们把复韵母、鼻韵母和整体认读…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：拼音小作家！用拼音写一个小故事，读给家人听，看谁写得最有趣！📝',
         gsapAnimations: ['GSAP: 拼音综合拼读动画'],
@@ -874,7 +884,7 @@ export const chineseGrade1: Unit[] = [
             options: ['ei', 'ai', 'ui'],
             answer: 'ei',
             hint: '回忆复韵母的发音',
-            explanation: '"杯"的拼音是bēi，韵母是ei。'
+            explanation: '"杯"的拼音是bēi，韵母是ei。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l5q2',
@@ -882,7 +892,7 @@ export const chineseGrade1: Unit[] = [
             question: '"天空"的"天"韵母是___',
             answer: 'ian',
             hint: '前鼻韵母',
-            explanation: '"天"的拼音是tiān，韵母是ian，属于前鼻韵母。'
+            explanation: '"天"的拼音是tiān，韵母是ian，属于前鼻韵母。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l5q3',
@@ -890,7 +900,7 @@ export const chineseGrade1: Unit[] = [
             question: '把音节分到整体认读和拼读两组',
             answer: '整体认读:zhi,yi,yue;拼读:zha,ba,mei',
             hint: '整体认读不用拼',
-            explanation: 'zhi、yi、yue是整体认读音节；zha、ba、mei需要拼读。'
+            explanation: 'zhi、yi、yue是整体认读音节；zha、ba、mei需要拼读。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l5q4',
@@ -899,7 +909,7 @@ export const chineseGrade1: Unit[] = [
             options: ['an', 'en', 'ang'],
             answer: 'ang',
             hint: '后鼻韵母以ng结尾',
-            explanation: 'ang以ng结尾，是后鼻韵母；an和en以n结尾，是前鼻韵母。'
+            explanation: 'ang以ng结尾，是后鼻韵母；an和en以n结尾，是前鼻韵母。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l5q5',
@@ -907,7 +917,7 @@ export const chineseGrade1: Unit[] = [
             question: '复韵母ai的标调应该标在___上',
             answer: 'a',
             hint: '有a不放过',
-            explanation: '标调规则"有a不放过"，ai中有a，所以标在a上。'
+            explanation: '标调规则"有a不放过"，ai中有a，所以标在a上。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l5q6',
@@ -916,7 +926,7 @@ export const chineseGrade1: Unit[] = [
             options: ['ing', 'ang', 'un'],
             answer: 'un',
             hint: '前鼻韵母以n结尾',
-            explanation: 'un以n结尾，是前鼻韵母；ing和ang以ng结尾，是后鼻韵母。这是期末常考题！'
+            explanation: 'un以n结尾，是前鼻韵母；ing和ang以ng结尾，是后鼻韵母。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u2l5q7',
@@ -924,7 +934,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：后鼻韵母的尾音和前鼻韵母有什么不同？',
             answer: 'ng',
             hint: '[鼻韵母区分]（语文一年级-第2单元）',
-            explanation: '前鼻韵母以n结尾，后鼻韵母以ng结尾，发音部位不同。'
+            explanation: '前鼻韵母以n结尾，后鼻韵母以ng结尾，发音部位不同。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }
@@ -954,13 +964,14 @@ export const chineseGrade1: Unit[] = [
           { type: 'tip', content: '识字小窍门：在生活中认字！抬头看"天"，低头看"地"，指自己说"我"，指别人说"你"和"他"。字和生活连起来，记得更牢！', label: '生活识字法', animationType: 'pulse' },
           { type: 'formula', content: '识字歌：天大地大人在中间，你你我我他他相连。抬头看天低头看地，天地之间人最奇！', label: '识字歌', animationType: 'typewriter' },
           { type: 'example', content: '歇后语：天上的星星——数不清\n地上的蚂蚁——密密麻麻\n人的本事——各有所长', label: '趣味歇后语', animationType: 'bounce' },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '生活情境识字法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能正确认读和书写本课生字，了解汉字的构字规律',
         successCriteria: '①能正确认读本课所有生字 ②能说出至少3个字的构字方法或偏旁部首',
-        iDo: '家长指着天空说"天"，指着地面说"地"，指着家人说"人你我他"。',
-        weDo: '亲子一起在家里找"天地人你我他"对应的事物，互相指认。',
-        youDo: '孩子独立认读六个生字，并用每个字说一句话。',
+        iDo: '家长指着天空说"天"，指着地面说"地"，指着家人说"人你我他"。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起在家里找"天地人你我他"对应的事物，互相指认。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立认读六个生字，并用每个字说一句话。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】天(tiān)偏旁：大本义：人的头顶上方引申义：天空、日…\n共学四步：\n①对话出题：问孩子"天"字上面一横代表什么？"\n②孩子应答："天"字上面一横代表天空，下面是"大"，表示人头顶上的就是天。\n③答错引导：家长可以和孩子一起用"偏旁部首分析法"拆字——先认偏旁再认部件，编个顺口溜帮助记忆\n④快速检测："天"字上面一横代表什么？、"（    ）好，我是小明。"填一个字、看字卡快速读出汉字',
         funElement: '小游戏：手指指指指！指天花板说"天"，指地板说"地"，指自己说"我"，看谁反应最快！⚡',
         gsapAnimations: ['GSAP: 汉字从场景图片中浮现动画'],
@@ -973,7 +984,7 @@ export const chineseGrade1: Unit[] = [
             options: ['云', '天空', '太阳'],
             answer: '天空',
             hint: '看看天的上面是什么',
-            explanation: '"天"字上面一横代表天空，下面是"大"，表示人头顶上的就是天。'
+            explanation: '"天"字上面一横代表天空，下面是"大"，表示人头顶上的就是天。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l1q2',
@@ -981,7 +992,7 @@ export const chineseGrade1: Unit[] = [
             question: '"___好，我是小明。"填一个字',
             answer: '你',
             hint: '和别人打招呼用的字',
-            explanation: '"你好"是打招呼的用语，所以填"你"字。'
+            explanation: '"你好"是打招呼的用语，所以填"你"字。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l1q3',
@@ -989,7 +1000,7 @@ export const chineseGrade1: Unit[] = [
             question: '看字卡快速读出汉字',
             answer: '他',
             hint: '指另外一个人',
-            explanation: '"他"指另外一个人，和"你""我"合称三人称。'
+            explanation: '"他"指另外一个人，和"你""我"合称三人称。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l1q4',
@@ -997,7 +1008,7 @@ export const chineseGrade1: Unit[] = [
             question: '"天"字的偏旁是___',
             answer: '大',
             hint: '看看天字由什么组成',
-            explanation: '"天"字由"一"和"大"组成，偏旁是"大"。'
+            explanation: '"天"字由"一"和"大"组成，偏旁是"大"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l1q5',
@@ -1006,7 +1017,7 @@ export const chineseGrade1: Unit[] = [
             options: ["都有单人旁","都是代词","都是动词"],
             answer: '都是代词',
             hint: '它们代替什么',
-            explanation: '"你、我、他"都是代词，用来代替人。'
+            explanation: '"你、我、他"都是代词，用来代替人。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l1q6',
@@ -1015,7 +1026,7 @@ export const chineseGrade1: Unit[] = [
             options: ["3笔","4笔","5笔"],
             answer: '4笔',
             hint: '数一数天的笔画',
-            explanation: '"天"字共4笔：一、一、撇、捺。这是期末常考题！'
+            explanation: '"天"字共4笔：一、一、撇、捺。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l1q7',
@@ -1023,7 +1034,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："天"字的声母是什么？',
             answer: 't',
             hint: '[拼音声母]（语文一年级-第3单元）',
-            explanation: '"天"的拼音是tiān，声母是t，这是第1单元学过的声母。'
+            explanation: '"天"的拼音是tiān，声母是t，这是第1单元学过的声母。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1059,13 +1070,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '金木水火土，天地分上下，日月照今古！',
             },
           },
+          { type: 'tip', content: '本课主要使用五行联想识字法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '五行联想识字法',
         learningObjective: '我能正确认读和书写本课生字，了解汉字的构字规律',
         successCriteria: '①能正确认读本课所有生字 ②能说出至少3个字的构字方法或偏旁部首',
-        iDo: '家长展示五种元素的图片，讲解每个字的意思和五行关系。',
-        weDo: '亲子一起画五行图，把"金木水火土"五个字写在对应位置。',
-        youDo: '孩子独立书写五个生字，并说出每个字代表的事物。',
+        iDo: '家长展示五种元素的图片，讲解每个字的意思和五行关系。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起画五行图，把"金木水火土"五个字写在对应位置。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立书写五个生字，并说出每个字代表的事物。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】木(mù)偏旁：木本义：树木引申义：木头、木材、呆板组词…\n共学四步：\n①对话出题：问孩子"木"字像什么？"\n②孩子应答："木"字像一棵树，中间一竖是树干，一横是树枝，下面两撇是树根。\n③答错引导：家长可以和孩子一起用"偏旁部首分析法"拆字——先认偏旁再认部件，编个顺口溜帮助记忆\n④快速检测："木"字像什么？、一二三四五，金木水火（    ）、把五行元素拖到正确的位置',
         funElement: '歇后语：水克火——浇灭啦！火克金——化掉啦！五行相克就像石头剪刀布！✊✌️🖐️',
         gsapAnimations: ['GSAP: 五行元素旋转排列动画'],
@@ -1078,7 +1090,7 @@ export const chineseGrade1: Unit[] = [
             options: ['一棵树', '一条河', '一团火'],
             answer: '一棵树',
             hint: '看看木字的笔画',
-            explanation: '"木"字像一棵树，中间一竖是树干，一横是树枝，下面两撇是树根。'
+            explanation: '"木"字像一棵树，中间一竖是树干，一横是树枝，下面两撇是树根。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l2q2',
@@ -1086,7 +1098,7 @@ export const chineseGrade1: Unit[] = [
             question: '一二三四五，金木水火___',
             answer: '土',
             hint: '五个元素最后一个',
-            explanation: '口诀是"一二三四五，金木水火土"，第五个是土。'
+            explanation: '口诀是"一二三四五，金木水火土"，第五个是土。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l2q3',
@@ -1094,7 +1106,7 @@ export const chineseGrade1: Unit[] = [
             question: '把五行元素拖到正确的位置',
             answer: '金-西方,木-东方,水-北方,火-南方,土-中央',
             hint: '五行对应五个方位',
-            explanation: '五行对应方位：金-西、木-东、水-北、火-南、土-中央。'
+            explanation: '五行对应方位：金-西、木-东、水-北、火-南、土-中央。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l2q4',
@@ -1103,7 +1115,7 @@ export const chineseGrade1: Unit[] = [
             options: ['树根', '树干', '树叶'],
             answer: '树干',
             hint: '想想树的主干是哪一笔',
-            explanation: '"木"字中间一竖是树干，一横是树枝，下面两撇是树根，所以中间一竖代表树干。'
+            explanation: '"木"字中间一竖是树干，一横是树枝，下面两撇是树根，所以中间一竖代表树干。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l2q5',
@@ -1111,7 +1123,7 @@ export const chineseGrade1: Unit[] = [
             question: '给"木"加一笔能变成___字',
             answer: '本',
             hint: '在木字下面加一横',
-            explanation: '"木"字下面加一横变成"本"字，表示树根。'
+            explanation: '"木"字下面加一横变成"本"字，表示树根。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l2q6',
@@ -1120,7 +1132,7 @@ export const chineseGrade1: Unit[] = [
             options: ["金","木","火"],
             answer: '木',
             hint: '植物和什么有关',
-            explanation: '"木"代表植物，树木就是植物。这是期末常考题！'
+            explanation: '"木"代表植物，树木就是植物。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l2q7',
@@ -1128,7 +1140,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："木"字的韵母是什么？',
             answer: 'u',
             hint: '[拼音韵母]（语文一年级-第3单元）',
-            explanation: '"木"的拼音是mù，韵母是u，这是第1单元学过的单韵母。'
+            explanation: '"木"的拼音是mù，韵母是u，这是第1单元学过的单韵母。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1165,13 +1177,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '云对雨，雪对风，花对树，鸟对虫！',
             },
           },
+          { type: 'tip', content: '本课主要使用韵律诵读法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '韵律诵读法',
         learningObjective: '我能背诵古诗《对韵歌》并理解诗句的意思和表达的情感',
         successCriteria: '①能正确流利背诵《对韵歌》全诗 ②能说出诗句的意思和诗人表达的情感',
-        iDo: '家长有节奏地朗读对韵歌，配合拍手打节拍，示范韵律感。',
-        weDo: '亲子一起拍手读对韵歌，一人读上句一人读下句，感受对仗之美。',
-        youDo: '孩子独立背诵对韵歌，并尝试自己编一句对仗的话。',
+        iDo: '家长有节奏地朗读对韵歌，配合拍手打节拍，示范韵律感。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起拍手读对韵歌，一人读上句一人读下句，感受对仗之美。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立背诵对韵歌，并尝试自己编一句对仗的话。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】花(huā)偏旁：艹本义：植物的繁殖器官引申义：花朵、花…\n共学四步：\n①对话出题：问孩子"云对雨"中，和"云"相对的是？"\n②孩子应答：对韵歌中"云对雨，雪对风"，云和雨是相对的。\n③答错引导：家长可以和孩子一起看课文插图，用"画面记忆法"——把每句诗变成一幅画，看图背诗\n④快速检测："云对雨"中，和"云"相对的是？、"花对树，鸟对（    ）"、对韵歌的特点是什么？',
         funElement: '小游戏：对对子大赛！我说"云对雨"，你说"雪对风"，看谁对得又快又好！🌧️🌬️',
         gsapAnimations: ['GSAP: 对仗词组左右对称飞入动画'],
@@ -1184,7 +1197,7 @@ export const chineseGrade1: Unit[] = [
             options: ['风', '雨', '雪'],
             answer: '雨',
             hint: '看看对韵歌怎么写的',
-            explanation: '对韵歌中"云对雨，雪对风"，云和雨是相对的。'
+            explanation: '对韵歌中"云对雨，雪对风"，云和雨是相对的。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l3q2',
@@ -1192,7 +1205,7 @@ export const chineseGrade1: Unit[] = [
             question: '"花对树，鸟对___"',
             answer: '虫',
             hint: '想想什么和鸟相对',
-            explanation: '对韵歌中"花对树，鸟对虫"，鸟和虫是相对的。'
+            explanation: '对韵歌中"花对树，鸟对虫"，鸟和虫是相对的。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l3q3',
@@ -1201,7 +1214,7 @@ export const chineseGrade1: Unit[] = [
             options: ['字数相同、词性相对', '每句押韵', '都是五个字'],
             answer: '字数相同、词性相对',
             hint: '观察上下句的关系',
-            explanation: '对韵歌的特点是上下句字数相同、词性相对，形成对仗。'
+            explanation: '对韵歌的特点是上下句字数相同、词性相对，形成对仗。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l3q4',
@@ -1210,7 +1223,7 @@ export const chineseGrade1: Unit[] = [
             options: ["水秀","花香","鸟鸣"],
             answer: '水秀',
             hint: '回忆对韵歌',
-            explanation: '对韵歌中"山清对水秀"，山对水，清对秀。'
+            explanation: '对韵歌中"山清对水秀"，山对水，清对秀。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l3q5',
@@ -1218,7 +1231,7 @@ export const chineseGrade1: Unit[] = [
             question: '自己编一句对韵歌："黑对___"',
             answer: '白',
             hint: '和黑相反的颜色',
-            explanation: '黑和白是反义词，可以对"黑对白"。'
+            explanation: '黑和白是反义词，可以对"黑对白"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l3q6',
@@ -1227,7 +1240,7 @@ export const chineseGrade1: Unit[] = [
             options: ["桃红","草青","天蓝"],
             answer: '桃红',
             hint: '回忆课文中对仗',
-            explanation: '对韵歌中"柳绿对桃红"，柳对桃，绿对红。这是期末常考题！'
+            explanation: '对韵歌中"柳绿对桃红"，柳对桃，绿对红。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l3q7',
@@ -1235,7 +1248,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：对韵歌中"天"对什么？',
             answer: '地',
             hint: '[对韵歌]（语文一年级-第3单元）',
-            explanation: '对韵歌中"天地"相对，"天"对"地"是对对子的基本方法。'
+            explanation: '对韵歌中"天地"相对，"天"对"地"是对对子的基本方法。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1246,14 +1259,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '让我们来检验一下这单元学到的知识吧！通过这些练习，看看你掌握了多少', animationType: 'typewriter' },
           { type: 'tip', content: '评价小贴士：做错的题不要着急，回到前面的课时再学一遍，学会了就是最大的进步！', label: '评价提示', animationType: 'pulse' },
-          { type: 'formula', content: '复习口诀：学过的知识要常复习，温故而知新，才能记得更牢！', label: '复习方法', animationType: 'typewriter' }
+          { type: 'formula', content: '复习口诀：学过的知识要常复习，温故而知新，才能记得更牢！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '评价反馈法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能独立完成本单元形成性评价检测，查漏补缺',
         successCriteria: '①能独立完成所有检测题 ②能说出自己做错题目的正确答案',
-        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。',
-        weDo: '亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功。',
-        youDo: '孩子独立完成评价练习，错的内容多练几遍。',
+        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成评价练习，错的内容多练几遍。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】让我们来检验一下这单元学到的知识吧！通过这些练习，看看你…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：知识大闯关！答对一题前进一步，全部答对就是学习大王！👑',
         gsapAnimations: ['GSAP: 评价卡片翻转动画'],
@@ -1266,7 +1280,7 @@ export const chineseGrade1: Unit[] = [
             options: ["云","天空","太阳"],
             answer: '天空',
             hint: '看看天的上面是什么',
-            explanation: '"天"字上面一横代表天空，下面是"大"，人头顶上的就是天。'
+            explanation: '"天"字上面一横代表天空，下面是"大"，人头顶上的就是天。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l4q2',
@@ -1275,7 +1289,7 @@ export const chineseGrade1: Unit[] = [
             answer: '一棵树',
             acceptableAnswers: ['一棵树', '树', '树木', '大树'],
             hint: '看看木字的笔画',
-            explanation: '"木"字像一棵树，中间一竖是树干，一横是树枝。'
+            explanation: '"木"字像一棵树，中间一竖是树干，一横是树枝。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l4q3',
@@ -1284,7 +1298,7 @@ export const chineseGrade1: Unit[] = [
             options: ["风","雨","雪"],
             answer: '雨',
             hint: '回忆对韵歌',
-            explanation: '对韵歌中"云对雨，雪对风"。'
+            explanation: '对韵歌中"云对雨，雪对风"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l4q4',
@@ -1292,7 +1306,7 @@ export const chineseGrade1: Unit[] = [
             question: '本单元学了"天地人你我他"和"金木水火___"',
             answer: '土',
             hint: '五行最后一个',
-            explanation: '本单元学了天地人你我他和金木水火土两组生字。'
+            explanation: '本单元学了天地人你我他和金木水火土两组生字。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l4q5',
@@ -1301,7 +1315,7 @@ export const chineseGrade1: Unit[] = [
             options: ["一个人在走路","一棵树","一座山"],
             answer: '一个人在走路',
             hint: '看看人字的形状',
-            explanation: '"人"字像一个人在走路，一撇一捺互相支撑。'
+            explanation: '"人"字像一个人在走路，一撇一捺互相支撑。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l4q6',
@@ -1310,7 +1324,7 @@ export const chineseGrade1: Unit[] = [
             options: ["字数相同词性相对","每句押韵","都是五个字"],
             answer: '字数相同词性相对',
             hint: '观察上下句的关系',
-            explanation: '对韵歌的特点是上下句字数相同、词性相对，这是期末常考题！'
+            explanation: '对韵歌的特点是上下句字数相同、词性相对，这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l4q7',
@@ -1319,7 +1333,7 @@ export const chineseGrade1: Unit[] = [
             options: ['象形字', '加法', '减法', '乘法'],
             answer: '象形字',
             hint: '[识字方法]（语文一年级-第3单元）',
-            explanation: '本单元学习了通过象形字来认识汉字的方法。'
+            explanation: '本单元学习了通过象形字来认识汉字的方法。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1330,14 +1344,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '学完了"识字天地（一）"这个单元，让我们把所有知识综合起来，看看能做什么吧！', animationType: 'typewriter' },
           { type: 'tip', content: '综合应用小窍门：试着把本单元学到的知识用在生活中，学以致用最有效！', label: '应用技巧', animationType: 'pulse' },
-          { type: 'formula', content: '复习三步法：回顾学过什么→练习不会的→把知识用起来！', label: '复习方法', animationType: 'typewriter' }
+          { type: 'formula', content: '复习三步法：回顾学过什么→练习不会的→把知识用起来！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用综合应用法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '综合应用法',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能综合运用本单元所学知识解决实际问题',
         successCriteria: '①能正确运用本单元核心知识解题 ②能解释解题思路',
-        iDo: '家长和孩子一起回顾本单元所有内容，示范如何综合运用所学知识。',
-        weDo: '亲子一起做综合练习，互相出题考对方。',
-        youDo: '孩子独立完成综合练习，把本单元知识串联起来。',
+        iDo: '家长和孩子一起回顾本单元所有内容，示范如何综合运用所学知识。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做综合练习，互相出题考对方。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合练习，把本单元知识串联起来。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】学完了"识字天地（一）"这个单元，让我们把所有知识综合起…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：知识大串联！把本单元学到的知识连成一条线，看谁连得最长！🔗',
         gsapAnimations: ['GSAP: 综合复习动画'],
@@ -1350,7 +1365,7 @@ export const chineseGrade1: Unit[] = [
             options: ["反义词","近义词","无关"],
             answer: '反义词',
             hint: '天在上面地在下面',
-            explanation: '天在上面，地在下面，它们是一对反义词。'
+            explanation: '天在上面，地在下面，它们是一对反义词。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l5q2',
@@ -1359,7 +1374,7 @@ export const chineseGrade1: Unit[] = [
             options: ['天气', '太阳', '跑步', '吃饭'],
             answer: '天气',
             hint: '和天有关的词',
-            explanation: '可以组词：天气、今天、天空等。'
+            explanation: '可以组词：天气、今天、天空等。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l5q3',
@@ -1367,7 +1382,7 @@ export const chineseGrade1: Unit[] = [
             question: '把生字和对应的组词连起来',
             answer: '天-天气,地-土地,人-大人',
             hint: '每个字能组什么词',
-            explanation: '天可以组天气，地可以组土地，人可以组大人。'
+            explanation: '天可以组天气，地可以组土地，人可以组大人。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l5q4',
@@ -1376,7 +1391,7 @@ export const chineseGrade1: Unit[] = [
             options: ["代词","名词","动词"],
             answer: '代词',
             hint: '它们代替什么',
-            explanation: '"你、我、他"是代词，用来代替人。'
+            explanation: '"你、我、他"是代词，用来代替人。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l5q5',
@@ -1384,7 +1399,7 @@ export const chineseGrade1: Unit[] = [
             question: '编一句对韵歌："大对___"',
             answer: '小',
             hint: '大的反义词',
-            explanation: '大对小，这是对韵歌的写法，意思相反的词相对。'
+            explanation: '大对小，这是对韵歌的写法，意思相反的词相对。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l5q6',
@@ -1393,7 +1408,7 @@ export const chineseGrade1: Unit[] = [
             options: ["动词","名词","形容词"],
             answer: '名词',
             hint: '花和树表示什么',
-            explanation: '花和树都表示事物，是名词。对韵歌中名词对名词。这是期末常考题！'
+            explanation: '花和树都表示事物，是名词。对韵歌中名词对名词。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u3l5q7',
@@ -1401,7 +1416,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："花对树"中"花"和"树"都是什么词？',
             answer: '名词',
             hint: '[词性分类]（语文一年级-第3单元）',
-            explanation: '"花"和"树"都表示事物的名称，是名词。'
+            explanation: '"花"和"树"都表示事物的名称，是名词。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }
@@ -1442,13 +1457,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '古人照着事物的样子画出来的字，就是象形字！',
             },
           },
+          { type: 'tip', content: '本课主要使用象形识字法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '象形识字法',
         learningObjective: '我能正确认读和书写本课生字，了解汉字的构字规律',
         successCriteria: '①能正确认读本课所有生字 ②能说出至少3个字的构字方法或偏旁部首',
-        iDo: '家长展示象形字卡片，让孩子观察字形和图画的对应关系。',
-        weDo: '亲子一起玩"看图猜字"游戏，家长画图画，孩子猜对应的汉字。',
-        youDo: '孩子独立认读八个象形字，并尝试画出对应的图画。',
+        iDo: '家长展示象形字卡片，让孩子观察字形和图画的对应关系。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起玩"看图猜字"游戏，家长画图画，孩子猜对应的汉字。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立认读八个象形字，并尝试画出对应的图画。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】日(rì)偏旁：日本义：太阳引申义：白天、日子组词：日出…\n共学四步：\n①对话出题：问孩子"日"字像什么？"\n②孩子应答："日"字是象形字，像圆圆的太阳。\n③答错引导：家长可以和孩子一起用"偏旁部首分析法"拆字——先认偏旁再认部件，编个顺口溜帮助记忆\n④快速检测："日"字像什么？、山上有石头，田里种（    ）、把象形字和对应的事物连起来',
         funElement: '小游戏：象形字变变变！看看图画变成汉字，猜猜是哪个字？🎨',
         gsapAnimations: ['GSAP: 象形字演变动画'],
@@ -1461,7 +1477,7 @@ export const chineseGrade1: Unit[] = [
             options: ['月亮', '太阳', '星星'],
             answer: '太阳',
             hint: '想想"日"字的样子',
-            explanation: '"日"字是象形字，像圆圆的太阳。'
+            explanation: '"日"字是象形字，像圆圆的太阳。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l1q2',
@@ -1469,7 +1485,7 @@ export const chineseGrade1: Unit[] = [
             question: '山上有石头，田里种___',
             answer: '禾',
             hint: '田里种的是什么',
-            explanation: '田里种的是禾苗，"禾"指庄稼的幼苗。'
+            explanation: '田里种的是禾苗，"禾"指庄稼的幼苗。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l1q3',
@@ -1477,7 +1493,7 @@ export const chineseGrade1: Unit[] = [
             question: '把象形字和对应的事物连起来',
             answer: '日-太阳,月-月亮,水-河流,火-火焰',
             hint: '每个字像什么',
-            explanation: '日像太阳、月像月亮、水像河流、火像火焰，它们都是象形字。'
+            explanation: '日像太阳、月像月亮、水像河流、火像火焰，它们都是象形字。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l1q4',
@@ -1486,7 +1502,7 @@ export const chineseGrade1: Unit[] = [
             options: ["他", "山", "的"],
             answer: '山',
             hint: '哪个字像事物的样子',
-            explanation: '"山"字像高高的山峰，是象形字。"他"和"的"不是象形字。'
+            explanation: '"山"字像高高的山峰，是象形字。"他"和"的"不是象形字。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l1q5',
@@ -1495,7 +1511,7 @@ export const chineseGrade1: Unit[] = [
             options: ['月亮', '太阳', '星星', '云朵'],
             answer: '月亮',
             hint: '晚上天上有什么',
-            explanation: '"月"可以组词为月亮、月份等。'
+            explanation: '"月"可以组词为月亮、月份等。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l1q6',
@@ -1504,7 +1520,7 @@ export const chineseGrade1: Unit[] = [
             options: ["树木", "禾苗", "花朵"],
             answer: '禾苗',
             hint: '田里种的庄稼',
-            explanation: '"禾"字的本义是禾苗，指庄稼的幼苗。这是期末常考题！'
+            explanation: '"禾"字的本义是禾苗，指庄稼的幼苗。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l1q7',
@@ -1512,7 +1528,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："禾"字像什么植物？',
             answer: '禾苗',
             hint: '[象形字]（语文一年级-第4单元）',
-            explanation: '"禾"是象形字，形状像成熟的禾苗，穗子下垂。'
+            explanation: '"禾"是象形字，形状像成熟的禾苗，穗子下垂。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1545,13 +1561,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '这些字和动物植物有关，真有趣！',
             },
           },
+          { type: 'tip', content: '本课主要使用归类识字法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '归类识字法',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能正确认读和书写本课生字，了解汉字的构字规律',
         successCriteria: '①能正确认读本课所有生字 ②能说出至少3个字的构字方法或偏旁部首',
-        iDo: '家长展示动物和植物的图片，让孩子观察并认读对应的汉字。',
-        weDo: '亲子一起玩"动物植物分类"游戏，把字卡分成动物类和植物类。',
-        youDo: '孩子独立认读八个字，并试着给每个字组一个词。',
+        iDo: '家长展示动物和植物的图片，让孩子观察并认读对应的汉字。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起玩"动物植物分类"游戏，把字卡分成动物类和植物类。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立认读八个字，并试着给每个字组一个词。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】牛(niú)偏旁：牛本义：一种家畜引申义：固执、厉害组词…\n共学四步：\n①对话出题：问孩子"下面哪个字表示会飞的动物？"\n②孩子应答："鸟"字表示有翅膀会飞的动物。\n③答错引导：家长可以和孩子一起用"偏旁部首分析法"拆字——先认偏旁再认部件，编个顺口溜帮助记忆\n④快速检测：下面哪个字表示会飞的动物？、草地上开满了（    ）、把字分成动物和植物两类',
         funElement: '小游戏：动物植物大分类！把字卡分成两队，动物队和植物队，看谁分得又快又准！🐾🌿',
         gsapAnimations: ['GSAP: 动物植物字演变动画'],
@@ -1564,7 +1581,7 @@ export const chineseGrade1: Unit[] = [
             options: ['鱼', '鸟', '虫'],
             answer: '鸟',
             hint: '哪个动物有翅膀',
-            explanation: '"鸟"字表示有翅膀会飞的动物。'
+            explanation: '"鸟"字表示有翅膀会飞的动物。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l2q2',
@@ -1572,7 +1589,7 @@ export const chineseGrade1: Unit[] = [
             question: '草地上开满了___',
             answer: '花',
             hint: '草地上有什么颜色',
-            explanation: '草地上开满了花，"花"是草字头的字，和植物有关。'
+            explanation: '草地上开满了花，"花"是草字头的字，和植物有关。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l2q3',
@@ -1580,7 +1597,7 @@ export const chineseGrade1: Unit[] = [
             question: '把字分成动物和植物两类',
             answer: '牛-动物,羊-动物,草-植物,花-植物',
             hint: '哪些是动物，哪些是植物',
-            explanation: '牛和羊是动物，草和花是植物。'
+            explanation: '牛和羊是动物，草和花是植物。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l2q4',
@@ -1589,7 +1606,7 @@ export const chineseGrade1: Unit[] = [
             options: ["牛", "花", "马"],
             answer: '花',
             hint: '哪个字和植物有关',
-            explanation: '"花"字有草字头，和植物有关。"牛"和"马"没有草字头。'
+            explanation: '"花"字有草字头，和植物有关。"牛"和"马"没有草字头。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l2q5',
@@ -1598,7 +1615,7 @@ export const chineseGrade1: Unit[] = [
             options: ['小马', '小狗', '小猫', '小鸟'],
             answer: '小马',
             hint: '马的宝宝叫什么',
-            explanation: '"马"可以组词为小马、马车、马路等。'
+            explanation: '"马"可以组词为小马、马车、马路等。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l2q6',
@@ -1607,7 +1624,7 @@ export const chineseGrade1: Unit[] = [
             options: ["虫字旁", "草字头", "木字旁"],
             answer: '虫字旁',
             hint: '"虫"字本身是什么偏旁',
-            explanation: '"虫"字本身是虫字旁，和昆虫有关。这是期末常考题！'
+            explanation: '"虫"字本身是虫字旁，和昆虫有关。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l2q7',
@@ -1615,7 +1632,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："虫"字的偏旁是什么？',
             answer: '虫',
             hint: '[偏旁识记]（语文一年级-第4单元）',
-            explanation: '"虫"字本身就是偏旁，虫字旁表示与昆虫有关。'
+            explanation: '"虫"字本身就是偏旁，虫字旁表示与昆虫有关。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1648,13 +1665,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '这些字都和我们自己的身体有关，真有趣！',
             },
           },
+          { type: 'tip', content: '本课主要使用身体体验识字法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '身体体验识字法',
         learningObjective: '我能正确认读和书写本课生字，了解汉字的构字规律',
         successCriteria: '①能正确认读本课所有生字 ②能说出至少3个字的构字方法或偏旁部首',
-        iDo: '家长指着自己身体的部位，让孩子认读对应的汉字。',
-        weDo: '亲子一起玩"指指说说"游戏，家长指身体部位，孩子说出对应的字。',
-        youDo: '孩子独立认读八个身体字，并试着用手指着身体部位读出字来。',
+        iDo: '家长指着自己身体的部位，让孩子认读对应的汉字。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起玩"指指说说"游戏，家长指身体部位，孩子说出对应的字。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立认读八个身体字，并试着用手指着身体部位读出字来。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】口(kǒu)偏旁：口本义：嘴巴引申义：入口、人口组词：口…\n共学四步：\n①对话出题：问孩子"目"是指什么？"\n②孩子应答："目"字的本义是眼睛。\n③答错引导：家长可以和孩子一起用"偏旁部首分析法"拆字——先认偏旁再认部件，编个顺口溜帮助记忆\n④快速检测："目"是指什么？、用（    ）写字、把身体字和对应的部位连起来',
         funElement: '小游戏：身体部位点名！家长说字，孩子指身体部位，看谁反应最快！🏃',
         gsapAnimations: ['GSAP: 身体字演变动画'],
@@ -1667,7 +1685,7 @@ export const chineseGrade1: Unit[] = [
             options: ['嘴巴', '眼睛', '耳朵'],
             answer: '眼睛',
             hint: '"目"是哪个身体部位',
-            explanation: '"目"字的本义是眼睛。'
+            explanation: '"目"字的本义是眼睛。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l3q2',
@@ -1675,7 +1693,7 @@ export const chineseGrade1: Unit[] = [
             question: '用___写字',
             answer: '手',
             hint: '写字用什么',
-            explanation: '我们用手写字，"手"是身体部位。'
+            explanation: '我们用手写字，"手"是身体部位。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l3q3',
@@ -1683,7 +1701,7 @@ export const chineseGrade1: Unit[] = [
             question: '把身体字和对应的部位连起来',
             answer: '口-嘴巴,目-眼睛,足-脚,手-手',
             hint: '每个字对应哪个身体部位',
-            explanation: '口是嘴巴，目是眼睛，足是脚，手是手。'
+            explanation: '口是嘴巴，目是眼睛，足是脚，手是手。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l3q4',
@@ -1692,7 +1710,7 @@ export const chineseGrade1: Unit[] = [
             options: ["力气", "美丽", "厉害"],
             answer: '力气',
             hint: '"力"是什么意思',
-            explanation: '"力"字的意思是力气、力量。'
+            explanation: '"力"字的意思是力气、力量。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l3q5',
@@ -1700,7 +1718,7 @@ export const chineseGrade1: Unit[] = [
             question: '"足"就是___的意思',
             answer: '脚',
             hint: '"足"是哪个身体部位',
-            explanation: '"足"就是脚的意思，比如"手足"就是手和脚。'
+            explanation: '"足"就是脚的意思，比如"手足"就是手和脚。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l3q6',
@@ -1709,7 +1727,7 @@ export const chineseGrade1: Unit[] = [
             options: ["眼睛", "嘴巴", "脚"],
             answer: '嘴巴',
             hint: '口字旁和什么有关',
-            explanation: '"口"字旁的字大多和嘴巴有关，比如吃、喝、唱、叫。这是期末常考题！'
+            explanation: '"口"字旁的字大多和嘴巴有关，比如吃、喝、唱、叫。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l3q7',
@@ -1717,7 +1735,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：身体部位的汉字中，"口"像什么？',
             answer: '嘴巴',
             hint: '[象形字]（语文一年级-第4单元）',
-            explanation: '"口"是象形字，形状像张开的嘴巴。'
+            explanation: '"口"是象形字，形状像张开的嘴巴。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1728,14 +1746,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '让我们来检验一下这单元学到的知识吧！通过这些练习，看看你掌握了多少', animationType: 'typewriter' },
           { type: 'tip', content: '评价小贴士：做错的题不要着急，回到前面的课时再学一遍，学会了就是最大的进步！', label: '评价提示', animationType: 'pulse' },
-          { type: 'formula', content: '复习口诀：学过的知识要常复习，温故而知新，才能记得更牢！', label: '复习方法', animationType: 'typewriter' }
+          { type: 'formula', content: '复习口诀：学过的知识要常复习，温故而知新，才能记得更牢！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '评价反馈法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能独立完成本单元形成性评价检测，查漏补缺',
         successCriteria: '①能独立完成所有检测题 ②能说出自己做错题目的正确答案',
-        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。',
-        weDo: '亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功。',
-        youDo: '孩子独立完成评价练习，错的内容多练几遍。',
+        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成评价练习，错的内容多练几遍。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】让我们来检验一下这单元学到的知识吧！通过这些练习，看看你…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：知识大闯关！答对一题前进一步，全部答对就是学习大王！👑',
         gsapAnimations: ['GSAP: 评价卡片翻转动画'],
@@ -1748,7 +1767,7 @@ export const chineseGrade1: Unit[] = [
             options: ["象形字", "形声字", "会意字"],
             answer: '象形字',
             hint: '想想"日"字像什么',
-            explanation: '"日"字是象形字，像圆圆的太阳。'
+            explanation: '"日"字是象形字，像圆圆的太阳。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l4q2',
@@ -1756,7 +1775,7 @@ export const chineseGrade1: Unit[] = [
             question: '草字头的字大多和___有关',
             answer: '植物',
             hint: '草字头和什么有关',
-            explanation: '草字头的字大多和植物有关，比如草、花、菜。'
+            explanation: '草字头的字大多和植物有关，比如草、花、菜。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l4q3',
@@ -1765,7 +1784,7 @@ export const chineseGrade1: Unit[] = [
             options: ["嘴巴", "眼睛", "耳朵"],
             answer: '眼睛',
             hint: '"目"是哪个身体部位',
-            explanation: '"目"字的意思是眼睛。'
+            explanation: '"目"字的意思是眼睛。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l4q4',
@@ -1773,7 +1792,7 @@ export const chineseGrade1: Unit[] = [
             question: '"足"就是___的意思',
             answer: '脚',
             hint: '"足"是哪个身体部位',
-            explanation: '"足"就是脚的意思。'
+            explanation: '"足"就是脚的意思。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l4q5',
@@ -1782,7 +1801,7 @@ export const chineseGrade1: Unit[] = [
             options: ["花", "牛", "田"],
             answer: '牛',
             hint: '哪个字是动物',
-            explanation: '"牛"是动物，"花"是植物，"田"是自然现象。'
+            explanation: '"牛"是动物，"花"是植物，"田"是自然现象。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l4q6',
@@ -1791,7 +1810,7 @@ export const chineseGrade1: Unit[] = [
             options: ["耳朵", "嘴巴", "手"],
             answer: '嘴巴',
             hint: '口字旁和什么有关',
-            explanation: '"口"字旁的字大多和嘴巴有关，比如吃、喝、唱。这是期末常考题！'
+            explanation: '"口"字旁的字大多和嘴巴有关，比如吃、喝、唱。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l4q7',
@@ -1800,7 +1819,7 @@ export const chineseGrade1: Unit[] = [
             options: ['鸟', '山', '水', '火'],
             answer: '鸟',
             hint: '[动物字]（语文一年级-第4单元）',
-            explanation: '本单元学习了"鸟"等和动物有关的汉字。'
+            explanation: '本单元学习了"鸟"等和动物有关的汉字。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1811,14 +1830,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '学完了"识字天地"这个单元，让我们把所有知识综合起来，看看能做什么吧！', animationType: 'typewriter' },
           { type: 'tip', content: '综合应用小窍门：试着把本单元学到的知识用在生活中，学以致用最有效！', label: '应用技巧', animationType: 'pulse' },
-          { type: 'formula', content: '复习三步法：回顾学过什么→练习不会的→把知识用起来！', label: '复习方法', animationType: 'typewriter' }
+          { type: 'formula', content: '复习三步法：回顾学过什么→练习不会的→把知识用起来！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用综合应用法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '综合应用法',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能综合运用本单元所学知识解决实际问题',
         successCriteria: '①能正确运用本单元核心知识解题 ②能解释解题思路',
-        iDo: '家长和孩子一起回顾本单元所有内容，示范如何综合运用所学知识。',
-        weDo: '亲子一起做综合练习，互相出题考对方。',
-        youDo: '孩子独立完成综合练习，把本单元知识串联起来。',
+        iDo: '家长和孩子一起回顾本单元所有内容，示范如何综合运用所学知识。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做综合练习，互相出题考对方。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合练习，把本单元知识串联起来。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】学完了"识字天地"这个单元，让我们把所有知识综合起来，看…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：知识大串联！把本单元学到的知识连成一条线，看谁连得最长！🔗',
         gsapAnimations: ['GSAP: 综合复习动画'],
@@ -1831,7 +1851,7 @@ export const chineseGrade1: Unit[] = [
             options: ["自然现象、动物植物、身体", "故事、诗歌、散文", "数字、颜色、形状"],
             answer: '自然现象、动物植物、身体',
             hint: '回顾三课的内容',
-            explanation: '本单元学了自然现象（日月水火等）、动物植物（牛羊马鸟等）、身体（口耳目手等）三类汉字。'
+            explanation: '本单元学了自然现象（日月水火等）、动物植物（牛羊马鸟等）、身体（口耳目手等）三类汉字。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l5q2',
@@ -1839,7 +1859,7 @@ export const chineseGrade1: Unit[] = [
             question: '象形字是古人照着事物的___画出来的',
             answer: '样子',
             hint: '象形字像什么',
-            explanation: '象形字是古人照着事物的样子画出来的字，如日像太阳、月像月亮。'
+            explanation: '象形字是古人照着事物的样子画出来的字，如日像太阳、月像月亮。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l5q3',
@@ -1847,7 +1867,7 @@ export const chineseGrade1: Unit[] = [
             question: '把字和类别配对',
             answer: '日-自然现象,牛-动物,花-植物,手-身体',
             hint: '每个字属于哪一类',
-            explanation: '日是自然现象，牛是动物，花是植物，手是身体部位。'
+            explanation: '日是自然现象，牛是动物，花是植物，手是身体部位。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l5q4',
@@ -1856,7 +1876,7 @@ export const chineseGrade1: Unit[] = [
             options: ["山", "耳", "鱼"],
             answer: '耳',
             hint: '哪个字是身体部位',
-            explanation: '"耳"是身体部位的字，"山"是自然现象，"鱼"是动物。'
+            explanation: '"耳"是身体部位的字，"山"是自然现象，"鱼"是动物。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l5q5',
@@ -1864,7 +1884,7 @@ export const chineseGrade1: Unit[] = [
             question: '用"山水"造一个句子：___',
             answer: '这里的山水真美',
             hint: '山水是什么',
-            explanation: '山水指山和水的风景，可以造句如"这里的山水真美"。'
+            explanation: '山水指山和水的风景，可以造句如"这里的山水真美"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l5q6',
@@ -1873,7 +1893,7 @@ export const chineseGrade1: Unit[] = [
             options: ["字形像事物的样子", "字很多笔画", "字很难写"],
             answer: '字形像事物的样子',
             hint: '象形字为什么叫象形字',
-            explanation: '象形字的特点是字形像事物的样子，如"日"像太阳、"山"像山峰。这是期末常考题！'
+            explanation: '象形字的特点是字形像事物的样子，如"日"像太阳、"山"像山峰。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u4l5q7',
@@ -1881,7 +1901,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：象形字的特点是什么？',
             answer: '像事物的形状',
             hint: '[象形字特点]（语文一年级-第4单元）',
-            explanation: '象形字是模仿事物的形状造出来的汉字。'
+            explanation: '象形字是模仿事物的形状造出来的汉字。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }
@@ -1922,13 +1942,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '秋天来了，树叶黄了，大雁飞向南方！',
             },
           },
+          { type: 'tip', content: '本课主要使用三遍阅读法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '三遍阅读法',
         learningObjective: '我能流利朗读课文《秋天》并理解主要内容',
         successCriteria: '①能正确流利朗读课文 ②能回答关于课文内容的问题',
-        iDo: '家长第一遍范读课文，让孩子整体感受秋天的画面。',
-        weDo: '亲子第二遍一起朗读，边读边圈出描写秋天特点的词语。',
-        youDo: '孩子第三遍独立朗读，并用自己的话说说秋天的特点。',
+        iDo: '家长第一遍范读课文，让孩子整体感受秋天的画面。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子第二遍一起朗读，边读边圈出描写秋天特点的词语。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子第三遍独立朗读，并用自己的话说说秋天的特点。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】秋(qiū)偏旁：禾本义：秋天引申义：秋季、收获组词：秋…\n共学四步：\n①对话出题：问孩子"秋天树叶变成了什么颜色？"\n②孩子应答：课文中描写"树叶黄了"，所以秋天树叶变成了黄色。\n③答错引导：家长可以和孩子一起重读课文，用"图文结合法"——边看插图边读文字，帮助理解\n④快速检测：秋天树叶变成了什么颜色？、秋天来了，大雁往（    ）飞、看图片快速说出秋天特征',
         funElement: '小游戏：秋天收藏家！去户外捡落叶，看看能找到几种颜色的叶子，红黄橙绿都是秋天的画笔！🍂',
         gsapAnimations: ['GSAP: 树叶从树上飘落动画'],
@@ -1941,7 +1962,7 @@ export const chineseGrade1: Unit[] = [
             options: ['绿色', '黄色', '紫色'],
             answer: '黄色',
             hint: '回忆课文描写的秋天',
-            explanation: '课文中描写"树叶黄了"，所以秋天树叶变成了黄色。'
+            explanation: '课文中描写"树叶黄了"，所以秋天树叶变成了黄色。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l1q2',
@@ -1950,7 +1971,7 @@ export const chineseGrade1: Unit[] = [
             answer: '南',
             acceptableAnswers: ['南', '南方'],
             hint: '大雁冬天去哪里',
-            explanation: '秋天大雁往南飞，因为南方冬天更暖和。'
+            explanation: '秋天大雁往南飞，因为南方冬天更暖和。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l1q3',
@@ -1958,7 +1979,7 @@ export const chineseGrade1: Unit[] = [
             question: '看图片快速说出秋天特征',
             answer: '落叶',
             hint: '秋天最明显的特征',
-            explanation: '落叶是秋天最明显的特征之一，树叶变色后从树上飘落。'
+            explanation: '落叶是秋天最明显的特征之一，树叶变色后从树上飘落。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l1q4',
@@ -1967,7 +1988,7 @@ export const chineseGrade1: Unit[] = [
             options: ["人字和一字","大字和小字","天字和地字"],
             answer: '人字和一字',
             hint: '回忆课文描写',
-            explanation: '课文中说大雁"一会儿排成个人字，一会儿排成个一字"。'
+            explanation: '课文中说大雁"一会儿排成个人字，一会儿排成个一字"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l1q5',
@@ -1976,7 +1997,7 @@ export const chineseGrade1: Unit[] = [
             options: ['落叶', '桌子', '铅笔', '书包'],
             answer: '落叶',
             hint: '秋天什么从树上飘下来',
-            explanation: '可以用"一片片落叶"来描写秋天的景象。'
+            explanation: '可以用"一片片落叶"来描写秋天的景象。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l1q6',
@@ -1985,7 +2006,7 @@ export const chineseGrade1: Unit[] = [
             options: ["天气、树叶、天空、大雁","只有天气","只有树叶"],
             answer: '天气、树叶、天空、大雁',
             hint: '课文写了秋天的哪些变化',
-            explanation: '课文从天气变凉、树叶变黄、天空蓝高、大雁南飞四个方面描写秋天。这是期末常考题！'
+            explanation: '课文从天气变凉、树叶变黄、天空蓝高、大雁南飞四个方面描写秋天。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l1q7',
@@ -1993,7 +2014,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："秋天"的"秋"字左边是什么偏旁？',
             answer: '禾',
             hint: '[偏旁识记]（语文一年级-第5单元）',
-            explanation: '"秋"字左边是禾字旁，表示与庄稼有关。'
+            explanation: '"秋"字左边是禾字旁，表示与庄稼有关。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2025,13 +2046,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '弯弯的月儿小小的船，小小的船儿两头尖，我在小小的船里坐，只看见闪闪的星星蓝蓝的天！',
             },
           },
+          { type: 'tip', content: '本课主要使用想象联想法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '想象联想法',
         learningObjective: '我能流利朗读课文《小小的船》并理解主要内容',
         successCriteria: '①能正确流利朗读课文 ②能回答关于课文内容的问题',
-        iDo: '家长朗读课文，配合手势比划弯弯的月亮和闪闪的星星。',
-        weDo: '亲子一起想象：如果你坐在月亮船上，会看到什么？互相分享想象。',
-        youDo: '孩子独立背诵课文，并画一幅"坐在月亮船上"的画。',
+        iDo: '家长朗读课文，配合手势比划弯弯的月亮和闪闪的星星。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起想象：如果你坐在月亮船上，会看到什么？互相分享想象。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立背诵课文，并画一幅"坐在月亮船上"的画。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】月(yuè)偏旁：月本义：月亮引申义：月份、月光组词：月…\n共学四步：\n①对话出题：问孩子"小小的船"指的是什么？"\n②孩子应答：课文把弯弯的月亮比作小小的船，这是比喻的写法。\n③答错引导：家长可以和孩子一起重读课文，用"图文结合法"——边看插图边读文字，帮助理解\n④快速检测："小小的船"指的是什么？、弯弯的月儿小小的（    ）、坐在月亮船上看到什么？',
         funElement: '笑话：弯弯的月亮说"我是小船！"星星说"那我是船灯！"云朵说"我是船帆！"——月亮船出发啦！🌙',
         gsapAnimations: ['GSAP: 月亮变成小船的变形动画'],
@@ -2044,7 +2066,7 @@ export const chineseGrade1: Unit[] = [
             options: ['真的船', '弯弯的月亮', '弯弯的桥'],
             answer: '弯弯的月亮',
             hint: '想想课文把什么比作船',
-            explanation: '课文把弯弯的月亮比作小小的船，这是比喻的写法。'
+            explanation: '课文把弯弯的月亮比作小小的船，这是比喻的写法。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l2q2',
@@ -2052,7 +2074,7 @@ export const chineseGrade1: Unit[] = [
             question: '弯弯的月儿小小的___',
             answer: '船',
             hint: '课文的第一个比喻',
-            explanation: '课文原句"弯弯的月儿小小的船"，把弯月比作小船。'
+            explanation: '课文原句"弯弯的月儿小小的船"，把弯月比作小船。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l2q3',
@@ -2061,7 +2083,7 @@ export const chineseGrade1: Unit[] = [
             options: ['太阳和云', '闪闪的星星和蓝蓝的天', '大树和房子'],
             answer: '闪闪的星星和蓝蓝的天',
             hint: '回忆课文内容',
-            explanation: '课文说坐在月亮船上看到"闪闪的星星蓝蓝的天"。'
+            explanation: '课文说坐在月亮船上看到"闪闪的星星蓝蓝的天"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l2q4',
@@ -2070,7 +2092,7 @@ export const chineseGrade1: Unit[] = [
             options: ['因为月亮会发光', '因为弯弯的月亮形状像小船', '因为月亮在天上'],
             answer: '因为弯弯的月亮形状像小船',
             hint: '想想月亮和小船有什么共同点',
-            explanation: '弯弯的月亮两头尖尖，形状像小船，所以课文把月亮比作小船，这是比喻的写法。'
+            explanation: '弯弯的月亮两头尖尖，形状像小船，所以课文把月亮比作小船，这是比喻的写法。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l2q5',
@@ -2079,7 +2101,7 @@ export const chineseGrade1: Unit[] = [
             options: ['香蕉', '苹果', '西瓜', '葡萄'],
             answer: '香蕉',
             hint: '还有什么东西是弯弯的',
-            explanation: '弯弯的香蕉也像小船，你可以用其他弯弯的东西来比喻。'
+            explanation: '弯弯的香蕉也像小船，你可以用其他弯弯的东西来比喻。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l2q6',
@@ -2088,7 +2110,7 @@ export const chineseGrade1: Unit[] = [
             options: ["拟人","比喻","叠词描写"],
             answer: '叠词描写',
             hint: '闪闪和蓝蓝是什么词',
-            explanation: '"闪闪的"和"蓝蓝的"是叠词，用叠词描写让句子更优美。这是期末常考题！'
+            explanation: '"闪闪的"和"蓝蓝的"是叠词，用叠词描写让句子更优美。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l2q7',
@@ -2096,7 +2118,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："小小的船"中"船"的韵母是什么？',
             answer: 'uan',
             hint: '[拼音韵母]（语文一年级-第5单元）',
-            explanation: '"船"的拼音是chuán，韵母是uan，是三拼音节。'
+            explanation: '"船"的拼音是chuán，韵母是uan，是三拼音节。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2130,13 +2152,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '江南可采莲，莲叶何田田，鱼戏莲叶间！',
             },
           },
+          { type: 'tip', content: '本课主要使用诗歌诵读法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '诗歌诵读法',
         learningObjective: '我能背诵古诗《江南》并理解诗句的意思和表达的情感',
         successCriteria: '①能正确流利背诵《江南》全诗 ②能说出诗句的意思和诗人表达的情感',
-        iDo: '家长有感情地朗读江南汉乐府，示范古诗的节奏和韵律。',
-        weDo: '亲子一起打着节拍读古诗，感受"鱼戏莲叶间"的欢快。',
-        youDo: '孩子独立背诵古诗，并画出诗中描绘的画面。',
+        iDo: '家长有感情地朗读江南汉乐府，示范古诗的节奏和韵律。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起打着节拍读古诗，感受"鱼戏莲叶间"的欢快。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立背诵古诗，并画出诗中描绘的画面。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】江(jiāng)偏旁：氵本义：大河引申义：江河、长江组词…\n共学四步：\n①对话出题：问孩子"江南"是什么意思？"\n②孩子应答：江南指长江以南的地区，那里水乡多莲藕。\n③答错引导：家长可以和孩子一起看课文插图，用"画面记忆法"——把每句诗变成一幅画，看图背诗\n④快速检测："江南"是什么意思？、鱼戏莲叶（    ）（填正确的字）、按诗中顺序排列鱼儿游的方向',
         funElement: '小游戏：小鱼捉迷藏！鱼儿在莲叶东、西、南、北捉迷藏，你来当小鱼，在四个方向游一游！🐟',
         gsapAnimations: ['GSAP: 小鱼在莲叶间穿梭动画'],
@@ -2149,7 +2172,7 @@ export const chineseGrade1: Unit[] = [
             options: ['江的南边', '江的北边', '江的中间'],
             answer: '江的南边',
             hint: '江南就是长江以南',
-            explanation: '江南指长江以南的地区，那里水乡多莲藕。'
+            explanation: '江南指长江以南的地区，那里水乡多莲藕。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l3q2',
@@ -2157,7 +2180,7 @@ export const chineseGrade1: Unit[] = [
             question: '鱼戏莲叶___（填正确的字）',
             answer: '间',
             hint: '鱼儿在哪里游',
-            explanation: '原诗"鱼戏莲叶间"，鱼儿在莲叶中间游来游去。'
+            explanation: '原诗"鱼戏莲叶间"，鱼儿在莲叶中间游来游去。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l3q3',
@@ -2165,7 +2188,7 @@ export const chineseGrade1: Unit[] = [
             question: '按诗中顺序排列鱼儿游的方向',
             answer: '东,西,南,北',
             hint: '回忆诗中鱼儿游的顺序',
-            explanation: '诗中写鱼戏莲叶东、西、南、北，依次是东、西、南、北。'
+            explanation: '诗中写鱼戏莲叶东、西、南、北，依次是东、西、南、北。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l3q4',
@@ -2174,7 +2197,7 @@ export const chineseGrade1: Unit[] = [
             options: ['因为江南水乡多水', '因为江南天气很冷', '因为江南有很多山'],
             answer: '因为江南水乡多水',
             hint: '想想莲藕生长需要什么',
-            explanation: '江南是长江以南的水乡地区，水多适合莲藕生长，所以盛产莲藕。'
+            explanation: '江南是长江以南的水乡地区，水多适合莲藕生长，所以盛产莲藕。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l3q5',
@@ -2183,7 +2206,7 @@ export const chineseGrade1: Unit[] = [
             answer: '大',
             acceptableAnswers: ['大', '多'],
             hint: '田田形容莲叶怎样',
-            explanation: '"何田田"形容莲叶长得又大又圆，挨挨挤挤的，非常茂盛。'
+            explanation: '"何田田"形容莲叶长得又大又圆，挨挨挤挤的，非常茂盛。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l3q6',
@@ -2192,7 +2215,7 @@ export const chineseGrade1: Unit[] = [
             options: ["打架","游玩嬉戏","睡觉"],
             answer: '游玩嬉戏',
             hint: '鱼儿在莲叶间做什么',
-            explanation: '"戏"是游玩嬉戏的意思，鱼儿在莲叶间快乐地游来游去。这是期末常考题！'
+            explanation: '"戏"是游玩嬉戏的意思，鱼儿在莲叶间快乐地游来游去。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l3q7',
@@ -2200,7 +2223,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："江南"的"江"字偏旁是什么？',
             answer: '氵',
             hint: '[偏旁识记]（语文一年级-第5单元）',
-            explanation: '"江"字的偏旁是三点水（氵），表示与水有关。'
+            explanation: '"江"字的偏旁是三点水（氵），表示与水有关。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2211,14 +2234,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '让我们来检验一下这单元学到的知识吧！通过这些练习，看看你掌握了多少', animationType: 'typewriter' },
           { type: 'tip', content: '评价小贴士：做错的题不要着急，回到前面的课时再学一遍，学会了就是最大的进步！', label: '评价提示', animationType: 'pulse' },
-          { type: 'formula', content: '复习口诀：学过的知识要常复习，温故而知新，才能记得更牢！', label: '复习方法', animationType: 'typewriter' }
+          { type: 'formula', content: '复习口诀：学过的知识要常复习，温故而知新，才能记得更牢！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '评价反馈法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能独立完成本单元形成性评价检测，查漏补缺',
         successCriteria: '①能独立完成所有检测题 ②能说出自己做错题目的正确答案',
-        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。',
-        weDo: '亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功。',
-        youDo: '孩子独立完成评价练习，错的内容多练几遍。',
+        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成评价练习，错的内容多练几遍。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】让我们来检验一下这单元学到的知识吧！通过这些练习，看看你…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：知识大闯关！答对一题前进一步，全部答对就是学习大王！👑',
         gsapAnimations: ['GSAP: 评价卡片翻转动画'],
@@ -2231,7 +2255,7 @@ export const chineseGrade1: Unit[] = [
             options: ["绿色","黄色","紫色"],
             answer: '黄色',
             hint: '回忆课文描写的秋天',
-            explanation: '课文中描写"树叶黄了"，秋天树叶变成了黄色。'
+            explanation: '课文中描写"树叶黄了"，秋天树叶变成了黄色。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l4q2',
@@ -2239,7 +2263,7 @@ export const chineseGrade1: Unit[] = [
             question: '"小小的船"指的是弯弯的___',
             answer: '月亮',
             hint: '课文把什么比作船',
-            explanation: '课文把弯弯的月亮比作小小的船。'
+            explanation: '课文把弯弯的月亮比作小小的船。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l4q3',
@@ -2248,7 +2272,7 @@ export const chineseGrade1: Unit[] = [
             options: ["莲花","柳树","竹子"],
             answer: '莲花',
             hint: '江南水乡有什么花',
-            explanation: '"莲"就是莲花，江南水乡盛产莲藕。'
+            explanation: '"莲"就是莲花，江南水乡盛产莲藕。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l4q4',
@@ -2257,7 +2281,7 @@ export const chineseGrade1: Unit[] = [
             answer: '南',
             acceptableAnswers: ['南', '南方'],
             hint: '大雁冬天去哪里',
-            explanation: '秋天大雁往南飞，因为南方冬天更暖和。'
+            explanation: '秋天大雁往南飞，因为南方冬天更暖和。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l4q5',
@@ -2266,7 +2290,7 @@ export const chineseGrade1: Unit[] = [
             options: ["拟人","比喻","排比"],
             answer: '比喻',
             hint: '把月亮比作什么',
-            explanation: '把弯弯的月亮比作小小的船，这是比喻的手法。'
+            explanation: '把弯弯的月亮比作小小的船，这是比喻的手法。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l4q6',
@@ -2275,7 +2299,7 @@ export const chineseGrade1: Unit[] = [
             options: ["打架","游玩","睡觉"],
             answer: '游玩',
             hint: '鱼儿在莲叶间做什么',
-            explanation: '"戏"是游玩、嬉戏的意思，鱼儿在莲叶间快乐地游来游去。这是期末常考题！'
+            explanation: '"戏"是游玩、嬉戏的意思，鱼儿在莲叶间快乐地游来游去。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l4q7',
@@ -2283,7 +2307,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：本单元课文主要描写了什么？',
             answer: '自然风景',
             hint: '[课文主题]（语文一年级-第5单元）',
-            explanation: '本单元课文描写了不同的自然风景：《秋天》写秋景，《小小的船》写夜空月色，《江南》写水乡莲池。'
+            explanation: '本单元课文描写了不同的自然风景：《秋天》写秋景，《小小的船》写夜空月色，《江南》写水乡莲池。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2294,14 +2318,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '学完了"课文阅读（一）"这个单元，让我们把所有知识综合起来，看看能做什么吧！', animationType: 'typewriter' },
           { type: 'tip', content: '综合应用小窍门：试着把本单元学到的知识用在生活中，学以致用最有效！', label: '应用技巧', animationType: 'pulse' },
-          { type: 'formula', content: '复习三步法：回顾学过什么→练习不会的→把知识用起来！', label: '复习方法', animationType: 'typewriter' }
+          { type: 'formula', content: '复习三步法：回顾学过什么→练习不会的→把知识用起来！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用综合应用法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '综合应用法',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能综合运用本单元所学知识解决实际问题',
         successCriteria: '①能正确运用本单元核心知识解题 ②能解释解题思路',
-        iDo: '家长和孩子一起回顾本单元所有内容，示范如何综合运用所学知识。',
-        weDo: '亲子一起做综合练习，互相出题考对方。',
-        youDo: '孩子独立完成综合练习，把本单元知识串联起来。',
+        iDo: '家长和孩子一起回顾本单元所有内容，示范如何综合运用所学知识。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做综合练习，互相出题考对方。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合练习，把本单元知识串联起来。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】学完了"课文阅读（一）"这个单元，让我们把所有知识综合起…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：知识大串联！把本单元学到的知识连成一条线，看谁连得最长！🔗',
         gsapAnimations: ['GSAP: 综合复习动画'],
@@ -2314,7 +2339,7 @@ export const chineseGrade1: Unit[] = [
             options: ["自然风景","动物故事","科学知识"],
             answer: '自然风景',
             hint: '秋天、月亮、江南都是什么',
-            explanation: '三篇课文都描写了自然风景：秋天的景色、夜空的月亮、江南的莲池。'
+            explanation: '三篇课文都描写了自然风景：秋天的景色、夜空的月亮、江南的莲池。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l5q2',
@@ -2322,7 +2347,7 @@ export const chineseGrade1: Unit[] = [
             question: '用"弯弯的"造一个短语：___的月亮',
             answer: '弯弯',
             hint: '课文中的叠词',
-            explanation: '课文用了"弯弯的"这个叠词来描写月亮的形状。'
+            explanation: '课文用了"弯弯的"这个叠词来描写月亮的形状。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l5q3',
@@ -2330,7 +2355,7 @@ export const chineseGrade1: Unit[] = [
             question: '把课文和描写的事物配对',
             answer: '秋天-落叶,小小的船-月亮,江南-莲叶',
             hint: '每篇课文写了什么',
-            explanation: '秋天写落叶，小小的船写月亮，江南写莲叶和鱼。'
+            explanation: '秋天写落叶，小小的船写月亮，江南写莲叶和鱼。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l5q4',
@@ -2339,7 +2364,7 @@ export const chineseGrade1: Unit[] = [
             options: ["红色","红红的","红了"],
             answer: '红红的',
             hint: '叠词是什么样子的',
-            explanation: '叠词是同一个字重复，如"红红的""弯弯的""闪闪的"。'
+            explanation: '叠词是同一个字重复，如"红红的""弯弯的""闪闪的"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l5q5',
@@ -2348,7 +2373,7 @@ export const chineseGrade1: Unit[] = [
             answer: '红红',
             acceptableAnswers: ['红红', '白白', '黄黄', '粉粉', '蓝蓝', '绿绿'],
             hint: '用什么叠词形容花',
-            explanation: '可以用"红红的花儿小小的草"来模仿课文的句式。'
+            explanation: '可以用"红红的花儿小小的草"来模仿课文的句式。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l5q6',
@@ -2357,7 +2382,7 @@ export const chineseGrade1: Unit[] = [
             options: ["1个","2个","3个"],
             answer: '2个',
             hint: '找重复的字',
-            explanation: '"闪闪的"和"蓝蓝的"是叠词，共有2个。这是期末常考题！'
+            explanation: '"闪闪的"和"蓝蓝的"是叠词，共有2个。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u5l5q7',
@@ -2365,7 +2390,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："弯弯的月儿"中"弯"的反义词是什么？',
             answer: '直',
             hint: '[反义词]（语文一年级-第5单元）',
-            explanation: '"弯"的反义词是"直"，意思相反的两个词就是反义词。'
+            explanation: '"弯"的反义词是"直"，意思相反的两个词就是反义词。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }
@@ -2406,13 +2431,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '小鸡画竹叶，小狗画梅花，小鸭画枫叶，小马画月牙！',
             },
           },
+          { type: 'tip', content: '本课主要使用互动表演法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '互动表演法',
         learningObjective: '我能流利朗读课文《雪地里的小画家》并理解主要内容',
         successCriteria: '①能正确流利朗读课文 ②能回答关于课文内容的问题',
-        iDo: '家长朗读课文，用手势模仿不同小动物的脚印形状。',
-        weDo: '亲子一起扮演小画家，在纸上画各种动物的脚印，配上课文内容。',
-        youDo: '孩子独立朗读并背诵课文，说说每种动物的脚印像什么。',
+        iDo: '家长朗读课文，用手势模仿不同小动物的脚印形状。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起扮演小画家，在纸上画各种动物的脚印，配上课文内容。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立朗读并背诵课文，说说每种动物的脚印像什么。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】雪(xuě)偏旁：雨本义：天空中落下的白色冰晶引申义：下…\n共学四步：\n①对话出题：问孩子"小鸡的脚印像什么？"\n②孩子应答：课文中说小鸡画竹叶，小鸡的脚印像竹叶的形状。\n③答错引导：家长可以和孩子一起重读课文，用"图文结合法"——边看插图边读文字，帮助理解\n④快速检测：小鸡的脚印像什么？、小狗画（    ）、谁没有参加画画？',
         funElement: '笑话：青蛙说"我也要画画！"大家说"你冬眠呢！"——青蛙是唯一没参加的小画家！🐸❄️',
         gsapAnimations: ['GSAP: 动物脚印依次盖印动画'],
@@ -2425,7 +2451,7 @@ export const chineseGrade1: Unit[] = [
             options: ['竹叶', '梅花', '枫叶'],
             answer: '竹叶',
             hint: '想想小鸡脚趾的形状',
-            explanation: '课文中说小鸡画竹叶，小鸡的脚印像竹叶的形状。'
+            explanation: '课文中说小鸡画竹叶，小鸡的脚印像竹叶的形状。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l1q2',
@@ -2433,7 +2459,7 @@ export const chineseGrade1: Unit[] = [
             question: '小狗画___',
             answer: '梅花',
             hint: '小狗的脚印像什么花',
-            explanation: '课文中说小狗画梅花，小狗的脚印像梅花。'
+            explanation: '课文中说小狗画梅花，小狗的脚印像梅花。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l1q3',
@@ -2442,7 +2468,7 @@ export const chineseGrade1: Unit[] = [
             options: ['小鸡', '青蛙', '小鸭'],
             answer: '青蛙',
             hint: '谁在冬眠',
-            explanation: '青蛙在冬眠没有参加，课文中说"青蛙为什么没参加？他在洞里睡着啦"。'
+            explanation: '青蛙在冬眠没有参加，课文中说"青蛙为什么没参加？他在洞里睡着啦"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l1q4',
@@ -2451,7 +2477,7 @@ export const chineseGrade1: Unit[] = [
             options: ["3个","4个","5个"],
             answer: '4个',
             hint: '数一数有几种动物',
-            explanation: '雪地里有4个小画家：小鸡、小狗、小鸭、小马。'
+            explanation: '雪地里有4个小画家：小鸡、小狗、小鸭、小马。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l1q5',
@@ -2459,7 +2485,7 @@ export const chineseGrade1: Unit[] = [
             question: '青蛙没有参加画画，因为它在___',
             answer: '冬眠',
             hint: '青蛙冬天做什么',
-            explanation: '青蛙在冬眠，所以没有参加画画。'
+            explanation: '青蛙在冬眠，所以没有参加画画。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l1q6',
@@ -2468,7 +2494,7 @@ export const chineseGrade1: Unit[] = [
             options: ["真的画","动物的脚印","雪地上的图案"],
             answer: '动物的脚印',
             hint: '小画家用什么画画',
-            explanation: '"画"指的是动物在雪地上留下的脚印，像一幅画。这是期末常考题！'
+            explanation: '"画"指的是动物在雪地上留下的脚印，像一幅画。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l1q7',
@@ -2476,7 +2502,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："雪地里的小画家"中，小鸡画的是什么？',
             answer: '竹叶',
             hint: '[课文内容]（语文一年级-第6单元）',
-            explanation: '小鸡的脚印像竹叶，所以小鸡画竹叶。'
+            explanation: '小鸡的脚印像竹叶，所以小鸡画竹叶。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2509,13 +2535,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '乌鸦把石子放进瓶子里，水升高了，终于喝到水了！',
             },
           },
+          { type: 'tip', content: '本课主要使用问题解决式阅读法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '问题解决式阅读法',
         learningObjective: '我能流利朗读课文《乌鸦喝水》并理解主要内容',
         successCriteria: '①能正确流利朗读课文 ②能回答关于课文内容的问题',
-        iDo: '家长朗读课文，在乌鸦遇到困难时暂停，让孩子先想想办法。',
-        weDo: '亲子一起做实验：用小石子放入水瓶中，观察水位上升的过程。',
-        youDo: '孩子独立复述故事，说说乌鸦是怎么解决问题的。',
+        iDo: '家长朗读课文，在乌鸦遇到困难时暂停，让孩子先想想办法。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做实验：用小石子放入水瓶中，观察水位上升的过程。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立复述故事，说说乌鸦是怎么解决问题的。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】乌(wū)偏旁：丿本义：乌鸦引申义：黑色组词：乌鸦、乌黑…\n共学四步：\n①对话出题：问孩子"乌鸦是怎么喝到水的？"\n②孩子应答：乌鸦把小石子一颗一颗放进瓶子里，水位升高就喝到水了。\n③答错引导：家长可以和孩子一起重读课文，用"图文结合法"——边看插图边读文字，帮助理解\n④快速检测：乌鸦是怎么喝到水的？、乌鸦把小（    ）放进瓶子里、这个故事告诉我们什么道理？',
         funElement: '小游戏：乌鸦智多星！瓶子里的水太低喝不到，除了加石子，你还能想到什么办法？倾斜瓶子？用吸管？🧠',
         gsapAnimations: ['GSAP: 石子投入瓶中水位上升动画'],
@@ -2528,7 +2555,7 @@ export const chineseGrade1: Unit[] = [
             options: ['把瓶子推倒', '往瓶子里放石子', '用翅膀舀水'],
             answer: '往瓶子里放石子',
             hint: '回忆乌鸦的办法',
-            explanation: '乌鸦把小石子一颗一颗放进瓶子里，水位升高就喝到水了。'
+            explanation: '乌鸦把小石子一颗一颗放进瓶子里，水位升高就喝到水了。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l2q2',
@@ -2536,7 +2563,7 @@ export const chineseGrade1: Unit[] = [
             question: '乌鸦把小___放进瓶子里',
             answer: '石子',
             hint: '乌鸦找来了什么东西',
-            explanation: '乌鸦找来小石子放进瓶子里，让水位升高。'
+            explanation: '乌鸦找来小石子放进瓶子里，让水位升高。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l2q3',
@@ -2545,7 +2572,7 @@ export const chineseGrade1: Unit[] = [
             options: ['乌鸦很聪明', '遇到困难要想办法', '要多喝水'],
             answer: '遇到困难要想办法',
             hint: '想想乌鸦的精神',
-            explanation: '故事告诉我们遇到困难要动脑筋想办法，不能轻易放弃。'
+            explanation: '故事告诉我们遇到困难要动脑筋想办法，不能轻易放弃。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l2q4',
@@ -2554,7 +2581,7 @@ export const chineseGrade1: Unit[] = [
             options: ["水瓶太重","水太少瓶口太小","乌鸦嘴巴太短"],
             answer: '水太少瓶口太小',
             hint: '回忆课文内容',
-            explanation: '瓶子里水不多，瓶口又小，乌鸦的嘴够不着水。'
+            explanation: '瓶子里水不多，瓶口又小，乌鸦的嘴够不着水。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l2q5',
@@ -2562,7 +2589,7 @@ export const chineseGrade1: Unit[] = [
             question: '除了加石子，你还能想到什么办法让乌鸦喝到水？___',
             answer: '倾斜瓶子',
             hint: '动动脑筋',
-            explanation: '还可以倾斜瓶子、用吸管等办法，只要动脑筋就能想出好办法！'
+            explanation: '还可以倾斜瓶子、用吸管等办法，只要动脑筋就能想出好办法！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l2q6',
@@ -2571,7 +2598,7 @@ export const chineseGrade1: Unit[] = [
             options: ["童话故事","寓言故事","科普文章"],
             answer: '寓言故事',
             hint: '故事告诉我们什么道理',
-            explanation: '乌鸦喝水是寓言故事，通过故事告诉我们遇到困难要想办法。这是期末常考题！'
+            explanation: '乌鸦喝水是寓言故事，通过故事告诉我们遇到困难要想办法。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l2q7',
@@ -2579,7 +2606,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："乌鸦喝水"中乌鸦用什么方法喝到水的？',
             answer: '往瓶子里放石子',
             hint: '[课文内容]（语文一年级-第6单元）',
-            explanation: '乌鸦往瓶子里放石子，水面升高就喝到水了。'
+            explanation: '乌鸦往瓶子里放石子，水面升高就喝到水了。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2611,13 +2638,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '春夏秋冬，四季各有各的美！',
             },
           },
+          { type: 'tip', content: '本课主要使用季节线索阅读法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '季节线索阅读法',
         learningObjective: '我能流利朗读课文《小蜗牛》并理解主要内容',
         successCriteria: '①能正确流利朗读课文 ②能回答关于课文内容的问题',
-        iDo: '家长朗读课文，在季节变化处重点提示，帮孩子建立时间线索。',
-        weDo: '亲子一起梳理小蜗牛每次出门的季节和看到的变化，画出时间线。',
-        youDo: '孩子独立阅读课文，说说小蜗牛为什么每次都错过季节。',
+        iDo: '家长朗读课文，在季节变化处重点提示，帮孩子建立时间线索。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起梳理小蜗牛每次出门的季节和看到的变化，画出时间线。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立阅读课文，说说小蜗牛为什么每次都错过季节。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】蜗(wō)偏旁：虫本义：蜗牛引申义：蜗居、蜗壳组词：蜗牛…\n共学四步：\n①对话出题：问孩子"小蜗牛第一次出门是什么季节？"\n②孩子应答：小蜗牛春天出门，妈妈让它看小树发芽。\n③答错引导：家长可以和孩子一起重读课文，用"图文结合法"——边看插图边读文字，帮助理解\n④快速检测：小蜗牛第一次出门是什么季节？、小蜗牛爬回来时，夏天已经变成了（    ）、按故事顺序排列小蜗牛看到的景象',
         funElement: '笑话：蜗牛说"我要去看小树发芽！"爬到时"哇，树叶都黄了！"——蜗牛的速度真是急死人！🐌',
         gsapAnimations: ['GSAP: 季节更替场景切换动画'],
@@ -2630,7 +2658,7 @@ export const chineseGrade1: Unit[] = [
             options: ['春天', '夏天', '秋天'],
             answer: '春天',
             hint: '小树发芽是什么季节',
-            explanation: '小蜗牛春天出门，妈妈让它看小树发芽。'
+            explanation: '小蜗牛春天出门，妈妈让它看小树发芽。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l3q2',
@@ -2638,7 +2666,7 @@ export const chineseGrade1: Unit[] = [
             question: '小蜗牛爬回来时，夏天已经变成了___',
             answer: '秋天',
             hint: '蜗牛太慢了，季节已经变了',
-            explanation: '小蜗牛爬得太慢，夏天出门回来已经是秋天了。'
+            explanation: '小蜗牛爬得太慢，夏天出门回来已经是秋天了。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l3q3',
@@ -2646,7 +2674,7 @@ export const chineseGrade1: Unit[] = [
             question: '按故事顺序排列小蜗牛看到的景象',
             answer: '小树发芽,树叶碧绿,树叶变黄,地上盖着雪',
             hint: '按照春夏秋冬的顺序',
-            explanation: '小蜗牛依次看到：春天小树发芽→夏天树叶碧绿→秋天树叶变黄→冬天地上盖着雪。'
+            explanation: '小蜗牛依次看到：春天小树发芽→夏天树叶碧绿→秋天树叶变黄→冬天地上盖着雪。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l3q4',
@@ -2655,7 +2683,7 @@ export const chineseGrade1: Unit[] = [
             options: ["蜗牛很可爱","要珍惜时间","冬天很冷"],
             answer: '要珍惜时间',
             hint: '蜗牛为什么总是错过',
-            explanation: '小蜗牛爬得太慢总是错过季节，告诉我们时间不等人，要珍惜时间。'
+            explanation: '小蜗牛爬得太慢总是错过季节，告诉我们时间不等人，要珍惜时间。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l3q5',
@@ -2663,7 +2691,7 @@ export const chineseGrade1: Unit[] = [
             question: '小蜗牛看到的四季变化：春天发芽→夏天碧绿→秋天变黄→冬天___',
             answer: '盖着雪',
             hint: '冬天地上有什么',
-            explanation: '冬天地上盖着白雪，小蜗牛回来时已经是冬天了。'
+            explanation: '冬天地上盖着白雪，小蜗牛回来时已经是冬天了。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l3q6',
@@ -2672,7 +2700,7 @@ export const chineseGrade1: Unit[] = [
             options: ["时间顺序","空间顺序","人物顺序"],
             answer: '时间顺序',
             hint: '故事按什么发展',
-            explanation: '课文按春夏秋冬的时间顺序写小蜗牛每次出门看到的季节变化。这是期末常考题！'
+            explanation: '课文按春夏秋冬的时间顺序写小蜗牛每次出门看到的季节变化。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l3q7',
@@ -2680,7 +2708,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："小蜗牛"中蜗牛在什么季节出门？',
             answer: '春天',
             hint: '[课文内容]（语文一年级-第6单元）',
-            explanation: '小蜗牛在春天出门，但爬得太慢，回来时季节已经变了。'
+            explanation: '小蜗牛在春天出门，但爬得太慢，回来时季节已经变了。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2691,14 +2719,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '让我们来检验一下这单元学到的知识吧！通过这些练习，看看你掌握了多少', animationType: 'typewriter' },
           { type: 'tip', content: '评价小贴士：做错的题不要着急，回到前面的课时再学一遍，学会了就是最大的进步！', label: '评价提示', animationType: 'pulse' },
-          { type: 'formula', content: '复习口诀：学过的知识要常复习，温故而知新，才能记得更牢！', label: '复习方法', animationType: 'typewriter' }
+          { type: 'formula', content: '复习口诀：学过的知识要常复习，温故而知新，才能记得更牢！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '评价反馈法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能独立完成本单元形成性评价检测，查漏补缺',
         successCriteria: '①能独立完成所有检测题 ②能说出自己做错题目的正确答案',
-        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。',
-        weDo: '亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功。',
-        youDo: '孩子独立完成评价练习，错的内容多练几遍。',
+        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成评价练习，错的内容多练几遍。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】让我们来检验一下这单元学到的知识吧！通过这些练习，看看你…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：知识大闯关！答对一题前进一步，全部答对就是学习大王！👑',
         gsapAnimations: ['GSAP: 评价卡片翻转动画'],
@@ -2711,7 +2740,7 @@ export const chineseGrade1: Unit[] = [
             options: ["小鸡","青蛙","小鸭"],
             answer: '青蛙',
             hint: '谁在冬眠',
-            explanation: '青蛙在冬眠没有参加画画，课文中说"他在洞里睡着啦"。'
+            explanation: '青蛙在冬眠没有参加画画，课文中说"他在洞里睡着啦"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l4q2',
@@ -2719,7 +2748,7 @@ export const chineseGrade1: Unit[] = [
             question: '乌鸦往瓶子里放___，水就升高了',
             answer: '石子',
             hint: '乌鸦找来了什么东西',
-            explanation: '乌鸦把小石子放进瓶子里，水位升高就喝到水了。'
+            explanation: '乌鸦把小石子放进瓶子里，水位升高就喝到水了。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l4q3',
@@ -2728,7 +2757,7 @@ export const chineseGrade1: Unit[] = [
             options: ["妈妈","当季的风景","朋友"],
             answer: '当季的风景',
             hint: '蜗牛太慢了',
-            explanation: '小蜗牛爬得太慢，每次回来时季节已经变了，错过了当季的风景。'
+            explanation: '小蜗牛爬得太慢，每次回来时季节已经变了，错过了当季的风景。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l4q4',
@@ -2736,7 +2765,7 @@ export const chineseGrade1: Unit[] = [
             question: '小鸡画___，小狗画梅花',
             answer: '竹叶',
             hint: '小鸡的脚印像什么',
-            explanation: '小鸡的脚印像竹叶，小狗的脚印像梅花。'
+            explanation: '小鸡的脚印像竹叶，小狗的脚印像梅花。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l4q5',
@@ -2745,7 +2774,7 @@ export const chineseGrade1: Unit[] = [
             options: ["要快","要动脑筋","要睡觉"],
             answer: '要动脑筋',
             hint: '乌鸦是怎么喝到水的',
-            explanation: '三个故事都告诉我们要动脑筋：青蛙冬眠是智慧，乌鸦放石子是动脑，蜗牛太慢要珍惜时间。'
+            explanation: '三个故事都告诉我们要动脑筋：青蛙冬眠是智慧，乌鸦放石子是动脑，蜗牛太慢要珍惜时间。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l4q6',
@@ -2754,7 +2783,7 @@ export const chineseGrade1: Unit[] = [
             options: ["乌鸦很聪明","遇到困难要想办法","要多喝水"],
             answer: '遇到困难要想办法',
             hint: '乌鸦的精神是什么',
-            explanation: '故事告诉我们遇到困难要动脑筋想办法，不能轻易放弃。这是期末常考题！'
+            explanation: '故事告诉我们遇到困难要动脑筋想办法，不能轻易放弃。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l4q7',
@@ -2762,7 +2791,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：本单元课文都和什么有关？',
             answer: '小动物',
             hint: '[课文主题]（语文一年级-第6单元）',
-            explanation: '本单元课文都和小动物有关，讲述了小动物的故事。'
+            explanation: '本单元课文都和小动物有关，讲述了小动物的故事。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2773,14 +2802,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '学完了"课文阅读（二）"这个单元，让我们把所有知识综合起来，看看能做什么吧！', animationType: 'typewriter' },
           { type: 'tip', content: '综合应用小窍门：试着把本单元学到的知识用在生活中，学以致用最有效！', label: '应用技巧', animationType: 'pulse' },
-          { type: 'formula', content: '复习三步法：回顾学过什么→练习不会的→把知识用起来！', label: '复习方法', animationType: 'typewriter' }
+          { type: 'formula', content: '复习三步法：回顾学过什么→练习不会的→把知识用起来！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用综合应用法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '综合应用法',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能综合运用本单元所学知识解决实际问题',
         successCriteria: '①能正确运用本单元核心知识解题 ②能解释解题思路',
-        iDo: '家长和孩子一起回顾本单元所有内容，示范如何综合运用所学知识。',
-        weDo: '亲子一起做综合练习，互相出题考对方。',
-        youDo: '孩子独立完成综合练习，把本单元知识串联起来。',
+        iDo: '家长和孩子一起回顾本单元所有内容，示范如何综合运用所学知识。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做综合练习，互相出题考对方。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合练习，把本单元知识串联起来。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】学完了"课文阅读（二）"这个单元，让我们把所有知识综合起…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：知识大串联！把本单元学到的知识连成一条线，看谁连得最长！🔗',
         gsapAnimations: ['GSAP: 综合复习动画'],
@@ -2793,7 +2823,7 @@ export const chineseGrade1: Unit[] = [
             options: ["小动物","植物","人"],
             answer: '小动物',
             hint: '谁在故事里',
-            explanation: '三个故事的主角都是小动物：雪地里的动物、乌鸦、小蜗牛。'
+            explanation: '三个故事的主角都是小动物：雪地里的动物、乌鸦、小蜗牛。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l5q2',
@@ -2801,7 +2831,7 @@ export const chineseGrade1: Unit[] = [
             question: '小蜗牛春天出门，回来时已经是___天了',
             answer: '夏',
             hint: '蜗牛太慢了，季节变了',
-            explanation: '小蜗牛爬得太慢，春天出门回来已经是夏天了。'
+            explanation: '小蜗牛爬得太慢，春天出门回来已经是夏天了。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l5q3',
@@ -2809,7 +2839,7 @@ export const chineseGrade1: Unit[] = [
             question: '把动物和脚印形状配对',
             answer: '小鸡-竹叶,小狗-梅花,小鸭-枫叶',
             hint: '每种动物的脚印像什么',
-            explanation: '小鸡画竹叶，小狗画梅花，小鸭画枫叶。'
+            explanation: '小鸡画竹叶，小狗画梅花，小鸭画枫叶。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l5q4',
@@ -2818,7 +2848,7 @@ export const chineseGrade1: Unit[] = [
             options: ["小鸡","青蛙","小狗"],
             answer: '青蛙',
             hint: '谁冬天睡觉',
-            explanation: '青蛙需要冬眠，冬天躲在洞里睡大觉。'
+            explanation: '青蛙需要冬眠，冬天躲在洞里睡大觉。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l5q5',
@@ -2826,7 +2856,7 @@ export const chineseGrade1: Unit[] = [
             question: '用"一边……一边……"造一个句子：我一边___一边唱歌',
             answer: '走路',
             hint: '同时做两件事',
-            explanation: '"一边……一边……"表示同时做两件事，如一边走路一边唱歌。'
+            explanation: '"一边……一边……"表示同时做两件事，如一边走路一边唱歌。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l5q6',
@@ -2835,7 +2865,7 @@ export const chineseGrade1: Unit[] = [
             options: ["竹叶","月牙","梅花"],
             answer: '月牙',
             hint: '马蹄的形状',
-            explanation: '小马的脚印像月牙，因为马蹄铁的形状是月牙形的。这是期末常考题！'
+            explanation: '小马的脚印像月牙，因为马蹄铁的形状是月牙形的。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u6l5q7',
@@ -2843,7 +2873,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："雪"字的偏旁是什么？',
             answer: '雨',
             hint: '[偏旁识记]（语文一年级-第6单元）',
-            explanation: '"雪"字的偏旁是雨字头，表示与天气降水有关。'
+            explanation: '"雪"字的偏旁是雨字头，表示与天气降水有关。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }
@@ -2879,13 +2909,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '大对小，高对低，长对短，多对少，反义词对对碰！',
             },
           },
+          { type: 'tip', content: '本课主要使用游戏化学习：通过趣味游戏巩固所学知识', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '对比游戏法',
+        teachingMethod: '游戏化学习',
         learningObjective: '我能找出反义词并进行正确的词语搭配',
         successCriteria: '①能正确找出词语的反义词 ②能进行正确的词语搭配',
-        iDo: '家长说一个词，让孩子说出反义词，如"大——小""高——低"。',
-        weDo: '亲子玩反义词对对碰游戏，一人说词一人对反义词，看谁反应快。',
-        youDo: '孩子独立完成反义词连线练习，并自己想出三组反义词。',
+        iDo: '家长说一个词，让孩子说出反义词，如"大——小""高——低"。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子玩反义词对对碰游戏，一人说词一人对反义词，看谁反应快。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成反义词连线练习，并自己想出三组反义词。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】反义词就是意思相反的词！大对小、高对低、长对短，它们就像…\n共学四步：\n①对话出题：问孩子"大"的反义词是什么？"\n②孩子应答："大"的反义词是"小"，它们是一对反义词。\n③答错引导：家长可以举例引导，用"举例法"——举一个生活中的例子帮助孩子理解\n④快速检测："大"的反义词是什么？、"长"的反义词是（    ）、把反义词配对',
         funElement: '小游戏：反义词跷跷板！你说"上"，我说"下"，就像跷跷板一上一下！看谁先"掉"下来！⚖️',
         gsapAnimations: ['GSAP: 反义词卡片左右翻转对比动画'],
@@ -2898,7 +2929,7 @@ export const chineseGrade1: Unit[] = [
             options: ['多', '小', '少'],
             answer: '小',
             hint: '和大相反',
-            explanation: '"大"的反义词是"小"，它们是一对反义词。'
+            explanation: '"大"的反义词是"小"，它们是一对反义词。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l1q2',
@@ -2906,7 +2937,7 @@ export const chineseGrade1: Unit[] = [
             question: '"长"的反义词是___',
             answer: '短',
             hint: '和长相反',
-            explanation: '"长"的反义词是"短"，如长铅笔对短铅笔。'
+            explanation: '"长"的反义词是"短"，如长铅笔对短铅笔。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l1q3',
@@ -2914,7 +2945,7 @@ export const chineseGrade1: Unit[] = [
             question: '把反义词配对',
             answer: '高-低,快-慢,冷-热',
             hint: '找意思相反的词',
-            explanation: '高和低、快和慢、冷和热都是反义词对。'
+            explanation: '高和低、快和慢、冷和热都是反义词对。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l1q4',
@@ -2923,7 +2954,7 @@ export const chineseGrade1: Unit[] = [
             options: ["下","左","右"],
             answer: '下',
             hint: '和上相反',
-            explanation: '"上"的反义词是"下"，它们是一对反义词。'
+            explanation: '"上"的反义词是"下"，它们是一对反义词。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l1q5',
@@ -2931,7 +2962,7 @@ export const chineseGrade1: Unit[] = [
             question: '自己想一组反义词：___',
             answer: '黑-白',
             hint: '意思相反的两个词',
-            explanation: '反义词很多，如黑-白、前-后、左-右等。'
+            explanation: '反义词很多，如黑-白、前-后、左-右等。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l1q6',
@@ -2940,7 +2971,7 @@ export const chineseGrade1: Unit[] = [
             options: ["美丽-漂亮","大-小","开心-快乐"],
             answer: '大-小',
             hint: '哪组意思相反',
-            explanation: '大和小意思相反是反义词；美丽和漂亮、开心和快乐是近义词。这是期末常考题！'
+            explanation: '大和小意思相反是反义词；美丽和漂亮、开心和快乐是近义词。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l1q7',
@@ -2948,7 +2979,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："大"的反义词是什么？',
             answer: '小',
             hint: '[反义词]（语文一年级-第7单元）',
-            explanation: '"大"和"小"是一对反义词，大小相对。'
+            explanation: '"大"和"小"是一对反义词，大小相对。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2976,13 +3007,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '一只猫，一朵花，一本书，一条鱼，量词和名词手拉手！',
             },
           },
+          { type: 'tip', content: '本课主要使用实物配对法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '实物配对法',
+        teachingMethod: 'CPA教学法',
         learningObjective: '我能正确使用量词搭配名词',
         successCriteria: '①能正确搭配量词和名词 ②能说出至少5个量词搭配',
-        iDo: '家长展示实物或图片，示范正确的量词搭配，如"一只猫""一条鱼"。',
-        weDo: '亲子一起玩量词配对游戏，看图说量词，互相纠正。',
-        youDo: '孩子独立完成量词填空练习，并说出三个量词搭配。',
+        iDo: '家长展示实物或图片，示范正确的量词搭配，如"一只猫""一条鱼"。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起玩量词配对游戏，看图说量词，互相纠正。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成量词填空练习，并说出三个量词搭配。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】量词是汉语特有的！在名词前面表示数量的词就是量词，比如"…\n共学四步：\n①对话出题：问孩子"一什么猫"填什么量词？"\n②孩子应答：猫用"只"作量词，"一只猫"是正确的搭配。\n③答错引导：家长可以举例引导，用"举例法"——举一个生活中的例子帮助孩子理解\n④快速检测："一（    ）猫"填什么量词？、"一（    ）鱼"填量词、把量词拖到正确的名词前',
         funElement: '笑话：说"一头牛"对，说"一头苍蝇"就搞笑了！量词用错，苍蝇比牛还大！🐄🪰',
         gsapAnimations: ['GSAP: 量词与名词配对弹跳动画'],
@@ -2995,7 +3027,7 @@ export const chineseGrade1: Unit[] = [
             options: ['条', '只', '头'],
             answer: '只',
             hint: '小动物用什么量词',
-            explanation: '猫用"只"作量词，"一只猫"是正确的搭配。'
+            explanation: '猫用"只"作量词，"一只猫"是正确的搭配。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l2q2',
@@ -3003,7 +3035,7 @@ export const chineseGrade1: Unit[] = [
             question: '"一___鱼"填量词',
             answer: '条',
             hint: '细长的东西用什么量词',
-            explanation: '鱼用"条"作量词，"一条鱼"是正确的搭配。'
+            explanation: '鱼用"条"作量词，"一条鱼"是正确的搭配。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l2q3',
@@ -3011,7 +3043,7 @@ export const chineseGrade1: Unit[] = [
             question: '把量词拖到正确的名词前',
             answer: '只-鸟,朵-花,本-书',
             hint: '想想每个名词用什么量词',
-            explanation: '鸟用"只"，花用"朵"，书用"本"，这是常见的量词搭配。'
+            explanation: '鸟用"只"，花用"朵"，书用"本"，这是常见的量词搭配。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l2q4',
@@ -3020,7 +3052,7 @@ export const chineseGrade1: Unit[] = [
             options: ["名词","量词","动词"],
             answer: '量词',
             hint: '在名词前面表示数量',
-            explanation: '"本"是量词，用在名词前面表示数量，如"一本书"。'
+            explanation: '"本"是量词，用在名词前面表示数量，如"一本书"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l2q5',
@@ -3028,7 +3060,7 @@ export const chineseGrade1: Unit[] = [
             question: '"一___树"填量词',
             answer: '棵',
             hint: '树用什么量词',
-            explanation: '树用"棵"作量词，"一棵树"是正确的搭配。'
+            explanation: '树用"棵"作量词，"一棵树"是正确的搭配。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l2q6',
@@ -3037,7 +3069,7 @@ export const chineseGrade1: Unit[] = [
             options: ["一只猫","一条鱼","一头蚂蚁"],
             answer: '一头蚂蚁',
             hint: '蚂蚁用什么量词',
-            explanation: '蚂蚁应该用"一只蚂蚁"，"一头"用于大的动物如牛。这是期末常考题！'
+            explanation: '蚂蚁应该用"一只蚂蚁"，"一头"用于大的动物如牛。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l2q7',
@@ -3045,7 +3077,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："一只猫"中"只"是什么词？',
             answer: '量词',
             hint: '[量词]（语文一年级-第7单元）',
-            explanation: '"只"是量词，用来计量动物的数量。'
+            explanation: '"只"是量词，用来计量动物的数量。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3073,13 +3105,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '苹果，红的苹果，红红的大苹果！形容词让句子更生动！',
             },
           },
+          { type: 'tip', content: '本课主要使用感官体验法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '感官体验法',
         learningObjective: '我能用形容词生动地描述事物',
         successCriteria: '①能用形容词描述事物特征 ②能说出至少3个叠词形容词',
-        iDo: '家长用丰富的形容词描述身边的事物，如"红红的苹果""软软的棉花"。',
-        weDo: '亲子一起玩"形容词接龙"，一人说名词一人加形容词修饰。',
-        youDo: '孩子独立用形容词造三个句子，描述自己喜欢的东西。',
+        iDo: '家长用丰富的形容词描述身边的事物，如"红红的苹果""软软的棉花"。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起玩"形容词接龙"，一人说名词一人加形容词修饰。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用形容词造三个句子，描述自己喜欢的东西。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】形容词是用来描述事物样子、颜色、味道的词。比如"红红的苹…\n共学四步：\n①对话出题：问孩子"红红的"是什么词？"\n②孩子应答："红红的"描述颜色，是形容词，用来修饰名词。\n③答错引导：家长可以举例引导，用"举例法"——举一个生活中的例子帮助孩子理解\n④快速检测："红红的"是什么词？、（    ）的太阳（填一个形容词）、下面哪个是形容词？',
         funElement: '小游戏：形容词魔法棒！普通苹果→红红的大苹果→甜甜的脆脆的红红的大苹果！看谁的苹果最"豪华"！🍎',
         gsapAnimations: ['GSAP: 形容词逐个添加修饰动画'],
@@ -3092,7 +3125,7 @@ export const chineseGrade1: Unit[] = [
             options: ['名词', '形容词', '动词'],
             answer: '形容词',
             hint: '它描述了什么',
-            explanation: '"红红的"描述颜色，是形容词，用来修饰名词。'
+            explanation: '"红红的"描述颜色，是形容词，用来修饰名词。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l3q2',
@@ -3100,7 +3133,7 @@ export const chineseGrade1: Unit[] = [
             question: '___的太阳（填一个形容词）',
             answer: '红红的',
             hint: '太阳是什么颜色',
-            explanation: '可以用"红红的"来修饰太阳，"红红的太阳"是常见搭配。'
+            explanation: '可以用"红红的"来修饰太阳，"红红的太阳"是常见搭配。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l3q3',
@@ -3109,7 +3142,7 @@ export const chineseGrade1: Unit[] = [
             options: ['跑步', '美丽', '苹果'],
             answer: '美丽',
             hint: '哪个词能描述事物',
-            explanation: '"美丽"是形容词，能描述事物的样子；"跑步"是动词，"苹果"是名词。'
+            explanation: '"美丽"是形容词，能描述事物的样子；"跑步"是动词，"苹果"是名词。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l3q4',
@@ -3118,7 +3151,7 @@ export const chineseGrade1: Unit[] = [
             options: ["表示动作","描述事物的特征","表示数量"],
             answer: '描述事物的特征',
             hint: '形容词描述什么',
-            explanation: '形容词用来描述事物的样子、颜色、味道等特征。'
+            explanation: '形容词用来描述事物的样子、颜色、味道等特征。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l3q5',
@@ -3126,7 +3159,7 @@ export const chineseGrade1: Unit[] = [
             question: '给"天空"加一个形容词：___的天空',
             answer: '蓝蓝的',
             hint: '天空是什么颜色',
-            explanation: '可以用"蓝蓝的""高高的""广阔的"等形容词来修饰天空。'
+            explanation: '可以用"蓝蓝的""高高的""广阔的"等形容词来修饰天空。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l3q6',
@@ -3135,7 +3168,7 @@ export const chineseGrade1: Unit[] = [
             options: ["名词","形容词","动词"],
             answer: '形容词',
             hint: '它描述了苹果的什么',
-            explanation: '"红红的"描述苹果的颜色，是形容词。这是期末常考题！'
+            explanation: '"红红的"描述苹果的颜色，是形容词。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l3q7',
@@ -3143,7 +3176,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："红红的苹果"中"红红的"是什么词？',
             answer: '形容词',
             hint: '[形容词]（语文一年级-第7单元）',
-            explanation: '"红红的"是形容词，用来描述苹果的颜色。'
+            explanation: '"红红的"是形容词，用来描述苹果的颜色。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3154,14 +3187,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '让我们来检验一下这单元学到的知识吧！通过这些练习，看看你掌握了多少', animationType: 'typewriter' },
           { type: 'tip', content: '评价小贴士：做错的题不要着急，回到前面的课时再学一遍，学会了就是最大的进步！', label: '评价提示', animationType: 'pulse' },
-          { type: 'formula', content: '复习口诀：学过的知识要常复习，温故而知新，才能记得更牢！', label: '复习方法', animationType: 'typewriter' }
+          { type: 'formula', content: '复习口诀：学过的知识要常复习，温故而知新，才能记得更牢！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '评价反馈法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能独立完成本单元形成性评价检测，查漏补缺',
         successCriteria: '①能独立完成所有检测题 ②能说出自己做错题目的正确答案',
-        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。',
-        weDo: '亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功。',
-        youDo: '孩子独立完成评价练习，错的内容多练几遍。',
+        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成评价练习，错的内容多练几遍。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】让我们来检验一下这单元学到的知识吧！通过这些练习，看看你…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：知识大闯关！答对一题前进一步，全部答对就是学习大王！👑',
         gsapAnimations: ['GSAP: 评价卡片翻转动画'],
@@ -3174,7 +3208,7 @@ export const chineseGrade1: Unit[] = [
             options: ["多","小","少"],
             answer: '小',
             hint: '和大相反',
-            explanation: '"大"的反义词是"小"，它们是一对反义词。'
+            explanation: '"大"的反义词是"小"，它们是一对反义词。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l4q2',
@@ -3182,7 +3216,7 @@ export const chineseGrade1: Unit[] = [
             question: '"一只猫"中"只"是___词',
             answer: '量',
             hint: '在名词前面表示数量',
-            explanation: '"只"是量词，用在名词前面表示数量。'
+            explanation: '"只"是量词，用在名词前面表示数量。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l4q3',
@@ -3191,7 +3225,7 @@ export const chineseGrade1: Unit[] = [
             options: ["名词","形容词","动词"],
             answer: '形容词',
             hint: '它描述了什么',
-            explanation: '"红红的"描述颜色，是形容词。'
+            explanation: '"红红的"描述颜色，是形容词。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l4q4',
@@ -3199,7 +3233,7 @@ export const chineseGrade1: Unit[] = [
             question: '"快"的反义词是___',
             answer: '慢',
             hint: '和快相反',
-            explanation: '"快"的反义词是"慢"，如快跑对慢走。'
+            explanation: '"快"的反义词是"慢"，如快跑对慢走。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l4q5',
@@ -3208,7 +3242,7 @@ export const chineseGrade1: Unit[] = [
             options: ["一头牛","一条牛","一只牛"],
             answer: '一头牛',
             hint: '牛用什么量词',
-            explanation: '大的动物用"头"作量词，"一头牛"是正确的搭配。'
+            explanation: '大的动物用"头"作量词，"一头牛"是正确的搭配。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l4q6',
@@ -3217,7 +3251,7 @@ export const chineseGrade1: Unit[] = [
             options: ["跑步","美丽","苹果"],
             answer: '美丽',
             hint: '哪个词能描述事物',
-            explanation: '"美丽"是形容词，能描述事物的样子；"跑步"是动词，"苹果"是名词。这是期末常考题！'
+            explanation: '"美丽"是形容词，能描述事物的样子；"跑步"是动词，"苹果"是名词。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l4q7',
@@ -3225,7 +3259,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：写出"多"的反义词',
             answer: '少',
             hint: '[反义词]（语文一年级-第7单元）',
-            explanation: '"多"和"少"是一对反义词，多少相对。'
+            explanation: '"多"和"少"是一对反义词，多少相对。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3236,14 +3270,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '学完了"字词积累"这个单元，让我们把所有知识综合起来，看看能做什么吧！', animationType: 'typewriter' },
           { type: 'tip', content: '综合应用小窍门：试着把本单元学到的知识用在生活中，学以致用最有效！', label: '应用技巧', animationType: 'pulse' },
-          { type: 'formula', content: '复习三步法：回顾学过什么→练习不会的→把知识用起来！', label: '复习方法', animationType: 'typewriter' }
+          { type: 'formula', content: '复习三步法：回顾学过什么→练习不会的→把知识用起来！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用综合应用法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '综合应用法',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能综合运用本单元所学知识解决实际问题',
         successCriteria: '①能正确运用本单元核心知识解题 ②能解释解题思路',
-        iDo: '家长和孩子一起回顾本单元所有内容，示范如何综合运用所学知识。',
-        weDo: '亲子一起做综合练习，互相出题考对方。',
-        youDo: '孩子独立完成综合练习，把本单元知识串联起来。',
+        iDo: '家长和孩子一起回顾本单元所有内容，示范如何综合运用所学知识。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做综合练习，互相出题考对方。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合练习，把本单元知识串联起来。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】学完了"字词积累"这个单元，让我们把所有知识综合起来，看…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：知识大串联！把本单元学到的知识连成一条线，看谁连得最长！🔗',
         gsapAnimations: ['GSAP: 综合复习动画'],
@@ -3256,7 +3291,7 @@ export const chineseGrade1: Unit[] = [
             options: ["反义词、量词、形容词","名词、动词、代词","近义词、助词、连词"],
             answer: '反义词、量词、形容词',
             hint: '回顾三课内容',
-            explanation: '本单元学了反义词对对碰、量词小达人、形容词乐园三种词。'
+            explanation: '本单元学了反义词对对碰、量词小达人、形容词乐园三种词。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l5q2',
@@ -3264,7 +3299,7 @@ export const chineseGrade1: Unit[] = [
             question: '用"一朵"造一个短语：一朵___',
             answer: '花',
             hint: '什么用"朵"作量词',
-            explanation: '花用"朵"作量词，"一朵花"是正确的搭配。'
+            explanation: '花用"朵"作量词，"一朵花"是正确的搭配。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l5q3',
@@ -3272,7 +3307,7 @@ export const chineseGrade1: Unit[] = [
             question: '把词分到正确的类别',
             answer: '反义词:大-小,量词:只-朵,形容词:红红的-甜甜的',
             hint: '三种词各有什么',
-            explanation: '反义词意思相反，量词在名词前表数量，形容词描述事物特征。'
+            explanation: '反义词意思相反，量词在名词前表数量，形容词描述事物特征。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l5q4',
@@ -3281,7 +3316,7 @@ export const chineseGrade1: Unit[] = [
             options: ["AABB","ABAB","ABCC"],
             answer: 'AABB',
             hint: '看看字的排列规律',
-            explanation: '"高高兴兴"是AABB型词语，前两个字相同，后两个字相同。'
+            explanation: '"高高兴兴"是AABB型词语，前两个字相同，后两个字相同。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l5q5',
@@ -3289,7 +3324,7 @@ export const chineseGrade1: Unit[] = [
             question: '给"苹果"加一个形容词：___的苹果',
             answer: '红红的',
             hint: '用什么词描述苹果',
-            explanation: '可以用"红红的""甜甜的""大大的"等形容词来修饰苹果。'
+            explanation: '可以用"红红的""甜甜的""大大的"等形容词来修饰苹果。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l5q6',
@@ -3298,7 +3333,7 @@ export const chineseGrade1: Unit[] = [
             options: ["名词","动词","量词"],
             answer: '量词',
             hint: '在名词前面表示什么',
-            explanation: '"条"是量词，用在名词前面表示数量。这是期末常考题！'
+            explanation: '"条"是量词，用在名词前面表示数量。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u7l5q7',
@@ -3306,7 +3341,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："一条鱼"中"条"是什么词？',
             answer: '量词',
             hint: '[量词]（语文一年级-第7单元）',
-            explanation: '"条"是量词，用来计量细长的事物。'
+            explanation: '"条"是量词，用来计量细长的事物。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }
@@ -3344,13 +3379,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '鹅鹅鹅，曲项向天歌，白毛浮绿水，红掌拨清波！',
             },
           },
+          { type: 'tip', content: '本课主要使用画面联想法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '画面联想法',
         learningObjective: '我能流利朗读课文《咏鹅》并理解主要内容',
         successCriteria: '①能正确流利朗读课文 ②能回答关于课文内容的问题',
-        iDo: '家长朗读古诗，配合图片展示白鹅在绿水上的画面。',
-        weDo: '亲子一起画一幅咏鹅图，把诗中的画面画出来。',
-        youDo: '孩子独立背诵古诗，并说出诗中描写了鹅的哪些部位。',
+        iDo: '家长朗读古诗，配合图片展示白鹅在绿水上的画面。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起画一幅咏鹅图，把诗中的画面画出来。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立背诵古诗，并说出诗中描写了鹅的哪些部位。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】这首诗是7岁的骆宾王写的！他看到池塘里的大白鹅，就写下了…\n共学四步：\n①对话出题：问孩子"曲项向天歌"中"项"是什么意思？"\n②孩子应答："项"就是脖子的意思，"曲项"就是弯着脖子。\n③答错引导：家长可以和孩子一起重读课文，用"图文结合法"——边看插图边读文字，帮助理解\n④快速检测："曲项向天歌"中"项"是什么意思？、白毛浮（    ）水、咏鹅的作者是谁？',
         funElement: '笑话：骆宾王7岁写咏鹅，白鹅说"谢谢你夸我漂亮！"——7岁就能写古诗，厉害吧！🦢',
         gsapAnimations: ['GSAP: 白鹅在绿水中游动动画'],
@@ -3363,7 +3399,7 @@ export const chineseGrade1: Unit[] = [
             options: ['脖子', '翅膀', '尾巴'],
             answer: '脖子',
             hint: '鹅弯着什么向天叫',
-            explanation: '"项"就是脖子的意思，"曲项"就是弯着脖子。'
+            explanation: '"项"就是脖子的意思，"曲项"就是弯着脖子。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l1q2',
@@ -3371,7 +3407,7 @@ export const chineseGrade1: Unit[] = [
             question: '白毛浮___水',
             answer: '绿',
             hint: '水是什么颜色',
-            explanation: '原诗"白毛浮绿水"，白鹅的羽毛浮在绿色的水面上。'
+            explanation: '原诗"白毛浮绿水"，白鹅的羽毛浮在绿色的水面上。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l1q3',
@@ -3380,7 +3416,7 @@ export const chineseGrade1: Unit[] = [
             options: ['李白', '骆宾王', '杜甫'],
             answer: '骆宾王',
             hint: '7岁写这首诗的神童',
-            explanation: '《咏鹅》的作者是骆宾王，他7岁时就写了这首诗。'
+            explanation: '《咏鹅》的作者是骆宾王，他7岁时就写了这首诗。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l1q4',
@@ -3389,7 +3425,7 @@ export const chineseGrade1: Unit[] = [
             options: ["脖子、羽毛、脚掌","头、翅膀、尾巴","眼睛、嘴巴、脚"],
             answer: '脖子、羽毛、脚掌',
             hint: '回忆诗句内容',
-            explanation: '诗中描写了鹅的曲项（脖子）、白毛（羽毛）、红掌（脚掌）。'
+            explanation: '诗中描写了鹅的曲项（脖子）、白毛（羽毛）、红掌（脚掌）。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l1q5',
@@ -3397,7 +3433,7 @@ export const chineseGrade1: Unit[] = [
             question: '"曲项向天歌"中"曲"的意思是___',
             answer: '弯',
             hint: '鹅的脖子是什么形状',
-            explanation: '"曲"是弯的意思，"曲项"就是弯着脖子。'
+            explanation: '"曲"是弯的意思，"曲项"就是弯着脖子。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l1q6',
@@ -3406,7 +3442,7 @@ export const chineseGrade1: Unit[] = [
             options: ["白和红","绿和蓝","黄和红"],
             answer: '白和红',
             hint: '找诗句中的颜色词',
-            explanation: '诗句中有"白毛"和"红掌"，用了白色和红色两种颜色。这是期末常考题！'
+            explanation: '诗句中有"白毛"和"红掌"，用了白色和红色两种颜色。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l1q7',
@@ -3414,7 +3450,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："咏鹅"的作者是谁？',
             answer: '骆宾王',
             hint: '[古诗作者]（语文一年级-第8单元）',
-            explanation: '"咏鹅"是唐代诗人骆宾王七岁时写的诗。'
+            explanation: '"咏鹅"是唐代诗人骆宾王七岁时写的诗。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3444,13 +3480,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '锄禾日当午，汗滴禾下土，谁知盘中餐，粒粒皆辛苦！',
             },
           },
+          { type: 'tip', content: '本课主要使用情感体验法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         teachingMethod: '情感体验法',
         learningObjective: '我能流利朗读课文《悯农》并理解主要内容',
         successCriteria: '①能正确流利朗读课文 ②能回答关于课文内容的问题',
-        iDo: '家长朗读古诗，讲解农民种地的辛苦，让孩子感受粮食来之不易。',
-        weDo: '亲子一起讨论：为什么不能浪费粮食？说说自己吃饭时应该怎么做。',
-        youDo: '孩子独立背诵古诗，并说出"粒粒皆辛苦"的意思。',
+        iDo: '家长朗读古诗，讲解农民种地的辛苦，让孩子感受粮食来之不易。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起讨论：为什么不能浪费粮食？说说自己吃饭时应该怎么做。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立背诵古诗，并说出"粒粒皆辛苦"的意思。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】中午太阳最热的时候，农民伯伯还在田里锄草，汗水一滴一滴落…\n共学四步：\n①对话出题：问孩子"汗滴禾下土"描写的是谁？"\n②孩子应答："汗滴禾下土"描写的是农民在烈日下种地，汗水滴入泥土中。\n③答错引导：家长可以和孩子一起重读课文，用"图文结合法"——边看插图边读文字，帮助理解\n④快速检测："汗滴禾下土"描写的是谁？、谁知盘中餐，粒粒皆（    ）、这首诗告诉我们什么？',
         funElement: '小游戏：粮食旅行记！一粒米从播种到餐桌要经过多少步？试试画出来，你会更珍惜每一粒米！🌾',
         gsapAnimations: ['GSAP: 农民耕种场景动画'],
@@ -3463,7 +3500,7 @@ export const chineseGrade1: Unit[] = [
             options: ['诗人', '农民', '小孩'],
             answer: '农民',
             hint: '谁在田里种地',
-            explanation: '"汗滴禾下土"描写的是农民在烈日下种地，汗水滴入泥土中。'
+            explanation: '"汗滴禾下土"描写的是农民在烈日下种地，汗水滴入泥土中。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l2q2',
@@ -3471,7 +3508,7 @@ export const chineseGrade1: Unit[] = [
             question: '谁知盘中餐，粒粒皆___',
             answer: '辛苦',
             hint: '每一粒粮食都怎么样',
-            explanation: '原诗"谁知盘中餐，粒粒皆辛苦"，每一粒粮食都来之不易。'
+            explanation: '原诗"谁知盘中餐，粒粒皆辛苦"，每一粒粮食都来之不易。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l2q3',
@@ -3480,7 +3517,7 @@ export const chineseGrade1: Unit[] = [
             options: ['种地很好玩', '要珍惜粮食', '农民很穷'],
             answer: '要珍惜粮食',
             hint: '想想诗的中心意思',
-            explanation: '《悯农》告诉我们要珍惜粮食，因为每一粒都来自农民的辛苦劳动。'
+            explanation: '《悯农》告诉我们要珍惜粮食，因为每一粒都来自农民的辛苦劳动。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l2q4',
@@ -3489,7 +3526,7 @@ export const chineseGrade1: Unit[] = [
             options: ["高兴","同情","生气"],
             answer: '同情',
             hint: '诗人对农民是什么感情',
-            explanation: '"悯"是同情、怜悯的意思，诗人同情农民的辛苦。'
+            explanation: '"悯"是同情、怜悯的意思，诗人同情农民的辛苦。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l2q5',
@@ -3497,7 +3534,7 @@ export const chineseGrade1: Unit[] = [
             question: '"锄禾日当午"意思是中午太阳最热时，农民还在___',
             answer: '锄草',
             hint: '农民在做什么',
-            explanation: '"锄禾"就是用锄头给禾苗除草，中午最热时还在干活。'
+            explanation: '"锄禾"就是用锄头给禾苗除草，中午最热时还在干活。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l2q6',
@@ -3506,7 +3543,7 @@ export const chineseGrade1: Unit[] = [
             options: ["多吃点","珍惜粮食","少吃点"],
             answer: '珍惜粮食',
             hint: '每粒粮食都来之不易',
-            explanation: '这句诗告诉我们要珍惜粮食，因为每一粒都来自农民的辛苦劳动。这是期末常考题！'
+            explanation: '这句诗告诉我们要珍惜粮食，因为每一粒都来自农民的辛苦劳动。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l2q7',
@@ -3514,7 +3551,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："悯农"告诉我们要珍惜什么？',
             answer: '粮食',
             hint: '[古诗寓意]（语文一年级-第8单元）',
-            explanation: '"悯农"告诉我们要珍惜粮食，每一粒都来之不易。'
+            explanation: '"悯农"告诉我们要珍惜粮食，每一粒都来之不易。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3544,13 +3581,14 @@ export const chineseGrade1: Unit[] = [
               ttsNarration: '床前明月光，疑是地上霜，举头望明月，低头思故乡！',
             },
           },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '情境代入法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能流利朗读课文《静夜思》并理解主要内容',
         successCriteria: '①能正确流利朗读课文 ②能回答关于课文内容的问题',
-        iDo: '家长朗读古诗，营造安静的氛围，让孩子想象自己一个人在远方想家的感觉。',
-        weDo: '亲子一起讨论：如果你离开家很久，会想念什么？互相分享。',
-        youDo: '孩子独立背诵古诗，并用自己的话说说诗人的心情。',
+        iDo: '家长朗读古诗，营造安静的氛围，让孩子想象自己一个人在远方想家的感觉。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起讨论：如果你离开家很久，会想念什么？互相分享。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立背诵古诗，并用自己的话说说诗人的心情。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】夜晚，李白看到月光照在床前，白白的像霜一样。他抬头看月亮…\n共学四步：\n①对话出题：问孩子"疑是地上霜"中"疑"是什么意思？"\n②孩子应答："疑"在这里是"好像"的意思，月光照在地上好像白霜一样。\n③答错引导：家长可以和孩子一起重读课文，用"图文结合法"——边看插图边读文字，帮助理解\n④快速检测："疑是地上霜"中"疑"是什么意思？、举头望（    ）月、静夜思的作者是谁？',
         funElement: '笑话：李白看着月亮想家，月亮说"别想我啦，我又不是你家人！"——月亮表示很无辜！🌕',
         gsapAnimations: ['GSAP: 月光洒落床前动画'],
@@ -3563,7 +3601,7 @@ export const chineseGrade1: Unit[] = [
             options: ['看见', '好像', '确定'],
             answer: '好像',
             hint: '月光像什么',
-            explanation: '"疑"在这里是"好像"的意思，月光照在地上好像白霜一样。'
+            explanation: '"疑"在这里是"好像"的意思，月光照在地上好像白霜一样。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l3q2',
@@ -3571,7 +3609,7 @@ export const chineseGrade1: Unit[] = [
             question: '举头望___月',
             answer: '明',
             hint: '什么样的月亮',
-            explanation: '原诗"举头望明月"，抬头看天上明亮的月亮。'
+            explanation: '原诗"举头望明月"，抬头看天上明亮的月亮。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l3q3',
@@ -3580,7 +3618,7 @@ export const chineseGrade1: Unit[] = [
             options: ['骆宾王', '李白', '白居易'],
             answer: '李白',
             hint: '这位诗人被称为"诗仙"',
-            explanation: '《静夜思》的作者是李白，他被后人称为"诗仙"。'
+            explanation: '《静夜思》的作者是李白，他被后人称为"诗仙"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l3q4',
@@ -3589,7 +3627,7 @@ export const chineseGrade1: Unit[] = [
             options: ['因为月光照在地上白白的像霜', '因为地上真的有霜', '因为诗人很冷'],
             answer: '因为月光照在地上白白的像霜',
             hint: '想想月光和霜有什么共同点',
-            explanation: '月光照在地上白白的，诗人觉得好像铺了一层霜，所以用"疑是地上霜"来描写月光的洁白。'
+            explanation: '月光照在地上白白的，诗人觉得好像铺了一层霜，所以用"疑是地上霜"来描写月光的洁白。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l3q5',
@@ -3597,7 +3635,7 @@ export const chineseGrade1: Unit[] = [
             question: '李白看到月光想起___',
             answer: '家乡',
             hint: '思是什么意思',
-            explanation: '李白看到月光，想起了远方的家乡，这就是"思故乡"。'
+            explanation: '李白看到月光，想起了远方的家乡，这就是"思故乡"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l3q6',
@@ -3606,7 +3644,7 @@ export const chineseGrade1: Unit[] = [
             options: ["开心","思乡","害怕"],
             answer: '思乡',
             hint: '诗人看着月亮想什么',
-            explanation: '《静夜思》表达了诗人对家乡的思念之情。这是期末常考题！'
+            explanation: '《静夜思》表达了诗人对家乡的思念之情。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l3q7',
@@ -3614,7 +3652,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："静夜思"的作者是谁？',
             answer: '李白',
             hint: '[古诗作者]（语文一年级-第8单元）',
-            explanation: '"静夜思"是唐代诗人李白写的，表达思乡之情。'
+            explanation: '"静夜思"是唐代诗人李白写的，表达思乡之情。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3625,14 +3663,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '让我们来检验一下这单元学到的知识吧！通过这些练习，看看你掌握了多少', animationType: 'typewriter' },
           { type: 'tip', content: '评价小贴士：做错的题不要着急，回到前面的课时再学一遍，学会了就是最大的进步！', label: '评价提示', animationType: 'pulse' },
-          { type: 'formula', content: '复习口诀：学过的知识要常复习，温故而知新，才能记得更牢！', label: '复习方法', animationType: 'typewriter' }
+          { type: 'formula', content: '复习口诀：学过的知识要常复习，温故而知新，才能记得更牢！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '评价反馈法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能独立完成本单元形成性评价检测，查漏补缺',
         successCriteria: '①能独立完成所有检测题 ②能说出自己做错题目的正确答案',
-        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。',
-        weDo: '亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功。',
-        youDo: '孩子独立完成评价练习，错的内容多练几遍。',
+        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成评价练习，错的内容多练几遍。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】让我们来检验一下这单元学到的知识吧！通过这些练习，看看你…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：知识大闯关！答对一题前进一步，全部答对就是学习大王！👑',
         gsapAnimations: ['GSAP: 评价卡片翻转动画'],
@@ -3645,7 +3684,7 @@ export const chineseGrade1: Unit[] = [
             options: ["李白","骆宾王","杜甫"],
             answer: '骆宾王',
             hint: '7岁写这首诗的神童',
-            explanation: '《咏鹅》的作者是骆宾王，他7岁时就写了这首诗。'
+            explanation: '《咏鹅》的作者是骆宾王，他7岁时就写了这首诗。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l4q2',
@@ -3653,7 +3692,7 @@ export const chineseGrade1: Unit[] = [
             question: '"谁知盘中餐，粒粒皆___"',
             answer: '辛苦',
             hint: '每一粒粮食都怎么样',
-            explanation: '原诗"谁知盘中餐，粒粒皆辛苦"，每一粒粮食都来之不易。'
+            explanation: '原诗"谁知盘中餐，粒粒皆辛苦"，每一粒粮食都来之不易。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l4q3',
@@ -3662,7 +3701,7 @@ export const chineseGrade1: Unit[] = [
             options: ["开心","思乡","生气"],
             answer: '思乡',
             hint: '李白看着月亮想什么',
-            explanation: '《静夜思》表达了诗人对家乡的思念之情。'
+            explanation: '《静夜思》表达了诗人对家乡的思念之情。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l4q4',
@@ -3670,7 +3709,7 @@ export const chineseGrade1: Unit[] = [
             question: '"白毛浮___水"',
             answer: '绿',
             hint: '白鹅在什么颜色的水上',
-            explanation: '原诗"白毛浮绿水"，白鹅的羽毛浮在绿色的水面上。'
+            explanation: '原诗"白毛浮绿水"，白鹅的羽毛浮在绿色的水面上。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l4q5',
@@ -3679,7 +3718,7 @@ export const chineseGrade1: Unit[] = [
             options: ["写景抒情","叙事说理","送别友人"],
             answer: '写景抒情',
             hint: '三首诗都写了什么',
-            explanation: '三首古诗都通过写景来抒情：咏鹅写鹅、悯农写劳动、静夜思写月夜思乡。'
+            explanation: '三首古诗都通过写景来抒情：咏鹅写鹅、悯农写劳动、静夜思写月夜思乡。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l4q6',
@@ -3688,7 +3727,7 @@ export const chineseGrade1: Unit[] = [
             options: ["近义词","反义词","无关"],
             answer: '反义词',
             hint: '举头和低头动作相反',
-            explanation: '"举头"是抬头，"低头"是低头，动作相反，是反义词。这是期末常考题！'
+            explanation: '"举头"是抬头，"低头"是低头，动作相反，是反义词。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l4q7',
@@ -3696,7 +3735,7 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识：本单元学了哪三首古诗？写出一首的名称',
             answer: '咏鹅',
             hint: '[古诗名称]（语文一年级-第8单元）',
-            explanation: '本单元学了"咏鹅""悯农""静夜思"三首古诗。'
+            explanation: '本单元学了"咏鹅""悯农""静夜思"三首古诗。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3707,14 +3746,15 @@ export const chineseGrade1: Unit[] = [
         content: [
           { type: 'text', content: '学完了"古诗启蒙"这个单元，让我们把所有知识综合起来，看看能做什么吧！', animationType: 'typewriter' },
           { type: 'tip', content: '综合应用小窍门：试着把本单元学到的知识用在生活中，学以致用最有效！', label: '应用技巧', animationType: 'pulse' },
-          { type: 'formula', content: '复习三步法：回顾学过什么→练习不会的→把知识用起来！', label: '复习方法', animationType: 'typewriter' }
+          { type: 'formula', content: '复习三步法：回顾学过什么→练习不会的→把知识用起来！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用综合应用法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
-        teachingMethod: '综合应用法',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能综合运用本单元所学知识解决实际问题',
         successCriteria: '①能正确运用本单元核心知识解题 ②能解释解题思路',
-        iDo: '家长和孩子一起回顾本单元所有内容，示范如何综合运用所学知识。',
-        weDo: '亲子一起做综合练习，互相出题考对方。',
-        youDo: '孩子独立完成综合练习，把本单元知识串联起来。',
+        iDo: '家长和孩子一起回顾本单元所有内容，示范如何综合运用所学知识。 【CFU检查理解】家长问"这个字读什么？"',
+        weDo: '【引导式】亲子一起做综合练习，互相出题考对方。 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合练习，把本单元知识串联起来。【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】学完了"古诗启蒙"这个单元，让我们把所有知识综合起来，看…\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
         funElement: '小游戏：知识大串联！把本单元学到的知识连成一条线，看谁连得最长！🔗',
         gsapAnimations: ['GSAP: 综合复习动画'],
@@ -3727,7 +3767,7 @@ export const chineseGrade1: Unit[] = [
             options: ["咏鹅、悯农、静夜思","春晓、望庐山、登鹳雀楼","江南、敕勒歌、梅花"],
             answer: '咏鹅、悯农、静夜思',
             hint: '回顾本单元内容',
-            explanation: '本单元学了咏鹅、悯农、静夜思三首古诗。'
+            explanation: '本单元学了咏鹅、悯农、静夜思三首古诗。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l5q2',
@@ -3735,7 +3775,7 @@ export const chineseGrade1: Unit[] = [
             question: '背诵"静夜思"：床前明月光，疑是地上___',
             answer: '霜',
             hint: '月光像什么',
-            explanation: '原诗"床前明月光，疑是地上霜"，月光照在地上像白霜。'
+            explanation: '原诗"床前明月光，疑是地上霜"，月光照在地上像白霜。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l5q3',
@@ -3743,7 +3783,7 @@ export const chineseGrade1: Unit[] = [
             question: '把古诗和作者配对',
             answer: '咏鹅-骆宾王,悯农-李绅,静夜思-李白',
             hint: '每首诗是谁写的',
-            explanation: '咏鹅的作者是骆宾王，悯农的作者是李绅，静夜思的作者是李白。'
+            explanation: '咏鹅的作者是骆宾王，悯农的作者是李绅，静夜思的作者是李白。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l5q4',
@@ -3752,7 +3792,7 @@ export const chineseGrade1: Unit[] = [
             options: ["死记硬背","先理解意思再背诵","不用学"],
             answer: '先理解意思再背诵',
             hint: '怎样学古诗最有效',
-            explanation: '先理解古诗的意思，再背诵，这样记得更牢。'
+            explanation: '先理解古诗的意思，再背诵，这样记得更牢。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l5q5',
@@ -3760,7 +3800,7 @@ export const chineseGrade1: Unit[] = [
             question: '用"思乡"造一个句子：___',
             answer: '李白看着月亮思乡',
             hint: '思乡是什么意思',
-            explanation: '思乡就是想念家乡，李白看着月亮想念远方的家乡。'
+            explanation: '思乡就是想念家乡，李白看着月亮想念远方的家乡。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l5q6',
@@ -3769,7 +3809,7 @@ export const chineseGrade1: Unit[] = [
             options: ["翅膀","脖子","尾巴"],
             answer: '脖子',
             hint: '鹅弯着什么向天叫',
-            explanation: '"项"就是脖子的意思，"曲项"就是弯着脖子。这是期末常考题！'
+            explanation: '"项"就是脖子的意思，"曲项"就是弯着脖子。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'c1u8l5q7',
@@ -3777,7 +3817,1391 @@ export const chineseGrade1: Unit[] = [
             question: '回顾前面学过的知识："床前明月光"出自哪首诗？',
             answer: '静夜思',
             hint: '[古诗背诵]（语文一年级-第8单元）',
-            explanation: '"床前明月光"出自李白的《静夜思》。'
+            explanation: '"床前明月光"出自李白的《静夜思》。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'c1u9',
+    title: '复韵母ie üe er',
+    subtitle: '学习复韵母ie、üe、er和整体认读音节',
+    order: 9,
+    lessons: [
+      {
+        id: 'c1u9l1',
+        title: '认识复韵母ie',
+        order: 1,
+        content: [
+          { type: 'text', content: '复韵母ie，发音时先发i的音，再慢慢滑向e的音，连起来就是ie！', animationType: 'typewriter' },
+          { type: 'example', content: 'ie的口型变化：先嘴角向两边拉发i，再嘴巴变扁发e，就像说"耶"一样', label: '口型变化', animationType: 'bounce' },
+          { type: 'text', content: '整体认读音节ye和复韵母ie读音相同！ye是整体认读音节，不需要拼读，直接读出来', animationType: 'reveal' },
+          { type: 'example', content: 'ie的拼读：b-ie→bie（别）、d-ie→die（跌）、x-ie→xie（写）、n-ie→nie（捏）', label: '拼读示例', animationType: 'typewriter' },
+          { type: 'tip', content: '发音小窍门：ie的口型从i滑到e，就像说"耶"的口型变化，对着镜子多练习！', label: '发音技巧', animationType: 'pulse' },
+          { type: 'animation', content: '复韵母ie的字母从空中飘落，口型从i变化到e的动画', animationType: 'bounce',
+            animationConfig: {
+              sceneType: 'pinyin',
+              title: '复韵母ie',
+              pinyinConfig: { letters: ['ie'], mouthShapes: ['i→e'], keywords: ['写', '别', '跌'] },
+              ttsNarration: '复韵母ie，先发i再发e，连起来就是ie！',
+            },
+          },
+          { type: 'tip', content: '本课主要使用自然拼读法+蒙台梭利多感官：建立字母与发音的对应规则，通过多感官强化记忆', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: '自然拼读法 + 蒙台梭利多感官',
+        learningObjective: '我能正确读写复韵母ie并拼读相关音节',
+        successCriteria: '①能正确书写ie ②能拼读ie组成的音节',
+        iDo: '家长示范ie的口型变化，从i滑到e，配合手势比划口型变化。 【CFU检查理解】家长问"ie的口型是怎么变化的？"',
+        weDo: '【引导式】家长读孩子跟读ie及其音节，一起对着镜子看口型变化 → 【半独立】孩子读家长纠正口型 → 【独立】孩子自己拼读',
+        youDo: '孩子独立拼读ie的音节。【费曼小老师时间】用最简单的话把今天学的复韵母ie讲给小熊听',
+        parentTips: '【家长预习】本课学复韵母ie，发音时先发i再滑向e\n共学四步：\n①对话出题：问孩子"ie是怎么发音的？"\n②孩子应答：先发i的音再滑向e的音，连起来就是ie\n③答错引导：家长可以和孩子一起对着镜子练口型，用"口型对照法"练习\n④快速检测：ie的口型是怎么变化的？、ie和整体认读音节ye读音相同吗？、b-ie拼读是什么？',
+        funElement: '小游戏：拼音卡片配对！把声母和ie配对，看谁拼得快又准',
+        gsapAnimations: ['[GSAP:scaleIn|拼音卡片ie|0.6s|页面加载|back.out(1.7)]', '[GSAP:float|口型变化图|0.8s|循环|sine.inOut]'],
+        images: ['[IMG:illustration|ie口型变化图|400x300|cartoon|png|拼音教学]'],
+        practiceQuestions: [
+          {
+            id: 'c1u9l1q1',
+            type: 'choice',
+            question: '复韵母ie的发音口型是怎么变化的？',
+            options: ['从i滑到e', '从e滑到i', '从a滑到o'],
+            answer: '从i滑到e',
+            hint: '想想ie是哪两个字母组成的',
+            explanation: 'ie的发音是先发i的音，再慢慢滑向e的音，口型从i变化到e。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l1q2',
+            type: 'choice',
+            question: '和复韵母ie读音相同的整体认读音节是哪个？',
+            options: ['ye', 'yue', 'yuan'],
+            answer: 'ye',
+            hint: '读音一样的整体认读音节',
+            explanation: '整体认读音节ye和复韵母ie读音相同，ye不需要拼读直接读。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l1q3',
+            type: 'fill',
+            question: '拼一拼：x-ie拼读出来是___（写汉字或拼音）',
+            answer: 'xie',
+            hint: '声母x和复韵母ie拼在一起',
+            explanation: 'x和ie拼在一起读xie，可以组词"写字"的写。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l1q4',
+            type: 'choice',
+            question: '下面哪个音节中包含复韵母ie？',
+            options: ['bie', 'bai', 'bei'],
+            answer: 'bie',
+            hint: '找包含ie的音节',
+            explanation: 'bie是b和ie拼成的，包含复韵母ie；bai含ai，bei含ei。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l1q5',
+            type: 'drag',
+            question: '把ie的拼读音节按声母顺序排列：xie、bie、die、nie',
+            answer: 'bie,die,nie,xie',
+            hint: '按b、d、n、x的顺序排',
+            explanation: '按声母b、d、n、x的顺序排列就是bie、die、nie、xie。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l1q6',
+            type: 'choice',
+            question: '【期末真题】下列哪个是整体认读音节？',
+            options: ['ye', 'bie', 'xie'],
+            answer: 'ye',
+            hint: '整体认读音节不需要拼读',
+            explanation: 'ye是整体认读音节，不需要拼读直接读；bie和xie需要声母和韵母拼读。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l1q7',
+            type: 'fill',
+            question: '回顾前面学过的知识：六个单韵母按顺序是哪些？（用逗号分隔）',
+            answer: 'a,o,e,i,u,ü',
+            hint: '[单韵母顺序]（语文一年级-第1课）',
+            explanation: '六个单韵母的标准顺序是a、o、e、i、u、ü。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'c1u9l2',
+        title: '认识复韵母üe',
+        order: 2,
+        content: [
+          { type: 'text', content: '复韵母üe，发音时先发ü的音，再慢慢滑向e的音，连起来就是üe！', animationType: 'typewriter' },
+          { type: 'example', content: 'üe的口型变化：先嘴唇收圆发ü，再嘴巴变扁发e，就像说"约"一样', label: '口型变化', animationType: 'bounce' },
+          { type: 'text', content: '整体认读音节yue和复韵母üe读音相同！注意：üe和声母n、l相拼时ü上两点保留，和j、q、x相拼时ü上两点省略', animationType: 'reveal' },
+          { type: 'example', content: 'üe的拼读：n-üe→nüe（虐）、l-üe→lüe（略）、j-üe→jue（决）、q-üe→que（缺）、x-üe→xue（学）', label: '拼读示例', animationType: 'typewriter' },
+          { type: 'tip', content: '省两点规则：üe遇到j、q、x时，ü上的两点要省去不写，但读音不变！口诀"j q x真淘气，见到üe就摘帽"', label: '拼读规则', animationType: 'pulse' },
+          { type: 'animation', content: '复韵母üe的字母出现，展示üe和j、q、x相拼时省略两点的动画', animationType: 'bounce',
+            animationConfig: {
+              sceneType: 'pinyin',
+              title: '复韵母üe',
+              pinyinConfig: { letters: ['üe'], mouthShapes: ['ü→e'], keywords: ['学', '决', '缺'] },
+              ttsNarration: '复韵母üe，先发ü再发e，连起来就是üe！',
+            },
+          },
+          { type: 'tip', content: '本课主要使用EDI直接教学+自然拼读法：通过清晰示范和反复练习建立拼读规则', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: 'EDI直接教学 + 自然拼读法',
+        learningObjective: '我能正确读写复韵母üe并掌握省两点拼读规则',
+        successCriteria: '①能正确书写üe ②能说出üe和j、q、x相拼时省两点的规则',
+        iDo: '家长示范üe的口型变化，重点讲解üe和j、q、x相拼时省两点的规则。 【CFU检查理解】家长问"üe和j相拼时ü的两点怎么处理？"',
+        weDo: '【引导式】家长读孩子跟读üe及其音节，一起练习省两点规则 → 【半独立】孩子拼读家长纠正 → 【独立】孩子自己拼读',
+        youDo: '孩子独立拼读üe的音节。【费曼小老师时间】用最简单的话把üe的省两点规则讲给小熊听',
+        parentTips: '【家长预习】本课学复韵母üe，重点掌握üe和j、q、x相拼时省两点的规则\n共学四步：\n①对话出题：问孩子"üe和j、q、x相拼时ü的两点要怎样？"\n②孩子应答：üe和j、q、x相拼时ü上两点要省去不写，但读音不变\n③答错引导：用口诀"j q x真淘气，见到üe就摘帽"帮助记忆\n④快速检测：üe和j相拼写成什么？、üe和n相拼两点保留吗？、x-üe拼读是什么？',
+        funElement: '小游戏：摘帽子！j、q、x来了，üe快把帽子（两点）摘掉！',
+        gsapAnimations: ['[GSAP:scaleIn|拼音卡片üe|0.6s|页面加载|back.out(1.7)]', '[GSAP:float|摘帽子动画|1s|交互触发|elastic.out(1)']  ,
+        images: ['[IMG:illustration|üe省两点规则图|400x300|cartoon|png|拼音教学]'],
+        practiceQuestions: [
+          {
+            id: 'c1u9l2q1',
+            type: 'choice',
+            question: '复韵母üe的发音口型是怎么变化的？',
+            options: ['从ü滑到e', '从e滑到ü', '从i滑到e'],
+            answer: '从ü滑到e',
+            hint: '想想üe是哪两个字母组成的',
+            explanation: 'üe的发音是先发ü的音，再慢慢滑向e的音，口型从ü变化到e。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l2q2',
+            type: 'choice',
+            question: 'üe和j、q、x相拼时，ü上的两点怎么处理？',
+            options: ['省去不写', '保留两点', '改成v'],
+            answer: '省去不写',
+            hint: '想想口诀"j q x真淘气"',
+            explanation: 'üe和j、q、x相拼时ü上两点省去不写，但读音不变。口诀"j q x真淘气，见到üe就摘帽"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l2q3',
+            type: 'fill',
+            question: 'j-üe拼读时写成___（不需要两点）',
+            answer: 'jue',
+            hint: 'üe和j相拼时省两点',
+            explanation: 'j和üe相拼时ü上两点省去，写成jue，读"决"。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l2q4',
+            type: 'choice',
+            question: '下面哪个音节中ü的两点没有省略？',
+            options: ['nüe', 'jue', 'que'],
+            answer: 'nüe',
+            hint: 'üe和n相拼时两点保留',
+            explanation: 'üe和n、l相拼时两点保留写成nüe、lüe；和j、q、x相拼时省两点写成jue、que、xue。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l2q5',
+            type: 'choice',
+            question: '和复韵母üe读音相同的整体认读音节是哪个？',
+            options: ['yue', 'ye', 'yuan'],
+            answer: 'yue',
+            hint: '找和üe读音一样的整体认读音节',
+            explanation: '整体认读音节yue和复韵母üe读音相同，yue不需要拼读直接读。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l2q6',
+            type: 'choice',
+            question: '【期末真题】下列拼写正确的是哪个？',
+            options: ['j-üe→jue', 'j-üe→jüe', 'n-üe→nue'],
+            answer: 'j-üe→jue',
+            hint: '回忆省两点规则',
+            explanation: 'j和üe相拼时ü上两点省去写成jue，这是正确的。n和üe相拼时两点保留写成nüe，不是nue。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l2q7',
+            type: 'fill',
+            question: '回顾前面学过的知识：复韵母ai、ei、ui中，哪个发音时嘴先圆再扁？',
+            answer: 'ui',
+            hint: '[复韵母发音]（语文一年级-第2课）',
+            explanation: '复韵母ui发音时先发u（嘴圆）再发i（嘴扁），嘴先圆再扁。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'c1u9l3',
+        title: '认识复韵母er',
+        order: 3,
+        content: [
+          { type: 'text', content: '复韵母er，发音时先发e的音，再把舌头向上卷，就发出了er的音！', animationType: 'typewriter' },
+          { type: 'example', content: 'er很特别！它不能和声母相拼，只能自己单独成音节，比如"耳""二""儿"', label: 'er的特点', animationType: 'bounce' },
+          { type: 'text', content: 'er单独成音节时写成"er"，不需要加声母。比如"耳朵"的"耳"读音就是er', animationType: 'reveal' },
+          { type: 'example', content: 'er的词语：耳朵（ěr）、儿子（ér）、第二（èr）、花儿（huār）', label: 'er的词语', animationType: 'typewriter' },
+          { type: 'tip', content: '发音小窍门：发er时先发e，然后舌尖向上卷起，就像说"耳"一样。可以用手指比划卷舌动作帮助理解！', label: '发音技巧', animationType: 'pulse' },
+          { type: 'animation', content: '复韵母er出现，舌头卷起的动画演示', animationType: 'bounce',
+            animationConfig: {
+              sceneType: 'pinyin',
+              title: '复韵母er',
+              pinyinConfig: { letters: ['er'], mouthShapes: ['e→卷舌'], keywords: ['耳', '二', '儿'] },
+              ttsNarration: '复韵母er，先发e再卷舌，连起来就是er！',
+            },
+          },
+          { type: 'tip', content: '本课主要使用蒙台梭利多感官+费曼学习法：通过多感官体验发音，再让孩子讲解巩固', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: '蒙台梭利多感官 + 费曼学习法',
+        learningObjective: '我能正确读写复韵母er并知道er不能和声母相拼',
+        successCriteria: '①能正确书写er ②能说出er不能和声母相拼的特点',
+        iDo: '家长示范er的发音，重点展示舌头卷起的动作，讲解er不能和声母相拼的特点。 【CFU检查理解】家长问"er能不能和声母相拼？"',
+        weDo: '【引导式】家长读孩子跟读er，一起做卷舌动作 → 【半独立】孩子读er的词语家长纠正 → 【独立】孩子自己读',
+        youDo: '孩子独立朗读er的词语。【费曼小老师时间】用最简单的话把er的特点讲给小熊听',
+        parentTips: '【家长预习】本课学复韵母er，er很特别，不能和声母相拼\n共学四步：\n①对话出题：问孩子"er有什么特别的地方？"\n②孩子应答：er不能和声母相拼，只能自己单独成音节\n③答错引导：家长示范er的卷舌发音，让孩子观察舌头动作\n④快速检测：er能和声母相拼吗？、"耳朵"的"耳"拼音是什么？、er怎么发音？',
+        funElement: '小游戏：卷舌大挑战！和家长比赛谁的舌头卷得最好，发出最标准的er',
+        gsapAnimations: ['[GSAP:scaleIn|拼音卡片er|0.6s|页面加载|back.out(1.7)]', '[GSAP:pulse|舌头卷起动画|0.5s|循环|sine.inOut]'],
+        images: ['[IMG:illustration|er卷舌发音图|400x300|cartoon|png|拼音教学]'],
+        practiceQuestions: [
+          {
+            id: 'c1u9l3q1',
+            type: 'choice',
+            question: '复韵母er有什么特别的地方？',
+            options: ['不能和声母相拼', '只能和b相拼', '不需要发音'],
+            answer: '不能和声母相拼',
+            hint: 'er和别的复韵母不同',
+            explanation: 'er很特别，它不能和声母相拼，只能自己单独成音节。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l3q2',
+            type: 'choice',
+            question: '"耳朵"的"耳"拼音是什么？',
+            options: ['er', 'ie', 'üe'],
+            answer: 'er',
+            hint: '想想哪个复韵母读"耳"',
+            explanation: '"耳"的拼音是er，er单独成音节不需要声母。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l3q3',
+            type: 'fill',
+            question: 'er发音时先发e的音，然后舌尖向___卷起',
+            answer: '上',
+            hint: '舌头往哪个方向卷',
+            explanation: 'er发音时先发e，然后舌尖向上卷起，就发出了er的音。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l3q4',
+            type: 'choice',
+            question: '下面哪个词语中包含er的音？',
+            options: ['儿子', '写字', '雪花'],
+            answer: '儿子',
+            hint: '找读音含er的词',
+            explanation: '"儿子"的"儿"拼音是er，包含er的音。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l3q5',
+            type: 'choice',
+            question: 'er能和下列哪个声母相拼？',
+            options: ['都不能相拼', '能和b相拼', '能和p相拼'],
+            answer: '都不能相拼',
+            hint: '回忆er的特点',
+            explanation: 'er不能和任何声母相拼，只能自己单独成音节。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l3q6',
+            type: 'choice',
+            question: '【期中真题】"第二"的"二"拼音是什么？',
+            options: ['er', 'ie', 'üe'],
+            answer: 'er',
+            hint: '"二"怎么读',
+            explanation: '"二"的拼音是er，er单独成音节。这是期中常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l3q7',
+            type: 'fill',
+            question: '回顾前面学过的知识：复韵母ie和整体认读音节___读音相同',
+            answer: 'ye',
+            hint: '[复韵母与整体认读音节]（语文一年级-第9课）',
+            explanation: '复韵母ie和整体认读音节ye读音相同，都是ie的音。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'c1u9l4',
+        title: '形成性评价',
+        order: 4,
+        content: [
+          { type: 'text', content: '让我们来检验一下这单元学到的知识吧！通过这些练习，看看你掌握了多少', animationType: 'typewriter' },
+          { type: 'tip', content: '评价小贴士：做错的题不要着急，回到前面的课时再学一遍，学会了就是最大的进步！', label: '评价提示', animationType: 'pulse' },
+          { type: 'formula', content: '复习口诀：ie先i后e，üe先ü后e，er先e后卷舌。ie、üe有整体认读ye、yue，er不能和声母拼！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用形成性评价+思维导图法：通过即时检测反馈调整学习策略，用思维导图梳理知识结构', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: '形成性评价 + 思维导图法',
+        learningObjective: '我能独立完成本单元形成性评价检测，查漏补缺',
+        successCriteria: '①能独立完成所有检测题 ②能说出自己做错题目的正确答案',
+        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。 【CFU检查理解】家长问"ie、üe、er分别怎么发音？"',
+        weDo: '【引导式】亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成评价练习，错的内容多练几遍。【费曼小老师时间】用最简单的话把今天学的讲给小熊听，讲不清的地方回去看一遍再讲。',
+        parentTips: '【家长预习】让我们来检验一下这单元学到的知识吧！通过这些练习，看看你掌握了多少\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
+        funElement: '小游戏：知识大闯关！答对一题前进一步，全部答对就是学习大王！',
+        gsapAnimations: ['[GSAP:cardReveal|评价卡片翻转|0.5s|点击|back.out(1.7)]', '[GSAP:timeline|思维导图展开|1.5s|页面加载|power2.out]'],
+        images: ['[IMG:illustration|复韵母ieüeer思维导图|500x300|思维导图风|png|三个复韵母知识点]', '[IMG:illustration|评价闯关图|400x300|cartoon|png|闯关游戏]'],
+        practiceQuestions: [
+          {
+            id: 'c1u9l4q1',
+            type: 'choice',
+            question: '复韵母ie的发音口型是怎样的？',
+            options: ['从i滑到e', '从e滑到i', '从ü滑到e'],
+            answer: '从i滑到e',
+            hint: '回忆ie的口型变化',
+            explanation: 'ie发音时先发i再滑向e，口型从i变化到e。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l4q2',
+            type: 'fill',
+            question: 'üe和j、q、x相拼时，ü上的两点要___去不写',
+            answer: '省',
+            hint: '回忆省两点规则',
+            explanation: 'üe和j、q、x相拼时ü上两点省去不写，但读音不变。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l4q3',
+            type: 'choice',
+            question: 'er有什么特别之处？',
+            options: ['不能和声母相拼', '只能和b相拼', '不需要发音'],
+            answer: '不能和声母相拼',
+            hint: '回忆er的特点',
+            explanation: 'er不能和声母相拼，只能自己单独成音节。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l4q4',
+            type: 'choice',
+            question: '下面哪个是整体认读音节？',
+            options: ['ye', 'bie', 'xue'],
+            answer: 'ye',
+            hint: '整体认读音节不需要拼读',
+            explanation: 'ye和yue是整体认读音节，不需要拼读直接读；bie和xue需要拼读。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l4q5',
+            type: 'choice',
+            question: '本单元学了哪三个复韵母？',
+            options: ['ie、üe、er', 'ai、ei、ui', 'ao、ou、iu'],
+            answer: 'ie、üe、er',
+            hint: '回顾本单元内容',
+            explanation: '本单元学了复韵母ie、üe、er三个。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l4q6',
+            type: 'choice',
+            question: '【期末真题】下列拼写正确的是？',
+            options: ['x-üe→xue', 'x-üe→xüe', 'n-üe→nue'],
+            answer: 'x-üe→xue',
+            hint: '回忆省两点规则',
+            explanation: 'x和üe相拼时ü上两点省去写成xue，这是正确的。n和üe相拼时两点保留写成nüe。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l4q7',
+            type: 'fill',
+            question: '回顾前面学过的知识：六个单韵母中，发音时嘴最圆最前的是哪个？',
+            answer: 'ü',
+            hint: '[单韵母发音]（语文一年级-第1课）',
+            explanation: 'ü发音时嘴最圆最前，像小鱼吐泡泡。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'c1u9l5',
+        title: '综合复习与应用',
+        order: 5,
+        content: [
+          { type: 'text', content: '学完了"复韵母ie üe er"这个单元，让我们把所有知识综合起来，看看能做什么吧！', animationType: 'typewriter' },
+          { type: 'tip', content: '综合应用小窍门：试着把本单元学到的拼音用在生活中，看到不认识的字试着拼一拼！', label: '应用技巧', animationType: 'pulse' },
+          { type: 'formula', content: '复习三步法：回顾ie、üe、er的发音→练习拼读→把知识用起来！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用综合应用法+苏格拉底提问法：通过综合运用和提问引导深化理解', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: 'EDI直接教学 + 苏格拉底提问法',
+        learningObjective: '我能综合运用本单元所学知识解决实际问题',
+        successCriteria: '①能正确运用本单元核心知识解题 ②能解释解题思路',
+        iDo: '家长和孩子一起回顾本单元所有内容，示范如何综合运用所学知识。 【CFU检查理解】家长问"ie、üe、er分别怎么发音和拼读？"',
+        weDo: '【引导式】亲子一起做综合练习，互相出题考对方 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合练习，把本单元知识串联起来。【费曼小老师时间】用最简单的话把今天学的讲给小熊听，讲不清的地方回去看一遍再讲。',
+        parentTips: '【家长预习】学完了"复韵母ie üe er"这个单元，让我们把所有知识综合起来\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
+        funElement: '小游戏：知识大串联！把本单元学到的知识连成一条线，看谁连得最长！',
+        gsapAnimations: ['[GSAP:timeline|知识串联动画|1.5s|页面加载|power2.out]', '[GSAP:scaleIn|综合复习卡片|0.6s|点击|back.out(1.7)]'],
+        images: ['[IMG:illustration|复韵母综合应用图|400x300|cartoon|png|综合复习]'],
+        practiceQuestions: [
+          {
+            id: 'c1u9l5q1',
+            type: 'choice',
+            question: 'ie、üe、er中，哪个不能和声母相拼？',
+            options: ['er', 'ie', 'üe'],
+            answer: 'er',
+            hint: '回忆er的特点',
+            explanation: 'er不能和声母相拼，只能自己单独成音节。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l5q2',
+            type: 'fill',
+            question: '整体认读音节yue和复韵母___读音相同',
+            answer: 'üe',
+            hint: '找和yue读音相同的复韵母',
+            explanation: '整体认读音节yue和复韵母üe读音相同。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l5q3',
+            type: 'choice',
+            question: '"写字"的"写"拼音中包含哪个复韵母？',
+            options: ['ie', 'üe', 'er'],
+            answer: 'ie',
+            hint: '"写"的拼音是xie',
+            explanation: '"写"的拼音是xie，其中包含复韵母ie。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l5q4',
+            type: 'choice',
+            question: '"学习"的"学"拼音中包含哪个复韵母？',
+            options: ['üe', 'ie', 'er'],
+            answer: 'üe',
+            hint: '"学"的拼音是xue',
+            explanation: '"学"的拼音是xue，其中üe和x相拼时省两点，包含复韵母üe。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l5q5',
+            type: 'drag',
+            question: '把复韵母和对应的整体认读音节配对排列：ie、yue、üe、ye',
+            answer: 'ie,ye,üe,yue',
+            hint: 'ie配ye，üe配yue',
+            explanation: 'ie和ye配对，üe和yue配对，它们分别读音相同。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l5q6',
+            type: 'choice',
+            question: '【期末真题】下面哪个音节的拼写是正确的？',
+            options: ['q-üe→que', 'q-üe→qüe', 'n-üe→nue'],
+            answer: 'q-üe→que',
+            hint: '回忆üe的省两点规则',
+            explanation: 'q和üe相拼时ü上两点省去写成que，这是正确的。n和üe相拼两点保留写成nüe。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u9l5q7',
+            type: 'fill',
+            question: '回顾前面学过的知识：复韵母ao、ou、iu中，哪个发音时嘴先圆再变扁？',
+            answer: 'ou',
+            hint: '[复韵母发音]（语文一年级-第2课）',
+            explanation: '复韵母ou发音时先发o（嘴圆）再发u（嘴突出），嘴先圆再突出。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'c1u10',
+    title: '笔画名称',
+    subtitle: '学习汉字基本笔画和复合笔画名称',
+    order: 10,
+    lessons: [
+      {
+        id: 'c1u10l1',
+        title: '基本笔画名称',
+        order: 1,
+        content: [
+          { type: 'text', content: '汉字是由笔画组成的！基本笔画有五种：横、竖、撇、捺、点', animationType: 'typewriter' },
+          { type: 'example', content: '横（一）：从左到右画一条线，像地平线一样平平的。例字：一、二、三', label: '横', animationType: 'bounce' },
+          { type: 'example', content: '竖（丨）：从上到下画一条线，像大树一样直直的。例字：十、木、上', label: '竖', animationType: 'bounce' },
+          { type: 'example', content: '撇（丿）：从右上到左下画一条斜线，像柳枝飘下来。捺（㇏）：从左上到右下画一条斜线，像滑梯一样。点（丶）：轻轻一点，像小雨滴', label: '撇捺点', animationType: 'typewriter' },
+          { type: 'tip', content: '记忆口诀：横一竖十撇柳枝，捺滑梯点雨滴。用形象比喻帮助记住每种笔画！', label: '记忆技巧', animationType: 'pulse' },
+          { type: 'animation', content: '五种基本笔画依次画出，配合名称标注动画', animationType: 'bounce',
+            animationConfig: {
+              sceneType: 'shapeDraw',
+              title: '五种基本笔画',
+              shapeDrawConfig: {
+                shape: 'strokes',
+                labels: ['横', '竖', '撇', '捺', '点'],
+              },
+              ttsNarration: '五种基本笔画：横、竖、撇、捺、点！',
+            },
+          },
+          { type: 'tip', content: '本课主要使用蒙台梭利多感官+EDI直接教学：通过多感官体验笔画书写，清晰示范建立认知', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: '蒙台梭利多感官 + EDI直接教学',
+        learningObjective: '我能说出五种基本笔画的名称并正确书写',
+        successCriteria: '①能说出横竖撇捺点的名称 ②能正确书写五种基本笔画',
+        iDo: '家长在纸上示范写五种基本笔画，一边写一边说出名称。 【CFU检查理解】家长问"横是怎么写的？"',
+        weDo: '【引导式】家长写孩子跟着写，一边写一边说出笔画名称 → 【半独立】孩子写家长纠正 → 【独立】孩子自己写',
+        youDo: '孩子独立书写五种基本笔画。【费曼小老师时间】用最简单的话把五种笔画讲给小熊听',
+        parentTips: '【家长预习】本课学五种基本笔画：横、竖、撇、捺、点\n共学四步：\n①对话出题：问孩子"基本笔画有哪几种？"\n②孩子应答：横、竖、撇、捺、点五种\n③答错引导：家长在纸上画笔画，让孩子用手指描摹，感受运笔方向\n④快速检测：横是怎么写的？、"十"字有几笔？分别是什么？、撇的运笔方向是什么？',
+        funElement: '小游戏：笔画手指画！用手指在空中画笔画，家长说名称孩子画',
+        gsapAnimations: ['[GSAP:drawIn|笔画书写动画|1s|页面加载|power2.out]', '[GSAP:scaleIn|笔画名称标注|0.4s|笔画画完|back.out(1.7)]'],
+        images: ['[IMG:illustration|五种基本笔画图|400x300|cartoon|png|笔画教学]'],
+        practiceQuestions: [
+          {
+            id: 'c1u10l1q1',
+            type: 'choice',
+            question: '下列哪个不是基本笔画？',
+            options: ['横折', '横', '竖'],
+            answer: '横折',
+            hint: '基本笔画只有横竖撇捺点',
+            explanation: '基本笔画有横、竖、撇、捺、点五种。横折是复合笔画，不是基本笔画。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l1q2',
+            type: 'choice',
+            question: '"一"字由什么笔画组成？',
+            options: ['横', '竖', '撇'],
+            answer: '横',
+            hint: '"一"就是一条横线',
+            explanation: '"一"字只有一笔，就是横。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l1q3',
+            type: 'fill',
+            question: '"十"字由横和___组成',
+            answer: '竖',
+            hint: '"十"是横加什么',
+            explanation: '"十"字由横和竖两笔组成，先横后竖。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l1q4',
+            type: 'choice',
+            question: '撇的运笔方向是什么？',
+            options: ['从右上到左下', '从左到右', '从上到下'],
+            answer: '从右上到左下',
+            hint: '想想柳枝飘下来的方向',
+            explanation: '撇是从右上到左下画的斜线，像柳枝飘下来的样子。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l1q5',
+            type: 'drag',
+            question: '把笔画和对应比喻配对排列：横、竖、撇、捺、点',
+            answer: '横,竖,撇,捺,点',
+            hint: '按口诀顺序排列',
+            explanation: '基本笔画口诀：横一竖十撇柳枝，捺滑梯点雨滴。按顺序是横、竖、撇、捺、点。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l1q6',
+            type: 'choice',
+            question: '【期末真题】"木"字的第三笔是什么？',
+            options: ['撇', '横', '竖'],
+            answer: '撇',
+            hint: '"木"的笔顺是横、竖、撇、捺',
+            explanation: '"木"字的笔顺是横、竖、撇、捺，第三笔是撇。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l1q7',
+            type: 'fill',
+            question: '回顾前面学过的知识：复韵母ie和整体认读音节___读音相同',
+            answer: 'ye',
+            hint: '[复韵母与整体认读音节]（语文一年级-第9课）',
+            explanation: '复韵母ie和整体认读音节ye读音相同。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'c1u10l2',
+        title: '复合笔画名称',
+        order: 2,
+        content: [
+          { type: 'text', content: '除了基本笔画，还有很多复合笔画！复合笔画是由基本笔画组合而成的', animationType: 'typewriter' },
+          { type: 'example', content: '横折（ㄱ）：先横再折向下，像折纸一样。例字：口、日、目', label: '横折', animationType: 'bounce' },
+          { type: 'example', content: '竖折（ㄴ）：先竖再折向右。竖弯（㇄）：先竖再弯向右。竖提（ㄑ）：先竖再向右上提', label: '竖折/竖弯/竖提', animationType: 'typewriter' },
+          { type: 'example', content: '横撇（㇇）：先横再撇。撇折（ㄥ）：先撇再折。撇点（㇙）：先撇再点。横折钩（㇆）：横折后再加一个钩', label: '更多复合笔画', animationType: 'reveal' },
+          { type: 'tip', content: '记忆方法：复合笔画的名字就是把运笔路线连起来说！比如"横折"就是先写横再折，"竖弯钩"就是先竖再弯再钩', label: '记忆技巧', animationType: 'pulse' },
+          { type: 'animation', content: '复合笔画依次写出，配合运笔方向箭头动画', animationType: 'bounce',
+            animationConfig: {
+              sceneType: 'shapeDraw',
+              title: '复合笔画',
+              shapeDrawConfig: {
+                shape: 'compoundStrokes',
+                labels: ['横折', '竖折', '竖弯', '横撇', '横折钩'],
+              },
+              ttsNarration: '复合笔画：横折、竖折、竖弯、横撇、横折钩！',
+            },
+          },
+          { type: 'tip', content: '本课主要使用EDI直接教学+思维导图法：通过清晰示范和知识结构化帮助记忆', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: 'EDI直接教学 + 思维导图法',
+        learningObjective: '我能说出常见复合笔画的名称并正确书写',
+        successCriteria: '①能说出横折、竖折等复合笔画名称 ②能正确书写复合笔画',
+        iDo: '家长在纸上示范写复合笔画，一边写一边说出名称和运笔方向。 【CFU检查理解】家长问"横折是怎么写的？"',
+        weDo: '【引导式】家长写孩子跟着写复合笔画，一起说运笔方向 → 【半独立】孩子写家长纠正 → 【独立】孩子自己写',
+        youDo: '孩子独立书写复合笔画。【费曼小老师时间】用最简单的话把复合笔画的命名规律讲给小熊听',
+        parentTips: '【家长预习】本课学复合笔画：横折、竖折、竖弯、横撇等\n共学四步：\n①对话出题：问孩子"复合笔画的名字是怎么来的？"\n②孩子应答：把运笔路线连起来说就是复合笔画的名字\n③答错引导：家长在纸上画箭头标出运笔方向，让孩子跟着描\n④快速检测：横折怎么写？、竖弯和竖折有什么区别？、"口"字包含哪个复合笔画？',
+        funElement: '小游戏：折纸笔画！用纸折出笔画的折角，帮助理解复合笔画',
+        gsapAnimations: ['[GSAP:drawIn|复合笔画书写|1.2s|页面加载|power2.out]', '[GSAP:float|运笔方向箭头|0.6s|循环|sine.inOut]'],
+        images: ['[IMG:illustration|复合笔画对照表|500x300|教学风|png|笔画教学]'],
+        practiceQuestions: [
+          {
+            id: 'c1u10l2q1',
+            type: 'choice',
+            question: '横折的运笔方向是什么？',
+            options: ['先横再折向下', '先竖再折向右', '先撇再折'],
+            answer: '先横再折向下',
+            hint: '想想"横折"这个名字',
+            explanation: '横折就是先写横，再折向下，像折纸一样。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l2q2',
+            type: 'choice',
+            question: '"口"字中包含哪个复合笔画？',
+            options: ['横折', '竖弯', '撇折'],
+            answer: '横折',
+            hint: '"口"字的右边是怎么折的',
+            explanation: '"口"字的笔顺是竖、横折、横，包含横折这个复合笔画。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l2q3',
+            type: 'fill',
+            question: '复合笔画的名字就是把___路线连起来说',
+            answer: '运笔',
+            hint: '想想复合笔画是怎么命名的',
+            explanation: '复合笔画的名字就是把运笔路线连起来说，比如"横折钩"就是横、折、钩三个动作。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l2q4',
+            type: 'choice',
+            question: '竖弯和竖折的区别是什么？',
+            options: ['竖弯是圆弧弯，竖折是直角折', '竖弯没有竖', '竖折没有竖'],
+            answer: '竖弯是圆弧弯，竖折是直角折',
+            hint: '想想"弯"和"折"的区别',
+            explanation: '竖弯是先竖再圆弧弯向右，竖折是先竖再直角折向右。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l2q5',
+            type: 'choice',
+            question: '"日"字中包含哪个复合笔画？',
+            options: ['横折', '竖弯钩', '撇折'],
+            answer: '横折',
+            hint: '看"日"字右边的折',
+            explanation: '"日"字的笔顺是竖、横折、横、横，包含横折。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l2q6',
+            type: 'choice',
+            question: '【期中真题】下列哪个是复合笔画？',
+            options: ['横折钩', '横', '点'],
+            answer: '横折钩',
+            hint: '复合笔画由基本笔画组合而成',
+            explanation: '横折钩是由横、折、钩组合而成的复合笔画，横和点是基本笔画。这是期中常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l2q7',
+            type: 'fill',
+            question: '回顾前面学过的知识：六个单韵母按顺序第一个是___',
+            answer: 'a',
+            hint: '[单韵母顺序]（语文一年级-第1课）',
+            explanation: '六个单韵母按顺序是a、o、e、i、u、ü，第一个是a。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'c1u10l3',
+        title: '笔画名称在汉字中的应用',
+        order: 3,
+        content: [
+          { type: 'text', content: '学会了笔画名称，我们就能说出每个字的笔顺和笔画啦！', animationType: 'typewriter' },
+          { type: 'example', content: '"上"字的笔画：竖、横、横。先写中间的竖，再写上面的短横，最后写下面的长横', label: '例字分析：上', animationType: 'bounce' },
+          { type: 'example', content: '"下"字的笔画：横、竖、点。先写上面的横，再写中间的竖，最后写右边的点', label: '例字分析：下', animationType: 'bounce' },
+          { type: 'example', content: '"大"字的笔画：横、撇、捺。先写横，再写撇，最后写捺', label: '例字分析：大', animationType: 'typewriter' },
+          { type: 'tip', content: '应用技巧：看到不认识的字，可以用笔画名称说出它的笔顺，帮助记忆和书写！', label: '应用技巧', animationType: 'pulse' },
+          { type: 'animation', content: '"大"字逐笔写出，每笔标注名称的动画', animationType: 'bounce',
+            animationConfig: {
+              sceneType: 'shapeDraw',
+              title: '大字笔画分析',
+              shapeDrawConfig: {
+                shape: 'character',
+                labels: ['横', '撇', '捺'],
+              },
+              ttsNarration: '"大"字三笔：横、撇、捺！',
+            },
+          },
+          { type: 'tip', content: '本课主要使用费曼学习法+苏格拉底提问法：通过让孩子讲解和提问引导深化理解', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: '费曼学习法 + 苏格拉底提问法',
+        learningObjective: '我能用笔画名称说出常见汉字的笔顺',
+        successCriteria: '①能说出简单汉字的笔画名称 ②能按正确笔顺说出笔画顺序',
+        iDo: '家长示范分析"上""下""大"等字的笔画，边写边说出笔画名称。 【CFU检查理解】家长问""大"字有几笔？分别是什么？"',
+        weDo: '【引导式】亲子一起分析汉字笔画，互相说出笔画名称 → 【半独立】孩子说家长写 → 【独立】孩子自己分析',
+        youDo: '孩子独立分析简单汉字的笔画。【费曼小老师时间】用最简单的话把"上""下""大"的笔画讲给小熊听',
+        parentTips: '【家长预习】本课学用笔画名称分析汉字的笔顺\n共学四步：\n①对话出题：问孩子""大"字由哪几笔组成？"\n②孩子应答："大"字由横、撇、捺三笔组成\n③答错引导：家长在纸上写出字，每笔标注名称，让孩子跟着描\n④快速检测："上"字有几笔？、"下"字的第三笔是什么？、"大"字的笔画顺序是什么？',
+        funElement: '小游戏：笔画侦探！看一个字，猜它由哪些笔画组成，看谁猜得准！',
+        gsapAnimations: ['[GSAP:drawIn|汉字逐笔书写|1.5s|点击|power2.out]', '[GSAP:scaleIn|笔画名称标注|0.4s|笔画画完|back.out(1.7)]'],
+        images: ['[IMG:illustration|汉字笔画分析图|400x300|cartoon|png|笔画应用]'],
+        practiceQuestions: [
+          {
+            id: 'c1u10l3q1',
+            type: 'choice',
+            question: '"大"字由哪几笔组成？',
+            options: ['横、撇、捺', '横、竖、撇', '竖、撇、捺'],
+            answer: '横、撇、捺',
+            hint: '想想"大"字怎么写',
+            explanation: '"大"字由横、撇、捺三笔组成，先横后撇后捺。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l3q2',
+            type: 'choice',
+            question: '"上"字的第一笔是什么？',
+            options: ['竖', '横', '撇'],
+            answer: '竖',
+            hint: '"上"字先写什么',
+            explanation: '"上"字的笔顺是竖、横、横，第一笔是竖。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l3q3',
+            type: 'fill',
+            question: '"下"字共___笔',
+            answer: '3',
+            hint: '数一数"下"字有几笔',
+            explanation: '"下"字由横、竖、点三笔组成，共3笔。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l3q4',
+            type: 'choice',
+            question: '"木"字的笔画顺序是什么？',
+            options: ['横、竖、撇、捺', '竖、横、撇、捺', '横、撇、竖、捺'],
+            answer: '横、竖、撇、捺',
+            hint: '回忆"木"字的笔顺',
+            explanation: '"木"字的笔顺是横、竖、撇、捺。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l3q5',
+            type: 'drag',
+            question: '把"上"字的笔画按顺序排列：横、竖、横',
+            answer: '竖,横,横',
+            hint: '"上"字先竖再横再横',
+            explanation: '"上"字的笔顺是竖、横、横。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l3q6',
+            type: 'choice',
+            question: '【期末真题】"口"字的第二笔是什么？',
+            options: ['横折', '竖', '横'],
+            answer: '横折',
+            hint: '"口"字的笔顺是竖、横折、横',
+            explanation: '"口"字的笔顺是竖、横折、横，第二笔是横折。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l3q7',
+            type: 'fill',
+            question: '回顾前面学过的知识：声母b、p、m、f中，哪个发音时送气最多？',
+            answer: 'p',
+            hint: '[声母发音]（语文一年级-第1课）',
+            explanation: 'p发音时送气最多，可以对着手心感受气流。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'c1u10l4',
+        title: '形成性评价',
+        order: 4,
+        content: [
+          { type: 'text', content: '让我们来检验一下这单元学到的知识吧！通过这些练习，看看你掌握了多少', animationType: 'typewriter' },
+          { type: 'tip', content: '评价小贴士：做错的题不要着急，回到前面的课时再学一遍，学会了就是最大的进步！', label: '评价提示', animationType: 'pulse' },
+          { type: 'formula', content: '复习口诀：基本笔画五兄弟——横竖撇捺点；复合笔画说路线——横折竖折横折钩！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用形成性评价+思维导图法：通过即时检测反馈调整学习策略，用思维导图梳理笔画知识', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: '形成性评价 + 思维导图法',
+        learningObjective: '我能独立完成本单元形成性评价检测，查漏补缺',
+        successCriteria: '①能独立完成所有检测题 ②能说出自己做错题目的正确答案',
+        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。 【CFU检查理解】家长问"基本笔画有哪五种？"',
+        weDo: '【引导式】亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成评价练习，错的内容多练几遍。【费曼小老师时间】用最简单的话把今天学的讲给小熊听，讲不清的地方回去看一遍再讲。',
+        parentTips: '【家长预习】让我们来检验一下这单元学到的知识吧！通过这些练习，看看你掌握了多少\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
+        funElement: '小游戏：知识大闯关！答对一题前进一步，全部答对就是学习大王！',
+        gsapAnimations: ['[GSAP:cardReveal|评价卡片翻转|0.5s|点击|back.out(1.7)]', '[GSAP:timeline|思维导图展开|1.5s|页面加载|power2.out]'],
+        images: ['[IMG:illustration|笔画名称思维导图|500x300|思维导图风|png|基本和复合笔画]', '[IMG:illustration|评价闯关图|400x300|cartoon|png|闯关游戏]'],
+        practiceQuestions: [
+          {
+            id: 'c1u10l4q1',
+            type: 'choice',
+            question: '五种基本笔画是哪些？',
+            options: ['横、竖、撇、捺、点', '横、竖、撇、折、钩', '横、竖、弯、钩、点'],
+            answer: '横、竖、撇、捺、点',
+            hint: '回忆基本笔画',
+            explanation: '五种基本笔画是横、竖、撇、捺、点。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l4q2',
+            type: 'fill',
+            question: '复合笔画的名字就是把___路线连起来说',
+            answer: '运笔',
+            hint: '回忆复合笔画命名规律',
+            explanation: '复合笔画的名字就是把运笔路线连起来说。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l4q3',
+            type: 'choice',
+            question: '"口"字包含哪个复合笔画？',
+            options: ['横折', '竖弯', '撇折'],
+            answer: '横折',
+            hint: '看"口"字右边怎么折',
+            explanation: '"口"字包含横折这个复合笔画。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l4q4',
+            type: 'choice',
+            question: '"大"字的笔画顺序是？',
+            options: ['横、撇、捺', '撇、横、捺', '横、捺、撇'],
+            answer: '横、撇、捺',
+            hint: '回忆"大"字的笔顺',
+            explanation: '"大"字的笔顺是横、撇、捺。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l4q5',
+            type: 'choice',
+            question: '撇的运笔方向是？',
+            options: ['从右上到左下', '从左到右', '从上到下'],
+            answer: '从右上到左下',
+            hint: '想想柳枝飘下来的方向',
+            explanation: '撇是从右上到左下画的斜线。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l4q6',
+            type: 'choice',
+            question: '【期末真题】下列哪个不是复合笔画？',
+            options: ['横', '横折', '横折钩'],
+            answer: '横',
+            hint: '复合笔画由基本笔画组合而成',
+            explanation: '横是基本笔画，不是复合笔画。横折和横折钩都是复合笔画。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l4q7',
+            type: 'fill',
+            question: '回顾前面学过的知识："咏鹅"的作者是谁？',
+            answer: '骆宾王',
+            hint: '[古诗作者]（语文一年级-第8课）',
+            explanation: '"咏鹅"是唐代诗人骆宾王七岁时写的诗。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'c1u10l5',
+        title: '综合复习与应用',
+        order: 5,
+        content: [
+          { type: 'text', content: '学完了"笔画名称"这个单元，让我们把所有知识综合起来，看看能做什么吧！', animationType: 'typewriter' },
+          { type: 'tip', content: '综合应用小窍门：看到不认识的字，试着说出它的笔画名称，帮助记忆和书写！', label: '应用技巧', animationType: 'pulse' },
+          { type: 'formula', content: '复习三步法：回顾笔画名称→练习分析汉字→把知识用起来！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用综合应用法+成长型思维：通过综合运用和积极心态深化学习', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: 'EDI直接教学 + 成长型思维',
+        learningObjective: '我能综合运用本单元所学知识分析汉字笔画',
+        successCriteria: '①能正确说出汉字的笔画名称 ②能按正确顺序说出笔顺',
+        iDo: '家长和孩子一起回顾本单元所有内容，示范如何分析汉字的笔画。 【CFU检查理解】家长问"基本笔画和复合笔画有什么区别？"',
+        weDo: '【引导式】亲子一起做综合练习，互相出题考对方 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合练习，把本单元知识串联起来。【费曼小老师时间】用最简单的话把今天学的讲给小熊听，讲不清的地方回去看一遍再讲。',
+        parentTips: '【家长预习】学完了"笔画名称"这个单元，让我们把所有知识综合起来\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
+        funElement: '小游戏：知识大串联！把本单元学到的知识连成一条线，看谁连得最长！',
+        gsapAnimations: ['[GSAP:timeline|知识串联动画|1.5s|页面加载|power2.out]', '[GSAP:scaleIn|综合复习卡片|0.6s|点击|back.out(1.7)]'],
+        images: ['[IMG:illustration|笔画综合应用图|400x300|cartoon|png|综合复习]'],
+        practiceQuestions: [
+          {
+            id: 'c1u10l5q1',
+            type: 'choice',
+            question: '下列哪个是基本笔画？',
+            options: ['点', '横折', '竖弯钩'],
+            answer: '点',
+            hint: '基本笔画只有五种',
+            explanation: '点是基本笔画，横折和竖弯钩是复合笔画。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l5q2',
+            type: 'fill',
+            question: '"木"字共___笔',
+            answer: '4',
+            hint: '数一数"木"字有几笔',
+            explanation: '"木"字由横、竖、撇、捺四笔组成。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l5q3',
+            type: 'choice',
+            question: '横折的运笔路线是？',
+            options: ['先横再折向下', '先竖再折向右', '先撇再折'],
+            answer: '先横再折向下',
+            hint: '回忆横折的写法',
+            explanation: '横折是先写横，再折向下。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l5q4',
+            type: 'choice',
+            question: '"上"字的笔顺是？',
+            options: ['竖、横、横', '横、横、竖', '竖、横、竖'],
+            answer: '竖、横、横',
+            hint: '回忆"上"字怎么写',
+            explanation: '"上"字的笔顺是竖、横、横。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l5q5',
+            type: 'drag',
+            question: '把"大"字的笔画按顺序排列：捺、横、撇',
+            answer: '横,撇,捺',
+            hint: '"大"字先横再撇再捺',
+            explanation: '"大"字的笔顺是横、撇、捺。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l5q6',
+            type: 'choice',
+            question: '【期末真题】"目"字包含哪个复合笔画？',
+            options: ['横折', '竖弯', '撇折'],
+            answer: '横折',
+            hint: '看"目"字右边怎么折',
+            explanation: '"目"字的笔顺包含横折，右边是横折。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u10l5q7',
+            type: 'fill',
+            question: '回顾前面学过的知识：复韵母er能不能和声母相拼？',
+            answer: '不能',
+            hint: '[复韵母er特点]（语文一年级-第9课）',
+            explanation: 'er不能和声母相拼，只能自己单独成音节。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'c1u11',
+    title: '笔顺规则',
+    subtitle: '学习汉字书写的基本笔顺规则',
+    order: 11,
+    lessons: [
+      {
+        id: 'c1u11l1',
+        title: '基本笔顺规则',
+        order: 1,
+        content: [
+          { type: 'text', content: '写汉字要按一定顺序，这就是笔顺！基本规则有两条：从上到下、从左到右', animationType: 'typewriter' },
+          { type: 'example', content: '从上到下：比如"三"字，先写上面的横，再写中间的横，最后写下面的横', label: '从上到下', animationType: 'bounce' },
+          { type: 'example', content: '从左到右：比如"川"字，先写左边的撇，再写中间的竖，最后写右边的竖', label: '从左到右', animationType: 'bounce' },
+          { type: 'text', content: '记住这两条基本规则，大多数汉字的笔顺就不会错啦！', animationType: 'reveal' },
+          { type: 'tip', content: '笔顺口诀：先上后下，先左后右。写字就像盖房子，要从上往下盖，从左往右建！', label: '笔顺口诀', animationType: 'pulse' },
+          { type: 'animation', content: '"三"字和"川"字逐笔写出，展示从上到下和从左到右的笔顺', animationType: 'bounce',
+            animationConfig: {
+              sceneType: 'shapeDraw',
+              title: '基本笔顺规则',
+              shapeDrawConfig: {
+                shape: 'strokeOrder',
+                labels: ['从上到下', '从左到右'],
+              },
+              ttsNarration: '基本笔顺规则：从上到下，从左到右！',
+            },
+          },
+          { type: 'tip', content: '本课主要使用EDI直接教学+蒙台梭利多感官：通过清晰示范和多感官体验建立笔顺认知', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: 'EDI直接教学 + 蒙台梭利多感官',
+        learningObjective: '我能掌握从上到下、从左到右的基本笔顺规则',
+        successCriteria: '①能说出从上到下、从左到右两条笔顺规则 ②能按规则书写简单汉字',
+        iDo: '家长在纸上示范写"三"和"川"，一边写一边说出笔顺规则。 【CFU检查理解】家长问""三"字的笔顺是什么？"',
+        weDo: '【引导式】家长写孩子跟着写，一起说出笔顺规则 → 【半独立】孩子写家长纠正 → 【独立】孩子自己写',
+        youDo: '孩子独立按笔顺规则书写简单汉字。【费曼小老师时间】用最简单的话把两条笔顺规则讲给小熊听',
+        parentTips: '【家长预习】本课学基本笔顺规则：从上到下、从左到右\n共学四步：\n①对话出题：问孩子"写汉字的两条基本规则是什么？"\n②孩子应答：从上到下、从左到右\n③答错引导：家长在纸上标出笔顺序号，让孩子按序号描摹\n④快速检测："三"字的笔顺是什么？、"川"字先写什么？、从上到下是什么意思？',
+        funElement: '小游戏：笔顺接力！家长说第一笔，孩子说第二笔，轮流说笔画',
+        gsapAnimations: ['[GSAP:drawIn|笔顺书写动画|1.5s|页面加载|power2.out]', '[GSAP:scaleIn|笔顺序号标注|0.4s|笔画画完|back.out(1.7)]'],
+        images: ['[IMG:illustration|基本笔顺规则图|400x300|cartoon|png|笔顺教学]'],
+        practiceQuestions: [
+          {
+            id: 'c1u11l1q1',
+            type: 'choice',
+            question: '写汉字的两条基本笔顺规则是什么？',
+            options: ['从上到下、从左到右', '从下到上、从右到左', '从外到内、从内到外'],
+            answer: '从上到下、从左到右',
+            hint: '想想盖房子的顺序',
+            explanation: '基本笔顺规则是从上到下、从左到右，就像盖房子从上往下盖、从左往右建。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l1q2',
+            type: 'choice',
+            question: '"三"字的笔顺是什么？',
+            options: ['从上到下三横', '从下到上三横', '从左到右三横'],
+            answer: '从上到下三横',
+            hint: '运用从上到下的规则',
+            explanation: '"三"字按从上到下的规则，先写上面的横，再写中间的横，最后写下面的横。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l1q3',
+            type: 'fill',
+            question: '"川"字按从___到右的规则书写',
+            answer: '左',
+            hint: '运用从左到右的规则',
+            explanation: '"川"字按从左到右的规则，先写左边的撇，再写中间的竖，最后写右边的竖。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l1q4',
+            type: 'choice',
+            question: '"十"字先写什么？',
+            options: ['横', '竖', '撇'],
+            answer: '横',
+            hint: '先横后竖',
+            explanation: '"十"字先写横，再写竖。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l1q5',
+            type: 'drag',
+            question: '把"三"字的笔画按顺序排列：下横、上横、中横',
+            answer: '上横,中横,下横',
+            hint: '从上到下',
+            explanation: '"三"字按从上到下：上横、中横、下横。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l1q6',
+            type: 'choice',
+            question: '【期末真题】"工"字的笔顺是？',
+            options: ['横、竖、横', '竖、横、横', '横、横、竖'],
+            answer: '横、竖、横',
+            hint: '先上后下，横在上下',
+            explanation: '"工"字的笔顺是横、竖、横，按从上到下的规则。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l1q7',
+            type: 'fill',
+            question: '回顾前面学过的知识：五种基本笔画是横、竖、撇、捺、___',
+            answer: '点',
+            hint: '[基本笔画]（语文一年级-第10课）',
+            explanation: '五种基本笔画是横、竖、撇、捺、点。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'c1u11l2',
+        title: '先横后竖、先撇后捺',
+        order: 2,
+        content: [
+          { type: 'text', content: '除了从上到下、从左到右，还有两条重要规则：先横后竖、先撇后捺', animationType: 'typewriter' },
+          { type: 'example', content: '先横后竖：比如"十"字，先写横，再写竖。"干"字也是先横后竖', label: '先横后竖', animationType: 'bounce' },
+          { type: 'example', content: '先撇后捺：比如"人"字，先写撇，再写捺。"大"字也是先撇后捺', label: '先撇后捺', animationType: 'bounce' },
+          { type: 'text', content: '当横和竖交叉时，先写横再写竖；当撇和捺成对出现时，先写撇再写捺', animationType: 'reveal' },
+          { type: 'tip', content: '记忆口诀：横竖交叉先横后竖，撇捺成对先撇后捺。先左后右也是一条重要规则！', label: '笔顺口诀', animationType: 'pulse' },
+          { type: 'animation', content: '"十"和"人"逐笔写出，展示先横后竖和先撇后捺', animationType: 'bounce',
+            animationConfig: {
+              sceneType: 'shapeDraw',
+              title: '先横后竖、先撇后捺',
+              shapeDrawConfig: {
+                shape: 'strokeOrder',
+                labels: ['先横后竖', '先撇后捺'],
+              },
+              ttsNarration: '先横后竖，先撇后捺！',
+            },
+          },
+          { type: 'tip', content: '本课主要使用EDI直接教学+费曼学习法：通过示范和让孩子讲解巩固笔顺规则', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: 'EDI直接教学 + 费曼学习法',
+        learningObjective: '我能掌握先横后竖、先撇后捺的笔顺规则',
+        successCriteria: '①能说出先横后竖、先撇后捺两条规则 ②能按规则书写相关汉字',
+        iDo: '家长示范写"十"和"人"，一边写一边说出先横后竖、先撇后捺的规则。 【CFU检查理解】家长问""人"字先写什么？"',
+        weDo: '【引导式】家长写孩子跟着写，一起说笔顺规则 → 【半独立】孩子写家长纠正 → 【独立】孩子自己写',
+        youDo: '孩子独立按规则书写汉字。【费曼小老师时间】用最简单的话把先横后竖、先撇后捺讲给小熊听',
+        parentTips: '【家长预习】本课学笔顺规则：先横后竖、先撇后捺\n共学四步：\n①对话出题：问孩子"横竖交叉时先写什么？"\n②孩子应答：横竖交叉时先写横后写竖\n③答错引导：家长在纸上标出笔顺序号，让孩子按序号描摹\n④快速检测："十"字先写什么？、"人"字先写什么？、先撇后捺是什么意思？',
+        funElement: '小游戏：笔顺比赛！家长说字，孩子说笔顺，看谁说得快又对',
+        gsapAnimations: ['[GSAP:drawIn|笔顺书写动画|1.5s|点击|power2.out]', '[GSAP:float|笔顺序号标注|0.5s|笔画画完|back.out(1.7)]'],
+        images: ['[IMG:illustration|先横后竖先撇后捺图|400x300|cartoon|png|笔顺教学]'],
+        practiceQuestions: [
+          {
+            id: 'c1u11l2q1',
+            type: 'choice',
+            question: '"十"字先写什么？',
+            options: ['横', '竖', '撇'],
+            answer: '横',
+            hint: '运用先横后竖的规则',
+            explanation: '"十"字先写横，再写竖，遵循先横后竖的规则。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l2q2',
+            type: 'choice',
+            question: '"人"字先写什么？',
+            options: ['撇', '捺', '横'],
+            answer: '撇',
+            hint: '运用先撇后捺的规则',
+            explanation: '"人"字先写撇，再写捺，遵循先撇后捺的规则。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l2q3',
+            type: 'fill',
+            question: '横竖交叉时，先写___后写竖',
+            answer: '横',
+            hint: '回忆笔顺规则',
+            explanation: '横竖交叉时，先写横后写竖。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l2q4',
+            type: 'choice',
+            question: '"大"字的笔顺是？',
+            options: ['横、撇、捺', '撇、横、捺', '横、捺、撇'],
+            answer: '横、撇、捺',
+            hint: '先横后撇后捺',
+            explanation: '"大"字的笔顺是横、撇、捺。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l2q5',
+            type: 'choice',
+            question: '"干"字先写什么？',
+            options: ['横', '竖', '撇'],
+            answer: '横',
+            hint: '运用先横后竖的规则',
+            explanation: '"干"字先写横，再写竖，最后写横，遵循先横后竖的规则。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l2q6',
+            type: 'choice',
+            question: '【期中真题】"木"字的笔顺是？',
+            options: ['横、竖、撇、捺', '竖、横、撇、捺', '横、撇、竖、捺'],
+            answer: '横、竖、撇、捺',
+            hint: '先横后竖，再撇后捺',
+            explanation: '"木"字的笔顺是横、竖、撇、捺，先横后竖，再撇后捺。这是期中常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l2q7',
+            type: 'fill',
+            question: '回顾前面学过的知识：复韵母üe和j、q、x相拼时ü上两点要___去不写',
+            answer: '省',
+            hint: '[复韵母üe拼读规则]（语文一年级-第9课）',
+            explanation: 'üe和j、q、x相拼时ü上两点省去不写，但读音不变。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'c1u11l3',
+        title: '从外到内、先中间后两边',
+        order: 3,
+        content: [
+          { type: 'text', content: '还有两条笔顺规则：从外到内、先中间后两边', animationType: 'typewriter' },
+          { type: 'example', content: '从外到内：比如"月"字，先写外面的撇和横折钩，再写里面的两横。"同"字也是先外后内', label: '从外到内', animationType: 'bounce' },
+          { type: 'example', content: '先中间后两边：比如"小"字，先写中间的竖钩，再写两边的撇和点。"水"字也是先中间后两边', label: '先中间后两边', animationType: 'bounce' },
+          { type: 'text', content: '有外框的字先写外面再写里面；左右对称的字先写中间再写两边', animationType: 'reveal' },
+          { type: 'tip', content: '记忆口诀：有框先外后内，对称先中后边。把这些规则连起来记，写字就不会乱啦！', label: '笔顺口诀', animationType: 'pulse' },
+          { type: 'animation', content: '"月"和"小"逐笔写出，展示从外到内和先中间后两边', animationType: 'bounce',
+            animationConfig: {
+              sceneType: 'shapeDraw',
+              title: '从外到内、先中间后两边',
+              shapeDrawConfig: {
+                shape: 'strokeOrder',
+                labels: ['从外到内', '先中间后两边'],
+              },
+              ttsNarration: '从外到内，先中间后两边！',
+            },
+          },
+          { type: 'tip', content: '本课主要使用苏格拉底提问法+成长型思维：通过提问引导思考和积极心态学习', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: '苏格拉底提问法 + 成长型思维',
+        learningObjective: '我能掌握从外到内、先中间后两边的笔顺规则',
+        successCriteria: '①能说出从外到内、先中间后两边两条规则 ②能按规则书写相关汉字',
+        iDo: '家长示范写"月"和"小"，一边写一边说出从外到内、先中间后两边的规则。 【CFU检查理解】家长问""小"字先写什么？"',
+        weDo: '【引导式】家长写孩子跟着写，一起说笔顺规则 → 【半独立】孩子写家长纠正 → 【独立】孩子自己写',
+        youDo: '孩子独立按规则书写汉字。【费曼小老师时间】用最简单的话把从外到内、先中间后两边讲给小熊听',
+        parentTips: '【家长预习】本课学笔顺规则：从外到内、先中间后两边\n共学四步：\n①对话出题：问孩子"有外框的字先写什么？"\n②孩子应答：有外框的字先写外面再写里面\n③答错引导：家长在纸上标出笔顺序号，让孩子按序号描摹\n④快速检测："月"字先写什么？、"小"字先写什么？、从外到内是什么意思？',
+        funElement: '小游戏：笔顺描红！家长写大字，孩子用彩笔按笔顺描红',
+        gsapAnimations: ['[GSAP:drawIn|笔顺书写动画|1.5s|点击|power2.out]', '[GSAP:scaleIn|笔顺序号标注|0.4s|笔画画完|back.out(1.7)]'],
+        images: ['[IMG:illustration|从外到内先中后边图|400x300|cartoon|png|笔顺教学]'],
+        practiceQuestions: [
+          {
+            id: 'c1u11l3q1',
+            type: 'choice',
+            question: '"小"字先写什么？',
+            options: ['竖钩', '撇', '点'],
+            answer: '竖钩',
+            hint: '运用先中间后两边的规则',
+            explanation: '"小"字先写中间的竖钩，再写左边的撇和右边的点，遵循先中间后两边的规则。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l3q2',
+            type: 'choice',
+            question: '"月"字先写什么？',
+            options: ['外面的撇', '里面的横', '竖'],
+            answer: '外面的撇',
+            hint: '运用从外到内的规则',
+            explanation: '"月"字先写外面的撇和横折钩，再写里面的横，遵循从外到内的规则。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l3q3',
+            type: 'fill',
+            question: '左右对称的字先写___间后写两边',
+            answer: '中',
+            hint: '回忆笔顺规则',
+            explanation: '左右对称的字先写中间后写两边。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l3q4',
+            type: 'choice',
+            question: '"水"字的笔顺特点是什么？',
+            options: ['先中间后两边', '从下到上', '从右到左'],
+            answer: '先中间后两边',
+            hint: '想想"水"字怎么写',
+            explanation: '"水"字先写中间的竖钩，再写两边的撇和捺，遵循先中间后两边的规则。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l3q5',
+            type: 'drag',
+            question: '把"小"字的笔画按顺序排列：点、竖钩、撇',
+            answer: '竖钩,撇,点',
+            hint: '先中间后两边',
+            explanation: '"小"字的笔顺是竖钩、撇、点，先中间后两边。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l3q6',
+            type: 'choice',
+            question: '【期末真题】"同"字的笔顺规则是？',
+            options: ['从外到内', '从内到外', '从右到左'],
+            answer: '从外到内',
+            hint: '"同"字有外框',
+            explanation: '"同"字有外框，按从外到内的规则书写。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l3q7',
+            type: 'fill',
+            question: '回顾前面学过的知识：复合笔画的名字就是把___路线连起来说',
+            answer: '运笔',
+            hint: '[复合笔画命名]（语文一年级-第10课）',
+            explanation: '复合笔画的名字就是把运笔路线连起来说。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'c1u11l4',
+        title: '形成性评价',
+        order: 4,
+        content: [
+          { type: 'text', content: '让我们来检验一下这单元学到的知识吧！通过这些练习，看看你掌握了多少', animationType: 'typewriter' },
+          { type: 'tip', content: '评价小贴士：做错的题不要着急，回到前面的课时再学一遍，学会了就是最大的进步！', label: '评价提示', animationType: 'pulse' },
+          { type: 'formula', content: '复习口诀：从上到下，从左到右，先横后竖，先撇后捺，从外到内，先中后边！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用形成性评价+思维导图法：通过即时检测反馈调整学习策略，用思维导图梳理笔顺规则', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: '形成性评价 + 思维导图法',
+        learningObjective: '我能独立完成本单元形成性评价检测，查漏补缺',
+        successCriteria: '①能独立完成所有检测题 ②能说出自己做错题目的正确答案',
+        iDo: '家长出示本单元的学习卡片，让孩子逐一回答，记录掌握情况。 【CFU检查理解】家长问"笔顺有哪几条规则？"',
+        weDo: '【引导式】亲子一起做闯关游戏，答对一题前进一步，看谁能闯关成功 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成评价练习，错的内容多练几遍。【费曼小老师时间】用最简单的话把今天学的讲给小熊听，讲不清的地方回去看一遍再讲。',
+        parentTips: '【家长预习】让我们来检验一下这单元学到的知识吧！通过这些练习，看看你掌握了多少\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
+        funElement: '小游戏：知识大闯关！答对一题前进一步，全部答对就是学习大王！',
+        gsapAnimations: ['[GSAP:cardReveal|评价卡片翻转|0.5s|点击|back.out(1.7)]', '[GSAP:timeline|思维导图展开|1.5s|页面加载|power2.out]'],
+        images: ['[IMG:illustration|笔顺规则思维导图|500x300|思维导图风|png|六条笔顺规则]', '[IMG:illustration|评价闯关图|400x300|cartoon|png|闯关游戏]'],
+        practiceQuestions: [
+          {
+            id: 'c1u11l4q1',
+            type: 'choice',
+            question: '写汉字的两条基本笔顺规则是什么？',
+            options: ['从上到下、从左到右', '从下到上、从右到左', '从外到内、从内到外'],
+            answer: '从上到下、从左到右',
+            hint: '回忆基本规则',
+            explanation: '基本笔顺规则是从上到下、从左到右。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l4q2',
+            type: 'fill',
+            question: '"十"字先写___后写竖',
+            answer: '横',
+            hint: '回忆先横后竖',
+            explanation: '"十"字先写横后写竖。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l4q3',
+            type: 'choice',
+            question: '"小"字运用了哪条笔顺规则？',
+            options: ['先中间后两边', '从外到内', '从左到右'],
+            answer: '先中间后两边',
+            hint: '想想"小"字怎么写',
+            explanation: '"小"字先写中间的竖钩，再写两边，运用了先中间后两边的规则。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l4q4',
+            type: 'choice',
+            question: '"人"字先写什么？',
+            options: ['撇', '捺', '横'],
+            answer: '撇',
+            hint: '回忆先撇后捺',
+            explanation: '"人"字先写撇后写捺。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l4q5',
+            type: 'choice',
+            question: '"月"字运用了哪条笔顺规则？',
+            options: ['从外到内', '先中间后两边', '从左到右'],
+            answer: '从外到内',
+            hint: '想想"月"字怎么写',
+            explanation: '"月"字先写外面的框，再写里面的横，运用了从外到内的规则。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l4q6',
+            type: 'choice',
+            question: '【期末真题】"木"字的笔顺是？',
+            options: ['横、竖、撇、捺', '竖、横、撇、捺', '横、撇、竖、捺'],
+            answer: '横、竖、撇、捺',
+            hint: '回忆"木"字的笔顺',
+            explanation: '"木"字的笔顺是横、竖、撇、捺。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l4q7',
+            type: 'fill',
+            question: '回顾前面学过的知识："咏鹅"中"白毛浮绿水"的下一句是"红掌拨___波"',
+            answer: '清',
+            hint: '[古诗背诵]（语文一年级-第8课）',
+            explanation: '"白毛浮绿水，红掌拨清波"出自《咏鹅》。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'c1u11l5',
+        title: '综合复习与应用',
+        order: 5,
+        content: [
+          { type: 'text', content: '学完了"笔顺规则"这个单元，让我们把所有知识综合起来，看看能做什么吧！', animationType: 'typewriter' },
+          { type: 'tip', content: '综合应用小窍门：写字时先想想笔顺规则，按规则写就不会出错！', label: '应用技巧', animationType: 'pulse' },
+          { type: 'formula', content: '复习三步法：回顾笔顺规则→练习书写汉字→把知识用起来！', label: '复习方法', animationType: 'typewriter' },
+          { type: 'tip', content: '本课主要使用综合应用法+成长型思维：通过综合运用和积极心态深化学习', label: '教学方法', animationType: 'pulse' },
+        ],
+        teachingMethod: 'EDI直接教学 + 成长型思维',
+        learningObjective: '我能综合运用本单元所学知识正确书写汉字',
+        successCriteria: '①能按笔顺规则正确书写汉字 ②能说出运用的笔顺规则',
+        iDo: '家长和孩子一起回顾本单元所有内容，示范如何按笔顺规则写字。 【CFU检查理解】家长问"笔顺有哪几条规则？"',
+        weDo: '【引导式】亲子一起做综合练习，互相出题考对方 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合练习，把本单元知识串联起来。【费曼小老师时间】用最简单的话把今天学的讲给小熊听，讲不清的地方回去看一遍再讲。',
+        parentTips: '【家长预习】学完了"笔顺规则"这个单元，让我们把所有知识综合起来\n共学四步：\n①对话出题：测试前问孩子"这个单元你觉得最难的是什么？最容易的是什么？"\n②孩子应答：孩子说出自己觉得最难和最容易的部分\n③答错引导：把错题分类，针对薄弱点用实物或画图重新讲解\n④快速检测：让孩子挑3道错题重新做，说说现在为什么这样选',
+        funElement: '小游戏：知识大串联！把本单元学到的知识连成一条线，看谁连得最长！',
+        gsapAnimations: ['[GSAP:timeline|知识串联动画|1.5s|页面加载|power2.out]', '[GSAP:scaleIn|综合复习卡片|0.6s|点击|back.out(1.7)]'],
+        images: ['[IMG:illustration|笔顺综合应用图|400x300|cartoon|png|综合复习]'],
+        practiceQuestions: [
+          {
+            id: 'c1u11l5q1',
+            type: 'choice',
+            question: '"三"字运用了哪条笔顺规则？',
+            options: ['从上到下', '从左到右', '先中间后两边'],
+            answer: '从上到下',
+            hint: '想想"三"字怎么写',
+            explanation: '"三"字从上到下写三横，运用了从上到下的规则。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l5q2',
+            type: 'fill',
+            question: '"人"字先写___后写捺',
+            answer: '撇',
+            hint: '回忆先撇后捺',
+            explanation: '"人"字先写撇后写捺。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l5q3',
+            type: 'choice',
+            question: '"十"字运用了哪条笔顺规则？',
+            options: ['先横后竖', '从外到内', '先中间后两边'],
+            answer: '先横后竖',
+            hint: '想想"十"字怎么写',
+            explanation: '"十"字先横后竖。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l5q4',
+            type: 'choice',
+            question: '"川"字运用了哪条笔顺规则？',
+            options: ['从左到右', '从上到下', '从外到内'],
+            answer: '从左到右',
+            hint: '想想"川"字怎么写',
+            explanation: '"川"字从左到右写三笔，运用了从左到右的规则。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l5q5',
+            type: 'drag',
+            question: '把笔顺规则和对应例字配对：从上到下、从左到右、先横后竖、先撇后捺',
+            answer: '从上到下,从左到右,先横后竖,先撇后捺',
+            hint: '按规则顺序排列',
+            explanation: '四条笔顺规则：从上到下（三）、从左到右（川）、先横后竖（十）、先撇后捺（人）。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l5q6',
+            type: 'choice',
+            question: '【期末真题】"水"字运用了哪条笔顺规则？',
+            options: ['先中间后两边', '从外到内', '从左到右'],
+            answer: '先中间后两边',
+            hint: '想想"水"字怎么写',
+            explanation: '"水"字先写中间的竖钩，再写两边，运用了先中间后两边的规则。这是期末常考题！做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'c1u11l5q7',
+            type: 'fill',
+            question: '回顾前面学过的知识：五种基本笔画是横、竖、撇、___、点',
+            answer: '捺',
+            hint: '[基本笔画]（语文一年级-第10课）',
+            explanation: '五种基本笔画是横、竖、撇、捺、点。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }

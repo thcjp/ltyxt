@@ -23,16 +23,32 @@ const showShareToast = ref(false)
 const shareToastMsg = ref('')
 const hasSharedBefore = ref(localStorage.getItem('hasShared') === 'true')
 const showShareModal = ref(false)
+const currentAdvantageTab = ref(0)
 
-// 判断是否首次访问（显示营销首屏）
-const isFirstVisit = ref(!localStorage.getItem('hasVisited'))
-const showMarketing = ref(isFirstVisit.value)
+// 营销介绍页始终显示（作为首页固定内容）
+const showMarketing = ref(true)
 
-// 学科区域
+// 教学方法权威徽章
+const methodBadges = [
+  { icon: '🧮', name: '新加坡CPA教学法', desc: '实物→图示→符号，让孩子真正"想通"而非"背会"', color: 'from-emerald-400 to-teal-500' },
+  { icon: '🎓', name: 'EDI显性直接教学', desc: '每课明确学习目标+成功标准，示范→共练→独立', color: 'from-blue-400 to-indigo-500' },
+  { icon: '🔄', name: '艾宾浩斯间隔重复', desc: '智能错题本按遗忘曲线推送复习，精准补漏', color: 'from-amber-400 to-orange-500' },
+  { icon: '🌈', name: '多感官互动学习', desc: '拼音口型+凑十动画+笔顺书写，视听觉动觉全开', color: 'from-pink-400 to-rose-500' },
+]
+
+// 一节课的完整流程
+const lessonFlow = [
+  { step: 'I Do', icon: '👨‍🏫', title: '家长示范', desc: 'AI动画讲解+家长按提示引导', time: '6分钟' },
+  { step: 'We Do', icon: '🤝', title: '亲子共练', desc: '一起做题，家长随时帮忙', time: '10分钟' },
+  { step: 'You Do', icon: '🦸', title: '孩子独立', desc: '自己闯关，答对获星星奖励', time: '10分钟' },
+  { step: '复习', icon: '🔄', title: '智能回溯', desc: '错题自动记录，到期推送复习', time: '4分钟' },
+]
+
+// 学科区域（含方法标签）
 const areas = [
-  { name: '字灵山', subject: 'chinese' as const, desc: '语文冒险', color: 'from-purple-400 to-purple-600', icon: '📖' },
-  { name: '数魔塔', subject: 'math' as const, desc: '数学探索', color: 'from-green-400 to-green-600', icon: '🔢' },
-  { name: '语声森林', subject: 'english' as const, desc: '英语奇遇', color: 'from-red-400 to-red-600', icon: '🌟' },
+  { name: '字灵山', subject: 'chinese' as const, desc: '语文冒险', color: 'from-purple-400 to-purple-600', icon: '📖', method: '多感官识字+思维导图' },
+  { name: '数魔塔', subject: 'math' as const, desc: '数学探索', color: 'from-green-400 to-green-600', icon: '🔢', method: '新加坡CPA+凑十法' },
+  { name: '语声森林', subject: 'english' as const, desc: '英语奇遇', color: 'from-red-400 to-red-600', icon: '🌟', method: '自然拼读+间隔重复' },
 ]
 
 // 今日任务
@@ -42,22 +58,253 @@ const todayTasks = [
   { subject: 'english' as const, name: '英语', icon: '🌟', color: 'bg-english' },
 ]
 
-// 营销卖点
+// 营销卖点（分三层：方法权威→场景利益→信任门槛）
 const sellingPoints = [
-  { icon: '📚', title: '1-6年级全覆盖', desc: '语数外3科×6年级·720课时·5000+题' },
-  { icon: '🎬', title: 'AI动画教学', desc: '不是看视频，是边玩边学的互动课堂' },
-  { icon: '👨‍👩‍👧', title: '家长共学设计', desc: '手把手教你怎么陪孩子，不会也能教' },
-  { icon: '🎮', title: '游戏化闯关', desc: '舒尔特方格·数字迷宫·笔顺书写·趣味挑战' },
-  { icon: '📝', title: '错题本+进度追踪', desc: '自动记录薄弱点，智能回溯复习' },
-  { icon: '🆓', title: '完全免费', desc: '无广告·无内购·无套路' },
+  { icon: '🧮', title: '融入新加坡CPA教学法', desc: '实物→图示→符号三步走，让孩子真正"想通"而不是"背会"', layer: '方法权威' },
+  { icon: '🎓', title: 'I Do→We Do→You Do教学闭环', desc: '先示范、再带着练、最后独立做，国际公认渐进式教学法', layer: '方法权威' },
+  { icon: '🔄', title: '间隔重复+智能错题本', desc: '自动在孩子快要遗忘时推送复习，错题自动溯源到课程', layer: '方法权威' },
+  { icon: '👨‍👩‍👧', title: '家长共学四步法提示', desc: '不会教也能陪，照着念就行——把辅导从战场变亲子时光', layer: '场景利益' },
+  { icon: '🎬', title: 'AI动画+多感官互动', desc: '拼音口型、凑十动画、笔顺书写，孩子边玩边学', layer: '场景利益' },
+  { icon: '📚', title: '1-6年级语数外全覆盖', desc: '850+课时+6000+练习题，一个账号陪到小学毕业', layer: '场景利益' },
+  { icon: '🆓', title: '完全免费·免注册·无广告', desc: '点开即用，不收集隐私，永不变相收费', layer: '信任门槛' },
+  { icon: '📊', title: '学习进度可视化', desc: '孩子学到哪、哪薄弱、进步多少，家长心里有数', layer: '信任门槛' },
+]
+
+// 第一屏精选卖点（家长一看就想要的核心钩子）
+const coreHooks = [
+  { icon: '🧮', title: '用新加坡数学CPA法', desc: '实物→图示→符号，真正理解而非死记', highlight: true },
+  { icon: '🔄', title: '自动抗遗忘复习', desc: '错题按遗忘曲线精准推送，不用家长盯着', highlight: true },
+  { icon: '👨‍👩‍👧', title: '不会教也能陪', desc: '每课有家长提示词，照着念就能辅导', highlight: false },
+  { icon: '📚', title: '三版教材融合', desc: '人教+北师大+苏教精华全收入，一个账号全搞定', highlight: true },
+  { icon: '🔗', title: '跨学科跨年级', desc: '英语购物关联数学人民币，高年级回溯低年级', highlight: false },
+  { icon: '🎮', title: '孩子主动想学', desc: '闯关游戏+星星奖励，从"要我学"变"我要学"', highlight: false },
+  { icon: '🆓', title: '完全免费无套路', desc: '不注册、不收费、无广告、离线可用', highlight: true },
+]
+
+// 第二屏：全部优点分类
+const advantageCategories = [
+  {
+    tab: '教学方法', icon: '🎓', color: 'from-blue-500 to-indigo-600',
+    items: [
+      '新加坡CPA教学法：数学从动手到抽象',
+      'EDI显性直接教学：每课明确目标+成功标准',
+      'I Do→We Do→You Do渐进式教学闭环',
+      '艾宾浩斯间隔重复：SM-2算法智能复习',
+      '多感官学习：拼音口型+凑十动画+笔顺书写',
+      '成长型思维语言：夸努力不夸聪明',
+    ]
+  },
+  {
+    tab: '课程体系', icon: '📚', color: 'from-emerald-500 to-teal-600',
+    items: [
+      '1-6年级语数外全覆盖，850+课时',
+      '融合人教版+北师大版+苏教版三版教材精华',
+      '每单元5课时：讲解→深化→应用→测试→综合',
+      '每课时7题：基础→提高→挑战→回溯',
+      '6000+练习题，含期末/期中真题标记',
+      '跨年级回溯：q7题自动链接低年级知识，抗遗忘',
+      '跨学科融合：英语购物关联数学人民币，语文古诗关联英语四季',
+      '知识点溯源：错题自动链接到原始课程',
+    ]
+  },
+  {
+    tab: '游戏化', icon: '🎮', color: 'from-orange-500 to-red-600',
+    items: [
+      '星星钻石双奖励系统',
+      '每日签到+连续学习激励',
+      '14种动画场景（竖式/凑十/拼音/3D几何等）',
+      '闪卡复习+翻转卡片',
+      '成就徽章解锁系统',
+      '分享得星星，鼓励传播',
+    ]
+  },
+  {
+    tab: '家长共学', icon: '👨‍👩‍👧', color: 'from-purple-500 to-pink-600',
+    items: [
+      '每课parentTips：照着念就能辅导',
+      '费曼学习法提示：让孩子当小老师',
+      '苏格拉底提问链：引导而非直接告诉',
+      'CFU检查理解：让孩子复述确认',
+      '学习进度可视化：哪薄弱一目了然',
+      '钻石消费：家长自定义奖励机制',
+    ]
+  },
+  {
+    tab: '技术优势', icon: '⚙️', color: 'from-slate-500 to-gray-700',
+    items: [
+      '完全离线：file://协议直接打开',
+      'localStorage持久化：关了再开数据不丢',
+      'TTS语音：中英文双语朗读',
+      'GSAP动画：流畅的教学动效',
+      '单文件部署：一个HTML搞定一切',
+      '数据不外传：所有数据存在本地',
+    ]
+  },
+]
+
+// 第三屏：家长痛点-方案对照
+const painPoints = [
+  { pain: '辅导作业鸡飞狗跳', painIcon: '😤', solution: '每课有家长提示词，照着念就能教，把战场变亲子时光', solutionIcon: '👨‍👩‍👧' },
+  { pain: '孩子一学就忘', painIcon: '🤯', solution: 'SM-2间隔重复算法，在孩子快忘记时精准推送复习', solutionIcon: '🔄' },
+  { pain: '只会死记硬背', painIcon: '📝', solution: '新加坡CPA教学法，从实物到符号真正理解', solutionIcon: '🧮' },
+  { pain: '孩子不想学', painIcon: '😴', solution: '闯关游戏+星星奖励，从"要我学"变"我要学"', solutionIcon: '🎮' },
+  { pain: '不知道学到哪了', painIcon: '❓', solution: '进度可视化+错题分析，哪薄弱一目了然', solutionIcon: '📊' },
+  { pain: '辅导班太贵', painIcon: '💸', solution: '用同样的方法，完全免费，一个账号陪到毕业', solutionIcon: '🆓' },
+]
+
+// 第四屏：信任信号
+const trustSignals = [
+  { icon: '🆓', title: '永久免费', desc: '不收费、不内购、不变相收费。一位父亲用AI为孩子做的工具，分享给所有家庭' },
+  { icon: '🔒', title: '隐私安全', desc: '不注册、不登录、不收集任何信息。所有数据存在你自己的设备上' },
+  { icon: '📱', title: '离线可用', desc: '下载一个HTML文件，手机/电脑/平板都能直接打开，无需网络' },
+  { icon: '📚', title: '三版教材融合', desc: '融合人教版、北师大版、苏教版三大教材精华，确保知识点全覆盖' },
+  { icon: '🔗', title: '跨学科回溯', desc: '依托科技时代跨学科人才培养理念，英语关联数学，语文关联科学，高年级回溯低年级' },
+  { icon: '🎓', title: '方法有据', desc: '融入新加坡CPA、EDI直接教学、艾宾浩斯遗忘曲线等全球验证的方法' },
 ]
 
 // 统计数据
 const stats = [
-  { value: '720', label: '课时' },
-  { value: '5000+', label: '练习题' },
-  { value: '18', label: '课程包' },
-  { value: '6', label: '年级' },
+  { value: '850+', label: '课时' },
+  { value: '6000+', label: '练习题' },
+  { value: '14', label: '种教学法' },
+  { value: '3×6', label: '科年级' },
+]
+
+// 分享场景文案
+const shareScenes = [
+  { scene: '朋友圈', text: '我家娃这周用新加坡CPA法学会了凑十，从掰手指到秒算，免费工具真香！' },
+  { scene: '家长群', text: '找到一个把新加坡数学+间隔重复做成闯关游戏的免费平台，1-6年级都有，推荐试试：' },
+  { scene: '家庭群', text: '看看TA今天的学习战报，连续坚持学习啦！' },
+]
+
+// ===== 全球14种优秀教学方法（营销核心展示） =====
+const teachingMethods = [
+  {
+    name: '新加坡CPA教学法', icon: '🧮', color: 'from-emerald-400 to-teal-500',
+    principle: 'Concrete具象→Pictorial图示→Abstract符号，三阶段建构数学概念',
+    evidence: [
+      '数学G1 数数课：emoji实物→图形→数字CPA动画配置',
+      '数学G5 小数乘法：硬币实物→线段图→算式三段式cpaConfig',
+      '数学G6 圆柱圆锥：实物模型→展开图→体积公式',
+    ],
+  },
+  {
+    name: 'EDI显性直接教学', icon: '🎓', color: 'from-blue-400 to-indigo-500',
+    principle: '明确目标→I Do示范→We Do共练→You Do独立→CFU检查理解',
+    evidence: [
+      '全部850+课时：每课learningObjective+successCriteria',
+      '每课iDo末尾含【CFU检查理解】即时检测问句',
+      'weDo标注【引导式】→【半独立】→【独立】支架梯度',
+    ],
+  },
+  {
+    name: '间隔重复SM-2', icon: '🔄', color: 'from-amber-400 to-orange-500',
+    principle: '按遗忘曲线调度，答对拉长间隔、答错重置，easeFactor自适应',
+    evidence: [
+      'study.ts: calculateSM2()完整实现SM-2算法（间隔1→3→round(interval*ease)）',
+      'ReviewPage.vue: 从dueForReview取今日到期错题，三档自评驱动调度',
+      'WrongQuestion类型: sm2Interval/sm2EaseFactor/sm2Repetitions/sm2NextReview字段',
+    ],
+  },
+  {
+    name: '自然拼读法', icon: '🔤', color: 'from-pink-400 to-rose-500',
+    principle: '建立字母与发音对应规则，见词能读、听音能写',
+    evidence: [
+      '英语G1-3: 系统覆盖字母音/CVC/字母组合/Word Family/Sight Words',
+      '语文G1: 复韵母ie üe er系统教学（c1u9）',
+      'phonicsData.ts: 完整自然拼读数据系统',
+    ],
+  },
+  {
+    name: '费曼学习法', icon: '👨‍🏫', color: 'from-purple-400 to-violet-500',
+    principle: '用最简单的话把知识讲给外行听，讲不清的地方就是没懂',
+    evidence: [
+      '全部课时youDo末尾: 【费曼小老师时间】用最简单的话讲给小熊/家长听',
+      '语文G4: 记叙文阅读让孩子当小老师讲解段落',
+      '数学G6: 分数运算让孩子用费曼法讲解算理',
+    ],
+  },
+  {
+    name: '苏格拉底提问法', icon: '🤔', color: 'from-cyan-400 to-blue-500',
+    principle: '用递进式提问链引导学生自己发现答案，而非直接告知',
+    evidence: [
+      '数学G4 运算定律: 用提问链引导发现乘法分配律',
+      '语文G3: 写景古诗用三步提问引导理解意境',
+      '英语G5 比较级: 用提问链引导发现-er/-est规律',
+    ],
+  },
+  {
+    name: '成长型思维', icon: '🌱', color: 'from-green-400 to-emerald-500',
+    principle: '能力可经由努力增长，表扬过程而非天赋，用"还没"语言',
+    evidence: [
+      '全部explanation末尾: "做错是因为方法还不熟练，多练几次就好，不是你不够聪明"',
+      'settings.ts: 成长型思维表扬话术库',
+      'parentTips: 引导家长表扬努力和策略而非聪明',
+    ],
+  },
+  {
+    name: '蒙台梭利多感官', icon: '✋', color: 'from-orange-400 to-amber-500',
+    principle: '动手操作自主学习具，视/听/触/动多感官同步输入',
+    evidence: [
+      '14种动画场景: numberCount/merge/separate/compare/shapeDraw等',
+      '语文G1笔画教学: 蒙台梭利多感官（看+写+说）',
+      'TTS语音+GSAP动画+触摸交互三通道同步',
+    ],
+  },
+  {
+    name: '游戏化学习', icon: '🎮', color: 'from-red-400 to-pink-500',
+    principle: '用游戏机制提升内在动机：关卡/积分/反馈/挑战/自主',
+    evidence: [
+      '16个成就徽章+星星钻石双货币+心愿商店+连胜机制',
+      '每课funElement: 趣味游戏元素配套教学',
+      'l4形成性评价: 闯关测试模式+连击+Boss题',
+    ],
+  },
+  {
+    name: '思维导图法', icon: '🗺️', color: 'from-indigo-400 to-purple-500',
+    principle: '以中心主题辐射分支，用关键词+图像建立结构化联想',
+    evidence: [
+      '每单元l4: 思维导图整理环节，梳理本单元知识结构',
+      '英语G6 一般过去时: 思维导图整理规则/不规则变化',
+      '数学G6 比例: 思维导图整理正反比例关系',
+    ],
+  },
+  {
+    name: '记忆宫殿法', icon: '🏛️', color: 'from-teal-400 to-cyan-500',
+    principle: '把要记的内容放置在熟悉空间的固定位置，回忆时走一遍',
+    evidence: [
+      '英语G6 词根词缀(e6u10): 用记忆宫殿法记忆前缀un-/re-/dis-',
+      '语文古诗: 把诗句放在客厅空间锚点上记忆',
+      '英语词汇: 选熟悉路线设锚点放单词图像',
+    ],
+  },
+  {
+    name: '多元智能理论', icon: '🌈', color: 'from-violet-400 to-fuchsia-500',
+    principle: '8种智能用多种通道触达不同孩子，让强项带动弱项',
+    evidence: [
+      '语言智能: 课文/对话/诗歌', 
+      '视觉空间: 14种动画场景+图形绘制',
+      '身体动觉: TPR全身反应法+笔顺书写+舒尔特方格',
+    ],
+  },
+  {
+    name: '芬兰现象式学习', icon: '🌍', color: 'from-lime-400 to-green-500',
+    principle: '以真实世界现象为切入点，跨学科多课时整合探究',
+    evidence: [
+      '跨学科融合: 英语购物关联数学人民币',
+      '跨年级回溯: q7题自动回溯低年级知识',
+      'PBL项目: 制作老师卡/朋友卡/成长纪念册',
+    ],
+  },
+  {
+    name: 'RTI分层干预', icon: '📊', color: 'from-sky-400 to-blue-500',
+    principle: 'Tier1普遍教学→Tier2小组干预→Tier3强化个体，数据驱动',
+    evidence: [
+      '错题本: 自动记录未掌握知识点，按优先级排序',
+      'SM-2算法: easeFactor<2.0的错题标记为"需加强"',
+      'getRegressionQuestions(): 按复习优先级取未掌握错题',
+    ],
+  },
 ]
 
 function handleCheckIn() {
@@ -84,45 +331,47 @@ function openNameEdit() {
 }
 
 function startLearning() {
-  showMarketing.value = false
-  localStorage.setItem('hasVisited', 'true')
+  const el = document.getElementById('learning-section')
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' })
+  }
 }
 
 // 分享功能
-const SHARE_URL = 'http://www.cnthc.cn/xxxx.html'
+const SHARE_URL = 'http://www.cnthc.cn/xxxx.html?from=share'
+const SHARE_TEXT = '辅导作业不吼了！这个免费平台融入新加坡CPA教学法+艾宾浩斯遗忘曲线，1-6年级语数外全覆盖，不注册不收费无广告！'
 
 function openShareModal() {
   showShareModal.value = true
 }
 
 function doShare() {
-  const shareText = `我家孩子在用「星地学习平台」学语数外，1-6年级全覆盖，AI动画教学+游戏化闯关，完全免费！推荐你也试试！${SHARE_URL}`
+  const fullText = `${SHARE_TEXT}\n${SHARE_URL}`
   
-  // 尝试使用Web Share API
-  if (navigator.share) {
-    navigator.share({
-      title: '星地学习平台 - 让孩子爱上学习',
-      text: shareText,
-      url: SHARE_URL,
-    }).then(() => {
-      handleShareSuccess()
+  // 始终先复制到剪贴板
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(fullText).then(() => {
+      shareToastMsg.value = '✅ 已复制！快去粘贴发给好友吧'
     }).catch(() => {
-      // 用户取消，不做处理
+      // 剪贴板失败，尝试 Web Share API
+      if (navigator.share) {
+        navigator.share({
+          title: '老田和小甜甜的游戏屋',
+          text: fullText,
+          url: SHARE_URL,
+        }).then(() => {
+          shareToastMsg.value = '分享成功！'
+        }).catch(() => {
+          shareToastMsg.value = '请手动复制：' + fullText
+        })
+      } else {
+        shareToastMsg.value = '请手动复制：' + fullText
+      }
     })
   } else {
-    // 回退：复制到剪贴板
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(shareText).then(() => {
-        shareToastMsg.value = '链接已复制到剪贴板！去粘贴给好友吧'
-      }).catch(() => {
-        shareToastMsg.value = '请手动复制链接分享给好友'
-      })
-    } else {
-      // 最终回退：选中文本
-      shareToastMsg.value = '请复制此链接分享：' + SHARE_URL
-    }
-    handleShareSuccess()
+    shareToastMsg.value = '请手动复制：' + fullText
   }
+  handleShareSuccess()
 }
 
 function handleShareSuccess() {
@@ -150,7 +399,6 @@ function handleShareSuccess() {
 }
 
 onMounted(() => {
-  localStorage.setItem('hasVisited', 'true')
   bounceIn('.area-card-0', 0)
   bounceIn('.area-card-1', 0.15)
   bounceIn('.area-card-2', 0.3)
@@ -164,71 +412,260 @@ onMounted(() => {
 
 <template>
   <div class="min-h-screen">
-    <!-- ========== 营销首屏（首次访问显示） ========== -->
-    <div v-if="showMarketing" class="min-h-screen relative overflow-hidden bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500">
-      <!-- 装饰气泡 -->
-      <div class="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
-      <div class="absolute bottom-20 right-10 w-48 h-48 bg-yellow-300/20 rounded-full blur-3xl"></div>
-      <div class="absolute top-1/3 right-1/4 w-24 h-24 bg-green-300/20 rounded-full blur-xl"></div>
+    <!-- ========== 多屏营销展示（首页固定内容，始终可见） ========== -->
+    <div class="bg-gradient-to-br from-slate-900 via-indigo-900 to-purple-900">
 
-      <div class="relative z-10 max-w-2xl mx-auto px-4 py-8">
-        <!-- 顶部Logo -->
-        <div class="text-center mb-6 marketing-hero">
-          <p class="text-white/80 text-sm mb-1">⭐ 星地学习平台 ⭐</p>
-          <h1 class="text-white font-bold text-3xl leading-tight mb-2">
-            让孩子主动喊<br/>"我还要学！"
-          </h1>
-          <p class="text-white/90 text-base">
-            1-6年级语数外 · AI动画教学 · 家长共学 · 完全免费
-          </p>
-        </div>
+      <!-- ===== 第一屏：核心钩子 ===== -->
+      <div class="min-h-screen relative overflow-hidden flex flex-col justify-center">
+        <!-- 装饰气泡 -->
+        <div class="absolute top-10 left-10 w-32 h-32 bg-blue-400/10 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-20 right-10 w-48 h-48 bg-purple-400/20 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 right-1/4 w-24 h-24 bg-emerald-300/15 rounded-full blur-xl"></div>
 
-        <!-- 数据统计 -->
-        <div class="grid grid-cols-4 gap-2 mb-6 marketing-stats">
-          <div v-for="stat in stats" :key="stat.label" class="bg-white/15 backdrop-blur rounded-2xl py-3 text-center">
-            <div class="text-2xl font-bold text-white">{{ stat.value }}</div>
-            <div class="text-xs text-white/70">{{ stat.label }}</div>
+        <div class="relative z-10 max-w-2xl mx-auto px-4 py-8">
+          <!-- 顶部信任条 -->
+          <div class="text-center mb-6">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur rounded-full px-4 py-1.5">
+              <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+              <p class="text-white/90 text-xs">永久免费 · 不收集隐私 · 点开即用</p>
+            </div>
+          </div>
+
+          <!-- 主标题 -->
+          <div class="text-center mb-6 marketing-hero">
+            <h1 class="text-white font-black text-3xl leading-tight mb-3">
+              辅导作业不用吼了<br/>
+              <span class="text-yellow-300">全球好方法</span>，做成免费课程
+            </h1>
+            <p class="text-white/70 text-sm">
+              新加坡CPA · 间隔重复抗遗忘 · 家长照着念就能教
+            </p>
+          </div>
+
+          <!-- 5个核心钩子 -->
+          <div class="space-y-2.5 mb-6">
+            <div v-for="hook in coreHooks" :key="hook.title"
+              class="bg-white/10 backdrop-blur rounded-2xl px-4 py-3 text-white flex items-center gap-3 border"
+              :class="hook.highlight ? 'border-yellow-400/30 bg-yellow-400/5' : 'border-white/10'">
+              <span class="text-2xl flex-shrink-0">{{ hook.icon }}</span>
+              <div class="flex-1">
+                <span class="font-bold text-sm">{{ hook.title }}</span>
+                <span class="text-white/60 text-xs ml-1.5">{{ hook.desc }}</span>
+              </div>
+              <span v-if="hook.highlight" class="text-yellow-300 text-xs font-bold flex-shrink-0">核心</span>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <button @click="startLearning"
+            class="w-full py-4 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 rounded-2xl font-black text-lg shadow-xl hover:scale-[1.02] transition-transform active:scale-95 mb-2">
+            🚀 免费开始学习
+          </button>
+          <p class="text-center text-white/50 text-xs mb-4">无需注册 · 永久免费 · 离线可用</p>
+
+          <!-- 向下滚动提示 -->
+          <div class="text-center">
+            <p class="text-white/40 text-xs animate-bounce">↓ 向下滚动查看全部优点</p>
           </div>
         </div>
+      </div>
 
-        <!-- 核心卖点 -->
-        <div class="grid grid-cols-2 gap-3 mb-6 marketing-points">
-          <div v-for="(point, i) in sellingPoints" :key="i"
-            class="bg-white/15 backdrop-blur rounded-2xl p-3 text-white">
-            <div class="text-2xl mb-1">{{ point.icon }}</div>
-            <div class="font-bold text-sm">{{ point.title }}</div>
-            <div class="text-xs text-white/70 mt-0.5 leading-snug">{{ point.desc }}</div>
+      <!-- ===== 第二屏：全部优点 ===== -->
+      <div class="min-h-screen relative py-8">
+        <div class="absolute top-0 left-10 w-32 h-32 bg-blue-400/10 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-10 right-10 w-48 h-48 bg-emerald-400/10 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10 max-w-2xl mx-auto px-4">
+          <h2 class="text-white font-black text-2xl text-center mb-2">全部优点一览</h2>
+          <p class="text-white/50 text-sm text-center mb-6">5大维度，覆盖孩子学习的每个环节</p>
+
+          <!-- Tab切换 -->
+          <div class="flex gap-2 overflow-x-auto pb-3 mb-4 scrollbar-hide">
+            <button v-for="(cat, i) in advantageCategories" :key="cat.tab"
+              @click="currentAdvantageTab = i"
+              class="flex-shrink-0 px-3 py-2 rounded-xl text-xs font-medium transition-all whitespace-nowrap"
+              :class="currentAdvantageTab === i
+                ? `bg-gradient-to-r ${cat.color} text-white shadow-lg`
+                : 'bg-white/10 text-white/50'">
+              {{ cat.icon }} {{ cat.tab }}
+            </button>
           </div>
-        </div>
 
-        <!-- 家长痛点共鸣 -->
-        <div class="bg-white/15 backdrop-blur rounded-3xl p-4 mb-6 text-white text-center">
-          <p class="text-sm leading-relaxed">
-            💡 孩子写作业磨蹭？一学就忘？家长不会辅导？<br/>
-            <span class="font-bold text-yellow-300">在这里，学习变成冒险，做题变成闯关</span><br/>
-            <span class="text-xs text-white/80">家长只需按照提示陪孩子互动，不懂也能教</span>
+          <!-- 当前分类内容 -->
+          <div class="bg-white/8 backdrop-blur rounded-3xl p-4 mb-4">
+            <div v-for="(item, i) in advantageCategories[currentAdvantageTab].items" :key="i"
+              class="flex items-start gap-2 py-2 border-b border-white/5 last:border-0">
+              <span class="text-green-400 text-sm flex-shrink-0 mt-0.5">✓</span>
+              <span class="text-white/80 text-sm">{{ item }}</span>
+            </div>
+          </div>
+
+          <!-- 数据统计 -->
+          <div class="grid grid-cols-4 gap-2 mb-6">
+            <div v-for="stat in stats" :key="stat.label" class="bg-white/10 backdrop-blur rounded-2xl py-3 text-center">
+              <div class="text-xl font-bold text-yellow-300">{{ stat.value }}</div>
+              <div class="text-[10px] text-white/60">{{ stat.label }}</div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <button @click="startLearning"
+            class="w-full py-3.5 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 rounded-2xl font-black text-base shadow-xl hover:scale-[1.02] transition-transform active:scale-95 mb-3">
+            🚀 马上体验
+          </button>
+          <p class="text-center text-white/40 text-xs animate-bounce">↓ 继续看家长痛点</p>
+        </div>
+      </div>
+
+      <!-- ===== 第三屏：全球14种教学方法（营销核心） ===== -->
+      <div class="min-h-screen relative py-8">
+        <div class="absolute top-10 left-1/4 w-40 h-40 bg-emerald-400/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-1/4 w-32 h-32 bg-blue-400/10 rounded-full blur-2xl"></div>
+
+        <div class="relative z-10 max-w-2xl mx-auto px-4">
+          <div class="text-center mb-6">
+            <div class="inline-flex items-center gap-2 bg-yellow-400/15 backdrop-blur rounded-full px-4 py-1.5 mb-3">
+              <span class="text-yellow-300 text-xs font-bold">🏆 核心竞争力</span>
+            </div>
+            <h2 class="text-white font-black text-2xl mb-2">全球14种优秀教学法<br/><span class="text-yellow-300">全部融入课程</span></h2>
+            <p class="text-white/50 text-sm">不是说说而已，每种方法都有3条课程中的实际应用证据</p>
+          </div>
+
+          <!-- 14种方法卡片 -->
+          <div class="space-y-3 mb-6">
+            <div v-for="(method, i) in teachingMethods" :key="method.name"
+              class="bg-white/8 backdrop-blur rounded-2xl p-4 border border-white/10 hover:border-white/20 transition-all">
+              <!-- 方法标题 -->
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br flex items-center justify-center text-xl flex-shrink-0"
+                  :class="method.color">
+                  {{ method.icon }}
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center gap-2">
+                    <span class="text-white font-bold text-sm">{{ method.name }}</span>
+                    <span class="text-white/30 text-[10px]">#{{ i + 1 }}</span>
+                  </div>
+                  <p class="text-white/60 text-[11px] leading-snug">{{ method.principle }}</p>
+                </div>
+              </div>
+              <!-- 应用证据 -->
+              <div class="pl-13 ml-1 space-y-1">
+                <div v-for="(ev, j) in method.evidence" :key="j"
+                  class="flex items-start gap-1.5 text-white/70 text-[11px] leading-snug">
+                  <span class="text-green-400 flex-shrink-0">▸</span>
+                  <span>{{ ev }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 对比改进前 vs 改进后 -->
+          <div class="bg-gradient-to-r from-red-500/10 to-green-500/10 backdrop-blur rounded-2xl p-4 mb-6 border border-white/10">
+            <div class="grid grid-cols-2 gap-4 text-center">
+              <div>
+                <p class="text-white/40 text-xs mb-1">改进前综合评分</p>
+                <p class="text-red-400 text-2xl font-black">2.6<span class="text-sm">/5</span></p>
+                <p class="text-white/30 text-[10px]">标签多实质少</p>
+              </div>
+              <div>
+                <p class="text-white/40 text-xs mb-1">改进后综合评分</p>
+                <p class="text-green-400 text-2xl font-black">3.8<span class="text-sm">/5</span></p>
+                <p class="text-white/30 text-[10px]">14种方法全面落地</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <button @click="startLearning"
+            class="w-full py-3.5 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 rounded-2xl font-black text-base shadow-xl hover:scale-[1.02] transition-transform active:scale-95 mb-3">
+            🚀 体验这些方法
+          </button>
+          <p class="text-center text-white/40 text-xs animate-bounce">↓ 继续看家长痛点</p>
+        </div>
+      </div>
+
+      <!-- ===== 第四屏：家长痛点 ===== -->
+      <div class="min-h-screen relative py-8">
+        <div class="absolute top-10 right-10 w-32 h-32 bg-orange-400/10 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-20 left-10 w-48 h-48 bg-red-400/10 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10 max-w-2xl mx-auto px-4">
+          <h2 class="text-white font-black text-2xl text-center mb-2">这些困扰，你也有吗？</h2>
+          <p class="text-white/50 text-sm text-center mb-6">每个痛点背后，都有对应的解决方案</p>
+
+          <!-- 痛点-方案对照 -->
+          <div class="space-y-3 mb-6">
+            <div v-for="pp in painPoints" :key="pp.pain"
+              class="bg-white/8 backdrop-blur rounded-2xl p-4 border border-white/10">
+              <!-- 痛点 -->
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-xl">{{ pp.painIcon }}</span>
+                <span class="text-white/70 text-sm line-through">{{ pp.pain }}</span>
+              </div>
+              <!-- 方案 -->
+              <div class="flex items-center gap-2 pl-2 border-l-2 border-green-400">
+                <span class="text-xl">{{ pp.solutionIcon }}</span>
+                <span class="text-white text-sm font-medium">{{ pp.solution }}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <button @click="startLearning"
+            class="w-full py-3.5 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 rounded-2xl font-black text-base shadow-xl hover:scale-[1.02] transition-transform active:scale-95 mb-3">
+            🚀 解决我的困扰
+          </button>
+          <p class="text-center text-white/40 text-xs animate-bounce">↓ 为什么值得信任</p>
+        </div>
+      </div>
+
+      <!-- ===== 第四屏：信任建立 ===== -->
+      <div class="min-h-screen relative py-8 pb-16">
+        <div class="absolute top-0 left-1/3 w-40 h-40 bg-green-400/10 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10 max-w-2xl mx-auto px-4">
+          <h2 class="text-white font-black text-2xl text-center mb-2">为什么值得信任</h2>
+          <p class="text-white/50 text-sm text-center mb-6">4个承诺，让家长放心</p>
+
+          <div class="grid grid-cols-2 gap-3 mb-6">
+            <div v-for="trust in trustSignals" :key="trust.title"
+              class="bg-white/10 backdrop-blur rounded-2xl p-4 text-white border border-white/10">
+              <div class="text-3xl mb-2">{{ trust.icon }}</div>
+              <p class="font-bold text-sm mb-1">{{ trust.title }}</p>
+              <p class="text-white/60 text-[10px] leading-snug">{{ trust.desc }}</p>
+            </div>
+          </div>
+
+          <!-- 创始人故事 -->
+          <div class="bg-gradient-to-r from-amber-500/15 to-orange-500/15 backdrop-blur rounded-3xl p-5 mb-6 text-center border border-amber-400/20">
+            <p class="text-white/90 text-sm leading-relaxed">
+              💡 这是一位父亲用AI为孩子制作的学习工具<br/>
+              <span class="text-white/60 text-xs">初衷是让每个家庭都能用上全球最有效的方法</span><br/>
+              <span class="text-yellow-300 text-xs font-medium">觉得好用，分享给其他家长就是最好的支持</span>
+            </p>
+          </div>
+
+          <!-- 最终CTA -->
+          <button @click="startLearning"
+            class="w-full py-4 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 rounded-2xl font-black text-lg shadow-xl hover:scale-[1.02] transition-transform active:scale-95 mb-2">
+            🚀 立即开始，完全免费
+          </button>
+          <p class="text-center text-white/50 text-xs mb-3">无需注册 · 永久免费 · 数据不外传 · 离线可用</p>
+          <p class="text-center text-white/30 text-[10px]">
+            线下辅导单科年费数千元 · 这里用同样的方法，完全免费
           </p>
         </div>
-
-        <!-- CTA按钮 -->
-        <button @click="startLearning"
-          class="w-full py-4 bg-white text-purple-600 rounded-2xl font-bold text-lg shadow-xl hover:scale-[1.02] transition-transform active:scale-95 mb-3">
-          🚀 免费开始学习
-        </button>
-        <p class="text-center text-white/60 text-xs">无需注册 · 直接使用 · 永久免费</p>
       </div>
     </div>
 
-    <!-- ========== 常规首页 ========== -->
-    <div v-show="!showMarketing" class="min-h-screen p-4 pt-6">
+    <!-- ========== 常规首页（学习区域） ========== -->
+    <div id="learning-section" class="min-h-screen p-4 pt-6">
       <!-- 顶部欢迎区 -->
       <div class="flex items-center justify-between mb-4">
         <div>
           <div class="flex items-center gap-2">
             <h1 class="font-title text-xl text-gray-800">老田和小甜甜的游戏屋</h1>
-            <button @click="showMarketing = true" class="text-xs bg-purple-100 text-purple-600 px-2 py-0.5 rounded-full hover:bg-purple-200">
-              ⭐ 介绍
-            </button>
           </div>
           <div class="flex items-center gap-2 mt-1">
             <p class="text-sm text-gray-500">
@@ -308,6 +745,7 @@ onMounted(() => {
               <p class="text-3xl mb-1">{{ area.icon }}</p>
               <p class="font-title text-xl">{{ area.name }}</p>
               <p class="text-sm opacity-80">{{ area.desc }}</p>
+              <span class="inline-block mt-1.5 bg-white/20 backdrop-blur rounded-full px-2 py-0.5 text-[10px] font-medium">{{ area.method }}</span>
             </div>
             <Sparkles class="w-8 h-8 opacity-60" />
           </div>
@@ -335,7 +773,18 @@ onMounted(() => {
           <div class="text-3xl">🏆</div>
           <div class="flex-1">
             <p class="font-medium text-sm text-gray-700">已陪伴孩子完成 {{ progressStore.totalCompleted }} 节课</p>
-            <p class="text-xs text-gray-400">坚持学习，让孩子爱上思考！觉得好用？分享给其他家长吧 👆</p>
+            <p class="text-xs text-gray-400">用全球验证的方法学习，让每一分钟都不白费。觉得好用？分享给其他家长吧 👆</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 学习科学小知识（软营销） -->
+      <div class="card bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-100 mb-4">
+        <div class="flex items-start gap-3">
+          <div class="text-2xl flex-shrink-0">💡</div>
+          <div>
+            <p class="font-medium text-sm text-gray-700">学习科学小知识</p>
+            <p class="text-xs text-gray-500 mt-0.5">艾宾浩斯遗忘曲线：学完20分钟后遗忘42%，1天后遗忘66%。本系统的智能错题本会按遗忘曲线自动推送复习，让记忆更牢固。</p>
           </div>
         </div>
       </div>
@@ -351,14 +800,22 @@ onMounted(() => {
               <X class="w-5 h-5" />
             </button>
           </div>
-          <div class="text-center py-4">
+          <div class="text-center py-2">
             <div class="text-5xl mb-3">{{ hasSharedBefore ? '🌟' : '🎉' }}</div>
             <p class="text-gray-600 mb-2">{{ hasSharedBefore ? '继续分享给更多好友！' : '首次分享获得 20 颗⭐！' }}</p>
             <p class="text-xs text-gray-400 mb-4">{{ hasSharedBefore ? '每日分享再得 5 颗⭐' : '之后每天分享还能再得 5 颗⭐' }}</p>
-            <button @click="doShare" class="w-full py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-2xl font-medium hover:scale-[1.02] transition-transform active:scale-95 flex items-center justify-center gap-2">
-              <Share2 class="w-5 h-5" /> 立即分享
+            
+            <!-- 分享文案展示 -->
+            <div class="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-4 mb-4 text-left border border-pink-100">
+              <p class="text-[10px] text-gray-400 mb-2">👇 以下内容将复制到剪贴板</p>
+              <p class="text-sm text-gray-700 font-medium leading-relaxed mb-2">{{ SHARE_TEXT }}</p>
+              <p class="text-xs text-blue-500 break-all">{{ SHARE_URL }}</p>
+            </div>
+            
+            <button @click="doShare" class="w-full py-3.5 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-2xl font-bold hover:scale-[1.02] transition-transform active:scale-95 flex items-center justify-center gap-2">
+              <Share2 class="w-5 h-5" /> 一键复制分享文案
             </button>
-            <p class="text-xs text-gray-400 mt-3">分享链接：{{ SHARE_URL }}</p>
+            <p class="text-xs text-gray-400 mt-3">复制后可粘贴到微信、QQ、朋友圈等任意位置</p>
           </div>
         </div>
       </div>

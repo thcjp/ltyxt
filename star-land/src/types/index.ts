@@ -277,7 +277,7 @@ export interface StarHistoryRecord {
   id: string
   amount: number           // 正数=增加，负数=扣除
   reason: string           // 变动原因
-  source: 'lesson' | 'checkin' | 'parent' | 'redeem' | 'achievement'  // 来源
+  source: 'lesson' | 'checkin' | 'parent' | 'redeem' | 'achievement' | 'review'  // 来源
   timestamp: string        // ISO 时间戳
 }
 
@@ -366,6 +366,11 @@ export interface WrongQuestion {
   mastered: boolean         // 是否已掌握
   explanation: string       // 解题说明
   knowledgeLinks?: KnowledgeLink[]  // 知识点溯源链接
+  // SM-2 间隔重复算法字段
+  sm2Interval: number       // 当前间隔（天），0=今天复习
+  sm2EaseFactor: number     // 难度系数（默认2.5，范围1.3~2.8）
+  sm2Repetitions: number    // 连续答对次数
+  sm2NextReview: string     // 下次复习时间（ISO日期）
 }
 
 // 知识点溯源链接

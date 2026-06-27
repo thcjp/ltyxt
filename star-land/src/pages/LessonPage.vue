@@ -71,6 +71,48 @@ const lessonId = computed(() => route.params.lesson as string)
 const unit = computed(() => courseStore.getUnit(subject.value as any, grade.value, unitId.value))
 const lesson = computed(() => unit.value?.lessons.find(l => l.id === lessonId.value))
 
+// 本课使用的教学方法标签（根据 teachingMethod 字段与学科特征推断）
+const teachingMethodTags = computed<{ icon: string; label: string }[]>(() => {
+  if (!lesson.value) return []
+  const tm = lesson.value.teachingMethod || ''
+  const has = (kws: string[]) => kws.some(k => tm.includes(k))
+
+  const tags: { icon: string; label: string }[] = []
+
+  // CPA教学法：数学默认；或显式提到 CPA/实物/图示/符号/凑十
+  if (subject.value === 'math' || has(['CPA', 'cpa', '实物', '图示', '符号', '凑十'])) {
+    tags.push({ icon: '🧮', label: 'CPA教学法' })
+  }
+  // EDI直接教学：有学习目标即体现 EDI；或显式提到
+  if (lesson.value.learningObjective || has(['EDI', 'edi', '直接教学', '示范', 'I Do', 'We Do', 'You Do'])) {
+    tags.push({ icon: '🎓', label: 'EDI直接教学' })
+  }
+  // 艾宾浩斯间隔重复：提到复习/间隔/遗忘/错题
+  if (has(['艾宾浩斯', '间隔', '遗忘', '复习', '错题'])) {
+    tags.push({ icon: '🔄', label: '间隔重复' })
+  }
+  // 多感官互动：语文/英语默认；或显式提到口型/动画/书写/拼读
+  if (subject.value === 'chinese' || subject.value === 'english' || has(['多感官', '口型', '动画', '书写', '拼读'])) {
+    tags.push({ icon: '🌈', label: '多感官互动' })
+  }
+
+  // 兜底：至少展示3个核心方法，避免空标签条
+  if (tags.length === 0) {
+    tags.push(
+      { icon: '🧮', label: 'CPA教学法' },
+      { icon: '🎓', label: 'EDI直接教学' },
+      { icon: '🌈', label: '多感官互动' },
+    )
+  }
+  return tags
+})
+
+// ===== CPA教学法识别 =====
+// 当 lesson.teachingMethod 包含 'CPA' 时，展示CPA三步法解释卡片
+const hasCPAMethod = computed(() => {
+  return lesson.value?.teachingMethod?.includes('CPA') || false
+})
+
 // 视频辅助学习资源（全网抓取）
 // 优先级：课程自带 > 数学一年级专属直链 > 通用搜索链接生成器
 const videoResources = computed<VideoResource[]>(() => {
@@ -767,6 +809,19 @@ onUnmounted(() => {
     <!-- 主内容区 -->
     <div class="phase-content flex-1 p-4 overflow-y-auto">
 
+      <!-- 教学方法标签条：本课使用的方法（装饰性，不干扰学习） -->
+      <div v-if="currentPhase !== 'complete' && teachingMethodTags.length > 0" class="flex items-center gap-2 flex-wrap mb-3">
+        <span class="text-xs text-gray-400 shrink-0">本课方法</span>
+        <span
+          v-for="tag in teachingMethodTags"
+          :key="tag.label"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-gradient-to-r from-primary-50 to-secondary-50 text-primary-600 text-xs border border-primary-100"
+        >
+          <span>{{ tag.icon }}</span>
+          <span>{{ tag.label }}</span>
+        </span>
+      </div>
+
       <!-- 课文学习阶段 -->
       <div v-if="currentPhase === 'content'" class="space-y-3">
         <div class="flex items-center justify-between mb-4">
@@ -776,6 +831,32 @@ onUnmounted(() => {
           </div>
           <SpeechButton :text="lesson.content.map(b => b.content).join('。')" :lang="subjectLang" />
         </div>
+
+        <!-- CPA教学法说明 -->
+        <div v-if="hasCPAMethod" class="card bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-100 mb-4">
+          <div class="flex items-start gap-3">
+            <div class="text-2xl flex-shrink-0">🧮</div>
+            <div>
+              <p class="font-medium text-sm text-gray-700">CPA三步教学法</p>
+              <div class="grid grid-cols-3 gap-2 mt-2">
+                <div class="bg-white/60 rounded-lg p-2 text-center">
+                  <p class="text-xs font-bold text-emerald-600">C 具象</p>
+                  <p class="text-[10px] text-gray-500">用实物操作</p>
+                </div>
+                <div class="bg-white/60 rounded-lg p-2 text-center">
+                  <p class="text-xs font-bold text-blue-600">P 图示</p>
+                  <p class="text-[10px] text-gray-500">画图理解</p>
+                </div>
+                <div class="bg-white/60 rounded-lg p-2 text-center">
+                  <p class="text-xs font-bold text-purple-600">A 符号</p>
+                  <p class="text-[10px] text-gray-500">用数字算式</p>
+                </div>
+              </div>
+              <p class="text-[10px] text-gray-400 mt-1.5">新加坡数学教学法：从动手到抽象，让孩子真正理解而非死记</p>
+            </div>
+          </div>
+        </div>
+
         <ContentBlockRenderer
           v-for="(block, idx) in lesson.content"
           :key="idx"
@@ -1007,6 +1088,19 @@ onUnmounted(() => {
         <div class="card bg-blue-50 border border-blue-200">
           <p class="text-sm text-blue-700">💡 教学法：{{ lesson.teachingMethod }}</p>
         </div>
+
+        <!-- 苏格拉底提问提示 -->
+        <div class="card bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-100 mt-3">
+          <div class="flex items-start gap-2">
+            <div class="text-xl flex-shrink-0">💭</div>
+            <div>
+              <p class="font-medium text-xs text-gray-700">引导提问（不要直接告诉答案）</p>
+              <p class="text-[10px] text-gray-500 mt-0.5">① 你发现了什么？ ② 为什么会这样？ ③ 如果换一种方法会怎样？</p>
+              <p class="text-[10px] text-amber-600 mt-0.5">等孩子思考至少5秒再回应</p>
+            </div>
+          </div>
+        </div>
+
         <button @click="nextPhase" class="btn-primary w-full flex items-center justify-center gap-2">
           一起练习 <ChevronRight class="w-4 h-4" />
         </button>
@@ -1027,6 +1121,18 @@ onUnmounted(() => {
         <div class="card bg-purple-50 border border-purple-200">
           <p class="text-sm text-purple-700 whitespace-pre-line">🎯 家长提示：{{ lesson.parentTips }}</p>
         </div>
+
+        <!-- CFU检查理解 -->
+        <div class="card bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-100 mt-3">
+          <div class="flex items-start gap-2">
+            <div class="text-xl flex-shrink-0">✅</div>
+            <div>
+              <p class="font-medium text-xs text-gray-700">检查理解</p>
+              <p class="text-[10px] text-gray-500 mt-0.5">让孩子用自己的话说一遍"这题怎么做"，能说清就说明真懂了。</p>
+            </div>
+          </div>
+        </div>
+
         <button @click="nextPhase" class="btn-secondary w-full flex items-center justify-center gap-2">
           自己试试 <ChevronRight class="w-4 h-4" />
         </button>
@@ -1043,6 +1149,17 @@ onUnmounted(() => {
             <SpeechButton :text="lesson.youDo" :lang="subjectLang" />
           </div>
           <p class="text-gray-700 leading-relaxed">{{ lesson.youDo }}</p>
+        </div>
+
+        <!-- 费曼学习法提示 -->
+        <div class="card bg-gradient-to-r from-violet-50 to-purple-50 border border-violet-100 mt-3">
+          <div class="flex items-start gap-2">
+            <div class="text-xl flex-shrink-0">🎓</div>
+            <div>
+              <p class="font-medium text-xs text-gray-700">费曼学习法：当小老师</p>
+              <p class="text-[10px] text-gray-500 mt-0.5">让孩子用自己的话把这道题讲给爸爸妈妈听。讲不清楚的地方，就是还没完全理解的地方，可以回看上面的讲解。</p>
+            </div>
+          </div>
         </div>
 
         <!-- 练习题 -->

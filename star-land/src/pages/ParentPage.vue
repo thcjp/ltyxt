@@ -5,7 +5,7 @@ import { useRewardStore } from '@/stores/reward'
 import { useSettingsStore } from '@/stores/settings'
 import { useCourseProgress } from '@/composables/useCourseProgress'
 import { useSpeech } from '@/composables/useSpeech'
-import { BarChart3, TrendingUp, Calendar, Settings, User, Pencil, Volume2, Gauge, Star, Lock, History, Plus, Minus, ChevronDown, ChevronUp, Gem, Trash2, RotateCcw, Package, Download, Upload, AlertTriangle } from 'lucide-vue-next'
+import { BarChart3, TrendingUp, Calendar, Settings, User, Pencil, Volume2, Gauge, Star, Lock, History, Plus, Minus, ChevronDown, ChevronUp, Gem, Trash2, RotateCcw, Package, Download, Upload, AlertTriangle, MessageCircle, RefreshCw } from 'lucide-vue-next'
 import type { DiamondItem, WishItem } from '@/types'
 import { useDataManager } from '@/composables/useDataManager'
 
@@ -59,6 +59,11 @@ function testSpeechRate() {
   setTimeout(() => {
     speakEnglish('Hello, this is a test.')
   }, 3000)
+}
+
+// 检查更新
+function checkForUpdates() {
+  window.open('http://www.cnthc.cn/xxxx.html', '_blank')
 }
 
 // 语音速度预设
@@ -593,6 +598,21 @@ function handleImportChange(event: Event) {
 function handleClear() {
   clearAllData()
 }
+
+// ===== 反馈入口 =====
+const feedbackBtnText = ref('反馈建议 / 加微信')
+function copyFeedbackContact() {
+  const wechat = 'kcsn-zcwl'
+  try {
+    navigator.clipboard?.writeText(wechat)
+  } catch (e) {
+    // 忽略剪贴板不可用的情况
+  }
+  feedbackBtnText.value = '已复制微信号：kcsn-zcwl'
+  setTimeout(() => {
+    feedbackBtnText.value = '反馈建议 / 加微信'
+  }, 2500)
+}
 </script>
 
 <template>
@@ -603,11 +623,53 @@ function handleClear() {
     <div class="card mb-4 bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200">
       <div class="flex items-start gap-3">
         <div class="text-2xl shrink-0 mt-0.5">💡</div>
-        <div class="text-sm text-gray-600 leading-relaxed">
+        <div class="text-sm text-gray-600 leading-relaxed flex-1">
           <p class="font-medium text-gray-700 mb-1">关于本项目</p>
           <p>本项目是天轰穿+AI 三天时间完成的，虽然经过了数十轮次的检查和优化，但仍然可能存在一些小 bug，有问题要优化可以加我微信反馈，如果孩子要学信息学奥赛也可以找我，微信号：<span class="font-bold text-primary-600 select-all">kcsn-zcwl</span></p>
+          <button @click="checkForUpdates" class="mt-3 inline-flex items-center gap-1.5 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-xs font-medium px-4 py-2 rounded-xl hover:scale-105 transition-transform">
+            <RefreshCw class="w-3.5 h-3.5" /> 检查更新
+          </button>
         </div>
       </div>
+    </div>
+
+    <!-- 产品方法论：教学方法展示 -->
+    <div class="card mb-4 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 border border-purple-200">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="text-xl">🎓</span>
+        <h2 class="font-title text-lg text-gray-800">我们的教学方法</h2>
+      </div>
+      <div class="grid grid-cols-2 gap-2.5 mb-3">
+        <div class="bg-white/70 rounded-2xl p-3 border border-white">
+          <div class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-400 to-teal-500 mb-1.5">
+            <span class="text-lg">🧮</span>
+          </div>
+          <div class="font-bold text-xs text-gray-800">新加坡CPA教学法</div>
+          <div class="text-[10px] text-gray-500 mt-0.5 leading-snug">实物→图示→符号，让孩子真正理解而非死记</div>
+        </div>
+        <div class="bg-white/70 rounded-2xl p-3 border border-white">
+          <div class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-blue-400 to-indigo-500 mb-1.5">
+            <span class="text-lg">🎓</span>
+          </div>
+          <div class="font-bold text-xs text-gray-800">EDI显性直接教学</div>
+          <div class="text-[10px] text-gray-500 mt-0.5 leading-snug">每课明确学习目标+成功标准，示范→共练→独立</div>
+        </div>
+        <div class="bg-white/70 rounded-2xl p-3 border border-white">
+          <div class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-amber-400 to-orange-500 mb-1.5">
+            <span class="text-lg">🔄</span>
+          </div>
+          <div class="font-bold text-xs text-gray-800">艾宾浩斯间隔重复</div>
+          <div class="text-[10px] text-gray-500 mt-0.5 leading-snug">智能错题本按遗忘曲线推送复习</div>
+        </div>
+        <div class="bg-white/70 rounded-2xl p-3 border border-white">
+          <div class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-pink-400 to-rose-500 mb-1.5">
+            <span class="text-lg">🌈</span>
+          </div>
+          <div class="font-bold text-xs text-gray-800">多感官互动学习</div>
+          <div class="text-[10px] text-gray-500 mt-0.5 leading-snug">拼音口型+凑十动画+笔顺书写</div>
+        </div>
+      </div>
+      <p class="text-xs text-gray-500 text-center">这些方法在线下机构单科年费数千元，这里全部免费</p>
     </div>
 
     <!-- 孩子名字设置 -->
@@ -1698,6 +1760,22 @@ function handleClear() {
         <span class="text-sm font-medium text-blue-700">家长小贴士</span>
       </div>
       <p class="text-sm text-blue-800">陪伴学习时，请多鼓励少批评。每个孩子都有自己的节奏，重要的是保持学习的兴趣和信心。每天16:00-20:00是最佳学习时间，建议每科30分钟后休息10分钟。语音速度可根据孩子接受能力调整，低年级建议稍慢（0.7-0.8x）。</p>
+    </div>
+
+    <!-- 为什么免费：软营销说明 -->
+    <div class="card mb-4 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border border-emerald-200">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-xl">💡</span>
+        <h2 class="font-title text-lg text-gray-800">为什么完全免费？</h2>
+      </div>
+      <p class="text-sm text-gray-600 leading-relaxed mb-3">这是一位父亲用AI为孩子制作的学习工具。初衷是让每个家庭都能用上全球最有效的学习方法，不因费用而错失。我们承诺：永远免费、无广告、无内购、不收集孩子隐私。如果觉得好用，分享给其他家长就是最好的支持。</p>
+      <button
+        @click="copyFeedbackContact"
+        class="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-emerald-500 text-white hover:bg-emerald-600 transition-all"
+      >
+        <MessageCircle class="w-4 h-4" />
+        <span class="text-sm font-medium">{{ feedbackBtnText }}</span>
+      </button>
     </div>
   </div>
 </template>

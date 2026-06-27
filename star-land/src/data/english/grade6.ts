@@ -12,12 +12,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u1l1',
         title: '交通方式词汇：bus/subway/bike/walk',
         order: 1,
-        teachingMethod: 'TPR全身反应法+图片指示',
+        teachingMethod: 'TPR全身反应法 + 图片指示',
         learningObjective: '我能说出bus/subway/bike/walk等交通方式词汇并用by表达',
         successCriteria: '①能说出4个交通方式词汇 ②能用I go by...造句',
-        iDo: '家长出示交通工具图片说单词："This is a bus. This is a subway. I go by bike. I walk to school."配合手势做动作',
-        weDo: '亲子一起看图说词，家长说中文孩子说英文，再互换角色，玩"交通方式猜猜猜"游戏',
-        youDo: '孩子独立辨认交通方式词汇，看图说词并造简单句子',
+        iDo: '家长出示交通工具图片说单词："This is a bus. This is a subway. I go by bike. I walk to school."配合手势做动作 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起看图说词，家长说中文孩子说英文，再互换角色，玩"交通方式猜猜猜"游戏 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立辨认交通方式词汇，看图说词并造简单句子【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：交通方式bus（公交）、subway（地铁）、bike（自行车）、walk（步行），句型I go by bus.。\n共学四步：\n①对话出题：家长指窗外问How do you go to school?并说I go by bus.。\n②孩子应答：孩子应说I go by bike.。\n③答错引导：若孩子说不出，家长当同学一起认！扫描课时发音动画听发音；让孩子点读课件交通卡；家长做动作（踩踏板/握方向盘）配合英语，用TPR法帮孩子记。\n④快速检测：1.孩子说出4个交通词；2.用I go by...造句；3.说出上学方式。',
         funElement: '玩"交通达人"游戏，家长做动作（踩踏板/握方向盘/起步），孩子快速说出对应的交通方式英语',
         gsapAnimations: ['GSAP:交通工具卡片翻转-cardReveal', 'GSAP:单词逐个弹出-stagger', 'GSAP:图标缩放出现-starFlyIn'],
@@ -35,7 +35,8 @@ export const englishGrade6: Unit[] = [
             content: '前缀sub-记忆法：sub-表示"在...下面"。sub（下面）+way（路）=subway（地铁，地下的路）。同理sub+marine=submarine（潜水艇，海下的），sub+title=subtitle（字幕，画面下的文字）。遇到sub开头的词，想想和"下面"有没有关系！',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用TPR全身反应法：用身体动作配合语言，边做边说加深记忆', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -45,7 +46,7 @@ export const englishGrade6: Unit[] = [
             options: ['bus', 'bike', 'book', 'bag'],
             answer: 'bus',
             hint: '有很多座位的大车',
-            explanation: 'bus是公交车，有很多座位的大型交通工具，I go by bus表示坐公交车去'
+            explanation: 'bus是公交车，有很多座位的大型交通工具，I go by bus表示坐公交车去做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l1q2',
@@ -54,7 +55,7 @@ export const englishGrade6: Unit[] = [
             options: ['subway', 'walk', 'sun', 'sky'],
             answer: 'subway',
             hint: '地下跑的火车',
-            explanation: 'subway是地铁，地下运行的火车，I go by subway表示坐地铁去'
+            explanation: 'subway是地铁，地下运行的火车，I go by subway表示坐地铁去做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l1q3',
@@ -63,7 +64,7 @@ export const englishGrade6: Unit[] = [
             answer: 'walk',
             acceptableAnswers: ['Walk'],
             hint: '用脚走路，不用by',
-            explanation: 'walk是步行，表示走路去某地。walk前面不用by，直接说I walk'
+            explanation: 'walk是步行，表示走路去某地。walk前面不用by，直接说I walk做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l1q4',
@@ -72,7 +73,7 @@ export const englishGrade6: Unit[] = [
             options: ['I go by bus.', 'I go by a bus.', 'I go by the bus.', 'I walk by foot.'],
             answer: 'I go by bus.',
             hint: 'by后面直接加交通工具，不加冠词；步行不说by foot',
-            explanation: 'by + 交通工具，中间不加the/a，所以by bus正确。步行用I walk，不用by foot'
+            explanation: 'by + 交通工具，中间不加the/a，所以by bus正确。步行用I walk，不用by foot做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l1q5',
@@ -81,7 +82,7 @@ export const englishGrade6: Unit[] = [
             options: ['walk', 'bus', 'subway', 'bike'],
             answer: 'walk',
             hint: '哪个词前面不加by？',
-            explanation: 'walk是动词，直接作谓语说I walk；bus/subway/bike是交通工具名词，前面用by表示乘坐'
+            explanation: 'walk是动词，直接作谓语说I walk；bus/subway/bike是交通工具名词，前面用by表示乘坐做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l1q6',
@@ -90,7 +91,7 @@ export const englishGrade6: Unit[] = [
             answer: 'bike',
             acceptableAnswers: ['Bike', 'bicycle'],
             hint: '两个轮子、你骑着走的交通工具',
-            explanation: 'bike是自行车，两个轮子靠骑行，I go by bike表示骑自行车去'
+            explanation: 'bike是自行车，两个轮子靠骑行，I go by bike表示骑自行车去做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l1q7',
@@ -99,7 +100,7 @@ export const englishGrade6: Unit[] = [
             answer: 'bike',
             acceptableAnswers: ['Bike'],
             hint: '[交通工具词汇]（英语二年级-第6单元）',
-            explanation: 'bike是自行车，有两个轮子靠骑行，是二年级Transport单元学过的交通工具词汇'
+            explanation: 'bike是自行车，有两个轮子靠骑行，是二年级Transport单元学过的交通工具词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -107,12 +108,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u1l2',
         title: 'How do you go to school? 句型',
         order: 2,
-        teachingMethod: '情境对话法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用How do you go to...?询问并回答出行方式',
         successCriteria: '①能用How do you go to...?提问 ②能用I go by...回答',
-        iDo: '家长示范问答："How do you go to school?" "I go by bus."配合指认动作和交通工具卡片',
-        weDo: '亲子一起做问答练习，家长问孩子答，再互换角色，玩"交通问答接龙"游戏',
-        youDo: '孩子独立用How do you go to...?句型询问家人或玩偶的出行方式',
+        iDo: '家长示范问答："How do you go to school?" "I go by bus."配合指认动作和交通工具卡片 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做问答练习，家长问孩子答，再互换角色，玩"交通问答接龙"游戏 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用How do you go to...?句型询问家人或玩偶的出行方式【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：句型How do you go to school?（你怎么上学），回答I go by bus.。\n共学四步：\n①对话出题：家长问How do you go to school?。\n②孩子应答：孩子应说I go by subway.。\n③答错引导：若孩子说不出，家长当同学一起问！扫描课时发音动画听发音；让孩子点读课件对话卡；家长用地图边指边问。\n④快速检测：1.孩子用How do you...?提问；2.用I go by...回答；3.问答互换。',
         funElement: '玩"问答接力"游戏，一人问How do you go to...?另一人回答，越快越好',
         gsapAnimations: ['GSAP:交通问答展开-timeline', 'GSAP:对话气泡弹出-stagger', 'GSAP:问答配对高亮-highlight'],
@@ -124,7 +125,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: 'How do you go to + 地点？用来问去某地的方式。回答可以用I go by...或I walk。地点是school时，to不能省略。', label: '句型结构', animationType: 'pulse' },
           { type: 'example', content: 'How do you go to school? I go by bus.\nHow do you go to the zoo? I go by subway.\nHow do you go to the hospital? I walk.', label: '句型操练', animationType: 'sequence' },
           { type: 'tip', content: '问"你"用How do you...？问"他/她"用How does he/she...？第三人称要用does，动词用原形go。', label: '人称变化', animationType: 'pulse' },
-          { type: 'animation', content: '交通问答逐步展开动画，配合时间线展示问答过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'How do you go to school?', timelineConfig: { steps: [ { text: 'How do you go to school?', ttsNarration: 'How do you go to school?' }, { text: 'I go by bus.', ttsNarration: 'I go by bus.' }, { text: 'How do you go to the park?', ttsNarration: 'How do you go to the park?' }, { text: 'I go by bike.', ttsNarration: 'I go by bike.' } ] }, ttsNarration: '询问出行：你怎样去上学？我坐公交。你怎样去公园？我骑自行车。' } }
+          { type: 'animation', content: '交通问答逐步展开动画，配合时间线展示问答过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'How do you go to school?', timelineConfig: { steps: [ { text: 'How do you go to school?', ttsNarration: 'How do you go to school?' }, { text: 'I go by bus.', ttsNarration: 'I go by bus.' }, { text: 'How do you go to the park?', ttsNarration: 'How do you go to the park?' }, { text: 'I go by bike.', ttsNarration: 'I go by bike.' } ] }, ttsNarration: '询问出行：你怎样去上学？我坐公交。你怎样去公园？我骑自行车。' } },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -134,7 +136,7 @@ export const englishGrade6: Unit[] = [
             options: ['by', 'on', 'in', 'at'],
             answer: 'by',
             hint: '表示乘坐交通工具用哪个介词？',
-            explanation: '表示乘坐交通工具用by，by bus表示坐公交车'
+            explanation: '表示乘坐交通工具用by，by bus表示坐公交车做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l2q2',
@@ -143,7 +145,7 @@ export const englishGrade6: Unit[] = [
             options: ['walk', 'walking', 'walks', 'to walk'],
             answer: 'walk',
             hint: '主语I后面用什么形式的动词？',
-            explanation: '主语I后面用动词原形walk，I walk表示我步行去'
+            explanation: '主语I后面用动词原形walk，I walk表示我步行去做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l2q3',
@@ -151,7 +153,7 @@ export const englishGrade6: Unit[] = [
             question: '____ do you go to school? — I go by subway.',
             answer: 'How',
             hint: '询问出行方式的疑问词',
-            explanation: 'How用来询问方式，How do you go to school?问你怎样去上学'
+            explanation: 'How用来询问方式，How do you go to school?问你怎样去上学做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l2q4',
@@ -160,7 +162,7 @@ export const englishGrade6: Unit[] = [
             options: ['does', 'do', 'is', 'are'],
             answer: 'does',
             hint: '主语是she（第三人称单数），用哪个助动词？',
-            explanation: '主语是she第三人称单数，疑问句用does，动词用原形go：How does she go to school?'
+            explanation: '主语是she第三人称单数，疑问句用does，动词用原形go：How does she go to school?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l2q5',
@@ -169,7 +171,7 @@ export const englishGrade6: Unit[] = [
             answer: 'the',
             acceptableAnswers: ['The'],
             hint: 'zoo是特定地点，前面要加什么？',
-            explanation: 'the zoo是特指那个动物园，用定冠词the。How do you go to the zoo?'
+            explanation: 'the zoo是特指那个动物园，用定冠词the。How do you go to the zoo?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l2q6',
@@ -178,7 +180,7 @@ export const englishGrade6: Unit[] = [
             options: ['How do you go to school?', 'What do you go to school?', 'Where do you go to school?', 'Do you go to school?'],
             answer: 'How do you go to school?',
             hint: '要问"怎样"去，用哪个疑问词？',
-            explanation: '询问出行方式用How，How do you go to school?问的是怎样去上学'
+            explanation: '询问出行方式用How，How do you go to school?问的是怎样去上学做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l2q7',
@@ -187,7 +189,7 @@ export const englishGrade6: Unit[] = [
             answer: 'Friday',
             acceptableAnswers: ['friday'],
             hint: '[星期词汇]（英语五年级-第2单元）',
-            explanation: '上学通常从星期一Monday到星期五Friday，星期词汇是五年级My Days of Week单元学的'
+            explanation: '上学通常从星期一Monday到星期五Friday，星期词汇是五年级My Days of Week单元学的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -195,12 +197,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u1l3',
         title: '频率副词：usually/sometimes/never',
         order: 3,
-        teachingMethod: '支架式教学法',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能用usually/sometimes/never描述出行频率',
         successCriteria: '①能说出3个频率副词 ②能用频率副词造句',
-        iDo: '家长示范用频率副词："I usually go by bus. I sometimes walk. I never go by subway."配合手势表示频率高低',
-        weDo: '亲子一起用频率副词造句，家长说中文孩子说英文，再互换角色',
-        youDo: '孩子独立用频率副词描述自己的出行习惯',
+        iDo: '家长示范用频率副词："I usually go by bus. I sometimes walk. I never go by subway."配合手势表示频率高低 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起用频率副词造句，家长说中文孩子说英文，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用频率副词描述自己的出行习惯【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：频率副词usually（通常）、sometimes（有时）、never（从不），频率从高到低。\n共学四步：\n①对话出题：家长问How do you usually go to school?并说I usually go by bus.。\n②孩子应答：孩子应说I usually go by bike.。\n③答错引导：若孩子说不出，家长当同学一起比！扫描课时发音动画听发音；让孩子点读课件词汇卡；家长用手势比划频率高低边比边说。\n④快速检测：1.孩子说出3个频率词；2.用usually造句；3.用never造句。',
         funElement: '玩"频率排序"游戏，把频率副词卡片从高到低排列，说句子比赛',
         gsapAnimations: ['GSAP:频率副词排列-timeline', 'GSAP:频率条出现-sequence', 'GSAP:副词高亮-highlight'],
@@ -212,7 +214,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '频率副词放在实义动词前面：I usually go by bus.放在be动词后面：She is usually kind.位置要记牢。', label: '副词位置', animationType: 'pulse' },
           { type: 'example', content: 'I usually go by bus. 我通常坐公交去。\nI often ride a bike. 我经常骑自行车。\nI sometimes walk. 我有时步行。\nI never go by subway. 我从不坐地铁。', label: '频率副词造句', animationType: 'sequence' },
           { type: 'tip', content: 'never表示从不，本身已是否定意思，后面不用not。I never go（正确），I never don\'t go（错误）。', label: '易错提醒', animationType: 'pulse' },
-          { type: 'animation', content: '频率副词从高到低排列动画，配合时间线展示频率递减', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Frequency Adverbs', timelineConfig: { steps: [ { text: 'usually 通常', ttsNarration: 'usually, 通常' }, { text: 'often 经常', ttsNarration: 'often, 经常' }, { text: 'sometimes 有时', ttsNarration: 'sometimes, 有时' }, { text: 'never 从不', ttsNarration: 'never, 从不' } ] }, ttsNarration: '频率副词从高到低：通常、经常、有时、从不' } }
+          { type: 'animation', content: '频率副词从高到低排列动画，配合时间线展示频率递减', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Frequency Adverbs', timelineConfig: { steps: [ { text: 'usually 通常', ttsNarration: 'usually, 通常' }, { text: 'often 经常', ttsNarration: 'often, 经常' }, { text: 'sometimes 有时', ttsNarration: 'sometimes, 有时' }, { text: 'never 从不', ttsNarration: 'never, 从不' } ] }, ttsNarration: '频率副词从高到低：通常、经常、有时、从不' } },
+          { type: 'tip', content: '本课主要使用支架式教学法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -222,7 +225,7 @@ export const englishGrade6: Unit[] = [
             options: ['usually', 'sometimes', 'never', 'rarely'],
             answer: 'usually',
             hint: '约80%的频率，表示"通常"',
-            explanation: 'usually表示通常，约80%的频率，是最高的频率副词'
+            explanation: 'usually表示通常，约80%的频率，是最高的频率副词做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l3q2',
@@ -231,7 +234,7 @@ export const englishGrade6: Unit[] = [
             options: ['never', 'usually', 'always', 'often'],
             answer: 'never',
             hint: '0%的频率，表示"从不"',
-            explanation: 'never表示从不，频率为0%，表示从来不做某事'
+            explanation: 'never表示从不，频率为0%，表示从来不做某事做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l3q3',
@@ -240,7 +243,7 @@ export const englishGrade6: Unit[] = [
             answer: 'sometimes',
             acceptableAnswers: ['Sometimes'],
             hint: '约30%的频率，表示"有时"',
-            explanation: 'sometimes表示有时，约30%的频率，介于经常和从不之间'
+            explanation: 'sometimes表示有时，约30%的频率，介于经常和从不之间做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l3q4',
@@ -249,7 +252,7 @@ export const englishGrade6: Unit[] = [
             options: ['I usually go by bus.', 'I go usually by bus.', 'Usually I go by bus is.', 'I go by bus usually always.'],
             answer: 'I usually go by bus.',
             hint: '频率副词放在实义动词的什么位置？',
-            explanation: '频率副词放在实义动词前面，所以I usually go by bus正确'
+            explanation: '频率副词放在实义动词前面，所以I usually go by bus正确做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l3q5',
@@ -258,7 +261,7 @@ export const englishGrade6: Unit[] = [
             options: ['usually > often > sometimes > never', 'never > sometimes > often > usually', 'sometimes > usually > never > often', 'often > never > usually > sometimes'],
             answer: 'usually > often > sometimes > never',
             hint: '从最高频率到最低频率排列',
-            explanation: '频率从高到低：usually(通常) > often(经常) > sometimes(有时) > never(从不)'
+            explanation: '频率从高到低：usually(通常) > often(经常) > sometimes(有时) > never(从不)做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l3q6',
@@ -267,7 +270,7 @@ export const englishGrade6: Unit[] = [
             answer: 'never',
             acceptableAnswers: ['Never'],
             hint: '表示"从不"，本身已是否定，后面不加not',
-            explanation: 'never表示从不，本身已含否定意义，直接说I never go by subway'
+            explanation: 'never表示从不，本身已含否定意义，直接说I never go by subway做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l3q7',
@@ -276,7 +279,7 @@ export const englishGrade6: Unit[] = [
             options: ['Tuesday', 'Sunday', 'Friday', 'Wednesday'],
             answer: 'Tuesday',
             hint: '[星期顺序]（英语五年级-第2单元）',
-            explanation: 'Monday星期一后面是Tuesday星期二，星期顺序是五年级My Days of Week单元学的知识点'
+            explanation: 'Monday星期一后面是Tuesday星期二，星期顺序是五年级My Days of Week单元学的知识点做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -284,12 +287,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u1l4',
         title: '交通安全——Stop and wait',
         order: 4,
-        teachingMethod: '跨学科：安全+英语',
+        teachingMethod: '芬兰现象式学习 + 英语',
         learningObjective: '我能用英语说出交通安全规则并做对应动作',
         successCriteria: '①能说出3条交通规则 ②能用Stop/Wait/Go造句',
-        iDo: '家长介绍交通规则："Stop at a red light. Wait at a yellow light. Go at a green light."配合红绿灯道具演示',
-        weDo: '亲子一起演交通规则情景剧，家长举灯孩子说英语做动作',
-        youDo: '孩子独立用英语说出交通规则并做对应动作',
+        iDo: '家长介绍交通规则："Stop at a red light. Wait at a yellow light. Go at a green light."配合红绿灯道具演示 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起演交通规则情景剧，家长举灯孩子说英语做动作 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用英语说出交通规则并做对应动作【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：交通规则Stop at a red light.（红灯停）、Wait at a yellow light.（黄灯等）、Go at a green light.（绿灯行）。\n共学四步：\n①对话出题：家长举红灯问What should you do?并说Stop!。\n②孩子应答：孩子应说Stop at a red light!。\n③答错引导：若孩子说不出，家长当同学一起演！扫描课时发音动画听发音；让孩子点读课件规则卡；家长用红绿灯道具边演边说。\n④快速检测：1.孩子说出3条规则；2.用Stop/Wait/Go造句；3.做动作配合说。',
         funElement: '玩"红绿灯"游戏，家长说灯的颜色，孩子说英语并做停/等/行动作',
         gsapAnimations: ['GSAP:红绿灯场景构建-sceneBuild', 'GSAP:交通规则步骤-timeline', 'GSAP:规则高亮-highlight'],
@@ -301,7 +304,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: 'Stop/Wait/Go都是动词，表示动作。at a ... light表示"在...灯时"。red/yellow/green是颜色，修饰light。', label: '句型结构', animationType: 'pulse' },
           { type: 'example', content: 'red — 红色\nyellow — 黄色\ngreen — 绿色\nlight — 灯', label: '颜色与灯', animationType: 'sequence' },
           { type: 'tip', content: '交通安全很重要！记住：红灯停、黄灯等、绿灯行。还要走斑马线（crosswalk），左右看（look left and right）。', label: '安全小贴士', animationType: 'pulse' },
-          { type: 'animation', content: '红绿灯场景逐步构建动画，红黄绿灯依次出现并配规则', animationType: 'sceneBuild', animationConfig: { sceneType: 'sceneBuild', title: 'Traffic Lights', sceneBuildConfig: { sceneName: 'Traffic Safety', elements: [ { id: 'el-0', text: 'red', emoji: '🔴', delay: 0, animation: 'bounceIn', ttsText: 'red light, stop' }, { id: 'el-1', text: 'yellow', emoji: '🟡', delay: 0.5, animation: 'bounceIn', ttsText: 'yellow light, wait' }, { id: 'el-2', text: 'green', emoji: '🟢', delay: 1, animation: 'bounceIn', ttsText: 'green light, go' } ] }, ttsNarration: '交通规则：红灯停、黄灯等、绿灯行' } }
+          { type: 'animation', content: '红绿灯场景逐步构建动画，红黄绿灯依次出现并配规则', animationType: 'sceneBuild', animationConfig: { sceneType: 'sceneBuild', title: 'Traffic Lights', sceneBuildConfig: { sceneName: 'Traffic Safety', elements: [ { id: 'el-0', text: 'red', emoji: '🔴', delay: 0, animation: 'bounceIn', ttsText: 'red light, stop' }, { id: 'el-1', text: 'yellow', emoji: '🟡', delay: 0.5, animation: 'bounceIn', ttsText: 'yellow light, wait' }, { id: 'el-2', text: 'green', emoji: '🟢', delay: 1, animation: 'bounceIn', ttsText: 'green light, go' } ] }, ttsNarration: '交通规则：红灯停、黄灯等、绿灯行' } },
+          { type: 'tip', content: '本课主要使用跨学科：安全：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -311,7 +315,7 @@ export const englishGrade6: Unit[] = [
             options: ['Stop', 'Go', 'Wait', 'Run'],
             answer: 'Stop',
             hint: '红灯要做什么？',
-            explanation: '红灯要停下，Stop at a red light.红灯停'
+            explanation: '红灯要停下，Stop at a red light.红灯停做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l4q2',
@@ -320,7 +324,7 @@ export const englishGrade6: Unit[] = [
             options: ['green', 'red', 'yellow', 'blue'],
             answer: 'green',
             hint: '什么灯可以走？',
-            explanation: '绿灯可以走，Go at a green light.绿灯行'
+            explanation: '绿灯可以走，Go at a green light.绿灯行做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l4q3',
@@ -329,7 +333,7 @@ export const englishGrade6: Unit[] = [
             answer: 'Wait',
             acceptableAnswers: ['wait'],
             hint: '黄灯要做什么？',
-            explanation: '黄灯要等一等，Wait at a yellow light.黄灯等'
+            explanation: '黄灯要等一等，Wait at a yellow light.黄灯等做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l4q4',
@@ -338,7 +342,7 @@ export const englishGrade6: Unit[] = [
             options: ['Stop at red, wait at yellow, go at green.', 'Go at red, stop at yellow, wait at green.', 'Wait at red, go at yellow, stop at green.', 'Stop at green, wait at red, go at yellow.'],
             answer: 'Stop at red, wait at yellow, go at green.',
             hint: '红灯停、黄灯等、绿灯行',
-            explanation: '正确顺序：红灯停Stop at red，黄灯等Wait at yellow，绿灯行Go at green'
+            explanation: '正确顺序：红灯停Stop at red，黄灯等Wait at yellow，绿灯行Go at green做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l4q5',
@@ -347,7 +351,7 @@ export const englishGrade6: Unit[] = [
             options: ['Go at a green light.', 'Stop at a green light.', 'Wait at a green light.', 'Run at a green light.'],
             answer: 'Go at a green light.',
             hint: '绿灯亮了应该做什么？',
-            explanation: '绿灯行，绿灯亮了应该走，Go at a green light'
+            explanation: '绿灯行，绿灯亮了应该走，Go at a green light做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l4q6',
@@ -356,7 +360,7 @@ export const englishGrade6: Unit[] = [
             answer: 'at',
             acceptableAnswers: ['At'],
             hint: '表示"在...灯时"用哪个介词？',
-            explanation: 'at a ... light表示"在...灯时"，at是介词，Stop at a red light'
+            explanation: 'at a ... light表示"在...灯时"，at是介词，Stop at a red light做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l4q7',
@@ -365,7 +369,7 @@ export const englishGrade6: Unit[] = [
             options: ['bus', 'train', 'plane', 'ship'],
             answer: 'bus',
             hint: '[交通工具词汇]（英语二年级-第6单元）',
-            explanation: 'bus公交车在公路上跑并在公交站停靠，是二年级Transport单元学的交通工具词汇'
+            explanation: 'bus公交车在公路上跑并在公交站停靠，是二年级Transport单元学的交通工具词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -376,9 +380,9 @@ export const englishGrade6: Unit[] = [
         teachingMethod: '形成性评价',
         learningObjective: '我能通过第一单元综合检测，巩固交通词汇、句型和频率副词',
         successCriteria: '①能完成交通词汇题 ②能完成句型和频率副词题',
-        iDo: '家长示范检测题型，讲解交通词汇、句型、频率副词、交通安全四类题的解题方法',
-        weDo: '亲子一起做练习题，家长引导孩子分析题目，讨论答案',
-        youDo: '孩子独立完成综合检测，目标正确率≥80%',
+        iDo: '家长示范检测题型，讲解交通词汇、句型、频率副词、交通安全四类题的解题方法 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做练习题，家长引导孩子分析题目，讨论答案 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合检测，目标正确率≥80%【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：第一单元综合检测，包括交通词汇、How do you句型、频率副词、交通安全。\n共学四步：\n①对话出题：家长说我们来做第一单元检测，先复习一下。。\n②孩子应答：孩子应说bus, subway, bike, walk!。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学假装忘了，和孩子比赛说。\n④快速检测：1.孩子完成单元检测；2.正确率达80%；3.错题订正。',
         funElement: '通关后撒花庆祝，获得"Transport达人"徽章',
         gsapAnimations: ['GSAP:通关撒花-confetti', 'GSAP:题目逐个出现-stagger', 'GSAP:正确答案高亮-highlight'],
@@ -390,7 +394,8 @@ export const englishGrade6: Unit[] = [
           { type: 'dialogue', content: 'Tom: How do you usually go to school?\nAmy: I usually go by subway. Sometimes I walk. I never go by bus.\nTom: Remember: stop at a red light!\nAmy: Yes, safety first!', label: '综合对话', animationType: 'timeline' },
           { type: 'example', content: '易错点1：by bus（正确）/ by a bus（错误）\n易错点2：I walk（正确）/ I by walk（错误）\n易错点3：How does she go?（正确）/ How do she go?（错误）', label: '易错点提醒', animationType: 'sequence' },
           { type: 'tip', content: '检测不是考试，是帮我们查漏补缺。做错的题要弄懂原因，找到对应课时复习巩固。', label: '学习心态', animationType: 'pulse' },
-          { type: 'animation', content: '通关撒花动画，正确率达到80%触发庆祝特效', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'Transport Star', cardRevealConfig: { cards: [ { front: 'bus', back: '🚌', ttsText: 'bus' }, { front: 'subway', back: '🚇', ttsText: 'subway' }, { front: 'bike', back: '🚲', ttsText: 'bike' }, { front: 'walk', back: '🚶', ttsText: 'walk' } ] }, ttsNarration: '交通达人通关庆祝！' } }
+          { type: 'animation', content: '通关撒花动画，正确率达到80%触发庆祝特效', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'Transport Star', cardRevealConfig: { cards: [ { front: 'bus', back: '🚌', ttsText: 'bus' }, { front: 'subway', back: '🚇', ttsText: 'subway' }, { front: 'bike', back: '🚲', ttsText: 'bike' }, { front: 'walk', back: '🚶', ttsText: 'walk' } ] }, ttsNarration: '交通达人通关庆祝！' } },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -400,7 +405,7 @@ export const englishGrade6: Unit[] = [
             options: ['by', 'on', 'with', 'at'],
             answer: 'by',
             hint: '乘坐交通工具用哪个介词？',
-            explanation: '乘坐交通工具用by，by subway表示坐地铁'
+            explanation: '乘坐交通工具用by，by subway表示坐地铁做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l5q2',
@@ -409,7 +414,7 @@ export const englishGrade6: Unit[] = [
             options: ['usually', 'never', 'sometimes', 'rarely'],
             answer: 'usually',
             hint: '约80%的频率用哪个副词？',
-            explanation: 'usually表示通常，约80%的频率，是高频副词'
+            explanation: 'usually表示通常，约80%的频率，是高频副词做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l5q3',
@@ -418,7 +423,7 @@ export const englishGrade6: Unit[] = [
             answer: 'Stop',
             acceptableAnswers: ['stop'],
             hint: '红灯亮了要做什么？',
-            explanation: '红灯要停下，Stop at a red light.红灯停'
+            explanation: '红灯要停下，Stop at a red light.红灯停做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l5q4',
@@ -427,7 +432,7 @@ export const englishGrade6: Unit[] = [
             options: ['does', 'do', 'is', 'goes'],
             answer: 'does',
             hint: '主语是第三人称单数your father，用哪个助动词？',
-            explanation: '主语是第三人称单数，疑问句用does，动词用原形go：How does your father go to work?'
+            explanation: '主语是第三人称单数，疑问句用does，动词用原形go：How does your father go to work?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l5q5',
@@ -436,7 +441,7 @@ export const englishGrade6: Unit[] = [
             options: ['I sometimes walk to school.', 'I walk sometimes to school.', 'Sometimes I walk to school is good.', 'I to school sometimes walk.'],
             answer: 'I sometimes walk to school.',
             hint: '频率副词放在实义动词前面',
-            explanation: '频率副词sometimes放在实义动词walk前面，I sometimes walk to school.语序正确'
+            explanation: '频率副词sometimes放在实义动词walk前面，I sometimes walk to school.语序正确做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l5q6',
@@ -445,7 +450,7 @@ export const englishGrade6: Unit[] = [
             answer: 'wait',
             acceptableAnswers: ['Wait'],
             hint: '黄灯要做什么？',
-            explanation: '黄灯要等一等，Wait at a yellow light.黄灯等'
+            explanation: '黄灯要等一等，Wait at a yellow light.黄灯等做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u1l5q7',
@@ -454,7 +459,7 @@ export const englishGrade6: Unit[] = [
             options: ['subway', 'apple', 'desk', 'ruler'],
             answer: 'subway',
             hint: '[交通工具词汇]（英语二年级-第6单元）',
-            explanation: 'subway是地铁，属于交通工具，apple/desk/ruler都不是交通工具，是二年级Transport单元学的词汇'
+            explanation: 'subway是地铁，属于交通工具，apple/desk/ruler都不是交通工具，是二年级Transport单元学的词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }
@@ -471,12 +476,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u2l1',
         title: '方位词汇：next to/in front of/behind',
         order: 1,
-        teachingMethod: 'TPR全身反应法+实物指示',
+        teachingMethod: 'TPR全身反应法 + CPA教学法',
         learningObjective: '我能用next to/in front of/behind描述物品位置',
         successCriteria: '①能说出3个方位词 ②能用The...is...描述位置',
-        iDo: '家长用实物演示方位：把书放在不同位置说"next to/in front of/behind"，配合手势',
-        weDo: '亲子一起放物品在不同方位，家长说英语孩子摆，再互换角色',
-        youDo: '孩子独立用方位词描述物品位置',
+        iDo: '家长用实物演示方位：把书放在不同位置说"next to/in front of/behind"，配合手势 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起放物品在不同方位，家长说英语孩子摆，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用方位词描述物品位置【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：方位词next to（旁边）、in front of（前面）、behind（后面），句型The cat is next to the box.。\n共学四步：\n①对话出题：家长把书放桌上问Where is the book?并说It\'s next to the desk.。\n②孩子应答：孩子应说It\'s in front of the desk.。\n③答错引导：若孩子说不出，家长当同学一起摆！扫描课时发音动画听发音；让孩子点读课件方位卡；家长用真实物品边摆边说方位。\n④快速检测：1.孩子说出3个方位词；2.用next to造句；3.用behind造句。',
         funElement: '玩"藏宝图"游戏，家长用方位词描述宝藏位置，孩子去找',
         gsapAnimations: ['GSAP:物品方位出现-sceneBuild', 'GSAP:方位词卡片-cardReveal', 'GSAP:方位高亮-highlight'],
@@ -494,7 +499,8 @@ export const englishGrade6: Unit[] = [
             content: '前缀be-记忆法：be-可以加在名词前构成介词，表示"在...处"。be+hind（后面）=behind（在后面），be+side（旁边）=beside（在旁边），be+low（低）=below（在下面），be+yond=behind（在远处）。记住be-这个前缀，遇到be开头的介词就能拆开理解！',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用TPR全身反应法：用身体动作配合语言，边做边说加深记忆', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -504,7 +510,7 @@ export const englishGrade6: Unit[] = [
             options: ['next to', 'behind', 'in', 'on'],
             answer: 'next to',
             hint: '紧挨着、在旁边',
-            explanation: 'next to表示在...旁边、紧挨着，The book is next to the pen.书在笔旁边'
+            explanation: 'next to表示在...旁边、紧挨着，The book is next to the pen.书在笔旁边做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l1q2',
@@ -513,7 +519,7 @@ export const englishGrade6: Unit[] = [
             options: ['in front of', 'behind', 'next to', 'under'],
             answer: 'in front of',
             hint: '在房子前面能看到',
-            explanation: 'in front of表示在...前面，The car is in front of the house.车在房子前面'
+            explanation: 'in front of表示在...前面，The car is in front of the house.车在房子前面做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l1q3',
@@ -522,7 +528,7 @@ export const englishGrade6: Unit[] = [
             answer: 'behind',
             acceptableAnswers: ['Behind'],
             hint: '在门后面看不到',
-            explanation: 'behind表示在...后面，The cat is behind the door.猫在门后面'
+            explanation: 'behind表示在...后面，The cat is behind the door.猫在门后面做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l1q4',
@@ -531,7 +537,7 @@ export const englishGrade6: Unit[] = [
             options: ['The bank is next to the school.', 'The bank next to is the school.', 'Next to the bank is school the.', 'The bank is the school next to.'],
             answer: 'The bank is next to the school.',
             hint: '主语+be+方位词+名词',
-            explanation: '句型：主语+be动词+方位词+名词，The bank is next to the school.语序正确'
+            explanation: '句型：主语+be动词+方位词+名词，The bank is next to the school.语序正确做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l1q5',
@@ -540,7 +546,7 @@ export const englishGrade6: Unit[] = [
             options: ['in front of', 'next to', 'under', 'on'],
             answer: 'in front of',
             hint: '在后面和在前面是反义关系',
-            explanation: 'behind（在后面）和in front of（在前面）是反义词，表示相反的方位'
+            explanation: 'behind（在后面）和in front of（在前面）是反义词，表示相反的方位做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l1q6',
@@ -549,7 +555,7 @@ export const englishGrade6: Unit[] = [
             answer: 'next',
             acceptableAnswers: ['Next'],
             hint: '在旁边用哪个方位词？',
-            explanation: 'next to表示在旁边，The park is next to the hospital.公园在医院旁边'
+            explanation: 'next to表示在旁边，The park is next to the hospital.公园在医院旁边做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l1q7',
@@ -558,7 +564,7 @@ export const englishGrade6: Unit[] = [
             answer: 'park',
             acceptableAnswers: ['Park'],
             hint: '[场所词汇]（英语二年级-第3单元）',
-            explanation: 'park是公园，孩子们玩耍的地方，是二年级Places单元学过的场所词汇'
+            explanation: 'park是公园，孩子们玩耍的地方，是二年级Places单元学过的场所词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -566,12 +572,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u2l2',
         title: 'Where is the...? 问路句型',
         order: 2,
-        teachingMethod: '情境对话法：模拟问路',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用Where is the...?问路并回答',
         successCriteria: '①能用Where is the...?提问 ②能用It\'s next to...回答',
-        iDo: '家长模拟问路："Where is the museum? It\'s next to the park."配合地图道具演示',
-        weDo: '亲子一起演问路情景剧，家长问孩子答，再互换角色',
-        youDo: '孩子独立用Where is...?句型问路并回答方位',
+        iDo: '家长模拟问路："Where is the museum? It\'s next to the park."配合地图道具演示 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起演问路情景剧，家长问孩子答，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用Where is...?句型问路并回答方位【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：问路句型Where is the museum?（博物馆在哪），回答It\'s next to the park.。\n共学四步：\n①对话出题：家长指地图问Where is the hospital?。\n②孩子应答：孩子应说It\'s next to the school.。\n③答错引导：若孩子说不出，家长当同学一起查！扫描课时发音动画听发音；让孩子点读课件对话卡；家长用地图边指边问。\n④快速检测：1.孩子用Where is...?提问；2.用It\'s next to...回答；3.问答互换。',
         funElement: '玩"小导游"游戏，孩子当导游，家长当游客问路',
         gsapAnimations: ['GSAP:问路对话展开-timeline', 'GSAP:地点卡片-cardReveal', 'GSAP:问答高亮-highlight'],
@@ -583,7 +589,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '问路时先说Excuse me（打扰一下）表示礼貌。Where is...?回答用It\'s...，It指代问的地方。', label: '礼貌用语', animationType: 'pulse' },
           { type: 'example', content: 'Where is the zoo? It\'s next to the park.\nWhere is the bank? It\'s behind the school.\nWhere is the hospital? It\'s in front of the hotel.', label: '问路操练', animationType: 'sequence' },
           { type: 'tip', content: '感谢别人指路后要说Thank you!对方回答You\'re welcome.（不客气）。这是礼貌的应答。', label: '感谢应答', animationType: 'pulse' },
-          { type: 'animation', content: '问路对话逐步展开动画，配合时间线展示问路过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Asking the Way', timelineConfig: { steps: [ { text: 'Excuse me, where is the museum?', ttsNarration: 'Excuse me, where is the museum?' }, { text: 'It\'s next to the park.', ttsNarration: 'It is next to the park.' }, { text: 'Thank you!', ttsNarration: 'Thank you!' }, { text: 'You\'re welcome.', ttsNarration: 'You are welcome.' } ] }, ttsNarration: '问路：打扰一下，博物馆在哪儿？在公园旁边。谢谢！不客气。' } }
+          { type: 'animation', content: '问路对话逐步展开动画，配合时间线展示问路过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Asking the Way', timelineConfig: { steps: [ { text: 'Excuse me, where is the museum?', ttsNarration: 'Excuse me, where is the museum?' }, { text: 'It\'s next to the park.', ttsNarration: 'It is next to the park.' }, { text: 'Thank you!', ttsNarration: 'Thank you!' }, { text: 'You\'re welcome.', ttsNarration: 'You are welcome.' } ] }, ttsNarration: '问路：打扰一下，博物馆在哪儿？在公园旁边。谢谢！不客气。' } },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -593,7 +600,7 @@ export const englishGrade6: Unit[] = [
             options: ['Where', 'What', 'How', 'Who'],
             answer: 'Where',
             hint: '问地点用哪个疑问词？',
-            explanation: 'Where用来问地点，Where is the museum?问博物馆在哪儿'
+            explanation: 'Where用来问地点，Where is the museum?问博物馆在哪儿做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l2q2',
@@ -602,7 +609,7 @@ export const englishGrade6: Unit[] = [
             options: ['It\'s', 'They\'re', 'He\'s', 'She\'s'],
             answer: 'It\'s',
             hint: '指代the hospital（单数地点）用什么代词？',
-            explanation: '指代单数地点the hospital用It，It\'s next to the school.它在学校旁边'
+            explanation: '指代单数地点the hospital用It，It\'s next to the school.它在学校旁边做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l2q3',
@@ -611,7 +618,7 @@ export const englishGrade6: Unit[] = [
             answer: 'Excuse',
             acceptableAnswers: ['excuse'],
             hint: '问路前礼貌地说"打扰一下"',
-            explanation: 'Excuse me表示打扰一下，问路时先说Excuse me表示礼貌'
+            explanation: 'Excuse me表示打扰一下，问路时先说Excuse me表示礼貌做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l2q4',
@@ -620,7 +627,7 @@ export const englishGrade6: Unit[] = [
             options: ['You\'re welcome.', 'I\'m fine.', 'Goodbye.', 'Sorry.'],
             answer: 'You\'re welcome.',
             hint: '别人感谢你，你怎么回应？',
-            explanation: '别人说Thank you，你要回应You\'re welcome.表示不客气'
+            explanation: '别人说Thank you，你要回应You\'re welcome.表示不客气做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l2q5',
@@ -629,7 +636,7 @@ export const englishGrade6: Unit[] = [
             options: ['behind', 'next', 'where', 'how'],
             answer: 'behind',
             hint: '在医院后面看不到',
-            explanation: 'behind表示在后面，It\'s behind the hospital.它在医院后面'
+            explanation: 'behind表示在后面，It\'s behind the hospital.它在医院后面做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l2q6',
@@ -638,7 +645,7 @@ export const englishGrade6: Unit[] = [
             answer: 'It\'s',
             acceptableAnswers: ['It is', "It's"],
             hint: '指代the park用It，缩写形式',
-            explanation: '指代the park用It，It\'s = It is，It\'s next to the school.它在公园旁边'
+            explanation: '指代the park用It，It\'s = It is，It\'s next to the school.它在公园旁边做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l2q7',
@@ -647,7 +654,7 @@ export const englishGrade6: Unit[] = [
             options: ['on', 'at', 'of', 'by'],
             answer: 'on',
             hint: '[方位介词on/in/under]（英语四年级-第1单元）',
-            explanation: 'on表示在...上面，四年级My Classroom单元学过on/in/under方位介词'
+            explanation: 'on表示在...上面，四年级My Classroom单元学过on/in/under方位介词做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -655,12 +662,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u2l3',
         title: '指路句型：Turn left/right. Go straight.',
         order: 3,
-        teachingMethod: '情境式教学法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用Turn left/right. Go straight.指路',
         successCriteria: '①能说出3个指路短语 ②能用Turn...指路',
-        iDo: '家长示范指路："Turn left. Turn right. Go straight. It\'s on your left."配合手势和地图',
-        weDo: '亲子一起演指路情景剧，家长指路孩子走，再互换角色',
-        youDo: '孩子独立用指路句型给别人指路',
+        iDo: '家长示范指路："Turn left. Turn right. Go straight. It\'s on your left."配合手势和地图 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起演指路情景剧，家长指路孩子走，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用指路句型给别人指路【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：指路句型Turn left.（左转）、Turn right.（右转）、Go straight.（直走）。\n共学四步：\n①对话出题：家长问How to get to the park?并说Turn left, then go straight.。\n②孩子应答：孩子应说Turn right and go straight.。\n③答错引导：若孩子说不出，家长当同学一起指！扫描课时发音动画听发音；让孩子点读课件指路卡；家长用手势边比划边说。\n④快速检测：1.孩子说出3个指路短语；2.用Turn left造句；3.用Go straight造句。',
         funElement: '玩"蒙眼导航"游戏，孩子蒙眼，家长用英语指路引导到达终点',
         gsapAnimations: ['GSAP:路线指引动画-timeline', 'GSAP:方向箭头出现-sceneBuild', 'GSAP:指路步骤高亮-highlight'],
@@ -672,7 +679,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: 'Turn left/right是祈使句，表示指令。on your left/right表示在你的左/右边。get to表示到达某地。', label: '句型结构', animationType: 'pulse' },
           { type: 'example', content: 'Go straight and turn right. 直走然后右转。\nTurn left at the park. 在公园处左转。\nIt\'s on your left. 它在你的左边。', label: '指路操练', animationType: 'sequence' },
           { type: 'tip', content: 'left是左，right是右。记住：写字的手是right（右），另一只手是left（左）。on your left在左边，on your right在右边。', label: '左右辨析', animationType: 'pulse' },
-          { type: 'animation', content: '路线指引动画，箭头按步骤出现展示指路过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Giving Directions', timelineConfig: { steps: [ { text: 'Go straight.', ttsNarration: 'Go straight.' }, { text: 'Turn left.', ttsNarration: 'Turn left.' }, { text: 'Turn right.', ttsNarration: 'Turn right.' }, { text: 'It\'s on your left.', ttsNarration: 'It is on your left.' } ] }, ttsNarration: '指路：直走、左转、右转、在你的左边' } }
+          { type: 'animation', content: '路线指引动画，箭头按步骤出现展示指路过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Giving Directions', timelineConfig: { steps: [ { text: 'Go straight.', ttsNarration: 'Go straight.' }, { text: 'Turn left.', ttsNarration: 'Turn left.' }, { text: 'Turn right.', ttsNarration: 'Turn right.' }, { text: 'It\'s on your left.', ttsNarration: 'It is on your left.' } ] }, ttsNarration: '指路：直走、左转、右转、在你的左边' } },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -682,7 +690,7 @@ export const englishGrade6: Unit[] = [
             options: ['Turn', 'Go', 'Stop', 'Walk'],
             answer: 'Turn',
             hint: '转向用哪个动词？',
-            explanation: 'Turn表示转向，Turn left向左转，Turn left at the park在公园处左转'
+            explanation: 'Turn表示转向，Turn left向左转，Turn left at the park在公园处左转做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l3q2',
@@ -691,7 +699,7 @@ export const englishGrade6: Unit[] = [
             options: ['Go', 'Turn', 'Stop', 'Look'],
             answer: 'Go',
             hint: '直走用哪个动词？',
-            explanation: 'Go straight表示直走，Go straight then turn right直走然后右转'
+            explanation: 'Go straight表示直走，Go straight then turn right直走然后右转做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l3q3',
@@ -700,7 +708,7 @@ export const englishGrade6: Unit[] = [
             answer: 'right',
             acceptableAnswers: ['Right'],
             hint: '在右边用哪个词？',
-            explanation: 'right表示右，It\'s on your right.它在你右边'
+            explanation: 'right表示右，It\'s on your right.它在你右边做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l3q4',
@@ -709,7 +717,7 @@ export const englishGrade6: Unit[] = [
             options: ['get', 'go', 'turn', 'come'],
             answer: 'get',
             hint: '表示到达某地用哪个词？',
-            explanation: 'get to表示到达，How can I get to the museum?我怎样能到博物馆？'
+            explanation: 'get to表示到达，How can I get to the museum?我怎样能到博物馆？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l3q5',
@@ -718,7 +726,7 @@ export const englishGrade6: Unit[] = [
             options: ['Turn right.', 'Turn left.', 'Go straight.', 'Stop right.'],
             answer: 'Turn right.',
             hint: '向右转怎么说？',
-            explanation: 'Turn right表示向右转，Turn是转向，right是右'
+            explanation: 'Turn right表示向右转，Turn是转向，right是右做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l3q6',
@@ -727,7 +735,7 @@ export const englishGrade6: Unit[] = [
             answer: 'left',
             acceptableAnswers: ['Left'],
             hint: '博物馆在左边，应该往哪转？',
-            explanation: '博物馆在左边，要左转，turn left向左转，博物馆就在左边'
+            explanation: '博物馆在左边，要左转，turn left向左转，博物馆就在左边做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l3q7',
@@ -736,7 +744,7 @@ export const englishGrade6: Unit[] = [
             options: ['supermarket', 'hospital', 'park', 'zoo'],
             answer: 'supermarket',
             hint: '[场所词汇]（英语二年级-第3单元）',
-            explanation: 'supermarket是超市，可以买东西，是二年级Places单元学过的场所词汇'
+            explanation: 'supermarket是超市，可以买东西，是二年级Places单元学过的场所词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -744,12 +752,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u2l4',
         title: '城市建筑词汇：hospital/post office/bookstore',
         order: 4,
-        teachingMethod: '情境式：城市地图',
+        teachingMethod: '情境教学法',
         learningObjective: '我能说出hospital/post office/bookstore等城市建筑词汇',
         successCriteria: '①能说出5个建筑词汇 ②能用It\'s...描述建筑位置',
-        iDo: '家长出示城市地图说建筑词汇："hospital/post office/bookstore"，指认位置',
-        weDo: '亲子一起看地图说建筑词汇，家长说中文孩子说英文，再互换角色',
-        youDo: '孩子独立辨认城市建筑词汇并描述位置',
+        iDo: '家长出示城市地图说建筑词汇："hospital/post office/bookstore"，指认位置 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起看地图说建筑词汇，家长说中文孩子说英文，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立辨认城市建筑词汇并描述位置【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：城市建筑hospital（医院）、post office（邮局）、bookstore（书店）、bank（银行）、supermarket（超市）。\n共学四步：\n①对话出题：家长指地图问What\'s this?并说Hospital!。\n②孩子应答：孩子应说Post office!。\n③答错引导：若孩子说不出，家长当同学一起认！扫描课时发音动画听发音；让孩子点读课件建筑卡；家长用地图边指边说英语。\n④快速检测：1.孩子说出5个建筑词；2.用It\'s next to...描述位置；3.说出3个建筑。',
         funElement: '玩"城市规划师"游戏，孩子在地图上摆放建筑并用英语描述位置',
         gsapAnimations: ['GSAP:城市地图建筑出现-sceneBuild', 'GSAP:建筑卡片-cardReveal', 'GSAP:建筑分类-stagger'],
@@ -761,7 +769,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '这些建筑名词都是单数可数名词，前面要加the/a。the hospital特指那家医院，a bookstore泛指一家书店。', label: '名词用法', animationType: 'pulse' },
           { type: 'example', content: 'The hospital is next to the park. 医院在公园旁边。\nThe bookstore is in front of the bank. 书店在银行前面。\nThe post office is behind the school. 邮局在学校后面。', label: '建筑位置造句', animationType: 'sequence' },
           { type: 'tip', content: 'bookstore是book（书）+store（商店）合成的词，叫合成词。类似还有post office（post邮+office办公室）。', label: '词汇构成', animationType: 'pulse' },
-          { type: 'animation', content: '城市地图逐步出现建筑动画，建筑卡片依次揭示', animationType: 'sceneBuild', animationConfig: { sceneType: 'sceneBuild', title: 'City Buildings', sceneBuildConfig: { sceneName: 'City Map', elements: [ { id: 'el-0', text: 'hospital', emoji: '🏥', delay: 0, animation: 'bounceIn', ttsText: 'hospital, 医院' }, { id: 'el-1', text: 'post office', emoji: '🏤', delay: 0.4, animation: 'bounceIn', ttsText: 'post office, 邮局' }, { id: 'el-2', text: 'bookstore', emoji: '📚', delay: 0.8, animation: 'bounceIn', ttsText: 'bookstore, 书店' }, { id: 'el-3', text: 'bank', emoji: '🏦', delay: 1.2, animation: 'bounceIn', ttsText: 'bank, 银行' } ] }, ttsNarration: '城市建筑：医院、邮局、书店、银行' } }
+          { type: 'animation', content: '城市地图逐步出现建筑动画，建筑卡片依次揭示', animationType: 'sceneBuild', animationConfig: { sceneType: 'sceneBuild', title: 'City Buildings', sceneBuildConfig: { sceneName: 'City Map', elements: [ { id: 'el-0', text: 'hospital', emoji: '🏥', delay: 0, animation: 'bounceIn', ttsText: 'hospital, 医院' }, { id: 'el-1', text: 'post office', emoji: '🏤', delay: 0.4, animation: 'bounceIn', ttsText: 'post office, 邮局' }, { id: 'el-2', text: 'bookstore', emoji: '📚', delay: 0.8, animation: 'bounceIn', ttsText: 'bookstore, 书店' }, { id: 'el-3', text: 'bank', emoji: '🏦', delay: 1.2, animation: 'bounceIn', ttsText: 'bank, 银行' } ] }, ttsNarration: '城市建筑：医院、邮局、书店、银行' } },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -771,7 +780,7 @@ export const englishGrade6: Unit[] = [
             options: ['hospital', 'bookstore', 'post office', 'park'],
             answer: 'hospital',
             hint: '生病要去哪里？',
-            explanation: 'hospital是医院，生病了要去医院看医生'
+            explanation: 'hospital是医院，生病了要去医院看医生做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l4q2',
@@ -780,7 +789,7 @@ export const englishGrade6: Unit[] = [
             options: ['bookstore', 'hospital', 'bank', 'zoo'],
             answer: 'bookstore',
             hint: '买书去哪里？',
-            explanation: 'bookstore是书店，买书要去书店'
+            explanation: 'bookstore是书店，买书要去书店做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l4q3',
@@ -789,7 +798,7 @@ export const englishGrade6: Unit[] = [
             answer: 'post',
             acceptableAnswers: ['Post'],
             hint: '寄信去邮局，邮局叫什么？',
-            explanation: 'post office是邮局，寄信要去邮局'
+            explanation: 'post office是邮局，寄信要去邮局做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l4q4',
@@ -798,7 +807,7 @@ export const englishGrade6: Unit[] = [
             options: ['next to', 'where', 'how', 'who'],
             answer: 'next to',
             hint: '紧挨着、在旁边',
-            explanation: 'next to表示在旁边，It\'s next to the hospital.它在医院旁边'
+            explanation: 'next to表示在旁边，It\'s next to the hospital.它在医院旁边做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l4q5',
@@ -807,7 +816,7 @@ export const englishGrade6: Unit[] = [
             options: ['store', 'office', 'house', 'room'],
             answer: 'store',
             hint: 'bookstore是合成词，store是什么意思？',
-            explanation: 'bookstore = book（书）+ store（商店），是合成词，表示书店'
+            explanation: 'bookstore = book（书）+ store（商店），是合成词，表示书店做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l4q6',
@@ -816,7 +825,7 @@ export const englishGrade6: Unit[] = [
             answer: 'museum',
             acceptableAnswers: ['Museum'],
             hint: '能看到古老东西的地方',
-            explanation: 'museum是博物馆，可以看到古老的展品，The museum is behind the school.'
+            explanation: 'museum是博物馆，可以看到古老的展品，The museum is behind the school.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l4q7',
@@ -825,7 +834,7 @@ export const englishGrade6: Unit[] = [
             options: ['in', 'on', 'under', 'behind'],
             answer: 'in',
             hint: '[方位介词on/in/under]（英语四年级-第1单元）',
-            explanation: 'in表示在...里面，四年级My Classroom单元学过in/on/under方位介词'
+            explanation: 'in表示在...里面，四年级My Classroom单元学过in/on/under方位介词做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -836,9 +845,9 @@ export const englishGrade6: Unit[] = [
         teachingMethod: '形成性评价',
         learningObjective: '我能通过第二单元综合检测，巩固方位、问路和建筑词汇',
         successCriteria: '①能完成方位和建筑词汇题 ②能完成问路指路句型题',
-        iDo: '家长示范检测题型，讲解方位、问路、指路、建筑四类题的解题方法',
-        weDo: '亲子一起做练习题，家长引导孩子分析题目，讨论答案',
-        youDo: '孩子独立完成综合检测，目标正确率≥80%',
+        iDo: '家长示范检测题型，讲解方位、问路、指路、建筑四类题的解题方法 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做练习题，家长引导孩子分析题目，讨论答案 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合检测，目标正确率≥80%【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：第二单元综合检测，包括方位词、问路句型、指路句型、建筑词汇。\n共学四步：\n①对话出题：家长说我们来做第二单元检测，先复习一下。。\n②孩子应答：孩子应说next to, in front of, behind!。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学假装忘了，和孩子比赛说。\n④快速检测：1.孩子完成单元检测；2.正确率达80%；3.错题订正。',
         funElement: '通关后撒花庆祝，获得"Direction达人"徽章',
         gsapAnimations: ['GSAP:通关撒花-confetti', 'GSAP:题目逐个出现-stagger', 'GSAP:正确答案高亮-highlight'],
@@ -850,7 +859,8 @@ export const englishGrade6: Unit[] = [
           { type: 'dialogue', content: 'Tom: Excuse me, where is the hospital?\nAmy: Go straight. Turn left. It\'s next to the bookstore.\nTom: Thank you!\nAmy: You\'re welcome.', label: '综合问路对话', animationType: 'timeline' },
           { type: 'example', content: '易错点1：Where is...?（正确）/ Where ... is?（错误）\n易错点2：Turn left（正确）/ Turn to left（错误）\n易错点3：next to（正确）/ next of（错误）', label: '易错点提醒', animationType: 'sequence' },
           { type: 'tip', content: '问路指路是生活常用技能，多在生活中练习，去商场、公园时试着用英语问路指路。', label: '生活应用', animationType: 'pulse' },
-          { type: 'animation', content: '通关撒花动画，正确率达到80%触发庆祝特效', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'Direction Star', cardRevealConfig: { cards: [ { front: 'left', back: '⬅️', ttsText: 'left, 左' }, { front: 'right', back: '➡️', ttsText: 'right, 右' }, { front: 'straight', back: '⬆️', ttsText: 'straight, 直' } ] }, ttsNarration: '方向达人通关庆祝！' } }
+          { type: 'animation', content: '通关撒花动画，正确率达到80%触发庆祝特效', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'Direction Star', cardRevealConfig: { cards: [ { front: 'left', back: '⬅️', ttsText: 'left, 左' }, { front: 'right', back: '➡️', ttsText: 'right, 右' }, { front: 'straight', back: '⬆️', ttsText: 'straight, 直' } ] }, ttsNarration: '方向达人通关庆祝！' } },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -860,7 +870,7 @@ export const englishGrade6: Unit[] = [
             options: ['Where', 'What', 'How', 'Who'],
             answer: 'Where',
             hint: '问地点用哪个疑问词？',
-            explanation: 'Where问地点，Where is the hospital?问医院在哪儿'
+            explanation: 'Where问地点，Where is the hospital?问医院在哪儿做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l5q2',
@@ -869,7 +879,7 @@ export const englishGrade6: Unit[] = [
             options: ['left', 'right', 'up', 'down'],
             answer: 'left',
             hint: '博物馆在左边，往哪转？',
-            explanation: '博物馆在左边要左转，turn left向左转，博物馆就在左边'
+            explanation: '博物馆在左边要左转，turn left向左转，博物馆就在左边做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l5q3',
@@ -878,7 +888,7 @@ export const englishGrade6: Unit[] = [
             answer: 'Excuse',
             acceptableAnswers: ['excuse'],
             hint: '问路前礼貌地说"打扰一下"',
-            explanation: 'Excuse me表示打扰一下，问路时先说Excuse me表示礼貌'
+            explanation: 'Excuse me表示打扰一下，问路时先说Excuse me表示礼貌做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l5q4',
@@ -887,7 +897,7 @@ export const englishGrade6: Unit[] = [
             options: ['behind', 'next to', 'in front of', 'where'],
             answer: 'behind',
             hint: '看不到说明在后面',
-            explanation: 'behind表示在后面，看不到说明书店在医院后面'
+            explanation: 'behind表示在后面，看不到说明书店在医院后面做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l5q5',
@@ -896,7 +906,7 @@ export const englishGrade6: Unit[] = [
             options: ['Thank you', 'Sorry', 'Goodbye', 'Hello'],
             answer: 'Thank you',
             hint: '别人帮助你，要说什么？',
-            explanation: '别人帮你指路要说Thank you表示感谢'
+            explanation: '别人帮你指路要说Thank you表示感谢做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l5q6',
@@ -905,7 +915,7 @@ export const englishGrade6: Unit[] = [
             answer: 'hospital',
             acceptableAnswers: ['Hospital'],
             hint: '生病要去哪里？',
-            explanation: 'hospital是医院，生病了要去医院看医生'
+            explanation: 'hospital是医院，生病了要去医院看医生做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u2l5q7',
@@ -914,7 +924,7 @@ export const englishGrade6: Unit[] = [
             options: ['school', 'run', 'blue', 'happy'],
             answer: 'school',
             hint: '[场所词汇]（英语二年级-第3单元）',
-            explanation: 'school是学校，属于场所，run/blue/happy都不是场所，是二年级Places单元学的词汇'
+            explanation: 'school是学校，属于场所，run/blue/happy都不是场所，是二年级Places单元学的词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }
@@ -931,12 +941,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u3l1',
         title: '将来时be going to',
         order: 1,
-        teachingMethod: '支架式：时态入门',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能用be going to句型表达将来计划',
         successCriteria: '①能说出be going to结构 ②能用I am going to...造句',
-        iDo: '家长示范be going to表示计划："I am going to read a book. He is going to play football."配合日历道具',
-        weDo: '亲子一起用be going to造句，家长说中文孩子说英文，再互换角色',
-        youDo: '孩子独立用be going to造句表达自己的计划',
+        iDo: '家长示范be going to表示计划："I am going to read a book. He is going to play football."配合日历道具 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起用be going to造句，家长说中文孩子说英文，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用be going to造句表达自己的计划【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：将来时be going to，结构：主语+be+going to+动词原形。I am going to read a book.。\n共学四步：\n①对话出题：家长问What are you going to do tomorrow?并说I am going to read a book.。\n②孩子应答：孩子应说I am going to swim.。\n③答错引导：若孩子说不出，家长当同学一起说！扫描课时发音动画听发音；让孩子点读课件句型卡；家长强调口诀"I用am、He用is、They用are"，边说边比划。\n④快速检测：1.孩子说出be going to结构；2.用I am going to...造句；3.用He is going to...造句。',
         funElement: '玩"计划大师"游戏，抽活动卡片用be going to说计划',
         gsapAnimations: ['GSAP:be going to句型构建-timeline', 'GSAP:句型结构出现-cardReveal', 'GSAP:关键词高亮-highlight'],
@@ -954,7 +964,8 @@ export const englishGrade6: Unit[] = [
             content: '语法记忆口诀：be going to的"be随主语变"口诀——I用am，He/She用is，They用are，going to后面加动词原形。用一句"I am going to read"记结构：主语+be+going to+动词原形=将来计划。going to字面意思是"要去"，所以表示"打算做某事"。',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用支架式：时态入门：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -964,7 +975,7 @@ export const englishGrade6: Unit[] = [
             options: ['am', 'is', 'are', 'be'],
             answer: 'am',
             hint: '主语I用哪个be动词？',
-            explanation: '主语I用am，I am going to read a book.我打算读书'
+            explanation: '主语I用am，I am going to read a book.我打算读书做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l1q2',
@@ -973,7 +984,7 @@ export const englishGrade6: Unit[] = [
             options: ['is', 'am', 'are', 'be'],
             answer: 'is',
             hint: '主语He用哪个be动词？',
-            explanation: '主语He第三人称单数用is，He is going to play football.他打算踢足球'
+            explanation: '主语He第三人称单数用is，He is going to play football.他打算踢足球做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l1q3',
@@ -982,7 +993,7 @@ export const englishGrade6: Unit[] = [
             answer: 'are',
             acceptableAnswers: ['Are'],
             hint: '主语They用哪个be动词？',
-            explanation: '主语They复数用are，They are going to swim.他们打算游泳'
+            explanation: '主语They复数用are，They are going to swim.他们打算游泳做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l1q4',
@@ -991,7 +1002,7 @@ export const englishGrade6: Unit[] = [
             options: ['sing', 'singing', 'sings', 'to sing'],
             answer: 'sing',
             hint: 'be going to后面接什么形式的动词？',
-            explanation: 'be going to后面接动词原形，She is going to sing a song.她打算唱歌'
+            explanation: 'be going to后面接动词原形，She is going to sing a song.她打算唱歌做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l1q5',
@@ -1000,7 +1011,7 @@ export const englishGrade6: Unit[] = [
             options: ['I am going to read a book.', 'I am going read a book.', 'I going to read a book.', 'I am going to reading a book.'],
             answer: 'I am going to read a book.',
             hint: 'be going to + 动词原形',
-            explanation: 'be going to + 动词原形，I am going to read a book.结构完整正确'
+            explanation: 'be going to + 动词原形，I am going to read a book.结构完整正确做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l1q6',
@@ -1009,7 +1020,7 @@ export const englishGrade6: Unit[] = [
             answer: 'rain',
             acceptableAnswers: ['Rain'],
             hint: 'be going to后面接动词原形',
-            explanation: 'be going to + 动词原形rain，It is going to rain.要下雨了'
+            explanation: 'be going to + 动词原形rain，It is going to rain.要下雨了做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l1q7',
@@ -1018,7 +1029,7 @@ export const englishGrade6: Unit[] = [
             answer: 'can',
             acceptableAnswers: ['Can'],
             hint: '[can/can\'t能力表达]（英语五年级-第4单元）',
-            explanation: 'can表示能、会，五年级What Can You Do单元学过用can/can\'t表达能力'
+            explanation: 'can表示能、会，五年级What Can You Do单元学过用can/can\'t表达能力做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1026,12 +1037,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u3l2',
         title: 'What are you going to do? 问计划',
         order: 2,
-        teachingMethod: '情境对话法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用What are you going to do?询问并回答计划',
         successCriteria: '①能用What are you going to do?提问 ②能用I\'m going to...回答',
-        iDo: '家长示范问答计划："What are you going to do tomorrow? I\'m going to read a book."配合日历',
-        weDo: '亲子一起问答计划，家长问孩子答，再互换角色',
-        youDo: '孩子独立用What are you going to do?询问并回答计划',
+        iDo: '家长示范问答计划："What are you going to do tomorrow? I\'m going to read a book."配合日历 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起问答计划，家长问孩子答，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用What are you going to do?询问并回答计划【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：问计划句型What are you going to do tomorrow?（明天打算做什么），回答I\'m going to read a book.。\n共学四步：\n①对话出题：家长问What are you going to do this weekend?。\n②孩子应答：孩子应说I\'m going to visit my grandma.。\n③答错引导：若孩子说不出，家长当同学一起聊！扫描课时发音动画听发音；让孩子点读课件对话卡；家长用日历边指边问。\n④快速检测：1.孩子用What are you going to...?提问；2.用I\'m going to...回答；3.问答互换。',
         funElement: '玩"计划采访"游戏，孩子当记者采访家人的周末计划',
         gsapAnimations: ['GSAP:计划对话展开-timeline', 'GSAP:对话气泡弹出-stagger', 'GSAP:问答高亮-highlight'],
@@ -1043,7 +1054,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '问"你"用What are you going to do?问"他/她"用What is he/she going to do?回答用I\'m/He\'s going to...', label: '人称变化', animationType: 'pulse' },
           { type: 'example', content: 'What are you going to do? I\'m going to read.\nWhat is she going to do? She\'s going to dance.\nWhat are they going to do? They\'re going to swim.', label: '问答操练', animationType: 'sequence' },
           { type: 'tip', content: 'I\'m = I am，He\'s = He is，They\'re = They are。口语中常用缩写形式，更自然流畅。', label: '缩写形式', animationType: 'pulse' },
-          { type: 'animation', content: '计划对话逐步展开动画，配合时间线展示问答过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Weekend Plan', timelineConfig: { steps: [ { text: 'What are you going to do this weekend?', ttsNarration: 'What are you going to do this weekend?' }, { text: 'I\'m going to visit my grandma.', ttsNarration: 'I am going to visit my grandma.' }, { text: 'What about you?', ttsNarration: 'What about you?' }, { text: 'I\'m going to play football.', ttsNarration: 'I am going to play football.' } ] }, ttsNarration: '周末计划：你周末打算做什么？我打算去看奶奶。你呢？我打算踢足球。' } }
+          { type: 'animation', content: '计划对话逐步展开动画，配合时间线展示问答过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Weekend Plan', timelineConfig: { steps: [ { text: 'What are you going to do this weekend?', ttsNarration: 'What are you going to do this weekend?' }, { text: 'I\'m going to visit my grandma.', ttsNarration: 'I am going to visit my grandma.' }, { text: 'What about you?', ttsNarration: 'What about you?' }, { text: 'I\'m going to play football.', ttsNarration: 'I am going to play football.' } ] }, ttsNarration: '周末计划：你周末打算做什么？我打算去看奶奶。你呢？我打算踢足球。' } },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1053,7 +1065,7 @@ export const englishGrade6: Unit[] = [
             options: ['What', 'Where', 'How', 'Who'],
             answer: 'What',
             hint: '问"做什么"用哪个疑问词？',
-            explanation: 'What问做什么，What are you going to do?你打算做什么？'
+            explanation: 'What问做什么，What are you going to do?你打算做什么？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l2q2',
@@ -1062,7 +1074,7 @@ export const englishGrade6: Unit[] = [
             options: ['She\'s', 'She', 'Her', 'Hers'],
             answer: 'She\'s',
             hint: '主语she用is，缩写形式',
-            explanation: 'She\'s = She is，She\'s going to dance.她打算跳舞'
+            explanation: 'She\'s = She is，She\'s going to dance.她打算跳舞做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l2q3',
@@ -1071,7 +1083,7 @@ export const englishGrade6: Unit[] = [
             answer: 'are',
             acceptableAnswers: ['Are'],
             hint: '主语you用哪个be动词？',
-            explanation: '主语you用are，What are you going to do?你打算做什么？'
+            explanation: '主语you用are，What are you going to do?你打算做什么？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l2q4',
@@ -1080,7 +1092,7 @@ export const englishGrade6: Unit[] = [
             options: ['swim', 'swims', 'swimming', 'to swim'],
             answer: 'swim',
             hint: 'be going to后面接什么形式的动词？',
-            explanation: 'be going to + 动词原形，They\'re going to swim.他们打算游泳'
+            explanation: 'be going to + 动词原形，They\'re going to swim.他们打算游泳做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l2q5',
@@ -1089,7 +1101,7 @@ export const englishGrade6: Unit[] = [
             options: ['What are you going to do?', 'What you are going to do?', 'What do you going to?', 'What are you going do?'],
             answer: 'What are you going to do?',
             hint: '疑问句语序：What + be + 主语 + going to do?',
-            explanation: '疑问句语序What + are + you + going to do?所以What are you going to do?正确'
+            explanation: '疑问句语序What + are + you + going to do?所以What are you going to do?正确做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l2q6',
@@ -1098,7 +1110,7 @@ export const englishGrade6: Unit[] = [
             answer: 'He\'s',
             acceptableAnswers: ['He is', "He's"],
             hint: '主语he用is，缩写形式',
-            explanation: 'He\'s = He is，He\'s going to play football.他打算踢足球'
+            explanation: 'He\'s = He is，He\'s going to play football.他打算踢足球做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l2q7',
@@ -1107,7 +1119,7 @@ export const englishGrade6: Unit[] = [
             options: ['can', 'am', 'do', 'have'],
             answer: 'can',
             hint: '[can/can\'t能力表达]（英语五年级-第4单元）',
-            explanation: '询问能力用What can you do?回答用I can...，是五年级What Can You Do单元学的句型'
+            explanation: '询问能力用What can you do?回答用I can...，是五年级What Can You Do单元学的句型做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1115,12 +1127,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u3l3',
         title: '时间表达：tomorrow/next week/this weekend',
         order: 3,
-        teachingMethod: '支架式教学法',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能用tomorrow/next week/this weekend等时间词表达未来',
         successCriteria: '①能说出3个未来时间词 ②能用时间词造句',
-        iDo: '家长示范时间表达："tomorrow/next week/this weekend"，配合日历指出时间',
-        weDo: '亲子一起用时间表达造句，家长说时间孩子说计划，再互换角色',
-        youDo: '孩子独立用时间表达加be going to造句',
+        iDo: '家长示范时间表达："tomorrow/next week/this weekend"，配合日历指出时间 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起用时间表达造句，家长说时间孩子说计划，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用时间表达加be going to造句【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：时间词tomorrow（明天）、next week（下周）、this weekend（这个周末），配合be going to使用。\n共学四步：\n①对话出题：家长指日历问What are you going to do tomorrow?。\n②孩子应答：孩子应说I\'m going to read a book tomorrow.。\n③答错引导：若孩子说不出，家长当同学一起指！扫描课时发音动画听发音；让孩子点读课件时间卡；家长用日历边指边说时间词。\n④快速检测：1.孩子说出3个时间词；2.用tomorrow造句；3.用next week造句。',
         funElement: '玩"时间机器"游戏，抽时间卡片用be going to说计划',
         gsapAnimations: ['GSAP:时间词汇出现-timeline', 'GSAP:时间轴展示-sequence', 'GSAP:时间词高亮-highlight'],
@@ -1132,7 +1144,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '时间词放在句末：I\'m going to read a book tomorrow.（正确）/ Tomorrow I\'m going to...（也可，强调时间）。一般放句末。', label: '时间词位置', animationType: 'pulse' },
           { type: 'example', content: 'I\'m going to swim tomorrow. 我明天打算游泳。\nShe\'s going to dance next week. 她下周打算跳舞。\nThey\'re going to travel this weekend. 他们这周末打算旅行。', label: '时间词造句', animationType: 'sequence' },
           { type: 'tip', content: 'next + 周/月/年表示"下一个"：next week下周、next month下月、next year明年。this + weekend/morning表示"这个"。', label: '词汇构成', animationType: 'pulse' },
-          { type: 'animation', content: '时间词汇出现动画，配合时间轴展示将来时间', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Future Time', timelineConfig: { steps: [ { text: 'tomorrow 明天', ttsNarration: 'tomorrow, 明天' }, { text: 'next week 下周', ttsNarration: 'next week, 下周' }, { text: 'this weekend 这周末', ttsNarration: 'this weekend, 这周末' }, { text: 'next month 下个月', ttsNarration: 'next month, 下个月' } ] }, ttsNarration: '将来时间词：明天、下周、这周末、下个月' } }
+          { type: 'animation', content: '时间词汇出现动画，配合时间轴展示将来时间', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Future Time', timelineConfig: { steps: [ { text: 'tomorrow 明天', ttsNarration: 'tomorrow, 明天' }, { text: 'next week 下周', ttsNarration: 'next week, 下周' }, { text: 'this weekend 这周末', ttsNarration: 'this weekend, 这周末' }, { text: 'next month 下个月', ttsNarration: 'next month, 下个月' } ] }, ttsNarration: '将来时间词：明天、下周、这周末、下个月' } },
+          { type: 'tip', content: '本课主要使用支架式教学法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1142,7 +1155,7 @@ export const englishGrade6: Unit[] = [
             options: ['tomorrow', 'yesterday', 'today', 'now'],
             answer: 'tomorrow',
             hint: '表示将来的"明天"',
-            explanation: 'tomorrow是明天，表示将来时间，I\'m going to read a book tomorrow.我明天打算读书'
+            explanation: 'tomorrow是明天，表示将来时间，I\'m going to read a book tomorrow.我明天打算读书做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l3q2',
@@ -1151,7 +1164,7 @@ export const englishGrade6: Unit[] = [
             options: ['next', 'this', 'last', 'every'],
             answer: 'next',
             hint: '"下周"用哪个词？',
-            explanation: 'next week表示下周，We are going to travel next week.我们下周打算旅行'
+            explanation: 'next week表示下周，We are going to travel next week.我们下周打算旅行做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l3q3',
@@ -1160,7 +1173,7 @@ export const englishGrade6: Unit[] = [
             answer: 'weekend',
             acceptableAnswers: ['Weekend'],
             hint: '"这周末"用哪个词？',
-            explanation: 'this weekend表示这周末，They\'re going to swim this weekend.他们这周末打算游泳'
+            explanation: 'this weekend表示这周末，They\'re going to swim this weekend.他们这周末打算游泳做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l3q4',
@@ -1169,7 +1182,7 @@ export const englishGrade6: Unit[] = [
             options: ['tomorrow', 'yesterday', 'last week', 'before'],
             answer: 'tomorrow',
             hint: '哪个词表示将来时间？',
-            explanation: 'tomorrow明天表示将来；yesterday昨天、last week上周、before之前都表示过去'
+            explanation: 'tomorrow明天表示将来；yesterday昨天、last week上周、before之前都表示过去做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l3q5',
@@ -1178,7 +1191,7 @@ export const englishGrade6: Unit[] = [
             options: ['tomorrow', 'going', 'I\'m', 'read'],
             answer: 'tomorrow',
             hint: '时间词放在句子什么位置？',
-            explanation: '时间词一般放在句末，I\'m going to read a book tomorrow.时间词tomorrow放句末'
+            explanation: '时间词一般放在句末，I\'m going to read a book tomorrow.时间词tomorrow放句末做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l3q6',
@@ -1187,7 +1200,7 @@ export const englishGrade6: Unit[] = [
             answer: 'month',
             acceptableAnswers: ['Month'],
             hint: '"下个月"用哪个词？',
-            explanation: 'next month表示下个月，She is going to dance next month.她下个月打算跳舞'
+            explanation: 'next month表示下个月，She is going to dance next month.她下个月打算跳舞做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l3q7',
@@ -1196,7 +1209,7 @@ export const englishGrade6: Unit[] = [
             options: ['brush', 'wash', 'clean', 'make'],
             answer: 'brush',
             hint: '[日常活动]（英语二年级-第1单元）',
-            explanation: 'brush my teeth刷牙，是二年级My Day单元学过的早晨日常活动'
+            explanation: 'brush my teeth刷牙，是二年级My Day单元学过的早晨日常活动做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1204,12 +1217,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u3l4',
         title: '周末计划——My weekend plan',
         order: 4,
-        teachingMethod: '项目式学习',
+        teachingMethod: '芬兰现象式学习',
         learningObjective: '我能综合运用be going to和时间词写出周末计划',
         successCriteria: '①能写5条周末计划 ②能用be going to+时间词造句',
-        iDo: '家长示范写周末计划："This weekend, I\'m going to..."列出5个计划',
-        weDo: '亲子一起讨论并写周末计划，互相分享计划',
-        youDo: '孩子独立用be going to写5句周末计划',
+        iDo: '家长示范写周末计划："This weekend, I\'m going to..."列出5个计划 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起讨论并写周末计划，互相分享计划 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用be going to写5句周末计划【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：周末计划This weekend, I\'m going to read a book, play football, and visit my grandma.。\n共学四步：\n①对话出题：家长说What\'s your weekend plan?并示范This weekend, I\'m going to clean the room.。\n②孩子应答：孩子应说This weekend, I\'m going to read and swim.。\n③答错引导：若孩子说不出，家长当同学一起写！扫描课时发音动画复习；让孩子点读课件情景卡；家长帮孩子列计划清单边写边说。\n④快速检测：1.孩子写5条计划；2.用be going to+时间词；3.读出计划。',
         funElement: '玩"计划设计师"游戏，设计最有趣的周末计划并分享',
         gsapAnimations: ['GSAP:计划逐条出现-stagger', 'GSAP:计划步骤-timeline', 'GSAP:计划完成高亮-highlight'],
@@ -1221,7 +1234,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '写计划时先写时间This weekend, 再用I\'m going to + 动词短语。动词短语如：read a book, play football, visit grandma.', label: '写作技巧', animationType: 'pulse' },
           { type: 'example', content: 'I\'m going to read a book this weekend.\nI\'m going to play football on Sunday.\nI\'m going to visit my grandma on Saturday.\nI\'m going to clean my room.', label: '计划句型操练', animationType: 'sequence' },
           { type: 'tip', content: '动词短语要记牢：read a book读书、play football踢球、watch TV看电视、clean the room打扫房间、do homework做作业。', label: '动词短语', animationType: 'pulse' },
-          { type: 'animation', content: '周末计划逐条出现动画，配合时间线展示计划步骤', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'My Weekend Plan', timelineConfig: { steps: [ { text: '1. I\'m going to read a book.', ttsNarration: 'I am going to read a book.' }, { text: '2. I\'m going to play football.', ttsNarration: 'I am going to play football.' }, { text: '3. I\'m going to visit my grandma.', ttsNarration: 'I am going to visit my grandma.' }, { text: '4. I\'m going to clean my room.', ttsNarration: 'I am going to clean my room.' } ] }, ttsNarration: '周末计划：读书、踢球、看奶奶、打扫房间' } }
+          { type: 'animation', content: '周末计划逐条出现动画，配合时间线展示计划步骤', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'My Weekend Plan', timelineConfig: { steps: [ { text: '1. I\'m going to read a book.', ttsNarration: 'I am going to read a book.' }, { text: '2. I\'m going to play football.', ttsNarration: 'I am going to play football.' }, { text: '3. I\'m going to visit my grandma.', ttsNarration: 'I am going to visit my grandma.' }, { text: '4. I\'m going to clean my room.', ttsNarration: 'I am going to clean my room.' } ] }, ttsNarration: '周末计划：读书、踢球、看奶奶、打扫房间' } },
+          { type: 'tip', content: '本课主要使用项目式学习：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1231,7 +1245,7 @@ export const englishGrade6: Unit[] = [
             options: ['read', 'reading', 'reads', 'to read'],
             answer: 'read',
             hint: 'be going to后面接动词原形',
-            explanation: 'be going to + 动词原形read，I\'m going to read a book.我打算读书'
+            explanation: 'be going to + 动词原形read，I\'m going to read a book.我打算读书做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l4q2',
@@ -1240,7 +1254,7 @@ export const englishGrade6: Unit[] = [
             options: ['play', 'playing', 'plays', 'to play'],
             answer: 'play',
             hint: 'be going to后面接动词原形',
-            explanation: 'be going to + 动词原形play，I\'m going to play football.我打算踢足球'
+            explanation: 'be going to + 动词原形play，I\'m going to play football.我打算踢足球做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l4q3',
@@ -1249,7 +1263,7 @@ export const englishGrade6: Unit[] = [
             answer: 'visit',
             acceptableAnswers: ['Visit'],
             hint: 'be going to后面接动词原形',
-            explanation: 'be going to + 动词原形visit，I\'m going to visit my grandma.我打算看望奶奶'
+            explanation: 'be going to + 动词原形visit，I\'m going to visit my grandma.我打算看望奶奶做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l4q4',
@@ -1258,7 +1272,7 @@ export const englishGrade6: Unit[] = [
             options: ['I\'m going to clean my room this weekend.', 'I clean my room yesterday.', 'I cleaning my room now.', 'I cleans my room.'],
             answer: 'I\'m going to clean my room this weekend.',
             hint: '周末计划用be going to + 动词原形 + 时间词',
-            explanation: '周末计划用be going to结构，I\'m going to clean my room this weekend.结构正确'
+            explanation: '周末计划用be going to结构，I\'m going to clean my room this weekend.结构正确做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l4q5',
@@ -1267,7 +1281,7 @@ export const englishGrade6: Unit[] = [
             options: ['movie', 'book', 'song', 'food'],
             answer: 'movie',
             hint: 'watch a movie表示看电影',
-            explanation: 'watch a movie表示看电影，watch搭配movie，I\'m going to watch a movie.'
+            explanation: 'watch a movie表示看电影，watch搭配movie，I\'m going to watch a movie.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l4q6',
@@ -1276,7 +1290,7 @@ export const englishGrade6: Unit[] = [
             answer: 'clean',
             acceptableAnswers: ['Clean'],
             hint: 'be going to后面接动词原形',
-            explanation: 'be going to + 动词原形clean，I\'m going to clean my room.我打算打扫房间'
+            explanation: 'be going to + 动词原形clean，I\'m going to clean my room.我打算打扫房间做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l4q7',
@@ -1285,7 +1299,7 @@ export const englishGrade6: Unit[] = [
             answer: 'eat',
             acceptableAnswers: ['Eat', 'have', 'Have'],
             hint: '[日常活动]（英语二年级-第1单元）',
-            explanation: 'eat dinner吃晚餐，是二年级My Day单元学过的晚间日常活动'
+            explanation: 'eat dinner吃晚餐，是二年级My Day单元学过的晚间日常活动做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1296,9 +1310,9 @@ export const englishGrade6: Unit[] = [
         teachingMethod: '形成性评价',
         learningObjective: '我能通过第三单元综合检测，巩固be going to句型和时间词',
         successCriteria: '①能完成be going to句型题 ②能完成时间词和计划题',
-        iDo: '家长示范检测题型，讲解be going to、问计划、时间词、周末计划四类题',
-        weDo: '亲子一起做练习题，家长引导孩子分析题目，讨论答案',
-        youDo: '孩子独立完成综合检测，目标正确率≥80%',
+        iDo: '家长示范检测题型，讲解be going to、问计划、时间词、周末计划四类题 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做练习题，家长引导孩子分析题目，讨论答案 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合检测，目标正确率≥80%【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：第三单元综合检测，包括be going to句型、问计划、时间词、周末计划。\n共学四步：\n①对话出题：家长说我们来做第三单元检测，先复习一下。。\n②孩子应答：孩子应说be going to! Tomorrow, next week!。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学假装忘了，和孩子比赛说。\n④快速检测：1.孩子完成单元检测；2.正确率达80%；3.错题订正。',
         funElement: '通关后撒花庆祝，获得"Plan达人"徽章',
         gsapAnimations: ['GSAP:通关撒花-confetti', 'GSAP:题目逐个出现-stagger', 'GSAP:正确答案高亮-highlight'],
@@ -1310,7 +1324,8 @@ export const englishGrade6: Unit[] = [
           { type: 'dialogue', content: 'Tom: What are you going to do this weekend?\nAmy: I\'m going to visit the museum. What about you?\nTom: I\'m going to play football tomorrow.\nAmy: Have fun!', label: '综合计划对话', animationType: 'timeline' },
           { type: 'example', content: '易错点1：He is going to（正确）/ He going to（错误）\n易错点2：going to read（正确）/ going to reading（错误）\n易错点3：tomorrow放句末（正确）', label: '易错点提醒', animationType: 'sequence' },
           { type: 'tip', content: '写计划要具体，用be going to + 动词短语 + 时间。计划要合理安排，劳逸结合。', label: '写作建议', animationType: 'pulse' },
-          { type: 'animation', content: '通关撒花动画，正确率达到80%触发庆祝特效', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'Plan Star', cardRevealConfig: { cards: [ { front: 'tomorrow', back: '📅', ttsText: 'tomorrow' }, { front: 'next week', back: '🗓', ttsText: 'next week' }, { front: 'weekend', back: '🌟', ttsText: 'weekend' } ] }, ttsNarration: '计划达人通关庆祝！' } }
+          { type: 'animation', content: '通关撒花动画，正确率达到80%触发庆祝特效', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'Plan Star', cardRevealConfig: { cards: [ { front: 'tomorrow', back: '📅', ttsText: 'tomorrow' }, { front: 'next week', back: '🗓', ttsText: 'next week' }, { front: 'weekend', back: '🌟', ttsText: 'weekend' } ] }, ttsNarration: '计划达人通关庆祝！' } },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1320,7 +1335,7 @@ export const englishGrade6: Unit[] = [
             options: ['is', 'am', 'are', 'be'],
             answer: 'is',
             hint: '主语She用哪个be动词？',
-            explanation: '主语She第三人称单数用is，She is going to dance tomorrow.她明天打算跳舞'
+            explanation: '主语She第三人称单数用is，She is going to dance tomorrow.她明天打算跳舞做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l5q2',
@@ -1329,7 +1344,7 @@ export const englishGrade6: Unit[] = [
             options: ['this weekend', 'yesterday', 'last week', 'before'],
             answer: 'this weekend',
             hint: '哪个表示将来的"这周末"？',
-            explanation: 'this weekend表示这周末，是将来时间，What are you going to do this weekend?'
+            explanation: 'this weekend表示这周末，是将来时间，What are you going to do this weekend?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l5q3',
@@ -1338,7 +1353,7 @@ export const englishGrade6: Unit[] = [
             answer: 'read',
             acceptableAnswers: ['Read'],
             hint: 'be going to后面接动词原形',
-            explanation: 'be going to + 动词原形read，I\'m going to read a book.我打算读书'
+            explanation: 'be going to + 动词原形read，I\'m going to read a book.我打算读书做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l5q4',
@@ -1347,7 +1362,7 @@ export const englishGrade6: Unit[] = [
             options: ['swim', 'swims', 'swimming', 'to swim'],
             answer: 'swim',
             hint: 'be going to后面接什么形式的动词？',
-            explanation: 'be going to + 动词原形，They are going to swim tomorrow.他们明天打算游泳'
+            explanation: 'be going to + 动词原形，They are going to swim tomorrow.他们明天打算游泳做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l5q5',
@@ -1356,7 +1371,7 @@ export const englishGrade6: Unit[] = [
             options: ['What', 'Where', 'How', 'Who'],
             answer: 'What',
             hint: '问"做什么"用哪个疑问词？',
-            explanation: 'What问做什么，What are you going to do next week?你下周打算做什么？'
+            explanation: 'What问做什么，What are you going to do next week?你下周打算做什么？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l5q6',
@@ -1365,7 +1380,7 @@ export const englishGrade6: Unit[] = [
             answer: 'week',
             acceptableAnswers: ['Week'],
             hint: '"下周"用哪个词？',
-            explanation: 'next week表示下周，We are going to travel next week.我们下周打算旅行'
+            explanation: 'next week表示下周，We are going to travel next week.我们下周打算旅行做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u3l5q7',
@@ -1374,7 +1389,7 @@ export const englishGrade6: Unit[] = [
             options: ['I can play the piano.', 'I can plays the piano.', 'I can playing the piano.', 'I can to play the piano.'],
             answer: 'I can play the piano.',
             hint: '[can/can\'t能力表达]（英语五年级-第4单元）',
-            explanation: 'can后面接动词原形，所以是I can play the piano.是五年级What Can You Do单元学的句型'
+            explanation: 'can后面接动词原形，所以是I can play the piano.是五年级What Can You Do单元学的句型做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }
@@ -1391,12 +1406,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u4l1',
         title: '爱好词汇：reading/swimming/collecting stamps',
         order: 1,
-        teachingMethod: 'TPR全身反应法+图片指示',
+        teachingMethod: 'TPR全身反应法 + 图片指示',
         learningObjective: '我能说出reading/swimming/collecting stamps等爱好词汇',
         successCriteria: '①能说出4个爱好词汇 ②能用I like+ing造句',
-        iDo: '家长做动作说爱好词汇："reading/swimming/collecting stamps/drawing"，配合夸张动作',
-        weDo: '亲子一起做动作说爱好，家长说中文孩子说英文，再互换角色',
-        youDo: '孩子独立辨认爱好词汇并做动作',
+        iDo: '家长做动作说爱好词汇："reading/swimming/collecting stamps/drawing"，配合夸张动作 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做动作说爱好，家长说中文孩子说英文，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立辨认爱好词汇并做动作【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：爱好词汇reading（阅读）、swimming（游泳）、collecting stamps（集邮）、drawing（画画），用动词ing形式。\n共学四步：\n①对话出题：家长做游泳动作问What is my hobby?并说Your hobby is swimming.。\n②孩子应答：孩子应说I like reading!。\n③答错引导：若孩子说不出，家长当同学一起演！扫描课时发音动画听发音；让孩子点读课件爱好卡；家长做动作边演边说英语，用TPR法帮孩子记。\n④快速检测：1.孩子说出4个爱好词；2.用I like+ing造句；3.说出自己的爱好。',
         funElement: '玩"爱好猜猜猜"游戏，孩子做动作家长猜爱好词汇',
         gsapAnimations: ['GSAP:爱好卡片翻转-cardReveal', 'GSAP:爱好动作出现-stagger', 'GSAP:爱好图标-starFlyIn'],
@@ -1414,7 +1429,8 @@ export const englishGrade6: Unit[] = [
             content: '后缀-ing记忆法：动词+ing变成动名词，表示活动。read→reading, draw→drawing。注意双写规则：swim→swimming（末尾辅音m双写再加ing），run→running。collecting stamps = collect（收集）+ing+stamps（邮票）。记住：爱好用动词ing形式表示！',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用TPR全身反应法：用身体动作配合语言，边做边说加深记忆', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1424,7 +1440,7 @@ export const englishGrade6: Unit[] = [
             options: ['reading', 'read', 'reads', 'to reading'],
             answer: 'reading',
             hint: 'like后面接动词什么形式？',
-            explanation: 'like + 动词ing形式，I like reading.我喜欢阅读'
+            explanation: 'like + 动词ing形式，I like reading.我喜欢阅读做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l1q2',
@@ -1433,7 +1449,7 @@ export const englishGrade6: Unit[] = [
             options: ['swimming', 'swim', 'swims', 'to swim'],
             answer: 'swimming',
             hint: 'like后面接动词ing形式',
-            explanation: 'like + 动词ing形式swimming，I like swimming.我喜欢游泳'
+            explanation: 'like + 动词ing形式swimming，I like swimming.我喜欢游泳做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l1q3',
@@ -1442,7 +1458,7 @@ export const englishGrade6: Unit[] = [
             answer: 'collecting',
             acceptableAnswers: ['Collecting'],
             hint: 'like后面接动词ing形式',
-            explanation: 'like + 动词ing形式collecting，I like collecting stamps.我喜欢集邮'
+            explanation: 'like + 动词ing形式collecting，I like collecting stamps.我喜欢集邮做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l1q4',
@@ -1451,7 +1467,7 @@ export const englishGrade6: Unit[] = [
             options: ['I like drawing.', 'I like draw.', 'I like to drawing.', 'I likes drawing.'],
             answer: 'I like drawing.',
             hint: 'like + 动词ing形式，主语I用like',
-            explanation: 'like + 动词ing形式drawing，主语I用like，I like drawing.我喜欢画画'
+            explanation: 'like + 动词ing形式drawing，主语I用like，I like drawing.我喜欢画画做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l1q5',
@@ -1460,7 +1476,7 @@ export const englishGrade6: Unit[] = [
             options: ['swimming', 'apple', 'red', 'tall'],
             answer: 'swimming',
             hint: '哪个词表示一项爱好活动？',
-            explanation: 'swimming游泳是爱好活动；apple是苹果、red是红色、tall是高的，都不是爱好'
+            explanation: 'swimming游泳是爱好活动；apple是苹果、red是红色、tall是高的，都不是爱好做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l1q6',
@@ -1469,7 +1485,7 @@ export const englishGrade6: Unit[] = [
             answer: 'drawing',
             acceptableAnswers: ['Drawing'],
             hint: 'like后面接动词ing形式',
-            explanation: 'like + 动词ing形式drawing，I like drawing.我喜欢画画'
+            explanation: 'like + 动词ing形式drawing，I like drawing.我喜欢画画做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l1q7',
@@ -1478,7 +1494,7 @@ export const englishGrade6: Unit[] = [
             answer: 'hobbies',
             acceptableAnswers: ['Hobbies'],
             hint: '[爱好词汇]（英语二年级-第7单元）',
-            explanation: 'hobbies是爱好的复数，drawing画画和reading阅读都是爱好，是二年级Hobbies单元学的词汇'
+            explanation: 'hobbies是爱好的复数，drawing画画和reading阅读都是爱好，是二年级Hobbies单元学的词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1486,12 +1502,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u4l2',
         title: '一般现在时——第三人称单数',
         order: 2,
-        teachingMethod: '支架式：时态进阶',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能用一般现在时第三人称单数描述他人爱好',
         successCriteria: '①能说出第三人称单数加s规则 ②能用He/She likes...造句',
-        iDo: '家长示范第三人称单数："I like reading. He likes swimming. She likes drawing."强调动词加s',
-        weDo: '亲子一起造句，家长说I句型孩子改成He/She句型，再互换角色',
-        youDo: '孩子独立用第三人称单数造句',
+        iDo: '家长示范第三人称单数："I like reading. He likes swimming. She likes drawing."强调动词加s 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起造句，家长说I句型孩子改成He/She句型，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用第三人称单数造句【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：第三人称单数He likes reading. She likes swimming.，动词加s（like→likes）。\n共学四步：\n①对话出题：家长说I like reading.问What does Tom like?并说He likes swimming.。\n②孩子应答：孩子应说He likes drawing.。\n③答错引导：若孩子说不出，家长当同学一起说！扫描课时发音动画听发音；让孩子点读课件句型卡；家长强调He/She后动词加s，边说边比划。\n④快速检测：1.孩子说出第三人称单数规则；2.用He likes...造句；3.用She likes...造句。',
         funElement: '玩"变身游戏"，把I句型变成He/She句型，比比谁变得快',
         gsapAnimations: ['GSAP:第三人称变化动画-timeline', 'GSAP:动词变化-cardReveal', 'GSAP:变化规则高亮-highlight'],
@@ -1503,7 +1519,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '动词变化规则：一般加s（like→likes）；以s/x/ch/sh/o结尾加es（watch→watches, go→goes）；辅音+y变y为i加es（study→studies）。', label: '变化规则', animationType: 'pulse' },
           { type: 'example', content: 'like → likes\nswim → swims\nwatch → watches\ngo → goes\nstudy → studies', label: '动词变化表', animationType: 'sequence' },
           { type: 'tip', content: 'have的第三人称单数是has（特殊变化）：I have → He has。be动词的第三人称单数是is：I am → She is。', label: '特殊变化', animationType: 'pulse' },
-          { type: 'animation', content: '第三人称变化动画，主语变化导致动词加s/es', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Third Person Singular', timelineConfig: { steps: [ { text: 'I like reading.', ttsNarration: 'I like reading.' }, { text: 'He likes reading.', ttsNarration: 'He likes reading.' }, { text: 'I watch TV.', ttsNarration: 'I watch TV.' }, { text: 'She watches TV.', ttsNarration: 'She watches TV.' } ] }, ttsNarration: '第三人称单数：主语he/she，动词加s/es' } }
+          { type: 'animation', content: '第三人称变化动画，主语变化导致动词加s/es', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Third Person Singular', timelineConfig: { steps: [ { text: 'I like reading.', ttsNarration: 'I like reading.' }, { text: 'He likes reading.', ttsNarration: 'He likes reading.' }, { text: 'I watch TV.', ttsNarration: 'I watch TV.' }, { text: 'She watches TV.', ttsNarration: 'She watches TV.' } ] }, ttsNarration: '第三人称单数：主语he/she，动词加s/es' } },
+          { type: 'tip', content: '本课主要使用支架式：时态进阶：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1513,7 +1530,7 @@ export const englishGrade6: Unit[] = [
             options: ['likes', 'like', 'liking', 'to like'],
             answer: 'likes',
             hint: '主语He第三人称单数，动词怎么变？',
-            explanation: '主语He第三人称单数，动词like加s变likes，He likes reading.他喜欢阅读'
+            explanation: '主语He第三人称单数，动词like加s变likes，He likes reading.他喜欢阅读做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l2q2',
@@ -1522,7 +1539,7 @@ export const englishGrade6: Unit[] = [
             options: ['goes', 'go', 'going', 'to go'],
             answer: 'goes',
             hint: 'go以o结尾，第三人称单数怎么变？',
-            explanation: 'go以o结尾，第三人称单数加es变goes，She goes to school.她去上学'
+            explanation: 'go以o结尾，第三人称单数加es变goes，She goes to school.她去上学做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l2q3',
@@ -1531,7 +1548,7 @@ export const englishGrade6: Unit[] = [
             answer: 'watches',
             acceptableAnswers: ['Watches'],
             hint: 'watch以ch结尾，第三人称单数加es',
-            explanation: 'watch以ch结尾，第三人称单数加es变watches，He watches TV.他看电视'
+            explanation: 'watch以ch结尾，第三人称单数加es变watches，He watches TV.他看电视做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l2q4',
@@ -1540,7 +1557,7 @@ export const englishGrade6: Unit[] = [
             options: ['has', 'have', 'having', 'to have'],
             answer: 'has',
             hint: 'have的第三人称单数是特殊变化',
-            explanation: 'have的第三人称单数是特殊变化has，She has a pen.她有一支笔'
+            explanation: 'have的第三人称单数是特殊变化has，She has a pen.她有一支笔做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l2q5',
@@ -1549,7 +1566,7 @@ export const englishGrade6: Unit[] = [
             options: ['He likes swimming.', 'He like swimming.', 'He liking swimming.', 'He to like swimming.'],
             answer: 'He likes swimming.',
             hint: '主语He第三人称单数，动词加s',
-            explanation: '主语He第三人称单数，动词like加s变likes，He likes swimming.他喜欢游泳'
+            explanation: '主语He第三人称单数，动词like加s变likes，He likes swimming.他喜欢游泳做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l2q6',
@@ -1558,7 +1575,7 @@ export const englishGrade6: Unit[] = [
             answer: 'studies',
             acceptableAnswers: ['Studies'],
             hint: 'study以辅音+y结尾，变y为i加es',
-            explanation: 'study以辅音+y结尾，变y为i加es变studies，She studies English.她学英语'
+            explanation: 'study以辅音+y结尾，变y为i加es变studies，She studies English.她学英语做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l2q7',
@@ -1567,7 +1584,7 @@ export const englishGrade6: Unit[] = [
             options: ['has', 'have', 'is', 'are'],
             answer: 'has',
             hint: '[描述朋友外貌]（英语三年级-第2单元）',
-            explanation: '主语she第三人称单数，用has，三年级My Friends单元学过用has描述朋友外貌'
+            explanation: '主语she第三人称单数，用has，三年级My Friends单元学过用has描述朋友外貌做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1575,12 +1592,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u4l3',
         title: 'What\'s your hobby? 句型',
         order: 3,
-        teachingMethod: '情境对话法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用What\'s your hobby?/I like...进行问答',
         successCriteria: '①能用What\'s your hobby?提问 ②能用I like+ing回答',
-        iDo: '家长示范问答爱好："What\'s your hobby? I like reading. He likes swimming."',
-        weDo: '亲子一起问答爱好，家长问孩子答，再互换角色',
-        youDo: '孩子独立用What\'s your hobby?询问并回答爱好',
+        iDo: '家长示范问答爱好："What\'s your hobby? I like reading. He likes swimming." 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起问答爱好，家长问孩子答，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用What\'s your hobby?询问并回答爱好【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：句型What\'s your hobby?（你的爱好是什么），回答I like reading.。\n共学四步：\n①对话出题：家长问What\'s your hobby?并说I like swimming.。\n②孩子应答：孩子应说I like reading and drawing.。\n③答错引导：若孩子说不出，家长当同学一起聊！扫描课时发音动画听发音；让孩子点读课件对话卡；家长结合孩子兴趣边问边答。\n④快速检测：1.孩子用What\'s your hobby?提问；2.用I like+ing回答；3.问答互换。',
         funElement: '玩"爱好采访"游戏，孩子当记者采访家人的爱好',
         gsapAnimations: ['GSAP:爱好问答展开-timeline', 'GSAP:对话气泡弹出-stagger', 'GSAP:问答高亮-highlight'],
@@ -1592,7 +1609,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: 'What\'s = What is。问"你"用What\'s your hobby?问"他/她"用What does he/she like?注意第三人称用does。', label: '人称变化', animationType: 'pulse' },
           { type: 'example', content: 'What\'s your hobby? I like reading.\nWhat does she like? She likes dancing.\nWhat do they like? They like playing football.', label: '问答操练', animationType: 'sequence' },
           { type: 'tip', content: 'hobby是可数名词，复数是hobbies（变y为i加es）。My hobbies are reading and swimming.我的爱好是阅读和游泳。', label: 'hobby复数', animationType: 'pulse' },
-          { type: 'animation', content: '爱好问答逐步展开动画，配合时间线展示问答过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Hobbies Q&A', timelineConfig: { steps: [ { text: 'What\'s your hobby?', ttsNarration: 'What is your hobby?' }, { text: 'I like reading.', ttsNarration: 'I like reading.' }, { text: 'What does he like?', ttsNarration: 'What does he like?' }, { text: 'He likes swimming.', ttsNarration: 'He likes swimming.' } ] }, ttsNarration: '问爱好：你的爱好是什么？我喜欢阅读。他喜欢什么？他喜欢游泳。' } }
+          { type: 'animation', content: '爱好问答逐步展开动画，配合时间线展示问答过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Hobbies Q&A', timelineConfig: { steps: [ { text: 'What\'s your hobby?', ttsNarration: 'What is your hobby?' }, { text: 'I like reading.', ttsNarration: 'I like reading.' }, { text: 'What does he like?', ttsNarration: 'What does he like?' }, { text: 'He likes swimming.', ttsNarration: 'He likes swimming.' } ] }, ttsNarration: '问爱好：你的爱好是什么？我喜欢阅读。他喜欢什么？他喜欢游泳。' } },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1602,7 +1620,7 @@ export const englishGrade6: Unit[] = [
             options: ['What\'s', 'Where\'s', 'How\'s', 'Who\'s'],
             answer: 'What\'s',
             hint: '问爱好用哪个疑问词？',
-            explanation: 'What问什么，What\'s your hobby?你的爱好是什么？'
+            explanation: 'What问什么，What\'s your hobby?你的爱好是什么？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l3q2',
@@ -1611,7 +1629,7 @@ export const englishGrade6: Unit[] = [
             options: ['likes', 'like', 'liking', 'to like'],
             answer: 'likes',
             hint: '主语He第三人称单数，动词怎么变？',
-            explanation: '主语He第三人称单数，动词like加s变likes，He likes swimming.他喜欢游泳'
+            explanation: '主语He第三人称单数，动词like加s变likes，He likes swimming.他喜欢游泳做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l3q3',
@@ -1620,7 +1638,7 @@ export const englishGrade6: Unit[] = [
             answer: 'your',
             acceptableAnswers: ['Your'],
             hint: '问对方的爱好用什么代词？',
-            explanation: '问对方的爱好用your，What\'s your hobby?你的爱好是什么？'
+            explanation: '问对方的爱好用your，What\'s your hobby?你的爱好是什么？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l3q4',
@@ -1629,7 +1647,7 @@ export const englishGrade6: Unit[] = [
             options: ['dancing', 'dance', 'dances', 'to dancing'],
             answer: 'dancing',
             hint: 'like后面接动词什么形式？',
-            explanation: 'like + 动词ing形式dancing，She likes dancing.她喜欢跳舞'
+            explanation: 'like + 动词ing形式dancing，She likes dancing.她喜欢跳舞做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l3q5',
@@ -1638,7 +1656,7 @@ export const englishGrade6: Unit[] = [
             options: ['hobbies', 'hobbys', 'hobbyes', 'hobies'],
             answer: 'hobbies',
             hint: '以辅音+y结尾的名词复数怎么变？',
-            explanation: 'hobby以辅音+y结尾，复数变y为i加es变hobbies'
+            explanation: 'hobby以辅音+y结尾，复数变y为i加es变hobbies做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l3q6',
@@ -1647,7 +1665,7 @@ export const englishGrade6: Unit[] = [
             answer: 'they',
             acceptableAnswers: ['They'],
             hint: '问"他们"的爱好用什么代词？',
-            explanation: '问他们的爱好用they，What do they like?他们喜欢什么？'
+            explanation: '问他们的爱好用they，What do they like?他们喜欢什么？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l3q7',
@@ -1656,7 +1674,7 @@ export const englishGrade6: Unit[] = [
             answer: 'drawing',
             acceptableAnswers: ['Drawing'],
             hint: '[爱好词汇]（英语二年级-第7单元）',
-            explanation: 'like后面接动词ing，drawing是画画，是二年级Hobbies单元学过的爱好词汇'
+            explanation: 'like后面接动词ing，drawing是画画，是二年级Hobbies单元学过的爱好词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1664,12 +1682,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u4l4',
         title: 'My pen pal——介绍笔友',
         order: 4,
-        teachingMethod: '项目式学习',
+        teachingMethod: '芬兰现象式学习',
         learningObjective: '我能综合运用爱好词汇和第三人称单数介绍笔友',
         successCriteria: '①能用3句以上介绍笔友 ②能用He/She likes...描述爱好',
-        iDo: '家长示范介绍笔友："I have a pen pal. His name is Tom. He likes swimming."',
-        weDo: '亲子一起讨论并写一段介绍笔友的话，互相分享',
-        youDo: '孩子独立用一般现在时写一段介绍笔友的话',
+        iDo: '家长示范介绍笔友："I have a pen pal. His name is Tom. He likes swimming." 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起讨论并写一段介绍笔友的话，互相分享 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用一般现在时写一段介绍笔友的话【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：介绍笔友I have a pen pal. His name is Tom. He likes swimming and drawing.。\n共学四步：\n①对话出题：家长说I have a pen pal. Her name is Amy. She likes reading.，问孩子介绍你的笔友。\n②孩子应答：孩子应说I have a pen pal. His name is Tom. He likes swimming.。\n③答错引导：若孩子说不出，家长当同学一起写！扫描课时发音动画复习；让孩子点读课件句型卡；家长帮孩子列笔友信息边写边说。\n④快速检测：1.孩子用3句介绍笔友；2.用He/She likes...描述爱好；3.说出笔友姓名和爱好。',
         funElement: '玩"笔友卡片"游戏，制作笔友信息卡并分享',
         gsapAnimations: ['GSAP:笔友信息逐步出现-timeline', 'GSAP:信息卡片-stagger', 'GSAP:关键词高亮-highlight'],
@@ -1681,7 +1699,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '介绍笔友用一般现在时，注意第三人称单数：He lives（不是live）、She likes（不是like）、He has（不是have）。', label: '时态提醒', animationType: 'pulse' },
           { type: 'example', content: 'His name is Tom. 他叫汤姆。\nHe lives in London. 他住在伦敦。\nHe likes swimming. 他喜欢游泳。\nHe goes to school by bus. 他坐公交上学。', label: '介绍笔友句型', animationType: 'sequence' },
           { type: 'tip', content: 'pen pal = pen（笔）+ pal（朋友），即笔友。也可以说pen friend。介绍时要包含基本信息和爱好。', label: '词汇构成', animationType: 'pulse' },
-          { type: 'animation', content: '笔友信息逐步出现动画，配合时间线展示介绍过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'My Pen Pal', timelineConfig: { steps: [ { text: 'I have a pen pal.', ttsNarration: 'I have a pen pal.' }, { text: 'His name is Tom.', ttsNarration: 'His name is Tom.' }, { text: 'He lives in London.', ttsNarration: 'He lives in London.' }, { text: 'He likes swimming.', ttsNarration: 'He likes swimming.' } ] }, ttsNarration: '我的笔友：我有个笔友。他叫汤姆。他住在伦敦。他喜欢游泳。' } }
+          { type: 'animation', content: '笔友信息逐步出现动画，配合时间线展示介绍过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'My Pen Pal', timelineConfig: { steps: [ { text: 'I have a pen pal.', ttsNarration: 'I have a pen pal.' }, { text: 'His name is Tom.', ttsNarration: 'His name is Tom.' }, { text: 'He lives in London.', ttsNarration: 'He lives in London.' }, { text: 'He likes swimming.', ttsNarration: 'He likes swimming.' } ] }, ttsNarration: '我的笔友：我有个笔友。他叫汤姆。他住在伦敦。他喜欢游泳。' } },
+          { type: 'tip', content: '本课主要使用项目式学习：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1691,7 +1710,7 @@ export const englishGrade6: Unit[] = [
             options: ['His', 'He', 'She', 'Her'],
             answer: 'His',
             hint: '指代男性笔友的"他的"用什么代词？',
-            explanation: '指代男性笔友的"他的"用His，His name is Tom.他叫汤姆'
+            explanation: '指代男性笔友的"他的"用His，His name is Tom.他叫汤姆做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l4q2',
@@ -1700,7 +1719,7 @@ export const englishGrade6: Unit[] = [
             options: ['lives', 'live', 'living', 'to live'],
             answer: 'lives',
             hint: '主语He第三人称单数，动词怎么变？',
-            explanation: '主语He第三人称单数，动词live加s变lives，He lives in London.他住在伦敦'
+            explanation: '主语He第三人称单数，动词live加s变lives，He lives in London.他住在伦敦做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l4q3',
@@ -1709,7 +1728,7 @@ export const englishGrade6: Unit[] = [
             answer: 'likes',
             acceptableAnswers: ['Likes'],
             hint: '主语He第三人称单数，动词加s',
-            explanation: '主语He第三人称单数，动词like加s变likes，He likes swimming and reading.'
+            explanation: '主语He第三人称单数，动词like加s变likes，He likes swimming and reading.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l4q4',
@@ -1718,7 +1737,7 @@ export const englishGrade6: Unit[] = [
             options: ['He goes to school by bus.', 'He go to school by bus.', 'He going to school by bus.', 'He to go school by bus.'],
             answer: 'He goes to school by bus.',
             hint: '主语He第三人称单数，go怎么变？',
-            explanation: '主语He第三人称单数，go加es变goes，He goes to school by bus.他坐公交上学'
+            explanation: '主语He第三人称单数，go加es变goes，He goes to school by bus.他坐公交上学做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l4q5',
@@ -1727,7 +1746,7 @@ export const englishGrade6: Unit[] = [
             options: ['pal', 'pen', 'pan', 'pet'],
             answer: 'pal',
             hint: 'pen pal是笔友，pal是什么意思？',
-            explanation: 'pen pal = pen（笔）+ pal（朋友），表示笔友，pal是朋友的意思'
+            explanation: 'pen pal = pen（笔）+ pal（朋友），表示笔友，pal是朋友的意思做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l4q6',
@@ -1736,7 +1755,7 @@ export const englishGrade6: Unit[] = [
             answer: 'likes',
             acceptableAnswers: ['Likes'],
             hint: '主语She第三人称单数，动词加s',
-            explanation: '主语She第三人称单数，动词like加s变likes，She likes drawing and collecting stamps.'
+            explanation: '主语She第三人称单数，动词like加s变likes，She likes drawing and collecting stamps.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l4q7',
@@ -1745,7 +1764,7 @@ export const englishGrade6: Unit[] = [
             options: ['strong', 'sad', 'tired', 'hungry'],
             answer: 'strong',
             hint: '[描述朋友外貌]（英语三年级-第2单元）',
-            explanation: 'strong是强壮的，三年级My Friends单元学过用tall/strong描述朋友外貌'
+            explanation: 'strong是强壮的，三年级My Friends单元学过用tall/strong描述朋友外貌做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1756,9 +1775,9 @@ export const englishGrade6: Unit[] = [
         teachingMethod: '形成性评价',
         learningObjective: '我能通过第四单元综合检测，巩固爱好词汇和第三人称单数',
         successCriteria: '①能完成爱好词汇题 ②能完成第三人称单数句型题',
-        iDo: '家长示范检测题型，讲解爱好、一般现在时、句型、笔友介绍四类题',
-        weDo: '亲子一起做练习题，家长引导孩子分析题目，讨论答案',
-        youDo: '孩子独立完成综合检测，目标正确率≥80%',
+        iDo: '家长示范检测题型，讲解爱好、一般现在时、句型、笔友介绍四类题 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做练习题，家长引导孩子分析题目，讨论答案 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合检测，目标正确率≥80%【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：第四单元综合检测，包括爱好词汇、第三人称单数、What\'s your hobby句型、笔友介绍。\n共学四步：\n①对话出题：家长说我们来做第四单元检测，先复习一下。。\n②孩子应答：孩子应说reading, swimming, drawing! He likes...。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学假装忘了，和孩子比赛说。\n④快速检测：1.孩子完成单元检测；2.正确率达80%；3.错题订正。',
         funElement: '通关后撒花庆祝，获得"PenPal达人"徽章',
         gsapAnimations: ['GSAP:通关撒花-confetti', 'GSAP:题目逐个出现-stagger', 'GSAP:正确答案高亮-highlight'],
@@ -1770,7 +1789,8 @@ export const englishGrade6: Unit[] = [
           { type: 'dialogue', content: 'Tom: What\'s your hobby?\nAmy: I like collecting stamps. My pen pal likes drawing.\nTom: Where does he live?\nAmy: He lives in London.', label: '综合笔友对话', animationType: 'timeline' },
           { type: 'example', content: '易错点1：He likes（正确）/ He like（错误）\n易错点2：like reading（正确）/ like read（错误）\n易错点3：He goes（正确）/ He go（错误）', label: '易错点提醒', animationType: 'sequence' },
           { type: 'tip', content: '介绍笔友要包含姓名、年龄、住址、爱好等信息，用一般现在时，注意第三人称单数。', label: '写作建议', animationType: 'pulse' },
-          { type: 'animation', content: '通关撒花动画，正确率达到80%触发庆祝特效', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'PenPal Star', cardRevealConfig: { cards: [ { front: 'reading', back: '📖', ttsText: 'reading' }, { front: 'swimming', back: '🏊', ttsText: 'swimming' }, { front: 'drawing', back: '🎨', ttsText: 'drawing' } ] }, ttsNarration: '笔友达人通关庆祝！' } }
+          { type: 'animation', content: '通关撒花动画，正确率达到80%触发庆祝特效', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'PenPal Star', cardRevealConfig: { cards: [ { front: 'reading', back: '📖', ttsText: 'reading' }, { front: 'swimming', back: '🏊', ttsText: 'swimming' }, { front: 'drawing', back: '🎨', ttsText: 'drawing' } ] }, ttsNarration: '笔友达人通关庆祝！' } },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1780,7 +1800,7 @@ export const englishGrade6: Unit[] = [
             options: ['collecting', 'collect', 'collects', 'to collecting'],
             answer: 'collecting',
             hint: 'like后面接动词ing形式',
-            explanation: 'like + 动词ing形式collecting，I like collecting stamps.我喜欢集邮'
+            explanation: 'like + 动词ing形式collecting，I like collecting stamps.我喜欢集邮做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l5q2',
@@ -1789,7 +1809,7 @@ export const englishGrade6: Unit[] = [
             options: ['likes', 'like', 'liking', 'to like'],
             answer: 'likes',
             hint: '主语He第三人称单数，动词加s',
-            explanation: '主语He第三人称单数，动词like加s变likes，He likes swimming.他喜欢游泳'
+            explanation: '主语He第三人称单数，动词like加s变likes，He likes swimming.他喜欢游泳做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l5q3',
@@ -1798,7 +1818,7 @@ export const englishGrade6: Unit[] = [
             answer: 'What\'s',
             acceptableAnswers: ['What is', "What's"],
             hint: '问爱好用哪个疑问词？',
-            explanation: 'What问什么，What\'s your hobby?你的爱好是什么？'
+            explanation: 'What问什么，What\'s your hobby?你的爱好是什么？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l5q4',
@@ -1807,7 +1827,7 @@ export const englishGrade6: Unit[] = [
             options: ['lives', 'live', 'living', 'to live'],
             answer: 'lives',
             hint: '主语She第三人称单数，动词怎么变？',
-            explanation: '主语She第三人称单数，动词live加s变lives，She lives in London.她住在伦敦'
+            explanation: '主语She第三人称单数，动词live加s变lives，She lives in London.她住在伦敦做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l5q5',
@@ -1816,7 +1836,7 @@ export const englishGrade6: Unit[] = [
             options: ['drawing', 'draw', 'draws', 'to drawing'],
             answer: 'drawing',
             hint: 'like后面接动词ing形式',
-            explanation: 'like + 动词ing形式drawing，He likes drawing.他喜欢画画'
+            explanation: 'like + 动词ing形式drawing，He likes drawing.他喜欢画画做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l5q6',
@@ -1825,7 +1845,7 @@ export const englishGrade6: Unit[] = [
             answer: 'goes',
             acceptableAnswers: ['Goes'],
             hint: 'go以o结尾，第三人称单数加es',
-            explanation: 'go以o结尾，第三人称单数加es变goes，He goes to school by bus.他坐公交上学'
+            explanation: 'go以o结尾，第三人称单数加es变goes，He goes to school by bus.他坐公交上学做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u4l5q7',
@@ -1834,7 +1854,7 @@ export const englishGrade6: Unit[] = [
             options: ['swimming', 'blue', 'Monday', 'desk'],
             answer: 'swimming',
             hint: '[爱好词汇]（英语二年级-第7单元）',
-            explanation: 'swimming游泳是爱好，是二年级Hobbies单元学的词汇，blue/Monday/desk都不是爱好'
+            explanation: 'swimming游泳是爱好，是二年级Hobbies单元学的词汇，blue/Monday/desk都不是爱好做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }
@@ -1851,12 +1871,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u5l1',
         title: '职业词汇：teacher/doctor/engineer/pilot',
         order: 1,
-        teachingMethod: 'TPR全身反应法+角色扮演',
+        teachingMethod: 'TPR全身反应法 + 角色扮演法',
         learningObjective: '我能说出teacher/doctor/engineer/pilot等职业词汇',
         successCriteria: '①能说出4个职业词汇 ②能用He/She is a...介绍职业',
-        iDo: '家长模仿职业动作说单词："teacher/doctor/engineer/pilot"，配合夸张动作',
-        weDo: '亲子一起演职业，家长做动作孩子猜单词，再互换角色',
-        youDo: '孩子独立模仿职业动作并说出对应单词',
+        iDo: '家长模仿职业动作说单词："teacher/doctor/engineer/pilot"，配合夸张动作 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起演职业，家长做动作孩子猜单词，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立模仿职业动作并说出对应单词【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：职业词汇teacher（老师）、doctor（医生）、engineer（工程师）、pilot（飞行员），句型She is a doctor.。\n共学四步：\n①对话出题：家长做写字动作问What do I do?并说You are a teacher.。\n②孩子应答：孩子应说You are a teacher!。\n③答错引导：若孩子说不出，家长当同学一起演！扫描课时发音动画听发音；让孩子点读课件职业卡；家长演职业动作边演边说，用TPR法帮孩子记。\n④快速检测：1.孩子说出4个职业词；2.用He/She is a...造句；3.描述家人的职业。',
         funElement: '玩"职业模仿秀"游戏，孩子演职业，家长猜，再互换角色',
         gsapAnimations: ['GSAP:职业卡片翻转-cardReveal', 'GSAP:职业人物出现-stagger', 'GSAP:职业图标-starFlyIn'],
@@ -1874,7 +1894,8 @@ export const englishGrade6: Unit[] = [
             content: '后缀-er/-or记忆法：-er和-or都表示"做某事的人"。teach（教）→teacher（老师），work（工作）→worker（工人），act（表演）→actor（演员）。注意：engineer以-eer结尾（engine+er→engineer，工程师），pilot比较特殊需要单独记。doctor也是以-or结尾的职业词。',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用TPR全身反应法：用身体动作配合语言，边做边说加深记忆', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1884,7 +1905,7 @@ export const englishGrade6: Unit[] = [
             options: ['doctor', 'teacher', 'pilot', 'farmer'],
             answer: 'doctor',
             hint: '帮助病人的职业',
-            explanation: 'doctor是医生，帮助病人，My mother is a doctor.我妈妈是医生'
+            explanation: 'doctor是医生，帮助病人，My mother is a doctor.我妈妈是医生做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l1q2',
@@ -1893,7 +1914,7 @@ export const englishGrade6: Unit[] = [
             options: ['engineer', 'teacher', 'doctor', 'singer'],
             answer: 'engineer',
             hint: '建造桥梁的职业',
-            explanation: 'engineer是工程师，建造桥梁等工程，He is an engineer.他是工程师'
+            explanation: 'engineer是工程师，建造桥梁等工程，He is an engineer.他是工程师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l1q3',
@@ -1902,7 +1923,7 @@ export const englishGrade6: Unit[] = [
             answer: 'teacher',
             acceptableAnswers: ['Teacher'],
             hint: '教学生的职业',
-            explanation: 'teacher是老师，教学生，She is a teacher.她是老师'
+            explanation: 'teacher是老师，教学生，She is a teacher.她是老师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l1q4',
@@ -1911,7 +1932,7 @@ export const englishGrade6: Unit[] = [
             options: ['an', 'a', 'the', 'no'],
             answer: 'an',
             hint: 'engineer以元音音素开头，用哪个冠词？',
-            explanation: 'engineer以元音音素开头，用an，He is an engineer.他是工程师'
+            explanation: 'engineer以元音音素开头，用an，He is an engineer.他是工程师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l1q5',
@@ -1920,7 +1941,7 @@ export const englishGrade6: Unit[] = [
             options: ['pilot', 'doctor', 'teacher', 'farmer'],
             answer: 'pilot',
             hint: '在天上开飞机的职业',
-            explanation: 'pilot是飞行员，驾驶飞机，A pilot flies a plane.飞行员开飞机'
+            explanation: 'pilot是飞行员，驾驶飞机，A pilot flies a plane.飞行员开飞机做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l1q6',
@@ -1929,7 +1950,7 @@ export const englishGrade6: Unit[] = [
             answer: 'teacher',
             acceptableAnswers: ['Teacher'],
             hint: 'teach加er表示"做...的人"',
-            explanation: 'teach（教）+ er = teacher（老师），-er表示做某事的人'
+            explanation: 'teach（教）+ er = teacher（老师），-er表示做某事的人做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l1q7',
@@ -1938,7 +1959,7 @@ export const englishGrade6: Unit[] = [
             options: ['doctor', 'teacher', 'pilot', 'farmer'],
             answer: 'doctor',
             hint: '[职业词汇]（英语三年级-第5单元）',
-            explanation: 'doctor医生在医院帮助病人，是三年级Jobs单元学过的职业词汇'
+            explanation: 'doctor医生在医院帮助病人，是三年级Jobs单元学过的职业词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1946,12 +1967,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u5l2',
         title: 'What does...do? 职业问答',
         order: 2,
-        teachingMethod: '情境对话法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用What does...do?询问并回答职业',
         successCriteria: '①能用What does...do?提问 ②能用She is a...回答',
-        iDo: '家长示范问答职业："What does your mother do? She is a doctor."',
-        weDo: '亲子一起问答职业，家长问孩子答，再互换角色',
-        youDo: '孩子独立用What does...do?询问并回答职业',
+        iDo: '家长示范问答职业："What does your mother do? She is a doctor." 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起问答职业，家长问孩子答，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用What does...do?询问并回答职业【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：职业问答What does your mother do?（你妈妈做什么），回答She is a doctor.。\n共学四步：\n①对话出题：家长问What does your father do?。\n②孩子应答：孩子应说He is an engineer.。\n③答错引导：若孩子说不出，家长当同学一起聊！扫描课时发音动画听发音；让孩子点读课件对话卡；家长结合家人职业边问边答。\n④快速检测：1.孩子用What does...do?提问；2.用She is a...回答；3.问答互换。',
         funElement: '玩"职业猜猜猜"游戏，一人描述职业特征，另一人猜职业',
         gsapAnimations: ['GSAP:职业问答展开-timeline', 'GSAP:对话气泡弹出-stagger', 'GSAP:问答高亮-highlight'],
@@ -1963,7 +1984,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '问"你妈妈/爸爸"用What does your mother/father do?回答用She/He is a/an + 职业。does是第三人称助动词。', label: '句型结构', animationType: 'pulse' },
           { type: 'example', content: 'What does she do? She is a doctor.\nWhat does he do? He is an engineer.\nWhat do you do? I am a student.', label: '问答操练', animationType: 'sequence' },
           { type: 'tip', content: '问"你"用What do you do?问"他/她"用What does he/she do?注意do和does的区别。', label: '人称区别', animationType: 'pulse' },
-          { type: 'animation', content: '职业问答逐步展开动画，配合时间线展示问答过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Jobs Q&A', timelineConfig: { steps: [ { text: 'What does your mother do?', ttsNarration: 'What does your mother do?' }, { text: 'She is a doctor.', ttsNarration: 'She is a doctor.' }, { text: 'What does your father do?', ttsNarration: 'What does your father do?' }, { text: 'He is an engineer.', ttsNarration: 'He is an engineer.' } ] }, ttsNarration: '职业问答：你妈妈做什么工作？她是医生。你爸爸呢？他是工程师。' } }
+          { type: 'animation', content: '职业问答逐步展开动画，配合时间线展示问答过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Jobs Q&A', timelineConfig: { steps: [ { text: 'What does your mother do?', ttsNarration: 'What does your mother do?' }, { text: 'She is a doctor.', ttsNarration: 'She is a doctor.' }, { text: 'What does your father do?', ttsNarration: 'What does your father do?' }, { text: 'He is an engineer.', ttsNarration: 'He is an engineer.' } ] }, ttsNarration: '职业问答：你妈妈做什么工作？她是医生。你爸爸呢？他是工程师。' } },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1973,7 +1995,7 @@ export const englishGrade6: Unit[] = [
             options: ['What', 'Where', 'How', 'Who'],
             answer: 'What',
             hint: '问职业用哪个疑问词？',
-            explanation: 'What问做什么工作，What does your mother do?你妈妈做什么工作？'
+            explanation: 'What问做什么工作，What does your mother do?你妈妈做什么工作？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l2q2',
@@ -1982,7 +2004,7 @@ export const englishGrade6: Unit[] = [
             options: ['He', 'She', 'His', 'Her'],
             answer: 'He',
             hint: '指代father用什么代词？',
-            explanation: 'father是男性，用He，He is an engineer.他是工程师'
+            explanation: 'father是男性，用He，He is an engineer.他是工程师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l2q3',
@@ -1991,7 +2013,7 @@ export const englishGrade6: Unit[] = [
             answer: 'does',
             acceptableAnswers: ['Does'],
             hint: '主语she第三人称单数，用哪个助动词？',
-            explanation: '主语she第三人称单数，用does，What does she do?她做什么工作？'
+            explanation: '主语she第三人称单数，用does，What does she do?她做什么工作？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l2q4',
@@ -2000,7 +2022,7 @@ export const englishGrade6: Unit[] = [
             options: ['a', 'an', 'the', 'no'],
             answer: 'a',
             hint: 'pilot以辅音音素开头，用哪个冠词？',
-            explanation: 'pilot以辅音音素开头，用a，He is a pilot.他是飞行员'
+            explanation: 'pilot以辅音音素开头，用a，He is a pilot.他是飞行员做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l2q5',
@@ -2009,7 +2031,7 @@ export const englishGrade6: Unit[] = [
             options: ['What does she do?', 'What do she do?', 'What does she does?', 'What she does do?'],
             answer: 'What does she do?',
             hint: '第三人称疑问句：What + does + 主语 + 动词原形?',
-            explanation: '第三人称疑问句用What + does + she + do?所以What does she do?正确'
+            explanation: '第三人称疑问句用What + does + she + do?所以What does she do?正确做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l2q6',
@@ -2018,7 +2040,7 @@ export const englishGrade6: Unit[] = [
             answer: 'you',
             acceptableAnswers: ['You'],
             hint: '问"你"用什么代词？',
-            explanation: '问"你"用you，What do you do?你做什么工作？回答I am a student.'
+            explanation: '问"你"用you，What do you do?你做什么工作？回答I am a student.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l2q7',
@@ -2027,7 +2049,7 @@ export const englishGrade6: Unit[] = [
             options: ['There are', 'There is', 'They are', 'It is'],
             answer: 'There are',
             hint: '[How many句型]（英语四年级-第6单元）',
-            explanation: '询问数量用How many，回答用There are+复数，是四年级Meet My Family单元学的句型'
+            explanation: '询问数量用How many，回答用There are+复数，是四年级Meet My Family单元学的句型做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2035,12 +2057,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u5l3',
         title: 'Where does...work? 工作地点',
         order: 3,
-        teachingMethod: '情境式教学法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用Where does...work?询问并回答工作地点',
         successCriteria: '①能用Where does...work?提问 ②能用She works in...回答',
-        iDo: '家长示范问答工作地点："Where does she work? She works in a hospital."',
-        weDo: '亲子一起问答工作地点，家长问孩子答，再互换角色',
-        youDo: '孩子独立用Where does...work?询问并回答工作地点',
+        iDo: '家长示范问答工作地点："Where does she work? She works in a hospital." 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起问答工作地点，家长问孩子答，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用Where does...work?询问并回答工作地点【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：工作地点问答Where does she work?（她在哪工作），回答She works in a hospital.。\n共学四步：\n①对话出题：家长问Where does your mother work?。\n②孩子应答：孩子应说She works in a hospital.。\n③答错引导：若孩子说不出，家长当同学一起聊！扫描课时发音动画听发音；让孩子点读课件对话卡；家长结合家人工作地点边问边答。\n④快速检测：1.孩子用Where does...work?提问；2.用She works in...回答；3.说出3个工作地点。',
         funElement: '玩"工作地点配对"游戏，把职业和工作地点配对',
         gsapAnimations: ['GSAP:工作场所出现-sceneBuild', 'GSAP:地点职业配对-compare', 'GSAP:配对高亮-highlight'],
@@ -2052,7 +2074,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: 'work in + 大地点（hospital, school），work at + 具体地点（airport, office）。works是work的第三人称单数形式。', label: '介词用法', animationType: 'pulse' },
           { type: 'example', content: 'A doctor works in a hospital. 医生在医院工作。\nA teacher works in a school. 老师在学校工作。\nA pilot works at an airport. 飞行员在机场工作。\nA farmer works on a farm. 农民在农场工作。', label: '职业与地点', animationType: 'sequence' },
           { type: 'tip', content: '第三人称单数动词work要加s变works：She works（正确）/ She work（错误）。这是第三人称单数规则。', label: '动词变化', animationType: 'pulse' },
-          { type: 'animation', content: '工作场所逐步出现动画，展示职业与工作地点的对应关系', animationType: 'compare', animationConfig: { sceneType: 'compare', title: 'Jobs & Places', compareConfig: { leftItems: ['doctor', 'teacher', 'pilot'], rightItems: ['hospital', 'school', 'airport'], result: 'equal', resultText: '职业与工作地点对应' }, ttsNarration: '职业与工作地点：医生在医院，老师在学校，飞行员在机场' } }
+          { type: 'animation', content: '工作场所逐步出现动画，展示职业与工作地点的对应关系', animationType: 'compare', animationConfig: { sceneType: 'compare', title: 'Jobs & Places', compareConfig: { leftItems: ['doctor', 'teacher', 'pilot'], rightItems: ['hospital', 'school', 'airport'], result: 'equal', resultText: '职业与工作地点对应' }, ttsNarration: '职业与工作地点：医生在医院，老师在学校，飞行员在机场' } },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2062,7 +2085,7 @@ export const englishGrade6: Unit[] = [
             options: ['Where', 'What', 'How', 'Who'],
             answer: 'Where',
             hint: '问地点用哪个疑问词？',
-            explanation: 'Where问地点，Where does she work?她在哪儿工作？'
+            explanation: 'Where问地点，Where does she work?她在哪儿工作？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l3q2',
@@ -2071,7 +2094,7 @@ export const englishGrade6: Unit[] = [
             options: ['hospital', 'school', 'farm', 'airport'],
             answer: 'hospital',
             hint: '医生在哪里工作？',
-            explanation: '医生在医院工作，A doctor works in a hospital.'
+            explanation: '医生在医院工作，A doctor works in a hospital.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l3q3',
@@ -2080,7 +2103,7 @@ export const englishGrade6: Unit[] = [
             answer: 'works',
             acceptableAnswers: ['Works'],
             hint: '主语She第三人称单数，动词加s',
-            explanation: '主语She第三人称单数，动词work加s变works，She works in a school.'
+            explanation: '主语She第三人称单数，动词work加s变works，She works in a school.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l3q4',
@@ -2089,7 +2112,7 @@ export const englishGrade6: Unit[] = [
             options: ['school', 'hospital', 'airport', 'farm'],
             answer: 'school',
             hint: '老师在哪里工作？',
-            explanation: '老师在学校工作，A teacher works in a school.'
+            explanation: '老师在学校工作，A teacher works in a school.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l3q5',
@@ -2098,7 +2121,7 @@ export const englishGrade6: Unit[] = [
             options: ['at', 'in', 'on', 'of'],
             answer: 'at',
             hint: 'airport是具体地点，用哪个介词？',
-            explanation: '具体地点airport用at，A pilot works at an airport.飞行员在机场工作'
+            explanation: '具体地点airport用at，A pilot works at an airport.飞行员在机场工作做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l3q6',
@@ -2107,7 +2130,7 @@ export const englishGrade6: Unit[] = [
             answer: 'farm',
             acceptableAnswers: ['Farm'],
             hint: '农民在哪里工作？',
-            explanation: '农民在农场工作，A farmer works on a farm.'
+            explanation: '农民在农场工作，A farmer works on a farm.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l3q7',
@@ -2116,7 +2139,7 @@ export const englishGrade6: Unit[] = [
             options: ['teacher', 'doctor', 'pilot', 'cook'],
             answer: 'teacher',
             hint: '[职业词汇]（英语三年级-第5单元）',
-            explanation: 'teacher老师在学校教书，是三年级Jobs单元学过的职业词汇'
+            explanation: 'teacher老师在学校教书，是三年级Jobs单元学过的职业词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2124,12 +2147,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u5l4',
         title: 'My dream——我的梦想',
         order: 4,
-        teachingMethod: '项目式学习',
+        teachingMethod: '芬兰现象式学习',
         learningObjective: '我能综合运用职业词汇和句型描述自己的梦想',
         successCriteria: '①能用I want to be a...表达梦想 ②能说出梦想的原因',
-        iDo: '家长示范描述梦想："I want to be a teacher because I like helping children."',
-        weDo: '亲子一起讨论并描述梦想，互相分享',
-        youDo: '孩子独立写一段描述自己梦想的话',
+        iDo: '家长示范描述梦想："I want to be a teacher because I like helping children." 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起讨论并描述梦想，互相分享 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立写一段描述自己梦想的话【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：梦想表达I want to be a teacher because I like helping children.。\n共学四步：\n①对话出题：家长说I want to be a teacher because I like children.，问孩子What do you want to be?。\n②孩子应答：孩子应说I want to be a doctor because I like helping people.。\n③答错引导：若孩子说不出，家长当同学一起聊！扫描课时发音动画复习；让孩子点读课件句型卡；家长结合孩子兴趣边聊边引导。\n④快速检测：1.孩子用I want to be a...造句；2.说出原因；3.介绍自己的梦想。',
         funElement: '玩"梦想卡片"游戏，制作梦想卡并分享',
         gsapAnimations: ['GSAP:梦想逐条出现-stagger', 'GSAP:梦想步骤-timeline', 'GSAP:关键词高亮-highlight'],
@@ -2141,7 +2164,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: 'I want to be + 职业，表示"我想成为..."。because接原因从句，说明为什么有这个梦想。', label: '句型结构', animationType: 'pulse' },
           { type: 'example', content: 'I want to be a teacher. 我想当老师。\nI want to be a doctor. 我想当医生。\nI want to be an engineer. 我想当工程师。\nI want to be a pilot. 我想当飞行员。', label: '梦想句型操练', animationType: 'sequence' },
           { type: 'tip', content: '描述梦想要有职业和原因。原因可以是爱好（I like...）或愿望（I want to help...）。梦想要积极向上。', label: '写作技巧', animationType: 'pulse' },
-          { type: 'animation', content: '梦想描述逐步出现动画，配合时间线展示梦想过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'My Dream', timelineConfig: { steps: [ { text: 'I want to be a teacher.', ttsNarration: 'I want to be a teacher.' }, { text: 'because I like helping children.', ttsNarration: 'because I like helping children.' }, { text: 'I want to be a doctor.', ttsNarration: 'I want to be a doctor.' }, { text: 'because I want to help people.', ttsNarration: 'because I want to help people.' } ] }, ttsNarration: '我的梦想：我想当老师因为我喜欢帮助孩子。我想当医生因为我想帮助别人。' } }
+          { type: 'animation', content: '梦想描述逐步出现动画，配合时间线展示梦想过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'My Dream', timelineConfig: { steps: [ { text: 'I want to be a teacher.', ttsNarration: 'I want to be a teacher.' }, { text: 'because I like helping children.', ttsNarration: 'because I like helping children.' }, { text: 'I want to be a doctor.', ttsNarration: 'I want to be a doctor.' }, { text: 'because I want to help people.', ttsNarration: 'because I want to help people.' } ] }, ttsNarration: '我的梦想：我想当老师因为我喜欢帮助孩子。我想当医生因为我想帮助别人。' } },
+          { type: 'tip', content: '本课主要使用项目式学习：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2151,7 +2175,7 @@ export const englishGrade6: Unit[] = [
             options: ['be', 'is', 'am', 'are'],
             answer: 'be',
             hint: 'want to后面接动词原形',
-            explanation: 'want to + 动词原形be，I want to be a teacher.我想当老师'
+            explanation: 'want to + 动词原形be，I want to be a teacher.我想当老师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l4q2',
@@ -2160,7 +2184,7 @@ export const englishGrade6: Unit[] = [
             options: ['because', 'so', 'but', 'and'],
             answer: 'because',
             hint: '说明原因用哪个连词？',
-            explanation: 'because表示因为，说明原因，I want to be a doctor because I want to help people.'
+            explanation: 'because表示因为，说明原因，I want to be a doctor because I want to help people.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l4q3',
@@ -2169,7 +2193,7 @@ export const englishGrade6: Unit[] = [
             answer: 'pilot',
             acceptableAnswers: ['Pilot'],
             hint: '喜欢飞行的职业',
-            explanation: 'pilot是飞行员，I want to be a pilot because I like flying.我想当飞行员因为我喜欢飞行'
+            explanation: 'pilot是飞行员，I want to be a pilot because I like flying.我想当飞行员因为我喜欢飞行做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l4q4',
@@ -2178,7 +2202,7 @@ export const englishGrade6: Unit[] = [
             options: ['I want to be an engineer.', 'I want to is an engineer.', 'I want be a engineer.', 'I want to are engineer.'],
             answer: 'I want to be an engineer.',
             hint: 'want to + be + an + 元音开头职业',
-            explanation: 'want to + 动词原形be，engineer用an，I want to be an engineer.我想当工程师'
+            explanation: 'want to + 动词原形be，engineer用an，I want to be an engineer.我想当工程师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l4q5',
@@ -2187,7 +2211,7 @@ export const englishGrade6: Unit[] = [
             options: ['because', 'or', 'but', 'so'],
             answer: 'because',
             hint: '说明喜欢孩子的原因',
-            explanation: 'because表示因为，I want to be a teacher because I like children.'
+            explanation: 'because表示因为，I want to be a teacher because I like children.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l4q6',
@@ -2196,7 +2220,7 @@ export const englishGrade6: Unit[] = [
             answer: 'be',
             acceptableAnswers: ['Be'],
             hint: 'want to后面接动词原形',
-            explanation: 'want to + 动词原形be，I want to be a doctor.我想当医生'
+            explanation: 'want to + 动词原形be，I want to be a doctor.我想当医生做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l4q7',
@@ -2205,7 +2229,7 @@ export const englishGrade6: Unit[] = [
             answer: 'mother',
             acceptableAnswers: ['Mother'],
             hint: '[家庭成员词汇]（英语四年级-第6单元）',
-            explanation: 'mother妈妈，father和mother合称parents父母，是四年级Meet My Family单元学的家庭成员词汇'
+            explanation: 'mother妈妈，father和mother合称parents父母，是四年级Meet My Family单元学的家庭成员词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2216,9 +2240,9 @@ export const englishGrade6: Unit[] = [
         teachingMethod: '形成性评价',
         learningObjective: '我能通过第五单元综合检测，巩固职业词汇和问答句型',
         successCriteria: '①能完成职业词汇题 ②能完成职业问答和梦想表达题',
-        iDo: '家长示范检测题型，讲解职业、问答、地点、梦想四类题',
-        weDo: '亲子一起做练习题，家长引导孩子分析题目，讨论答案',
-        youDo: '孩子独立完成综合检测，目标正确率≥80%',
+        iDo: '家长示范检测题型，讲解职业、问答、地点、梦想四类题 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做练习题，家长引导孩子分析题目，讨论答案 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合检测，目标正确率≥80%【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：第五单元综合检测，包括职业词汇、What does...do问答、工作地点、梦想表达。\n共学四步：\n①对话出题：家长说我们来做第五单元检测，先复习一下。。\n②孩子应答：孩子应说teacher, doctor, engineer, pilot!。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学假装忘了，和孩子比赛说。\n④快速检测：1.孩子完成单元检测；2.正确率达80%；3.错题订正。',
         funElement: '通关后撒花庆祝，获得"Dream达人"徽章',
         gsapAnimations: ['GSAP:通关撒花-confetti', 'GSAP:题目逐个出现-stagger', 'GSAP:正确答案高亮-highlight'],
@@ -2230,7 +2254,8 @@ export const englishGrade6: Unit[] = [
           { type: 'dialogue', content: 'Tom: What does your mother do?\nAmy: She is a doctor. She works in a hospital.\nTom: What do you want to be?\nAmy: I want to be a teacher because I like children.', label: '综合职业对话', animationType: 'timeline' },
           { type: 'example', content: '易错点1：an engineer（正确）/ a engineer（错误）\n易错点2：She works（正确）/ She work（错误）\n易错点3：want to be（正确）/ want be（错误）', label: '易错点提醒', animationType: 'sequence' },
           { type: 'tip', content: '描述梦想要包含职业和原因，用I want to be...because...。梦想要积极向上，努力学习实现梦想。', label: '写作建议', animationType: 'pulse' },
-          { type: 'animation', content: '通关撒花动画，正确率达到80%触发庆祝特效', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'Dream Star', cardRevealConfig: { cards: [ { front: 'teacher', back: '👩‍🏫', ttsText: 'teacher' }, { front: 'doctor', back: '👨‍⚕️', ttsText: 'doctor' }, { front: 'pilot', back: '✈️', ttsText: 'pilot' } ] }, ttsNarration: '梦想达人通关庆祝！' } }
+          { type: 'animation', content: '通关撒花动画，正确率达到80%触发庆祝特效', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'Dream Star', cardRevealConfig: { cards: [ { front: 'teacher', back: '👩‍🏫', ttsText: 'teacher' }, { front: 'doctor', back: '👨‍⚕️', ttsText: 'doctor' }, { front: 'pilot', back: '✈️', ttsText: 'pilot' } ] }, ttsNarration: '梦想达人通关庆祝！' } },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2240,7 +2265,7 @@ export const englishGrade6: Unit[] = [
             options: ['What', 'Where', 'How', 'Who'],
             answer: 'What',
             hint: '问职业用哪个疑问词？',
-            explanation: 'What问职业，What does your father do?你爸爸做什么工作？'
+            explanation: 'What问职业，What does your father do?你爸爸做什么工作？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l5q2',
@@ -2249,7 +2274,7 @@ export const englishGrade6: Unit[] = [
             options: ['hospital', 'school', 'farm', 'airport'],
             answer: 'hospital',
             hint: '医生在哪里工作？',
-            explanation: '医生在医院工作，A doctor works in a hospital.'
+            explanation: '医生在医院工作，A doctor works in a hospital.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l5q3',
@@ -2258,7 +2283,7 @@ export const englishGrade6: Unit[] = [
             answer: 'works',
             acceptableAnswers: ['Works'],
             hint: '主语She第三人称单数，动词加s',
-            explanation: '主语She第三人称单数，动词work加s变works，She works in a school.'
+            explanation: '主语She第三人称单数，动词work加s变works，She works in a school.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l5q4',
@@ -2267,7 +2292,7 @@ export const englishGrade6: Unit[] = [
             options: ['an', 'a', 'the', 'no'],
             answer: 'an',
             hint: 'engineer以元音音素开头，用哪个冠词？',
-            explanation: 'engineer以元音音素开头，用an，I want to be an engineer.我想当工程师'
+            explanation: 'engineer以元音音素开头，用an，I want to be an engineer.我想当工程师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l5q5',
@@ -2276,7 +2301,7 @@ export const englishGrade6: Unit[] = [
             options: ['because', 'but', 'or', 'so'],
             answer: 'because',
             hint: '说明原因用哪个连词？',
-            explanation: 'because表示因为，I want to be a pilot because I like flying.'
+            explanation: 'because表示因为，I want to be a pilot because I like flying.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l5q6',
@@ -2285,7 +2310,7 @@ export const englishGrade6: Unit[] = [
             answer: 'be',
             acceptableAnswers: ['Be'],
             hint: 'want to后面接动词原形',
-            explanation: 'want to + 动词原形be，I want to be a teacher.我想当老师'
+            explanation: 'want to + 动词原形be，I want to be a teacher.我想当老师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u5l5q7',
@@ -2294,7 +2319,7 @@ export const englishGrade6: Unit[] = [
             options: ['chef', 'apple', 'run', 'Monday'],
             answer: 'chef',
             hint: '[职业词汇]（英语三年级-第5单元）',
-            explanation: 'chef是厨师，属于职业，apple/run/Monday都不是职业，是三年级Jobs单元学的词汇'
+            explanation: 'chef是厨师，属于职业，apple/run/Monday都不是职业，是三年级Jobs单元学的词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }
@@ -2311,12 +2336,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u6l1',
         title: '自然科学词汇：rain/cloud/sun/water cycle',
         order: 1,
-        teachingMethod: '情境式：科学实验',
+        teachingMethod: '情境教学法',
         learningObjective: '我能说出rain/cloud/sun等自然词汇并描述水循环',
         successCriteria: '①能说出4个自然词汇 ②能说出水循环过程',
-        iDo: '家长演示水循环实验，说词汇："rain/cloud/sun/water cycle"，配合道具',
-        weDo: '亲子一起观察水循环实验，家长说英语孩子指认',
-        youDo: '孩子独立说水循环过程和相关词汇',
+        iDo: '家长演示水循环实验，说词汇："rain/cloud/sun/water cycle"，配合道具 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起观察水循环实验，家长说英语孩子指认 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立说水循环过程和相关词汇【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：自然词汇rain（雨）、cloud（云）、sun（太阳）、water cycle（水循环），描述蒸发→凝结→降水。\n共学四步：\n①对话出题：家长问Where does rain come from?并说It comes from clouds.。\n②孩子应答：孩子应说It comes from clouds!。\n③答错引导：若孩子说不出，家长当同学一起做实验！扫描课时发音动画听发音；让孩子点读课件词汇卡；家长烧水演示蒸发，盖盖子演示凝结，边演边说。\n④快速检测：1.孩子说出4个自然词；2.说出水循环三步；3.用Where does...come from?问答。',
         funElement: '玩"水循环小实验"游戏，用热水和冰块演示水循环',
         gsapAnimations: ['GSAP:水循环动画-timeline', 'GSAP:自然词汇出现-sequence', 'GSAP:循环过程高亮-highlight'],
@@ -2334,7 +2359,8 @@ export const englishGrade6: Unit[] = [
             content: '合成词记忆法：water（水）+cycle（循环）=water cycle（水循环）。rain（雨）+bow（弓）=rainbow（彩虹，雨后天空中弓形的彩色光带）。cycle本身也表示"圆/循环"：bicycle（bi双+cycle轮=自行车，两个轮子）。遇到长单词试着拆开看，意思就猜出来啦！',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2344,7 +2370,7 @@ export const englishGrade6: Unit[] = [
             options: ['clouds', 'sun', 'tree', 'river'],
             answer: 'clouds',
             hint: '雨从哪里来？',
-            explanation: '雨来自云，Rain comes from the clouds.雨来自云'
+            explanation: '雨来自云，Rain comes from the clouds.雨来自云做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l1q2',
@@ -2353,7 +2379,7 @@ export const englishGrade6: Unit[] = [
             options: ['sun', 'cloud', 'rain', 'moon'],
             answer: 'sun',
             hint: '水循环中什么晒热水？',
-            explanation: '太阳晒热水，The sun heats the water.太阳晒热水'
+            explanation: '太阳晒热水，The sun heats the water.太阳晒热水做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l1q3',
@@ -2362,7 +2388,7 @@ export const englishGrade6: Unit[] = [
             answer: 'clouds',
             acceptableAnswers: ['cloud', 'Clouds', 'Cloud'],
             hint: '水上升变成什么？',
-            explanation: '水上升变成云，Water goes up and makes clouds.水上升变成云'
+            explanation: '水上升变成云，Water goes up and makes clouds.水上升变成云做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l1q4',
@@ -2371,7 +2397,7 @@ export const englishGrade6: Unit[] = [
             options: ['water cycle', 'water circle', 'water round', 'water loop'],
             answer: 'water cycle',
             hint: '水循环的英文怎么说？',
-            explanation: '水循环是water cycle，cycle表示循环'
+            explanation: '水循环是water cycle，cycle表示循环做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l1q5',
@@ -2380,7 +2406,7 @@ export const englishGrade6: Unit[] = [
             options: ['Sun heats water → clouds form → rain falls.', 'Rain falls → sun heats water → clouds form.', 'Clouds form → rain falls → sun heats water.', 'Sun heats water → rain falls → clouds form.'],
             answer: 'Sun heats water → clouds form → rain falls.',
             hint: '水循环的正确顺序',
-            explanation: '水循环顺序：太阳晒热水→水蒸发成云→云变雨落下'
+            explanation: '水循环顺序：太阳晒热水→水蒸发成云→云变雨落下做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l1q6',
@@ -2389,7 +2415,7 @@ export const englishGrade6: Unit[] = [
             answer: 'Rain',
             acceptableAnswers: ['rain'],
             hint: '从云里落下来的是什么？',
-            explanation: '雨从云里落下来，Rain falls down from the clouds.'
+            explanation: '雨从云里落下来，Rain falls down from the clouds.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l1q7',
@@ -2398,7 +2424,7 @@ export const englishGrade6: Unit[] = [
             answer: 'forest',
             acceptableAnswers: ['Forest'],
             hint: '[自然景观词汇]（英语三年级-第4单元）',
-            explanation: 'forest森林有很多树，动物栖息其中，是三年级Nature单元学过的自然景观词汇'
+            explanation: 'forest森林有很多树，动物栖息其中，是三年级Nature单元学过的自然景观词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2406,12 +2432,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u6l2',
         title: 'Where does...come from? 来源问答',
         order: 2,
-        teachingMethod: '情境对话法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用Where does...come from?询问并回答来源',
         successCriteria: '①能用Where does...come from?提问 ②能用It comes from...回答',
-        iDo: '家长示范问答来源："Where does rain come from? It comes from clouds."',
-        weDo: '亲子一起问答来源，家长问孩子答，再互换角色',
-        youDo: '孩子独立用Where does...come from?询问并回答来源',
+        iDo: '家长示范问答来源："Where does rain come from? It comes from clouds." 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起问答来源，家长问孩子答，再互换角色 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用Where does...come from?询问并回答来源【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：来源问答Where does rain come from?（雨从哪里来），回答It comes from clouds.。\n共学四步：\n①对话出题：家长问Where does rain come from?。\n②孩子应答：孩子应说It comes from clouds.。\n③答错引导：若孩子说不出，家长当同学一起聊！扫描课时发音动画听发音；让孩子点读课件对话卡；家长结合水循环边问边答。\n④快速检测：1.孩子用Where does...come from?提问；2.用It comes from...回答；3.问答互换。',
         funElement: '玩"来源探秘"游戏，问各种东西的来源',
         gsapAnimations: ['GSAP:来源问答展开-timeline', 'GSAP:对话气泡弹出-stagger', 'GSAP:问答高亮-highlight'],
@@ -2423,7 +2449,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: 'come from表示来自。问单数用Where does it come from?问复数用Where do they come from?回答用comes from/come from。', label: '句型结构', animationType: 'pulse' },
           { type: 'example', content: 'Where does rain come from? It comes from clouds.\nWhere does milk come from? It comes from cows.\nWhere do apples come from? They come from trees.', label: '来源问答操练', animationType: 'sequence' },
           { type: 'tip', content: 'comes from是come from的第三人称单数形式。It comes from...（单数），They come from...（复数）。', label: '动词变化', animationType: 'pulse' },
-          { type: 'animation', content: '来源问答逐步展开动画，配合时间线展示问答过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Where does it come from?', timelineConfig: { steps: [ { text: 'Where does rain come from?', ttsNarration: 'Where does rain come from?' }, { text: 'It comes from clouds.', ttsNarration: 'It comes from clouds.' }, { text: 'Where does milk come from?', ttsNarration: 'Where does milk come from?' }, { text: 'It comes from cows.', ttsNarration: 'It comes from cows.' } ] }, ttsNarration: '来源问答：雨来自哪里？来自云。牛奶来自哪里？来自奶牛。' } }
+          { type: 'animation', content: '来源问答逐步展开动画，配合时间线展示问答过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Where does it come from?', timelineConfig: { steps: [ { text: 'Where does rain come from?', ttsNarration: 'Where does rain come from?' }, { text: 'It comes from clouds.', ttsNarration: 'It comes from clouds.' }, { text: 'Where does milk come from?', ttsNarration: 'Where does milk come from?' }, { text: 'It comes from cows.', ttsNarration: 'It comes from cows.' } ] }, ttsNarration: '来源问答：雨来自哪里？来自云。牛奶来自哪里？来自奶牛。' } },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2433,7 +2460,7 @@ export const englishGrade6: Unit[] = [
             options: ['Where', 'What', 'How', 'Who'],
             answer: 'Where',
             hint: '问来源用哪个疑问词？',
-            explanation: 'Where问来自哪里，Where does rain come from?雨来自哪里？'
+            explanation: 'Where问来自哪里，Where does rain come from?雨来自哪里？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l2q2',
@@ -2442,7 +2469,7 @@ export const englishGrade6: Unit[] = [
             options: ['comes', 'come', 'coming', 'to come'],
             answer: 'comes',
             hint: '主语It第三人称单数，动词怎么变？',
-            explanation: '主语It第三人称单数，动词come加s变comes，It comes from clouds.'
+            explanation: '主语It第三人称单数，动词come加s变comes，It comes from clouds.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l2q3',
@@ -2451,7 +2478,7 @@ export const englishGrade6: Unit[] = [
             answer: 'from',
             acceptableAnswers: ['From'],
             hint: '表示"来自"用哪个介词？',
-            explanation: 'come from表示来自，It comes from clouds.它来自云'
+            explanation: 'come from表示来自，It comes from clouds.它来自云做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l2q4',
@@ -2460,7 +2487,7 @@ export const englishGrade6: Unit[] = [
             options: ['cows', 'clouds', 'trees', 'sun'],
             answer: 'cows',
             hint: '牛奶来自哪里？',
-            explanation: '牛奶来自奶牛，It comes from cows.它来自奶牛'
+            explanation: '牛奶来自奶牛，It comes from cows.它来自奶牛做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l2q5',
@@ -2469,7 +2496,7 @@ export const englishGrade6: Unit[] = [
             options: ['come', 'comes', 'coming', 'to come'],
             answer: 'come',
             hint: '主语They复数，动词用什么形式？',
-            explanation: '主语They复数，动词用原形come，They come from trees.它们来自树'
+            explanation: '主语They复数，动词用原形come，They come from trees.它们来自树做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l2q6',
@@ -2478,7 +2505,7 @@ export const englishGrade6: Unit[] = [
             answer: 'does',
             acceptableAnswers: ['Does'],
             hint: 'rain是第三人称单数，用哪个助动词？',
-            explanation: 'rain是第三人称单数，用does，Where does rain come from?雨来自哪里？'
+            explanation: 'rain是第三人称单数，用does，Where does rain come from?雨来自哪里？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l2q7',
@@ -2487,7 +2514,7 @@ export const englishGrade6: Unit[] = [
             options: ['Is', 'Are', 'Do', 'Does'],
             answer: 'Is',
             hint: '[Is there/Are there句型]（英语五年级-第6单元）',
-            explanation: '单数名词river前用Is there...?，是五年级Nature Park单元学的Is there/Are there句型'
+            explanation: '单数名词river前用Is there...?，是五年级Nature Park单元学的Is there/Are there句型做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2495,12 +2522,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u6l3',
         title: '科学短文阅读——水的故事',
         order: 3,
-        teachingMethod: '分级阅读',
+        teachingMethod: '自然拼读法',
         learningObjective: '我能阅读科学短文并理解水的故事',
         successCriteria: '①能读懂短文大意 ②能找出关键信息',
-        iDo: '家长示范读科学短文，停顿讲解关键词和句子',
-        weDo: '亲子一起读科学短文，家长引导孩子理解',
-        youDo: '孩子独立读科学短文并回答问题',
+        iDo: '家长示范读科学短文，停顿讲解关键词和句子 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起读科学短文，家长引导孩子理解 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立读科学短文并回答问题【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：科学短文阅读——水的故事，理解水循环过程和关键词。\n共学四步：\n①对话出题：家长说我们一起读水的科学故事。并读第一句。\n②孩子应答：孩子应跟读并说出大意。\n③答错引导：若孩子读不出，家长当同学一起读！扫描课时发音动画听发音；让孩子点读课件短文卡；家长逐句带孩子读，用手指指读。\n④快速检测：1.孩子读短文；2.说出大意；3.找2个关键信息。',
         funElement: '玩"科学小读者"游戏，读完短文回答问题得星星',
         gsapAnimations: ['GSAP:短文关键句高亮-highlight', 'GSAP:阅读进度-timeline', 'GSAP:关键词出现-stagger'],
@@ -2512,7 +2539,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '阅读科学短文要抓住关键信息：谁做了什么，过程怎样。用who/what/how提问帮助理解。', label: '阅读策略', animationType: 'pulse' },
           { type: 'example', content: 'The sun heats the water. 太阳晒热水。\nWater goes up and makes clouds. 水上升变成云。\nRain falls down. 雨落下来。\nRain goes back to rivers. 雨回到河里。', label: '短文关键句', animationType: 'sequence' },
           { type: 'tip', content: '水循环是一个循环过程，水从地面到天空再回到地面，周而复始。理解循环概念很重要。', label: '科学概念', animationType: 'pulse' },
-          { type: 'animation', content: '短文关键句高亮动画，配合时间线展示阅读进度', animationType: 'sequence', animationConfig: { sceneType: 'sequence', title: 'Story of Water', sequenceConfig: { items: ['The sun heats water.', 'Water makes clouds.', 'Rain falls down.', 'Water cycle.'], order: 'custom', itemType: 'word' }, ttsNarration: '水的故事：太阳晒热水，水变成云，雨落下，这是水循环' } }
+          { type: 'animation', content: '短文关键句高亮动画，配合时间线展示阅读进度', animationType: 'sequence', animationConfig: { sceneType: 'sequence', title: 'Story of Water', sequenceConfig: { items: ['The sun heats water.', 'Water makes clouds.', 'Rain falls down.', 'Water cycle.'], order: 'custom', itemType: 'word' }, ttsNarration: '水的故事：太阳晒热水，水变成云，雨落下，这是水循环' } },
+          { type: 'tip', content: '本课主要使用分级阅读：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2522,7 +2550,7 @@ export const englishGrade6: Unit[] = [
             options: ['The water cycle.', 'The sun.', 'The clouds.', 'The rain.'],
             answer: 'The water cycle.',
             hint: '文章主要讲什么？',
-            explanation: '文章主要讲水循环The water cycle，描述水从地面到天空再回地面的过程'
+            explanation: '文章主要讲水循环The water cycle，描述水从地面到天空再回地面的过程做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l3q2',
@@ -2531,7 +2559,7 @@ export const englishGrade6: Unit[] = [
             options: ['It heats the water.', 'It makes rain.', 'It makes clouds.', 'It falls down.'],
             answer: 'It heats the water.',
             hint: '太阳在故事里做什么？',
-            explanation: '太阳晒热水，It heats the water.太阳晒热水'
+            explanation: '太阳晒热水，It heats the water.太阳晒热水做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l3q3',
@@ -2540,7 +2568,7 @@ export const englishGrade6: Unit[] = [
             answer: 'clouds',
             acceptableAnswers: ['cloud', 'Clouds', 'Cloud'],
             hint: '水上升变成什么？',
-            explanation: '水上升变成云，Water goes up and makes clouds.'
+            explanation: '水上升变成云，Water goes up and makes clouds.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l3q4',
@@ -2549,7 +2577,7 @@ export const englishGrade6: Unit[] = [
             options: ['Rain falls.', 'Sun heats water.', 'Water goes up.', 'Clouds disappear.'],
             answer: 'Rain falls.',
             hint: '云变重了会怎样？',
-            explanation: '云变重了就下雨，Rain falls.雨落下'
+            explanation: '云变重了就下雨，Rain falls.雨落下做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l3q5',
@@ -2558,7 +2586,7 @@ export const englishGrade6: Unit[] = [
             options: ['Rivers.', 'The sun.', 'The sky.', 'Trees.'],
             answer: 'Rivers.',
             hint: '雨回到哪里？',
-            explanation: '雨回到河里，Rain goes back to rivers.雨回到河里'
+            explanation: '雨回到河里，Rain goes back to rivers.雨回到河里做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l3q6',
@@ -2567,7 +2595,7 @@ export const englishGrade6: Unit[] = [
             answer: 'cycle',
             acceptableAnswers: ['Cycle'],
             hint: '水循环的英文',
-            explanation: '水循环是water cycle，cycle表示循环，This is the water cycle.'
+            explanation: '水循环是water cycle，cycle表示循环，This is the water cycle.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l3q7',
@@ -2576,7 +2604,7 @@ export const englishGrade6: Unit[] = [
             options: ['mountain', 'desk', 'ruler', 'school'],
             answer: 'mountain',
             hint: '[自然景观词汇]（英语三年级-第4单元）',
-            explanation: 'mountain山是自然景观，是三年级Nature单元学过的词汇，desk/ruler/school都不是自然景观'
+            explanation: 'mountain山是自然景观，是三年级Nature单元学过的词汇，desk/ruler/school都不是自然景观做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2584,12 +2612,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u6l4',
         title: '描述过程——First...Then...Finally',
         order: 4,
-        teachingMethod: '支架式教学法',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能用First...Then...Finally...描述过程',
         successCriteria: '①能说出3个顺序词 ②能用顺序词描述水循环',
-        iDo: '家长示范用顺序词描述过程："First, the sun heats water. Then, water makes clouds. Finally, rain falls."',
-        weDo: '亲子一起用顺序词描述水循环过程，互相补充',
-        youDo: '孩子独立用顺序词描述水循环过程',
+        iDo: '家长示范用顺序词描述过程："First, the sun heats water. Then, water makes clouds. Finally, rain falls." 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起用顺序词描述水循环过程，互相补充 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用顺序词描述水循环过程【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：顺序词First（首先）、Then（然后）、Finally（最后），描述水循环过程。\n共学四步：\n①对话出题：家长说First, the sun heats water. Then, water makes clouds. Finally, rain falls.，问孩子复述。\n②孩子应答：孩子应说First, the sun heats water. Then, water makes clouds. Finally, rain falls.。\n③答错引导：若孩子说不出，家长当同学一起说！扫描课时发音动画听发音；让孩子点读课件顺序卡；家长用手势表示顺序边说边比划。\n④快速检测：1.孩子说出3个顺序词；2.用First...造句；3.用顺序词描述水循环。',
         funElement: '玩"过程讲解员"游戏，用顺序词讲解水循环过程',
         gsapAnimations: ['GSAP:顺序步骤展开-timeline', 'GSAP:顺序词出现-sequence', 'GSAP:步骤高亮-highlight'],
@@ -2601,7 +2629,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '顺序词放在句首，后面加逗号：First, ... Then, ... Next, ... Finally, ...让过程描述清晰有序。', label: '顺序词用法', animationType: 'pulse' },
           { type: 'example', content: 'First, the sun heats water. 首先，太阳晒热水。\nThen, water goes up. 然后，水上升。\nNext, it makes clouds. 接着，它变成云。\nFinally, rain falls. 最后，雨落下。', label: '过程描述范例', animationType: 'sequence' },
           { type: 'tip', content: '顺序词不仅用于水循环，也用于描述做菜、做实验、一天生活等任何有顺序的过程。', label: '拓展应用', animationType: 'pulse' },
-          { type: 'animation', content: '顺序步骤展开动画，配合时间线展示水循环过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Process Description', timelineConfig: { steps: [ { text: 'First, the sun heats water.', ttsNarration: 'First, the sun heats water.' }, { text: 'Then, water goes up.', ttsNarration: 'Then, water goes up.' }, { text: 'Next, it makes clouds.', ttsNarration: 'Next, it makes clouds.' }, { text: 'Finally, rain falls.', ttsNarration: 'Finally, rain falls.' } ] }, ttsNarration: '过程描述：首先太阳晒热水，然后水上升，接着变成云，最后雨落下' } }
+          { type: 'animation', content: '顺序步骤展开动画，配合时间线展示水循环过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Process Description', timelineConfig: { steps: [ { text: 'First, the sun heats water.', ttsNarration: 'First, the sun heats water.' }, { text: 'Then, water goes up.', ttsNarration: 'Then, water goes up.' }, { text: 'Next, it makes clouds.', ttsNarration: 'Next, it makes clouds.' }, { text: 'Finally, rain falls.', ttsNarration: 'Finally, rain falls.' } ] }, ttsNarration: '过程描述：首先太阳晒热水，然后水上升，接着变成云，最后雨落下' } },
+          { type: 'tip', content: '本课主要使用支架式教学法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2611,7 +2640,7 @@ export const englishGrade6: Unit[] = [
             options: ['First', 'Then', 'Next', 'Finally'],
             answer: 'First',
             hint: '表示"首先"的顺序词',
-            explanation: 'First表示首先，用于过程的第一步，First, the sun heats water.'
+            explanation: 'First表示首先，用于过程的第一步，First, the sun heats water.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l4q2',
@@ -2620,7 +2649,7 @@ export const englishGrade6: Unit[] = [
             options: ['Then', 'First', 'Finally', 'Before'],
             answer: 'Then',
             hint: '表示"然后"的顺序词',
-            explanation: 'Then表示然后，用于过程的第二步，Then, water goes up.'
+            explanation: 'Then表示然后，用于过程的第二步，Then, water goes up.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l4q3',
@@ -2629,7 +2658,7 @@ export const englishGrade6: Unit[] = [
             answer: 'Finally',
             acceptableAnswers: ['finally'],
             hint: '表示"最后"的顺序词',
-            explanation: 'Finally表示最后，用于过程的最后一步，Finally, rain falls down.'
+            explanation: 'Finally表示最后，用于过程的最后一步，Finally, rain falls down.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l4q4',
@@ -2638,7 +2667,7 @@ export const englishGrade6: Unit[] = [
             options: ['First, sun heats water. Then, water makes clouds. Finally, rain falls.', 'First, rain falls. Then, sun heats water. Finally, water makes clouds.', 'Finally, sun heats water. First, rain falls. Then, water makes clouds.', 'Then, sun heats water. Finally, rain falls. First, water makes clouds.'],
             answer: 'First, sun heats water. Then, water makes clouds. Finally, rain falls.',
             hint: '水循环的正确顺序',
-            explanation: '水循环顺序：首先太阳晒热水，然后水变成云，最后雨落下'
+            explanation: '水循环顺序：首先太阳晒热水，然后水变成云，最后雨落下做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l4q5',
@@ -2647,7 +2676,7 @@ export const englishGrade6: Unit[] = [
             options: ['Finally', 'First', 'Then', 'Next'],
             answer: 'Finally',
             hint: '表示最后一步的顺序词',
-            explanation: 'Finally表示最后，用于过程的最后一步'
+            explanation: 'Finally表示最后，用于过程的最后一步做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l4q6',
@@ -2656,7 +2685,7 @@ export const englishGrade6: Unit[] = [
             answer: 'Next',
             acceptableAnswers: ['next'],
             hint: '表示"接着"的顺序词，在Then之后',
-            explanation: 'Next表示接着，用于过程的中间步骤，Next, it makes clouds.'
+            explanation: 'Next表示接着，用于过程的中间步骤，Next, it makes clouds.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l4q7',
@@ -2665,7 +2694,7 @@ export const englishGrade6: Unit[] = [
             answer: 'Are',
             acceptableAnswers: ['are'],
             hint: '[Is there/Are there句型]（英语五年级-第6单元）',
-            explanation: '复数名词flowers前用Are there...?，是五年级Nature Park单元学的Is there/Are there句型'
+            explanation: '复数名词flowers前用Are there...?，是五年级Nature Park单元学的Is there/Are there句型做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2676,9 +2705,9 @@ export const englishGrade6: Unit[] = [
         teachingMethod: '形成性评价',
         learningObjective: '我能通过第六单元综合检测，巩固自然词汇和描述过程',
         successCriteria: '①能完成自然词汇题 ②能完成来源问答和顺序词题',
-        iDo: '家长示范检测题型，讲解词汇、句型、阅读、描述四类题',
-        weDo: '亲子一起做练习题，家长引导孩子分析题目，讨论答案',
-        youDo: '孩子独立完成综合检测，目标正确率≥80%',
+        iDo: '家长示范检测题型，讲解词汇、句型、阅读、描述四类题 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做练习题，家长引导孩子分析题目，讨论答案 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合检测，目标正确率≥80%【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：第六单元综合检测，包括自然词汇、来源问答、科学短文、顺序词描述。\n共学四步：\n①对话出题：家长说我们来做第六单元检测，先复习一下。。\n②孩子应答：孩子应说rain, cloud, sun, water cycle!。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学假装忘了，和孩子比赛说。\n④快速检测：1.孩子完成单元检测；2.正确率达80%；3.错题订正。',
         funElement: '通关后撒花庆祝，获得"Nature达人"徽章',
         gsapAnimations: ['GSAP:通关撒花-confetti', 'GSAP:题目逐个出现-stagger', 'GSAP:正确答案高亮-highlight'],
@@ -2690,7 +2719,8 @@ export const englishGrade6: Unit[] = [
           { type: 'dialogue', content: 'Tom: Where does rain come from?\nAmy: It comes from clouds. First, the sun heats water. Then, water makes clouds. Finally, rain falls.', label: '综合自然对话', animationType: 'timeline' },
           { type: 'example', content: '易错点1：It comes from（正确）/ It come from（错误）\n易错点2：First, ...（逗号）\n易错点3：water cycle（正确）/ water circle（错误）', label: '易错点提醒', animationType: 'sequence' },
           { type: 'tip', content: '描述过程要有顺序，用First...Then...Next...Finally...让描述清晰。科学阅读要抓关键词。', label: '学习建议', animationType: 'pulse' },
-          { type: 'animation', content: '通关撒花动画，正确率达到80%触发庆祝特效', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'Nature Star', cardRevealConfig: { cards: [ { front: 'rain', back: '🌧', ttsText: 'rain' }, { front: 'cloud', back: '☁️', ttsText: 'cloud' }, { front: 'sun', back: '☀️', ttsText: 'sun' } ] }, ttsNarration: '自然达人通关庆祝！' } }
+          { type: 'animation', content: '通关撒花动画，正确率达到80%触发庆祝特效', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'Nature Star', cardRevealConfig: { cards: [ { front: 'rain', back: '🌧', ttsText: 'rain' }, { front: 'cloud', back: '☁️', ttsText: 'cloud' }, { front: 'sun', back: '☀️', ttsText: 'sun' } ] }, ttsNarration: '自然达人通关庆祝！' } },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2700,7 +2730,7 @@ export const englishGrade6: Unit[] = [
             options: ['clouds', 'sun', 'moon', 'trees'],
             answer: 'clouds',
             hint: '雨来自哪里？',
-            explanation: '雨来自云，Rain comes from the clouds.雨来自云'
+            explanation: '雨来自云，Rain comes from the clouds.雨来自云做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l5q2',
@@ -2709,7 +2739,7 @@ export const englishGrade6: Unit[] = [
             options: ['comes', 'come', 'coming', 'to come'],
             answer: 'comes',
             hint: '主语It第三人称单数，动词怎么变？',
-            explanation: '主语It第三人称单数，动词come加s变comes，It comes from clouds.'
+            explanation: '主语It第三人称单数，动词come加s变comes，It comes from clouds.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l5q3',
@@ -2718,7 +2748,7 @@ export const englishGrade6: Unit[] = [
             answer: 'First',
             acceptableAnswers: ['first'],
             hint: '表示"首先"的顺序词',
-            explanation: 'First表示首先，First, the sun heats water.首先太阳晒热水'
+            explanation: 'First表示首先，First, the sun heats water.首先太阳晒热水做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l5q4',
@@ -2727,7 +2757,7 @@ export const englishGrade6: Unit[] = [
             options: ['water cycle', 'water circle', 'water round', 'water loop'],
             answer: 'water cycle',
             hint: '水循环的英文',
-            explanation: '水循环是water cycle，cycle表示循环'
+            explanation: '水循环是water cycle，cycle表示循环做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l5q5',
@@ -2736,7 +2766,7 @@ export const englishGrade6: Unit[] = [
             options: ['Finally', 'First', 'Then', 'Next'],
             answer: 'Finally',
             hint: '表示"最后"的顺序词',
-            explanation: 'Finally表示最后，Finally, rain falls down.最后雨落下'
+            explanation: 'Finally表示最后，Finally, rain falls down.最后雨落下做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l5q6',
@@ -2745,7 +2775,7 @@ export const englishGrade6: Unit[] = [
             answer: 'from',
             acceptableAnswers: ['From'],
             hint: '表示"来自"用哪个介词？',
-            explanation: 'come from表示来自，It comes from clouds.它来自云'
+            explanation: 'come from表示来自，It comes from clouds.它来自云做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u6l5q7',
@@ -2754,7 +2784,7 @@ export const englishGrade6: Unit[] = [
             options: ['rain', 'sand', 'rock', 'wood'],
             answer: 'rain',
             hint: '[自然景观词汇]（英语三年级-第4单元）',
-            explanation: 'rain雨从天空落下，是三年级Nature单元学过的自然景观词汇'
+            explanation: 'rain雨从天空落下，是三年级Nature单元学过的自然景观词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }
@@ -2771,12 +2801,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u7l1',
         title: '阅读策略——推理与概括',
         order: 1,
-        teachingMethod: '支架式教学法',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能运用推理和概括策略理解短文',
         successCriteria: '①能从文中找线索推理 ②能用一句话概括大意',
-        iDo: '家长示范推理和概括："从文中信息推断，用自己的话概括"',
-        weDo: '亲子一起做阅读推理练习，家长引导孩子找线索',
-        youDo: '孩子独立推理并概括短文内容',
+        iDo: '家长示范推理和概括："从文中信息推断，用自己的话概括" 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做阅读推理练习，家长引导孩子找线索 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立推理并概括短文内容【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：阅读策略——推理与概括，从文中线索推断，用自己的话概括。\n共学四步：\n①对话出题：家长读Tom took an umbrella.问What can you infer?并说It may rain.。\n②孩子应答：孩子应说It may rain.。\n③答错引导：若孩子推不出，家长当同学一起找！扫描课时发音动画听发音；让孩子点读课件线索卡；家长用手指指读帮孩子找线索。\n④快速检测：1.孩子找2个线索推理；2.用一句话概括；3.说出推理依据。',
         funElement: '玩"小侦探"游戏，从文中线索推断答案',
         gsapAnimations: ['GSAP:推理线索高亮-highlight', 'GSAP:推理步骤-timeline', 'GSAP:线索出现-stagger'],
@@ -2794,7 +2824,8 @@ export const englishGrade6: Unit[] = [
             content: '词根记忆法：infer（推理）=in（向内）+fer（带来），把线索"带进"脑中得出结论就是推理。summarize（概括）来自sum（总和），把所有内容"总合"起来用一句话说就是概括。记住infer="推理"（往里想），summarize="概括"（往总结想）。',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用支架式教学法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2804,7 +2835,7 @@ export const englishGrade6: Unit[] = [
             options: ['It may rain.', 'It is sunny.', 'It is cold.', 'It is night.'],
             answer: 'It may rain.',
             hint: '带伞说明什么？',
-            explanation: '带伞推断可能下雨，It may rain.从带伞这个线索推断出可能下雨'
+            explanation: '带伞推断可能下雨，It may rain.从带伞这个线索推断出可能下雨做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l1q2',
@@ -2813,7 +2844,7 @@ export const englishGrade6: Unit[] = [
             options: ['It was cold.', 'It was hot.', 'It was raining.', 'It was a windy day.'],
             answer: 'It was cold.',
             hint: '穿厚外套说明什么？',
-            explanation: '穿厚外套推断天气冷，It was cold.从穿厚外套推断出天气冷'
+            explanation: '穿厚外套推断天气冷，It was cold.从穿厚外套推断出天气冷做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l1q3',
@@ -2822,7 +2853,7 @@ export const englishGrade6: Unit[] = [
             answer: 'happy',
             acceptableAnswers: ['Happy', 'glad', 'Glad'],
             hint: '微笑说明什么心情？',
-            explanation: '微笑推断开心，He was happy.从微笑推断出他开心'
+            explanation: '微笑推断开心，He was happy.从微笑推断出他开心做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l1q4',
@@ -2831,7 +2862,7 @@ export const englishGrade6: Unit[] = [
             options: ['The story is about Tom\'s way to school.', 'The story is about buses.', 'The story is about school.', 'The story is about Tom.'],
             answer: 'The story is about Tom\'s way to school.',
             hint: '概括要包含主要人物和事件',
-            explanation: '概括要包含主要人物和事件，The story is about Tom\'s way to school.最全面'
+            explanation: '概括要包含主要人物和事件，The story is about Tom\'s way to school.最全面做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l1q5',
@@ -2840,7 +2871,7 @@ export const englishGrade6: Unit[] = [
             options: ['They were late.', 'They were tired.', 'They were happy.', 'They were cold.'],
             answer: 'They were late.',
             hint: '跑着上学说明什么？',
-            explanation: '跑着上学推断迟到了，They were late.从跑着上学推断出他们迟到了'
+            explanation: '跑着上学推断迟到了，They were late.从跑着上学推断出他们迟到了做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l1q6',
@@ -2849,7 +2880,7 @@ export const englishGrade6: Unit[] = [
             answer: 'summarize',
             acceptableAnswers: ['Summarize'],
             hint: '阅读策略包括推理和什么？',
-            explanation: '阅读策略包括推理infer和概括summarize，summarize表示概括'
+            explanation: '阅读策略包括推理infer和概括summarize，summarize表示概括做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l1q7',
@@ -2858,7 +2889,7 @@ export const englishGrade6: Unit[] = [
             options: ['Context clues in the sentence', 'Close your eyes', 'Skip the whole text', 'Read only the title'],
             answer: 'Context clues in the sentence',
             hint: '[阅读理解策略]（英语五年级-第7单元）',
-            explanation: '上下文线索能帮助猜测生词含义，是五年级阅读理解进阶单元学过的阅读策略'
+            explanation: '上下文线索能帮助猜测生词含义，是五年级阅读理解进阶单元学过的阅读策略做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2866,12 +2897,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u7l2',
         title: '阅读理解——综合短文',
         order: 2,
-        teachingMethod: '分级阅读',
+        teachingMethod: '自然拼读法',
         learningObjective: '我能阅读综合短文并回答理解问题',
         successCriteria: '①能读懂短文 ②能回答3个理解问题',
-        iDo: '家长示范读综合短文，停顿讲解，回答问题',
-        weDo: '亲子一起读综合短文，家长引导孩子理解并回答',
-        youDo: '孩子独立读综合短文并回答问题',
+        iDo: '家长示范读综合短文，停顿讲解，回答问题 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起读综合短文，家长引导孩子理解并回答 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立读综合短文并回答问题【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：综合短文阅读，理解大意和细节，回答理解问题。\n共学四步：\n①对话出题：家长说我们一起读一篇短文。并读第一句。\n②孩子应答：孩子应跟读并说出大意。\n③答错引导：若孩子读不出，家长当同学一起读！扫描课时发音动画听发音；让孩子点读课件短文卡；家长逐句带孩子读，用问题引导。\n④快速检测：1.孩子读短文；2.回答3个问题；3.概括大意。',
         funElement: '玩"阅读挑战"游戏，读短文回答问题得星星',
         gsapAnimations: ['GSAP:阅读进度条-highlight', 'GSAP:短文关键句-timeline', 'GSAP:关键词出现-stagger'],
@@ -2883,7 +2914,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '阅读理解要找关键信息：人物是谁、做什么、在哪里、喜欢什么。用who/what/where提问帮助理解。', label: '阅读策略', animationType: 'pulse' },
           { type: 'example', content: 'Who is Tom? He is a student.\nHow does he go to school? By bus.\nWhat does his mother do? She is a doctor.\nWhat\'s his hobby? Reading and collecting stamps.', label: '问答示例', animationType: 'sequence' },
           { type: 'tip', content: '回答阅读理解题要回到原文找答案，不要凭空想象。划出关键句帮助答题。', label: '答题技巧', animationType: 'pulse' },
-          { type: 'animation', content: '阅读进度条动画，配合时间线展示短文关键句', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Reading Comprehension', timelineConfig: { steps: [ { text: 'Tom is a student.', ttsNarration: 'Tom is a student.' }, { text: 'He goes to school by bus.', ttsNarration: 'He goes to school by bus.' }, { text: 'His mother is a doctor.', ttsNarration: 'His mother is a doctor.' }, { text: 'He likes reading and collecting stamps.', ttsNarration: 'He likes reading and collecting stamps.' } ] }, ttsNarration: '阅读理解：Tom是学生，坐公交上学，妈妈是医生，他喜欢阅读和集邮' } }
+          { type: 'animation', content: '阅读进度条动画，配合时间线展示短文关键句', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Reading Comprehension', timelineConfig: { steps: [ { text: 'Tom is a student.', ttsNarration: 'Tom is a student.' }, { text: 'He goes to school by bus.', ttsNarration: 'He goes to school by bus.' }, { text: 'His mother is a doctor.', ttsNarration: 'His mother is a doctor.' }, { text: 'He likes reading and collecting stamps.', ttsNarration: 'He likes reading and collecting stamps.' } ] }, ttsNarration: '阅读理解：Tom是学生，坐公交上学，妈妈是医生，他喜欢阅读和集邮' } },
+          { type: 'tip', content: '本课主要使用分级阅读：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2893,7 +2925,7 @@ export const englishGrade6: Unit[] = [
             options: ['A student.', 'A doctor.', 'A teacher.', 'A pilot.'],
             answer: 'A student.',
             hint: 'Tom是什么身份？',
-            explanation: 'Tom是学生，Tom is a student.从短文可知Tom是学生'
+            explanation: 'Tom是学生，Tom is a student.从短文可知Tom是学生做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l2q2',
@@ -2902,7 +2934,7 @@ export const englishGrade6: Unit[] = [
             options: ['By bus.', 'By bike.', 'By subway.', 'On foot.'],
             answer: 'By bus.',
             hint: 'Tom怎样上学？',
-            explanation: 'Tom坐公交上学，He goes to school by bus.从短文可知Tom坐公交上学'
+            explanation: 'Tom坐公交上学，He goes to school by bus.从短文可知Tom坐公交上学做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l2q3',
@@ -2911,7 +2943,7 @@ export const englishGrade6: Unit[] = [
             answer: 'doctor',
             acceptableAnswers: ['Doctor'],
             hint: 'Tom妈妈做什么工作？',
-            explanation: 'Tom妈妈是医生，His mother is a doctor.从短文可知妈妈是医生'
+            explanation: 'Tom妈妈是医生，His mother is a doctor.从短文可知妈妈是医生做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l2q4',
@@ -2920,7 +2952,7 @@ export const englishGrade6: Unit[] = [
             options: ['Reading and collecting stamps.', 'Swimming.', 'Drawing.', 'Flying.'],
             answer: 'Reading and collecting stamps.',
             hint: 'Tom的爱好是什么？',
-            explanation: 'Tom喜欢阅读和集邮，His hobby is reading and collecting stamps.'
+            explanation: 'Tom喜欢阅读和集邮，His hobby is reading and collecting stamps.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l2q5',
@@ -2929,7 +2961,7 @@ export const englishGrade6: Unit[] = [
             options: ['In London.', 'In a hospital.', 'In a school.', 'On a farm.'],
             answer: 'In London.',
             hint: 'Tom的笔友住在哪里？',
-            explanation: 'Tom的笔友住在伦敦，He has a pen pal in London.从短文可知笔友在伦敦'
+            explanation: 'Tom的笔友住在伦敦，He has a pen pal in London.从短文可知笔友在伦敦做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l2q6',
@@ -2938,7 +2970,7 @@ export const englishGrade6: Unit[] = [
             answer: 'bus',
             acceptableAnswers: ['Bus'],
             hint: 'Tom坐什么上学？',
-            explanation: 'Tom坐公交上学，He goes to school by bus.从短文可知坐公交'
+            explanation: 'Tom坐公交上学，He goes to school by bus.从短文可知坐公交做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l2q7',
@@ -2947,7 +2979,7 @@ export const englishGrade6: Unit[] = [
             options: ['Read the title and pictures', 'Eat a snack', 'Go to sleep', 'Sing a song'],
             answer: 'Read the title and pictures',
             hint: '[阅读故事方法]（英语三年级-第6单元）',
-            explanation: '读故事先看标题和图片了解大意，是三年级Stories单元学过的阅读方法'
+            explanation: '读故事先看标题和图片了解大意，是三年级Stories单元学过的阅读方法做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2955,12 +2987,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u7l3',
         title: '写作——My favourite...',
         order: 3,
-        teachingMethod: '支架式：写作模板',
+        teachingMethod: 'EDI直接教学',
         learningObjective: '我能用My favourite...模板写一段话',
         successCriteria: '①能写出3句以上 ②能用because说出原因',
-        iDo: '家长示范写My favourite..."My favourite colour is blue because..."',
-        weDo: '亲子一起讨论并写My favourite...，互相分享',
-        youDo: '孩子独立用模板写5句话',
+        iDo: '家长示范写My favourite..."My favourite colour is blue because..." 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起讨论并写My favourite...，互相分享 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用模板写5句话【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：写作My favourite...，模板：My favourite...is...because...。\n共学四步：\n①对话出题：家长说My favourite colour is blue because it\'s the colour of the sky.，问孩子写你的最爱。\n②孩子应答：孩子应说My favourite food is rice because it\'s yummy.。\n③答错引导：若孩子写不出，家长当同学一起写！扫描课时发音动画听发音；让孩子点读课件模板卡；家长帮孩子列要点边写边说。\n④快速检测：1.孩子写3句以上；2.用because造句；3.读出作文。',
         funElement: '玩"最爱分享"游戏，写并分享自己最喜欢的东西',
         gsapAnimations: ['GSAP:作文逐条出现-stagger', 'GSAP:写作步骤-timeline', 'GSAP:关键词高亮-highlight'],
@@ -2972,7 +3004,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '写作模板：My favourite + 名词 + is + 内容 + because + 原因。because说明为什么喜欢。', label: '写作模板', animationType: 'pulse' },
           { type: 'example', content: 'My favourite colour is blue.\nMy favourite food is noodles.\nMy favourite animal is dog.\nMy favourite subject is English.', label: 'favourite句型', animationType: 'sequence' },
           { type: 'tip', content: 'favourite是英式拼写，美式拼写是favorite。意思都是"最喜欢的"。写作要具体说明原因。', label: '词汇辨析', animationType: 'pulse' },
-          { type: 'animation', content: '作文逐条出现动画，配合时间线展示写作过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'My Favourite', timelineConfig: { steps: [ { text: 'My favourite colour is blue.', ttsNarration: 'My favourite colour is blue.' }, { text: 'because it is the colour of the sky.', ttsNarration: 'because it is the colour of the sky.' }, { text: 'My favourite food is noodles.', ttsNarration: 'My favourite food is noodles.' }, { text: 'because they are delicious.', ttsNarration: 'because they are delicious.' } ] }, ttsNarration: '我的最爱：最喜欢的颜色是蓝色因为它是天空的颜色。最喜欢的食物是面条因为很美味' } }
+          { type: 'animation', content: '作文逐条出现动画，配合时间线展示写作过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'My Favourite', timelineConfig: { steps: [ { text: 'My favourite colour is blue.', ttsNarration: 'My favourite colour is blue.' }, { text: 'because it is the colour of the sky.', ttsNarration: 'because it is the colour of the sky.' }, { text: 'My favourite food is noodles.', ttsNarration: 'My favourite food is noodles.' }, { text: 'because they are delicious.', ttsNarration: 'because they are delicious.' } ] }, ttsNarration: '我的最爱：最喜欢的颜色是蓝色因为它是天空的颜色。最喜欢的食物是面条因为很美味' } },
+          { type: 'tip', content: '本课主要使用支架式：写作模板：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2982,7 +3015,7 @@ export const englishGrade6: Unit[] = [
             options: ['colour', 'food', 'animal', 'subject'],
             answer: 'colour',
             hint: 'blue是颜色，用什么词？',
-            explanation: 'blue是颜色，用colour，My favourite colour is blue.我最喜欢的颜色是蓝色'
+            explanation: 'blue是颜色，用colour，My favourite colour is blue.我最喜欢的颜色是蓝色做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l3q2',
@@ -2991,7 +3024,7 @@ export const englishGrade6: Unit[] = [
             options: ['because', 'but', 'or', 'so'],
             answer: 'because',
             hint: '说明原因用哪个连词？',
-            explanation: 'because表示因为，说明原因，My favourite food is noodles because they are delicious.'
+            explanation: 'because表示因为，说明原因，My favourite food is noodles because they are delicious.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l3q3',
@@ -3000,7 +3033,7 @@ export const englishGrade6: Unit[] = [
             answer: 'subject',
             acceptableAnswers: ['Subject'],
             hint: 'English是科目，用什么词？',
-            explanation: 'English是科目，用subject，My favourite subject is English.'
+            explanation: 'English是科目，用subject，My favourite subject is English.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l3q4',
@@ -3009,7 +3042,7 @@ export const englishGrade6: Unit[] = [
             options: ['My favourite animal is a dog.', 'My favourite animal a dog is.', 'My favourite is animal a dog.', 'A dog my favourite animal is.'],
             answer: 'My favourite animal is a dog.',
             hint: '句型：My favourite + 名词 + is + 内容',
-            explanation: '句型My favourite + animal + is + a dog，My favourite animal is a dog.语序正确'
+            explanation: '句型My favourite + animal + is + a dog，My favourite animal is a dog.语序正确做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l3q5',
@@ -3018,7 +3051,7 @@ export const englishGrade6: Unit[] = [
             options: ['favorite', 'favourit', 'favrite', 'faverite'],
             answer: 'favorite',
             hint: '美式英语去掉u',
-            explanation: 'favourite是英式拼写，美式拼写是favorite，去掉u'
+            explanation: 'favourite是英式拼写，美式拼写是favorite，去掉u做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l3q6',
@@ -3027,7 +3060,7 @@ export const englishGrade6: Unit[] = [
             answer: 'because',
             acceptableAnswers: ['Because'],
             hint: '说明原因用哪个连词？',
-            explanation: 'because表示因为，My favourite colour is blue because it is the colour of the sky.'
+            explanation: 'because表示因为，My favourite colour is blue because it is the colour of the sky.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l3q7',
@@ -3036,7 +3069,7 @@ export const englishGrade6: Unit[] = [
             answer: 'color',
             acceptableAnswers: ['Color', 'colour', 'Colour'],
             hint: '[喜好表达句型]（英语五年级-第3单元）',
-            explanation: 'My favourite...句型用来表达喜好，是五年级Favourite Food单元学过的喜好表达句型'
+            explanation: 'My favourite...句型用来表达喜好，是五年级Favourite Food单元学过的喜好表达句型做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3044,12 +3077,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u7l4',
         title: '写作——A day in my life',
         order: 4,
-        teachingMethod: '项目式学习',
+        teachingMethod: '芬兰现象式学习',
         learningObjective: '我能用英语写A day in my life描述一天的生活',
         successCriteria: '①能写出5句以上 ②能用时间顺序描述一天',
-        iDo: '家长示范写一天的生活："I get up at 7. I go to school by bus..."',
-        weDo: '亲子一起讨论并写一天的生活，互相分享',
-        youDo: '孩子独立用一般现在时写8句话描述一天',
+        iDo: '家长示范写一天的生活："I get up at 7. I go to school by bus..." 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起讨论并写一天的生活，互相分享 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用一般现在时写8句话描述一天【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：写作A day in my life，按时间顺序描述一天：I get up at 7. I go to school by bus...\n共学四步：\n①对话出题：家长说I get up at 7. I go to work by bus.，问孩子写你的一天。\n②孩子应答：孩子应说I get up at 6:30. I go to school by bike.。\n③答错引导：若孩子写不出，家长当同学一起写！扫描课时发音动画听发音；让孩子点读课件模板卡；家长帮孩子列时间表边写边说。\n④快速检测：1.孩子写5句以上；2.用时间顺序；3.读出作文。',
         funElement: '玩"一天时间线"游戏，画出一天时间线并分享',
         gsapAnimations: ['GSAP:一天时间线展开-timeline', 'GSAP:活动出现-stagger', 'GSAP:时间高亮-highlight'],
@@ -3061,7 +3094,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '描述一天用一般现在时，按时间顺序。用First, Then, Next, Finally让文章有条理。', label: '写作技巧', animationType: 'pulse' },
           { type: 'example', content: 'I get up at 7:00. 我7点起床。\nI go to school by bus. 我坐公交上学。\nI have lunch at 12:00. 我12点吃午饭。\nI go to bed at 9:00. 我9点睡觉。', label: '一天生活句型', animationType: 'sequence' },
           { type: 'tip', content: '表达时间用at + 时间：at 7:00, at 12:00。描述一天要包含起床、上学、吃饭、作业、睡觉等。', label: '时间表达', animationType: 'pulse' },
-          { type: 'animation', content: '一天时间线展开动画，配合时间线展示一天活动', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'A Day in My Life', timelineConfig: { steps: [ { text: 'I get up at 7:00.', ttsNarration: 'I get up at 7:00.' }, { text: 'I go to school by bus.', ttsNarration: 'I go to school by bus.' }, { text: 'I have lunch at 12:00.', ttsNarration: 'I have lunch at 12:00.' }, { text: 'I go to bed at 9:00.', ttsNarration: 'I go to bed at 9:00.' } ] }, ttsNarration: '我的一天：7点起床，坐公交上学，12点吃午饭，9点睡觉' } }
+          { type: 'animation', content: '一天时间线展开动画，配合时间线展示一天活动', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'A Day in My Life', timelineConfig: { steps: [ { text: 'I get up at 7:00.', ttsNarration: 'I get up at 7:00.' }, { text: 'I go to school by bus.', ttsNarration: 'I go to school by bus.' }, { text: 'I have lunch at 12:00.', ttsNarration: 'I have lunch at 12:00.' }, { text: 'I go to bed at 9:00.', ttsNarration: 'I go to bed at 9:00.' } ] }, ttsNarration: '我的一天：7点起床，坐公交上学，12点吃午饭，9点睡觉' } },
+          { type: 'tip', content: '本课主要使用项目式学习：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -3071,7 +3105,7 @@ export const englishGrade6: Unit[] = [
             options: ['at', 'in', 'on', 'of'],
             answer: 'at',
             hint: '表示具体时间用哪个介词？',
-            explanation: '表示具体时间用at，I get up at 7:00.我7点起床'
+            explanation: '表示具体时间用at，I get up at 7:00.我7点起床做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l4q2',
@@ -3080,7 +3114,7 @@ export const englishGrade6: Unit[] = [
             options: ['by', 'on', 'in', 'at'],
             answer: 'by',
             hint: '乘坐交通工具用哪个介词？',
-            explanation: '乘坐交通工具用by，I go to school by bus.我坐公交上学'
+            explanation: '乘坐交通工具用by，I go to school by bus.我坐公交上学做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l4q3',
@@ -3089,7 +3123,7 @@ export const englishGrade6: Unit[] = [
             answer: 'do',
             acceptableAnswers: ['Do'],
             hint: '做作业用哪个动词？',
-            explanation: '做作业用do，I do my homework.我做作业'
+            explanation: '做作业用do，I do my homework.我做作业做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l4q4',
@@ -3098,7 +3132,7 @@ export const englishGrade6: Unit[] = [
             options: ['I go to bed at 9:00.', 'I go bed at 9:00.', 'I goes to bed at 9:00.', 'I going to bed at 9:00.'],
             answer: 'I go to bed at 9:00.',
             hint: '主语I用动词原形，go to bed是固定搭配',
-            explanation: '主语I用动词原形go，go to bed是固定搭配，I go to bed at 9:00.我9点睡觉'
+            explanation: '主语I用动词原形go，go to bed是固定搭配，I go to bed at 9:00.我9点睡觉做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l4q5',
@@ -3107,7 +3141,7 @@ export const englishGrade6: Unit[] = [
             options: ['lunch', 'breakfast', 'dinner', 'supper'],
             answer: 'lunch',
             hint: '12点吃哪顿饭？',
-            explanation: '12点吃午饭，I have lunch at 12:00.我12点吃午饭'
+            explanation: '12点吃午饭，I have lunch at 12:00.我12点吃午饭做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l4q6',
@@ -3116,7 +3150,7 @@ export const englishGrade6: Unit[] = [
             answer: 'get',
             acceptableAnswers: ['Get'],
             hint: '起床用哪个动词短语？',
-            explanation: '起床用get up，I get up at 7:00.我7点起床'
+            explanation: '起床用get up，I get up at 7:00.我7点起床做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l4q7',
@@ -3125,7 +3159,7 @@ export const englishGrade6: Unit[] = [
             options: ['Morning, afternoon, evening', 'Random order', 'Evening first', 'Only night'],
             answer: 'Morning, afternoon, evening',
             hint: '[一日活动顺序]（英语二年级-第1单元）',
-            explanation: '写"我的一天"按早晨、下午、晚上的时间顺序，是二年级My Day单元学过的一日活动'
+            explanation: '写"我的一天"按早晨、下午、晚上的时间顺序，是二年级My Day单元学过的一日活动做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3136,9 +3170,9 @@ export const englishGrade6: Unit[] = [
         teachingMethod: '形成性评价',
         learningObjective: '我能通过阅读与写作综合检测，巩固推理概括和写作能力',
         successCriteria: '①能完成阅读理解题 ②能完成写作题',
-        iDo: '家长示范检测题型，讲解阅读理解、推理概括、写作三类题',
-        weDo: '亲子一起做练习题，家长引导孩子分析题目，讨论答案',
-        youDo: '孩子独立完成读写测试，目标正确率≥75%',
+        iDo: '家长示范检测题型，讲解阅读理解、推理概括、写作三类题 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做练习题，家长引导孩子分析题目，讨论答案 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成读写测试，目标正确率≥75%【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：阅读与写作综合检测，包括推理概括、综合短文、写作。\n共学四步：\n①对话出题：家长说我们来做阅读写作检测，先复习策略。。\n②孩子应答：孩子应说Infer, summarize, write!。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学一起回顾策略。\n④快速检测：1.孩子完成检测；2.正确率达80%；3.错题订正。',
         funElement: '通关后撒花庆祝，获得"读写达人"徽章',
         gsapAnimations: ['GSAP:通关撒花-confetti', 'GSAP:题目逐个出现-stagger', 'GSAP:正确答案高亮-highlight'],
@@ -3150,7 +3184,8 @@ export const englishGrade6: Unit[] = [
           { type: 'dialogue', content: 'Tom: What can you infer from "She wore a thick coat"?\nAmy: It was cold.\nTom: Write about your favourite food.\nAmy: My favourite food is noodles because they are delicious.', label: '综合读写对话', animationType: 'timeline' },
           { type: 'example', content: '易错点1：infer推断（正确）/ guess猜（不完全等价）\n易错点2：My favourite...is（正确）/ My favourite...are（错误）\n易错点3：at 7:00（正确）/ in 7:00（错误）', label: '易错点提醒', animationType: 'sequence' },
           { type: 'tip', content: '读写结合：读短文理解内容，再用自己的话写作。多读多写，提高英语综合能力。', label: '学习建议', animationType: 'pulse' },
-          { type: 'animation', content: '通关撒花动画，正确率达到75%触发庆祝特效', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'Reading & Writing Star', cardRevealConfig: { cards: [ { front: 'read', back: '📖', ttsText: 'read' }, { front: 'write', back: '✍️', ttsText: 'write' }, { front: 'infer', back: '🔍', ttsText: 'infer' } ] }, ttsNarration: '读写达人通关庆祝！' } }
+          { type: 'animation', content: '通关撒花动画，正确率达到75%触发庆祝特效', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'Reading & Writing Star', cardRevealConfig: { cards: [ { front: 'read', back: '📖', ttsText: 'read' }, { front: 'write', back: '✍️', ttsText: 'write' }, { front: 'infer', back: '🔍', ttsText: 'infer' } ] }, ttsNarration: '读写达人通关庆祝！' } },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -3160,7 +3195,7 @@ export const englishGrade6: Unit[] = [
             options: ['It may rain.', 'It is sunny.', 'It is cold.', 'It is night.'],
             answer: 'It may rain.',
             hint: '带伞推断什么？',
-            explanation: '带伞推断可能下雨，It may rain.从带伞推断出可能下雨'
+            explanation: '带伞推断可能下雨，It may rain.从带伞推断出可能下雨做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l5q2',
@@ -3169,7 +3204,7 @@ export const englishGrade6: Unit[] = [
             options: ['colour', 'food', 'animal', 'subject'],
             answer: 'colour',
             hint: 'blue是颜色',
-            explanation: 'blue是颜色，用colour，My favourite colour is blue.'
+            explanation: 'blue是颜色，用colour，My favourite colour is blue.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l5q3',
@@ -3178,7 +3213,7 @@ export const englishGrade6: Unit[] = [
             answer: 'at',
             acceptableAnswers: ['At'],
             hint: '表示具体时间用哪个介词？',
-            explanation: '表示具体时间用at，I get up at 7:00.我7点起床'
+            explanation: '表示具体时间用at，I get up at 7:00.我7点起床做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l5q4',
@@ -3187,7 +3222,7 @@ export const englishGrade6: Unit[] = [
             options: ['summarize', 'skip', 'forget', 'copy'],
             answer: 'summarize',
             hint: '阅读策略包括推理和什么？',
-            explanation: '阅读策略包括推理infer和概括summarize，summarize表示概括主要内容'
+            explanation: '阅读策略包括推理infer和概括summarize，summarize表示概括主要内容做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l5q5',
@@ -3196,7 +3231,7 @@ export const englishGrade6: Unit[] = [
             options: ['The story is about Amy\'s way to school.', 'The story is about bikes.', 'The story is about school.', 'The story is about Amy.'],
             answer: 'The story is about Amy\'s way to school.',
             hint: '概括要包含主要人物和事件',
-            explanation: '概括要包含主要人物和事件，The story is about Amy\'s way to school.最全面'
+            explanation: '概括要包含主要人物和事件，The story is about Amy\'s way to school.最全面做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l5q6',
@@ -3205,7 +3240,7 @@ export const englishGrade6: Unit[] = [
             answer: 'because',
             acceptableAnswers: ['Because'],
             hint: '说明原因用哪个连词？',
-            explanation: 'because表示因为，My favourite food is noodles because they are delicious.'
+            explanation: 'because表示因为，My favourite food is noodles because they are delicious.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u7l5q7',
@@ -3214,7 +3249,7 @@ export const englishGrade6: Unit[] = [
             options: ['The most important point of the text', 'The last word', 'The title only', 'A new word'],
             answer: 'The most important point of the text',
             hint: '[阅读理解策略]（英语五年级-第7单元）',
-            explanation: 'main idea是文章主旨大意，是五年级阅读理解进阶单元学过的阅读策略'
+            explanation: 'main idea是文章主旨大意，是五年级阅读理解进阶单元学过的阅读策略做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }
@@ -3231,12 +3266,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u8l1',
         title: '词汇总复习',
         order: 1,
-        teachingMethod: '间隔重复法',
+        teachingMethod: '间隔重复SM-2',
         learningObjective: '我能按主题分类回顾全学期7个单元的核心词汇',
         successCriteria: '①能说出7个主题 ②每主题说3个词汇',
-        iDo: '家长用词汇闪卡复习7个单元的核心词汇，间隔重复强化记忆',
-        weDo: '亲子一起玩词汇接龙，复习交通、问路、计划、爱好、职业、自然词汇',
-        youDo: '孩子独立完成词汇测试',
+        iDo: '家长用词汇闪卡复习7个单元的核心词汇，间隔重复强化记忆 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起玩词汇接龙，复习交通、问路、计划、爱好、职业、自然词汇 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成词汇测试【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：词汇总复习，按主题分类回顾——交通、方位、将来、爱好、职业、自然、读写7个主题。\n共学四步：\n①对话出题：家长问这学期学了哪些主题的词?并说Transport!。\n②孩子应答：孩子应说Transport, directions, future, hobbies, jobs, nature, reading!。\n③答错引导：若孩子说不出，家长当同学一起回顾！扫描课时发音动画听发音；让孩子点读课件主题卡；家长当同学一起想，用问题引导。\n④快速检测：1.孩子说出7主题；2.每主题说3词；3.用词汇造一句。',
         funElement: '玩"词汇王国"游戏，分类复习词汇得星星',
         gsapAnimations: ['GSAP:词汇卡片出现-cardReveal', 'GSAP:词汇分类-stagger', 'GSAP:词汇高亮-highlight'],
@@ -3254,7 +3289,8 @@ export const englishGrade6: Unit[] = [
             content: '词汇记忆大总结：本学期学过五种好方法——①前缀sub-: sub+way=subway（在下面）；②前缀be-: be+hind=behind（在...处）；③后缀-ing: read→reading（动名词）；④后缀-er/-or: teach→teacher（做某事的人）；⑤合成词: water+cycle=water cycle（两个词拼新词）。复习时多用这些方法拆词、联想，单词记得更牢固！',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用间隔重复SM-2：按遗忘曲线科学安排复习时间', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -3264,7 +3300,7 @@ export const englishGrade6: Unit[] = [
             options: ['subway', 'book', 'apple', 'red'],
             answer: 'subway',
             hint: '地下运行的交通工具',
-            explanation: 'subway是地铁，I go by subway.我坐地铁去'
+            explanation: 'subway是地铁，I go by subway.我坐地铁去做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l1q2',
@@ -3273,7 +3309,7 @@ export const englishGrade6: Unit[] = [
             options: ['next to', 'where', 'how', 'who'],
             answer: 'next to',
             hint: '在旁边用哪个方位词？',
-            explanation: 'next to表示在旁边，The bank is next to the school.银行在学校旁边'
+            explanation: 'next to表示在旁边，The bank is next to the school.银行在学校旁边做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l1q3',
@@ -3282,7 +3318,7 @@ export const englishGrade6: Unit[] = [
             answer: 'collecting',
             acceptableAnswers: ['Collecting'],
             hint: 'like后面接动词ing形式',
-            explanation: 'like + 动词ing形式collecting，I like collecting stamps.我喜欢集邮'
+            explanation: 'like + 动词ing形式collecting，I like collecting stamps.我喜欢集邮做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l1q4',
@@ -3291,7 +3327,7 @@ export const englishGrade6: Unit[] = [
             options: ['doctor', 'teacher', 'pilot', 'farmer'],
             answer: 'doctor',
             hint: '在医院工作的职业',
-            explanation: '医生在医院工作，A doctor works in a hospital.'
+            explanation: '医生在医院工作，A doctor works in a hospital.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l1q5',
@@ -3300,7 +3336,7 @@ export const englishGrade6: Unit[] = [
             options: ['clouds', 'sun', 'moon', 'trees'],
             answer: 'clouds',
             hint: '雨来自哪里？',
-            explanation: '雨来自云，Rain comes from the clouds.'
+            explanation: '雨来自云，Rain comes from the clouds.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l1q6',
@@ -3309,7 +3345,7 @@ export const englishGrade6: Unit[] = [
             answer: 'tomorrow',
             acceptableAnswers: ['Tomorrow'],
             hint: '表示将来的"明天"',
-            explanation: 'tomorrow是明天，I\'m going to read a book tomorrow.我明天打算读书'
+            explanation: 'tomorrow是明天，I\'m going to read a book tomorrow.我明天打算读书做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l1q7',
@@ -3318,7 +3354,7 @@ export const englishGrade6: Unit[] = [
             options: ['by', 'on', 'in', 'at'],
             answer: 'by',
             hint: '[How do you go to...?句型]（英语六年级-第1单元）',
-            explanation: '乘交通工具用by，by bus坐公交，是六年级第1单元How Do You Go There学的核心句型'
+            explanation: '乘交通工具用by，by bus坐公交，是六年级第1单元How Do You Go There学的核心句型做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3326,12 +3362,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u8l2',
         title: '语法总复习',
         order: 2,
-        teachingMethod: '间隔重复法',
+        teachingMethod: '间隔重复SM-2',
         learningObjective: '我能回顾并运用全学期核心语法',
         successCriteria: '①能说出4个核心语法点 ②能用语法点造句',
-        iDo: '家长用语法闪卡复习核心语法，配对练习强化理解',
-        weDo: '亲子一起玩语法配对游戏，复习一般现在时、将来时、第三人称等',
-        youDo: '孩子独立完成语法测试',
+        iDo: '家长用语法闪卡复习核心语法，配对练习强化理解 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起玩语法配对游戏，复习一般现在时、将来时、第三人称等 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成语法测试【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：语法总复习，be going to将来时、第三人称单数、频率副词、方位介词。\n共学四步：\n①对话出题：家长问怎么用英语说将来计划?并说I am going to...。\n②孩子应答：孩子应说I am going to read a book.。\n③答错引导：若孩子说不出，家长当同学一起复习！扫描课时发音动画听发音；让孩子点读课件语法卡；家长当同学一起想，用问题引导。\n④快速检测：1.孩子说出4语法点；2.用be going to造句；3.用第三人称单数造句。',
         funElement: '玩"语法配对"游戏，把句型和语法规则配对',
         gsapAnimations: ['GSAP:语法配对-compare', 'GSAP:语法规则出现-stagger', 'GSAP:配对高亮-highlight'],
@@ -3343,7 +3379,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '一般现在时表示习惯；be going to表示将来计划；第三人称单数动词加s/es；like+动名词表示爱好。', label: '语法要点', animationType: 'pulse' },
           { type: 'example', content: 'I go. → He goes.\nI am going to read. → She is going to read.\nI like reading. → He likes reading.\nThere is a book. → There are books.', label: '语法变化', animationType: 'sequence' },
           { type: 'tip', content: 'There be句型：单数用There is，复数用There are。就近原则：靠近be的名词决定is/are。', label: 'There be规则', animationType: 'pulse' },
-          { type: 'animation', content: '语法配对动画，展示句型和语法规则的对应关系', animationType: 'compare', animationConfig: { sceneType: 'compare', title: 'Grammar Review', compareConfig: { leftItems: ['I go', 'He goes', 'I am going to', 'I like reading'], rightItems: ['一般现在时', '第三人称单数', '将来时', 'like+动名词'], result: 'equal', resultText: '句型与语法对应' }, ttsNarration: '语法总复习：一般现在时、第三人称单数、将来时、like+动名词' } }
+          { type: 'animation', content: '语法配对动画，展示句型和语法规则的对应关系', animationType: 'compare', animationConfig: { sceneType: 'compare', title: 'Grammar Review', compareConfig: { leftItems: ['I go', 'He goes', 'I am going to', 'I like reading'], rightItems: ['一般现在时', '第三人称单数', '将来时', 'like+动名词'], result: 'equal', resultText: '句型与语法对应' }, ttsNarration: '语法总复习：一般现在时、第三人称单数、将来时、like+动名词' } },
+          { type: 'tip', content: '本课主要使用间隔重复SM-2：按遗忘曲线科学安排复习时间', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -3353,7 +3390,7 @@ export const englishGrade6: Unit[] = [
             options: ['goes', 'go', 'going', 'to go'],
             answer: 'goes',
             hint: '主语He第三人称单数，go怎么变？',
-            explanation: '主语He第三人称单数，go加es变goes，He goes to school every day.'
+            explanation: '主语He第三人称单数，go加es变goes，He goes to school every day.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l2q2',
@@ -3362,7 +3399,7 @@ export const englishGrade6: Unit[] = [
             options: ['read', 'reading', 'reads', 'to read'],
             answer: 'read',
             hint: 'be going to后面接动词原形',
-            explanation: 'be going to + 动词原形read，I am going to read a book tomorrow.'
+            explanation: 'be going to + 动词原形read，I am going to read a book tomorrow.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l2q3',
@@ -3371,7 +3408,7 @@ export const englishGrade6: Unit[] = [
             answer: 'is',
             acceptableAnswers: ['Is'],
             hint: 'a book是单数，用is还是are？',
-            explanation: 'a book是单数，用is，There is a book on the desk.桌上有一本书'
+            explanation: 'a book是单数，用is，There is a book on the desk.桌上有一本书做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l2q4',
@@ -3380,7 +3417,7 @@ export const englishGrade6: Unit[] = [
             options: ['swimming', 'swim', 'swims', 'to swim'],
             answer: 'swimming',
             hint: 'like后面接动词ing形式',
-            explanation: 'like + 动词ing形式swimming，I like swimming.我喜欢游泳'
+            explanation: 'like + 动词ing形式swimming，I like swimming.我喜欢游泳做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l2q5',
@@ -3389,7 +3426,7 @@ export const englishGrade6: Unit[] = [
             options: ['are', 'is', 'be', 'am'],
             answer: 'are',
             hint: 'books是复数，用is还是are？',
-            explanation: 'books是复数，用are，There are some books on the desk.桌上有一些书'
+            explanation: 'books是复数，用are，There are some books on the desk.桌上有一些书做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l2q6',
@@ -3398,7 +3435,7 @@ export const englishGrade6: Unit[] = [
             answer: 'studies',
             acceptableAnswers: ['Studies'],
             hint: 'study以辅音+y结尾，第三人称单数变y为i加es',
-            explanation: 'study以辅音+y结尾，第三人称单数变y为i加es变studies，She studies English.'
+            explanation: 'study以辅音+y结尾，第三人称单数变y为i加es变studies，She studies English.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l2q7',
@@ -3407,7 +3444,7 @@ export const englishGrade6: Unit[] = [
             options: ['where', 'what', 'when', 'who'],
             answer: 'where',
             hint: '[Where is...?句型]（英语六年级-第2单元）',
-            explanation: '问路用Where is...?where询问地点，是六年级第2单元Where Is the Museum学的核心句型'
+            explanation: '问路用Where is...?where询问地点，是六年级第2单元Where Is the Museum学的核心句型做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3415,12 +3452,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u8l3',
         title: '阅读与写作总复习',
         order: 3,
-        teachingMethod: '分级阅读+写作',
+        teachingMethod: '自然拼读法 + 写作',
         learningObjective: '我能综合运用阅读和写作策略完成读写任务',
         successCriteria: '①能完成阅读理解 ②能写一段短文',
-        iDo: '家长示范读写综合题，讲解阅读理解和短文写作方法',
-        weDo: '亲子一起做读写练习，家长引导孩子理解和写作',
-        youDo: '孩子独立完成读写测试',
+        iDo: '家长示范读写综合题，讲解阅读理解和短文写作方法 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做读写练习，家长引导孩子理解和写作 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成读写测试【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：阅读与写作总复习，阅读理解+短文写作综合运用。\n共学四步：\n①对话出题：家长说我们来做读写综合练习。并读第一句。\n②孩子应答：孩子应跟读并标注关键信息。\n③答错引导：若孩子有困难，家长当同学一起做！扫描课时发音动画听发音；让孩子点读课件复习卡；家长逐句带孩子读和写。\n④快速检测：1.孩子完成阅读理解；2.写3句短文；3.概括大意。',
         funElement: '玩"读写挑战"游戏，读短文写短文得星星',
         gsapAnimations: ['GSAP:阅读进度条-highlight', 'GSAP:读写步骤-timeline', 'GSAP:关键句高亮-highlight'],
@@ -3432,7 +3469,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '阅读理解先读问题再读短文，带着问题找答案。写作先列提纲再写，注意时态和拼写。', label: '读写技巧', animationType: 'pulse' },
           { type: 'example', content: '阅读：找who/what/where/when/why\n写作：My favourite...is...because...\n写作：I get up at... I go to school by...\n写作：I\'m going to... this weekend.', label: '读写模板', animationType: 'sequence' },
           { type: 'tip', content: '写作要注意：首字母大写、句末标点、单词拼写、时态一致。写完要检查修改。', label: '写作规范', animationType: 'pulse' },
-          { type: 'animation', content: '读写步骤动画，配合时间线展示读写过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Reading & Writing Review', timelineConfig: { steps: [ { text: 'Read and find key information.', ttsNarration: 'Read and find key information.' }, { text: 'Infer and summarize.', ttsNarration: 'Infer and summarize.' }, { text: 'Write with correct tense.', ttsNarration: 'Write with correct tense.' }, { text: 'Check spelling and punctuation.', ttsNarration: 'Check spelling and punctuation.' } ] }, ttsNarration: '读写总复习：读找关键信息、推理概括、用对时态写作、检查拼写标点' } }
+          { type: 'animation', content: '读写步骤动画，配合时间线展示读写过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Reading & Writing Review', timelineConfig: { steps: [ { text: 'Read and find key information.', ttsNarration: 'Read and find key information.' }, { text: 'Infer and summarize.', ttsNarration: 'Infer and summarize.' }, { text: 'Write with correct tense.', ttsNarration: 'Write with correct tense.' }, { text: 'Check spelling and punctuation.', ttsNarration: 'Check spelling and punctuation.' } ] }, ttsNarration: '读写总复习：读找关键信息、推理概括、用对时态写作、检查拼写标点' } },
+          { type: 'tip', content: '本课主要使用分级阅读：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -3442,7 +3480,7 @@ export const englishGrade6: Unit[] = [
             options: ['By bus.', 'By bike.', 'On foot.', 'By subway.'],
             answer: 'By bus.',
             hint: '从短文找Amy怎样上学',
-            explanation: '短文说Amy goes to school by bus，所以Amy坐公交上学'
+            explanation: '短文说Amy goes to school by bus，所以Amy坐公交上学做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l3q2',
@@ -3451,7 +3489,7 @@ export const englishGrade6: Unit[] = [
             options: ['food', 'colour', 'animal', 'subject'],
             answer: 'food',
             hint: 'noodles是食物',
-            explanation: 'noodles是食物，用food，My favourite food is noodles.'
+            explanation: 'noodles是食物，用food，My favourite food is noodles.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l3q3',
@@ -3460,7 +3498,7 @@ export const englishGrade6: Unit[] = [
             answer: 'at',
             acceptableAnswers: ['At'],
             hint: '表示具体时间用哪个介词？',
-            explanation: '表示具体时间用at，I get up at 7:00.我7点起床'
+            explanation: '表示具体时间用at，I get up at 7:00.我7点起床做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l3q4',
@@ -3469,7 +3507,7 @@ export const englishGrade6: Unit[] = [
             options: ['It may rain.', 'It is sunny.', 'It is cold.', 'It is night.'],
             answer: 'It may rain.',
             hint: '带伞推断什么？',
-            explanation: '带伞推断可能下雨，It may rain.从带伞推断出可能下雨'
+            explanation: '带伞推断可能下雨，It may rain.从带伞推断出可能下雨做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l3q5',
@@ -3478,7 +3516,7 @@ export const englishGrade6: Unit[] = [
             options: ['I am going to read a book tomorrow.', 'I read a book tomorrow.', 'I reading a book tomorrow.', 'I reads a book tomorrow.'],
             answer: 'I am going to read a book tomorrow.',
             hint: '将来计划用be going to',
-            explanation: '将来计划用be going to + 动词原形，I am going to read a book tomorrow.时态正确'
+            explanation: '将来计划用be going to + 动词原形，I am going to read a book tomorrow.时态正确做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l3q6',
@@ -3487,7 +3525,7 @@ export const englishGrade6: Unit[] = [
             answer: 'because',
             acceptableAnswers: ['Because'],
             hint: '说明原因用哪个连词？',
-            explanation: 'because表示因为，My favourite colour is blue because it is the colour of the sky.'
+            explanation: 'because表示因为，My favourite colour is blue because it is the colour of the sky.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l3q7',
@@ -3496,7 +3534,7 @@ export const englishGrade6: Unit[] = [
             options: ['read', 'reads', 'reading', 'to read'],
             answer: 'read',
             hint: '[be going to句型]（英语六年级-第3单元）',
-            explanation: 'be going to后面接动词原形，read是原形，是六年级第3单元What Are You Going to Do学的句型'
+            explanation: 'be going to后面接动词原形，read是原形，是六年级第3单元What Are You Going to Do学的句型做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3504,12 +3542,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u8l4',
         title: '小升初模拟——综合测试',
         order: 4,
-        teachingMethod: '模拟测试',
+        teachingMethod: '形成性评价',
         learningObjective: '我能通过小升初模拟测试，检测综合英语能力',
         successCriteria: '①能完成模拟测试 ②正确率达80%以上',
-        iDo: '家长示范模拟题，分析题型和解题思路',
-        weDo: '亲子一起分析模拟题，讨论解题方法',
-        youDo: '孩子独立完成模拟卷',
+        iDo: '家长示范模拟题，分析题型和解题思路 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起分析模拟题，讨论解题方法 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成模拟卷【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：小升初模拟测试，涵盖词汇、语法、阅读、写作，模拟考试环境。\n共学四步：\n①对话出题：家长说我们来做小升初模拟测试，检验学习成果。。\n②孩子应答：孩子应说Let\'s go!。\n③答错引导：若孩子遇到困难，家长当同学一起想！扫描课时发音动画回顾；让孩子点读课件复习卡；家长帮孩子分析题型和解题思路。\n④快速检测：1.孩子完成模拟测试；2.正确率达80%；3.错题订正。',
         funElement: '玩"模拟考场"游戏，计时完成模拟卷得星星',
         gsapAnimations: ['GSAP:答题进度条-highlight', 'GSAP:题目出现-stagger', 'GSAP:正确答案高亮-highlight'],
@@ -3521,7 +3559,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '考试技巧：先易后难，不会的先跳过；审题要仔细，看清要求；检查要全面，不漏题。', label: '考试技巧', animationType: 'pulse' },
           { type: 'example', content: '听力：听关键词选答案\n词汇：辨析词义选正确\n阅读：回原文找答案\n写作：用对时态和模板', label: '解题策略', animationType: 'sequence' },
           { type: 'tip', content: '考试要自信冷静，遇到难题不慌张。规范作答：字迹工整、拼写正确、标点规范。', label: '考试心态', animationType: 'pulse' },
-          { type: 'animation', content: '答题进度条动画，配合时间线展示模拟测试过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Mock Test', timelineConfig: { steps: [ { text: 'Listening: choose the picture.', ttsNarration: 'Listening: choose the picture.' }, { text: 'Vocabulary: fill in the blanks.', ttsNarration: 'Vocabulary: fill in the blanks.' }, { text: 'Reading: answer questions.', ttsNarration: 'Reading: answer questions.' }, { text: 'Writing: write a short passage.', ttsNarration: 'Writing: write a short passage.' } ] }, ttsNarration: '模拟测试：听力选图、词汇填空、阅读答题、写作短文' } }
+          { type: 'animation', content: '答题进度条动画，配合时间线展示模拟测试过程', animationType: 'timeline', animationConfig: { sceneType: 'timeline', title: 'Mock Test', timelineConfig: { steps: [ { text: 'Listening: choose the picture.', ttsNarration: 'Listening: choose the picture.' }, { text: 'Vocabulary: fill in the blanks.', ttsNarration: 'Vocabulary: fill in the blanks.' }, { text: 'Reading: answer questions.', ttsNarration: 'Reading: answer questions.' }, { text: 'Writing: write a short passage.', ttsNarration: 'Writing: write a short passage.' } ] }, ttsNarration: '模拟测试：听力选图、词汇填空、阅读答题、写作短文' } },
+          { type: 'tip', content: '本课主要使用模拟测试：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -3531,7 +3570,7 @@ export const englishGrade6: Unit[] = [
             options: ['bus', 'apple', 'red', 'tall'],
             answer: 'bus',
             hint: '选择交通工具',
-            explanation: 'bus是交通工具，I go by bus.我坐公交上学'
+            explanation: 'bus是交通工具，I go by bus.我坐公交上学做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l4q2',
@@ -3540,7 +3579,7 @@ export const englishGrade6: Unit[] = [
             options: ['goes', 'go', 'going', 'to go'],
             answer: 'goes',
             hint: '主语He第三人称单数，go怎么变？',
-            explanation: '主语He第三人称单数，go加es变goes，He goes to school by bike.'
+            explanation: '主语He第三人称单数，go加es变goes，He goes to school by bike.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l4q3',
@@ -3549,7 +3588,7 @@ export const englishGrade6: Unit[] = [
             answer: 'reading',
             acceptableAnswers: ['Reading'],
             hint: '从短文找Amy的爱好',
-            explanation: '短文说Amy likes reading，所以Amy的爱好是reading阅读'
+            explanation: '短文说Amy likes reading，所以Amy的爱好是reading阅读做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l4q4',
@@ -3558,7 +3597,7 @@ export const englishGrade6: Unit[] = [
             options: ['visit', 'visiting', 'visits', 'to visit'],
             answer: 'visit',
             hint: 'be going to后面接动词原形',
-            explanation: 'be going to + 动词原形visit，I am going to visit my grandma this weekend.'
+            explanation: 'be going to + 动词原形visit，I am going to visit my grandma this weekend.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l4q5',
@@ -3567,7 +3606,7 @@ export const englishGrade6: Unit[] = [
             options: ['She works in a hospital.', 'She work in a hospital.', 'She working in a hospital.', 'She to work in a hospital.'],
             answer: 'She works in a hospital.',
             hint: '主语She第三人称单数，work怎么变？',
-            explanation: '主语She第三人称单数，work加s变works，She works in a hospital.'
+            explanation: '主语She第三人称单数，work加s变works，She works in a hospital.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l4q6',
@@ -3576,7 +3615,7 @@ export const englishGrade6: Unit[] = [
             answer: 'colour',
             acceptableAnswers: ['colour', 'color', 'Color', 'Colour'],
             hint: 'blue是颜色',
-            explanation: 'blue是颜色，用colour，My favourite colour is blue.'
+            explanation: 'blue是颜色，用colour，My favourite colour is blue.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l4q7',
@@ -3585,7 +3624,7 @@ export const englishGrade6: Unit[] = [
             options: ['collecting', 'collects', 'collect', 'to collecting'],
             answer: 'collecting',
             hint: '[What\'s your hobby?句型]（英语六年级-第4单元）',
-            explanation: 'like后面接动词ing，collecting是收集，是六年级第4单元I Have a Pen Pal学的爱好句型'
+            explanation: 'like后面接动词ing，collecting是收集，是六年级第4单元I Have a Pen Pal学的爱好句型做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3593,12 +3632,12 @@ export const englishGrade6: Unit[] = [
         id: 'e6u8l5',
         title: '学期综合测评+毕业典礼',
         order: 5,
-        teachingMethod: '形成性+总结性评价',
+        teachingMethod: '形成性评价 + 总结性评价',
         learningObjective: '我能通过学期综合测评并回顾全学期学习成果',
         successCriteria: '①能完成综合测评 ②能说出学到的知识和方法',
-        iDo: '家长示范综合题，讲解三星制评价标准',
-        weDo: '亲子一起模拟综合测评，总结学期收获',
-        youDo: '孩子独立完成综合测评，获得毕业证书',
+        iDo: '家长示范综合题，讲解三星制评价标准 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起模拟综合测评，总结学期收获 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合测评，获得毕业证书【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：学期综合测评+毕业典礼，检测全学期成果，庆祝小学英语学习。\n共学四步：\n①对话出题：家长说我们来做学期综合测评，回顾这学期的收获。。\n②孩子应答：孩子应说I learned transportation, hobbies, jobs...。\n③答错引导：若孩子遇到困难，家长当同学一起回顾！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学一起回顾全学期内容。\n④快速检测：1.孩子完成综合测评；2.说出学到的3个主题；3.错题订正。',
         funElement: '毕业典礼！获得六年级英语毕业证书，三星制评价',
         gsapAnimations: ['GSAP:三星评级动画-starFlyIn', 'GSAP:毕业证书出现-cardReveal', 'GSAP:通关撒花-confetti'],
@@ -3610,7 +3649,8 @@ export const englishGrade6: Unit[] = [
           { type: 'tip', content: '综合测评覆盖全部7单元知识，认真作答。三星制鼓励进步，每颗星都值得骄傲。', label: '测评说明', animationType: 'pulse' },
           { type: 'example', content: '3星：正确率≥90%，优秀\n2星：正确率≥75%，良好\n1星：正确率≥60%，合格\n0星：正确率<60%，继续努力', label: '三星制标准', animationType: 'sequence' },
           { type: 'tip', content: '毕业不是结束，是新开始。继续学习英语，多读多写多说，让英语成为你的好朋友！', label: '毕业寄语', animationType: 'pulse' },
-          { type: 'animation', content: '三星评级动画，配合毕业证书出现，撒花庆祝', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'Graduation', cardRevealConfig: { cards: [ { front: '3 Stars', back: '⭐⭐⭐', ttsText: 'Excellent, 优秀' }, { front: 'Certificate', back: '🎓', ttsText: 'Graduation certificate, 毕业证书' }, { front: 'Congratulations', back: '🎉', ttsText: 'Congratulations, 恭喜毕业' } ] }, ttsNarration: '毕业典礼：三星评级、毕业证书、恭喜毕业！' } }
+          { type: 'animation', content: '三星评级动画，配合毕业证书出现，撒花庆祝', animationType: 'cardReveal', animationConfig: { sceneType: 'cardReveal', title: 'Graduation', cardRevealConfig: { cards: [ { front: '3 Stars', back: '⭐⭐⭐', ttsText: 'Excellent, 优秀' }, { front: 'Certificate', back: '🎓', ttsText: 'Graduation certificate, 毕业证书' }, { front: 'Congratulations', back: '🎉', ttsText: 'Congratulations, 恭喜毕业' } ] }, ttsNarration: '毕业典礼：三星评级、毕业证书、恭喜毕业！' } },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -3620,7 +3660,7 @@ export const englishGrade6: Unit[] = [
             options: ['by', 'on', 'in', 'at'],
             answer: 'by',
             hint: '乘坐交通工具用哪个介词？',
-            explanation: '乘坐交通工具用by，I go by bus.我坐公交上学'
+            explanation: '乘坐交通工具用by，I go by bus.我坐公交上学做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l5q2',
@@ -3629,7 +3669,7 @@ export const englishGrade6: Unit[] = [
             options: ['doctor', 'apple', 'red', 'tall'],
             answer: 'doctor',
             hint: '选择职业',
-            explanation: 'doctor是职业，She is a doctor.她是医生'
+            explanation: 'doctor是职业，She is a doctor.她是医生做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l5q3',
@@ -3638,7 +3678,7 @@ export const englishGrade6: Unit[] = [
             answer: 'reading',
             acceptableAnswers: ['Reading'],
             hint: 'like后面接动词ing形式',
-            explanation: 'like + 动词ing形式reading，I like reading.我喜欢阅读'
+            explanation: 'like + 动词ing形式reading，I like reading.我喜欢阅读做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l5q4',
@@ -3647,7 +3687,7 @@ export const englishGrade6: Unit[] = [
             options: ['read', 'reading', 'reads', 'to read'],
             answer: 'read',
             hint: 'be going to后面接动词原形',
-            explanation: 'be going to + 动词原形read，I am going to read a book this weekend.'
+            explanation: 'be going to + 动词原形read，I am going to read a book this weekend.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l5q5',
@@ -3656,7 +3696,7 @@ export const englishGrade6: Unit[] = [
             options: ['next to', 'where', 'how', 'who'],
             answer: 'next to',
             hint: '在旁边用哪个方位词？',
-            explanation: 'next to表示在旁边，It\'s next to the park.它在公园旁边'
+            explanation: 'next to表示在旁边，It\'s next to the park.它在公园旁边做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l5q6',
@@ -3665,7 +3705,7 @@ export const englishGrade6: Unit[] = [
             answer: 'clouds',
             acceptableAnswers: ['cloud', 'Clouds', 'Cloud'],
             hint: '雨来自哪里？',
-            explanation: '雨来自云，Rain comes from the clouds.'
+            explanation: '雨来自云，Rain comes from the clouds.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e6u8l5q7',
@@ -3674,7 +3714,913 @@ export const englishGrade6: Unit[] = [
             options: ['does', 'do', 'is', 'are'],
             answer: 'does',
             hint: '[What does...do?句型]（英语六年级-第5单元）',
-            explanation: '第三人称单数your mother用does，是六年级第5单元What Does She Do学的职业问答句型'
+            explanation: '第三人称单数your mother用does，是六年级第5单元What Does She Do学的职业问答句型做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'e6u9',
+    title: 'Simple Past Tense',
+    subtitle: '一般过去时：描述过去发生的事情',
+    order: 9,
+    lessons: [
+      {
+        id: 'e6u9l1',
+        title: '规则动词过去式 -ed',
+        order: 1,
+        teachingMethod: '思维导图法 + EDI直接教学',
+        learningObjective: '我能用规则动词的-ed形式描述过去的事情',
+        successCriteria: '①能说出4条-ed变化规则 ②能变出5个规则动词的过去式',
+        iDo: '家长画思维导图中心圆"Regular Past"，分支：①直接加ed：play→played ②加d：like→liked ③变y为i加ed：study→studied ④双写加ed：stop→stopped 【CFU检查理解】家长问"-ed有哪几种变化？"',
+        weDo: '【引导式】家长给动词孩子说过去式 → 【半独立】孩子给动词家长说 → 【独立】孩子自己变出过去式',
+        youDo: '孩子独立写出规则动词的过去式。【费曼小老师时间】看着思维导图把-ed规则讲给小熊听',
+        parentTips: '【家长预习】本课核心：规则动词过去式加-ed。①直接加ed：play→played ②以e结尾加d：like→liked ③辅音+y变y为i加ed：study→studied ④重读闭音节双写末辅音加ed：stop→stopped。\n共学四步：\n①对话出题：家长说I played football yesterday.问played怎么来的？。\n②孩子应答：孩子应说play加ed变成played。\n③答错引导：用思维导图法帮助整理规则；画图分类记忆。\n④快速检测：1.说4条规则；2.变5个词；3.造过去时句子。',
+        funElement: '玩"昨天做了什么"游戏：用过去式说昨天做的事',
+        gsapAnimations: ['GSAP:思维导图分支展开-sceneBuild', 'GSAP:-ed逐个出现-stagger', 'GSAP:动词变化高亮-highlight'],
+        images: ['IMG:规则动词思维导图', 'IMG:-ed变化规则表'],
+        content: [
+          { type: 'text', content: 'Yesterday I played football. We use the Simple Past Tense to talk about things that happened in the past. Regular verbs add -ed.', animationType: 'reveal' },
+          { type: 'example', content: 'play → played 玩\nwatch → watched 看\nlike → liked 喜欢\nstudy → studied 学习\nstop → stopped 停止', label: '规则动词过去式', animationType: 'cardReveal' },
+          { type: 'dialogue', content: 'Tom: What did you do yesterday?\nAmy: I played football with my friends.\nTom: Did you watch TV?\nAmy: Yes, I watched TV in the evening.', label: '谈论昨天的事', animationType: 'timeline' },
+          { type: 'tip', content: '-ed变化规则思维导图：①一般直接加ed：play→played ②以e结尾加d：like→liked ③辅音+y变y为i加ed：study→studied ④重读闭音节双写末辅音加ed：stop→stopped', label: '四条规则', animationType: 'pulse' },
+          { type: 'example', content: 'I played football yesterday. 我昨天踢了足球。\nShe watched TV last night. 她昨晚看了电视。\nHe liked the book. 他喜欢那本书。\nWe studied English. 我们学了英语。\nThey stopped the car. 他们停了车。', label: '过去式例句', animationType: 'sequence' },
+          { type: 'tip', content: '常见时间标志词：yesterday（昨天）, last night（昨晚）, last week（上周）, ago（以前）。看到这些词就知道用过去时。', label: '时间标志词', animationType: 'pulse' },
+          { type: 'tip', content: '本课使用思维导图法：用中心主题向外扩展分支，把-ed的四种变化规则整理在一张图上', label: '教学方法', animationType: 'pulse' },
+        ],
+        practiceQuestions: [
+          {
+            id: 'e6u9l1q1',
+            type: 'fill',
+            question: 'play → ____ (过去式)',
+            answer: 'played',
+            acceptableAnswers: ['Played'],
+            hint: '一般动词直接加ed',
+            explanation: 'play直接加ed：played做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l1q2',
+            type: 'choice',
+            question: 'like → ____ (过去式)',
+            options: ['liked', 'likeed', 'likd', 'likes'],
+            answer: 'liked',
+            hint: '以e结尾的动词只加d',
+            explanation: 'like以e结尾，只加d：liked做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l1q3',
+            type: 'fill',
+            question: 'study → ____ (过去式)',
+            answer: 'studied',
+            acceptableAnswers: ['Studied'],
+            hint: '辅音+y结尾，y变i再加ed',
+            explanation: 'study变y为i加ed：studied做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l1q4',
+            type: 'choice',
+            question: 'stop → ____ (过去式)',
+            options: ['stopped', 'stoped', 'stoppped', 'stopt'],
+            answer: 'stopped',
+            hint: 'stop是重读闭音节，双写p加ed',
+            explanation: 'stop是重读闭音节，双写p加ed：stopped做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l1q5',
+            type: 'choice',
+            question: '【期末真题】I ____ football yesterday.',
+            options: ['played', 'play', 'plays', 'playing'],
+            answer: 'played',
+            hint: 'yesterday提示过去时',
+            explanation: 'yesterday提示过去时，play加ed：played做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l1q6',
+            type: 'fill',
+            question: 'watch → ____ (过去式)',
+            answer: 'watched',
+            acceptableAnswers: ['Watched'],
+            hint: 'watch直接加ed',
+            explanation: 'watch直接加ed：watched做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l1q7',
+            type: 'choice',
+            question: 'Look! He is ____ now. (run的ing)',
+            options: ['running', 'runs', 'ran', 'run'],
+            answer: 'running',
+            hint: '[现在进行时be+V-ing]（英语五年级-第9单元）',
+            explanation: 'Look提示正在进行，run双写n加ing：running。这是五年级学的现在进行时做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'e6u9l2',
+        title: '不规则动词过去式',
+        order: 2,
+        teachingMethod: '思维导图法 + EDI直接教学',
+        learningObjective: '我能记忆并使用常见不规则动词的过去式',
+        successCriteria: '①能说出8个不规则动词的过去式 ②能用过去式造句',
+        iDo: '家长画思维导图，中心" Irregular Past"，分支按类型分组：AAA型（put→put→put），ABA型（come→came→come），ABB型（go→went→gone），ABC型（see→saw→seen） 【CFU检查理解】家长问"go的过去式是什么？"',
+        weDo: '【引导式】家长说原级孩子说过去式 → 【半独立】孩子说原级家长说 → 【独立】孩子独立说出过去式',
+        youDo: '孩子独立写出不规则动词的过去式。【费曼小老师时间】把记忆方法讲给小熊听',
+        parentTips: '【家长预习】本课核心：常见不规则动词过去式 go→went, see→saw, eat→ate, have→had, do→did, get→got, take→took, buy→bought。\n共学四步：\n①对话出题：家长说I went to school yesterday.问went是哪个词的过去式？。\n②孩子应答：孩子应说went是go的过去式。\n③答错引导：用思维导图法分类记忆；编故事串联记忆。\n④快速检测：1.说8个不规则动词；2.造过去时句子；3.区分规则和不规则。',
+        funElement: '玩"不规则动词卡"游戏：翻牌说过去式，比比谁记得多',
+        gsapAnimations: ['GSAP:不规则动词分类弹出-stagger', 'GSAP:动词变化翻转-cardReveal', 'GSAP:记忆连线动画-highlight'],
+        images: ['IMG:不规则动词思维导图', 'IMG:不规则动词分类表'],
+        content: [
+          { type: 'text', content: 'Many common verbs are irregular! They do not add -ed. We must memorize them. Let us use a mind map to organize them by type.', animationType: 'reveal' },
+          { type: 'example', content: 'go → went 去\nsee → saw 看见\neat → ate 吃\nhave → had 有\ndo → did 做\nget → got 得到\ntake → took 拿\nbuy → bought 买', label: '常见不规则动词', animationType: 'cardReveal' },
+          { type: 'dialogue', content: 'Tom: Where did you go yesterday?\nAmy: I went to the park. I saw many birds.\nTom: Did you eat anything?\nAmy: Yes, I ate an apple and drank some water.\nTom: Did you buy anything?\nAmy: I bought a new book.', label: '过去时对话', animationType: 'timeline' },
+          { type: 'tip', content: '思维导图分类记忆法：ABB型（buy→bought→bought, get→got→got），ABC型（go→went→gone, see→saw→seen），按类型分组更容易记住。', label: '分类记忆法', animationType: 'pulse' },
+          { type: 'example', content: 'I went to school yesterday. 我昨天去了学校。\nShe saw a bird. 她看见一只鸟。\nWe ate lunch at noon. 我们中午吃了午饭。\nHe had a toy car. 他有一辆玩具车。\nThey did their homework. 他们做了作业。', label: '过去式例句', animationType: 'sequence' },
+          { type: 'tip', content: '记忆小技巧：用故事串联——I went（去）to the shop, I saw（看见）a book, I bought（买）it, I read（读）it. 编一个小故事把动词串起来。', label: '故事记忆法', animationType: 'pulse' },
+          { type: 'tip', content: '本课使用思维导图法：把不规则动词按类型分类，画在思维导图上帮助记忆', label: '教学方法', animationType: 'pulse' },
+        ],
+        practiceQuestions: [
+          {
+            id: 'e6u9l2q1',
+            type: 'fill',
+            question: 'go → ____ (过去式)',
+            answer: 'went',
+            acceptableAnswers: ['Went'],
+            hint: 'go的过去式是不规则变化',
+            explanation: 'go的过去式是went：go→went做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l2q2',
+            type: 'fill',
+            question: 'see → ____ (过去式)',
+            answer: 'saw',
+            acceptableAnswers: ['Saw'],
+            hint: 'see的过去式是什么？',
+            explanation: 'see的过去式是saw：see→saw做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l2q3',
+            type: 'choice',
+            question: 'eat → ____ (过去式)',
+            options: ['ate', 'eated', 'eaten', 'ats'],
+            answer: 'ate',
+            hint: 'eat的过去式是不规则变化',
+            explanation: 'eat的过去式是ate：eat→ate做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l2q4',
+            type: 'choice',
+            question: '【期末真题】I ____ to the park yesterday.',
+            options: ['went', 'go', 'goes', 'gone'],
+            answer: 'went',
+            hint: 'yesterday提示过去时，go的过去式？',
+            explanation: 'yesterday提示过去时，go→went：I went to the park做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l2q5',
+            type: 'choice',
+            question: '【期末真题】She ____ a new bag last week.',
+            options: ['bought', 'buy', 'buys', 'buyed'],
+            answer: 'bought',
+            hint: 'last week提示过去时，buy的过去式？',
+            explanation: 'last week提示过去时，buy→bought：She bought a new bag做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l2q6',
+            type: 'fill',
+            question: 'have → ____ (过去式)',
+            answer: 'had',
+            acceptableAnswers: ['Had'],
+            hint: 'have的过去式是什么？',
+            explanation: 'have的过去式是had：have→had做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l2q7',
+            type: 'choice',
+            question: 'He ____ to school every day.',
+            options: ['goes', 'went', 'going', 'gone'],
+            answer: 'goes',
+            hint: '[一般现在时第三人称单数]（英语四年级-第1单元）',
+            explanation: 'every day提示习惯性动作，用一般现在时。He第三人称单数用goes做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'e6u9l3',
+        title: 'was/were的用法与应用',
+        order: 3,
+        teachingMethod: '思维导图法 + 情境教学法',
+        learningObjective: '我能用was/were描述过去的状态',
+        successCriteria: '①能区分was和were ②能用was/were的肯定否定疑问句',
+        iDo: '家长画思维导图：中心"was/were"，分支：I/he/she/it→was，we/you/they→were；否定wasn\'t/weren\'t；疑问Was/Were提前 【CFU检查理解】家长问"was和were分别跟哪些主语？"',
+        weDo: '【引导式】家长给主语孩子说was/were → 【半独立】孩子给主语家长说 → 【独立】孩子自己造句',
+        youDo: '孩子独立用was/were造句。【费曼小老师时间】把was/were用法讲给小熊听',
+        parentTips: '【家长预习】本课核心：be动词的过去式——I/he/she/it用was，we/you/they用were；否定was not=wasn\'t，were not=weren\'t。\n共学四步：\n①对话出题：家长说I was happy yesterday.问was是什么意思？。\n②孩子应答：孩子应说was是is/am的过去式。\n③答错引导：用思维导图法整理was/were用法；用情境法造句。\n④快速检测：1.填was/were；2.改否定句；3.造疑问句。',
+        funElement: '玩"过去的状态"游戏：说 yesterday I was... yesterday they were...',
+        gsapAnimations: ['GSAP:was/were配对弹出-stagger', 'GSAP:思维导图展开-sceneBuild', 'GSAP:句子翻转对比-cardReveal'],
+        images: ['IMG:was/were思维导图', 'IMG:was/were用法图'],
+        content: [
+          { type: 'text', content: 'The past form of "be": I/he/she/it → was, we/you/they → were. Negative: was not (wasn\'t), were not (weren\'t).', animationType: 'reveal' },
+          { type: 'example', content: 'I was at home yesterday. 我昨天在家。\nHe was happy. 他很开心。\nThey were late. 他们迟到了。\nWe were tired. 我们很累。', label: 'was/were用法', animationType: 'cardReveal' },
+          { type: 'dialogue', content: 'Tom: Where were you yesterday?\nAmy: I was at the library. Where were you?\nTom: I was at home. Were your parents home?\nAmy: No, they weren\'t. They were at work.', label: 'was/were对话', animationType: 'timeline' },
+          { type: 'tip', content: '思维导图整理was/were：①肯定：I/he/she/it→was, we/you/they→were ②否定：wasn\'t/weren\'t ③疑问：Was/Were提前 ④简短回答：Yes, I was. / No, I wasn\'t.', label: 'was/were思维导图', animationType: 'pulse' },
+          { type: 'example', content: 'I was not (wasn\'t) there. 我不在那里。\nThey were not (weren\'t) ready. 他们没准备好。\nWas he at school? 他在学校吗？\nWere you happy? 你开心吗？', label: '否定和疑问', animationType: 'sequence' },
+          { type: 'tip', content: '记忆口诀：was连着我他她它，were连着我们你们他们。跟现在时的am/is/are对应：am/is→was, are→were。', label: '记忆口诀', animationType: 'pulse' },
+          { type: 'tip', content: '本课使用思维导图法+情境教学法：用思维导图整理规则，在情境中练习造句', label: '教学方法', animationType: 'pulse' },
+        ],
+        practiceQuestions: [
+          {
+            id: 'e6u9l3q1',
+            type: 'choice',
+            question: 'I ____ at home yesterday.',
+            options: ['was', 'were', 'is', 'are'],
+            answer: 'was',
+            hint: 'I用was还是were？',
+            explanation: 'I用was：I was at home yesterday.我昨天在家做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l3q2',
+            type: 'choice',
+            question: 'They ____ very happy last night.',
+            options: ['were', 'was', 'are', 'is'],
+            answer: 'were',
+            hint: 'They用was还是were？',
+            explanation: 'They用were：They were very happy.他们很开心做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l3q3',
+            type: 'fill',
+            question: 'He ____ not at school. = He wasn\'t at school. (be过去式)',
+            answer: 'was',
+            acceptableAnswers: ['Was'],
+            hint: 'was not的缩写是wasn\'t',
+            explanation: 'He用was：He was not at school.=He wasn\'t at school.他不在学校做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l3q4',
+            type: 'choice',
+            question: '—Were you at the park? —Yes, I ____.',
+            options: ['was', 'were', 'am', 'is'],
+            answer: 'was',
+            hint: '肯定简短回答用什么？',
+            explanation: 'Were you...?肯定回答Yes, I was.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l3q5',
+            type: 'choice',
+            question: '【期末真题】She ____ a teacher ten years ago.',
+            options: ['was', 'were', 'is', 'are'],
+            answer: 'was',
+            hint: 'ten years ago提示过去时，She用什么？',
+            explanation: 'ten years ago提示过去时，She用was：She was a teacher做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l3q6',
+            type: 'fill',
+            question: 'We ____ not tired. = We weren\'t tired. (be过去式)',
+            answer: 'were',
+            acceptableAnswers: ['Were'],
+            hint: 'were not的缩写是weren\'t',
+            explanation: 'We用were：We were not tired.=We weren\'t tired.我们不累做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l3q7',
+            type: 'choice',
+            question: 'She is ____ now. She is running.',
+            options: ['running', 'runs', 'ran', 'run'],
+            answer: 'running',
+            hint: '[现在进行时be+V-ing]（英语五年级-第9单元）',
+            explanation: 'now提示正在进行，run双写n加ing：running。She is running now.这是五年级学的现在进行时做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'e6u9l4',
+        title: '一般过去时思维导图复习',
+        order: 4,
+        teachingMethod: '思维导图法 + 成长型思维',
+        learningObjective: '我能用思维导图整理一般过去时的全部知识',
+        successCriteria: '①能画出完整思维导图 ②能完成综合练习',
+        iDo: '家长画中心圆"Simple Past"，分支：规则动词（4条规则）、不规则动词（分类记忆）、was/were、句型（肯定/否定/疑问） 【CFU检查理解】家长问"思维导图有几个分支？"',
+        weDo: '【引导式】亲子一起补全思维导图 → 【半独立】孩子自己画家长检查 → 【独立】孩子独立画完整思维导图',
+        youDo: '孩子独立画思维导图并讲解。【费曼小老师时间】看着思维导图把一般过去时讲给小熊听',
+        parentTips: '【家长预习】本课核心：用思维导图整理一般过去时——中心是Simple Past，分支：规则动词、不规则动词、was/were、句型。\n共学四步：\n①对话出题：家长说画一个一般过去时的思维导图。\n②孩子应答：孩子应画出中心和分支。\n③答错引导：若孩子漏了分支，提醒回顾前几课内容。\n④快速检测：1.画完整思维导图；2.每分支举例；3.口头复述全部规则。',
+        funElement: '玩"思维导图填色"游戏：每个分支用不同颜色',
+        gsapAnimations: ['GSAP:思维导图分支展开-sceneBuild', 'GSAP:中心圆弹出-scaleIn', 'GSAP:分支高亮-highlight'],
+        images: ['IMG:一般过去时思维导图', 'IMG:思维导图模板'],
+        content: [
+          { type: 'text', content: 'Let us review the Simple Past Tense with a mind map! Center: Simple Past. Four branches: Regular verbs, Irregular verbs, was/were, Sentence types.', animationType: 'reveal' },
+          { type: 'example', content: '分支1 规则动词：直接+ed, 加d, 变y为i+ed, 双写+ed\n分支2 不规则动词：go→went, see→saw, eat→ate, have→had\n分支3 was/were：I/he/she/it→was, we/you/they→were\n分支4 句型：肯定/否定(wasn\'t/weren\'t)/疑问(Was/Were提前)', label: '思维导图结构', animationType: 'cardReveal' },
+          { type: 'tip', content: '思维导图法：把一般过去时的所有知识整理在一张图上，中心主题向外扩展分支，一目了然。', label: '思维导图法', animationType: 'pulse' },
+          { type: 'example', content: 'play→played, watch→watched\nstudy→studied, stop→stopped\ngo→went, see→saw, eat→ate\nI was... They were...', label: '变化总结', animationType: 'sequence' },
+          { type: 'tip', content: '做错题不要害怕！每次犯错都是学习的好机会。把错题记在思维导图旁边，复习时重点看。', label: '成长型思维', animationType: 'pulse' },
+          { type: 'tip', content: '复习检查清单：①我会变规则过去式吗？②我会变不规则过去式吗？③我会用was/were吗？④我会造疑问句吗？', label: '复习清单', animationType: 'pulse' },
+          { type: 'tip', content: '本课使用思维导图法+成长型思维：用图形整理知识，用积极心态面对错误', label: '教学方法', animationType: 'pulse' },
+        ],
+        practiceQuestions: [
+          {
+            id: 'e6u9l4q1',
+            type: 'fill',
+            question: 'play → ____ (过去式)',
+            answer: 'played',
+            acceptableAnswers: ['Played'],
+            hint: '一般动词直接加ed',
+            explanation: 'play直接加ed：played做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l4q2',
+            type: 'fill',
+            question: 'go → ____ (过去式)',
+            answer: 'went',
+            acceptableAnswers: ['Went'],
+            hint: 'go的过去式是不规则变化',
+            explanation: 'go→went，是不规则变化做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l4q3',
+            type: 'choice',
+            question: 'I ____ at school yesterday.',
+            options: ['was', 'were', 'is', 'am'],
+            answer: 'was',
+            hint: 'yesterday提示过去时，I用什么？',
+            explanation: 'yesterday提示过去时，I用was：I was at school做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l4q4',
+            type: 'choice',
+            question: 'They ____ not happy. = They weren\'t happy.',
+            options: ['were', 'was', 'are', 'is'],
+            answer: 'were',
+            hint: 'They用什么？weren\'t是were not的缩写',
+            explanation: 'They用were：They were not happy.=They weren\'t happy.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l4q5',
+            type: 'choice',
+            question: '【期末真题】She ____ TV last night.',
+            options: ['watched', 'watch', 'watches', 'watching'],
+            answer: 'watched',
+            hint: 'last night提示过去时',
+            explanation: 'last night提示过去时，watch加ed：watched做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l4q6',
+            type: 'fill',
+            question: 'see → ____ (过去式)',
+            answer: 'saw',
+            acceptableAnswers: ['Saw'],
+            hint: 'see的过去式是什么？',
+            explanation: 'see→saw，是不规则变化做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l4q7',
+            type: 'choice',
+            question: 'I ____ playing football now.',
+            options: ['am', 'was', 'were', 'do'],
+            answer: 'am',
+            hint: '[现在进行时be+V-ing]（英语五年级-第9单元）',
+            explanation: 'now提示正在进行，I用am：I am playing football now.这是五年级学的现在进行时做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'e6u9l5',
+        title: '一般过去时综合应用（真题）',
+        order: 5,
+        teachingMethod: 'EDI直接教学 + 成长型思维',
+        learningObjective: '我能用一般过去时完成期末真题',
+        successCriteria: '①能做对过去时真题 ②能区分过去时和现在时',
+        iDo: '家长讲解真题："I ____ to school yesterday." 分析：yesterday→过去时→go→went 【CFU检查理解】家长问"看到yesterday该用什么时态？"',
+        weDo: '【引导式】亲子一起分析真题 → 【半独立】孩子自己做家长检查 → 【独立】孩子独立完成真题',
+        youDo: '孩子独立完成一般过去时真题。【费曼小老师时间】把做题思路讲给小熊听',
+        parentTips: '【家长预习】本课核心：综合应用一般过去时。做题关键：看yesterday/last/ago→过去时。\n共学四步：\n①对话出题：家长说I went to school yesterday.问为什么用went？。\n②孩子应答：孩子应说因为有yesterday所以用过去时。\n③答错引导：用EDI法直接讲解：yesterday=过去时。\n④快速检测：1.做5道真题；2.区分时态；3.讲解思路。',
+        funElement: '玩"时态侦探"游戏：看到yesterday喊"过去时！"看到now喊"进行时！"',
+        gsapAnimations: ['GSAP:真题逐题出现-stagger', 'GSAP:正确答案高亮-highlight', 'GSAP:时态对比翻转-cardReveal'],
+        images: ['IMG:期末真题场景', 'IMG:时态对比图'],
+        content: [
+          { type: 'text', content: 'Exam time! Key tips: see yesterday/last/ago → Simple Past; see now → Present Continuous; see every day → Present Simple.', animationType: 'reveal' },
+          { type: 'example', content: '过去时：I went to school yesterday.（我昨天去了学校。）\n现在时：I go to school every day.（我每天去学校。）\n进行时：I am going to school now.（我现在正在去学校。）', label: '时态对比', animationType: 'cardReveal' },
+          { type: 'dialogue', content: 'Teacher: What did you do last weekend?\nStudent: I visited my grandma. We had a big dinner.\nTeacher: Did you go shopping?\nStudent: Yes, I bought some fruits.', label: '真题场景', animationType: 'timeline' },
+          { type: 'tip', content: '做题三步法：①找时间标志词（yesterday/last/ago）②判断时态（过去时）③变出正确形式（规则ed/不规则特殊记）', label: '做题策略', animationType: 'pulse' },
+          { type: 'example', content: '真题1：I ___ football yesterday. → played\n真题2：She ___ to school. → went\n真题3：They ___ TV. → watched\n真题4：He ___ a book. → read', label: '真题解析', animationType: 'sequence' },
+          { type: 'tip', content: '做错真题是进步的阶梯！每错一次就记住了一个知识点。把错题写在错题本上。', label: '成长型思维', animationType: 'pulse' },
+          { type: 'tip', content: '本课使用EDI直接教学+成长型思维：直接讲解考点，用积极心态面对错误', label: '教学方法', animationType: 'pulse' },
+        ],
+        practiceQuestions: [
+          {
+            id: 'e6u9l5q1',
+            type: 'choice',
+            question: '【期末真题】I ____ to school yesterday.',
+            options: ['went', 'go', 'goes', 'going'],
+            answer: 'went',
+            hint: 'yesterday提示过去时，go的过去式？',
+            explanation: 'yesterday提示过去时，go→went做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l5q2',
+            type: 'choice',
+            question: '【期末真题】She ____ her homework last night.',
+            options: ['did', 'do', 'does', 'doing'],
+            answer: 'did',
+            hint: 'last night提示过去时，do的过去式？',
+            explanation: 'last night提示过去时，do→did做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l5q3',
+            type: 'fill',
+            question: '【期末真题】We ____ (play) football yesterday afternoon.',
+            answer: 'played',
+            acceptableAnswers: ['Played'],
+            hint: 'yesterday afternoon提示过去时，play怎么变？',
+            explanation: 'yesterday afternoon提示过去时，play加ed：played做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l5q4',
+            type: 'choice',
+            question: '【期中真题】He ____ a book last week.',
+            options: ['read', 'reads', 'reading', 'is reading'],
+            answer: 'read',
+            hint: 'last week提示过去时，read的过去式还是read',
+            explanation: 'read的过去式还是read（发音变为/red/）：He read a book last week.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l5q5',
+            type: 'choice',
+            question: '【期末真题】—Were you at home yesterday? —Yes, I ____.',
+            options: ['was', 'were', 'am', 'is'],
+            answer: 'was',
+            hint: '肯定简短回答',
+            explanation: 'Were you...?肯定回答Yes, I was.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l5q6',
+            type: 'fill',
+            question: '【期末真题】They ____ (be) very happy last Sunday.',
+            answer: 'were',
+            acceptableAnswers: ['Were'],
+            hint: 'last Sunday提示过去时，They用什么？',
+            explanation: 'last Sunday提示过去时，They用were：They were very happy做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u9l5q7',
+            type: 'choice',
+            question: 'He ____ to school every day.',
+            options: ['goes', 'went', 'going', 'gone'],
+            answer: 'goes',
+            hint: '[一般现在时第三人称单数]（英语五年级-第1单元）',
+            explanation: 'every day提示习惯性动作，用一般现在时。He第三人称单数用goes做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'e6u10',
+    title: 'Word Roots and Affixes',
+    subtitle: '词根词缀记忆法：用前缀后缀扩大词汇量',
+    order: 10,
+    lessons: [
+      {
+        id: 'e6u10l1',
+        title: '前缀 un-/re-/dis-',
+        order: 1,
+        teachingMethod: '记忆宫殿法 + EDI直接教学',
+        learningObjective: '我能用前缀un-/re-/dis-猜词义和记单词',
+        successCriteria: '①能说出3个前缀的含义 ②能用前缀变出新词',
+        iDo: '家长构建记忆宫殿：门口放un-（否定：happy→unhappy），客厅放re-（再/重复：write→rewrite），卧室放dis-（否定：like→dislike） 【CFU检查理解】家长问"un-是什么意思？re-是什么意思？"',
+        weDo: '【引导式】家长给词根孩子加前缀 → 【半独立】孩子给词根家长加 → 【独立】孩子自己加前缀说词义',
+        youDo: '孩子独立用前缀变出新词并解释词义。【费曼小老师时间】把记忆宫殿和前缀讲给小熊听',
+        parentTips: '【家长预习】本课核心：前缀改变词义。un-（不/否定：happy→unhappy），re-（再/重复：write→rewrite），dis-（不/否定：like→dislike）。\n共学四步：\n①对话出题：家长说happy加un-变什么？。\n②孩子应答：孩子应说unhappy不开心的。\n③答错引导：用记忆宫殿法把前缀放在不同房间记忆。\n④快速检测：1.说3个前缀含义；2.变5个新词；3.解释词义。',
+        funElement: '玩"记忆宫殿"游戏：想象走进不同房间，每个房间放一个前缀',
+        gsapAnimations: ['GSAP:记忆宫殿房间展开-sceneBuild', 'GSAP:前缀逐个出现-stagger', 'GSAP:单词变化高亮-highlight'],
+        images: ['IMG:记忆宫殿图', 'IMG:前缀un-re-dis表'],
+        content: [
+          { type: 'text', content: 'Prefixes change the meaning of a word! un- = not (unhappy), re- = again (rewrite), dis- = not (dislike).', animationType: 'reveal' },
+          { type: 'example', content: 'un- (不)：happy→unhappy, fair→unfair, able→unable\nre- (再/重复)：write→rewrite, do→redo, play→replay\ndis- (不/否定)：like→dislike, agree→disagree, appear→disappear', label: '前缀变化', animationType: 'cardReveal' },
+          { type: 'dialogue', content: 'Tom: I am unhappy today.\nAmy: Why? What happened?\nTom: I have to rewrite my homework. I dislike doing it again.\nAmy: Don\'t worry. You can redo it quickly!', label: '前缀对话', animationType: 'timeline' },
+          { type: 'tip', content: '记忆宫殿法：想象一个熟悉的房子，把un-放在门口（进门就否定），re-放在书房（重新写），dis-放在卧室（不喜欢就关门）。用空间位置帮助记忆。', label: '记忆宫殿法', animationType: 'pulse' },
+          { type: 'example', content: 'happy + un = unhappy 不开心的\nwrite + re = rewrite 重写\nlike + dis = dislike 不喜欢\ndo + re = redo 重做\nfair + un = unfair 不公平的', label: '前缀示例', animationType: 'sequence' },
+          { type: 'tip', content: '前缀un-和dis-都表示否定，但用法不同：un-常加在形容词前（unhappy），dis-常加在动词前（dislike）。', label: '前缀辨析', animationType: 'pulse' },
+          { type: 'tip', content: '本课使用记忆宫殿法：把前缀放在想象中的房间不同位置，用空间记忆帮助记住前缀含义', label: '教学方法', animationType: 'pulse' },
+        ],
+        practiceQuestions: [
+          {
+            id: 'e6u10l1q1',
+            type: 'choice',
+            question: 'What does "un-" mean?',
+            options: ['not', 'again', 'very', 'before'],
+            answer: 'not',
+            hint: 'un-表示什么意思？',
+            explanation: 'un-表示"不/否定"，如unhappy=不开心的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l1q2',
+            type: 'choice',
+            question: 'What does "re-" mean?',
+            options: ['again', 'not', 'very', 'after'],
+            answer: 'again',
+            hint: 're-表示什么意思？',
+            explanation: 're-表示"再/重复"，如rewrite=重写做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l1q3',
+            type: 'choice',
+            question: 'happy + un = ?',
+            options: ['unhappy', 'rehappy', 'dishappy', 'happyun'],
+            answer: 'unhappy',
+            hint: 'un-加在happy前面变什么？',
+            explanation: 'un-+happy=unhappy，不开心的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l1q4',
+            type: 'choice',
+            question: 'What does "dislike" mean?',
+            options: ['not like', 'like again', 'like very much', 'like before'],
+            answer: 'not like',
+            hint: 'dis-表示什么？',
+            explanation: 'dis-表示"不"，dislike=不喜欢做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l1q5',
+            type: 'choice',
+            question: '【期末真题】"rewrite" means ____.',
+            options: ['write again', 'not write', 'write before', 'write fast'],
+            answer: 'write again',
+            hint: 're-表示什么意思？',
+            explanation: 're-表示"再/重复"，rewrite=重写，write again做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l1q6',
+            type: 'fill',
+            question: 'like + dis = ____ (不喜欢)',
+            answer: 'dislike',
+            acceptableAnswers: ['Dislike'],
+            hint: 'dis-加在like前面变什么？',
+            explanation: 'dis-+like=dislike，不喜欢做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l1q7',
+            type: 'choice',
+            question: 'The opposite of "happy" is ____.',
+            options: ['unhappy', 'rehappy', 'dishappy', 'sadly'],
+            answer: 'unhappy',
+            hint: '[反义词加前缀]（英语三年级-第3单元）',
+            explanation: 'happy的反义词加un-：unhappy不开心的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'e6u10l2',
+        title: '后缀 -er/-tion',
+        order: 2,
+        teachingMethod: '记忆宫殿法 + EDI直接教学',
+        learningObjective: '我能用后缀-er/-tion变出新词并理解词义',
+        successCriteria: '①能说出-er和-tion的含义 ②能用后缀变出新词',
+        iDo: '家长继续构建记忆宫殿：厨房放-er（做的人：teach→teacher），阳台放-tion（名词：act→action） 【CFU检查理解】家长问"-er是什么意思？-tion变什么词？"',
+        weDo: '【引导式】家长给词根孩子加后缀 → 【半独立】孩子给词根家长加 → 【独立】孩子自己加后缀',
+        youDo: '孩子独立用后缀变出新词并解释。【费曼小老师时间】把记忆宫殿和后缀讲给小熊听',
+        parentTips: '【家长预习】本课核心：后缀改变词性。-er（做...的人：teach→teacher, work→worker），-tion（名词后缀：act→action, educate→education）。\n共学四步：\n①对话出题：家长说teach加er变什么？。\n②孩子应答：孩子应说teacher老师。\n③答错引导：用记忆宫殿法把-er放在厨房，-tion放在阳台。\n④快速检测：1.说2个后缀含义；2.变5个新词；3.解释词义。',
+        funElement: '玩"后缀变变变"游戏：给词根加后缀，看能变出什么新词',
+        gsapAnimations: ['GSAP:记忆宫殿房间展开-sceneBuild', 'GSAP:后缀逐个出现-stagger', 'GSAP:单词变化高亮-highlight'],
+        images: ['IMG:记忆宫殿图', 'IMG:后缀er-tion表'],
+        content: [
+          { type: 'text', content: 'Suffixes change the word type! -er = a person who does (teacher), -tion = makes a noun (action).', animationType: 'reveal' },
+          { type: 'example', content: '-er (做...的人)：teach→teacher, work→worker, run→runner, sing→singer\n-tion (名词)：act→action, educate→education, invent→invention, collect→collection', label: '后缀变化', animationType: 'cardReveal' },
+          { type: 'dialogue', content: 'Tom: What does your father do?\nAmy: He is a teacher. He teaches English.\nTom: My mother is a worker. She works in a factory.\nAmy: Education is important for everyone.', label: '后缀对话', animationType: 'timeline' },
+          { type: 'tip', content: '记忆宫殿法：把-er放在厨房（厨房里有cook→cooker），把-tion放在阳台（阳台上invent→invention）。用房间位置帮助记忆后缀含义。', label: '记忆宫殿法', animationType: 'pulse' },
+          { type: 'example', content: 'teach + er = teacher 老师\nwork + er = worker 工人\nsing + er = singer 歌手\nact + tion = action 行动\ninvent + tion = invention 发明', label: '后缀示例', animationType: 'sequence' },
+          { type: 'tip', content: '-er加在动词后表示"做这个动作的人"：teach（教）→teacher（老师），work（工作）→worker（工人），run（跑）→runner（跑步者，双写n加er）。', label: '-er用法', animationType: 'pulse' },
+          { type: 'tip', content: '本课使用记忆宫殿法：把后缀放在想象中的房间不同位置，用空间记忆帮助记住后缀含义', label: '教学方法', animationType: 'pulse' },
+        ],
+        practiceQuestions: [
+          {
+            id: 'e6u10l2q1',
+            type: 'choice',
+            question: 'What does "-er" mean?',
+            options: ['a person who does', 'not', 'again', 'before'],
+            answer: 'a person who does',
+            hint: '-er表示什么？',
+            explanation: '-er表示"做...的人"，如teacher=老师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l2q2',
+            type: 'fill',
+            question: 'teach + er = ____ (老师)',
+            answer: 'teacher',
+            acceptableAnswers: ['Teacher'],
+            hint: 'teach加er变什么？',
+            explanation: 'teach+er=teacher，老师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l2q3',
+            type: 'choice',
+            question: 'work + er = ?',
+            options: ['worker', 'worktion', 'rework', 'unwork'],
+            answer: 'worker',
+            hint: 'work加er变什么？',
+            explanation: 'work+er=worker，工人做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l2q4',
+            type: 'choice',
+            question: '【期末真题】"-tion" makes a word into a ____.',
+            options: ['noun', 'verb', 'person', 'negative'],
+            answer: 'noun',
+            hint: '-tion变什么词性？',
+            explanation: '-tion是名词后缀，把动词变成名词：act→action做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l2q5',
+            type: 'choice',
+            question: '【期末真题】A person who sings is a ____.',
+            options: ['singer', 'singtion', 'unsing', 'resing'],
+            answer: 'singer',
+            hint: 'sing加什么后缀表示"唱歌的人"？',
+            explanation: 'sing+er=singer，歌手。做...的人用-er做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l2q6',
+            type: 'fill',
+            question: 'act + tion = ____ (行动)',
+            answer: 'action',
+            acceptableAnswers: ['Action'],
+            hint: 'act加tion变什么？',
+            explanation: 'act+tion=action，行动做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l2q7',
+            type: 'choice',
+            question: 'My mother is a ____. She teaches Chinese.',
+            options: ['teacher', 'teach', 'teaches', 'teaching'],
+            answer: 'teacher',
+            hint: '[职业名词]（英语五年级-第1单元）',
+            explanation: 'teach+er=teacher，老师。这是五年级第1单元学的职业名词做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'e6u10l3',
+        title: '后缀 -ful/-less 与应用',
+        order: 3,
+        teachingMethod: '记忆宫殿法 + 情境教学法',
+        learningObjective: '我能用后缀-ful/-less变出形容词并理解词义',
+        successCriteria: '①能说出-ful和-less的含义 ②能用后缀变出新词',
+        iDo: '家长继续构建记忆宫殿：书房放-ful（充满...的：help→helpful），车库放-less（没有...的：care→careless） 【CFU检查理解】家长问"-ful和-less分别是什么意思？"',
+        weDo: '【引导式】家长给词根孩子加后缀 → 【半独立】孩子给词根家长加 → 【独立】孩子自己加后缀',
+        youDo: '孩子独立用后缀变出新词并解释。【费曼小老师时间】把记忆宫殿和后缀讲给小熊听',
+        parentTips: '【家长预习】本课核心：-ful（充满...的：help→helpful, beauty→beautiful），-less（没有...的：care→careless, use→useless）。\n共学四步：\n①对话出题：家长说help加ful变什么？。\n②孩子应答：孩子应说helpful有帮助的。\n③答错引导：用记忆宫殿法把-ful放在书房，-less放在车库。\n④快速检测：1.说2个后缀含义；2.变5个新词；3.解释词义。',
+        funElement: '玩"反义词配对"游戏：-ful和-less互为反义，配对记忆',
+        gsapAnimations: ['GSAP:记忆宫殿房间展开-sceneBuild', 'GSAP:后缀配对弹出-stagger', 'GSAP:反义词翻转-cardReveal'],
+        images: ['IMG:记忆宫殿图', 'IMG:后缀ful-less表'],
+        content: [
+          { type: 'text', content: '-ful = full of (helpful), -less = without (careless). They are opposite suffixes!', animationType: 'reveal' },
+          { type: 'example', content: '-ful (充满...的)：help→helpful, beauty→beautiful, use→useful, care→careful\n-less (没有...的)：care→careless, use→useless, hope→hopeless, fear→fearless', label: '后缀变化', animationType: 'cardReveal' },
+          { type: 'dialogue', content: 'Tom: You are very helpful! Thank you!\nAmy: You\'re welcome. But be careful with that cup.\nTom: Oh no! I was careless. I broke it.\nAmy: It\'s OK. It was useless anyway.', label: '后缀对话', animationType: 'timeline' },
+          { type: 'tip', content: '记忆宫殿法：-ful放在书房（充满知识），-less放在车库（没有车的空车库）。-ful和-less是一对反义词缀！', label: '记忆宫殿法', animationType: 'pulse' },
+          { type: 'example', content: 'help + ful = helpful 有帮助的\ncare + ful = careful 小心的\ncare + less = careless 粗心的\nuse + ful = useful 有用的\nuse + less = useless 无用的', label: '反义词对', animationType: 'sequence' },
+          { type: 'tip', content: '同一个词根care加-ful变careful（小心的），加-less变careless（粗心的）。-ful和-less是反义词缀！', label: '反义词缀', animationType: 'pulse' },
+          { type: 'tip', content: '本课使用记忆宫殿法+情境教学法：在情境中用后缀造句，用空间记忆帮助记住后缀含义', label: '教学方法', animationType: 'pulse' },
+        ],
+        practiceQuestions: [
+          {
+            id: 'e6u10l3q1',
+            type: 'choice',
+            question: 'What does "-ful" mean?',
+            options: ['full of', 'without', 'again', 'not'],
+            answer: 'full of',
+            hint: '-ful表示什么意思？',
+            explanation: '-ful表示"充满...的"，如helpful=有帮助的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l3q2',
+            type: 'choice',
+            question: 'What does "-less" mean?',
+            options: ['without', 'full of', 'again', 'a person'],
+            answer: 'without',
+            hint: '-less表示什么意思？',
+            explanation: '-less表示"没有...的"，如careless=粗心的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l3q3',
+            type: 'choice',
+            question: 'help + ful = ?',
+            options: ['helpful', 'helpless', 'helption', 'unhelp'],
+            answer: 'helpful',
+            hint: 'help加ful变什么？',
+            explanation: 'help+ful=helpful，有帮助的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l3q4',
+            type: 'choice',
+            question: 'care + less = ?',
+            options: ['careless', 'careful', 'caretion', 'recare'],
+            answer: 'careless',
+            hint: 'care加less变什么？',
+            explanation: 'care+less=careless，粗心的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l3q5',
+            type: 'choice',
+            question: '【期末真题】"careful" and "careless" are ____.',
+            options: ['opposites', 'the same', 'both nouns', 'both verbs'],
+            answer: 'opposites',
+            hint: '-ful和-less是什么关系？',
+            explanation: 'careful（小心的）和careless（粗心的）是反义词，-ful和-less互为反义做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l3q6',
+            type: 'fill',
+            question: 'use + less = ____ (无用的)',
+            answer: 'useless',
+            acceptableAnswers: ['Useless'],
+            hint: 'use加less变什么？',
+            explanation: 'use+less=useless，无用的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l3q7',
+            type: 'choice',
+            question: 'The elephant is very ____.',
+            options: ['big', 'bigger', 'biggest', 'more big'],
+            answer: 'big',
+            hint: '[形容词描述动物]（英语四年级-第3单元）',
+            explanation: '单独描述大象很大用原级big：The elephant is very big.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'e6u10l4',
+        title: '词根词缀思维导图复习',
+        order: 4,
+        teachingMethod: '思维导图法 + 成长型思维',
+        learningObjective: '我能用思维导图整理词根词缀的全部知识',
+        successCriteria: '①能画出完整思维导图 ②能完成综合练习',
+        iDo: '家长画中心圆"Affixes"，分支：前缀（un-/re-/dis-）、后缀-er、后缀-tion、后缀-ful/-less 【CFU检查理解】家长问"思维导图有几个分支？"',
+        weDo: '【引导式】亲子一起补全思维导图 → 【半独立】孩子自己画家长检查 → 【独立】孩子独立画完整思维导图',
+        youDo: '孩子独立画思维导图并讲解。【费曼小老师时间】看着思维导图把词根词缀讲给小熊听',
+        parentTips: '【家长预习】本课核心：用思维导图整理词根词缀——中心是Affixes，分支：前缀（un-/re-/dis-）、后缀-er（人）、后缀-tion（名词）、后缀-ful/-less（形容词）。\n共学四步：\n①对话出题：家长说画一个词根词缀的思维导图。\n②孩子应答：孩子应画出中心和分支。\n③答错引导：若孩子漏了分支，提醒回顾前几课内容。\n④快速检测：1.画完整思维导图；2.每分支举例；3.口头复述全部规则。',
+        funElement: '玩"思维导图填色"游戏：每个分支用不同颜色',
+        gsapAnimations: ['GSAP:思维导图分支展开-sceneBuild', 'GSAP:中心圆弹出-scaleIn', 'GSAP:分支高亮-highlight'],
+        images: ['IMG:词根词缀思维导图', 'IMG:思维导图模板'],
+        content: [
+          { type: 'text', content: 'Let us review affixes with a mind map! Center: Affixes. Four branches: Prefixes (un-/re-/dis-), -er, -tion, -ful/-less.', animationType: 'reveal' },
+          { type: 'example', content: '分支1 前缀：un-(不), re-(再), dis-(不)\n分支2 -er：做...的人（teach→teacher）\n分支3 -tion：名词（act→action）\n分支4 -ful/-less：充满/没有（careful/careless）', label: '思维导图结构', animationType: 'cardReveal' },
+          { type: 'tip', content: '思维导图法：把所有前缀和后缀整理在一张图上，中心主题向外扩展分支，一目了然。', label: '思维导图法', animationType: 'pulse' },
+          { type: 'example', content: 'un-+happy=unhappy\nre-+write=rewrite\ndis-+like=dislike\nteach+-er=teacher\nact+-tion=action\nhelp+-ful=helpful', label: '变化总结', animationType: 'sequence' },
+          { type: 'tip', content: '做错题时不要灰心！把错题写在思维导图旁边，用红笔标注，下次复习时重点看。', label: '成长型思维', animationType: 'pulse' },
+          { type: 'tip', content: '复习检查清单：①我知道un-/re-/dis-的意思吗？②我会用-er变职业吗？③我会用-tion变名词吗？④我会用-ful/-less变形容词吗？', label: '复习清单', animationType: 'pulse' },
+          { type: 'tip', content: '本课使用思维导图法+成长型思维：用图形整理知识，用积极心态面对错误', label: '教学方法', animationType: 'pulse' },
+        ],
+        practiceQuestions: [
+          {
+            id: 'e6u10l4q1',
+            type: 'choice',
+            question: 'What does "un-" mean?',
+            options: ['not', 'again', 'a person', 'without'],
+            answer: 'not',
+            hint: 'un-表示什么？',
+            explanation: 'un-表示"不/否定"做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l4q2',
+            type: 'choice',
+            question: 'What does "re-" mean?',
+            options: ['again', 'not', 'a person', 'without'],
+            answer: 'again',
+            hint: 're-表示什么？',
+            explanation: 're-表示"再/重复"做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l4q3',
+            type: 'fill',
+            question: 'teach + er = ____ (老师)',
+            answer: 'teacher',
+            acceptableAnswers: ['Teacher'],
+            hint: 'teach加er变什么？',
+            explanation: 'teach+er=teacher，老师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l4q4',
+            type: 'choice',
+            question: 'What does "-less" mean?',
+            options: ['without', 'full of', 'again', 'a person'],
+            answer: 'without',
+            hint: '-less表示什么？',
+            explanation: '-less表示"没有...的"做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l4q5',
+            type: 'choice',
+            question: '【期末真题】"dis-" means ____.',
+            options: ['not', 'again', 'full of', 'a person'],
+            answer: 'not',
+            hint: 'dis-表示什么？',
+            explanation: 'dis-表示"不/否定"，如dislike=不喜欢做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l4q6',
+            type: 'fill',
+            question: 'help + ful = ____ (有帮助的)',
+            answer: 'helpful',
+            acceptableAnswers: ['Helpful'],
+            hint: 'help加ful变什么？',
+            explanation: 'help+ful=helpful，有帮助的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l4q7',
+            type: 'choice',
+            question: 'Look! He is ____ football now.',
+            options: ['playing', 'plays', 'played', 'play'],
+            answer: 'playing',
+            hint: '[现在进行时be+V-ing]（英语五年级-第9单元）',
+            explanation: 'Look和now提示正在进行，play加ing：playing。He is playing football now.这是五年级学的现在进行时做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          }
+        ]
+      },
+      {
+        id: 'e6u10l5',
+        title: '词根词缀综合应用（真题）',
+        order: 5,
+        teachingMethod: 'EDI直接教学 + 成长型思维',
+        learningObjective: '我能用词根词缀知识完成期末真题',
+        successCriteria: '①能做对词根词缀真题 ②能猜出陌生词词义',
+        iDo: '家长讲解真题："unhappy means ___." 分析：un-(不)+happy(开心)=不开心的 【CFU检查理解】家长问"怎样用前缀猜词义？"',
+        weDo: '【引导式】亲子一起分析真题 → 【半独立】孩子自己做家长检查 → 【独立】孩子独立完成真题',
+        youDo: '孩子独立完成词根词缀真题。【费曼小老师时间】把做题思路讲给小熊听',
+        parentTips: '【家长预习】本课核心：综合应用词根词缀。做题关键：拆词→看前缀/后缀→猜词义。\n共学四步：\n①对话出题：家长说unhappy是什么意思？。\n②孩子应答：孩子应说un-(不)+happy(开心)=不开心的。\n③答错引导：用EDI法直接讲解拆词法。\n④快速检测：1.做5道真题；2.猜3个陌生词；3.讲解思路。',
+        funElement: '玩"拆词猜猜猜"游戏：把单词拆成前缀+词根+后缀，猜词义',
+        gsapAnimations: ['GSAP:真题逐题出现-stagger', 'GSAP:正确答案高亮-highlight', 'GSAP:单词拆分动画-cardReveal'],
+        images: ['IMG:期末真题场景', 'IMG:词根词缀拆分图'],
+        content: [
+          { type: 'text', content: 'Exam time! Strategy: split the word → find prefix/suffix → guess the meaning. un+happy=unhappy (not happy).', animationType: 'reveal' },
+          { type: 'example', content: '真题1：rewrite = re+write = 写 again = 重写\n真题2：teacher = teach+er = 教+的人 = 老师\n真题3：careless = care+less = 小心+没有 = 粗心的\n真题4：dislike = dis+like = 不+喜欢 = 不喜欢', label: '真题解析', animationType: 'cardReveal' },
+          { type: 'dialogue', content: 'Teacher: What does "unhappy" mean?\nStudent: un- means not. unhappy means not happy.\nTeacher: Great! What about "rewrite"?\nStudent: re- means again. rewrite means write again.\nTeacher: Excellent! You can guess new words now!', label: '真题场景', animationType: 'timeline' },
+          { type: 'tip', content: '做题三步法：①拆词（找前缀+词根+后缀）②分析各部分含义 ③组合猜出整词词义', label: '做题策略', animationType: 'pulse' },
+          { type: 'example', content: 'un+fair=unfair 不公平的\nre+do=redo 重做\ndis+appear=disappear 消失\nwork+er=worker 工人\nact+tion=action 行动', label: '真题举例', animationType: 'sequence' },
+          { type: 'tip', content: '学会词根词缀就像拿到了一把万能钥匙！遇到不认识的词也能猜出意思。每错一次就多学了一个词缀！', label: '成长型思维', animationType: 'pulse' },
+          { type: 'tip', content: '本课使用EDI直接教学+成长型思维：直接讲解考点，用积极心态面对错误', label: '教学方法', animationType: 'pulse' },
+        ],
+        practiceQuestions: [
+          {
+            id: 'e6u10l5q1',
+            type: 'choice',
+            question: '【期末真题】"unhappy" means ____.',
+            options: ['not happy', 'very happy', 'happy again', 'a happy person'],
+            answer: 'not happy',
+            hint: 'un-表示什么？',
+            explanation: 'un-表示"不"，unhappy=not happy不开心的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l5q2',
+            type: 'choice',
+            question: '【期末真题】"rewrite" means ____.',
+            options: ['write again', 'not write', 'a writer', 'without writing'],
+            answer: 'write again',
+            hint: 're-表示什么？',
+            explanation: 're-表示"再/重复"，rewrite=write again重写做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l5q3',
+            type: 'choice',
+            question: '【期末真题】A person who works is a ____.',
+            options: ['worker', 'worktion', 'unwork', 'rework'],
+            answer: 'worker',
+            hint: 'work加什么后缀表示"工作的人"？',
+            explanation: 'work+er=worker，工人。-er表示做...的人做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l5q4',
+            type: 'choice',
+            question: '【期中真题】"careless" means ____.',
+            options: ['without care', 'full of care', 'care again', 'a careful person'],
+            answer: 'without care',
+            hint: '-less表示什么？',
+            explanation: '-less表示"没有"，careless=without care粗心的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l5q5',
+            type: 'choice',
+            question: '【期末真题】"dislike" is the opposite of ____.',
+            options: ['like', 'write', 'care', 'help'],
+            answer: 'like',
+            hint: 'dis-表示什么？',
+            explanation: 'dis-表示"不"，dislike=不喜欢，是like的反义词做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l5q6',
+            type: 'fill',
+            question: '【期末真题】act + tion = ____ (行动)',
+            answer: 'action',
+            acceptableAnswers: ['Action'],
+            hint: 'act加tion变什么？',
+            explanation: 'act+tion=action，行动。-tion是名词后缀做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
+          },
+          {
+            id: 'e6u10l5q7',
+            type: 'choice',
+            question: 'She is a ____. She teaches us English.',
+            options: ['teacher', 'teach', 'teaches', 'teaching'],
+            answer: 'teacher',
+            hint: '[职业名词teach+er]（英语三年级-第3单元）',
+            explanation: 'teach+er=teacher，老师。这是三年级学的职业词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       }

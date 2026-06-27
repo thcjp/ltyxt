@@ -90,28 +90,28 @@ export const useSettingsStore = defineStore('settings', () => {
     return childName.value || '小朋友'
   }
 
-  // 获取鼓励语
+  // 获取鼓励语（成长型思维语言：强调努力、策略、进步，而非天赋）
   function getPraise(): string {
     const name = getChildName()
     const praises = [
-      `${name}你真棒！`,
-      `${name}太厉害了！`,
-      `${name}做得真好！`,
-      `${name}真聪明！`,
-      `太棒了${name}！`,
-      `${name}满分！`,
+      `${name}你通过努力做到了！`,
+      `${name}你的方法很棒！`,
+      `${name}你又进步了！`,
+      `${name}认真思考了，真棒！`,
+      `${name}坚持练习让你越来越厉害！`,
+      `${name}你在认真学习，为你骄傲！`,
     ]
     return praises[Math.floor(Math.random() * praises.length)]
   }
 
-  // 获取答错鼓励语
+  // 获取答错鼓励语（成长型思维：错误是学习的一部分）
   function getEncourage(): string {
     const name = getChildName()
     const encourages = [
-      `${name}再想想哦~`,
-      `${name}加油！再试一次`,
-      `${name}别灰心，继续努力！`,
-      `没关系${name}，再来一次`,
+      `${name}错误让你更接近答案！再想想~`,
+      `${name}换个方法试试看！你能行`,
+      `${name}每一次尝试都在进步！别灰心`,
+      `没关系${name}，大脑在错误中变得更聪明！`,
     ]
     return encourages[Math.floor(Math.random() * encourages.length)]
   }

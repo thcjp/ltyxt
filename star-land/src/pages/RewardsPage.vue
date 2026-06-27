@@ -11,6 +11,17 @@ const showRules = ref(false)
   <div class="min-h-screen p-4 pt-6">
     <h1 class="font-title text-2xl text-gray-800 mb-4">奖励中心</h1>
 
+    <!-- 成长型思维提示（软营销） -->
+    <div class="card bg-gradient-to-r from-green-50 to-emerald-50 border border-green-100 mb-4">
+      <div class="flex items-start gap-3">
+        <div class="text-2xl flex-shrink-0">🌱</div>
+        <div>
+          <p class="font-medium text-sm text-gray-700">每一颗星星都是努力的证明</p>
+          <p class="text-xs text-gray-500 mt-0.5">星星不是"聪明"的奖励，而是"认真"的证明。坚持学习的孩子，大脑会越来越灵活！</p>
+        </div>
+      </div>
+    </div>
+
     <!-- 货币余额 -->
     <div class="grid grid-cols-2 gap-3 mb-4">
       <div class="card text-center bg-yellow-50">

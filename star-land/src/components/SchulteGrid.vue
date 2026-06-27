@@ -15,12 +15,12 @@ interface LevelConfig {
 }
 
 const allLevels: LevelConfig[] = [
-  { level: 1, gridSize: 9, title: '初出茅庐', desc: '3×3 正序', reverse: false },
-  { level: 2, gridSize: 16, title: '小试牛刀', desc: '4×4 正序', reverse: false },
-  { level: 3, gridSize: 25, title: '渐入佳境', desc: '5×5 正序', reverse: false },
-  { level: 4, gridSize: 9, title: '逆向思维', desc: '3×3 倒序', reverse: true },
-  { level: 5, gridSize: 16, title: '高手过招', desc: '4×4 倒序', reverse: true },
-  { level: 6, gridSize: 25, title: '巅峰对决', desc: '5×5 倒序', reverse: true },
+  { level: 1, gridSize: 9, title: '初出茅庐', desc: '3×3 挑战', reverse: false },
+  { level: 2, gridSize: 16, title: '小试牛刀', desc: '4×4 挑战', reverse: false },
+  { level: 3, gridSize: 25, title: '渐入佳境', desc: '5×5 挑战', reverse: false },
+  { level: 4, gridSize: 9, title: '逆向思维', desc: '3×3 挑战', reverse: true },
+  { level: 5, gridSize: 16, title: '高手过招', desc: '4×4 挑战', reverse: true },
+  { level: 6, gridSize: 25, title: '巅峰对决', desc: '5×5 挑战', reverse: true },
 ]
 
 // 根据年级决定起始关卡（高年级跳过太简单的）
@@ -196,14 +196,13 @@ onUnmounted(() => { clearInterval(timerInterval!) })
             @click="tapNumber(num)"
             class="aspect-square rounded-xl text-lg font-bold transition-all duration-200 active:scale-95"
             :class="{
-              'bg-gray-200 text-gray-400': num !== currentTarget && !wrongTaps.includes(num),
-              'bg-red-500 text-white animate-pulse': wrongTaps.includes(num),
-              'bg-gray-100 text-gray-300': false
+              'bg-gray-200 text-gray-700': !wrongTaps.includes(num),
+              'bg-red-500 text-white animate-pulse': wrongTaps.includes(num)
             }"
           >{{ num }}</button>
         </div>
         <p class="text-xs text-gray-400 mt-4">
-          {{ currentConfig.reverse ? '从大到小点击' : '从小到大点击' }}
+          找到下一个数字，快速点击！
         </p>
       </div>
 

@@ -11,12 +11,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u1l1',
         title: '教室物品词汇',
         order: 1,
-        teachingMethod: 'TPR全身反应法+实物指认',
+        teachingMethod: 'TPR全身反应法 + CPA教学法',
         learningObjective: '我能说出door/window/board/desk等教室物品并用What\'s in the classroom?介绍',
         successCriteria: '①能说出至少6个教室物品英语 ②能用What\'s in the classroom?提问',
-        iDo: '家长指着教室/家里的物品，清晰说出door、window、board、picture，配合手指动作示范',
-        weDo: '亲子一起指物说单词，玩"我说你指"游戏，家长说单词孩子指物品',
-        youDo: '孩子独立指认物品说出对应英文单词，并尝试用What\'s this?提问',
+        iDo: '家长指着教室/家里的物品，清晰说出door、window、board、picture，配合手指动作示范 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起指物说单词，玩"我说你指"游戏，家长说单词孩子指物品 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立指认物品说出对应英文单词，并尝试用What\'s this?提问【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：教室物品door（门）、window（窗）、board（板）、desk（课桌）、chair（椅子）、light（灯），句型What\'s in the classroom?。\n共学四步：\n①对话出题：家长指教室门问What\'s this?并说Door?。\n②孩子应答：孩子应说Door!。\n③答错引导：若孩子说不出，家长当同学一起认物品！扫描课时发音动画听发音；让孩子点读课件词汇卡；家长在家指桌椅门窗边指边说英语。\n④快速检测：1.孩子说出6个教室物品；2.用What\'s in the classroom?提问；3.家长指物品孩子说英语。',
         funElement: '玩"教室寻宝"游戏，找到物品大声说出英文单词',
         gsapAnimations: [
@@ -114,7 +114,8 @@ export const englishGrade4: Unit[] = [
             content: '合成词记忆法：把两个词拼在一起就是新词！class（班级）+ room（房间）= classroom（教室）；black（黑）+ board（板）= blackboard（黑板）。遇到长单词试着拆开看，意思就猜出来啦！',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用TPR全身反应法：用身体动作配合语言，边做边说加深记忆', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -123,7 +124,7 @@ export const englishGrade4: Unit[] = [
             question: 'What\'s this? (pointing at the door)',
             answer: 'door',
             hint: '想一想进门的地方叫什么',
-            explanation: 'door是门，指认物品用It\'s a door.',
+            explanation: 'door是门，指认物品用It\'s a door.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'door',
               'window',
@@ -137,7 +138,7 @@ export const englishGrade4: Unit[] = [
             question: 'It\'s a _____. (窗户)',
             answer: 'window',
             hint: '教室里透光的地方',
-            explanation: 'window是窗户，It\'s a window.表示它是一扇窗户'
+            explanation: 'window是窗户，It\'s a window.表示它是一扇窗户做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l1q3',
@@ -145,7 +146,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which one do teachers write on in class?',
             answer: 'board',
             hint: '老师上课写字的地方',
-            explanation: 'board是黑板，老师在黑板上写字',
+            explanation: 'board是黑板，老师在黑板上写字做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'door',
               'window',
@@ -159,7 +160,7 @@ export const englishGrade4: Unit[] = [
             question: 'What\'s _____? (这是什么？)',
             answer: 'this',
             hint: '问近处的东西用哪个词',
-            explanation: '问近处的物品用What\'s this?，this表示这、这个'
+            explanation: '问近处的物品用What\'s this?，this表示这、这个做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l1q5',
@@ -167,7 +168,7 @@ export const englishGrade4: Unit[] = [
             question: 'Amy points at a picture on the far wall. What should she say?',
             answer: 'What\'s that?',
             hint: '【期末真题】问远处的东西用什么词',
-            explanation: '问远处的物品用What\'s that?，that表示那、那个',
+            explanation: '问远处的物品用What\'s that?，that表示那、那个做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'What\'s that?',
               'What\'s this?',
@@ -181,7 +182,7 @@ export const englishGrade4: Unit[] = [
             question: '— What\'s this? — _____ a window.',
             answer: 'It\'s',
             hint: '回答"它是什么"用什么开头',
-            explanation: '回答用It\'s a...，It\'s是It is的缩写，表示"它是"'
+            explanation: '回答用It\'s a...，It\'s是It is的缩写，表示"它是"做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l1q7',
@@ -189,7 +190,7 @@ export const englishGrade4: Unit[] = [
             question: '教室里能开关透风透光的是 _____。',
             answer: 'window',
             hint: '[教室物品词汇]（英语四年级-第1单元）',
-            explanation: 'window是窗户，可以开关通风透光，是教室重要物品'
+            explanation: 'window是窗户，可以开关通风透光，是教室重要物品做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -197,12 +198,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u1l2',
         title: 'Where is...? 介词on/in/under',
         order: 2,
-        teachingMethod: '情境式：藏找游戏',
+        teachingMethod: '游戏化学习',
         learningObjective: '我能用in/on/under/behind等方位介词描述物品位置',
         successCriteria: '①能说出6个方位介词 ②能用The...is on/in...描述位置',
-        iDo: '家长把玩具放在不同位置(on/in/under)，边放边说Where is the cat? It\'s on the box.',
-        weDo: '亲子一起玩藏找游戏，一个人藏一个人找，找到后用介词描述位置',
-        youDo: '孩子独立用Where is...?提问，用on/in/under描述物品位置',
+        iDo: '家长把玩具放在不同位置(on/in/under)，边放边说Where is the cat? It\'s on the box. 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起玩藏找游戏，一个人藏一个人找，找到后用介词描述位置 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用Where is...?提问，用on/in/under描述物品位置【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：方位介词in（里）、on（上）、under（下）、behind（后）、near（附近）、next to（旁边）。\n共学四步：\n①对话出题：家长把书放桌上问Where is the book?并说It\'s on the desk.。\n②孩子应答：孩子应说It\'s on the desk.。\n③答错引导：若孩子说不出，家长当同学一起摆物品！扫描课时发音动画听发音；让孩子点读课件句子卡；家长用真实物品边摆边说方位英语。\n④快速检测：1.孩子说出6个方位介词；2.用It\'s on/in...造句；3.家长摆物品孩子说位置。',
         funElement: '玩"小猫捉迷藏"，小猫藏在盒子上下里，孩子说出位置',
         gsapAnimations: [
@@ -286,7 +287,8 @@ export const englishGrade4: Unit[] = [
             content: 'Where is the book? — 书在哪里？\nIt\'s on the desk. — 它在书桌上。\nWhere is the ruler? — 尺子在哪里？\nIt\'s under the chair. — 它在椅子下。',
             animationType: 'cardReveal',
             label: '问答句型'
-          }
+          },
+          { type: 'tip', content: '本课主要使用游戏化学习：通过趣味游戏巩固所学知识', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -295,7 +297,7 @@ export const englishGrade4: Unit[] = [
             question: 'The book is _____ the desk. (在书桌上)',
             answer: 'on',
             hint: '在桌子的上面用什么介词',
-            explanation: 'on表示在……上面，on the desk表示在书桌上',
+            explanation: 'on表示在……上面，on the desk表示在书桌上做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'on',
               'in',
@@ -309,7 +311,7 @@ export const englishGrade4: Unit[] = [
             question: 'The cat is _____ the box. (在盒子里)',
             answer: 'in',
             hint: '在里面用什么介词',
-            explanation: 'in表示在……里面，in the box表示在盒子里'
+            explanation: 'in表示在……里面，in the box表示在盒子里做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l2q3',
@@ -317,7 +319,7 @@ export const englishGrade4: Unit[] = [
             question: 'Where is the pencil? — It\'s _____ the chair. (在椅子下)',
             answer: 'under',
             hint: '在椅子下面用什么介词',
-            explanation: 'under表示在……下面，under the chair表示在椅子下面',
+            explanation: 'under表示在……下面，under the chair表示在椅子下面做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'on',
               'in',
@@ -331,7 +333,7 @@ export const englishGrade4: Unit[] = [
             question: '_____ is the book? (书在哪里？)',
             answer: 'Where',
             hint: '问位置的疑问词是什么',
-            explanation: 'Where is...?用来问物品在哪里，Where是疑问副词'
+            explanation: 'Where is...?用来问物品在哪里，Where是疑问副词做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l2q5',
@@ -339,7 +341,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which sentence means "猫在盒子下面"？',
             answer: 'The cat is under the box.',
             hint: '在下面用under',
-            explanation: 'under the box表示在盒子下面，The cat is under the box.表示猫在盒子下',
+            explanation: 'under the box表示在盒子下面，The cat is under the box.表示猫在盒子下做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'The cat is on the box.',
               'The cat is in the box.',
@@ -353,7 +355,7 @@ export const englishGrade4: Unit[] = [
             question: '— Where is the picture? — _____ on the wall.',
             answer: 'It\'s',
             hint: '回答物品位置用什么开头',
-            explanation: '回答用It\'s + 介词 + 地点，It\'s = It is'
+            explanation: '回答用It\'s + 介词 + 地点，It\'s = It is做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l2q7',
@@ -361,7 +363,7 @@ export const englishGrade4: Unit[] = [
             question: '"在桌子上面"用英语怎么说？',
             answer: 'on the desk',
             hint: '[位置介词]（英语四年级-第1单元）',
-            explanation: 'on the desk表示在书桌上面，on是表示在物体表面的介词',
+            explanation: 'on the desk表示在书桌上面，on是表示在物体表面的介词做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'in the desk',
               'under the desk',
@@ -378,9 +380,9 @@ export const englishGrade4: Unit[] = [
         teachingMethod: '角色扮演法',
         learningObjective: '我能用There is/There are描述教室里有什么',
         successCriteria: '①能区分There is和There are ②能用There is/are描述教室',
-        iDo: '家长扮演小老师示范说Let me clean the board.（让我擦黑板）配合擦黑板的动作',
-        weDo: '亲子一起角色扮演，轮流用Let me...提出帮忙请求并做动作',
-        youDo: '孩子独立用Let me...造句，表达自己想要帮忙做的事情',
+        iDo: '家长扮演小老师示范说Let me clean the board.（让我擦黑板）配合擦黑板的动作 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起角色扮演，轮流用Let me...提出帮忙请求并做动作 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用Let me...造句，表达自己想要帮忙做的事情【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：There be句型There is a board.（有一块板）、There are desks.（有课桌），单数用is复数用are。\n共学四步：\n①对话出题：家长问教室里有什么？并说There is a board.。\n②孩子应答：孩子应说There are desks.。\n③答错引导：若孩子说不出，家长当同学一起数！扫描课时发音动画听发音；让孩子点读课件句子卡；家长指教室物品边数边说There is/are。\n④快速检测：1.孩子区分is/are；2.用There is造句；3.用There are造句。',
         funElement: '玩"小助手"游戏，谁先说Let me...谁就帮忙做一件事',
         gsapAnimations: [
@@ -459,7 +461,8 @@ export const englishGrade4: Unit[] = [
             content: 'Let me clean — 让我擦\nLet me open — 让我开\nLet me close — 让我关\nLet me help — 让我帮',
             animationType: 'cardReveal',
             label: '动词搭配'
-          }
+          },
+          { type: 'tip', content: '本课主要使用角色扮演法：通过角色扮演沉浸式体验学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -468,7 +471,7 @@ export const englishGrade4: Unit[] = [
             question: '"让我擦黑板"用英语怎么说？',
             answer: 'Let me clean the board.',
             hint: '擦黑板用clean the board',
-            explanation: 'Let me + 动词原形，clean the board是擦黑板',
+            explanation: 'Let me + 动词原形，clean the board是擦黑板做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Let me clean the board.',
               'Let me open the board.',
@@ -482,7 +485,7 @@ export const englishGrade4: Unit[] = [
             question: 'Let me _____ the door. (开)',
             answer: 'open',
             hint: '开门的动词是什么',
-            explanation: 'open是开，Let me open the door.表示让我开门'
+            explanation: 'open是开，Let me open the door.表示让我开门做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l3q3',
@@ -490,7 +493,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which one means "让我关窗"？',
             answer: 'Let me close the window.',
             hint: '关窗用close the window',
-            explanation: 'close是关，window是窗，Let me close the window.表示让我关窗',
+            explanation: 'close是关，window是窗，Let me close the window.表示让我关窗做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Let me open the window.',
               'Let me close the window.',
@@ -504,7 +507,7 @@ export const englishGrade4: Unit[] = [
             question: 'Let me _____ you. (帮助)',
             answer: 'help',
             hint: '帮忙的动词是什么',
-            explanation: 'help是帮助，Let me help you.表示让我帮你'
+            explanation: 'help是帮助，Let me help you.表示让我帮你做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l3q5',
@@ -512,7 +515,7 @@ export const englishGrade4: Unit[] = [
             question: 'Let me后面应该接什么？',
             answer: '动词原形',
             hint: '想一想me后面跟什么词',
-            explanation: 'Let me后面接动词原形，如clean、open、close、help',
+            explanation: 'Let me后面接动词原形，如clean、open、close、help做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               '名词',
               '动词原形',
@@ -526,7 +529,7 @@ export const englishGrade4: Unit[] = [
             question: '— Let me clean the board. — _____ you!',
             answer: 'Thank',
             hint: '别人帮忙后要说什么',
-            explanation: '别人帮忙后说Thank you!表示感谢'
+            explanation: '别人帮忙后说Thank you!表示感谢做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l3q7',
@@ -534,7 +537,7 @@ export const englishGrade4: Unit[] = [
             question: 'Let me _____ the window. (关窗)',
             answer: 'close',
             hint: '[Let me句型]（英语四年级-第1单元）',
-            explanation: 'close是关，Let me close the window.表示让我关窗，是教室帮忙用语'
+            explanation: 'close是关，Let me close the window.表示让我关窗，是教室帮忙用语做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -542,12 +545,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u1l4',
         title: '教室物品对话综合',
         order: 4,
-        teachingMethod: '情境对话法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能回顾并运用My Classroom单元的物品词汇、方位介词和There be句型',
         successCriteria: '①能说出6个教室物品 ②能用There be和方位介词描述教室',
-        iDo: '家长示范完整对话：What\'s in the classroom? Where is...? Let me...',
-        weDo: '亲子一起进行教室情境对话，一方提问一方回答，角色互换',
-        youDo: '孩子独立完成一段教室对话，综合运用词汇和句型',
+        iDo: '家长示范完整对话：What\'s in the classroom? Where is...? Let me... 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起进行教室情境对话，一方提问一方回答，角色互换 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成一段教室对话，综合运用词汇和句型【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课回顾My Classroom单元：教室物品door/window/desk、方位介词in/on/under、There is/are句型。\n共学四步：\n①对话出题：家长问用英语说教室里有什么。。\n②孩子应答：孩子应说There is a board. There are desks.。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学假装忘了，和孩子比赛说。\n④快速检测：1.孩子说出6个物品；2.用方位介词造句；3.用There be造句。',
         funElement: '玩"教室小导游"游戏，孩子当导游介绍教室物品',
         gsapAnimations: [
@@ -631,7 +634,8 @@ export const englishGrade4: Unit[] = [
             content: 'What\'s in the classroom? — 教室里有什么？\nA door, a window, a board and pictures. — 门、窗、黑板和图画。',
             animationType: 'cardReveal',
             label: '拓展问答'
-          }
+          },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -640,7 +644,7 @@ export const englishGrade4: Unit[] = [
             question: 'Guest asks "What\'s this?" about a window. Amy should say?',
             answer: 'It\'s a window.',
             hint: '问What用什么回答',
-            explanation: '问What\'s this?用It\'s a + 物品回答',
+            explanation: '问What\'s this?用It\'s a + 物品回答做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'It\'s a window.',
               'It\'s on the desk.',
@@ -654,7 +658,7 @@ export const englishGrade4: Unit[] = [
             question: '— Where is the book? — _____ on the desk.',
             answer: 'It\'s',
             hint: '问Where用什么回答',
-            explanation: '问Where is...?用It\'s + 介词 + 地点回答'
+            explanation: '问Where is...?用It\'s + 介词 + 地点回答做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l4q3',
@@ -662,7 +666,7 @@ export const englishGrade4: Unit[] = [
             question: 'Amy says "Let me clean the board." Guest should say?',
             answer: 'Thank you!',
             hint: '别人帮忙后说什么',
-            explanation: '别人主动帮忙后要说Thank you!表示感谢',
+            explanation: '别人主动帮忙后要说Thank you!表示感谢做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Thank you!',
               'Goodbye!',
@@ -676,7 +680,7 @@ export const englishGrade4: Unit[] = [
             question: 'What\'s _____? — It\'s a picture.',
             answer: 'this',
             hint: '问近处物品用什么',
-            explanation: '问近处物品用What\'s this?，this表示这'
+            explanation: '问近处物品用What\'s this?，this表示这做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l4q5',
@@ -684,7 +688,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which question asks about location (位置)?',
             answer: 'Where is the board?',
             hint: '问位置的疑问词',
-            explanation: 'Where is...?用来问物品在哪里，是问位置的句型',
+            explanation: 'Where is...?用来问物品在哪里，是问位置的句型做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'What\'s this?',
               'Where is the board?',
@@ -698,7 +702,7 @@ export const englishGrade4: Unit[] = [
             question: 'Let me _____ the door for you. (开)',
             answer: 'open',
             hint: '开门的动词',
-            explanation: 'open是开，Let me open the door.表示让我为你开门'
+            explanation: 'open是开，Let me open the door.表示让我为你开门做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l4q7',
@@ -706,7 +710,7 @@ export const englishGrade4: Unit[] = [
             question: '参观教室时，想问"那是什么"，应该说？',
             answer: 'What\'s that?',
             hint: '[教室问答句型]（英语四年级-第1单元）',
-            explanation: '问远处物品用What\'s that?，that表示那',
+            explanation: '问远处物品用What\'s that?，that表示那做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'What\'s that?',
               'Where is that?',
@@ -720,12 +724,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u1l5',
         title: '第一单元综合检测',
         order: 5,
-        teachingMethod: '形成性评价法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能在生活中用There be和方位介词描述房间布置',
         successCriteria: '①能用There be描述房间 ②能用方位介词说物品位置',
-        iDo: '家长引导孩子回顾本单元词汇和句型，示范一道检测题',
-        weDo: '亲子一起做练习题，互相检查，讨论错误原因',
-        youDo: '孩子独立完成单元检测，检验教室物品词汇和Where is/Let me句型',
+        iDo: '家长引导孩子回顾本单元词汇和句型，示范一道检测题 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做练习题，互相检查，讨论错误原因 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成单元检测，检验教室物品词汇和Where is/Let me句型【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课把教室生活化：用There be和方位介词描述你房间的布置。\n共学四步：\n①对话出题：家长问你的房间里有什么？用英语说。。\n②孩子应答：孩子应说There is a bed.等。\n③答错引导：若孩子说不出，家长当同学一起描述！扫描课时发音动画复习；让孩子点读课件情景卡；家长指房间物品边说边比划。\n④快速检测：1.孩子用There be描述房间；2.用方位介词说位置；3.说6个房间物品。',
         funElement: '通关后获得"Classroom达人"徽章，播放撒花动画',
         gsapAnimations: [
@@ -798,7 +802,8 @@ export const englishGrade4: Unit[] = [
               },
               ttsNarration: '第一单元回顾：物品、介词、句型'
             }
-          }
+          },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -807,7 +812,7 @@ export const englishGrade4: Unit[] = [
             question: 'What do we call the thing we write on in class?',
             answer: 'board',
             hint: '上课写字的物品',
-            explanation: 'board是黑板，老师在黑板上写字',
+            explanation: 'board是黑板，老师在黑板上写字做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'door',
               'board',
@@ -821,7 +826,7 @@ export const englishGrade4: Unit[] = [
             question: 'The cat is _____ the box. (在盒子下面)',
             answer: 'under',
             hint: '在下面用什么介词',
-            explanation: 'under表示在……下面，under the box表示在盒子下面'
+            explanation: 'under表示在……下面，under the box表示在盒子下面做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l5q3',
@@ -829,7 +834,7 @@ export const englishGrade4: Unit[] = [
             question: '— Where is the book? — _____ on the desk.',
             answer: 'It\'s',
             hint: '问Where用什么回答',
-            explanation: '回答Where is...?用It\'s + 介词 + 地点',
+            explanation: '回答Where is...?用It\'s + 介词 + 地点做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'It\'s',
               'They',
@@ -843,7 +848,7 @@ export const englishGrade4: Unit[] = [
             question: 'Let me _____ the window. (关)',
             answer: 'close',
             hint: '关窗的动词',
-            explanation: 'close是关，Let me close the window.表示让我关窗'
+            explanation: 'close是关，Let me close the window.表示让我关窗做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l5q5',
@@ -851,7 +856,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which sentence is correct?',
             answer: 'The picture is on the wall.',
             hint: '图画在哪里',
-            explanation: '图画挂在墙上，on the wall表示在墙上，介词用on',
+            explanation: '图画挂在墙上，on the wall表示在墙上，介词用on做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'The picture is on the wall.',
               'The picture in the wall.',
@@ -865,7 +870,7 @@ export const englishGrade4: Unit[] = [
             question: '— What\'s that? — _____ a window.',
             answer: 'It\'s',
             hint: '问What用什么回答',
-            explanation: '问What\'s that?用It\'s a + 物品回答'
+            explanation: '问What\'s that?用It\'s a + 物品回答做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u1l5q7',
@@ -873,7 +878,7 @@ export const englishGrade4: Unit[] = [
             question: '"让我帮你"用Let me句型怎么说？',
             answer: 'Let me help you.',
             hint: '[Let me句型]（英语四年级-第1单元）',
-            explanation: 'help是帮助，Let me help you.表示让我帮你',
+            explanation: 'help是帮助，Let me help you.表示让我帮你做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Let me help you.',
               'Let me you help.',
@@ -895,12 +900,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u2l1',
         title: '学习用品词汇',
         order: 1,
-        teachingMethod: 'TPR全身反应法+实物',
+        teachingMethod: 'TPR全身反应法 + CPA教学法',
         learningObjective: '我能说出schoolbag/book/ruler/eraser/pencil等学习用品',
         successCriteria: '①能说出至少5个学习用品英语 ②能用What\'s in your schoolbag?提问',
-        iDo: '家长拿出书包里的文具，逐一举起说book、ruler、eraser、pencil',
-        weDo: '亲子一起拿文具说单词，玩"我说你拿"游戏',
-        youDo: '孩子独立辨认文具并说出英文单词',
+        iDo: '家长拿出书包里的文具，逐一举起说book、ruler、eraser、pencil 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起拿文具说单词，玩"我说你拿"游戏 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立辨认文具并说出英文单词【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：学习用品schoolbag（书包）、book（书）、ruler（尺子）、eraser（橡皮）、pencil（铅笔），句型What\'s in your schoolbag?。\n共学四步：\n①对话出题：家长拍书包问What\'s in your schoolbag?并说A book!。\n②孩子应答：孩子应说A pencil and a ruler.。\n③答错引导：若孩子说不出，家长当同学一起翻书包！扫描课时发音动画听发音；让孩子点读课件词汇卡；家长翻真实书包边拿边说英语。\n④快速检测：1.孩子说出5个学习用品；2.用What\'s in...?提问；3.说出书包里的东西。',
         funElement: '玩"文具商店"游戏，买卖文具说单词',
         gsapAnimations: [
@@ -985,7 +990,8 @@ export const englishGrade4: Unit[] = [
             content: '后缀-er记忆法：-er可以表示"做某事的人或物"。erase（擦除）+ er = eraser（橡皮，用来擦的东西）；rule（规则/画线）+ er = ruler（尺子，用来画线的工具）。记住erase和rule，eraser和ruler就记住了！',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用TPR全身反应法：用身体动作配合语言，边做边说加深记忆', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -994,7 +1000,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which one do you write with?',
             answer: 'pencil',
             hint: '写字用的文具',
-            explanation: 'pencil是铅笔，用来写字',
+            explanation: 'pencil是铅笔，用来写字做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'book',
               'ruler',
@@ -1008,7 +1014,7 @@ export const englishGrade4: Unit[] = [
             question: 'This is a _____. (尺子)',
             answer: 'ruler',
             hint: '画直线用的文具',
-            explanation: 'ruler是尺子，用来画直线'
+            explanation: 'ruler是尺子，用来画直线做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l1q3',
@@ -1016,7 +1022,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which one erases (擦掉) your mistakes?',
             answer: 'eraser',
             hint: '擦错字用的文具',
-            explanation: 'eraser是橡皮，用来擦掉写错的字',
+            explanation: 'eraser是橡皮，用来擦掉写错的字做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'book',
               'ruler',
@@ -1030,7 +1036,7 @@ export const englishGrade4: Unit[] = [
             question: 'I read a _____ every day. (书)',
             answer: 'book',
             hint: '每天读的东西',
-            explanation: 'book是书，I read a book表示我读书'
+            explanation: 'book是书，I read a book表示我读书做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l1q5',
@@ -1038,7 +1044,7 @@ export const englishGrade4: Unit[] = [
             question: 'Tom holds a pencil. Mom asks "What\'s in your hand?" He says?',
             answer: 'It\'s a pencil.',
             hint: '【期末真题】问手里拿什么怎么回答',
-            explanation: '问What\'s in your hand?用It\'s a + 文具回答',
+            explanation: '问What\'s in your hand?用It\'s a + 文具回答做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'It\'s a pencil.',
               'It\'s on the desk.',
@@ -1052,7 +1058,7 @@ export const englishGrade4: Unit[] = [
             question: 'This is _____ eraser. (一块橡皮)',
             answer: 'an',
             hint: 'eraser前用a还是an',
-            explanation: 'eraser以元音音素开头，前面用an，an eraser'
+            explanation: 'eraser以元音音素开头，前面用an，an eraser做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l1q7',
@@ -1060,7 +1066,7 @@ export const englishGrade4: Unit[] = [
             question: '写字画画用的笔叫 _____。',
             answer: 'pencil',
             hint: '[学习用品词汇]（英语四年级-第2单元）',
-            explanation: 'pencil是铅笔，用来写字画画，是重要的学习用品'
+            explanation: 'pencil是铅笔，用来写字画画，是重要的学习用品做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -1068,12 +1074,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u2l2',
         title: 'What\'s in your schoolbag?',
         order: 2,
-        teachingMethod: '情境对话法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用颜色词描述学习用品的颜色',
         successCriteria: '①能说出6种颜色英语 ②能用It\'s+颜色描述物品',
-        iDo: '家长示范翻书包问答：What\'s in your schoolbag? A book and a pencil.',
-        weDo: '亲子一起翻书包问答，轮流问What\'s in your schoolbag?',
-        youDo: '孩子独立翻书包问答，用英语说出书包里的物品',
+        iDo: '家长示范翻书包问答：What\'s in your schoolbag? A book and a pencil. 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起翻书包问答，轮流问What\'s in your schoolbag? → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立翻书包问答，用英语说出书包里的物品【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：颜色red/yellow/blue/green/black/white，用It\'s+颜色描述物品。\n共学四步：\n①对话出题：家长拿红笔问What color is it?并说It\'s red.。\n②孩子应答：孩子应说It\'s red!。\n③答错引导：若孩子说不出，家长当同学一起找颜色！扫描课时发音动画听发音；让孩子点读课件颜色卡；家长指文具颜色边说边比划。\n④快速检测：1.孩子说出6种颜色；2.用It\'s+颜色造句；3.说出3件文具的颜色。',
         funElement: '玩"猜书包"游戏，蒙眼摸书包里物品猜单词',
         gsapAnimations: [
@@ -1165,7 +1171,8 @@ export const englishGrade4: Unit[] = [
             content: 'What\'s in + 容器? — ……里有什么？\nA... and a... — 一个……和一个……',
             animationType: 'cardReveal',
             label: '句型公式'
-          }
+          },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1174,7 +1181,7 @@ export const englishGrade4: Unit[] = [
             question: '"你的书包里有什么"用英语怎么说？',
             answer: 'What\'s in your schoolbag?',
             hint: '问容器里有什么的句型',
-            explanation: 'What\'s in your schoolbag?用来问书包里有什么',
+            explanation: 'What\'s in your schoolbag?用来问书包里有什么做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'What\'s in your schoolbag?',
               'Where is your schoolbag?',
@@ -1188,7 +1195,7 @@ export const englishGrade4: Unit[] = [
             question: '— What\'s in your schoolbag? — A book _____ a pencil.',
             answer: 'and',
             hint: '连接两个物品用什么',
-            explanation: '多个物品用and连接，A book and a pencil表示一本书和一支铅笔'
+            explanation: '多个物品用and连接，A book and a pencil表示一本书和一支铅笔做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l2q3',
@@ -1196,7 +1203,7 @@ export const englishGrade4: Unit[] = [
             question: 'What\'s in the pencil box? — Two _____ and an eraser.',
             answer: 'pencils',
             hint: '两支铅笔用什么形式',
-            explanation: '两支铅笔用复数pencils，two后面接复数名词',
+            explanation: '两支铅笔用复数pencils，two后面接复数名词做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'pencil',
               'pencils',
@@ -1210,7 +1217,7 @@ export const englishGrade4: Unit[] = [
             question: 'What\'s _____ the desk? (课桌里)',
             answer: 'in',
             hint: '问里面有什么用什么介词',
-            explanation: '问容器里有什么用What\'s in + 容器？in表示在……里面'
+            explanation: '问容器里有什么用What\'s in + 容器？in表示在……里面做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l2q5',
@@ -1218,7 +1225,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which answer is correct for "What\'s in your schoolbag?"?',
             answer: 'A book and a ruler.',
             hint: '回答书包里有什么',
-            explanation: '回答列举书包里的物品，用A... and a...的句型',
+            explanation: '回答列举书包里的物品，用A... and a...的句型做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'It\'s on the desk.',
               'A book and a ruler.',
@@ -1232,7 +1239,7 @@ export const englishGrade4: Unit[] = [
             question: 'What\'s = What _____.',
             answer: 'is',
             hint: 'What\'s是缩写形式',
-            explanation: 'What\'s是What is的缩写，is是be动词'
+            explanation: 'What\'s是What is的缩写，is是be动词做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l2q7',
@@ -1240,7 +1247,7 @@ export const englishGrade4: Unit[] = [
             question: '问"文具盒里有什么"应该说？',
             answer: 'What\'s in the pencil box?',
             hint: '[What\'s in句型]（英语四年级-第2单元）',
-            explanation: '问容器里有什么用What\'s in + 容器？文具盒是pencil box',
+            explanation: '问容器里有什么用What\'s in + 容器？文具盒是pencil box做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'What\'s in the pencil box?',
               'Where is the pencil box?',
@@ -1254,12 +1261,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u2l3',
         title: '颜色与文具：a red pencil',
         order: 3,
-        teachingMethod: '多感官教学法',
+        teachingMethod: '蒙台梭利多感官',
         learningObjective: '我能用I have a/an...介绍自己的学习用品',
         successCriteria: '①能用I have a/an...造句 ②能区分a和an的用法',
-        iDo: '家长示范颜色+物品：a red pencil, a blue ruler，边说边展示彩色文具',
-        weDo: '亲子一起说颜色+物品的短语，互相指认彩色文具',
-        youDo: '孩子独立用"颜色+文具"描述自己的文具',
+        iDo: '家长示范颜色+物品：a red pencil, a blue ruler，边说边展示彩色文具 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起说颜色+物品的短语，互相指认彩色文具 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用"颜色+文具"描述自己的文具【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：I have句型I have a pencil.（我有一支铅笔）、I have an eraser.（一块橡皮），元音前用an。\n共学四步：\n①对话出题：家长拿笔说I have a pencil.，问孩子What do you have?。\n②孩子应答：孩子应说I have an eraser.。\n③答错引导：若孩子说不出，家长当同学一起说！扫描课时发音动画听发音；让孩子点读课件句子卡；家长拿文具边说边展示。\n④快速检测：1.孩子用I have a...造句；2.用I have an...造句；3.说出a和an的区别。',
         funElement: '玩"彩色文具店"游戏，用颜色描述文具来"购买"',
         gsapAnimations: [
@@ -1322,7 +1329,8 @@ export const englishGrade4: Unit[] = [
             content: 'red红 blue蓝 yellow黄 green绿\na red pencil a blue book a yellow eraser',
             animationType: 'cardReveal',
             label: '颜色词汇'
-          }
+          },
+          { type: 'tip', content: '本课主要使用蒙台梭利多感官：调动视觉听觉触觉等多种感官参与学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1331,7 +1339,7 @@ export const englishGrade4: Unit[] = [
             question: '"一支红铅笔"用英语怎么说？',
             answer: 'a red pencil',
             hint: '颜色放在物品哪里',
-            explanation: '颜色词放在物品前，a red pencil表示一支红铅笔',
+            explanation: '颜色词放在物品前，a red pencil表示一支红铅笔做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'a red pencil',
               'a pencil red',
@@ -1345,7 +1353,7 @@ export const englishGrade4: Unit[] = [
             question: 'a _____ ruler (蓝色的尺子)',
             answer: 'blue',
             hint: '蓝色用什么词',
-            explanation: 'blue是蓝色，a blue ruler表示一把蓝尺子'
+            explanation: 'blue是蓝色，a blue ruler表示一把蓝尺子做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l3q3',
@@ -1353,7 +1361,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which is correct order (语序)?',
             answer: 'a yellow eraser',
             hint: '颜色和物品谁在前',
-            explanation: '颜色词放在物品前面，a yellow eraser表示一块黄橡皮',
+            explanation: '颜色词放在物品前面，a yellow eraser表示一块黄橡皮做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'a yellow eraser',
               'a eraser yellow',
@@ -1367,7 +1375,7 @@ export const englishGrade4: Unit[] = [
             question: 'red + yellow = _____ (橙色)',
             answer: 'orange',
             hint: '红加黄变什么色',
-            explanation: '红色加黄色混合变成橙色，orange是橙色'
+            explanation: '红色加黄色混合变成橙色，orange是橙色做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l3q5',
@@ -1375,7 +1383,7 @@ export const englishGrade4: Unit[] = [
             question: 'Lily wants a green book. What does she want?',
             answer: 'A green book.',
             hint: '绿色书是什么',
-            explanation: 'a green book表示一本绿书，green是绿色',
+            explanation: 'a green book表示一本绿书，green是绿色做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'A green book.',
               'A red book.',
@@ -1389,7 +1397,7 @@ export const englishGrade4: Unit[] = [
             question: 'I have a _____ eraser. (黄色的)',
             answer: 'yellow',
             hint: '黄色用什么词',
-            explanation: 'yellow是黄色，a yellow eraser表示一块黄橡皮'
+            explanation: 'yellow是黄色，a yellow eraser表示一块黄橡皮做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l3q7',
@@ -1397,7 +1405,7 @@ export const englishGrade4: Unit[] = [
             question: '"一把蓝色的尺子"正确说法是？',
             answer: 'a blue ruler',
             hint: '[颜色+物品]（英语四年级-第2单元）',
-            explanation: '颜色词放在物品前，a blue ruler表示一把蓝尺子',
+            explanation: '颜色词放在物品前，a blue ruler表示一把蓝尺子做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'a blue ruler',
               'a ruler blue',
@@ -1411,12 +1419,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u2l4',
         title: 'How many...? 数量问答',
         order: 4,
-        teachingMethod: '游戏化教学法',
+        teachingMethod: '游戏化学习',
         learningObjective: '我能回顾并运用My Schoolbag单元的用品、颜色和I have句型',
         successCriteria: '①能说出6个学习用品 ②能用I have a/an...造句',
-        iDo: '家长示范How many pencils? 边数边说数字，演示数量问答',
-        weDo: '亲子一起数文具数量，玩How many...?问答游戏',
-        youDo: '孩子独立用How many...?提问并回答数量',
+        iDo: '家长示范How many pencils? 边数边说数字，演示数量问答 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起数文具数量，玩How many...?问答游戏 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用How many...?提问并回答数量【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课回顾My Schoolbag单元：学习用品schoolbag/book/ruler/eraser/pencil、颜色、I have a/an句型。\n共学四步：\n①对话出题：家长问用英语说书包里有什么。。\n②孩子应答：孩子应说I have a book and a ruler.。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学假装忘了，和孩子比赛说。\n④快速检测：1.孩子说出6个用品；2.用I have...造句；3.说文具颜色。',
         funElement: '玩"快速数数"游戏，看谁最快数对文具数量',
         gsapAnimations: [
@@ -1477,7 +1485,8 @@ export const englishGrade4: Unit[] = [
             content: 'one1 two2 three3 four4 five5\nsix6 seven7 eight8 nine9 ten10',
             animationType: 'cardReveal',
             label: '数字1-10'
-          }
+          },
+          { type: 'tip', content: '本课主要使用游戏化学习：通过趣味游戏巩固所学知识', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1486,7 +1495,7 @@ export const englishGrade4: Unit[] = [
             question: '"有多少本书"用英语怎么说？',
             answer: 'How many books?',
             hint: '问数量用什么句型',
-            explanation: 'How many + 复数名词? 用来问数量',
+            explanation: 'How many + 复数名词? 用来问数量做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'How many books?',
               'How much books?',
@@ -1500,7 +1509,7 @@ export const englishGrade4: Unit[] = [
             question: '— How many pencils? — _____ pencils. (三)',
             answer: 'Three',
             hint: '三用英语怎么说',
-            explanation: 'three是三，Three pencils表示三支铅笔'
+            explanation: 'three是三，Three pencils表示三支铅笔做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l4q3',
@@ -1508,7 +1517,7 @@ export const englishGrade4: Unit[] = [
             question: 'How many books? — Two _____.',
             answer: 'books',
             hint: '两本书用什么形式',
-            explanation: 'two后面接复数名词，two books表示两本书',
+            explanation: 'two后面接复数名词，two books表示两本书做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'book',
               'books',
@@ -1522,7 +1531,7 @@ export const englishGrade4: Unit[] = [
             question: 'How _____ rulers do you have? (多少)',
             answer: 'many',
             hint: '问可数数量用什么',
-            explanation: 'How many + 复数名词? 用来问可数物品的数量'
+            explanation: 'How many + 复数名词? 用来问可数物品的数量做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l4q5',
@@ -1530,7 +1539,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which number means "七"?',
             answer: 'seven',
             hint: '七的英文是什么',
-            explanation: 'seven是七，one到ten的数字要记牢',
+            explanation: 'seven是七，one到ten的数字要记牢做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'six',
               'seven',
@@ -1544,7 +1553,7 @@ export const englishGrade4: Unit[] = [
             question: 'I have _____ books. (五)',
             answer: 'five',
             hint: '五的英文',
-            explanation: 'five是五，I have five books表示我有五本书'
+            explanation: 'five是五，I have five books表示我有五本书做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l4q7',
@@ -1552,7 +1561,7 @@ export const englishGrade4: Unit[] = [
             question: 'How many后面应该接什么名词？',
             answer: '可数名词复数',
             hint: '[How many句型]（英语四年级-第2单元）',
-            explanation: 'How many后面接可数名词复数，如books、pencils',
+            explanation: 'How many后面接可数名词复数，如books、pencils做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               '可数名词复数',
               '不可数名词',
@@ -1566,12 +1575,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u2l5',
         title: '第二单元综合检测',
         order: 5,
-        teachingMethod: '形成性评价法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能在生活中用I have和颜色描述自己的学习用品',
         successCriteria: '①能用I have...介绍文具 ②能用颜色描述文具',
-        iDo: '家长引导回顾本单元词汇句型，示范一道检测题',
-        weDo: '亲子一起做练习，互相检查讨论',
-        youDo: '孩子独立完成检测，检验文具词汇、颜色、数量、句型',
+        iDo: '家长引导回顾本单元词汇句型，示范一道检测题 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做练习，互相检查讨论 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成检测，检验文具词汇、颜色、数量、句型【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课把学习用品生活化：用I have和颜色介绍你的文具。\n共学四步：\n①对话出题：家长问介绍你的文具盒里有什么。。\n②孩子应答：孩子应说I have a red pencil.等。\n③答错引导：若孩子说不出，家长当同学一起介绍！扫描课时发音动画复习；让孩子点读课件情景卡；家长拿真实文具边说边展示。\n④快速检测：1.孩子用I have...介绍文具；2.说文具颜色；3.说5个学习用品。',
         funElement: '通关获得"Schoolbag达人"徽章，撒花庆祝',
         gsapAnimations: [
@@ -1644,7 +1653,8 @@ export const englishGrade4: Unit[] = [
               },
               ttsNarration: '第二单元回顾：文具、颜色、句型、数字'
             }
-          }
+          },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1653,7 +1663,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which one is a school supply (学习用品)?',
             answer: 'ruler',
             hint: '哪个是文具',
-            explanation: 'ruler是尺子，属于学习用品',
+            explanation: 'ruler是尺子，属于学习用品做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'door',
               'ruler',
@@ -1667,7 +1677,7 @@ export const englishGrade4: Unit[] = [
             question: 'a _____ pencil (红色的铅笔)',
             answer: 'red',
             hint: '红色用什么词',
-            explanation: 'red是红色，a red pencil表示一支红铅笔'
+            explanation: 'red是红色，a red pencil表示一支红铅笔做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l5q3',
@@ -1675,7 +1685,7 @@ export const englishGrade4: Unit[] = [
             question: '— What\'s in your schoolbag? — _____',
             answer: 'A book and a ruler.',
             hint: '回答书包里有什么',
-            explanation: '回答列举物品用A... and a...',
+            explanation: '回答列举物品用A... and a...做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'A book and a ruler.',
               'It\'s on the desk.',
@@ -1689,7 +1699,7 @@ export const englishGrade4: Unit[] = [
             question: '— How many books? — _____ books. (四)',
             answer: 'Four',
             hint: '四的英文',
-            explanation: 'four是四，Four books表示四本书'
+            explanation: 'four是四，Four books表示四本书做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l5q5',
@@ -1697,7 +1707,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which phrase is correct?',
             answer: 'a blue eraser',
             hint: '颜色和物品的语序',
-            explanation: '颜色词在物品前，a blue eraser表示一块蓝橡皮',
+            explanation: '颜色词在物品前，a blue eraser表示一块蓝橡皮做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'a blue eraser',
               'a eraser blue',
@@ -1711,7 +1721,7 @@ export const englishGrade4: Unit[] = [
             question: 'What\'s _____ the pencil box? (文具盒里)',
             answer: 'in',
             hint: '问里面有什么',
-            explanation: '问容器里有什么用What\'s in + 容器？'
+            explanation: '问容器里有什么用What\'s in + 容器？做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u2l5q7',
@@ -1719,7 +1729,7 @@ export const englishGrade4: Unit[] = [
             question: '"两支铅笔"用英语怎么说？',
             answer: 'two pencils',
             hint: '[How many句型]（英语四年级-第2单元）',
-            explanation: '两个以上用复数加s，two pencils表示两支铅笔',
+            explanation: '两个以上用复数加s，two pencils表示两支铅笔做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'two pencil',
               'two pencils',
@@ -1741,12 +1751,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u3l1',
         title: '外貌词汇：tall/short/thin/strong',
         order: 1,
-        teachingMethod: 'TPR+对比教学法',
+        teachingMethod: 'TPR全身反应法 + 对比辨析法',
         learningObjective: '我能用tall/short/thin/strong描述外貌',
         successCriteria: '①能说出4个外貌形容词 ②能用He/She is...描述外貌',
-        iDo: '家长用手势比划tall（高）和short（矮），thin（瘦）和strong（壮），配合夸张动作',
-        weDo: '亲子一起做手势比划高矮胖瘦，玩"我说你比"游戏',
-        youDo: '孩子独立用外貌词汇描述自己或朋友',
+        iDo: '家长用手势比划tall（高）和short（矮），thin（瘦）和strong（壮），配合夸张动作 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做手势比划高矮胖瘦，玩"我说你比"游戏 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用外貌词汇描述自己或朋友【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：外貌词汇tall（高）、short（矮）、thin（瘦）、strong（壮），句型He/She is tall.。\n共学四步：\n①对话出题：家长比高问Who is tall?并说You are tall!。\n②孩子应答：孩子应说I am tall.。\n③答错引导：若孩子说不出，家长当同学一起比！扫描课时发音动画听发音；让孩子点读课件词汇卡；家长边做手势边说外貌英语。\n④快速检测：1.孩子说出4个外貌词；2.用He/She is...造句；3.描述家人的外貌。',
         funElement: '玩"反义词对对碰"，tall对short，thin对strong',
         gsapAnimations: [
@@ -1819,7 +1829,8 @@ export const englishGrade4: Unit[] = [
             content: '词缀记忆法：friend（朋友）+ 后缀ly = friendly（友好的），ly把名词变成形容词。在friendly前面加前缀un-变成unfriendly（不友好的）。un-表示"相反、否定"，如happy→unhappy（不开心），do→undo（撤销）。',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用TPR全身反应法：用身体动作配合语言，边做边说加深记忆', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -1828,7 +1839,7 @@ export const englishGrade4: Unit[] = [
             question: '"高的"用英语怎么说？',
             answer: 'tall',
             hint: '高用什么词',
-            explanation: 'tall是高的，描述人高用tall',
+            explanation: 'tall是高的，描述人高用tall做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'tall',
               'short',
@@ -1842,7 +1853,7 @@ export const englishGrade4: Unit[] = [
             question: 'Tom is _____. (矮的)',
             answer: 'short',
             hint: '矮用什么词',
-            explanation: 'short是矮的，Tom is short表示汤姆很矮'
+            explanation: 'short是矮的，Tom is short表示汤姆很矮做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l1q3',
@@ -1850,7 +1861,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which word is the opposite (反义词) of "tall"?',
             answer: 'short',
             hint: 'tall的反义词',
-            explanation: 'tall（高）的反义词是short（矮）',
+            explanation: 'tall（高）的反义词是short（矮）做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'thin',
               'short',
@@ -1864,7 +1875,7 @@ export const englishGrade4: Unit[] = [
             question: 'She is _____. (壮的)',
             answer: 'strong',
             hint: '壮用什么词',
-            explanation: 'strong是壮的，She is strong表示她很壮'
+            explanation: 'strong是壮的，She is strong表示她很壮做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l1q5',
@@ -1872,7 +1883,7 @@ export const englishGrade4: Unit[] = [
             question: 'Lily says "Bob is thin and short." What does Bob look like?',
             answer: '又瘦又矮',
             hint: '【期末真题】thin和short是什么意思',
-            explanation: 'thin是瘦，short是矮，thin and short表示又瘦又矮',
+            explanation: 'thin是瘦，short是矮，thin and short表示又瘦又矮做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               '又高又壮',
               '又瘦又矮',
@@ -1886,7 +1897,7 @@ export const englishGrade4: Unit[] = [
             question: 'The opposite of thin is _____. (壮)',
             answer: 'strong',
             hint: 'thin的反义词',
-            explanation: 'thin（瘦）的反义词是strong（壮）'
+            explanation: 'thin（瘦）的反义词是strong（壮）做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l1q7',
@@ -1894,7 +1905,7 @@ export const englishGrade4: Unit[] = [
             question: '"她又高又壮"用英语怎么说？',
             answer: 'She is tall and strong.',
             hint: '[外貌词汇]（英语四年级-第3单元）',
-            explanation: 'tall高 strong壮，She is tall and strong.表示她又高又壮',
+            explanation: 'tall高 strong壮，She is tall and strong.表示她又高又壮做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'She is tall and strong.',
               'She is short and thin.',
@@ -1908,12 +1919,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u3l2',
         title: 'He/She is... 描述外貌',
         order: 2,
-        teachingMethod: '情境对话法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用friendly/quiet/funny/kind描述性格',
         successCriteria: '①能说出4个性格形容词 ②能用She is...描述朋友性格',
-        iDo: '家长示范描述朋友：He is tall and strong. She is short and thin.',
-        weDo: '亲子一起描述朋友或家人的外貌，互相猜是谁',
-        youDo: '孩子独立用He/She is...描述朋友的外貌',
+        iDo: '家长示范描述朋友：He is tall and strong. She is short and thin. 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起描述朋友或家人的外貌，互相猜是谁 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用He/She is...描述朋友的外貌【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：性格词汇friendly（友善）、quiet（安静）、funny（有趣）、kind（善良），句型She is friendly.。\n共学四步：\n①对话出题：家长问你的朋友性格怎样？并说She is friendly.。\n②孩子应答：孩子应说He is funny.等。\n③答错引导：若孩子说不出，家长当同学一起聊！扫描课时发音动画听发音；让孩子点读课件词汇卡；家长结合孩子朋友边说边比划。\n④快速检测：1.孩子说出4个性格词；2.用She is...造句；3.描述一个朋友的性格。',
         funElement: '玩"猜猜他是谁"游戏，用He/She is...描述让人猜',
         gsapAnimations: [
@@ -2005,7 +2016,8 @@ export const englishGrade4: Unit[] = [
             content: 'He = 他  She = 她\nHe is... = 他是……\nShe is... = 她是……',
             animationType: 'cardReveal',
             label: '代词区分'
-          }
+          },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2014,7 +2026,7 @@ export const englishGrade4: Unit[] = [
             question: '描述一个男生应该用哪个代词？',
             answer: 'He',
             hint: '男生的代词',
-            explanation: '描述男生用He，He表示他',
+            explanation: '描述男生用He，He表示他做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'He',
               'She',
@@ -2028,7 +2040,7 @@ export const englishGrade4: Unit[] = [
             question: '_____ is tall and strong. (她)',
             answer: 'She',
             hint: '女生的代词',
-            explanation: '描述女生用She，She is tall and strong.表示她又高又壮'
+            explanation: '描述女生用She，She is tall and strong.表示她又高又壮做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l2q3',
@@ -2036,7 +2048,7 @@ export const englishGrade4: Unit[] = [
             question: 'Tom is a boy. We say "_____ is tall."',
             answer: 'He',
             hint: '男孩用He还是She',
-            explanation: 'Tom是男孩，用He，He is tall.表示他很高',
+            explanation: 'Tom是男孩，用He，He is tall.表示他很高做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'He',
               'She',
@@ -2050,7 +2062,7 @@ export const englishGrade4: Unit[] = [
             question: 'He is tall _____ strong. (和)',
             answer: 'and',
             hint: '连接两个特征',
-            explanation: '两个特征用and连接，tall and strong表示又高又壮'
+            explanation: '两个特征用and连接，tall and strong表示又高又壮做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l2q5',
@@ -2058,7 +2070,7 @@ export const englishGrade4: Unit[] = [
             question: 'Amy describes her friend Lily. She should say?',
             answer: 'She is tall and thin.',
             hint: '描述女生用什么代词',
-            explanation: '描述女生Lily用She，She is tall and thin.表示她又高又瘦',
+            explanation: '描述女生Lily用She，She is tall and thin.表示她又高又瘦做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'He is tall and thin.',
               'She is tall and thin.',
@@ -2072,7 +2084,7 @@ export const englishGrade4: Unit[] = [
             question: 'This is Bob. _____ is short and strong.',
             answer: 'He',
             hint: '男孩的代词',
-            explanation: 'Bob是男孩，用He，He is short and strong.表示他又矮又壮'
+            explanation: 'Bob是男孩，用He，He is short and strong.表示他又矮又壮做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l2q7',
@@ -2080,7 +2092,7 @@ export const englishGrade4: Unit[] = [
             question: '"她又矮又瘦"用He/She句型怎么说？',
             answer: 'She is short and thin.',
             hint: '[He/She句型]（英语四年级-第3单元）',
-            explanation: '描述女生用She，She is short and thin.表示她又矮又瘦',
+            explanation: '描述女生用She，She is short and thin.表示她又矮又瘦做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'She is short and thin.',
               'He is short and thin.',
@@ -2094,12 +2106,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u3l3',
         title: '性格词汇：friendly/quiet/funny',
         order: 3,
-        teachingMethod: '情境式教学法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用比较级taller/shorter/stronger比较外貌',
         successCriteria: '①能说出比较级构成形容词+er ②能用比较级造句',
-        iDo: '家长用表情和动作演绎friendly（友善）、quiet（安静）、funny（有趣），夸张表现',
-        weDo: '亲子一起用表情演绎性格词汇，玩"性格表情秀"',
-        youDo: '孩子独立用性格词汇描述朋友或家人',
+        iDo: '家长用表情和动作演绎friendly（友善）、quiet（安静）、funny（有趣），夸张表现 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起用表情演绎性格词汇，玩"性格表情秀" → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用性格词汇描述朋友或家人【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：比较级tall→taller（更高）、short→shorter（更矮）、strong→stronger（更强壮），形容词+er。\n共学四步：\n①对话出题：家长比身高问Who is taller?并说You are taller.。\n②孩子应答：孩子应说I am taller!。\n③答错引导：若孩子说不出，家长当同学一起比！扫描课时发音动画听发音；让孩子点读课件词汇卡；家长用真实比身高边比边说。\n④快速检测：1.孩子说出比较级构成；2.用taller造句；3.用stronger造句。',
         funElement: '玩"性格小演员"游戏，抽到词卡就演出来',
         gsapAnimations: [
@@ -2173,7 +2185,8 @@ export const englishGrade4: Unit[] = [
             content: 'She is friendly. — 她很友善。\nHe is quiet. — 他很安静。\nShe is funny. — 她很有趣。',
             animationType: 'cardReveal',
             label: '性格句型'
-          }
+          },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2182,7 +2195,7 @@ export const englishGrade4: Unit[] = [
             question: '"友善的"用英语怎么说？',
             answer: 'friendly',
             hint: '友善用什么词',
-            explanation: 'friendly是友善的，表示对人友好',
+            explanation: 'friendly是友善的，表示对人友好做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'friendly',
               'quiet',
@@ -2196,7 +2209,7 @@ export const englishGrade4: Unit[] = [
             question: 'He is very _____. (安静的)',
             answer: 'quiet',
             hint: '安静用什么词',
-            explanation: 'quiet是安静的，He is quiet.表示他很安静'
+            explanation: 'quiet是安静的，He is quiet.表示他很安静做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l3q3',
@@ -2204,7 +2217,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which word describes someone who makes you laugh?',
             answer: 'funny',
             hint: '让人笑的是什么性格',
-            explanation: 'funny是有趣的，有趣的人会让人笑',
+            explanation: 'funny是有趣的，有趣的人会让人笑做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'friendly',
               'quiet',
@@ -2218,7 +2231,7 @@ export const englishGrade4: Unit[] = [
             question: 'She is _____ and kind. (友善)',
             answer: 'friendly',
             hint: '友善用什么词',
-            explanation: 'friendly是友善的，She is friendly and kind.表示她友善又善良'
+            explanation: 'friendly是友善的，She is friendly and kind.表示她友善又善良做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l3q5',
@@ -2226,7 +2239,7 @@ export const englishGrade4: Unit[] = [
             question: 'Amy says "Lily makes me laugh." Lily is _____.',
             answer: 'funny',
             hint: '让人笑的人是什么性格',
-            explanation: '让人笑说明她有趣，funny是有趣的',
+            explanation: '让人笑说明她有趣，funny是有趣的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'quiet',
               'funny',
@@ -2240,7 +2253,7 @@ export const englishGrade4: Unit[] = [
             question: 'My friend is _____. He doesn\'t talk much. (安静)',
             answer: 'quiet',
             hint: '不爱说话是什么性格',
-            explanation: '不爱说话说明安静，quiet是安静的'
+            explanation: '不爱说话说明安静，quiet是安静的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l3q7',
@@ -2248,7 +2261,7 @@ export const englishGrade4: Unit[] = [
             question: '"他很有趣"用英语怎么说？',
             answer: 'He is funny.',
             hint: '[性格词汇]（英语四年级-第3单元）',
-            explanation: 'funny是有趣的，He is funny.表示他很有趣',
+            explanation: 'funny是有趣的，He is funny.表示他很有趣做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'He is funny.',
               'He is quiet.',
@@ -2262,12 +2275,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u3l4',
         title: 'My friend is... 综合描述',
         order: 4,
-        teachingMethod: '项目式：制作朋友卡',
+        teachingMethod: '芬兰现象式学习',
         learningObjective: '我能回顾并运用My Friends单元的外貌、性格和比较级',
         successCriteria: '①能说出8个描述词 ②能用比较级造句',
-        iDo: '家长示范制作朋友介绍卡：姓名+外貌+性格，边写边说英语',
-        weDo: '亲子一起制作朋友卡，互相介绍对方的朋友',
-        youDo: '孩子独立制作朋友卡，用英语综合描述朋友',
+        iDo: '家长示范制作朋友介绍卡：姓名+外貌+性格，边写边说英语 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起制作朋友卡，互相介绍对方的朋友 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立制作朋友卡，用英语综合描述朋友【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课回顾My Friends单元：外貌tall/short/thin/strong、性格friendly/quiet/funny/kind、比较级taller/shorter。\n共学四步：\n①对话出题：家长问用英语描述你的朋友。。\n②孩子应答：孩子应说She is tall and friendly.。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学假装忘了，和孩子比赛描述。\n④快速检测：1.孩子说出8个描述词；2.用比较级造句；3.描述一个朋友。',
         funElement: '玩"朋友卡展览"，互相介绍自己制作的朋友卡',
         gsapAnimations: [
@@ -2346,7 +2359,8 @@ export const englishGrade4: Unit[] = [
             content: 'What does he look like? — 他长什么样？（问外貌）\nWhat is he like? — 他是什么样的人？（问性格）',
             animationType: 'cardReveal',
             label: '两种提问'
-          }
+          },
+          { type: 'tip', content: '本课主要使用项目式：制作朋友卡：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2355,7 +2369,7 @@ export const englishGrade4: Unit[] = [
             question: '"他长什么样"问的是外貌还是性格？',
             answer: '外貌',
             hint: 'look like问什么',
-            explanation: 'What does he look like?问外貌，问长得怎么样',
+            explanation: 'What does he look like?问外貌，问长得怎么样做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               '外貌',
               '性格',
@@ -2369,7 +2383,7 @@ export const englishGrade4: Unit[] = [
             question: 'What _____ he like? (他是什么样的人)',
             answer: 'is',
             hint: '问性格用什么',
-            explanation: 'What is he like?用来问性格，is是be动词'
+            explanation: 'What is he like?用来问性格，is是be动词做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l4q3',
@@ -2377,7 +2391,7 @@ export const englishGrade4: Unit[] = [
             question: 'Tom says "He is short and strong." This describes?',
             answer: '外貌',
             hint: 'short and strong描述什么',
-            explanation: 'short and strong是外貌词，描述外貌',
+            explanation: 'short and strong是外貌词，描述外貌做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               '外貌',
               '性格',
@@ -2391,7 +2405,7 @@ export const englishGrade4: Unit[] = [
             question: 'This _____ Lily. She is friendly.',
             answer: 'is',
             hint: '介绍别人用什么',
-            explanation: '介绍别人用This is...，This is Lily.表示这是莉莉'
+            explanation: '介绍别人用This is...，This is Lily.表示这是莉莉做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l4q5',
@@ -2399,7 +2413,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which question asks about personality (性格)?',
             answer: 'What is he like?',
             hint: '问性格的问题',
-            explanation: 'What is he like?问性格，What does he look like?问外貌',
+            explanation: 'What is he like?问性格，What does he look like?问外貌做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'What is he like?',
               'What does he look like?',
@@ -2413,7 +2427,7 @@ export const englishGrade4: Unit[] = [
             question: 'She is tall _____ thin. (和)',
             answer: 'and',
             hint: '连接两个特征',
-            explanation: '两个特征用and连接，tall and thin表示又高又瘦'
+            explanation: '两个特征用and连接，tall and thin表示又高又瘦做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l4q7',
@@ -2421,7 +2435,7 @@ export const englishGrade4: Unit[] = [
             question: '介绍朋友时"这是我的朋友"怎么说？',
             answer: 'This is my friend.',
             hint: '[He/She句型]（英语四年级-第3单元）',
-            explanation: '介绍别人用This is...，This is my friend.表示这是我的朋友',
+            explanation: '介绍别人用This is...，This is my friend.表示这是我的朋友做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'This is my friend.',
               'He is my friend.',
@@ -2435,12 +2449,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u3l5',
         title: '第三单元综合检测',
         order: 5,
-        teachingMethod: '形成性评价法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能在生活中用英语描述朋友的外貌和性格',
         successCriteria: '①能描述朋友外貌 ②能描述朋友性格',
-        iDo: '家长引导回顾外貌性格词汇和He/She句型，示范检测题',
-        weDo: '亲子一起做练习，互相检查讨论错误',
-        youDo: '孩子独立完成检测，检验外貌性格词汇和描述句型',
+        iDo: '家长引导回顾外貌性格词汇和He/She句型，示范检测题 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做练习，互相检查讨论错误 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成检测，检验外貌性格词汇和描述句型【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课把朋友生活化：用英语描述你好朋友的外貌和性格。\n共学四步：\n①对话出题：家长问介绍你的好朋友长什么样、性格如何。。\n②孩子应答：孩子应说He is tall and funny.。\n③答错引导：若孩子说不出，家长当同学一起描述！扫描课时发音动画复习；让孩子点读课件情景卡；家长指朋友照片边说边描述。\n④快速检测：1.孩子描述朋友外貌；2.描述性格；3.用比较级说一句。',
         funElement: '通关获得"Friends达人"徽章，撒花庆祝',
         gsapAnimations: [
@@ -2513,7 +2527,8 @@ export const englishGrade4: Unit[] = [
               },
               ttsNarration: '第三单元回顾：外貌、性格、句型'
             }
-          }
+          },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2522,7 +2537,7 @@ export const englishGrade4: Unit[] = [
             question: '"又高又壮"用英语怎么说？',
             answer: 'tall and strong',
             hint: '高壮怎么说',
-            explanation: 'tall高 strong壮，tall and strong表示又高又壮',
+            explanation: 'tall高 strong壮，tall and strong表示又高又壮做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'tall and strong',
               'short and thin',
@@ -2536,7 +2551,7 @@ export const englishGrade4: Unit[] = [
             question: 'She is _____. (友善的)',
             answer: 'friendly',
             hint: '友善用什么词',
-            explanation: 'friendly是友善的，She is friendly.表示她很友善'
+            explanation: 'friendly是友善的，She is friendly.表示她很友善做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l5q3',
@@ -2544,7 +2559,7 @@ export const englishGrade4: Unit[] = [
             question: '描述女生Lily应该用哪个代词？',
             answer: 'She',
             hint: '女生的代词',
-            explanation: '描述女生用She，She表示她',
+            explanation: '描述女生用She，She表示她做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'He',
               'She',
@@ -2558,7 +2573,7 @@ export const englishGrade4: Unit[] = [
             question: 'What does he look _____? (长得怎么样)',
             answer: 'like',
             hint: 'look后面接什么',
-            explanation: 'What does he look like?问外貌，look like表示看起来像'
+            explanation: 'What does he look like?问外貌，look like表示看起来像做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l5q5',
@@ -2566,7 +2581,7 @@ export const englishGrade4: Unit[] = [
             question: '"他是什么样的人"问的是什么？',
             answer: '性格',
             hint: 'What is he like问什么',
-            explanation: 'What is he like?问性格，问这个人是什么性格的人',
+            explanation: 'What is he like?问性格，问这个人是什么性格的人做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               '性格',
               '外貌',
@@ -2580,7 +2595,7 @@ export const englishGrade4: Unit[] = [
             question: 'He is quiet _____ funny. (和)',
             answer: 'and',
             hint: '连接两个性格',
-            explanation: '两个性格用and连接，quiet and funny表示又安静又有趣'
+            explanation: '两个性格用and连接，quiet and funny表示又安静又有趣做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u3l5q7',
@@ -2588,7 +2603,7 @@ export const englishGrade4: Unit[] = [
             question: '"她很安静"用He/She句型怎么说？',
             answer: 'She is quiet.',
             hint: '[性格词汇]（英语四年级-第3单元）',
-            explanation: '描述女生用She，quiet是安静的，She is quiet.表示她很安静',
+            explanation: '描述女生用She，quiet是安静的，She is quiet.表示她很安静做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'She is quiet.',
               'He is quiet.',
@@ -2610,12 +2625,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u4l1',
         title: '农场动物词汇',
         order: 1,
-        teachingMethod: 'TPR+声音模仿法',
+        teachingMethod: 'TPR全身反应法 + 声音模仿法',
         learningObjective: '我能说出cow/sheep/horse/goat等农场动物并用拟声模仿',
         successCriteria: '①能说出4个农场动物英语 ②能模仿动物叫声',
-        iDo: '家长模仿动物叫声和动作，边演边说cow、sheep、horse、goat',
-        weDo: '亲子一起模仿动物叫声说单词，玩"动物模仿秀"',
-        youDo: '孩子独立模仿动物并说出英文单词',
+        iDo: '家长模仿动物叫声和动作，边演边说cow、sheep、horse、goat 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起模仿动物叫声说单词，玩"动物模仿秀" → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立模仿动物并说出英文单词【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：农场动物cow（奶牛）、sheep（绵羊）、horse（马）、goat（山羊）及叫声moo/baa/neigh。\n共学四步：\n①对话出题：家长学牛叫moo~问What animal?。\n②孩子应答：孩子应说Cow!。\n③答错引导：若孩子说不出，家长当同学一起学动物叫！扫描课时发音动画听发音；让孩子点读课件动物卡；家长边学叫边做动作，用TPR法帮孩子记。\n④快速检测：1.孩子说出4个农场动物；2.模仿动物叫声；3.家长学叫孩子说动物。',
         funElement: '玩"农场动物园"游戏，模仿动物让家人猜',
         gsapAnimations: [
@@ -2713,7 +2728,8 @@ export const englishGrade4: Unit[] = [
             content: '拟声联想记忆法：动物叫声帮你记单词！cow（奶牛）叫moo~，sheep（绵羊）叫baa~，horse（马）叫neigh~。一边学动物叫一边记单词，好玩又记得牢。小贴士：sheep单复数同形，一只sheep两只还是sheep！',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用TPR全身反应法：用身体动作配合语言，边做边说加深记忆', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2722,7 +2738,7 @@ export const englishGrade4: Unit[] = [
             question: '"奶牛"用英语怎么说？',
             answer: 'cow',
             hint: '奶牛的英文',
-            explanation: 'cow是奶牛，moo是它的叫声',
+            explanation: 'cow是奶牛，moo是它的叫声做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'cow',
               'sheep',
@@ -2736,7 +2752,7 @@ export const englishGrade4: Unit[] = [
             question: 'The _____ says baa~ (绵羊)',
             answer: 'sheep',
             hint: 'baa叫的是什么动物',
-            explanation: 'sheep是绵羊，叫声是baa~'
+            explanation: 'sheep是绵羊，叫声是baa~做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l1q3',
@@ -2744,7 +2760,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which animal can run fast and you can ride?',
             answer: 'horse',
             hint: '能骑能跑的动物',
-            explanation: 'horse是马，能跑得快，人可以骑马',
+            explanation: 'horse是马，能跑得快，人可以骑马做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'cow',
               'sheep',
@@ -2758,7 +2774,7 @@ export const englishGrade4: Unit[] = [
             question: 'One sheep, two _____ (绵羊复数)',
             answer: 'sheep',
             hint: 'sheep的复数是什么',
-            explanation: 'sheep的复数还是sheep，不加s，是特殊变化'
+            explanation: 'sheep的复数还是sheep，不加s，是特殊变化做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l1q5',
@@ -2766,7 +2782,7 @@ export const englishGrade4: Unit[] = [
             question: 'Farmer says "It\'s a cow." What is it?',
             answer: 'A cow.',
             hint: '【期末真题】it\'s a cow是什么意思',
-            explanation: 'It\'s a cow.表示那是一头奶牛',
+            explanation: 'It\'s a cow.表示那是一头奶牛做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'A cow.',
               'A sheep.',
@@ -2781,7 +2797,7 @@ export const englishGrade4: Unit[] = [
             answer: 'goats',
             acceptableAnswers: ['goats', 'Goats'],
             hint: 'They are复数，山羊加s',
-            explanation: 'They are表示复数，山羊goat需要加s变成goats。They are goats.表示那些是山羊。'
+            explanation: 'They are表示复数，山羊goat需要加s变成goats。They are goats.表示那些是山羊。做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l1q7',
@@ -2789,7 +2805,7 @@ export const englishGrade4: Unit[] = [
             question: '农场里产奶的动物是 _____。',
             answer: 'cow',
             hint: '[农场动物词汇]（英语四年级-第4单元）',
-            explanation: 'cow是奶牛，产牛奶，是农场重要动物'
+            explanation: 'cow是奶牛，产牛奶，是农场重要动物做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -2797,12 +2813,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u4l2',
         title: 'Are these/those...? 复数问答',
         order: 2,
-        teachingMethod: '情境对话法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用复数-s/-es规则说出动物的复数形式',
         successCriteria: '①能说出复数加s/es的规则 ②能说出4个动物复数',
-        iDo: '家长示范Are these cows? 指近处和远处，用Yes/No回答',
-        weDo: '亲子一起玩远近问答，these近处those远处',
-        youDo: '孩子独立用Are these/those...?提问并回答',
+        iDo: '家长示范Are these cows? 指近处和远处，用Yes/No回答 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起玩远近问答，these近处those远处 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用Are these/those...?提问并回答【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：名词复数一般加s（cow→cows），以s/x/sh/ch结尾加es，sheep单复数同形。\n共学四步：\n①对话出题：家长问两只牛怎么说？并说cows!。\n②孩子应答：孩子应说Two cows!。\n③答错引导：若孩子说不出，家长当同学一起数！扫描课时发音动画听发音；让孩子点读课件词汇卡；家长用动物图片边数边说复数。\n④快速检测：1.孩子说出复数规则；2.说cow的复数；3.说sheep的复数。',
         funElement: '玩"农场猜猜看"，指动物问Are these/those...?',
         gsapAnimations: [
@@ -2871,7 +2887,8 @@ export const englishGrade4: Unit[] = [
             content: 'this→these  that→those\nis→are  it→they\nAre these/those...? Yes, they are. / No, they aren\'t.',
             animationType: 'cardReveal',
             label: '单复对应'
-          }
+          },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -2880,7 +2897,7 @@ export const englishGrade4: Unit[] = [
             question: '"这些"用英语怎么说？',
             answer: 'these',
             hint: '近处复数用什么',
-            explanation: 'these是这些，指近处的复数物品',
+            explanation: 'these是这些，指近处的复数物品做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'this',
               'these',
@@ -2894,7 +2911,7 @@ export const englishGrade4: Unit[] = [
             question: '_____ those cows? (是)',
             answer: 'Are',
             hint: '复数疑问句用什么be动词',
-            explanation: '复数用are，Are those cows?表示那些是奶牛吗'
+            explanation: '复数用are，Are those cows?表示那些是奶牛吗做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l2q3',
@@ -2902,7 +2919,7 @@ export const englishGrade4: Unit[] = [
             question: '— Are these sheep? — _____',
             answer: 'Yes, they are.',
             hint: '肯定回答怎么说',
-            explanation: '肯定回答用Yes, they are.',
+            explanation: '肯定回答用Yes, they are.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Yes, they are.',
               'Yes, it is.',
@@ -2916,7 +2933,7 @@ export const englishGrade4: Unit[] = [
             question: '— Are those goats? — No, they _____.',
             answer: 'aren\'t',
             hint: '否定回答怎么说',
-            explanation: '否定回答用No, they aren\'t. (are not的缩写)'
+            explanation: '否定回答用No, they aren\'t. (are not的缩写)做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l2q5',
@@ -2924,7 +2941,7 @@ export const englishGrade4: Unit[] = [
             question: 'Tom points at far animals. He should ask?',
             answer: 'Are those cows?',
             hint: '指远处的动物问什么',
-            explanation: '指远处复数用those，Are those cows?表示那些是奶牛吗',
+            explanation: '指远处复数用those，Are those cows?表示那些是奶牛吗做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Are these cows?',
               'Are those cows?',
@@ -2938,7 +2955,7 @@ export const englishGrade4: Unit[] = [
             question: 'Are _____ horses? (这些)',
             answer: 'these',
             hint: '近处复数用什么',
-            explanation: '近处复数用these，Are these horses?表示这些是马吗'
+            explanation: '近处复数用these，Are these horses?表示这些是马吗做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l2q7',
@@ -2946,7 +2963,7 @@ export const englishGrade4: Unit[] = [
             question: '"那些是绵羊吗"用英语怎么说？',
             answer: 'Are those sheep?',
             hint: '[Are these/those句型]（英语四年级-第4单元）',
-            explanation: '远处复数用those，Are those sheep?表示那些是绵羊吗',
+            explanation: '远处复数用those，Are those sheep?表示那些是绵羊吗做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Are those sheep?',
               'Are these sheep?',
@@ -2960,12 +2977,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u4l3',
         title: '蔬菜词汇：tomato/potato/carrot/onion',
         order: 3,
-        teachingMethod: '多感官：实物触摸法',
+        teachingMethod: '蒙台梭利多感官',
         learningObjective: '我能用Are these/those...?提问并回答',
         successCriteria: '①能用Are these/those提问 ②能用Yes, they are/No回答',
-        iDo: '家长拿真实蔬菜让孩子摸和看，边摸边说tomato、potato、carrot、onion',
-        weDo: '亲子一起摸蔬菜说单词，玩"摸蔬菜猜单词"游戏',
-        youDo: '孩子独立辨认蔬菜并说出英文单词',
+        iDo: '家长拿真实蔬菜让孩子摸和看，边摸边说tomato、potato、carrot、onion 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起摸蔬菜说单词，玩"摸蔬菜猜单词"游戏 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立辨认蔬菜并说出英文单词【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：复数疑问句Are these cows?（这些是牛吗）、Are those horses?，回答Yes, they are./No, they aren\'t.。\n共学四步：\n①对话出题：家长指图片问Are these cows?。\n②孩子应答：孩子应说Yes, they are.或No, they aren\'t.。\n③答错引导：若孩子说不出，家长当同学一起问！扫描课时发音动画听发音；让孩子点读课件对话卡；家长指动物图片边问边答。\n④快速检测：1.孩子用Are these...?提问；2.回答Yes, they are；3.回答No, they aren\'t。',
         funElement: '玩"蔬菜超市"游戏，买卖蔬菜说单词',
         gsapAnimations: [
@@ -3044,7 +3061,8 @@ export const englishGrade4: Unit[] = [
             content: 'tomato→tomatoes  potato→potatoes\ncarrot→carrots  onion→onions\nI like carrots. 我喜欢胡萝卜。',
             animationType: 'cardReveal',
             label: '复数变化'
-          }
+          },
+          { type: 'tip', content: '本课主要使用蒙台梭利多感官：调动视觉听觉触觉等多种感官参与学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -3053,7 +3071,7 @@ export const englishGrade4: Unit[] = [
             question: '"西红柿"用英语怎么说？',
             answer: 'tomato',
             hint: '西红柿的英文',
-            explanation: 'tomato是西红柿，红色多汁的蔬菜',
+            explanation: 'tomato是西红柿，红色多汁的蔬菜做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'tomato',
               'potato',
@@ -3067,7 +3085,7 @@ export const englishGrade4: Unit[] = [
             question: 'The _____ is orange and long. (胡萝卜)',
             answer: 'carrot',
             hint: '橙色长长的蔬菜',
-            explanation: 'carrot是胡萝卜，橙色长长的'
+            explanation: 'carrot是胡萝卜，橙色长长的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l3q3',
@@ -3075,7 +3093,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which is the plural (复数) of "tomato"?',
             answer: 'tomatoes',
             hint: 'tomato的复数',
-            explanation: 'tomato以o结尾加es，复数是tomatoes',
+            explanation: 'tomato以o结尾加es，复数是tomatoes做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'tomatos',
               'tomatoes',
@@ -3089,7 +3107,7 @@ export const englishGrade4: Unit[] = [
             question: 'I don\'t like _____. (洋葱)',
             answer: 'onions',
             hint: '洋葱的英文',
-            explanation: 'onion是洋葱，I don\'t like onions.表示我不喜欢洋葱'
+            explanation: 'onion是洋葱，I don\'t like onions.表示我不喜欢洋葱做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l3q5',
@@ -3097,7 +3115,7 @@ export const englishGrade4: Unit[] = [
             question: 'Tom says "They are potatoes." What are they?',
             answer: 'Potatoes.',
             hint: 'they are potatoes是什么',
-            explanation: 'They are potatoes.表示那些是土豆',
+            explanation: 'They are potatoes.表示那些是土豆做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Potatoes.',
               'Carrots.',
@@ -3111,7 +3129,7 @@ export const englishGrade4: Unit[] = [
             question: 'potato的复数是 _____。',
             answer: 'potatoes',
             hint: 'potato加es还是s',
-            explanation: 'potato以o结尾加es，复数是potatoes'
+            explanation: 'potato以o结尾加es，复数是potatoes做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l3q7',
@@ -3119,7 +3137,7 @@ export const englishGrade4: Unit[] = [
             question: '兔子最爱吃的橙色蔬菜是 _____。',
             answer: 'carrot',
             hint: '[蔬菜词汇]（英语四年级-第4单元）',
-            explanation: 'carrot是胡萝卜，兔子爱吃，橙色长条形蔬菜'
+            explanation: 'carrot是胡萝卜，兔子爱吃，橙色长条形蔬菜做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3127,12 +3145,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u4l4',
         title: 'What are these/those? 综合问答',
         order: 4,
-        teachingMethod: '游戏化：猜猜看',
+        teachingMethod: '游戏化学习',
         learningObjective: '我能回顾并运用At the Farm单元的动物词汇、复数和疑问句',
         successCriteria: '①能说出4个农场动物及复数 ②能用Are these/those提问',
-        iDo: '家长示范猜动物蔬菜游戏，遮住图片问What are these?让孩子猜',
-        weDo: '亲子一起玩猜猜看，用What are these/those?问答',
-        youDo: '孩子独立用What are these/those?提问并回答',
+        iDo: '家长示范猜动物蔬菜游戏，遮住图片问What are these?让孩子猜 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起玩猜猜看，用What are these/those?问答 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用What are these/those?提问并回答【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课回顾At the Farm单元：动物cow/sheep/horse/goat、复数-s/-es、Are these/those疑问句。\n共学四步：\n①对话出题：家长问农场有哪些动物？用英语说。。\n②孩子应答：孩子应说Cows, sheep, horses!。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学假装忘了，和孩子比赛说。\n④快速检测：1.孩子说出4个动物及复数；2.用Are these...?提问；3.回答复数疑问句。',
         funElement: '玩"农场盲盒"游戏，摸蔬菜猜单词',
         gsapAnimations: [
@@ -3196,7 +3214,8 @@ export const englishGrade4: Unit[] = [
             content: '单数：What\'s this? It\'s a cow.\n复数：What are these? They are cows.\n单数用is/It\'s，复数用are/They are.',
             animationType: 'cardReveal',
             label: '单复问答对照'
-          }
+          },
+          { type: 'tip', content: '本课主要使用游戏化学习：通过趣味游戏巩固所学知识', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -3205,7 +3224,7 @@ export const englishGrade4: Unit[] = [
             question: '"这些是什么"用英语怎么说？',
             answer: 'What are these?',
             hint: '问近处复数用什么',
-            explanation: '问近处复数用What are these?',
+            explanation: '问近处复数用What are these?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'What are these?',
               'What is this?',
@@ -3219,7 +3238,7 @@ export const englishGrade4: Unit[] = [
             question: '— What are these? — _____ are carrots.',
             answer: 'They',
             hint: '回答复数用什么代词',
-            explanation: '回答复数用They are...，They表示它们'
+            explanation: '回答复数用They are...，They表示它们做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l4q3',
@@ -3227,7 +3246,7 @@ export const englishGrade4: Unit[] = [
             question: '— What are those? — _____ horses.',
             answer: 'They are',
             hint: '回答那些是什么',
-            explanation: '回答用They are + 复数名词，They are horses.表示它们是马',
+            explanation: '回答用They are + 复数名词，They are horses.表示它们是马做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'They are',
               'It is',
@@ -3241,7 +3260,7 @@ export const englishGrade4: Unit[] = [
             question: 'What _____ these? (是)',
             answer: 'are',
             hint: '复数疑问句用什么be动词',
-            explanation: '复数用are，What are these?表示这些是什么'
+            explanation: '复数用are，What are these?表示这些是什么做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l4q5',
@@ -3249,7 +3268,7 @@ export const englishGrade4: Unit[] = [
             question: 'Amy asks about one animal near her. She should say?',
             answer: 'What\'s this?',
             hint: '问近处一个动物用什么',
-            explanation: '问近处单数用What\'s this?',
+            explanation: '问近处单数用What\'s this?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'What\'s this?',
               'What are these?',
@@ -3263,7 +3282,7 @@ export const englishGrade4: Unit[] = [
             question: '— What are those? — They are _____. (绵羊)',
             answer: 'sheep',
             hint: '绵羊复数是什么',
-            explanation: 'sheep复数还是sheep，They are sheep.表示它们是绵羊'
+            explanation: 'sheep复数还是sheep，They are sheep.表示它们是绵羊做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l4q7',
@@ -3271,7 +3290,7 @@ export const englishGrade4: Unit[] = [
             question: '"那些是什么"用英语怎么说？',
             answer: 'What are those?',
             hint: '[What are these/those句型]（英语四年级-第4单元）',
-            explanation: '问远处复数用What are those?',
+            explanation: '问远处复数用What are those?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'What are those?',
               'What are these?',
@@ -3285,12 +3304,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u4l5',
         title: '第四单元综合检测',
         order: 5,
-        teachingMethod: '形成性评价法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能在参观农场时用英语说动物和复数',
         successCriteria: '①能说出农场动物 ②能用Are these/those提问',
-        iDo: '家长引导回顾农场动物蔬菜和句型，示范检测题',
-        weDo: '亲子一起做练习，互相检查讨论',
-        youDo: '孩子独立完成检测，检验动物蔬菜词汇和复数句型',
+        iDo: '家长引导回顾农场动物蔬菜和句型，示范检测题 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做练习，互相检查讨论 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成检测，检验动物蔬菜词汇和复数句型【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课把农场生活化：参观农场时用英语说动物、问问题。\n共学四步：\n①对话出题：家长问去农场能看到什么动物？。\n②孩子应答：孩子应说I can see cows and horses.。\n③答错引导：若孩子说不出，家长当同学一起想象！扫描课时发音动画复习；让孩子点读课件情景卡；家长结合逛农场经历边说边比划。\n④快速检测：1.孩子说出农场动物；2.用Are these...?提问；3.说动物复数。',
         funElement: '通关获得"Farm达人"徽章，撒花庆祝',
         gsapAnimations: [
@@ -3363,7 +3382,8 @@ export const englishGrade4: Unit[] = [
               },
               ttsNarration: '第四单元回顾：动物、蔬菜、句型'
             }
-          }
+          },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -3372,7 +3392,7 @@ export const englishGrade4: Unit[] = [
             question: '"马"用英语怎么说？',
             answer: 'horse',
             hint: '马的英文',
-            explanation: 'horse是马，能跑得快',
+            explanation: 'horse是马，能跑得快做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'cow',
               'sheep',
@@ -3386,7 +3406,7 @@ export const englishGrade4: Unit[] = [
             question: '— Are those goats? — Yes, they _____.',
             answer: 'are',
             hint: '肯定回答用什么',
-            explanation: '肯定回答用Yes, they are.'
+            explanation: '肯定回答用Yes, they are.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l5q3',
@@ -3394,7 +3414,7 @@ export const englishGrade4: Unit[] = [
             question: '— What are these? — _____ carrots.',
             answer: 'They are',
             hint: '回答复数用什么',
-            explanation: '回答用They are + 复数名词',
+            explanation: '回答用They are + 复数名词做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'They are',
               'It is',
@@ -3408,7 +3428,7 @@ export const englishGrade4: Unit[] = [
             question: 'tomato的复数是 _____。',
             answer: 'tomatoes',
             hint: 'tomato复数加什么',
-            explanation: 'tomato以o结尾加es，复数是tomatoes'
+            explanation: 'tomato以o结尾加es，复数是tomatoes做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l5q5',
@@ -3416,7 +3436,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which plural (复数) is correct?',
             answer: 'three sheep',
             hint: '三个绵羊复数是什么',
-            explanation: 'sheep复数不变，three sheep表示三只绵羊',
+            explanation: 'sheep复数不变，three sheep表示三只绵羊做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'three sheep',
               'three sheeps',
@@ -3430,7 +3450,7 @@ export const englishGrade4: Unit[] = [
             question: 'What _____ those? (是)',
             answer: 'are',
             hint: '复数疑问句用什么be动词',
-            explanation: '复数用are，What are those?表示那些是什么'
+            explanation: '复数用are，What are those?表示那些是什么做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u4l5q7',
@@ -3438,7 +3458,7 @@ export const englishGrade4: Unit[] = [
             question: '"这些是胡萝卜吗"用英语怎么说？',
             answer: 'Are these carrots?',
             hint: '[Are these/those句型]（英语四年级-第4单元）',
-            explanation: '近处复数用these，Are these carrots?表示这些是胡萝卜吗',
+            explanation: '近处复数用these，Are these carrots?表示这些是胡萝卜吗做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Are these carrots?',
               'Is this carrot?',
@@ -3460,12 +3480,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u5l1',
         title: '食物词汇：rice/beef/fish/noodles',
         order: 1,
-        teachingMethod: 'TPR+实物教学法',
+        teachingMethod: 'TPR全身反应法 + CPA教学法',
         learningObjective: '我能说出rice/beef/fish/noodles等食物词汇',
         successCriteria: '①能说出至少4个食物英语 ②能用What would you like?回答',
-        iDo: '家长拿食物图片说单词，边展示边说rice、beef、fish、noodles',
-        weDo: '亲子一起看食物图说单词，玩"食物点名"游戏',
-        youDo: '孩子独立辨认食物并说出英文单词',
+        iDo: '家长拿食物图片说单词，边展示边说rice、beef、fish、noodles 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起看食物图说单词，玩"食物点名"游戏 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立辨认食物并说出英文单词【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：食物rice（米饭）、beef（牛肉）、fish（鱼）、noodles（面条），句型What would you like?。\n共学四步：\n①对话出题：家长吃饭时问What would you like?并说I\'d like rice.。\n②孩子应答：孩子应说I\'d like noodles.。\n③答错引导：若孩子说不出，家长当同学一起点餐！扫描课时发音动画听发音；让孩子点读课件词汇卡；家长吃饭时边指食物边说英语。\n④快速检测：1.孩子说出4个食物；2.用I\'d like...回答；3.说出想吃的食物。',
         funElement: '玩"小小厨师"游戏，报菜名说英语单词',
         gsapAnimations: [
@@ -3550,7 +3570,8 @@ export const englishGrade4: Unit[] = [
             content: '分类记忆法：把食物分类记更清楚！主食类：rice（米饭）、noodles（面条）；肉类：beef（牛肉）、fish（鱼）。在脑中画一张"餐桌图"，把单词放进对应位置，分类记忆效率更高。',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用TPR全身反应法：用身体动作配合语言，边做边说加深记忆', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -3559,7 +3580,7 @@ export const englishGrade4: Unit[] = [
             question: '"米饭"用英语怎么说？',
             answer: 'rice',
             hint: '米饭的英文',
-            explanation: 'rice是米饭，是中国人的主食',
+            explanation: 'rice是米饭，是中国人的主食做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'rice',
               'beef',
@@ -3573,7 +3594,7 @@ export const englishGrade4: Unit[] = [
             question: 'I want _____ for dinner. (牛肉)',
             answer: 'beef',
             hint: '牛肉的英文',
-            explanation: 'beef是牛肉，I want beef表示我想要牛肉'
+            explanation: 'beef是牛肉，I want beef表示我想要牛肉做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l1q3',
@@ -3581,7 +3602,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which food swims in the water and we eat it?',
             answer: 'fish',
             hint: '水里游的动物食物',
-            explanation: 'fish是鱼，水里游的，可以吃的食物',
+            explanation: 'fish是鱼，水里游的，可以吃的食物做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'rice',
               'beef',
@@ -3595,7 +3616,7 @@ export const englishGrade4: Unit[] = [
             question: '_____ are long and yummy. (面条)',
             answer: 'Noodles',
             hint: '面条的英文',
-            explanation: 'noodles是面条，通常用复数形式'
+            explanation: 'noodles是面条，通常用复数形式做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l1q5',
@@ -3603,7 +3624,7 @@ export const englishGrade4: Unit[] = [
             question: 'Tom says "I want rice and fish." What does he want?',
             answer: '米饭和鱼',
             hint: '【期末真题】rice and fish是什么',
-            explanation: 'rice米饭 fish鱼，rice and fish表示米饭和鱼',
+            explanation: 'rice米饭 fish鱼，rice and fish表示米饭和鱼做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               '米饭和鱼',
               '牛肉和面条',
@@ -3617,7 +3638,7 @@ export const englishGrade4: Unit[] = [
             question: 'Dinner\'s _____! (准备好了)',
             answer: 'ready',
             hint: 'ready的用法',
-            explanation: 'Dinner\'s ready!表示晚餐准备好了，ready是准备好的'
+            explanation: 'Dinner\'s ready!表示晚餐准备好了，ready是准备好的做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l1q7',
@@ -3625,7 +3646,7 @@ export const englishGrade4: Unit[] = [
             question: '中国人最常吃的主食是 _____。',
             answer: 'rice',
             hint: '[食物词汇]（英语四年级-第5单元）',
-            explanation: 'rice是米饭，是中国人最常吃的主食'
+            explanation: 'rice是米饭，是中国人最常吃的主食做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -3633,12 +3654,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u5l2',
         title: 'What would you like? 句型',
         order: 2,
-        teachingMethod: '情境对话：模拟餐厅',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用What would you like?/I\'d like...进行点餐对话',
         successCriteria: '①能用What would you like?提问 ②能用I\'d like...回答',
-        iDo: '家长模拟餐厅点餐，扮演服务员问What would you like?孩子回答',
-        weDo: '亲子一起演餐厅点餐，轮流当服务员和顾客',
-        youDo: '孩子独立完成餐厅点餐对话',
+        iDo: '家长模拟餐厅点餐，扮演服务员问What would you like?孩子回答 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起演餐厅点餐，轮流当服务员和顾客 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成餐厅点餐对话【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：点餐对话What would you like?（你想要什么）、I\'d like some beef, please.（我想要些牛肉）。\n共学四步：\n①对话出题：家长当服务员问What would you like?。\n②孩子应答：孩子应说I\'d like some fish, please.。\n③答错引导：若孩子说不出，家长当同学一起演！扫描课时发音动画听发音；让孩子点读课件对话卡；家长模拟餐厅边演边说。\n④快速检测：1.孩子用What would you like?提问；2.用I\'d like...回答；3.模拟一次点餐。',
         funElement: '玩"家庭餐厅"游戏，孩子当服务员点餐',
         gsapAnimations: [
@@ -3730,7 +3751,8 @@ export const englishGrade4: Unit[] = [
             content: 'What would you like? I\'d like...\nAnything else? That\'s all.\nPlease. Thank you.',
             animationType: 'cardReveal',
             label: '点餐流程'
-          }
+          },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -3739,7 +3761,7 @@ export const englishGrade4: Unit[] = [
             question: '服务员问你想吃什么，会说什么？',
             answer: 'What would you like?',
             hint: '服务员问什么',
-            explanation: '服务员礼貌地问What would you like?你想要什么',
+            explanation: '服务员礼貌地问What would you like?你想要什么做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'What would you like?',
               'Where are you?',
@@ -3753,7 +3775,7 @@ export const englishGrade4: Unit[] = [
             question: '— What would you like? — _____ like some rice.',
             answer: 'I\'d',
             hint: '礼貌回答用什么',
-            explanation: '回答用I\'d like...，I\'d = I would'
+            explanation: '回答用I\'d like...，I\'d = I would做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l2q3',
@@ -3761,7 +3783,7 @@ export const englishGrade4: Unit[] = [
             question: 'I\'d like = ?',
             answer: 'I would like',
             hint: 'I\'d是缩写形式',
-            explanation: 'I\'d like是I would like的缩写，更礼貌',
+            explanation: 'I\'d like是I would like的缩写，更礼貌做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'I want like',
               'I would like',
@@ -3775,7 +3797,7 @@ export const englishGrade4: Unit[] = [
             question: 'I\'d like _____ rice, please. (一些)',
             answer: 'some',
             hint: '不可数名词前用什么',
-            explanation: 'some表示一些，用于不可数名词前，some rice表示一些米饭'
+            explanation: 'some表示一些，用于不可数名词前，some rice表示一些米饭做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l2q5',
@@ -3783,7 +3805,7 @@ export const englishGrade4: Unit[] = [
             question: 'Waiter asks "Anything else?" Amy is full. She says?',
             answer: 'That\'s all.',
             hint: '不要别的了说什么',
-            explanation: '不要别的了说That\'s all.表示就这些了',
+            explanation: '不要别的了说That\'s all.表示就这些了做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'That\'s all.',
               'More please.',
@@ -3797,7 +3819,7 @@ export const englishGrade4: Unit[] = [
             question: '— What would you like? — I\'d like some _____, please. (鱼)',
             answer: 'fish',
             hint: '鱼的英文',
-            explanation: 'fish是鱼，I\'d like some fish表示我想要一些鱼'
+            explanation: 'fish是鱼，I\'d like some fish表示我想要一些鱼做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l2q7',
@@ -3805,7 +3827,7 @@ export const englishGrade4: Unit[] = [
             question: '"我想要一些牛肉"礼貌说法是？',
             answer: 'I\'d like some beef.',
             hint: '[What would you like句型]（英语四年级-第5单元）',
-            explanation: '礼貌用I\'d like some beef.表示我想要一些牛肉',
+            explanation: '礼貌用I\'d like some beef.表示我想要一些牛肉做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'I\'d like some beef.',
               'I want beef.',
@@ -3819,12 +3841,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u5l3',
         title: 'I\'d like... 表达喜好',
         order: 3,
-        teachingMethod: '情境式教学法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用I like.../I don\'t like...表达食物喜好',
         successCriteria: '①能用I like...说喜欢的食物 ②能用I don\'t like...说不喜欢的',
-        iDo: '家长示范I\'d like rice. 表达自己想吃的食物，配合动作',
-        weDo: '亲子一起说I\'d like...表达喜好，互相问想吃什么',
-        youDo: '孩子独立用I\'d like...表达自己想吃的食物',
+        iDo: '家长示范I\'d like rice. 表达自己想吃的食物，配合动作 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起说I\'d like...表达喜好，互相问想吃什么 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用I\'d like...表达自己想吃的食物【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：喜好表达I like fish.（我喜欢鱼）、I don\'t like beef.（我不喜欢牛肉）。\n共学四步：\n①对话出题：家长问Do you like fish?并说I like fish.。\n②孩子应答：孩子应说I like fish!或I don\'t like fish.。\n③答错引导：若孩子说不出，家长当同学一起说喜好！扫描课时发音动画听发音；让孩子点读课件句子卡；家长尊重孩子喜好边说边示范。\n④快速检测：1.孩子用I like...造句；2.用I don\'t like...造句；3.说出喜欢的食物。',
         funElement: '玩"我的晚餐"游戏，说出自己想吃的食物',
         gsapAnimations: [
@@ -3903,7 +3925,8 @@ export const englishGrade4: Unit[] = [
             content: 'Would you like...? — 你要不要……？\nYes, please. — 好的，谢谢。\nNo, thanks. — 不用了，谢谢。',
             animationType: 'cardReveal',
             label: '礼貌问答'
-          }
+          },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -3912,7 +3935,7 @@ export const englishGrade4: Unit[] = [
             question: '"我想要一些米饭"礼貌说法是？',
             answer: 'I\'d like some rice.',
             hint: '礼貌表达想要什么',
-            explanation: 'I\'d like some rice.是礼貌表达，I\'d = I would',
+            explanation: 'I\'d like some rice.是礼貌表达，I\'d = I would做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'I\'d like some rice.',
               'I want rice.',
@@ -3926,7 +3949,7 @@ export const englishGrade4: Unit[] = [
             question: '— Would you like some fish? — Yes, _____.',
             answer: 'please',
             hint: '肯定礼貌回答',
-            explanation: '肯定回答用Yes, please.加please更礼貌'
+            explanation: '肯定回答用Yes, please.加please更礼貌做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l3q3',
@@ -3934,7 +3957,7 @@ export const englishGrade4: Unit[] = [
             question: '— Would you like some soup? — No, _____.',
             answer: 'thanks',
             hint: '否定礼貌回答',
-            explanation: '否定回答用No, thanks.加thanks更礼貌',
+            explanation: '否定回答用No, thanks.加thanks更礼貌做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'thanks',
               'please',
@@ -3948,7 +3971,7 @@ export const englishGrade4: Unit[] = [
             question: 'I\'d _____ some noodles, please.',
             answer: 'like',
             hint: '我想要什么动词',
-            explanation: 'I\'d like...表示我想要，like是动词'
+            explanation: 'I\'d like...表示我想要，like是动词做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l3q5',
@@ -3956,7 +3979,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which is more polite (更礼貌)?',
             answer: 'I\'d like some beef.',
             hint: '哪个更礼貌',
-            explanation: 'I\'d like比I want更礼貌，用餐时用I\'d like',
+            explanation: 'I\'d like比I want更礼貌，用餐时用I\'d like做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'I\'d like some beef.',
               'I want beef.',
@@ -3970,7 +3993,7 @@ export const englishGrade4: Unit[] = [
             question: 'I _____ fish! (超爱)',
             answer: 'love',
             hint: '超爱用什么词',
-            explanation: 'love表示超爱、非常喜欢，I love fish!表示我超爱鱼'
+            explanation: 'love表示超爱、非常喜欢，I love fish!表示我超爱鱼做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l3q7',
@@ -3978,7 +4001,7 @@ export const englishGrade4: Unit[] = [
             question: '"你要不要一些汤"礼貌问法是？',
             answer: 'Would you like some soup?',
             hint: '[I\'d like句型]（英语四年级-第5单元）',
-            explanation: '礼貌问要不要用Would you like...? Would you like some soup?',
+            explanation: '礼貌问要不要用Would you like...? Would you like some soup?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Would you like some soup?',
               'Do you want soup?',
@@ -3995,9 +4018,9 @@ export const englishGrade4: Unit[] = [
         teachingMethod: '角色扮演法',
         learningObjective: '我能回顾并运用Dinner\'s Ready单元的食物词汇和点餐对话',
         successCriteria: '①能说出6个食物英语 ②能完成点餐对话',
-        iDo: '家长示范餐桌用语：Pass me the fork. Help yourself. 配合递餐具动作',
-        weDo: '亲子一起模拟晚餐，使用餐桌用语互相递食物',
-        youDo: '孩子独立用餐桌用语，礼貌地用餐',
+        iDo: '家长示范餐桌用语：Pass me the fork. Help yourself. 配合递餐具动作 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起模拟晚餐，使用餐桌用语互相递食物 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用餐桌用语，礼貌地用餐【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课回顾Dinner\'s Ready单元：食物rice/beef/fish/noodles、What would you like/I\'d like、like/don\'t like。\n共学四步：\n①对话出题：家长问晚餐想吃什么？用英语说。。\n②孩子应答：孩子应说I\'d like some rice and fish.。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学假装忘了，和孩子比赛说。\n④快速检测：1.孩子说出6个食物；2.用I\'d like...回答；3.用I like/don\'t like造句。',
         funElement: '玩"礼貌小客人"游戏，用餐桌用语用餐',
         gsapAnimations: [
@@ -4076,7 +4099,8 @@ export const englishGrade4: Unit[] = [
             content: 'Pass me the fork. — 递给我叉子\nPass me the spoon. — 递给我勺子\nHelp yourself. — 请随便吃\nHere you are. — 给你',
             animationType: 'cardReveal',
             label: '餐具与用语'
-          }
+          },
+          { type: 'tip', content: '本课主要使用角色扮演法：通过角色扮演沉浸式体验学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -4085,7 +4109,7 @@ export const englishGrade4: Unit[] = [
             question: '"请把叉子递给我"用英语怎么说？',
             answer: 'Pass me the fork, please.',
             hint: '递叉子怎么说',
-            explanation: 'Pass me...是递给我，fork是叉子',
+            explanation: 'Pass me...是递给我，fork是叉子做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Pass me the fork, please.',
               'Help yourself, fork.',
@@ -4099,7 +4123,7 @@ export const englishGrade4: Unit[] = [
             question: '_____ yourself! (请随便吃)',
             answer: 'Help',
             hint: '请自便用什么',
-            explanation: 'Help yourself!表示请随便吃，是邀请用语'
+            explanation: 'Help yourself!表示请随便吃，是邀请用语做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l4q3',
@@ -4107,7 +4131,7 @@ export const englishGrade4: Unit[] = [
             question: '别人递给你东西，你应该说什么？',
             answer: 'Thank you.',
             hint: '别人给你东西说什么',
-            explanation: '别人递给你东西要说Thank you!表示感谢',
+            explanation: '别人递给你东西要说Thank you!表示感谢做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Thank you.',
               'Goodbye.',
@@ -4121,7 +4145,7 @@ export const englishGrade4: Unit[] = [
             question: 'Pass me the _____, please. (勺子)',
             answer: 'spoon',
             hint: '勺子的英文',
-            explanation: 'spoon是勺子，Pass me the spoon表示把勺子递给我'
+            explanation: 'spoon是勺子，Pass me the spoon表示把勺子递给我做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l4q5',
@@ -4129,7 +4153,7 @@ export const englishGrade4: Unit[] = [
             question: 'Dad says "Help yourself!" What does he mean?',
             answer: '请随便吃',
             hint: 'help yourself什么意思',
-            explanation: 'Help yourself!表示请随便吃，是邀请客人用餐的用语',
+            explanation: 'Help yourself!表示请随便吃，是邀请客人用餐的用语做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               '请随便吃',
               '请帮帮忙',
@@ -4143,7 +4167,7 @@ export const englishGrade4: Unit[] = [
             question: '— Pass me the fork, please. — Here _____ are.',
             answer: 'you',
             hint: '给你怎么说',
-            explanation: '递给别人东西说Here you are.表示给你'
+            explanation: '递给别人东西说Here you are.表示给你做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l4q7',
@@ -4151,7 +4175,7 @@ export const englishGrade4: Unit[] = [
             question: '"请随便吃"用英语怎么说？',
             answer: 'Help yourself.',
             hint: '[餐桌礼仪]（英语四年级-第5单元）',
-            explanation: 'Help yourself!表示请随便吃，是餐桌邀请用语',
+            explanation: 'Help yourself!表示请随便吃，是餐桌邀请用语做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Help yourself.',
               'Pass yourself.',
@@ -4165,12 +4189,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u5l5',
         title: '第五单元综合检测',
         order: 5,
-        teachingMethod: '形成性评价法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能在餐厅点餐时用英语说食物和喜好',
         successCriteria: '①能完成点餐对话 ②能表达食物喜好',
-        iDo: '家长引导回顾食物词汇和点餐句型，示范检测题',
-        weDo: '亲子一起做练习，互相检查讨论',
-        youDo: '孩子独立完成检测，检验食物词汇和点餐礼仪',
+        iDo: '家长引导回顾食物词汇和点餐句型，示范检测题 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做练习，互相检查讨论 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成检测，检验食物词汇和点餐礼仪【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课把饮食生活化：在餐厅用英语点餐、表达喜好。\n共学四步：\n①对话出题：家长说我们模拟在餐厅点餐。。\n②孩子应答：孩子应说What would you like? I\'d like...。\n③答错引导：若孩子说不出，家长当同学一起演！扫描课时发音动画复习；让孩子点读课件情景卡；家长模拟餐厅场景边演边说。\n④快速检测：1.孩子完成点餐对话；2.表达喜好；3.说4个食物。',
         funElement: '通关获得"Dinner达人"徽章，撒花庆祝',
         gsapAnimations: [
@@ -4243,7 +4267,8 @@ export const englishGrade4: Unit[] = [
               },
               ttsNarration: '第五单元回顾：食物、点餐、礼仪'
             }
-          }
+          },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -4252,7 +4277,7 @@ export const englishGrade4: Unit[] = [
             question: '"面条"用英语怎么说？',
             answer: 'noodles',
             hint: '面条的英文',
-            explanation: 'noodles是面条，通常用复数形式',
+            explanation: 'noodles是面条，通常用复数形式做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'rice',
               'beef',
@@ -4266,7 +4291,7 @@ export const englishGrade4: Unit[] = [
             question: '— What would you like? — _____ like some fish.',
             answer: 'I\'d',
             hint: '礼貌回答',
-            explanation: '回答用I\'d like...，I\'d = I would'
+            explanation: '回答用I\'d like...，I\'d = I would做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l5q3',
@@ -4274,7 +4299,7 @@ export const englishGrade4: Unit[] = [
             question: '— Would you like some beef? — _____',
             answer: 'Yes, please.',
             hint: '肯定礼貌回答',
-            explanation: '肯定回答用Yes, please.',
+            explanation: '肯定回答用Yes, please.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Yes, please.',
               'No, please.',
@@ -4288,7 +4313,7 @@ export const englishGrade4: Unit[] = [
             question: 'Pass me the _____, please. (叉子)',
             answer: 'fork',
             hint: '叉子的英文',
-            explanation: 'fork是叉子，Pass me the fork表示把叉子递给我'
+            explanation: 'fork是叉子，Pass me the fork表示把叉子递给我做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l5q5',
@@ -4296,7 +4321,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which is more polite?',
             answer: 'I\'d like some rice.',
             hint: '哪个更礼貌',
-            explanation: 'I\'d like比I want更礼貌',
+            explanation: 'I\'d like比I want更礼貌做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'I\'d like some rice.',
               'I want rice.',
@@ -4310,7 +4335,7 @@ export const englishGrade4: Unit[] = [
             question: '_____ yourself! (请随便吃)',
             answer: 'Help',
             hint: '请自便的用语',
-            explanation: 'Help yourself!表示请随便吃，是餐桌邀请用语'
+            explanation: 'Help yourself!表示请随便吃，是餐桌邀请用语做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u5l5q7',
@@ -4318,7 +4343,7 @@ export const englishGrade4: Unit[] = [
             question: '"你想要什么"服务员礼貌问法是？',
             answer: 'What would you like?',
             hint: '[What would you like句型]（英语四年级-第5单元）',
-            explanation: '服务员礼貌问What would you like?你想要什么',
+            explanation: '服务员礼貌问What would you like?你想要什么做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'What would you like?',
               'What do you want?',
@@ -4340,12 +4365,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u6l1',
         title: '家庭成员词汇',
         order: 1,
-        teachingMethod: '情境式：家庭树',
+        teachingMethod: '情境教学法',
         learningObjective: '我能说出father/mother/uncle/aunt等家庭成员并用家庭树介绍',
         successCriteria: '①能说出6个家庭成员英语 ②能用This is my...介绍家人',
-        iDo: '家长画家庭树介绍成员，边指边说father、mother、uncle、aunt',
-        weDo: '亲子一起画家庭树，边画边说家庭成员单词',
-        youDo: '孩子独立画家庭树并说出家庭成员单词',
+        iDo: '家长画家庭树介绍成员，边指边说father、mother、uncle、aunt 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起画家庭树，边画边说家庭成员单词 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立画家庭树并说出家庭成员单词【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：家庭成员father（爸爸）、mother（妈妈）、uncle（叔叔/舅舅）、aunt（阿姨/姑姑），画家庭树。\n共学四步：\n①对话出题：家长指全家福问Who is this?并说This is my father.。\n②孩子应答：孩子应说This is my mother.。\n③答错引导：若孩子说不出，家长当同学一起指认！扫描课时发音动画听发音；让孩子点读课件家人卡；家长用全家福边指边说英语。\n④快速检测：1.孩子说出6个家人；2.用This is my...造句；3.画家庭树介绍家人。',
         funElement: '玩"家庭树贴贴乐"，贴照片说单词',
         gsapAnimations: [
@@ -4443,7 +4468,8 @@ export const englishGrade4: Unit[] = [
             content: '联想记忆法：family（家庭）这个词，每个首字母拼成一句话——Father And Mother I Love You（爸爸妈妈我爱你们）！记住这句充满爱的话，就记住了family。father、mother、uncle、aunt都是家人，用爱串起来记。',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -4452,7 +4478,7 @@ export const englishGrade4: Unit[] = [
             question: '"爸爸"用英语怎么说？',
             answer: 'father',
             hint: '爸爸的英文',
-            explanation: 'father是爸爸，也可以说dad',
+            explanation: 'father是爸爸，也可以说dad做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'father',
               'mother',
@@ -4466,7 +4492,7 @@ export const englishGrade4: Unit[] = [
             question: 'This is my _____. (妈妈)',
             answer: 'mother',
             hint: '妈妈的英文',
-            explanation: 'mother是妈妈，也可以说mom'
+            explanation: 'mother是妈妈，也可以说mom做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l1q3',
@@ -4474,7 +4500,7 @@ export const englishGrade4: Unit[] = [
             question: 'Your father\'s brother is your _____?',
             answer: 'uncle',
             hint: '爸爸的兄弟是谁',
-            explanation: '爸爸的兄弟是uncle（叔叔/舅舅）',
+            explanation: '爸爸的兄弟是uncle（叔叔/舅舅）做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'uncle',
               'aunt',
@@ -4488,7 +4514,7 @@ export const englishGrade4: Unit[] = [
             question: 'She is my _____. (阿姨)',
             answer: 'aunt',
             hint: '阿姨的英文',
-            explanation: 'aunt是阿姨/姑姑，父母的姐妹'
+            explanation: 'aunt是阿姨/姑姑，父母的姐妹做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l1q5',
@@ -4496,7 +4522,7 @@ export const englishGrade4: Unit[] = [
             question: 'Amy says "He is my uncle." Who is he?',
             answer: 'Her uncle.',
             hint: '【期末真题】he is my uncle是什么意思',
-            explanation: 'He is my uncle.表示他是我的叔叔',
+            explanation: 'He is my uncle.表示他是我的叔叔做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Her uncle.',
               'Her father.',
@@ -4510,7 +4536,7 @@ export const englishGrade4: Unit[] = [
             question: 'My _____ is a kind woman. (妈妈)',
             answer: 'mother',
             hint: '妈妈的英文',
-            explanation: 'mother是妈妈，My mother is a kind woman.表示我妈妈是个善良的女人'
+            explanation: 'mother是妈妈，My mother is a kind woman.表示我妈妈是个善良的女人做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l1q7',
@@ -4518,7 +4544,7 @@ export const englishGrade4: Unit[] = [
             question: '爸爸的英文还可以说 _____（口语）。',
             answer: 'dad',
             hint: '[家庭成员词汇]（英语四年级-第6单元）',
-            explanation: '爸爸口语可以说dad，正式说法是father'
+            explanation: '爸爸口语可以说dad，正式说法是father做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -4526,12 +4552,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u6l2',
         title: '职业词汇：doctor/teacher/driver/nurse',
         order: 2,
-        teachingMethod: 'TPR+角色扮演法',
+        teachingMethod: 'TPR全身反应法 + 角色扮演法',
         learningObjective: '我能用What\'s your...?/He is a...询问和介绍家人职业',
         successCriteria: '①能说出5个职业英语 ②能用He is a...介绍职业',
-        iDo: '家长模仿职业动作说单词：doctor看病、teacher教书、driver开车、nurse护理',
-        weDo: '亲子一起模仿职业动作说单词，玩"职业猜猜看"',
-        youDo: '孩子独立模仿职业并说出英文单词',
+        iDo: '家长模仿职业动作说单词：doctor看病、teacher教书、driver开车、nurse护理 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起模仿职业动作说单词，玩"职业猜猜看" → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立模仿职业并说出英文单词【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：家人职业What\'s your father?（你爸爸做什么）、He is a doctor.（他是医生）。\n共学四步：\n①对话出题：家长问你爸爸做什么工作？并说He is a teacher.。\n②孩子应答：孩子应说My father is a doctor.。\n③答错引导：若孩子说不出，家长当同学一起聊！扫描课时发音动画听发音；让孩子点读课件句子卡；家长结合家人职业边说边聊。\n④快速检测：1.孩子说出5个职业；2.用He is a...造句；3.介绍家人的职业。',
         funElement: '玩"职业小演员"游戏，演职业让家人猜',
         gsapAnimations: [
@@ -4610,7 +4636,8 @@ export const englishGrade4: Unit[] = [
             content: 'What does he do? — 他做什么工作？\nHe is a doctor. — 他是一名医生。\nWhat does she do? — 她做什么工作？\nShe is a teacher. — 她是一名老师。',
             animationType: 'cardReveal',
             label: '职业问答'
-          }
+          },
+          { type: 'tip', content: '本课主要使用TPR全身反应法：用身体动作配合语言，边做边说加深记忆', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -4619,7 +4646,7 @@ export const englishGrade4: Unit[] = [
             question: '"医生"用英语怎么说？',
             answer: 'doctor',
             hint: '医生的英文',
-            explanation: 'doctor是医生，治病救人',
+            explanation: 'doctor是医生，治病救人做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'doctor',
               'teacher',
@@ -4633,7 +4660,7 @@ export const englishGrade4: Unit[] = [
             question: 'She is a _____. She teaches English. (老师)',
             answer: 'teacher',
             hint: '教书的职业',
-            explanation: 'teacher是老师，teaches表示教书'
+            explanation: 'teacher是老师，teaches表示教书做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l2q3',
@@ -4641,7 +4668,7 @@ export const englishGrade4: Unit[] = [
             question: 'Who drives a car (开车)?',
             answer: 'driver',
             hint: '开车的职业',
-            explanation: 'driver是司机，专门开车',
+            explanation: 'driver是司机，专门开车做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'doctor',
               'teacher',
@@ -4655,7 +4682,7 @@ export const englishGrade4: Unit[] = [
             question: 'A _____ takes care of sick people in hospital. (护士)',
             answer: 'nurse',
             hint: '照顾病人的职业',
-            explanation: 'nurse是护士，在医院照顾病人'
+            explanation: 'nurse是护士，在医院照顾病人做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l2q5',
@@ -4663,7 +4690,7 @@ export const englishGrade4: Unit[] = [
             question: 'Tom asks about Amy\'s father\'s job. He says?',
             answer: 'What does your father do?',
             hint: '问职业怎么说',
-            explanation: '问职业用What does... do? What does your father do?',
+            explanation: '问职业用What does... do? What does your father do?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'What does your father do?',
               'Where is your father?',
@@ -4677,7 +4704,7 @@ export const englishGrade4: Unit[] = [
             question: '— What does she do? — She is a _____. (医生)',
             answer: 'doctor',
             hint: '医生英文',
-            explanation: 'doctor是医生，She is a doctor.表示她是一名医生'
+            explanation: 'doctor是医生，She is a doctor.表示她是一名医生做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l2q7',
@@ -4685,7 +4712,7 @@ export const englishGrade4: Unit[] = [
             question: '"他是一名老师"用英语怎么说？',
             answer: 'He is a teacher.',
             hint: '[职业词汇]（英语四年级-第6单元）',
-            explanation: 'teacher是老师，He is a teacher.表示他是一名老师',
+            explanation: 'teacher是老师，He is a teacher.表示他是一名老师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'He is a teacher.',
               'He is teacher.',
@@ -4699,12 +4726,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u6l3',
         title: 'This is my... He/She is a...',
         order: 3,
-        teachingMethod: '情境对话法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用This is my...向别人介绍家人',
         successCriteria: '①能用This is my...介绍家人 ②能介绍家人的职业',
-        iDo: '家长示范介绍家人：This is my father. He is a doctor. 配合照片',
-        weDo: '亲子一起介绍家人，说出关系和职业',
-        youDo: '孩子独立介绍家人，综合运用关系和职业句型',
+        iDo: '家长示范介绍家人：This is my father. He is a doctor. 配合照片 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起介绍家人，说出关系和职业 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立介绍家人，综合运用关系和职业句型【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：介绍家人This is my father. He is a doctor.（这是我爸爸，他是医生）。\n共学四步：\n①对话出题：家长指照片说This is my mother. She is a teacher.，问孩子介绍爸爸。\n②孩子应答：孩子应说This is my father. He is a doctor.。\n③答错引导：若孩子说不出，家长当同学一起介绍！扫描课时发音动画听发音；让孩子点读课件句子卡；家长用全家福边指边介绍。\n④快速检测：1.孩子用This is my...介绍家人；2.介绍家人职业；3.介绍2位家人。',
         funElement: '玩"家庭相册"游戏，翻照片介绍家人',
         gsapAnimations: [
@@ -4783,7 +4810,8 @@ export const englishGrade4: Unit[] = [
             content: '男：This is my... He is a...\n女：This is my... She is a...\n关系+职业，介绍更完整',
             animationType: 'cardReveal',
             label: '介绍公式'
-          }
+          },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -4792,7 +4820,7 @@ export const englishGrade4: Unit[] = [
             question: '介绍爸爸应该说？',
             answer: 'This is my father.',
             hint: '介绍家人用什么句型',
-            explanation: '介绍家人用This is my...，This is my father.表示这是我爸爸',
+            explanation: '介绍家人用This is my...，This is my father.表示这是我爸爸做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'This is my father.',
               'He is my father.',
@@ -4806,7 +4834,7 @@ export const englishGrade4: Unit[] = [
             question: 'This is my father. _____ is a doctor.',
             answer: 'He',
             hint: '男性用什么代词',
-            explanation: '介绍男性职业用He，He is a doctor.表示他是一名医生'
+            explanation: '介绍男性职业用He，He is a doctor.表示他是一名医生做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l3q3',
@@ -4814,7 +4842,7 @@ export const englishGrade4: Unit[] = [
             question: 'This is my mother. _____ is a teacher.',
             answer: 'She',
             hint: '女性用什么代词',
-            explanation: '介绍女性职业用She，She is a teacher.表示她是一名老师',
+            explanation: '介绍女性职业用She，She is a teacher.表示她是一名老师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'He',
               'She',
@@ -4828,7 +4856,7 @@ export const englishGrade4: Unit[] = [
             question: 'This is my uncle. He is a _____. (司机)',
             answer: 'driver',
             hint: '司机的英文',
-            explanation: 'driver是司机，He is a driver.表示他是一名司机'
+            explanation: 'driver是司机，He is a driver.表示他是一名司机做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l3q5',
@@ -4836,7 +4864,7 @@ export const englishGrade4: Unit[] = [
             question: 'Amy introduces her aunt who is a nurse. She says?',
             answer: 'This is my aunt. She is a nurse.',
             hint: '介绍阿姨护士怎么说',
-            explanation: '介绍女性用This is my... She is a...，aunt是阿姨，nurse是护士',
+            explanation: '介绍女性用This is my... She is a...，aunt是阿姨，nurse是护士做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'This is my aunt. She is a nurse.',
               'This is my uncle. He is a nurse.',
@@ -4850,7 +4878,7 @@ export const englishGrade4: Unit[] = [
             question: '_____ is my mother. She is a teacher.',
             answer: 'This',
             hint: '介绍用什么开头',
-            explanation: '介绍家人用This is my...，This is my mother.表示这是我妈妈'
+            explanation: '介绍家人用This is my...，This is my mother.表示这是我妈妈做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l3q7',
@@ -4858,7 +4886,7 @@ export const englishGrade4: Unit[] = [
             question: '"这是我妈妈，她是一名老师"怎么说？',
             answer: 'This is my mother. She is a teacher.',
             hint: '[介绍家人句型]（英语四年级-第6单元）',
-            explanation: '介绍女性用This is my... She is a...，mother妈妈 teacher老师',
+            explanation: '介绍女性用This is my... She is a...，mother妈妈 teacher老师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'This is my mother. She is a teacher.',
               'This is my father. He is a teacher.',
@@ -4872,12 +4900,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u6l4',
         title: 'How many people are there in your family?',
         order: 4,
-        teachingMethod: '情境对话法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能回顾并运用Meet My Family单元的家人词汇和职业表达',
         successCriteria: '①能说出6个家人英语 ②能介绍家人的职业',
-        iDo: '家长示范问答家庭人数：How many people are there in your family? Three.',
-        weDo: '亲子一起问答家庭人数和成员职业',
-        youDo: '孩子独立问答家庭人数和成员职业',
+        iDo: '家长示范问答家庭人数：How many people are there in your family? Three. 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起问答家庭人数和成员职业 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立问答家庭人数和成员职业【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课回顾Meet My Family单元：家人father/mother/uncle/aunt、职业What\'s your father/He is a doctor、This is my...。\n共学四步：\n①对话出题：家长问用英语介绍你的家人。。\n②孩子应答：孩子应说This is my father. He is a teacher.。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长用全家福边指边复习。\n④快速检测：1.孩子说出6个家人；2.介绍家人职业；3.用This is my...造句。',
         funElement: '玩"家庭调查员"游戏，调查家人的家庭人数',
         gsapAnimations: [
@@ -4938,7 +4966,8 @@ export const englishGrade4: Unit[] = [
             content: 'How many people are there in your family?\nThere are three/four/five people in my family.\npeople是person的复数（人们）',
             animationType: 'cardReveal',
             label: '人数句型'
-          }
+          },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -4947,7 +4976,7 @@ export const englishGrade4: Unit[] = [
             question: '"你家有几口人"用英语怎么说？',
             answer: 'How many people are there in your family?',
             hint: '问几口人怎么说',
-            explanation: '问几口人用How many people are there in your family?',
+            explanation: '问几口人用How many people are there in your family?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'How many people are there in your family?',
               'How old is your family?',
@@ -4961,7 +4990,7 @@ export const englishGrade4: Unit[] = [
             question: '— How many people are there in your family? — There _____ three people.',
             answer: 'are',
             hint: '复数用什么be动词',
-            explanation: 'people是复数，用are，There are three people.表示有三口人'
+            explanation: 'people是复数，用are，There are three people.表示有三口人做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l4q3',
@@ -4969,7 +4998,7 @@ export const englishGrade4: Unit[] = [
             question: '— How many people? — _____',
             answer: 'Four people.',
             hint: '回答几口人',
-            explanation: '回答用数字+people，Four people.表示四口人',
+            explanation: '回答用数字+people，Four people.表示四口人做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Four people.',
               'Four people is.',
@@ -4983,7 +5012,7 @@ export const englishGrade4: Unit[] = [
             question: 'There are _____ people in my family. (五)',
             answer: 'five',
             hint: '五的英文',
-            explanation: 'five是五，There are five people.表示有五口人'
+            explanation: 'five是五，There are five people.表示有五口人做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l4q5',
@@ -4991,7 +5020,7 @@ export const englishGrade4: Unit[] = [
             question: 'Amy says "There are four people in my family." How many?',
             answer: 'Four people.',
             hint: '四口人',
-            explanation: 'There are four people表示有四口人',
+            explanation: 'There are four people表示有四口人做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Four people.',
               'Three people.',
@@ -5005,7 +5034,7 @@ export const englishGrade4: Unit[] = [
             question: 'How _____ people are there in your family?',
             answer: 'many',
             hint: '问数量用什么',
-            explanation: '问可数数量用How many，How many people?问几口人'
+            explanation: '问可数数量用How many，How many people?问几口人做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l4q7',
@@ -5013,7 +5042,7 @@ export const englishGrade4: Unit[] = [
             question: '"我家有三口人"用英语怎么说？',
             answer: 'There are three people in my family.',
             hint: '[How many句型]（英语四年级-第6单元）',
-            explanation: '用There are + 数字 + people，three people表示三口人',
+            explanation: '用There are + 数字 + people，three people表示三口人做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'There are three people in my family.',
               'There is three people in my family.',
@@ -5027,12 +5056,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u6l5',
         title: '第六单元综合检测',
         order: 5,
-        teachingMethod: '形成性评价法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能在生活中用英语介绍家人和职业',
         successCriteria: '①能介绍家人 ②能介绍家人职业',
-        iDo: '家长引导回顾家庭成员职业和句型，示范检测题',
-        weDo: '亲子一起做练习，互相检查讨论',
-        youDo: '孩子独立完成检测，检验家庭职业词汇和介绍句型',
+        iDo: '家长引导回顾家庭成员职业和句型，示范检测题 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做练习，互相检查讨论 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成检测，检验家庭职业词汇和介绍句型【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课把家庭生活化：用英语介绍你的家人和他们的职业。\n共学四步：\n①对话出题：家长说用英语介绍你的家庭。。\n②孩子应答：孩子应说This is my family. This is my father...。\n③答错引导：若孩子说不出，家长当同学一起介绍！扫描课时发音动画复习；让孩子点读课件情景卡；家长用全家福让孩子边指边介绍。\n④快速检测：1.孩子介绍2位家人；2.介绍家人职业；3.说6个家人英语。',
         funElement: '通关获得"Family达人"徽章，撒花庆祝',
         gsapAnimations: [
@@ -5105,7 +5134,8 @@ export const englishGrade4: Unit[] = [
               },
               ttsNarration: '第六单元回顾：家庭、职业、句型'
             }
-          }
+          },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -5114,7 +5144,7 @@ export const englishGrade4: Unit[] = [
             question: '"叔叔"用英语怎么说？',
             answer: 'uncle',
             hint: '叔叔的英文',
-            explanation: 'uncle是叔叔/舅舅，父母的兄弟',
+            explanation: 'uncle是叔叔/舅舅，父母的兄弟做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'uncle',
               'aunt',
@@ -5128,7 +5158,7 @@ export const englishGrade4: Unit[] = [
             question: 'He is a _____. He drives a bus. (司机)',
             answer: 'driver',
             hint: '司机英文',
-            explanation: 'driver是司机，开车运送乘客'
+            explanation: 'driver是司机，开车运送乘客做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l5q3',
@@ -5136,7 +5166,7 @@ export const englishGrade4: Unit[] = [
             question: '— How many people in your family? — _____',
             answer: 'There are four people.',
             hint: '回答几口人',
-            explanation: '回答用There are + 数字 + people',
+            explanation: '回答用There are + 数字 + people做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'There are four people.',
               'Four is people.',
@@ -5150,7 +5180,7 @@ export const englishGrade4: Unit[] = [
             question: 'This is my mother. _____ is a teacher.',
             answer: 'She',
             hint: '女性代词',
-            explanation: '介绍女性用She，She is a teacher.表示她是一名老师'
+            explanation: '介绍女性用She，She is a teacher.表示她是一名老师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l5q5',
@@ -5158,7 +5188,7 @@ export const englishGrade4: Unit[] = [
             question: 'Amy introduces her father the doctor. She says?',
             answer: 'This is my father. He is a doctor.',
             hint: '介绍爸爸医生怎么说',
-            explanation: '介绍男性用This is my... He is a...，father爸爸 doctor医生',
+            explanation: '介绍男性用This is my... He is a...，father爸爸 doctor医生做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'This is my father. He is a doctor.',
               'This is my father. She is a doctor.',
@@ -5172,7 +5202,7 @@ export const englishGrade4: Unit[] = [
             question: 'How _____ people are there in your family?',
             answer: 'many',
             hint: '问数量用什么',
-            explanation: '问可数数量用How many'
+            explanation: '问可数数量用How many做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u6l5q7',
@@ -5180,7 +5210,7 @@ export const englishGrade4: Unit[] = [
             question: '"她是一名护士"用英语怎么说？',
             answer: 'She is a nurse.',
             hint: '[职业词汇]（英语四年级-第6单元）',
-            explanation: 'nurse是护士，She is a nurse.表示她是一名护士',
+            explanation: 'nurse是护士，She is a nurse.表示她是一名护士做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'She is a nurse.',
               'He is a nurse.',
@@ -5202,12 +5232,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u7l1',
         title: '服装词汇：dress/shirt/jacket/sweater',
         order: 1,
-        teachingMethod: '情境式：服装店',
+        teachingMethod: '情境教学法',
         learningObjective: '我能说出dress/shirt/jacket/sweater等服装词汇',
         successCriteria: '①能说出至少4个服装英语 ②能用I like the...说喜欢的衣服',
-        iDo: '家长拿衣服说单词，边展示边说dress、shirt、jacket、sweater',
-        weDo: '亲子一起认服装说单词，玩"服装店购物"游戏',
-        youDo: '孩子独立辨认服装并说出英文单词',
+        iDo: '家长拿衣服说单词，边展示边说dress、shirt、jacket、sweater 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起认服装说单词，玩"服装店购物"游戏 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立辨认服装并说出英文单词【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：服装dress（连衣裙）、shirt（衬衫）、jacket（夹克）、sweater（毛衣），句型I like the dress.。\n共学四步：\n①对话出题：家长拿衬衫问What\'s this?并说Shirt?。\n②孩子应答：孩子应说Shirt!。\n③答错引导：若孩子说不出，家长当同学一起挑衣服！扫描课时发音动画听发音；让孩子点读课件服装卡；家长拿真实衣服边指边说英语。\n④快速检测：1.孩子说出4个服装；2.用I like the...造句；3.说出喜欢的衣服。',
         funElement: '玩"服装搭配师"游戏，搭配衣服说单词',
         gsapAnimations: [
@@ -5292,7 +5322,8 @@ export const englishGrade4: Unit[] = [
             content: '分类记忆法：服装分类记更清楚！上衣类：shirt（衬衫）、jacket（夹克）、sweater（毛衣）；裙装类：dress（连衣裙）。想象打开衣柜，把衣服分门别类挂好，边挂边说英语，记得更牢。',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -5301,7 +5332,7 @@ export const englishGrade4: Unit[] = [
             question: '"连衣裙"用英语怎么说？',
             answer: 'dress',
             hint: '连衣裙的英文',
-            explanation: 'dress是连衣裙，女装',
+            explanation: 'dress是连衣裙，女装做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'dress',
               'shirt',
@@ -5315,7 +5346,7 @@ export const englishGrade4: Unit[] = [
             question: 'I want a _____ for winter. (毛衣)',
             answer: 'sweater',
             hint: '冬天穿的毛衣',
-            explanation: 'sweater是毛衣，保暖用'
+            explanation: 'sweater是毛衣，保暖用做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l1q3',
@@ -5323,7 +5354,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which one keeps you warm in cold weather?',
             answer: 'sweater',
             hint: '保暖的衣服',
-            explanation: 'sweater是毛衣，冬天穿保暖',
+            explanation: 'sweater是毛衣，冬天穿保暖做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'dress',
               'shirt',
@@ -5337,7 +5368,7 @@ export const englishGrade4: Unit[] = [
             question: 'This _____ is very cool. (夹克)',
             answer: 'jacket',
             hint: '夹克的英文',
-            explanation: 'jacket是夹克，外套的一种'
+            explanation: 'jacket是夹克，外套的一种做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l1q5',
@@ -5345,7 +5376,7 @@ export const englishGrade4: Unit[] = [
             question: 'Amy says "I want a dress." What does she want?',
             answer: 'A dress.',
             hint: '【期末真题】want a dress是什么',
-            explanation: 'I want a dress.表示我想要一条连衣裙',
+            explanation: 'I want a dress.表示我想要一条连衣裙做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'A dress.',
               'A shirt.',
@@ -5359,7 +5390,7 @@ export const englishGrade4: Unit[] = [
             question: 'A _____ is for boys and girls. (衬衫)',
             answer: 'shirt',
             hint: '衬衫的英文',
-            explanation: 'shirt是衬衫，男女都可以穿'
+            explanation: 'shirt是衬衫，男女都可以穿做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l1q7',
@@ -5367,7 +5398,7 @@ export const englishGrade4: Unit[] = [
             question: '冬天穿保暖的毛衣叫 _____。',
             answer: 'sweater',
             hint: '[服装词汇]（英语四年级-第7单元）',
-            explanation: 'sweater是毛衣，冬天穿保暖'
+            explanation: 'sweater是毛衣，冬天穿保暖做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           }
         ]
       },
@@ -5375,12 +5406,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u7l2',
         title: 'How much is/are...? 价格问答',
         order: 2,
-        teachingMethod: '情境对话：模拟商店',
+        teachingMethod: '情境教学法',
         learningObjective: '我能用How much is it?询问价格并回答',
         successCriteria: '①能用How much is it?问价 ②能用It\'s...yuan回答',
-        iDo: '家长模拟商店问价格，示范How much is this dress? It\'s 50 yuan.',
-        weDo: '亲子一起演商店买卖，问价格答价格',
-        youDo: '孩子独立用How much问价格并回答',
+        iDo: '家长模拟商店问价格，示范How much is this dress? It\'s 50 yuan. 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起演商店买卖，问价格答价格 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用How much问价格并回答【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：问价格How much is it?（多少钱）、It\'s 50 yuan.（50元），how much问价格。\n共学四步：\n①对话出题：家长拿衣服问How much is it?并说It\'s 50 yuan.。\n②孩子应答：孩子应说It\'s 50 yuan!。\n③答错引导：若孩子说不出，家长当同学一起买！扫描课时发音动画听发音；让孩子点读课件对话卡；家长模拟购物边问价边说。\n④快速检测：1.孩子用How much is it?问价；2.用It\'s...yuan回答；3.模拟一次购物。',
         funElement: '玩"跳蚤市场"游戏，标价买卖问价格',
         gsapAnimations: [
@@ -5472,7 +5503,8 @@ export const englishGrade4: Unit[] = [
             content: 'How much is...? It\'s ___ yuan.\nHow much are...? They\'re ___ yuan.\nyuan = 元（人民币单位）',
             animationType: 'cardReveal',
             label: '价格句型'
-          }
+          },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -5481,7 +5513,7 @@ export const englishGrade4: Unit[] = [
             question: '"这件连衣裙多少钱"用英语怎么说？',
             answer: 'How much is this dress?',
             hint: '问单数价格怎么说',
-            explanation: '问单数物品价格用How much is...?',
+            explanation: '问单数物品价格用How much is...?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'How much is this dress?',
               'How much are this dress?',
@@ -5495,7 +5527,7 @@ export const englishGrade4: Unit[] = [
             question: '— How much is this dress? — _____ 50 yuan.',
             answer: 'It\'s',
             hint: '回答单数价格',
-            explanation: '回答单数用It\'s + 价格，It\'s 50 yuan.表示50元'
+            explanation: '回答单数用It\'s + 价格，It\'s 50 yuan.表示50元做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l2q3',
@@ -5503,7 +5535,7 @@ export const englishGrade4: Unit[] = [
             question: '— How much are these shoes? — _____',
             answer: 'They\'re 80 yuan.',
             hint: '回答复数价格',
-            explanation: '回答复数用They\'re + 价格',
+            explanation: '回答复数用They\'re + 价格做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'They\'re 80 yuan.',
               'It\'s 80 yuan.',
@@ -5517,7 +5549,7 @@ export const englishGrade4: Unit[] = [
             question: 'How much _____ these shoes? (是)',
             answer: 'are',
             hint: '复数用什么be动词',
-            explanation: '复数用are，How much are these shoes?表示这双鞋多少钱'
+            explanation: '复数用are，How much are these shoes?表示这双鞋多少钱做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l2q5',
@@ -5525,7 +5557,7 @@ export const englishGrade4: Unit[] = [
             question: 'Amy asks the price of one shirt. She says?',
             answer: 'How much is this shirt?',
             hint: '问一件衬衫价格',
-            explanation: '单数用How much is...? How much is this shirt?',
+            explanation: '单数用How much is...? How much is this shirt?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'How much is this shirt?',
               'How much are this shirt?',
@@ -5539,7 +5571,7 @@ export const englishGrade4: Unit[] = [
             question: '— How much is this jacket? — It\'s _____ yuan. (30)',
             answer: '30',
             hint: '30的英文',
-            explanation: '30读作thirty，It\'s 30 yuan.表示30元'
+            explanation: '30读作thirty，It\'s 30 yuan.表示30元做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l2q7',
@@ -5547,7 +5579,7 @@ export const englishGrade4: Unit[] = [
             question: '"这双鞋多少钱"用英语怎么说？',
             answer: 'How much are these shoes?',
             hint: '[How much句型]（英语四年级-第7单元）',
-            explanation: '复数用are，How much are these shoes?表示这双鞋多少钱',
+            explanation: '复数用are，How much are these shoes?表示这双鞋多少钱做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'How much are these shoes?',
               'How much is these shoes?',
@@ -5561,12 +5593,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u7l3',
         title: '数字表达——价格与找零',
         order: 3,
-        teachingMethod: '数学+英语跨学科',
+        teachingMethod: '数学 + 芬兰现象式学习',
         learningObjective: '我能用Can I help you?/I want...进行购物对话',
         successCriteria: '①能说Can I help you? ②能用I want...回应',
-        iDo: '家长示范用英语说价格：It\'s 25 yuan. 边说边写数字',
-        weDo: '亲子一起用英语说价格，练习1-100数字',
-        youDo: '孩子独立用英语说价格和简单找零',
+        iDo: '家长示范用英语说价格：It\'s 25 yuan. 边说边写数字 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起用英语说价格，练习1-100数字 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立用英语说价格和简单找零【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：购物对话Can I help you?（需要帮忙吗）、I want a sweater, please.（我想要一件毛衣）。\n共学四步：\n①对话出题：家长当店员说Can I help you?。\n②孩子应答：孩子应说I want a shirt, please.。\n③答错引导：若孩子说不出，家长当同学一起演！扫描课时发音动画听发音；让孩子点读课件对话卡；家长模拟服装店边演边说。\n④快速检测：1.孩子说Can I help you?；2.用I want...回应；3.模拟购物对话。',
         funElement: '玩"收银员"游戏，说价格算找零',
         gsapAnimations: [
@@ -5627,7 +5659,8 @@ export const englishGrade4: Unit[] = [
             content: 'How much is it? — 多少钱？\nIt\'s 25 yuan. — 25元。\nHere\'s 30 yuan. — 给你30元。\nHere\'s 5 yuan change. — 找你5元。',
             animationType: 'cardReveal',
             label: '购物用语'
-          }
+          },
+          { type: 'tip', content: '本课主要使用数学：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -5636,7 +5669,7 @@ export const englishGrade4: Unit[] = [
             question: '"25"用英语怎么说？',
             answer: 'twenty-five',
             hint: '25的英文',
-            explanation: '25是twenty-five，几十加几中间加连字符',
+            explanation: '25是twenty-five，几十加几中间加连字符做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'twenty-five',
               'twenty five',
@@ -5650,7 +5683,7 @@ export const englishGrade4: Unit[] = [
             question: 'It\'s _____ yuan. (50元)',
             answer: 'fifty',
             hint: '50的英文',
-            explanation: '50是fifty，注意不是fivety'
+            explanation: '50是fifty，注意不是fivety做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l3q3',
@@ -5658,7 +5691,7 @@ export const englishGrade4: Unit[] = [
             question: '"100"用英语怎么说？',
             answer: 'one hundred',
             hint: '100的英文',
-            explanation: '100是one hundred',
+            explanation: '100是one hundred做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'one hundred',
               'ten ten',
@@ -5672,7 +5705,7 @@ export const englishGrade4: Unit[] = [
             question: '— How much is it? — It\'s _____ yuan. (30)',
             answer: 'thirty',
             hint: '30的英文',
-            explanation: '30是thirty，It\'s thirty yuan.表示30元'
+            explanation: '30是thirty，It\'s thirty yuan.表示30元做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l3q5',
@@ -5680,7 +5713,7 @@ export const englishGrade4: Unit[] = [
             question: 'Tom pays 30 yuan for a 25 yuan shirt. The change is?',
             answer: '5 yuan',
             hint: '找零多少',
-            explanation: '30-25=5，找零5元，change是找零',
+            explanation: '30-25=5，找零5元，change是找零做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               '5 yuan',
               '25 yuan',
@@ -5694,7 +5727,7 @@ export const englishGrade4: Unit[] = [
             question: 'Here\'s 5 yuan _____. (找零)',
             answer: 'change',
             hint: '找零的英文',
-            explanation: 'change是找零，Here\'s 5 yuan change.表示找你5元'
+            explanation: 'change是找零，Here\'s 5 yuan change.表示找你5元做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l3q7',
@@ -5702,7 +5735,7 @@ export const englishGrade4: Unit[] = [
             question: '"50元"用英语怎么说？',
             answer: 'It\'s fifty yuan.',
             hint: '[价格表达]（英语四年级-第7单元）',
-            explanation: '50是fifty，It\'s fifty yuan.表示50元',
+            explanation: '50是fifty，It\'s fifty yuan.表示50元做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'It\'s fifty yuan.',
               'It\'s fivety yuan.',
@@ -5719,9 +5752,9 @@ export const englishGrade4: Unit[] = [
         teachingMethod: '角色扮演法',
         learningObjective: '我能回顾并运用Shopping单元的服装词汇和购物对话',
         successCriteria: '①能说出6个服装英语 ②能完成购物对话',
-        iDo: '家长示范完整购物对话：问候→选商品→问价格→购买',
-        weDo: '亲子一起演购物对话，轮流当店员和顾客',
-        youDo: '孩子独立完成完整购物对话',
+        iDo: '家长示范完整购物对话：问候→选商品→问价格→购买 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起演购物对话，轮流当店员和顾客 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成完整购物对话【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课回顾Shopping单元：服装dress/shirt/jacket/sweater、How much is it、Can I help you/I want。\n共学四步：\n①对话出题：家长问用英语说几个服装。。\n②孩子应答：孩子应说Dress, shirt, jacket!。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学假装忘了，和孩子比赛说。\n④快速检测：1.孩子说出6个服装；2.用How much问价；3.模拟购物对话。',
         funElement: '玩"模拟商店"游戏，完成一次完整购物',
         gsapAnimations: [
@@ -5800,7 +5833,8 @@ export const englishGrade4: Unit[] = [
             content: 'Can I help you? — 需要帮忙吗？\nI\'ll take it. — 我买了。\nI\'m just looking. — 我只是看看。\nDo you have...? — 你们有……吗？',
             animationType: 'cardReveal',
             label: '购物用语'
-          }
+          },
+          { type: 'tip', content: '本课主要使用角色扮演法：通过角色扮演沉浸式体验学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -5809,7 +5843,7 @@ export const englishGrade4: Unit[] = [
             question: '店员见顾客进来，礼貌问候应该说？',
             answer: 'Can I help you?',
             hint: '店员问候语',
-            explanation: 'Can I help you?是店员礼貌问候，表示需要帮忙吗',
+            explanation: 'Can I help you?是店员礼貌问候，表示需要帮忙吗做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Can I help you?',
               'How much is it?',
@@ -5823,7 +5857,7 @@ export const englishGrade4: Unit[] = [
             question: '— How much is it? — I\'ll _____ it. (买)',
             answer: 'take',
             hint: '我买了用什么',
-            explanation: 'I\'ll take it.表示我买了/我要了'
+            explanation: 'I\'ll take it.表示我买了/我要了做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l4q3',
@@ -5831,7 +5865,7 @@ export const englishGrade4: Unit[] = [
             question: '"我买了"用英语怎么说？',
             answer: 'I\'ll take it.',
             hint: '表示购买',
-            explanation: 'I\'ll take it.表示我买了，决定购买',
+            explanation: 'I\'ll take it.表示我买了，决定购买做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'I\'ll take it.',
               'I take it.',
@@ -5845,7 +5879,7 @@ export const englishGrade4: Unit[] = [
             question: '— Can I help you? — I _____ a dress. (想要)',
             answer: 'want',
             hint: '想要什么动词',
-            explanation: 'want是想要，I want a dress.表示我想要一条连衣裙'
+            explanation: 'want是想要，I want a dress.表示我想要一条连衣裙做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l4q5',
@@ -5853,7 +5887,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which is the correct order of shopping?',
             answer: 'Greet, choose, ask price, buy',
             hint: '购物对话顺序',
-            explanation: '购物顺序：问候→选商品→问价格→购买',
+            explanation: '购物顺序：问候→选商品→问价格→购买做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Greet, choose, ask price, buy',
               'Ask price, greet, buy, choose',
@@ -5867,7 +5901,7 @@ export const englishGrade4: Unit[] = [
             question: '— I\'m just _____. (看看)',
             answer: 'looking',
             hint: '只是看看怎么说',
-            explanation: 'I\'m just looking.表示我只是看看，婉拒帮助'
+            explanation: 'I\'m just looking.表示我只是看看，婉拒帮助做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l4q7',
@@ -5875,7 +5909,7 @@ export const englishGrade4: Unit[] = [
             question: '"需要帮忙吗"店员礼貌问法是？',
             answer: 'Can I help you?',
             hint: '[购物对话]（英语四年级-第7单元）',
-            explanation: 'Can I help you?是店员礼貌问候，表示需要帮忙吗',
+            explanation: 'Can I help you?是店员礼貌问候，表示需要帮忙吗做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Can I help you?',
               'How much are you?',
@@ -5889,12 +5923,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u7l5',
         title: '第七单元综合检测',
         order: 5,
-        teachingMethod: '形成性评价法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能在购物时用英语说服装、问价格和对话',
         successCriteria: '①能完成购物对话 ②能问价格',
-        iDo: '家长引导回顾服装价格和购物对话，示范检测题',
-        weDo: '亲子一起做练习，互相检查讨论',
-        youDo: '孩子独立完成检测，检验服装价格和购物对话',
+        iDo: '家长引导回顾服装价格和购物对话，示范检测题 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做练习，互相检查讨论 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成检测，检验服装价格和购物对话【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课把购物生活化：买衣服时用英语说服装、问价格、对话。\n共学四步：\n①对话出题：家长说我们模拟买衣服。。\n②孩子应答：孩子应说Can I help you? I want a sweater.等。\n③答错引导：若孩子说不出，家长当同学一起演！扫描课时发音动画复习；让孩子点读课件情景卡；家长模拟服装店场景边演边说。\n④快速检测：1.孩子完成购物对话；2.问价格；3.说4个服装。',
         funElement: '通关获得"Shopping达人"徽章，撒花庆祝',
         gsapAnimations: [
@@ -5967,7 +6001,8 @@ export const englishGrade4: Unit[] = [
               },
               ttsNarration: '第七单元回顾：服装、价格、数字、对话'
             }
-          }
+          },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -5976,7 +6011,7 @@ export const englishGrade4: Unit[] = [
             question: '"毛衣"用英语怎么说？',
             answer: 'sweater',
             hint: '毛衣的英文',
-            explanation: 'sweater是毛衣，冬天穿保暖',
+            explanation: 'sweater是毛衣，冬天穿保暖做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'dress',
               'shirt',
@@ -5990,7 +6025,7 @@ export const englishGrade4: Unit[] = [
             question: '— How much is this dress? — _____ 50 yuan.',
             answer: 'It\'s',
             hint: '回答单数价格',
-            explanation: '回答单数用It\'s + 价格'
+            explanation: '回答单数用It\'s + 价格做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l5q3',
@@ -5998,7 +6033,7 @@ export const englishGrade4: Unit[] = [
             question: '— Can I help you? — _____',
             answer: 'I want a shirt.',
             hint: '回应店员问候',
-            explanation: '回应Can I help you?说自己想要什么',
+            explanation: '回应Can I help you?说自己想要什么做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'I want a shirt.',
               'How much is it?',
@@ -6012,7 +6047,7 @@ export const englishGrade4: Unit[] = [
             question: '30的英文是 _____。',
             answer: 'thirty',
             hint: '30的英文',
-            explanation: '30是thirty，注意拼写'
+            explanation: '30是thirty，注意拼写做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l5q5',
@@ -6020,7 +6055,7 @@ export const englishGrade4: Unit[] = [
             question: '"我买了"用英语怎么说？',
             answer: 'I\'ll take it.',
             hint: '表示购买',
-            explanation: 'I\'ll take it.表示我买了，决定购买',
+            explanation: 'I\'ll take it.表示我买了，决定购买做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'I\'ll take it.',
               'I take.',
@@ -6034,7 +6069,7 @@ export const englishGrade4: Unit[] = [
             question: 'How much _____ these shoes? (是)',
             answer: 'are',
             hint: '复数用什么be动词',
-            explanation: '复数用are，How much are these shoes?'
+            explanation: '复数用are，How much are these shoes?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u7l5q7',
@@ -6042,7 +6077,7 @@ export const englishGrade4: Unit[] = [
             question: '"这件夹克多少钱"用英语怎么说？',
             answer: 'How much is this jacket?',
             hint: '[How much句型]（英语四年级-第7单元）',
-            explanation: '单数用How much is...? How much is this jacket?',
+            explanation: '单数用How much is...? How much is this jacket?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'How much is this jacket?',
               'How much are this jacket?',
@@ -6064,12 +6099,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u8l1',
         title: '词汇总复习',
         order: 1,
-        teachingMethod: '间隔重复法',
+        teachingMethod: '间隔重复SM-2',
         learningObjective: '我能用英语回顾7个单元的核心词汇',
         successCriteria: '①能说出7个单元的主题 ②能说出每个单元3个词汇',
-        iDo: '家长用词汇闪卡带复习，7个单元核心词汇综合回顾',
-        weDo: '亲子一起做词汇接龙，互相考单词',
-        youDo: '孩子独立完成词汇测试，检验学期词汇掌握',
+        iDo: '家长用词汇闪卡带复习，7个单元核心词汇综合回顾 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做词汇接龙，互相考单词 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成词汇测试，检验学期词汇掌握【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：词汇总复习，回顾教室物品、学习用品、外貌性格、农场动物、食物、家庭职业、服装7个主题。\n共学四步：\n①对话出题：家长问这学期学了哪些主题的词？并说Classroom!。\n②孩子应答：孩子应说Classroom, schoolbag, friends!。\n③答错引导：若孩子说不出，家长当同学一起回顾！扫描课时发音动画听发音；让孩子点读课件主题卡；家长当同学一起想，用问题引导。\n④快速检测：1.孩子说出7个主题；2.每主题说3个词；3.用词汇造一句。',
         funElement: '玩"词汇大闯关"，分类说出7个单元的词汇',
         gsapAnimations: [
@@ -6149,7 +6184,8 @@ export const englishGrade4: Unit[] = [
             content: '词汇记忆大总结：本学期学过三种好方法——①合成词：class+room=classroom；②后缀-er：erase+er=eraser；③联想记忆：family=Father And Mother I Love You。复习时多用这些方法拆词、联想，单词记得更牢固！',
             animationType: 'pulse',
             label: '词汇记忆'
-          }
+          },
+          { type: 'tip', content: '本课主要使用间隔重复SM-2：按遗忘曲线科学安排复习时间', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -6158,7 +6194,7 @@ export const englishGrade4: Unit[] = [
             question: '"窗户"用英语怎么说？',
             answer: 'window',
             hint: '教室物品',
-            explanation: 'window是窗户，教室物品词汇',
+            explanation: 'window是窗户，教室物品词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'door',
               'window',
@@ -6172,7 +6208,7 @@ export const englishGrade4: Unit[] = [
             question: 'A _____ is an animal on the farm. (奶牛)',
             answer: 'cow',
             hint: '农场动物',
-            explanation: 'cow是奶牛，农场动物词汇'
+            explanation: 'cow是奶牛，农场动物词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l1q3',
@@ -6180,7 +6216,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which word is a kind of food?',
             answer: 'rice',
             hint: '哪个是食物',
-            explanation: 'rice是米饭，属于食物类词汇',
+            explanation: 'rice是米饭，属于食物类词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'rice',
               'door',
@@ -6194,7 +6230,7 @@ export const englishGrade4: Unit[] = [
             question: 'My _____ teaches English. (老师)',
             answer: 'teacher',
             hint: '职业词汇',
-            explanation: 'teacher是老师，职业词汇'
+            explanation: 'teacher是老师，职业词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l1q5',
@@ -6202,7 +6238,7 @@ export const englishGrade4: Unit[] = [
             question: 'Which group are all clothes (服装)?',
             answer: 'dress, shirt, jacket, sweater',
             hint: '【期末真题】哪组都是服装',
-            explanation: 'dress连衣裙shirt衬衫jacket夹克sweater毛衣都是服装',
+            explanation: 'dress连衣裙shirt衬衫jacket夹克sweater毛衣都是服装做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'dress, shirt, jacket, sweater',
               'cow, sheep, horse, goat',
@@ -6216,7 +6252,7 @@ export const englishGrade4: Unit[] = [
             question: 'The _____ is orange and long. (胡萝卜)',
             answer: 'carrot',
             hint: '蔬菜词汇',
-            explanation: 'carrot是胡萝卜，蔬菜词汇'
+            explanation: 'carrot是胡萝卜，蔬菜词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l1q7',
@@ -6224,7 +6260,7 @@ export const englishGrade4: Unit[] = [
             question: '"友好的"用英语怎么说？',
             answer: 'friendly',
             hint: '[性格词汇]（英语四年级-第3单元）',
-            explanation: 'friendly是友善的，性格词汇，回顾第三单元',
+            explanation: 'friendly是友善的，性格词汇，回顾第三单元做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'friendly',
               'quiet',
@@ -6238,12 +6274,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u8l2',
         title: '句型总复习',
         order: 2,
-        teachingMethod: '间隔重复法',
+        teachingMethod: '间隔重复SM-2',
         learningObjective: '我能用英语回顾7个单元的核心句型',
         successCriteria: '①能说出5个核心句型 ②能用句型造句',
-        iDo: '家长用句型闪卡带复习，核心句型综合回顾',
-        weDo: '亲子一起做句型配对，问答练习',
-        youDo: '孩子独立完成句型测试，检验学期句型掌握',
+        iDo: '家长用句型闪卡带复习，核心句型综合回顾 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起做句型配对，问答练习 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成句型测试，检验学期句型掌握【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：句型总复习，回顾There be、I have、比较级、Are these、I\'d like、How much等句型。\n共学四步：\n①对话出题：家长问怎么用英语说教室里有什么？并说There is/are...。\n②孩子应答：孩子应说There are desks.。\n③答错引导：若孩子说不出，家长当同学一起复习！扫描课时发音动画听发音；让孩子点读课件句型卡；家长当同学一起想，用问题引导。\n④快速检测：1.孩子说出5个句型；2.用There be造句；3.用I\'d like造句。',
         funElement: '玩"句型转盘"，转到哪个句型就造句',
         gsapAnimations: [
@@ -6314,7 +6350,8 @@ export const englishGrade4: Unit[] = [
             content: 'Where→位置  What→物品/喜好\nHow many→数量  How much→价格\nAre these/those?→Yes/No, they are/aren\'t',
             animationType: 'cardReveal',
             label: '句型对应'
-          }
+          },
+          { type: 'tip', content: '本课主要使用间隔重复SM-2：按遗忘曲线科学安排复习时间', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -6323,7 +6360,7 @@ export const englishGrade4: Unit[] = [
             question: '问位置用哪个疑问词？',
             answer: 'Where',
             hint: '问位置用什么',
-            explanation: 'Where问位置，Where is...?问物品在哪里',
+            explanation: 'Where问位置，Where is...?问物品在哪里做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Where',
               'What',
@@ -6337,7 +6374,7 @@ export const englishGrade4: Unit[] = [
             question: '— What would you like? — _____ like some rice.',
             answer: 'I\'d',
             hint: '点餐句型',
-            explanation: '回答用I\'d like...，I\'d = I would'
+            explanation: '回答用I\'d like...，I\'d = I would做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l2q3',
@@ -6345,7 +6382,7 @@ export const englishGrade4: Unit[] = [
             question: '问价格用哪个疑问词？',
             answer: 'How much',
             hint: '问价格用什么',
-            explanation: 'How much问价格，How much is...?问多少钱',
+            explanation: 'How much问价格，How much is...?问多少钱做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Where',
               'What',
@@ -6359,7 +6396,7 @@ export const englishGrade4: Unit[] = [
             question: '— _____ are these? — They are tomatoes.',
             answer: 'What',
             hint: '问物品用什么',
-            explanation: '问物品用What are these?表示这些是什么'
+            explanation: '问物品用What are these?表示这些是什么做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l2q5',
@@ -6367,7 +6404,7 @@ export const englishGrade4: Unit[] = [
             question: '— How many people in your family? — _____',
             answer: 'There are four people.',
             hint: '回答人数',
-            explanation: '回答人数用There are + 数字 + people',
+            explanation: '回答人数用There are + 数字 + people做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'There are four people.',
               'It\'s four yuan.',
@@ -6381,7 +6418,7 @@ export const englishGrade4: Unit[] = [
             question: '— Are those sheep? — No, they _____.',
             answer: 'aren\'t',
             hint: '否定回答',
-            explanation: '否定回答用No, they aren\'t.'
+            explanation: '否定回答用No, they aren\'t.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l2q7',
@@ -6389,7 +6426,7 @@ export const englishGrade4: Unit[] = [
             question: '"这个多少钱"用英语怎么说？',
             answer: 'How much is this?',
             hint: '[How much句型]（英语四年级-第7单元）',
-            explanation: '问价格用How much is...? How much is this?',
+            explanation: '问价格用How much is...? How much is this?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'How much is this?',
               'How many is this?',
@@ -6406,9 +6443,9 @@ export const englishGrade4: Unit[] = [
         teachingMethod: '图文结合法',
         learningObjective: '我能在购物、点餐等情景中用英语对话',
         successCriteria: '①能完成购物对话 ②能完成点餐对话',
-        iDo: '家长带孩子读短文，圈关键词，再答题',
-        weDo: '亲子一起读英语小短文，互相提问',
-        youDo: '孩子独立读短文并回答问题，检验阅读理解',
+        iDo: '家长带孩子读短文，圈关键词，再答题 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起读英语小短文，互相提问 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立读短文并回答问题，检验阅读理解【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课核心：情景对话综合运用，购物Can I help you/How much、点餐What would you like/I\'d like。\n共学四步：\n①对话出题：家长说我们模拟在餐厅点餐。。\n②孩子应答：孩子应说What would you like? I\'d like...。\n③答错引导：若孩子说不出，家长当同学一起演！扫描课时发音动画听发音；让孩子点读课件对话卡；家长模拟场景边演边说。\n④快速检测：1.孩子完成点餐对话；2.完成购物对话；3.用How much问价。',
         funElement: '玩"阅读侦探"，在短文里找线索答题',
         gsapAnimations: [
@@ -6482,7 +6519,8 @@ export const englishGrade4: Unit[] = [
             content: '关键词：name名字 age年龄 look外貌 job职业\nWho/What/How old/How many — 找对应信息',
             animationType: 'cardReveal',
             label: '阅读策略'
-          }
+          },
+          { type: 'tip', content: '本课主要使用图文结合法：通过科学方法提升学习效果', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -6491,7 +6529,7 @@ export const englishGrade4: Unit[] = [
             question: 'Read: "Tom is nine." How old is Tom?',
             answer: 'Nine',
             hint: 'Tom几岁',
-            explanation: '短文说Tom is nine，所以他9岁',
+            explanation: '短文说Tom is nine，所以他9岁做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Nine',
               'Eight',
@@ -6505,7 +6543,7 @@ export const englishGrade4: Unit[] = [
             question: 'Read: \'Amy is tall and thin.\' Amy is _____ and thin.',
             answer: 'tall',
             hint: 'Amy外貌',
-            explanation: '短文说Amy is tall and thin，所以她高'
+            explanation: '短文说Amy is tall and thin，所以她高做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l3q3',
@@ -6513,7 +6551,7 @@ export const englishGrade4: Unit[] = [
             question: 'Read: "Her mother is a teacher." What does her mother do?',
             answer: 'A teacher',
             hint: '妈妈职业',
-            explanation: '短文说her mother is a teacher，妈妈是老师',
+            explanation: '短文说her mother is a teacher，妈妈是老师做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'A teacher',
               'A doctor',
@@ -6527,7 +6565,7 @@ export const englishGrade4: Unit[] = [
             question: 'Read: \'I have a friend. She is Amy.\' Tom\'s friend is _____.',
             answer: 'Amy',
             hint: 'Tom朋友',
-            explanation: '短文说Tom的friend是Amy'
+            explanation: '短文说Tom的friend是Amy做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l3q5',
@@ -6535,7 +6573,7 @@ export const englishGrade4: Unit[] = [
             question: 'Read: "She is a student." Who is a student?',
             answer: 'Amy',
             hint: '谁是学生',
-            explanation: '短文说She(Amy) is a student，Amy是学生',
+            explanation: '短文说She(Amy) is a student，Amy是学生做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Amy',
               'Tom',
@@ -6549,7 +6587,7 @@ export const englishGrade4: Unit[] = [
             question: 'Read: \'Tom is nine.\' Tom is _____ years old.',
             answer: 'nine',
             hint: 'Tom年龄',
-            explanation: '短文说Tom is nine，他9岁'
+            explanation: '短文说Tom is nine，他9岁做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l3q7',
@@ -6557,7 +6595,7 @@ export const englishGrade4: Unit[] = [
             question: '阅读理解第一步应该做什么？',
             answer: '先读问题再读短文',
             hint: '[阅读策略]（英语四年级-第8单元）',
-            explanation: '阅读理解先读问题，再带着问题读短文找答案',
+            explanation: '阅读理解先读问题，再带着问题读短文找答案做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               '先读问题再读短文',
               '先看图不读字',
@@ -6571,12 +6609,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u8l4',
         title: '对话与表达总复习',
         order: 4,
-        teachingMethod: '情境综合法',
+        teachingMethod: '情境教学法',
         learningObjective: '我能回顾并运用综合测评单元的词汇、句型和情景对话',
         successCriteria: '①能说出7个主题词汇 ②能完成情景对话',
-        iDo: '家长模拟综合场景，带孩子完成多个情境对话',
-        weDo: '亲子一起演综合情境对话，角色互换',
-        youDo: '孩子独立完成综合情境对话，检验口语表达',
+        iDo: '家长模拟综合场景，带孩子完成多个情境对话 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起演综合情境对话，角色互换 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成综合情境对话，检验口语表达【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课回顾综合测评单元：词汇总复习7主题、句型总复习、情景对话购物点餐。\n共学四步：\n①对话出题：家长问这学期学了哪些句型？。\n②孩子应答：孩子应说There is, I have, I\'d like!。\n③答错引导：若孩子忘记，家长当同学一起复习！扫描课时发音动画回顾；让孩子点读课件复习卡；家长当同学假装忘了，和孩子比赛说。\n④快速检测：1.孩子说出7主题词汇；2.说5个句型；3.完成情景对话。',
         funElement: '玩"情景大转盘"，转到场景就演对话',
         gsapAnimations: [
@@ -6655,7 +6693,8 @@ export const englishGrade4: Unit[] = [
             content: '购物: Can I help you? I\'ll take it.\n用餐: What would you like? Help yourself.\n家人: This is my... He/She is a...\n农场: Are these/those...? Yes, they are.',
             animationType: 'cardReveal',
             label: '情境句型'
-          }
+          },
+          { type: 'tip', content: '本课主要使用情境教学法：创设真实生活情境，在情境中自然学习', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -6664,7 +6703,7 @@ export const englishGrade4: Unit[] = [
             question: '购物时顾客想买连衣裙，应该说？',
             answer: 'I want a dress.',
             hint: '买连衣裙怎么说',
-            explanation: '顾客表达需求用I want a dress.表示我想要一条连衣裙',
+            explanation: '顾客表达需求用I want a dress.表示我想要一条连衣裙做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'I want a dress.',
               'How much is it?',
@@ -6678,7 +6717,7 @@ export const englishGrade4: Unit[] = [
             question: '用餐时说 I\'d _____ some rice, please.',
             answer: 'like',
             hint: '点餐表达',
-            explanation: 'I\'d like some rice.表示我想要一些米饭'
+            explanation: 'I\'d like some rice.表示我想要一些米饭做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l4q3',
@@ -6686,7 +6725,7 @@ export const englishGrade4: Unit[] = [
             question: '介绍爸爸是医生，应该说？',
             answer: 'This is my father. He is a doctor.',
             hint: '介绍爸爸医生',
-            explanation: '介绍用This is my... He is a...',
+            explanation: '介绍用This is my... He is a...做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'This is my father. He is a doctor.',
               'This is my father. She is a doctor.',
@@ -6700,7 +6739,7 @@ export const englishGrade4: Unit[] = [
             question: '— Are those cows? — Yes, _____ are.',
             answer: 'they',
             hint: '复数肯定回答',
-            explanation: '复数肯定回答用Yes, they are.'
+            explanation: '复数肯定回答用Yes, they are.做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l4q5',
@@ -6708,7 +6747,7 @@ export const englishGrade4: Unit[] = [
             question: '店员问"Can I help you?"顾客礼貌回应？',
             answer: 'Yes, I want a dress.',
             hint: '回应店员',
-            explanation: '回应Can I help you?表达需求Yes, I want...',
+            explanation: '回应Can I help you?表达需求Yes, I want...做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Yes, I want a dress.',
               'How old are you?',
@@ -6722,7 +6761,7 @@ export const englishGrade4: Unit[] = [
             question: '用餐时主人说 _____ yourself! (请随便吃)',
             answer: 'Help',
             hint: '请自便用语',
-            explanation: 'Help yourself!表示请随便吃'
+            explanation: 'Help yourself!表示请随便吃做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l4q7',
@@ -6730,7 +6769,7 @@ export const englishGrade4: Unit[] = [
             question: '"我买了"购物用语是？',
             answer: 'I\'ll take it.',
             hint: '[购物对话]（英语四年级-第7单元）',
-            explanation: 'I\'ll take it.表示我买了，回顾第七单元购物对话',
+            explanation: 'I\'ll take it.表示我买了，回顾第七单元购物对话做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'I\'ll take it.',
               'I help you.',
@@ -6744,12 +6783,12 @@ export const englishGrade4: Unit[] = [
         id: 'e4u8l5',
         title: '学期综合测评',
         order: 5,
-        teachingMethod: '总结性评价法',
+        teachingMethod: '形成性评价',
         learningObjective: '我能在生活中综合运用英语进行对话交流',
         successCriteria: '①能完成一次情景对话 ②能说出学过的词汇句型',
-        iDo: '家长说明测评规则，孩子独立完成学期综合测评',
-        weDo: '亲子一起分析测评结果，查漏补缺',
-        youDo: '孩子独立完成学期综合测评，检验学期整体掌握',
+        iDo: '家长说明测评规则，孩子独立完成学期综合测评 【CFU检查理解】家长问"What does this word mean?"',
+        weDo: '【引导式】亲子一起分析测评结果，查漏补缺 → 【半独立】孩子说步骤家长做 → 【独立】孩子自己做',
+        youDo: '孩子独立完成学期综合测评，检验学期整体掌握【费曼小老师时间】用最简单的话把今天学的讲给小熊/家长听，讲不清的地方回去看一遍再讲。',
         parentTips: '【家长预习】本课把英语综合生活化：在真实场景中用英语交流。\n共学四步：\n①对话出题：家长说用英语模拟一次购物或点餐。。\n②孩子应答：孩子应说Can I help you?... How much is it?...。\n③答错引导：若孩子说不出，家长当同学一起演！扫描课时发音动画复习；让孩子点读课件情景卡；家长模拟真实场景边演边说。\n④快速检测：1.孩子完成情景对话；2.说学过的词汇；3.用句型造句。',
         funElement: '通关获得"四年级英语之星"勋章，星星飞入庆祝',
         gsapAnimations: [
@@ -6828,7 +6867,8 @@ export const englishGrade4: Unit[] = [
             content: '仔细读题  认真作答\n检查拼写  回找答案\n完成测评  你最棒！',
             animationType: 'cardReveal',
             label: '测评口诀'
-          }
+          },
+          { type: 'tip', content: '本课主要使用形成性评价：通过即时检测反馈调整学习策略', label: '教学方法', animationType: 'pulse' },
         ],
         practiceQuestions: [
           {
@@ -6837,7 +6877,7 @@ export const englishGrade4: Unit[] = [
             question: '"教室的窗"用英语怎么说？',
             answer: 'window',
             hint: '教室物品',
-            explanation: 'window是窗户，教室物品词汇',
+            explanation: 'window是窗户，教室物品词汇做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'door',
               'window',
@@ -6851,7 +6891,7 @@ export const englishGrade4: Unit[] = [
             question: '— Where is the book? — _____ on the desk.',
             answer: 'It\'s',
             hint: '问位置回答',
-            explanation: '问Where用It\'s + 介词 + 地点回答'
+            explanation: '问Where用It\'s + 介词 + 地点回答做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l5q3',
@@ -6859,7 +6899,7 @@ export const englishGrade4: Unit[] = [
             question: '— What would you like? — _____',
             answer: 'I\'d like some rice.',
             hint: '点餐回答',
-            explanation: '回答用I\'d like...',
+            explanation: '回答用I\'d like...做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'I\'d like some rice.',
               'It\'s on the desk.',
@@ -6873,7 +6913,7 @@ export const englishGrade4: Unit[] = [
             question: '— How much is this dress? — It\'s _____ yuan. (50)',
             answer: 'fifty',
             hint: '价格数字',
-            explanation: '50是fifty，It\'s fifty yuan.表示50元'
+            explanation: '50是fifty，It\'s fifty yuan.表示50元做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l5q5',
@@ -6881,7 +6921,7 @@ export const englishGrade4: Unit[] = [
             question: 'Read: "She is tall and thin." What is she like?',
             answer: '又高又瘦',
             hint: '阅读理解',
-            explanation: 'tall高 thin瘦，tall and thin表示又高又瘦',
+            explanation: 'tall高 thin瘦，tall and thin表示又高又瘦做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               '又高又瘦',
               '又矮又壮',
@@ -6895,7 +6935,7 @@ export const englishGrade4: Unit[] = [
             question: 'This is my father. _____ is a doctor.',
             answer: 'He',
             hint: '介绍男性职业',
-            explanation: '介绍男性用He，He is a doctor.表示他是一名医生'
+            explanation: '介绍男性用He，He is a doctor.表示他是一名医生做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。'
           },
           {
             id: 'e4u8l5q7',
@@ -6903,7 +6943,7 @@ export const englishGrade4: Unit[] = [
             question: '"这些是西红柿吗"用英语怎么说？',
             answer: 'Are these tomatoes?',
             hint: '[Are these/those句型]（英语四年级-第4单元）',
-            explanation: '复数疑问用Are these/those...? Are these tomatoes?',
+            explanation: '复数疑问用Are these/those...? Are these tomatoes?做错是因为这个方法还不熟练，多练几次就好，不是你不够聪明。',
             options: [
               'Are these tomatoes?',
               'Is this tomato?',
