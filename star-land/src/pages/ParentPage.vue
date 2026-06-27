@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import { useRouter } from 'vue-router'
 import { useProgressStore } from '@/stores/progress'
 import { useRewardStore } from '@/stores/reward'
 import { useSettingsStore } from '@/stores/settings'
 import { useCourseProgress } from '@/composables/useCourseProgress'
 import { useSpeech } from '@/composables/useSpeech'
-import { BarChart3, TrendingUp, Calendar, Settings, User, Pencil, Volume2, Gauge, Star, Lock, History, Plus, Minus, ChevronDown, ChevronUp, Gem, Trash2, RotateCcw, Package, Download, Upload, AlertTriangle, MessageCircle, RefreshCw } from 'lucide-vue-next'
+import { BarChart3, TrendingUp, Calendar, Settings, User, Pencil, Volume2, Gauge, Star, Lock, History, Plus, Minus, ChevronDown, ChevronUp, Gem, Trash2, RotateCcw, Package, Download, Upload, AlertTriangle, MessageCircle, RefreshCw, ArrowRight } from 'lucide-vue-next'
 import type { DiamondItem, WishItem } from '@/types'
 import { useDataManager } from '@/composables/useDataManager'
+
+const router = useRouter()
 
 const progressStore = useProgressStore()
 const rewardStore = useRewardStore()
@@ -638,38 +641,117 @@ function copyFeedbackContact() {
       <div class="flex items-center gap-2 mb-3">
         <span class="text-xl">🎓</span>
         <h2 class="font-title text-lg text-gray-800">我们的教学方法</h2>
+        <span class="ml-auto text-[10px] text-purple-400 font-bold">14种全球优秀教学法</span>
       </div>
-      <div class="grid grid-cols-2 gap-2.5 mb-3">
-        <div class="bg-white/70 rounded-2xl p-3 border border-white">
-          <div class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-400 to-teal-500 mb-1.5">
-            <span class="text-lg">🧮</span>
+      <div class="grid grid-cols-2 gap-2 mb-2">
+        <div class="bg-white/70 rounded-xl p-2.5 border border-white">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <span class="text-base">🧮</span>
+            <span class="font-bold text-[11px] text-gray-800">新加坡CPA教学法</span>
           </div>
-          <div class="font-bold text-xs text-gray-800">新加坡CPA教学法</div>
-          <div class="text-[10px] text-gray-500 mt-0.5 leading-snug">实物→图示→符号，让孩子真正理解而非死记</div>
+          <div class="text-[10px] text-gray-500 leading-snug">实物→图示→符号</div>
         </div>
-        <div class="bg-white/70 rounded-2xl p-3 border border-white">
-          <div class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-blue-400 to-indigo-500 mb-1.5">
-            <span class="text-lg">🎓</span>
+        <div class="bg-white/70 rounded-xl p-2.5 border border-white">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <span class="text-base">🎓</span>
+            <span class="font-bold text-[11px] text-gray-800">EDI显性直接教学</span>
           </div>
-          <div class="font-bold text-xs text-gray-800">EDI显性直接教学</div>
-          <div class="text-[10px] text-gray-500 mt-0.5 leading-snug">每课明确学习目标+成功标准，示范→共练→独立</div>
+          <div class="text-[10px] text-gray-500 leading-snug">目标→示范→共练→独立</div>
         </div>
-        <div class="bg-white/70 rounded-2xl p-3 border border-white">
-          <div class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-amber-400 to-orange-500 mb-1.5">
-            <span class="text-lg">🔄</span>
+        <div class="bg-white/70 rounded-xl p-2.5 border border-white">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <span class="text-base">🔄</span>
+            <span class="font-bold text-[11px] text-gray-800">间隔重复SM-2</span>
           </div>
-          <div class="font-bold text-xs text-gray-800">艾宾浩斯间隔重复</div>
-          <div class="text-[10px] text-gray-500 mt-0.5 leading-snug">智能错题本按遗忘曲线推送复习</div>
+          <div class="text-[10px] text-gray-500 leading-snug">按遗忘曲线智能复习</div>
         </div>
-        <div class="bg-white/70 rounded-2xl p-3 border border-white">
-          <div class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-pink-400 to-rose-500 mb-1.5">
-            <span class="text-lg">🌈</span>
+        <div class="bg-white/70 rounded-xl p-2.5 border border-white">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <span class="text-base">🔤</span>
+            <span class="font-bold text-[11px] text-gray-800">自然拼读法</span>
           </div>
-          <div class="font-bold text-xs text-gray-800">多感官互动学习</div>
-          <div class="text-[10px] text-gray-500 mt-0.5 leading-snug">拼音口型+凑十动画+笔顺书写</div>
+          <div class="text-[10px] text-gray-500 leading-snug">见词能读听音能写</div>
+        </div>
+        <div class="bg-white/70 rounded-xl p-2.5 border border-white">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <span class="text-base">👨‍🏫</span>
+            <span class="font-bold text-[11px] text-gray-800">费曼学习法</span>
+          </div>
+          <div class="text-[10px] text-gray-500 leading-snug">让孩子当小老师讲解</div>
+        </div>
+        <div class="bg-white/70 rounded-xl p-2.5 border border-white">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <span class="text-base">🤔</span>
+            <span class="font-bold text-[11px] text-gray-800">苏格拉底提问法</span>
+          </div>
+          <div class="text-[10px] text-gray-500 leading-snug">提问链引导发现</div>
+        </div>
+        <div class="bg-white/70 rounded-xl p-2.5 border border-white">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <span class="text-base">🌱</span>
+            <span class="font-bold text-[11px] text-gray-800">成长型思维</span>
+          </div>
+          <div class="text-[10px] text-gray-500 leading-snug">表扬过程而非天赋</div>
+        </div>
+        <div class="bg-white/70 rounded-xl p-2.5 border border-white">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <span class="text-base">✋</span>
+            <span class="font-bold text-[11px] text-gray-800">蒙台梭利多感官</span>
+          </div>
+          <div class="text-[10px] text-gray-500 leading-snug">视听说触四通道</div>
+        </div>
+        <div class="bg-white/70 rounded-xl p-2.5 border border-white">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <span class="text-base">🎮</span>
+            <span class="font-bold text-[11px] text-gray-800">游戏化学习</span>
+          </div>
+          <div class="text-[10px] text-gray-500 leading-snug">关卡积分成就系统</div>
+        </div>
+        <div class="bg-white/70 rounded-xl p-2.5 border border-white">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <span class="text-base">🗺️</span>
+            <span class="font-bold text-[11px] text-gray-800">思维导图法</span>
+          </div>
+          <div class="text-[10px] text-gray-500 leading-snug">结构化知识网络</div>
+        </div>
+        <div class="bg-white/70 rounded-xl p-2.5 border border-white">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <span class="text-base">🏛️</span>
+            <span class="font-bold text-[11px] text-gray-800">记忆宫殿法</span>
+          </div>
+          <div class="text-[10px] text-gray-500 leading-snug">空间锚点助记</div>
+        </div>
+        <div class="bg-white/70 rounded-xl p-2.5 border border-white">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <span class="text-base">📊</span>
+            <span class="font-bold text-[11px] text-gray-800">RTI分层干预</span>
+          </div>
+          <div class="text-[10px] text-gray-500 leading-snug">数据驱动分层教学</div>
         </div>
       </div>
-      <p class="text-xs text-gray-500 text-center">这些方法在线下机构单科年费数千元，这里全部免费</p>
+      <div class="grid grid-cols-2 gap-2 mb-3">
+        <div class="bg-white/70 rounded-xl p-2.5 border border-white">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <span class="text-base">🌈</span>
+            <span class="font-bold text-[11px] text-gray-800">多元智能理论</span>
+          </div>
+          <div class="text-[10px] text-gray-500 leading-snug">多通道触达不同孩子</div>
+        </div>
+        <div class="bg-white/70 rounded-xl p-2.5 border border-white">
+          <div class="flex items-center gap-1.5 mb-0.5">
+            <span class="text-base">🌍</span>
+            <span class="font-bold text-[11px] text-gray-800">芬兰现象式学习</span>
+          </div>
+          <div class="text-[10px] text-gray-500 leading-snug">跨学科真实世界探究</div>
+        </div>
+      </div>
+      <button
+        @click="router.push('/')"
+        class="w-full flex items-center justify-center gap-1.5 text-xs text-purple-600 hover:text-purple-700 py-2 border-t border-purple-100 mt-1"
+      >
+        <span>查看全部教学方法详情与应用证据</span>
+        <ArrowRight class="w-3.5 h-3.5" />
+      </button>
     </div>
 
     <!-- 孩子名字设置 -->

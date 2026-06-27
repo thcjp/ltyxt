@@ -25,7 +25,7 @@ import SchulteGrid from '@/components/SchulteGrid.vue'
 import { expandQuestions } from '@/composables/useVariantQuestions'
 import { getVideoResources } from '@/data/math/mathGrade1Videos'
 import { generateVideoResources } from '@/data/videoResourceGenerator'
-import { PlayCircle, ExternalLink, Search, Video } from 'lucide-vue-next'
+import { Search, Video } from 'lucide-vue-next'
 
 const route = useRoute()
 const router = useRouter()
@@ -1026,7 +1026,7 @@ onUnmounted(() => {
             <h3 class="font-title text-base text-indigo-700">辅助学习视频</h3>
             <span class="text-xs text-indigo-400 ml-auto">共 {{ videoResources.length }} 个资源</span>
           </div>
-          <p class="text-xs text-indigo-500 mb-3">以下视频来自全网教育平台，可作为本课辅助学习资料。如链接失效，请点击"搜索"按钮通过关键词查找。</p>
+          <p class="text-xs text-indigo-500 mb-3">以下资源来自全网教育平台，点击可搜索相关教学视频。不同平台内容各有特色，可按需选择。</p>
           <div class="space-y-2">
             <div
               v-for="video in videoResources"
@@ -1041,29 +1041,19 @@ onUnmounted(() => {
                       {{ platformNames[video.platform] }}
                     </span>
                     <span v-if="video.duration" class="text-[10px] text-gray-400">时长: {{ video.duration }}</span>
-                    <span class="text-[10px] text-amber-500">匹配度: {{ '★'.repeat(video.matchScore) }}</span>
+                    <span class="text-[10px] text-amber-500">推荐度: {{ '★'.repeat(Math.min(video.matchScore, 5)) }}</span>
                   </div>
                 </div>
-                <PlayCircle class="w-5 h-5 text-indigo-400 flex-shrink-0" />
+                <Search class="w-5 h-5 text-indigo-400 flex-shrink-0" />
               </div>
               <p v-if="video.note" class="text-xs text-gray-500 mb-2 line-clamp-2">{{ video.note }}</p>
-              <div class="flex items-center gap-2">
-                <button
-                  @click="openVideo(video.url)"
-                  class="flex-1 flex items-center justify-center gap-1 text-xs bg-indigo-500 text-white py-1.5 rounded-md hover:bg-indigo-600 transition-colors"
-                >
-                  <ExternalLink class="w-3 h-3" />
-                  观看视频
-                </button>
-                <button
-                  @click="openVideo(video.searchUrl)"
-                  class="flex items-center justify-center gap-1 text-xs bg-gray-100 text-gray-600 py-1.5 px-3 rounded-md hover:bg-gray-200 transition-colors"
-                  title="链接失效时可通过关键词搜索"
-                >
-                  <Search class="w-3 h-3" />
-                  搜索
-                </button>
-              </div>
+              <button
+                @click="openVideo(video.url)"
+                class="w-full flex items-center justify-center gap-1 text-xs bg-indigo-500 text-white py-1.5 rounded-md hover:bg-indigo-600 transition-colors"
+              >
+                <Search class="w-3 h-3" />
+                搜索视频
+              </button>
             </div>
           </div>
         </div>

@@ -413,147 +413,165 @@ onMounted(() => {
 <template>
   <div class="min-h-screen">
     <!-- ========== 多屏营销展示（首页固定内容，始终可见） ========== -->
-    <div class="bg-gradient-to-br from-slate-900 via-indigo-900 to-purple-900">
+    <div class="bg-slate-950">
 
-      <!-- ===== 第一屏：核心钩子 ===== -->
-      <div class="min-h-screen relative overflow-hidden flex flex-col justify-center">
-        <!-- 装饰气泡 -->
-        <div class="absolute top-10 left-10 w-32 h-32 bg-blue-400/10 rounded-full blur-2xl"></div>
-        <div class="absolute bottom-20 right-10 w-48 h-48 bg-purple-400/20 rounded-full blur-3xl"></div>
-        <div class="absolute top-1/3 right-1/4 w-24 h-24 bg-emerald-300/15 rounded-full blur-xl"></div>
+      <!-- ===== 第一屏：核心钩子（深色渐变+光效） ===== -->
+      <div class="min-h-screen relative overflow-hidden flex flex-col justify-center"
+        style="background: radial-gradient(ellipse at top, #1e1b4b 0%, #0f172a 50%, #020617 100%)">
+        <!-- 光效装饰 -->
+        <div class="absolute top-10 left-10 w-40 h-40 bg-indigo-500/15 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-56 h-56 bg-purple-500/15 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s"></div>
+        <div class="absolute top-1/3 right-1/4 w-28 h-28 bg-emerald-400/10 rounded-full blur-2xl"></div>
 
-        <div class="relative z-10 max-w-2xl mx-auto px-4 py-8">
+        <div class="relative z-10 max-w-2xl mx-auto px-5 py-8">
           <!-- 顶部信任条 -->
           <div class="text-center mb-6">
-            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur rounded-full px-4 py-1.5">
-              <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-              <p class="text-white/90 text-xs">永久免费 · 不收集隐私 · 点开即用</p>
+            <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-400/20 rounded-full px-4 py-1.5 backdrop-blur">
+              <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+              <p class="text-emerald-300 text-xs font-medium">永久免费 · 不收集隐私 · 点开即用</p>
             </div>
           </div>
 
           <!-- 主标题 -->
-          <div class="text-center mb-6 marketing-hero">
-            <h1 class="text-white font-black text-3xl leading-tight mb-3">
-              辅导作业不用吼了<br/>
-              <span class="text-yellow-300">全球好方法</span>，做成免费课程
+          <div class="text-center mb-8 marketing-hero">
+            <h1 class="font-black text-4xl leading-tight mb-4">
+              <span class="text-white">辅导作业</span><span class="text-red-400">不用吼</span><span class="text-white">了</span>
             </h1>
-            <p class="text-white/70 text-sm">
-              新加坡CPA · 间隔重复抗遗忘 · 家长照着念就能教
-            </p>
+            <div class="inline-block bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-400 bg-clip-text">
+              <p class="text-2xl font-black text-transparent">全球好方法，做成免费课程</p>
+            </div>
+            <p class="text-slate-400 text-sm mt-3">新加坡CPA · 间隔重复抗遗忘 · 家长照着念就能教</p>
           </div>
 
-          <!-- 5个核心钩子 -->
-          <div class="space-y-2.5 mb-6">
+          <!-- 5个核心钩子 - 左边框卡片 -->
+          <div class="space-y-2 mb-8">
             <div v-for="hook in coreHooks" :key="hook.title"
-              class="bg-white/10 backdrop-blur rounded-2xl px-4 py-3 text-white flex items-center gap-3 border"
-              :class="hook.highlight ? 'border-yellow-400/30 bg-yellow-400/5' : 'border-white/10'">
-              <span class="text-2xl flex-shrink-0">{{ hook.icon }}</span>
-              <div class="flex-1">
-                <span class="font-bold text-sm">{{ hook.title }}</span>
-                <span class="text-white/60 text-xs ml-1.5">{{ hook.desc }}</span>
+              class="rounded-xl px-4 py-3 flex items-center gap-3 border-l-2 transition-all hover:translate-x-1"
+              :class="hook.highlight
+                ? 'bg-gradient-to-r from-yellow-500/15 to-transparent border-yellow-400'
+                : 'bg-white/5 border-slate-600'">
+              <div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-xl flex-shrink-0">
+                {{ hook.icon }}
               </div>
-              <span v-if="hook.highlight" class="text-yellow-300 text-xs font-bold flex-shrink-0">核心</span>
+              <div class="flex-1 min-w-0">
+                <span class="text-white font-bold text-sm block">{{ hook.title }}</span>
+                <span class="text-slate-400 text-xs">{{ hook.desc }}</span>
+              </div>
+              <span v-if="hook.highlight"
+                class="text-[10px] font-bold text-yellow-400 bg-yellow-400/10 px-2 py-0.5 rounded-full flex-shrink-0">核心</span>
             </div>
           </div>
 
           <!-- CTA -->
           <button @click="startLearning"
-            class="w-full py-4 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 rounded-2xl font-black text-lg shadow-xl hover:scale-[1.02] transition-transform active:scale-95 mb-2">
+            class="w-full py-4 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 rounded-2xl font-black text-lg shadow-2xl shadow-yellow-500/20 hover:scale-[1.02] transition-transform active:scale-95 mb-2">
             🚀 免费开始学习
           </button>
-          <p class="text-center text-white/50 text-xs mb-4">无需注册 · 永久免费 · 离线可用</p>
+          <p class="text-center text-slate-500 text-xs mb-4">无需注册 · 永久免费 · 离线可用</p>
 
           <!-- 向下滚动提示 -->
           <div class="text-center">
-            <p class="text-white/40 text-xs animate-bounce">↓ 向下滚动查看全部优点</p>
+            <p class="text-slate-600 text-xs animate-bounce">↓ 向下滚动查看全部优点</p>
           </div>
         </div>
       </div>
 
-      <!-- ===== 第二屏：全部优点 ===== -->
-      <div class="min-h-screen relative py-8">
-        <div class="absolute top-0 left-10 w-32 h-32 bg-blue-400/10 rounded-full blur-2xl"></div>
+      <!-- ===== 第二屏：全部优点（深蓝底+彩色Tab） ===== -->
+      <div class="min-h-screen relative py-8" style="background: linear-gradient(180deg, #020617 0%, #0c1a3e 50%, #020617 100%)">
+        <div class="absolute top-0 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-10 right-10 w-48 h-48 bg-emerald-400/10 rounded-full blur-3xl"></div>
 
-        <div class="relative z-10 max-w-2xl mx-auto px-4">
-          <h2 class="text-white font-black text-2xl text-center mb-2">全部优点一览</h2>
-          <p class="text-white/50 text-sm text-center mb-6">5大维度，覆盖孩子学习的每个环节</p>
+        <div class="relative z-10 max-w-2xl mx-auto px-5">
+          <div class="text-center mb-6">
+            <div class="inline-block bg-blue-500/10 border border-blue-400/20 rounded-full px-4 py-1 mb-3">
+              <span class="text-blue-300 text-xs font-bold">📋 全景展示</span>
+            </div>
+            <h2 class="text-white font-black text-2xl mb-1">全部优点一览</h2>
+            <p class="text-slate-400 text-sm">5大维度，覆盖孩子学习的每个环节</p>
+          </div>
 
           <!-- Tab切换 -->
-          <div class="flex gap-2 overflow-x-auto pb-3 mb-4 scrollbar-hide">
+          <div class="flex gap-1.5 overflow-x-auto pb-3 mb-4 scrollbar-hide">
             <button v-for="(cat, i) in advantageCategories" :key="cat.tab"
               @click="currentAdvantageTab = i"
-              class="flex-shrink-0 px-3 py-2 rounded-xl text-xs font-medium transition-all whitespace-nowrap"
+              class="flex-shrink-0 px-3 py-2 rounded-lg text-xs font-medium transition-all whitespace-nowrap"
               :class="currentAdvantageTab === i
                 ? `bg-gradient-to-r ${cat.color} text-white shadow-lg`
-                : 'bg-white/10 text-white/50'">
+                : 'bg-white/5 text-slate-400'">
               {{ cat.icon }} {{ cat.tab }}
             </button>
           </div>
 
           <!-- 当前分类内容 -->
-          <div class="bg-white/8 backdrop-blur rounded-3xl p-4 mb-4">
+          <div class="bg-white/5 rounded-2xl p-4 mb-4 border border-white/5">
             <div v-for="(item, i) in advantageCategories[currentAdvantageTab].items" :key="i"
               class="flex items-start gap-2 py-2 border-b border-white/5 last:border-0">
-              <span class="text-green-400 text-sm flex-shrink-0 mt-0.5">✓</span>
-              <span class="text-white/80 text-sm">{{ item }}</span>
+              <span class="text-emerald-400 text-sm flex-shrink-0 mt-0.5">✓</span>
+              <span class="text-slate-200 text-sm">{{ item }}</span>
             </div>
           </div>
 
           <!-- 数据统计 -->
           <div class="grid grid-cols-4 gap-2 mb-6">
-            <div v-for="stat in stats" :key="stat.label" class="bg-white/10 backdrop-blur rounded-2xl py-3 text-center">
-              <div class="text-xl font-bold text-yellow-300">{{ stat.value }}</div>
-              <div class="text-[10px] text-white/60">{{ stat.label }}</div>
+            <div v-for="stat in stats" :key="stat.label"
+              class="bg-gradient-to-b from-white/10 to-white/5 rounded-xl py-3 text-center border border-white/5">
+              <div class="text-xl font-black bg-gradient-to-r from-yellow-300 to-amber-400 bg-clip-text text-transparent">{{ stat.value }}</div>
+              <div class="text-slate-500 text-[10px] mt-0.5">{{ stat.label }}</div>
             </div>
           </div>
 
           <!-- CTA -->
           <button @click="startLearning"
-            class="w-full py-3.5 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 rounded-2xl font-black text-base shadow-xl hover:scale-[1.02] transition-transform active:scale-95 mb-3">
+            class="w-full py-3.5 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-2xl font-black text-base shadow-2xl shadow-blue-500/20 hover:scale-[1.02] transition-transform active:scale-95 mb-3">
             🚀 马上体验
           </button>
-          <p class="text-center text-white/40 text-xs animate-bounce">↓ 继续看家长痛点</p>
+          <p class="text-center text-slate-600 text-xs animate-bounce">↓ 看看我们用了哪些全球顶尖教学法</p>
         </div>
       </div>
 
-      <!-- ===== 第三屏：全球14种教学方法（营销核心） ===== -->
-      <div class="min-h-screen relative py-8">
+      <!-- ===== 第三屏：全球14种教学方法（核心营销屏） ===== -->
+      <div id="teaching-methods" class="min-h-screen relative py-8"
+        style="background: linear-gradient(180deg, #020617 0%, #1a0a2e 30%, #16213e 60%, #020617 100%)">
         <div class="absolute top-10 left-1/4 w-40 h-40 bg-emerald-400/10 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-20 right-1/4 w-32 h-32 bg-blue-400/10 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-20 right-1/4 w-32 h-32 bg-purple-400/10 rounded-full blur-3xl"></div>
 
-        <div class="relative z-10 max-w-2xl mx-auto px-4">
+        <div class="relative z-10 max-w-2xl mx-auto px-5">
           <div class="text-center mb-6">
-            <div class="inline-flex items-center gap-2 bg-yellow-400/15 backdrop-blur rounded-full px-4 py-1.5 mb-3">
+            <div class="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/20 rounded-full px-4 py-1.5 mb-3">
               <span class="text-yellow-300 text-xs font-bold">🏆 核心竞争力</span>
             </div>
-            <h2 class="text-white font-black text-2xl mb-2">全球14种优秀教学法<br/><span class="text-yellow-300">全部融入课程</span></h2>
-            <p class="text-white/50 text-sm">不是说说而已，每种方法都有3条课程中的实际应用证据</p>
+            <h2 class="text-white font-black text-2xl mb-1">
+              全球<span class="text-yellow-300">14种</span>优秀教学法
+            </h2>
+            <p class="text-slate-400 text-sm">每种方法都有3条课程中的实际应用证据</p>
           </div>
 
-          <!-- 14种方法卡片 -->
-          <div class="space-y-3 mb-6">
+          <!-- 14种方法 - 双列网格 -->
+          <div class="grid grid-cols-1 gap-2.5 mb-6">
             <div v-for="(method, i) in teachingMethods" :key="method.name"
-              class="bg-white/8 backdrop-blur rounded-2xl p-4 border border-white/10 hover:border-white/20 transition-all">
-              <!-- 方法标题 -->
+              class="rounded-2xl p-3.5 border transition-all hover:scale-[1.01]"
+              :class="i % 2 === 0
+                ? 'bg-white/5 border-white/10 hover:border-white/20'
+                : 'bg-white/[0.03] border-white/5 hover:border-white/15'">
+              <!-- 方法标题行 -->
               <div class="flex items-center gap-3 mb-2">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br flex items-center justify-center text-xl flex-shrink-0"
+                <div class="w-9 h-9 rounded-lg bg-gradient-to-br flex items-center justify-center text-lg flex-shrink-0 shadow-lg"
                   :class="method.color">
                   {{ method.icon }}
                 </div>
-                <div class="flex-1">
+                <div class="flex-1 min-w-0">
                   <div class="flex items-center gap-2">
-                    <span class="text-white font-bold text-sm">{{ method.name }}</span>
-                    <span class="text-white/30 text-[10px]">#{{ i + 1 }}</span>
+                    <span class="text-white font-bold text-xs">{{ method.name }}</span>
+                    <span class="text-slate-600 text-[9px]">#{{ i + 1 }}</span>
                   </div>
-                  <p class="text-white/60 text-[11px] leading-snug">{{ method.principle }}</p>
+                  <p class="text-slate-500 text-[10px] leading-snug truncate">{{ method.principle }}</p>
                 </div>
               </div>
-              <!-- 应用证据 -->
-              <div class="pl-13 ml-1 space-y-1">
+              <!-- 应用证据 - 紧凑布局 -->
+              <div class="ml-12 space-y-0.5">
                 <div v-for="(ev, j) in method.evidence" :key="j"
-                  class="flex items-start gap-1.5 text-white/70 text-[11px] leading-snug">
-                  <span class="text-green-400 flex-shrink-0">▸</span>
+                  class="flex items-start gap-1 text-slate-400 text-[10px] leading-snug">
+                  <span class="text-emerald-400 flex-shrink-0">▸</span>
                   <span>{{ ev }}</span>
                 </div>
               </div>
@@ -561,98 +579,108 @@ onMounted(() => {
           </div>
 
           <!-- 对比改进前 vs 改进后 -->
-          <div class="bg-gradient-to-r from-red-500/10 to-green-500/10 backdrop-blur rounded-2xl p-4 mb-6 border border-white/10">
-            <div class="grid grid-cols-2 gap-4 text-center">
-              <div>
-                <p class="text-white/40 text-xs mb-1">改进前综合评分</p>
-                <p class="text-red-400 text-2xl font-black">2.6<span class="text-sm">/5</span></p>
-                <p class="text-white/30 text-[10px]">标签多实质少</p>
-              </div>
-              <div>
-                <p class="text-white/40 text-xs mb-1">改进后综合评分</p>
-                <p class="text-green-400 text-2xl font-black">3.8<span class="text-sm">/5</span></p>
-                <p class="text-white/30 text-[10px]">14种方法全面落地</p>
-              </div>
+          <div class="grid grid-cols-2 gap-3 mb-6">
+            <div class="bg-red-500/5 border border-red-500/15 rounded-2xl p-4 text-center">
+              <p class="text-slate-500 text-[10px] mb-1">改进前</p>
+              <p class="text-red-400 text-3xl font-black">2.6<span class="text-sm">/5</span></p>
+              <p class="text-slate-600 text-[9px] mt-1">标签多实质少</p>
+            </div>
+            <div class="bg-emerald-500/5 border border-emerald-500/15 rounded-2xl p-4 text-center">
+              <p class="text-slate-500 text-[10px] mb-1">改进后</p>
+              <p class="text-emerald-400 text-3xl font-black">3.8<span class="text-sm">/5</span></p>
+              <p class="text-slate-600 text-[9px] mt-1">14种方法全面落地</p>
             </div>
           </div>
 
           <!-- CTA -->
           <button @click="startLearning"
-            class="w-full py-3.5 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 rounded-2xl font-black text-base shadow-xl hover:scale-[1.02] transition-transform active:scale-95 mb-3">
+            class="w-full py-3.5 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 rounded-2xl font-black text-base shadow-2xl shadow-yellow-500/20 hover:scale-[1.02] transition-transform active:scale-95 mb-3">
             🚀 体验这些方法
           </button>
-          <p class="text-center text-white/40 text-xs animate-bounce">↓ 继续看家长痛点</p>
+          <p class="text-center text-slate-600 text-xs animate-bounce">↓ 继续看家长痛点</p>
         </div>
       </div>
 
-      <!-- ===== 第四屏：家长痛点 ===== -->
-      <div class="min-h-screen relative py-8">
-        <div class="absolute top-10 right-10 w-32 h-32 bg-orange-400/10 rounded-full blur-2xl"></div>
-        <div class="absolute bottom-20 left-10 w-48 h-48 bg-red-400/10 rounded-full blur-3xl"></div>
+      <!-- ===== 第四屏：家长痛点（红色底→绿色方案） ===== -->
+      <div class="min-h-screen relative py-8"
+        style="background: linear-gradient(180deg, #020617 0%, #1a0510 50%, #020617 100%)">
+        <div class="absolute top-10 right-10 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 left-10 w-48 h-48 bg-red-500/10 rounded-full blur-3xl"></div>
 
-        <div class="relative z-10 max-w-2xl mx-auto px-4">
-          <h2 class="text-white font-black text-2xl text-center mb-2">这些困扰，你也有吗？</h2>
-          <p class="text-white/50 text-sm text-center mb-6">每个痛点背后，都有对应的解决方案</p>
+        <div class="relative z-10 max-w-2xl mx-auto px-5">
+          <div class="text-center mb-6">
+            <div class="inline-block bg-red-500/10 border border-red-400/20 rounded-full px-4 py-1 mb-3">
+              <span class="text-red-300 text-xs font-bold">💔 家长心声</span>
+            </div>
+            <h2 class="text-white font-black text-2xl mb-1">这些困扰，你也有吗？</h2>
+            <p class="text-slate-400 text-sm">每个痛点背后，都有对应的解决方案</p>
+          </div>
 
           <!-- 痛点-方案对照 -->
-          <div class="space-y-3 mb-6">
+          <div class="space-y-2.5 mb-6">
             <div v-for="pp in painPoints" :key="pp.pain"
-              class="bg-white/8 backdrop-blur rounded-2xl p-4 border border-white/10">
+              class="rounded-xl overflow-hidden border border-white/5">
               <!-- 痛点 -->
-              <div class="flex items-center gap-2 mb-2">
-                <span class="text-xl">{{ pp.painIcon }}</span>
-                <span class="text-white/70 text-sm line-through">{{ pp.pain }}</span>
+              <div class="bg-red-500/5 px-4 py-2.5 flex items-center gap-2">
+                <span class="text-lg flex-shrink-0">{{ pp.painIcon }}</span>
+                <span class="text-slate-500 text-xs line-through">{{ pp.pain }}</span>
               </div>
               <!-- 方案 -->
-              <div class="flex items-center gap-2 pl-2 border-l-2 border-green-400">
-                <span class="text-xl">{{ pp.solutionIcon }}</span>
-                <span class="text-white text-sm font-medium">{{ pp.solution }}</span>
+              <div class="bg-emerald-500/5 px-4 py-2.5 flex items-center gap-2 border-t border-emerald-500/10">
+                <span class="text-lg flex-shrink-0">{{ pp.solutionIcon }}</span>
+                <span class="text-emerald-300 text-xs font-medium">{{ pp.solution }}</span>
               </div>
             </div>
           </div>
 
           <!-- CTA -->
           <button @click="startLearning"
-            class="w-full py-3.5 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 rounded-2xl font-black text-base shadow-xl hover:scale-[1.02] transition-transform active:scale-95 mb-3">
+            class="w-full py-3.5 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-2xl font-black text-base shadow-2xl shadow-emerald-500/20 hover:scale-[1.02] transition-transform active:scale-95 mb-3">
             🚀 解决我的困扰
           </button>
-          <p class="text-center text-white/40 text-xs animate-bounce">↓ 为什么值得信任</p>
+          <p class="text-center text-slate-600 text-xs animate-bounce">↓ 为什么值得信任</p>
         </div>
       </div>
 
-      <!-- ===== 第四屏：信任建立 ===== -->
-      <div class="min-h-screen relative py-8 pb-16">
+      <!-- ===== 第五屏：信任建立 ===== -->
+      <div class="min-h-screen relative py-8 pb-16"
+        style="background: linear-gradient(180deg, #020617 0%, #0a1929 50%, #020617 100%)">
         <div class="absolute top-0 left-1/3 w-40 h-40 bg-green-400/10 rounded-full blur-3xl"></div>
 
-        <div class="relative z-10 max-w-2xl mx-auto px-4">
-          <h2 class="text-white font-black text-2xl text-center mb-2">为什么值得信任</h2>
-          <p class="text-white/50 text-sm text-center mb-6">4个承诺，让家长放心</p>
+        <div class="relative z-10 max-w-2xl mx-auto px-5">
+          <div class="text-center mb-6">
+            <div class="inline-block bg-green-500/10 border border-green-400/20 rounded-full px-4 py-1 mb-3">
+              <span class="text-green-300 text-xs font-bold">🛡️ 家长放心</span>
+            </div>
+            <h2 class="text-white font-black text-2xl mb-1">为什么值得信任</h2>
+            <p class="text-slate-400 text-sm">4个承诺，让家长放心</p>
+          </div>
 
-          <div class="grid grid-cols-2 gap-3 mb-6">
+          <div class="grid grid-cols-2 gap-2.5 mb-6">
             <div v-for="trust in trustSignals" :key="trust.title"
-              class="bg-white/10 backdrop-blur rounded-2xl p-4 text-white border border-white/10">
-              <div class="text-3xl mb-2">{{ trust.icon }}</div>
-              <p class="font-bold text-sm mb-1">{{ trust.title }}</p>
-              <p class="text-white/60 text-[10px] leading-snug">{{ trust.desc }}</p>
+              class="bg-white/5 rounded-2xl p-3.5 border border-white/5 hover:border-white/10 transition-all text-center">
+              <div class="text-2xl mb-1.5">{{ trust.icon }}</div>
+              <p class="text-white font-bold text-xs mb-0.5">{{ trust.title }}</p>
+              <p class="text-slate-500 text-[10px] leading-snug">{{ trust.desc }}</p>
             </div>
           </div>
 
           <!-- 创始人故事 -->
-          <div class="bg-gradient-to-r from-amber-500/15 to-orange-500/15 backdrop-blur rounded-3xl p-5 mb-6 text-center border border-amber-400/20">
-            <p class="text-white/90 text-sm leading-relaxed">
+          <div class="bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-3xl p-5 mb-6 text-center border border-amber-400/10">
+            <p class="text-slate-200 text-sm leading-relaxed">
               💡 这是一位父亲用AI为孩子制作的学习工具<br/>
-              <span class="text-white/60 text-xs">初衷是让每个家庭都能用上全球最有效的方法</span><br/>
+              <span class="text-slate-400 text-xs">初衷是让每个家庭都能用上全球最有效的方法</span><br/>
               <span class="text-yellow-300 text-xs font-medium">觉得好用，分享给其他家长就是最好的支持</span>
             </p>
           </div>
 
           <!-- 最终CTA -->
           <button @click="startLearning"
-            class="w-full py-4 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 rounded-2xl font-black text-lg shadow-xl hover:scale-[1.02] transition-transform active:scale-95 mb-2">
+            class="w-full py-4 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 rounded-2xl font-black text-lg shadow-2xl shadow-yellow-500/20 hover:scale-[1.02] transition-transform active:scale-95 mb-2">
             🚀 立即开始，完全免费
           </button>
-          <p class="text-center text-white/50 text-xs mb-3">无需注册 · 永久免费 · 数据不外传 · 离线可用</p>
-          <p class="text-center text-white/30 text-[10px]">
+          <p class="text-center text-slate-500 text-xs mb-3">无需注册 · 永久免费 · 数据不外传 · 离线可用</p>
+          <p class="text-center text-slate-700 text-[10px]">
             线下辅导单科年费数千元 · 这里用同样的方法，完全免费
           </p>
         </div>
