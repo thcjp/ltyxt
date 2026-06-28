@@ -36,8 +36,8 @@ function goToExam(type: 'midterm' | 'final') {
     <p class="text-sm text-gray-500 mb-6">{{ meta?.subtitle }} · 共{{ units.length }}个单元</p>
 
     <div class="space-y-3">
-      <!-- 考试入口 -->
-      <div class="grid grid-cols-2 gap-3 mb-4">
+      <!-- 考试入口（仅1-3年级显示） -->
+      <div v-if="grade <= 3" class="grid grid-cols-2 gap-3 mb-4">
         <button
           @click="goToExam('midterm')"
           class="card border-2 border-indigo-200 bg-indigo-50 text-left hover:shadow-xl transition-all duration-300 active:scale-[0.98]"

@@ -186,7 +186,7 @@ const starLevel = computed(() => accuracy.value >= 95 ? 3 : accuracy.value >= 80
     </div>
 
     <!-- 考试介绍页 -->
-    <div v-if="phase === 'intro' && exam" class="max-w-2xl mx-auto">
+    <div v-if="phase === 'intro' && exam && exam.questions.length > 0" class="max-w-2xl mx-auto">
       <div class="card text-center py-8">
         <div class="text-6xl mb-4">{{ examType === 'midterm' ? '📝' : '🎓' }}</div>
         <h1 class="font-title text-2xl text-gray-800 mb-2">{{ exam.title }}</h1>
@@ -367,9 +367,10 @@ const starLevel = computed(() => accuracy.value >= 95 ? 3 : accuracy.value >= 80
       </div>
     </div>
 
-    <!-- 无考试数据 -->
-    <div v-if="!exam" class="text-center py-20">
-      <p class="text-gray-400">考试数据加载失败</p>
+    <!-- 无考试数据或题目为空 -->
+    <div v-if="!exam || exam.questions.length === 0" class="text-center py-20">
+      <p class="text-gray-400">该年级的考试内容正在建设中</p>
+      <p class="text-sm text-gray-400 mt-2">目前支持1-3年级的期中期末考试</p>
       <button @click="router.back()" class="btn-primary mt-4">返回</button>
     </div>
   </div>
